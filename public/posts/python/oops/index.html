@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Oops // Aum&#39;s blogging site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/blog/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Oops"/>
+<meta name="twitter:description" content="Chapter summary - Unit 4 Object Oriented Programming: Define and use your own classes: An introduction to classes and objects, define a class, object composition, encapsulation; Inheritance: Inheritance, override object methods; Design an object oriented program: Techniques for object-oriented design Text Book 1 – Chapters 14,15,16
+Creating your own class A class can be created in python by using the class keyword
+class MyClass: x = 5 This creates a blueprint for the objects to be defined."/>
+
+    <meta property="og:title" content="Oops" />
+<meta property="og:description" content="Chapter summary - Unit 4 Object Oriented Programming: Define and use your own classes: An introduction to classes and objects, define a class, object composition, encapsulation; Inheritance: Inheritance, override object methods; Design an object oriented program: Techniques for object-oriented design Text Book 1 – Chapters 14,15,16
+Creating your own class A class can be created in python by using the class keyword
+class MyClass: x = 5 This creates a blueprint for the objects to be defined." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aumpauskar.site/blog/posts/python/oops/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-16T10:07:41+05:30" />
+<meta property="article:modified_time" content="2023-11-16T10:07:41+05:30" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://aumpauskar.site/blog/"><img class="app-header-avatar" src="/blog/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Aum&#39;s blogging site</span>
+      <p>Aum&#39;s blog</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Oops</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 16, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="chapter-summary---unit-4">Chapter summary - Unit 4</h1>
+<p><strong>Object Oriented Programming:</strong>
+Define and use your own classes: An introduction to classes and objects, define a class,
+object composition, encapsulation; <br>
+<strong>Inheritance:</strong> Inheritance, override object methods; <br>
+<strong>Design an object oriented program:</strong> Techniques for object-oriented design
+Text Book 1 – Chapters 14,15,16</p>
+<h2 id="creating-your-own-class">Creating your own class</h2>
+<p>A class can be created in python by using the class keyword</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
+</span></span><span style="display:flex;"><span>  x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p>This creates a blueprint for the objects to be defined. Methods and members can be defined in the class.</p>
+<h2 id="constructors">Constructors</h2>
+<p>Python classes need constructors to initialise the members and methods, it is initiated by the <strong>init</strong> keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># user class</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># constructor</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self):
+</span></span><span style="display:flex;"><span>		msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># accessing members</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">println</span>(self):
+</span></span><span style="display:flex;"><span>		print(self<span style="color:#f92672">.</span>msg)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># creating the object</span>
+</span></span><span style="display:flex;"><span>obj <span style="color:#f92672">=</span> MyClass()
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>println()
+</span></span></code></pre></div><p>The self keyword acts as a self pointing object.
+Here when the object is generated the constructor is called and the msg variable is initiated. The usage of the self keyword is also crutial is called methods within classes.</p>
+<p>This code can be also changed to accept paramatrised constructor</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># user class</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># constructor</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, arg):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># accessing members</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">println</span>(self):
+</span></span><span style="display:flex;"><span>		print(self<span style="color:#f92672">.</span>msg)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># creating the object</span>
+</span></span><span style="display:flex;"><span>obj <span style="color:#f92672">=</span> MyClass(<span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>println()
+</span></span></code></pre></div><p>The self keyword here also sometimes acts like the <em>super</em> keyword in java.</p>
+<h2 id="lambda-functions">Lambda functions</h2>
+<p>Lambda functions are functions are anoymous functions, it can have n number of arguments but can only have one expression. <br>
+Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># program written with lambda functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to print sum</span>
+</span></span><span style="display:flex;"><span>func <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> num1, num2:num1<span style="color:#f92672">+</span>num2
+</span></span><span style="display:flex;"><span>print(func(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># program done with functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(num1, num2):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">+</span> num2
+</span></span><span style="display:flex;"><span>print(add(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>))
+</span></span></code></pre></div><h2 id="encapsulation">Encapsulation</h2>
+<p>Encapsuation is the way of wrapping the data and the functions withing a class isolated from the ouytside interference. Encapsualation can be achieved in python by using private and public attributes at stretigic places to ensure the data safety.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyData</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># constructor to get the data</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>__x <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printData</span>(self):
+</span></span><span style="display:flex;"><span>		print(self<span style="color:#f92672">.</span>__x)
+</span></span></code></pre></div><h2 id="inheritance">Inheritance</h2>
+<p>Inheritance is a way for the derived class to get all the properties of base class including the class methods and class members.</p>
+<p>Syntax of inheritance</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MainClass</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># methods/members</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DerivedClass</span>(MainClass):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># methods/members</span>
+</span></span></code></pre></div><p>Example of a program that follows polymorphism</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Vehicle</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, cc, bhp):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>__cc <span style="color:#f92672">=</span> cc
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>__bhp <span style="color:#f92672">=</span> bhp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printStd</span>(self):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;The car is </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>__cc<span style="color:#e6db74">}</span><span style="color:#e6db74"> cc and has </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>__bhp<span style="color:#e6db74">}</span><span style="color:#e6db74"> bhp&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OpenWheeler</span>(Vehicle):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> __init__(self, cc, bhp):
+</span></span><span style="display:flex;"><span>		super()<span style="color:#f92672">.</span>__init__(cc, bhp)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getDownforce</span>(self, downforce):
+</span></span><span style="display:flex;"><span>		self<span style="color:#f92672">.</span>__downforce <span style="color:#f92672">=</span> downforce
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printStd</span>(self):
+</span></span><span style="display:flex;"><span>		super()<span style="color:#f92672">.</span>printStd()
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;The car has </span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>__downforce<span style="color:#e6db74">}</span><span style="color:#e6db74"> downforce&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>car1 <span style="color:#f92672">=</span> Vehicle(<span style="color:#e6db74">&#39;100&#39;</span>, <span style="color:#e6db74">&#39;9&#39;</span>)
+</span></span><span style="display:flex;"><span>f11976 <span style="color:#f92672">=</span> OpenWheeler(<span style="color:#e6db74">&#39;3000&#39;</span>, <span style="color:#e6db74">&#39;500&#39;</span>)
+</span></span><span style="display:flex;"><span>f11976<span style="color:#f92672">.</span>getDownforce(<span style="color:#e6db74">&#39;300&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>car1<span style="color:#f92672">.</span>printStd()
+</span></span><span style="display:flex;"><span>f11976<span style="color:#f92672">.</span>printStd()
+</span></span></code></pre></div><h3 id="isinstance-in-python">IsInstance in python</h3>
+<p>The <code>isinstance()</code> function in Python is used to check if an object is an instance of a specified class. The syntax of the isinstance() function is</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>isinstance(object, classinfo)
+</span></span></code></pre></div><p>Here is an example of the isinstance() function showing the difference between two inherited classes</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">speak</span>(self):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;I am an animal&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span>(Animal):
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">speak</span>(self):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Woof!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> Dog()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(isinstance(d, Animal))    <span style="color:#75715e"># True</span>
+</span></span><span style="display:flex;"><span>print(isinstance(d, Dog))       <span style="color:#75715e"># True</span>
+</span></span><span style="display:flex;"><span>print(isinstance(d, str))       <span style="color:#75715e"># False</span>
+</span></span></code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

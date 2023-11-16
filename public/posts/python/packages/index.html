@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Packages // Aum&#39;s blogging site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/blog/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Packages"/>
+<meta name="twitter:description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda"/>
+
+    <meta property="og:title" content="Packages" />
+<meta property="og:description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aumpauskar.site/blog/posts/python/packages/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-16T10:08:09+05:30" />
+<meta property="article:modified_time" content="2023-11-16T10:08:09+05:30" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://aumpauskar.site/blog/"><img class="app-header-avatar" src="/blog/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Aum&#39;s blogging site</span>
+      <p>Aum&#39;s blog</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Packages</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 16, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="chapter-summary---unit-5">Chapter summary - Unit 5</h1>
+<p><strong>Packages:</strong>
+How to build a GUI Program: Create a GUI that handles an event, more skills for working
+with components; <br>
+<strong>Numpy Basics:</strong> Arrays and Vectorized Computation: Creating ndarrays, Data Types for
+ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with
+slices, Boolean Indexing, Transposing Arrays and Swapping Axes; <br>
+<strong>Getting started with Pandas:</strong> Introduction to Pandas Data Structures, Summarizing and
+Computing Descriptive Statistics, Handling missing data; <br>
+<strong>Plotting and Visualization:</strong> A Brief matplotlib API Primer, Plotting Functions in panda</p>
+<h2 id="gui-with-tkinter">GUi with Tkinter</h2>
+<p>Tkinter is a package in python that aids graphical applications. Installation of Tkinter can be done by</p>
+<pre tabindex="0"><code>pip install tkinter
+</code></pre><h3 id="creating-a-window">Creating a window</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>root <span style="color:#f92672">=</span> Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>Mainloop aids the program in running recursively. This can be further improved by naming each part of the root window.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># root properties</span>
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;rootname&#39;</span>)
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>geometry(<span style="color:#e6db74">&#39;640x360&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><ul>
+<li>Widgets: Widgets are the graphical objects that are found in tkinter. This inclues the root window all the labels and the entry field etc. The widgets should be mapped to other objects in order to work which can be a <strong>canvas</strong> or the <strong>root</strong> window as a base window.</li>
+</ul>
+<p>Some example of widgets</p>
+<ol>
+<li>Label: displays text or image on the screen</li>
+<li>Button: adds a clickable button to the application</li>
+<li>Entry: allows single line text input from user</li>
+<li>Text: allows multi-line text input and formatting</li>
+<li>Frame: holds and organizes other widgets</li>
+<li>Scale: provides a graphical slider to select a value</li>
+<li>Listbox: displays a list of items to choose from</li>
+<li>Checkbutton: displays a toggle button with two states (on/off)</li>
+<li>Radiobutton: displays a button that can be selected from a group of buttons</li>
+</ol>
+<p>Calling function in tkinter</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>root <span style="color:#f92672">=</span> Tk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">change</span>():
+</span></span><span style="display:flex;"><span>	label1<span style="color:#f92672">.</span>config(text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;New text&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>label1 <span style="color:#f92672">=</span> Label(root, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sample text&#34;</span>)
+</span></span><span style="display:flex;"><span>label1<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>button <span style="color:#f92672">=</span> Button(root, command<span style="color:#f92672">=</span>change)
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><p>An application made in Tkinter</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># importing main module</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># root functionalities</span>
+</span></span><span style="display:flex;"><span>root <span style="color:#f92672">=</span> Tk()
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Calculator&#39;</span>)
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>geometry(<span style="color:#e6db74">&#39;640x360&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># will house the display</span>
+</span></span><span style="display:flex;"><span>canvas1 <span style="color:#f92672">=</span> Canvas(root)
+</span></span><span style="display:flex;"><span>canvas1<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># will house the buttons</span>
+</span></span><span style="display:flex;"><span>canvas2 <span style="color:#f92672">=</span> Canvas(root)
+</span></span><span style="display:flex;"><span>canvas2<span style="color:#f92672">.</span>pack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>num1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>num2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ------------------------------</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fnInitialize</span>():
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">global</span> num1, num2
+</span></span><span style="display:flex;"><span>	num1 <span style="color:#f92672">=</span> float(entryNum1<span style="color:#f92672">.</span>get())
+</span></span><span style="display:flex;"><span>	num2 <span style="color:#f92672">=</span> float(entryNum2<span style="color:#f92672">.</span>get())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fnAddNum</span>():
+</span></span><span style="display:flex;"><span>	fnInitialize()
+</span></span><span style="display:flex;"><span>	ans <span style="color:#f92672">=</span> num1 <span style="color:#f92672">+</span> num2
+</span></span><span style="display:flex;"><span>	labelAnsVal<span style="color:#f92672">.</span>config(text <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>str(round(ans, <span style="color:#ae81ff">2</span>))<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fnSubNum</span>():
+</span></span><span style="display:flex;"><span>	fnInitialize()
+</span></span><span style="display:flex;"><span>	ans <span style="color:#f92672">=</span> num1 <span style="color:#f92672">-</span> num2
+</span></span><span style="display:flex;"><span>	labelAnsVal<span style="color:#f92672">.</span>config(text <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>str(round(ans, <span style="color:#ae81ff">2</span>))<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fnMulNum</span>():
+</span></span><span style="display:flex;"><span>	fnInitialize()
+</span></span><span style="display:flex;"><span>	ans <span style="color:#f92672">=</span> num1 <span style="color:#f92672">*</span> num2
+</span></span><span style="display:flex;"><span>	labelAnsVal<span style="color:#f92672">.</span>config(text <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>str(round(ans, <span style="color:#ae81ff">2</span>))<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fnDivNum</span>():
+</span></span><span style="display:flex;"><span>	fnInitialize()
+</span></span><span style="display:flex;"><span>	ans <span style="color:#f92672">=</span> num1 <span style="color:#f92672">/</span> num2
+</span></span><span style="display:flex;"><span>	labelAnsVal<span style="color:#f92672">.</span>config(text <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>str(round(ans, <span style="color:#ae81ff">2</span>))<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># widgets</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># first number prompt</span>
+</span></span><span style="display:flex;"><span>lablelNum1 <span style="color:#f92672">=</span> Label(canvas1, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Enter num 1:&#34;</span>)
+</span></span><span style="display:flex;"><span>lablelNum1<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># first number will be here</span>
+</span></span><span style="display:flex;"><span>entryNum1 <span style="color:#f92672">=</span> Entry(canvas1)
+</span></span><span style="display:flex;"><span>entryNum1<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># second number prompt</span>
+</span></span><span style="display:flex;"><span>lablelNum2 <span style="color:#f92672">=</span> Label(canvas1, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Enter num 2:&#34;</span>)
+</span></span><span style="display:flex;"><span>lablelNum2<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># second number will be here</span>
+</span></span><span style="display:flex;"><span>entryNum2 <span style="color:#f92672">=</span> Entry(canvas1)
+</span></span><span style="display:flex;"><span>entryNum2<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># answer prompt</span>
+</span></span><span style="display:flex;"><span>lablelAns <span style="color:#f92672">=</span> Label(canvas1, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Answer&#34;</span>)
+</span></span><span style="display:flex;"><span>lablelAns<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># answer label</span>
+</span></span><span style="display:flex;"><span>labelAnsVal <span style="color:#f92672">=</span> Label(canvas1)
+</span></span><span style="display:flex;"><span>labelAnsVal<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># addition button</span>
+</span></span><span style="display:flex;"><span>ButtonAdd <span style="color:#f92672">=</span> Button(canvas2, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Add&#34;</span>, command <span style="color:#f92672">=</span> fnAddNum)
+</span></span><span style="display:flex;"><span>ButtonAdd<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># subtraction button</span>
+</span></span><span style="display:flex;"><span>ButtonSub <span style="color:#f92672">=</span> Button(canvas2, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sub&#34;</span>, command <span style="color:#f92672">=</span> fnSubNum)
+</span></span><span style="display:flex;"><span>ButtonSub<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># multiplication button</span>
+</span></span><span style="display:flex;"><span>ButtonMul <span style="color:#f92672">=</span> Button(canvas2, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mul&#34;</span>, command <span style="color:#f92672">=</span> fnMulNum)
+</span></span><span style="display:flex;"><span>ButtonMul<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># division button</span>
+</span></span><span style="display:flex;"><span>ButtonDiv <span style="color:#f92672">=</span> Button(canvas2, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Div&#34;</span>, command <span style="color:#f92672">=</span> fnDivNum)
+</span></span><span style="display:flex;"><span>ButtonDiv<span style="color:#f92672">.</span>grid(row <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, column <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># looping trough the program</span>
+</span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div><h2 id="numpy">Numpy</h2>
+<p>The numpy library is a python library that can be used to manupulate and work on complex numberical applications. NumPy supports numpy array which is ideal to perform large array operations since the faster access time. The NumPy library also supports broadcasting which is performing an operation throughout the array without using a for loop.</p>
+<h3 id="n-dimentional-array-nd-array">N dimentional array (Nd Array)</h3>
+<ul>
+<li>Why is NumPy faster than lists</li>
+</ul>
+<ol>
+<li>NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.</li>
+<li>This behavior is called locality of reference in computer science.</li>
+<li>This is the main reason why NumPy is faster than lists. Also it is optimized to work with latest CPU architectures.</li>
+<li>Operating on the elements in a list can only be done through iterative loops, which is computationally inefficient in Python.</li>
+<li>The NumPy package enables users to overcome the shortcomings of the Python lists by providing the data storage object called ndarray</li>
+<li>The ndarray is similar to lists, but rather than being highly flexible by storing different types of objects in one list, only the same type of element can be stored in each column.</li>
+<li>For example, with a Python list, you could make the first element a list and the second another list or dictionary. With NumPy arrays, you can only store the same type of element, e.g., all elements must be floats, integers, or strings.</li>
+<li>Despite this limitation, ndarray wins hands down when it comes to operation times, as the operations are sped up significantly.</li>
+</ol>
+<ul>
+<li>Creating ND array</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>nDarr <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(<span style="color:#ae81ff">5</span>) <span style="color:#75715e"># creating a scalar array</span>
+</span></span><span style="display:flex;"><span>nDarr1 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]) <span style="color:#75715e"># creating a 1d array</span>
+</span></span><span style="display:flex;"><span>nDarr2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]]) <span style="color:#75715e"># creating a 2d array</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># finding the shape of the arrays</span>
+</span></span><span style="display:flex;"><span>print(nDarr<span style="color:#f92672">.</span>ndim)
+</span></span><span style="display:flex;"><span>print(nDarr1<span style="color:#f92672">.</span>ndim)
+</span></span><span style="display:flex;"><span>print(nDarr2<span style="color:#f92672">.</span>ndim)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># finding the dimentions of the arrays</span>
+</span></span><span style="display:flex;"><span>print(nDarr<span style="color:#f92672">.</span>shape)
+</span></span><span style="display:flex;"><span>print(nDarr1<span style="color:#f92672">.</span>shape)
+</span></span><span style="display:flex;"><span>print(nDarr2<span style="color:#f92672">.</span>shape)
+</span></span></code></pre></div><ul>
+<li>Slicing the ND array</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>nDarr <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(<span style="color:#ae81ff">5</span>) <span style="color:#75715e"># creating a scalar array</span>
+</span></span><span style="display:flex;"><span>nDarr1 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]) <span style="color:#75715e"># creating a 1d array</span>
+</span></span><span style="display:flex;"><span>nDarr2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]]) <span style="color:#75715e"># creating a 2d array</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(nDarr1[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><p>The slicing works in a similar fashion as compared to for loops (except the step). You can nest string slicing to reduce the dimentions of the nDarray.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
