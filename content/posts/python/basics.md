@@ -2,6 +2,7 @@
 title = 'Basics'
 date = 2023-11-16T10:05:13+05:30
 draft = false
+description = "Basics of python"
 +++
 
 # Chapter summary - Unit 1
