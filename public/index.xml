@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://aumpauskar.site/blog/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Nov 2023 09:46:38 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://aumpauskar.site/blog/posts/my-first-post/</link>
+      <pubDate>Thu, 16 Nov 2023 09:46:38 +0530</pubDate>
+      <guid>https://aumpauskar.site/blog/posts/my-first-post/</guid>
+      <description>Hello World This is my first post
+print(&amp;#34;Hello World&amp;#34;) </description>
+    </item>
+  </channel>
+</rss>
