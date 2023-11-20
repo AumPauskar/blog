@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Static Site Generators | Aum&#39;s blogging site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Static site generators A short guide on how this site was created using hugo.
+Introduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required.">
+<meta name="author" content="">
+<link rel="canonical" href="http://aumpauskar.site/blog/posts/web/static-site-generators/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://aumpauskar.site/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://aumpauskar.site/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://aumpauskar.site/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://aumpauskar.site/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://aumpauskar.site/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Static Site Generators" />
+<meta property="og:description" content="Static site generators A short guide on how this site was created using hugo.
+Introduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://aumpauskar.site/blog/posts/web/static-site-generators/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-17T09:19:25+05:30" />
+<meta property="article:modified_time" content="2023-11-17T09:19:25+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Static Site Generators"/>
+<meta name="twitter:description" content="Static site generators A short guide on how this site was created using hugo.
+Introduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://aumpauskar.site/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Static Site Generators",
+      "item": "http://aumpauskar.site/blog/posts/web/static-site-generators/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Static Site Generators",
+  "name": "Static Site Generators",
+  "description": "Static site generators A short guide on how this site was created using hugo.\nIntroduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Static site generators A short guide on how this site was created using hugo.\nIntroduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required. Multiple static site generators are avalable as open source projects, one of them is jeckyll from github and the other is hugo that is optimized for minmal loadtime.\nNote: This documentation is written for linux (debian) based systems, for windows, WSL can be installed to run it.\nInstallation To install hugo first open a linux shell and then type the following commands.\nsudo apt update sudo apt install hugo -y However for the use of the latest version in Debian based operating systems using snap is reccommended. INSTALLATION OF THE APT VERSION MAY CAUSE PROBLEMS\nsudo snap install hugo Typing hugo version will give a confirmation that the software has been installed sucessfully. Checking for the hugo extended version is reccommended.\nhugo v0.120.4-f11bca5fec2ebb3a02727fb2a5cfb08da96fd9df+extended linux/amd64 BuildDate=2023-11-08T11:18:07Z VendorInfo=snap:0.120.4 If the version of hugo then building the software from source is reccommended.\nHugo can also be installed in a native Windows OS using chocolatey using this command. However this will require a git terminal to run.\nchoco install hugo -confirm After the installation of hugo is complete, the version can be checked by typing the following command.\nhugo version Creating a new site To create a new site, first create a new folder and then navigate to that folder using the terminal. Then type the following command to create a new site.\nhugo new site Adding content to the new site Content can be added in the new site by the use of this command\nhugo new content posts/optional subfolders/.../filename.md hugo new content posts/my-first-post.md Filename of my-first-post.md can be replaced with other filenames also but the extension of the filename must end with a .md for singnifying the markdown syntax. Another way of adding content is directly adding the file in the content folder, however this is not reccommended, since it will not reflect in the archetypes folder and the file templates will not be generated.\nThis might be the contents of the file\n+++ title = 'My First Post' date = 2023-11-15T23:52:11+05:30 draft = true +++ ## Introduction This is **bold** text, and this is *emphasized* text. Visit the [Hugo](https://gohugo.io) website! Make sure the draft section is changed from true to false\nSetting up a theme There are a lot of themes available on hugo to chech the themes visit the hugo themes site. Most of the themes have a github clone link available, it may start via this git submodule add . All the theme files are stored in the themes folder and the most important thing is to remember the official name of your theme. For example if your theme name is ananke then that themename must be configured in hugo.toml.\nSetting up hugo.toml If you are using the latest version of hugo then there should be a file called hugo.toml. There are 2 crutial changes in it. Example\nbaseURL = 'https://yourdesireddomain.top-level-domain-name/' languageCode = 'en-us' title = 'My New Hugo Site' theme = 'ananke' First one is changing baseURL where the custom domain name and adding a new line of theme and adding the corresponding theme name. These two are the crutial changes, however you can also change the website title by using the title tag and the rendered language by languageCode.\nCreating and viewing in a draft server To run the site in the local server this command can be used.\nhugo server -D or this can be used\nhugo server --buildDrafts These two commands will display all the contnents of the site, including the drafts site (note that there was the section drafts = true in the markdown file). To check whether the file is marked as drafts or not and to check if it’s render in the production site can be done by this command\nhugo server Generating the site All the content generated till now is just the drafts and will not render in the actual site. To generate the site the following command can be used. Go to the site’s root directory and type the following command.\nhugo This will generate the site in the public folder. To view the site in the local server the following command can be used.\nhugo server Deploying the site The best way to deploy the site is to use a free service like Firebase, Netlify or Github pages. To deploy the site in github pages the following steps can be followed.\nCreate a new repository in github with the name .github.io\nPush the whole site to the repository. (Assuming git is installed and git init has been run in the root directory of the site.)\ngit add -A git commit -m \"Initial commit\" git remote add origin git branch -M main git push -u origin main Go to the repository settings and scroll down to the Github Pages section and change the source to Github Actions (beta).\nCreate a file at this location .github/workflows/hugo.yaml.\nCopy the following code in the file. Change the hugo version to the local hugo version on your machine.\n# Sample workflow for building and deploying a Hugo site to GitHub Pages name: Deploy Hugo site to Pages on: # Runs on pushes targeting the default branch push: branches: - main # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages permissions: contents: read pages: write id-token: write # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete. concurrency: group: \"pages\" cancel-in-progress: false # Default to bash defaults: run: shell: bash jobs: # Build job build: runs-on: ubuntu-latest env: HUGO_VERSION: 0.120.2 steps: - name: Install Hugo CLI run: | wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \\ \u0026\u0026 sudo dpkg -i ${{ runner.temp }}/hugo.deb - name: Install Dart Sass run: sudo snap install dart-sass - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 - name: Setup Pages id: pages uses: actions/configure-pages@v3 - name: Install Node.js dependencies run: \"[[ -f package-lock.json || -f npm-shrinkwrap.json ]] \u0026\u0026 npm ci || true\" - name: Build with Hugo env: # For maximum backward compatibility with Hugo modules HUGO_ENVIRONMENT: production HUGO_ENV: production run: | hugo \\ --gc \\ --minify \\ --baseURL \"${{ steps.pages.outputs.base_url }}/\" - name: Upload artifact uses: actions/upload-pages-artifact@v2 with: path: ./public # Deployment job deploy: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} runs-on: ubuntu-latest needs: build steps: - name: Deploy to GitHub Pages id: deployment uses: actions/deploy-pages@v2 Commit the changes and push it to the repository.\ngit add -A git commit -m \"Added github actions\" git push Check the deployments section in the repository to check if the deployment is sucessful or not. 8 . If the deployment is sucessful then the site should be available at https://.github.io\nReferences Hugo quickstart Hugo themes Hugo deployment ",
+  "wordCount" : "1225",
+  "inLanguage": "en",
+  "datePublished": "2023-11-17T09:19:25+05:30",
+  "dateModified": "2023-11-17T09:19:25+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://aumpauskar.site/blog/posts/web/static-site-generators/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aum's blogging site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://aumpauskar.site/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://aumpauskar.site/blog/" accesskey="h" title="Aum&#39;s blogging site (Alt + H)">Aum&#39;s blogging site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Static Site Generators
+    </h1>
+    <div class="post-meta"><span title='2023-11-17 09:19:25 +0530 IST'>November 17, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="static-site-generators">Static site generators<a hidden class="anchor" aria-hidden="true" href="#static-site-generators">#</a></h1>
+<p>A short guide on how this site was created using hugo.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a <strong>static site</strong> might be adequate, however if the site needs a frontend, backend and a database then a <strong>dynamic site</strong> is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required. Multiple static site generators are avalable as open source projects, one of them is <strong>jeckyll</strong> from github and the other is <strong>hugo</strong> that is optimized for minmal loadtime.</p>
+<p><strong>Note:</strong> This documentation is written for linux (debian) based systems, for windows, WSL can be installed to run it.</p>
+<h2 id="installation">Installation<a hidden class="anchor" aria-hidden="true" href="#installation">#</a></h2>
+<p>To install hugo first open a <strong>linux shell</strong> and then type the following commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install hugo -y
+</span></span></code></pre></div><p>However for the use of the latest version in Debian based operating systems using snap is <strong>reccommended</strong>. <strong>INSTALLATION OF THE APT VERSION MAY CAUSE PROBLEMS</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo snap install hugo
+</span></span></code></pre></div><p>Typing <code>hugo version</code> will give a confirmation that the software has been installed sucessfully. Checking for the <strong>hugo extended version</strong> is reccommended.</p>
+<pre tabindex="0"><code>hugo v0.120.4-f11bca5fec2ebb3a02727fb2a5cfb08da96fd9df+extended linux/amd64 BuildDate=2023-11-08T11:18:07Z VendorInfo=snap:0.120.4
+</code></pre><p>If the version of hugo then building the software from source is reccommended.</p>
+<p>Hugo can also be installed in a native Windows OS using chocolatey using this command. However this will require a git terminal to run.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install hugo -confirm
+</span></span></code></pre></div><p>After the installation of hugo is complete, the version can be checked by typing the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><h2 id="creating-a-new-site">Creating a new site<a hidden class="anchor" aria-hidden="true" href="#creating-a-new-site">#</a></h2>
+<p>To create a new site, first create a new folder and then navigate to that folder using the terminal. Then type the following command to create a new site.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site &lt;site-name&gt;
+</span></span></code></pre></div><h2 id="adding-content-to-the-new-site">Adding content to the new site<a hidden class="anchor" aria-hidden="true" href="#adding-content-to-the-new-site">#</a></h2>
+<p>Content can be added in the new site by the use of this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content posts/optional subfolders/.../filename.md
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content posts/my-first-post.md
+</span></span></code></pre></div><p>Filename of <code>my-first-post.md</code> can be replaced with other filenames also but the extension of the filename must end with a <code>.md</code> for singnifying the markdown syntax. Another way of adding content is directly adding the file in the <code>content</code> folder, however this is not reccommended, since it will not reflect in the archetypes folder and the file templates will not be generated.</p>
+<p>This might be the contents of the file</p>
+<pre tabindex="0"><code>+++
+title = &#39;My First Post&#39;
+date = 2023-11-15T23:52:11+05:30
+draft = true
++++
+## Introduction
+
+This is **bold** text, and this is *emphasized* text.
+
+Visit the [Hugo](https://gohugo.io) website!
+</code></pre><p><strong>Make sure the draft section is changed from true to false</strong></p>
+<h2 id="setting-up-a-theme">Setting up a theme<a hidden class="anchor" aria-hidden="true" href="#setting-up-a-theme">#</a></h2>
+<p>There are a lot of themes available on hugo to chech the themes visit the <a href="https://themes.gohugo.io/">hugo themes site</a>. Most of the themes have a github clone link available, it may start via this <code>git submodule add &lt;github link&gt;</code>. All the theme files are stored in the themes folder and the most important thing is to remember the official name of your theme. For example if your theme name is <code>ananke</code> then that themename must be configured in <code>hugo.toml</code>.</p>
+<h3 id="setting-up-hugotoml">Setting up <code>hugo.toml</code><a hidden class="anchor" aria-hidden="true" href="#setting-up-hugotoml">#</a></h3>
+<p>If you are using the latest version of hugo then there should be a file called <code>hugo.toml</code>. There are 2 crutial changes in it. <br>
+Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://yourdesireddomain.top-level-domain-name/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;ananke&#39;</span>
+</span></span></code></pre></div><p>First one is changing <code>baseURL</code> where the custom domain name and adding a new line of <code>theme</code> and adding the <strong>corresponding theme name</strong>. These two are the crutial changes, however you can also change the website title by using the <code>title</code> tag and the rendered language by <code>languageCode</code>.</p>
+<h2 id="creating-and-viewing-in-a-draft-server">Creating and viewing in a draft server<a hidden class="anchor" aria-hidden="true" href="#creating-and-viewing-in-a-draft-server">#</a></h2>
+<p>To run the site in the local server this command can be used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>or this can be used</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server --buildDrafts
+</span></span></code></pre></div><p>These two commands will display all the contnents of the site, including the drafts site (note that there was the section <code>drafts = true</code> in the markdown file). To check whether the file is marked as drafts or not and to check if it&rsquo;s render in the production site can be done by this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><h2 id="generating-the-site">Generating the site<a hidden class="anchor" aria-hidden="true" href="#generating-the-site">#</a></h2>
+<p>All the content generated till now is just the drafts and will not render in the actual site. To generate the site the following command can be used. Go to the site&rsquo;s root directory and type the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>This will generate the site in the <code>public</code> folder. To view the site in the local server the following command can be used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><h2 id="deploying-the-site">Deploying the site<a hidden class="anchor" aria-hidden="true" href="#deploying-the-site">#</a></h2>
+<p>The best way to deploy the site is to use a free service like Firebase, Netlify or Github pages. To deploy the site in github pages the following steps can be followed.</p>
+<ol>
+<li>
+<p>Create a new repository in github with the name <code>&lt;username&gt;.github.io</code></p>
+</li>
+<li>
+<p>Push the whole site to the repository. (Assuming git is installed and <code>git init</code> has been run in the root directory of the site.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git remote add origin &lt;your_github_link&gt;
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div></li>
+<li>
+<p>Go to the repository settings and scroll down to the <code>Github Pages</code> section and change the source to <strong>Github Actions (beta)</strong>.</p>
+</li>
+<li>
+<p>Create a file at this location <code>.github/workflows/hugo.yaml</code>.</p>
+</li>
+<li>
+<p>Copy the following code in the file. <strong>Change the hugo version to the local hugo version on your machine</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo site to Pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Runs on pushes targeting the default branch</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>	- <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">workflow_dispatch</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">permissions</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">contents</span>: <span style="color:#ae81ff">read</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">pages</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">id-token</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">concurrency</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">group</span>: <span style="color:#e6db74">&#34;pages&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">cancel-in-progress</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default to bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">defaults</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">run</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">shell</span>: <span style="color:#ae81ff">bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build job</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.120.2</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Hugo CLI</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">run</span>: <span style="color:#ae81ff">|</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ae81ff">wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">&amp;&amp;</span> <span style="color:#ae81ff">sudo dpkg -i ${{ runner.temp }}/hugo.deb          </span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Dart Sass</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">run</span>: <span style="color:#ae81ff">sudo snap install dart-sass</span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v4</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">submodules</span>: <span style="color:#ae81ff">recursive</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Pages</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">id</span>: <span style="color:#ae81ff">pages</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/configure-pages@v3</span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Node.js dependencies</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">run</span>: <span style="color:#e6db74">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build with Hugo</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># For maximum backward compatibility with Hugo modules</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">HUGO_ENVIRONMENT</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">HUGO_ENV</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">run</span>: <span style="color:#ae81ff">|</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ae81ff">hugo \</span>
+</span></span><span style="display:flex;"><span>			--<span style="color:#ae81ff">gc \</span>
+</span></span><span style="display:flex;"><span>			--<span style="color:#ae81ff">minify \</span>
+</span></span><span style="display:flex;"><span>			--<span style="color:#ae81ff">baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34;          </span>
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Upload artifact</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/upload-pages-artifact@v2</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">path</span>: <span style="color:#ae81ff">./public</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deployment job</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">name</span>: <span style="color:#ae81ff">github-pages</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">url</span>: <span style="color:#ae81ff">${{ steps.deployment.outputs.page_url }}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">needs</span>: <span style="color:#ae81ff">build</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>	- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">id</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/deploy-pages@v2</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Commit the changes and push it to the repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Added github actions&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div></li>
+<li>
+<p>Check the deployments section in the repository to check if the deployment is sucessful or not.
+8 . If the deployment is sucessful then the site should be available at <code>https://&lt;username&gt;.github.io</code></p>
+</li>
+</ol>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Hugo quickstart</a></li>
+<li><a href="https://themes.gohugo.io/">Hugo themes</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo deployment</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://aumpauskar.site/blog/">Aum&#39;s blogging site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

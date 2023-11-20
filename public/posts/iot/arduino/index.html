@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Arduino | Aum&#39;s blogging site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Arduino 14 IO, 6//
+ESP 8266 wifi
+Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi
+Q. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include &lt;dht.">
+<meta name="author" content="">
+<link rel="canonical" href="http://aumpauskar.site/blog/posts/iot/arduino/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://aumpauskar.site/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://aumpauskar.site/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://aumpauskar.site/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://aumpauskar.site/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://aumpauskar.site/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Arduino" />
+<meta property="og:description" content="Arduino 14 IO, 6//
+ESP 8266 wifi
+Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi
+Q. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include &lt;dht." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://aumpauskar.site/blog/posts/iot/arduino/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-16T10:37:04+05:30" />
+<meta property="article:modified_time" content="2023-11-16T10:37:04+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Arduino"/>
+<meta name="twitter:description" content="Arduino 14 IO, 6//
+ESP 8266 wifi
+Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi
+Q. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include &lt;dht."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://aumpauskar.site/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Arduino",
+      "item": "http://aumpauskar.site/blog/posts/iot/arduino/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Arduino",
+  "name": "Arduino",
+  "description": "Arduino 14 IO, 6//\nESP 8266 wifi\nSketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi\nQ. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include \u0026lt;dht.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Arduino 14 IO, 6//\nESP 8266 wifi\nSketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi\nQ. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include dht DHT; #define dhtPin 4 void setup() { Serial.begin(9600); } void loop() { // put your main code here, to run repeatedly: int val = DHT.read11(dhtPin); Serial.print(\"Temprature: \"); Serial.println(DHT.temperature); Serial.print(\"Humidity: \"); Serial.println(DHT.humidity); delay(2000); } If else // Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include dht DHT; #define dhtPin 4 const int ledVar = 13; void setup() { Serial.begin(9600); pinMode(ledVar, OUTPUT); } void loop() { // put your main code here, to run repeatedly: int val = DHT.read11(dhtPin); Serial.print(\"Temprature: \"); // float temp = DHT.temperature; if ( DHT.temperature \u003e 25.00) { digitalWrite(ledVar, HIGH); } else { digitalWrite(ledVar, LOW); } Serial.println(DHT.temperature); Serial.print(\"Humidity: \"); Serial.println(DHT.humidity); delay(2000); } Button operation const char led1 = A5; const char led2 = A4; const char led3 = A3; const char led4 = A2; const int b1 = 13; const int b2 = 12; const int b3 = 11; const int b4 = 10; int buttonState1, buttonState2, buttonState3, buttonState4; void setup() { // put your setup code here, to run once: pinMode(led1, OUTPUT); pinMode(led2, OUTPUT); pinMode(led3, OUTPUT); pinMode(led4, OUTPUT); pinMode(b1, INPUT); pinMode(b2, INPUT); pinMode(b3, INPUT); pinMode(b4, INPUT); Serial.begin(9600); } void loop() { // put your main code here, to run repeatedl if (digitalRead(b1) == LOW) { digitalWrite(led1, HIGH); digitalWrite(led2, LOW); digitalWrite(led3, LOW); digitalWrite(led4, LOW); } else if (digitalRead(b2) == LOW){ digitalWrite(led1, LOW); digitalWrite(led2, HIGH); digitalWrite(led3, LOW); digitalWrite(led4, LOW); } else if (digitalRead(b3) == LOW){ digitalWrite(led1, LOW); digitalWrite(led2, LOW); digitalWrite(led3, HIGH); digitalWrite(led4, LOW); } else if (digitalRead(b4) == LOW){ digitalWrite(led1, LOW); digitalWrite(led2, LOW); digitalWrite(led3, LOW); digitalWrite(led4, HIGH); } else { digitalWrite(led1, LOW); digitalWrite(led2, LOW); digitalWrite(led3, LOW); digitalWrite(led4, LOW); } } LCD #include const int rs = 6, en = 7, d4 = 5, d5 = 4, d6 = 3, d7 = 2; LiquidCrystal lcd(rs, en, d4, d5, d6, d7); void setup() { lcd.begin(16,2); lcd.print(\" Hello \"); lcd.setCursor(0,1); lcd.print(\" World \"); } void loop() { // put your main code here, to run repeatedly: lcd.noDisplay(); lcd.display(); delay(5000); } IoT internship project /*Problem statement Interface LCD with Arduino Uno to display the right to left scrolling message IoT Internship */ // title, problem statement, onjective, components, interfacing block diagram // libraries #include // programming constants const int rs = 6, en = 7, d4 = 5, d5 = 4, d6 = 3, d7 = 2; LiquidCrystal lcd(rs, en, d4, d5, d6, d7); int initialDelay = 1000; int pixelDelay = 300; char message[] = \"IoT Internship\"; void setup() { lcd.begin(16, 2); lcd.print(message); delay(initialDelay); } void loop() { // given count values to properly scroll through the screen for (int positionCounter = 0; positionCounter \u003c 13; positionCounter++) { lcd.scrollDisplayLeft(); delay(pixelDelay); } for (int positionCounter = 0; positionCounter \u003c 29; positionCounter++) { lcd.scrollDisplayRight(); delay(pixelDelay); } for (int positionCounter = 0; positionCounter \u003c 16; positionCounter++) { lcd.scrollDisplayLeft(); delay(pixelDelay); } delay(1000); } ",
+  "wordCount" : "541",
+  "inLanguage": "en",
+  "datePublished": "2023-11-16T10:37:04+05:30",
+  "dateModified": "2023-11-16T10:37:04+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://aumpauskar.site/blog/posts/iot/arduino/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aum's blogging site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://aumpauskar.site/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://aumpauskar.site/blog/" accesskey="h" title="Aum&#39;s blogging site (Alt + H)">Aum&#39;s blogging site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Arduino
+    </h1>
+    <div class="post-meta"><span title='2023-11-16 10:37:04 +0530 IST'>November 16, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="arduino">Arduino<a hidden class="anchor" aria-hidden="true" href="#arduino">#</a></h1>
+<p>14 IO, 6//<br>
+ESP 8266 wifi</p>
+<p>Sketch  - name of the program
+Setup - IO setup
+Loop - while loop
+DHT 11 sol moisture
+SR04 ultrasonic
+HC05 bluetooth
+ESP 01 wifi</p>
+<ul>
+<li>Q. LED blink</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> ledVar <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(ledVar, OUTPUT);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">digitalWrite</span>(ledVar, HIGH);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">digitalWrite</span>(ledVar, LOW);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dht.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dht DHT;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define dhtPin 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">9600</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// put your main code here, to run repeatedly:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> val <span style="color:#f92672">=</span> DHT.<span style="color:#a6e22e">read11</span>(dhtPin);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Temprature: &#34;</span>);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">println</span>(DHT.temperature);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Humidity: &#34;</span>);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">println</span>(DHT.humidity);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">2000</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>If else</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">// Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dht.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>dht DHT;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define dhtPin 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> ledVar <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">9600</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(ledVar, OUTPUT);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// put your main code here, to run repeatedly:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> val <span style="color:#f92672">=</span> DHT.<span style="color:#a6e22e">read11</span>(dhtPin);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Temprature: &#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// float temp = DHT.temperature;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> ( DHT.temperature <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25.00</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(ledVar, HIGH);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(ledVar, LOW);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">println</span>(DHT.temperature);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Humidity: &#34;</span>);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">println</span>(DHT.humidity);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">2000</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Button operation</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> led1 <span style="color:#f92672">=</span> A5;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> led2 <span style="color:#f92672">=</span> A4;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> led3 <span style="color:#f92672">=</span> A3;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> led4 <span style="color:#f92672">=</span> A2;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> b1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> b2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> b3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> b4 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> buttonState1, buttonState2, buttonState3, buttonState4;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// put your setup code here, to run once:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">pinMode</span>(led1, OUTPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(led2, OUTPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(led3, OUTPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(led4, OUTPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(b1, INPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(b2, INPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(b3, INPUT);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(b4, INPUT);
+</span></span><span style="display:flex;"><span>  Serial.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">9600</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// put your main code here, to run repeatedl
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">digitalRead</span>(b1) <span style="color:#f92672">==</span> LOW) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led1, HIGH);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led2, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led3, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led4, LOW);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">digitalRead</span>(b2) <span style="color:#f92672">==</span> LOW){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led1, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led2, HIGH);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led3, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led4, LOW);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">digitalRead</span>(b3) <span style="color:#f92672">==</span> LOW){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led1, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led2, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led3, HIGH);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led4, LOW);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">digitalRead</span>(b4) <span style="color:#f92672">==</span> LOW){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led1, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led2, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led3, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led4, HIGH);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led1, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led2, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led3, LOW);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(led4, LOW);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>LCD</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;LiquidCrystal.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> rs <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, en <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, d4 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, d5 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, d6 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, d7 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span> LiquidCrystal <span style="color:#a6e22e">lcd</span>(rs, en, d4, d5, d6, d7);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34; Hello &#34;</span>);
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">setCursor</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34; World &#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// put your main code here, to run repeatedly:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  lcd.<span style="color:#a6e22e">noDisplay</span>();
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">display</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">5000</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>IoT internship project</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/*Problem statement
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Interface LCD with Arduino Uno to display the right to left 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">scrolling message IoT Internship
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// title, problem statement, onjective, components, interfacing block diagram
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// libraries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;LiquidCrystal.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// programming constants
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> rs <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, en <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, d4 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, d5 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, d6 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, d7 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>LiquidCrystal <span style="color:#a6e22e">lcd</span>(rs, en, d4, d5, d6, d7);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> initialDelay <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> pixelDelay <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span> message[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IoT Internship&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>  lcd.<span style="color:#a6e22e">print</span>(message);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(initialDelay);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// given count values to properly scroll through the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> positionCounter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; positionCounter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">13</span>; positionCounter<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    lcd.<span style="color:#a6e22e">scrollDisplayLeft</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(pixelDelay);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> positionCounter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; positionCounter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">29</span>; positionCounter<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    lcd.<span style="color:#a6e22e">scrollDisplayRight</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(pixelDelay);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> positionCounter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; positionCounter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">16</span>; positionCounter<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    lcd.<span style="color:#a6e22e">scrollDisplayLeft</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(pixelDelay);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://aumpauskar.site/blog/">Aum&#39;s blogging site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

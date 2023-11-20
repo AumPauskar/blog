@@ -1,60 +1,180 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <title>Packages // Aum&#39;s blogging site</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.120.4">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="/blog/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+<!DOCTYPE html>
+<html lang="en" dir="auto">
 
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Packages"/>
-<meta name="twitter:description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Packages | Aum&#39;s blogging site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda">
+<meta name="author" content="">
+<link rel="canonical" href="http://aumpauskar.site/blog/posts/python/packages/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://aumpauskar.site/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://aumpauskar.site/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://aumpauskar.site/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://aumpauskar.site/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://aumpauskar.site/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <meta property="og:title" content="Packages" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Packages" />
 <meta property="og:description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aumpauskar.site/blog/posts/python/packages/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://aumpauskar.site/blog/posts/python/packages/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-16T10:08:09+05:30" />
 <meta property="article:modified_time" content="2023-11-16T10:08:09+05:30" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Packages"/>
+<meta name="twitter:description" content="Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda"/>
 
 
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="https://aumpauskar.site/blog/"><img class="app-header-avatar" src="/blog/avatar.jpg" alt="John Doe" /></a>
-      <span class="app-header-title">Aum&#39;s blogging site</span>
-      <p>Aum&#39;s blog</p>
-    </header>
-    <main class="app-container">
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class ="post-title">Packages</h1>
-      <div class="post-meta">
-        <div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-          Nov 16, 2023
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://aumpauskar.site/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Packages",
+      "item": "http://aumpauskar.site/blog/posts/python/packages/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Packages",
+  "name": "Packages",
+  "description": "Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda",
+  "keywords": [
+    
+  ],
+  "articleBody": "Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda\nGUi with Tkinter Tkinter is a package in python that aids graphical applications. Installation of Tkinter can be done by\npip install tkinter Creating a window from tkinter import * root = Tk() root.mainloop() Mainloop aids the program in running recursively. This can be further improved by naming each part of the root window.\nfrom tkinter import * # root properties root.title('rootname') root.geometry('640x360') root.mainloop() Widgets: Widgets are the graphical objects that are found in tkinter. This inclues the root window all the labels and the entry field etc. The widgets should be mapped to other objects in order to work which can be a canvas or the root window as a base window. Some example of widgets\nLabel: displays text or image on the screen Button: adds a clickable button to the application Entry: allows single line text input from user Text: allows multi-line text input and formatting Frame: holds and organizes other widgets Scale: provides a graphical slider to select a value Listbox: displays a list of items to choose from Checkbutton: displays a toggle button with two states (on/off) Radiobutton: displays a button that can be selected from a group of buttons Calling function in tkinter\nfrom tkinter import * root = Tk() def change(): label1.config(text = \"New text\") label1 = Label(root, text = \"Sample text\") label1.pack() button = Button(root, command=change) root.mainloop() An application made in Tkinter\n# importing main module from tkinter import * # root functionalities root = Tk() root.title('Calculator') root.geometry('640x360') # will house the display canvas1 = Canvas(root) canvas1.pack() # will house the buttons canvas2 = Canvas(root) canvas2.pack() num1 = 0 num2 = 0 # ------------------------------ # functions def fnInitialize(): global num1, num2 num1 = float(entryNum1.get()) num2 = float(entryNum2.get()) def fnAddNum(): fnInitialize() ans = num1 + num2 labelAnsVal.config(text = f\"Answer: {str(round(ans, 2))}\") def fnSubNum(): fnInitialize() ans = num1 - num2 labelAnsVal.config(text = f\"Answer: {str(round(ans, 2))}\") def fnMulNum(): fnInitialize() ans = num1 * num2 labelAnsVal.config(text = f\"Answer: {str(round(ans, 2))}\") def fnDivNum(): fnInitialize() ans = num1 / num2 labelAnsVal.config(text = f\"Answer: {str(round(ans, 2))}\") # ------------------------------ # widgets # first number prompt lablelNum1 = Label(canvas1, text = \"Enter num 1:\") lablelNum1.grid(row = 1, column = 1) # first number will be here entryNum1 = Entry(canvas1) entryNum1.grid(row = 1, column = 2) # second number prompt lablelNum2 = Label(canvas1, text = \"Enter num 2:\") lablelNum2.grid(row = 2, column = 1) # second number will be here entryNum2 = Entry(canvas1) entryNum2.grid(row = 2, column = 2) # answer prompt lablelAns = Label(canvas1, text = \"Answer\") lablelAns.grid(row = 3, column = 1) # answer label labelAnsVal = Label(canvas1) labelAnsVal.grid(row = 3, column = 2) # addition button ButtonAdd = Button(canvas2, text = \"Add\", command = fnAddNum) ButtonAdd.grid(row = 1, column = 1) # subtraction button ButtonSub = Button(canvas2, text = \"Sub\", command = fnSubNum) ButtonSub.grid(row = 1, column = 2) # multiplication button ButtonMul = Button(canvas2, text = \"Mul\", command = fnMulNum) ButtonMul.grid(row = 1, column = 3) # division button ButtonDiv = Button(canvas2, text = \"Div\", command = fnDivNum) ButtonDiv.grid(row = 1, column = 4) # looping trough the program root.mainloop() Numpy The numpy library is a python library that can be used to manupulate and work on complex numberical applications. NumPy supports numpy array which is ideal to perform large array operations since the faster access time. The NumPy library also supports broadcasting which is performing an operation throughout the array without using a for loop.\nN dimentional array (Nd Array) Why is NumPy faster than lists NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently. This behavior is called locality of reference in computer science. This is the main reason why NumPy is faster than lists. Also it is optimized to work with latest CPU architectures. Operating on the elements in a list can only be done through iterative loops, which is computationally inefficient in Python. The NumPy package enables users to overcome the shortcomings of the Python lists by providing the data storage object called ndarray The ndarray is similar to lists, but rather than being highly flexible by storing different types of objects in one list, only the same type of element can be stored in each column. For example, with a Python list, you could make the first element a list and the second another list or dictionary. With NumPy arrays, you can only store the same type of element, e.g., all elements must be floats, integers, or strings. Despite this limitation, ndarray wins hands down when it comes to operation times, as the operations are sped up significantly. Creating ND array import numpy as np nDarr = np.array(5) # creating a scalar array nDarr1 = np.array([5,6]) # creating a 1d array nDarr2 = np.array([[1, 2], [3, 4]]) # creating a 2d array # finding the shape of the arrays print(nDarr.ndim) print(nDarr1.ndim) print(nDarr2.ndim) # finding the dimentions of the arrays print(nDarr.shape) print(nDarr1.shape) print(nDarr2.shape) Slicing the ND array import numpy as np nDarr = np.array(5) # creating a scalar array nDarr1 = np.array([5,6]) # creating a 1d array nDarr2 = np.array([[1, 2], [3, 4]]) # creating a 2d array print(nDarr1[0:1]) The slicing works in a similar fashion as compared to for loops (except the step). You can nest string slicing to reduce the dimentions of the nDarray.\n",
+  "wordCount" : "968",
+  "inLanguage": "en",
+  "datePublished": "2023-11-16T10:08:09+05:30",
+  "dateModified": "2023-11-16T10:08:09+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://aumpauskar.site/blog/posts/python/packages/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aum's blogging site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://aumpauskar.site/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://aumpauskar.site/blog/" accesskey="h" title="Aum&#39;s blogging site (Alt + H)">Aum&#39;s blogging site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-          5 min read
-        </div>
-      </div>
-    </header>
-    <div class="post-content">
-      <h1 id="chapter-summary---unit-5">Chapter summary - Unit 5</h1>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Packages
+    </h1>
+    <div class="post-meta"><span title='2023-11-16 10:08:09 +0530 IST'>November 16, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="chapter-summary---unit-5">Chapter summary - Unit 5<a hidden class="anchor" aria-hidden="true" href="#chapter-summary---unit-5">#</a></h1>
 <p><strong>Packages:</strong>
 How to build a GUI Program: Create a GUI that handles an event, more skills for working
 with components; <br>
@@ -64,10 +184,10 @@ slices, Boolean Indexing, Transposing Arrays and Swapping Axes; <br>
 <strong>Getting started with Pandas:</strong> Introduction to Pandas Data Structures, Summarizing and
 Computing Descriptive Statistics, Handling missing data; <br>
 <strong>Plotting and Visualization:</strong> A Brief matplotlib API Primer, Plotting Functions in panda</p>
-<h2 id="gui-with-tkinter">GUi with Tkinter</h2>
+<h2 id="gui-with-tkinter">GUi with Tkinter<a hidden class="anchor" aria-hidden="true" href="#gui-with-tkinter">#</a></h2>
 <p>Tkinter is a package in python that aids graphical applications. Installation of Tkinter can be done by</p>
 <pre tabindex="0"><code>pip install tkinter
-</code></pre><h3 id="creating-a-window">Creating a window</h3>
+</code></pre><h3 id="creating-a-window">Creating a window<a hidden class="anchor" aria-hidden="true" href="#creating-a-window">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
 </span></span><span style="display:flex;"><span>root <span style="color:#f92672">=</span> Tk()
 </span></span><span style="display:flex;"><span>
@@ -198,9 +318,9 @@ Computing Descriptive Statistics, Handling missing data; <br>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># looping trough the program</span>
 </span></span><span style="display:flex;"><span>root<span style="color:#f92672">.</span>mainloop()
-</span></span></code></pre></div><h2 id="numpy">Numpy</h2>
+</span></span></code></pre></div><h2 id="numpy">Numpy<a hidden class="anchor" aria-hidden="true" href="#numpy">#</a></h2>
 <p>The numpy library is a python library that can be used to manupulate and work on complex numberical applications. NumPy supports numpy array which is ideal to perform large array operations since the faster access time. The NumPy library also supports broadcasting which is performing an operation throughout the array without using a for loop.</p>
-<h3 id="n-dimentional-array-nd-array">N dimentional array (Nd Array)</h3>
+<h3 id="n-dimentional-array-nd-array">N dimentional array (Nd Array)<a hidden class="anchor" aria-hidden="true" href="#n-dimentional-array-nd-array">#</a></h3>
 <ul>
 <li>Why is NumPy faster than lists</li>
 </ul>
@@ -242,12 +362,84 @@ Computing Descriptive Statistics, Handling missing data; <br>
 </span></span><span style="display:flex;"><span>print(nDarr1[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>])
 </span></span></code></pre></div><p>The slicing works in a similar fashion as compared to for loops (except the step). You can nest string slicing to reduce the dimentions of the nDarray.</p>
 
-    </div>
-    <div class="post-footer">
-      
-    </div>
-  </article>
 
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
-  </body>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://aumpauskar.site/blog/">Aum&#39;s blogging site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

@@ -1,7 +1,7 @@
 +++
 title = 'Arm'
 date = 2023-11-20T12:59:45+05:30
-draft = true
+draft = false
 +++
 
 # ARM

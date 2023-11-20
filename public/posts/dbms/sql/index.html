@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Sql | Aum&#39;s blogging site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.
+Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke">
+<meta name="author" content="">
+<link rel="canonical" href="http://aumpauskar.site/blog/posts/dbms/sql/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://aumpauskar.site/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://aumpauskar.site/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://aumpauskar.site/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://aumpauskar.site/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://aumpauskar.site/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Sql" />
+<meta property="og:description" content="Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.
+Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://aumpauskar.site/blog/posts/dbms/sql/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-16T14:41:25+05:30" />
+<meta property="article:modified_time" content="2023-11-16T14:41:25+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sql"/>
+<meta name="twitter:description" content="Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.
+Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://aumpauskar.site/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Sql",
+      "item": "http://aumpauskar.site/blog/posts/dbms/sql/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sql",
+  "name": "Sql",
+  "description": "Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.\nGetting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke",
+  "keywords": [
+    
+  ],
+  "articleBody": "Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.\nGetting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke\nBasic commands Showing all the databases There are diffenet databases that resides inside your computer at any point of time. Using this command shows all the avalable databases on your local machine. SHOW DATABASES; Creating a database To use or import and use a database, a database should always be created CREATE DATABASE DATABASE_NAME Using a database To view/edit/modify table data the use keyword is used to enter a database. USE DATABASE_NAME Showing all the tables within a table There can be multiple table with a database. SHOW TABLES; Showing all the data from a database The * keyword is for all in MySQL, you can also use individual column names to show the data. SELECT * FROM TABLE_NAME; Fully deleting a database drop database There are two types of deletion in SQL one is delete which just deletes the values inside the table and not deletes the whole table, meanwhile using the drop keyword deletes the table along with the table structure. DROP DATABASE_NAME; Fully deleting a table drop table \\ DROP TABLE_NAME; Creating tables in MySQL Tables can be created in MySQL by using the create command.\nCREATE TABLE TABLE_NAME ( COLUMN_NAME DATATYPE CONSTRAINTS COLUMN_NAME DATATYPE CONSTRAINTS COLUMN_NAME DATATYPE CONSTRAINTS PRIMARY KEY (COLUMN_NAME)); Note that using constraints and primary key is optional, but highly reccommended since they reduce the potential errors in the future.\nDatatypes in MySQL There are 3 major datatypes in MySQL namely string, numeric and datetime datatypes.\nSrno Name Use Type 1 CHAR(SIZE) Stores a fixed length charecter string 2 VARCHAR(SIZE) Stores a variable length charecter string 3 TEXT(SIZE) Stores text string 4 INT Stores integer numeric 5 FLOAT(PRECISION) Stores float numeric 6 DATE Stores date in YYYY/MM/DD format datetime 7 DATETIME Stores date and time datetime 8 TIMESTAMP Stores time datetime Wildcards Modifying tables A SQL table can be modified by the use of the alter command.\nAdding a column ALTER TABLE table_name ADD column_name datatype; Removing a column ALTER TABLE table_name DROP column_name; Renaming a column ALTER TABLE table_name RENAME COLUMN old_name to new_name; Changing column datatype ALTER TABLE table_name MODIFY COLUMN column_name datatype; Updating and deleting values Command for deleting This deletes a column from the sql table DELETE FROM TABLE_NAME WHERE VALUE = ‘123456789’; This deletes all the values but retains the table structure\nDELETE FROM TABLE_NAME; College stuff Problem statement\nRetrieve the details of all employees working in the company. SELECT * FROM EMPL; Retrive the firstname, lastname, ssn, salary of all the employees. SELECT FNAME, LNAME, SSN, SAL FROM EMPL; Display the details of all the employees whose SSN is H55. SELECT * FROM EMPL WHERE SSN = H55; Problem statement\nFind the sum of salaries of all the employees, the max sal, min sal and the avg sal SELECT MAX(SAL) FROM EMPL; SELECT AVG(SAL) FROM EMPL; SELECT MIN(SAL) FROM EMPL; Retrieve the total no of employes in the company. SELECT COUNT(*) FROM EMPL; Retrieve the total no of employes in the research department SELECT * FROM EMPL WHERE DEPT = \"RESEARCH\"; Count the number of distinct salary values in the database SELECT COUNT(DISTINCT SAL) FROM EMPL; Updating SQL tables\nUPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition; Extra stuff redis, sql vs nosql, graph database\nREDIS: Redis (remote dictionary server) is an in memory database highly optimized to store and serve data which needs to be retrived and modified faster, something like metadata of a server. Relational algebra These are the following signs used in relational algebra and the use of them.\nThe Select operator: The select operator is used in horizontal partitioning i.e. showing all the rows and columns selected its symbol is $\\sigma$. Select is commutative, although using two or more select statements is very seldom. The project operator: The project operator is used to show all rows selected however very rarely this includes all columns and selected columns need to be specified. Its symbol is $\\pi$. Project is not commitative. Rename operation: The rename operation is denoted by the symbok $\\rho$. Union operator: The union operator is denoted by the symbol $\\cup$. Intersection operator: The intersection operator is denoted by the symbol $\\cap$. Set difference operator: The set difference operator is denoted by the symbol -. Join operator: The join operator is denoted by the symbok $\\bowtie$. The operator shown here is the natural jon, for outer join there are 3 types, namely left outer join, right outer join and full outer join. There also exists another function called as equijoin. Aggregate functions: The F symbol is used to display aggregate function. Division: Division can be used to divide the rows and columns where the argument or the data in column 1 matched with column 2. Anomalies Database anomalies There are 3 kinds of database anomalies, update anomaly, insert anomaly and delete anomaly. Changing of data using update may change the values for all the tuples which inlclude the same key. Same with insert with the databases being not assigned. Delete causing all the tuples related to a certain value being deleted.\nWays to reduce this Minimize NULL values There should not be any spurious values (repeted values) Join relations using equijoin Partial Dependency: When an non-key attribute is determined by a part, but not the whole, of a COMPOSITE primary key. Transitive Dependency: When a non-key attribute determines another non-key attribute. Normalization of data Data and database creation may be a tedious task with multiple tables, multiple values and these stuff may bring out a error in the long term of the lifeycle of the program. This might also be suboptimal in the lifespan of the program. To resolve this we use normal forms and normalisation of data there are 4 forms of normalization that will be covered in this part and will follow ACID.\n1NF: Atomicity refers to the deletion of multivalued attribute. 2NF: Complete dependency refers to the removal of any partial dependency of one column to other. 3NF: Transitive dependency refers to the removal of any transitive properties in which BCNF: BCNF states that the left side of any key must be candidate key or super key. Transactions Singleuser Multiusers Concurrency Interleaved processing Parallel processing What is a transaction? Why is transaction recovery needed?\nType of transaction failure\nComputer failure Transaction failure Local errors Concurrency enforcement Disk failure Physical problem Desirable properties of transaction\nAtomicity Consistency Isolation Durablity Possible problems\nLost update problem Remproary update problem Incorrect summary problem 2PL\nGrowing phase Shrinking phase Lock based protocols\nShared lock Exclusive lock Composite vs candiadte key vs super key\nPL/SQL PL/SQL stands for procedural language sql developed by oracle in the 1980s to give procedural generated sql code. This can be used in mysql in the following way.\nDELIMITER // CREATE PROCEDURE HelloWorld() BEGIN SELECT 'Hello, World!' AS Message; END // DELIMITER ; -- To execute the stored procedure and see the output CALL HelloWorld(); However before writing the code the user must select the database on which the PLSQL should be run upon whether operating on that very database or working independently.\nCode for generating fibonacci series in PLSQL\nDELIMITER // CREATE PROCEDURE GenerateFibonacci(IN n INT) BEGIN DECLARE a INT DEFAULT 0; DECLARE b INT DEFAULT 1; DECLARE i INT DEFAULT 2; IF n = 0 THEN SELECT 0 AS Fibonacci; ELSEIF n = 1 THEN SELECT 0 AS Fibonacci UNION ALL SELECT 1; ELSE SELECT 0 AS Fibonacci; SELECT 1 AS Fibonacci; WHILE i \u003c= n DO SET @temp := a + b; SET a := b; SET b := @temp; SELECT @temp AS Fibonacci; SET i := i + 1; END WHILE; END IF; END // DELIMITER ; CALL GenerateFibonacci(10); -- Replace 10 with the desired input value Note that when you are declaring variables the name of the variable comes first followed by the variable type. The delimiter only works if you are using mysql and if an older oracle database is being used then it is not needed.\nCode to check whether a number is prime or not\nDELIMITER // CREATE FUNCTION IsPrime(number INT) RETURNS BOOLEAN BEGIN DECLARE i INT; IF number \u003c= 1 THEN RETURN FALSE; END IF; IF number \u003c= 3 THEN RETURN TRUE; END IF; IF number % 2 = 0 OR number % 3 = 0 THEN RETURN FALSE; END IF; SET i = 5; WHILE i * i \u003c= number DO IF number % i = 0 OR number % (i + 2) = 0 THEN RETURN FALSE; END IF; SET i = i + 6; END WHILE; RETURN TRUE; END // DELIMITER ; -- call function here SELECT IsPrime(17); -- Replace 17 with the number you want to check Loops in PL/SQL In MySQL, you can use loops to repeat a block of code multiple times until a certain condition is met. There are two main types of loops in MySQL: WHILE loops and LOOP loops.\nWHILE Loops:\nA WHILE loop repeats a block of code as long as a specified condition evaluates to TRUE. Here’s the basic structure of a WHILE loop:\nWHILE condition DO -- Code to be executed repeatedly END WHILE; For example, you can use a WHILE loop to iterate over a set of rows in a table:\nDECLARE counter INT DEFAULT 0; WHILE counter \u003c 10 DO -- Code to be executed repeatedly SET counter = counter + 1; END WHILE; In this example, the loop will continue executing as long as the counter variable is less than 10.\nLOOP Loops:\nA LOOP loop is an unconditional loop that continues to execute until you explicitly use the LEAVE statement to exit the loop. Here’s the basic structure of a LOOP loop:\nLOOP -- Code to be executed repeatedly IF condition THEN LEAVE; END IF; END LOOP; You can use a LOOP loop when you need to perform an action at least once and then decide whether to continue or exit based on a condition.\nHere’s an example:\nDECLARE counter INT DEFAULT 0; LOOP -- Code to be executed repeatedly SET counter = counter + 1; IF counter \u003e= 10 THEN LEAVE; END IF; END LOOP; In this example, the loop will execute at least once and then exit when the counter variable is greater than or equal to 10.\nLoops can be useful in MySQL for tasks such as iterating through result sets, implementing control structures, and performing repetitive calculations. However, it’s important to use them carefully to avoid infinite loops, which can lead to high resource consumption and system instability. Always ensure that your loop conditions will eventually evaluate to FALSE to exit the loop.\nProgram for generating fibonacci serie\n",
+  "wordCount" : "1859",
+  "inLanguage": "en",
+  "datePublished": "2023-11-16T14:41:25+05:30",
+  "dateModified": "2023-11-16T14:41:25+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://aumpauskar.site/blog/posts/dbms/sql/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aum's blogging site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://aumpauskar.site/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://aumpauskar.site/blog/" accesskey="h" title="Aum&#39;s blogging site (Alt + H)">Aum&#39;s blogging site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Sql
+    </h1>
+    <div class="post-meta"><span title='2023-11-16 14:41:25 +0530 IST'>November 16, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="sql-documentation">Sql documentation<a hidden class="anchor" aria-hidden="true" href="#sql-documentation">#</a></h1>
+<h2 id="installation">Installation<a hidden class="anchor" aria-hidden="true" href="#installation">#</a></h2>
+<p>The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an <a href="https://www.programiz.com/sql/online-compiler/">online sql emulator</a>, the best way is to use a <a href="https://dev.mysql.com/downloads/installer/">MySQL server</a>.</p>
+<h2 id="getting-started-with-mysql">Getting started with MySQL<a hidden class="anchor" aria-hidden="true" href="#getting-started-with-mysql">#</a></h2>
+<p>All the operations in SQL can be classified into 3 types <br>
+<strong>DDL:</strong> Data definition language includes operation like <strong>create, alter, drop</strong> <br>
+<strong>DML:</strong> Data manipulation language includes operation like <strong>select, insert, update, delete</strong> <br>
+<strong>DCL:</strong> Data control language includes operations like <strong>commit, rollback, grant, revoke</strong></p>
+<h2 id="basic-commands">Basic commands<a hidden class="anchor" aria-hidden="true" href="#basic-commands">#</a></h2>
+<ol>
+<li>Showing all the databases <br>
+There are diffenet databases that resides inside your computer at any point of time. Using this command shows all the avalable databases on your local machine.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SHOW</span> DATABASES;
+</span></span></code></pre></div><ol start="2">
+<li>Creating a database <br>
+To use or import and use a database, a database should always be created</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> DATABASE_NAME
+</span></span></code></pre></div><ol start="3">
+<li>Using a database <br>
+To view/edit/modify table data the <em>use</em> keyword is used to enter a database.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>USE DATABASE_NAME
+</span></span></code></pre></div><ol start="4">
+<li>Showing all the tables within a table <br>
+There can be multiple table with a database.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SHOW</span> TABLES;
+</span></span></code></pre></div><ol start="5">
+<li>Showing all the data from a database <br>
+The <em>*</em> keyword is for all in MySQL, you can also use individual column names to show the data.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">TABLE_NAME</span>;
+</span></span></code></pre></div><ol start="6">
+<li>Fully deleting a database <strong>drop database</strong> <br>
+There are two types of deletion in SQL one is <em>delete</em> which just deletes the values inside the table and not deletes the whole table, meanwhile using the <em>drop</em> keyword deletes the table along with the table structure.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> DATABASE_NAME;
+</span></span></code></pre></div><ol start="6">
+<li>Fully deleting a table <strong>drop table</strong> \</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE_NAME</span>;
+</span></span></code></pre></div><h2 id="creating-tables-in-mysql">Creating tables in MySQL<a hidden class="anchor" aria-hidden="true" href="#creating-tables-in-mysql">#</a></h2>
+<p>Tables can be created in MySQL by using the create command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">TABLE_NAME</span> (
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COLUMN_NAME</span> DATATYPE <span style="color:#66d9ef">CONSTRAINTS</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COLUMN_NAME</span> DATATYPE <span style="color:#66d9ef">CONSTRAINTS</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COLUMN_NAME</span> DATATYPE <span style="color:#66d9ef">CONSTRAINTS</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#66d9ef">COLUMN_NAME</span>));
+</span></span></code></pre></div><p>Note that using constraints and primary key is optional, but highly reccommended since they reduce the potential errors in the future.</p>
+<h2 id="datatypes-in-mysql">Datatypes in MySQL<a hidden class="anchor" aria-hidden="true" href="#datatypes-in-mysql">#</a></h2>
+<p>There are 3 major datatypes in MySQL namely string, numeric and datetime datatypes.</p>
+<table>
+<thead>
+<tr>
+<th>Srno</th>
+<th>Name</th>
+<th>Use</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CHAR(SIZE)</td>
+<td>Stores a fixed length charecter</td>
+<td>string</td>
+</tr>
+<tr>
+<td>2</td>
+<td>VARCHAR(SIZE)</td>
+<td>Stores a variable length charecter</td>
+<td>string</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TEXT(SIZE)</td>
+<td>Stores text</td>
+<td>string</td>
+</tr>
+<tr>
+<td>4</td>
+<td>INT</td>
+<td>Stores integer</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>5</td>
+<td>FLOAT(PRECISION)</td>
+<td>Stores float</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>6</td>
+<td>DATE</td>
+<td>Stores date in YYYY/MM/DD format</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td>7</td>
+<td>DATETIME</td>
+<td>Stores date and time</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td>8</td>
+<td>TIMESTAMP</td>
+<td>Stores time</td>
+<td>datetime</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildcards">Wildcards<a hidden class="anchor" aria-hidden="true" href="#wildcards">#</a></h2>
+<h2 id="modifying-tables">Modifying tables<a hidden class="anchor" aria-hidden="true" href="#modifying-tables">#</a></h2>
+<p>A SQL table can be modified by the use of the alter command.</p>
+<ol>
+<li>Adding a column</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ADD</span> <span style="color:#66d9ef">column_name</span> datatype;
+</span></span></code></pre></div><ol start="2">
+<li>Removing a column</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">column_name</span>;
+</span></span></code></pre></div><ol start="3">
+<li>Renaming a column</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">RENAME</span> <span style="color:#66d9ef">COLUMN</span> old_name <span style="color:#66d9ef">to</span> new_name;
+</span></span></code></pre></div><ol start="4">
+<li>Changing column datatype</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">table_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">MODIFY</span> <span style="color:#66d9ef">COLUMN</span> <span style="color:#66d9ef">column_name</span> datatype;
+</span></span></code></pre></div><h2 id="updating-and-deleting-values">Updating and deleting values<a hidden class="anchor" aria-hidden="true" href="#updating-and-deleting-values">#</a></h2>
+<ul>
+<li>Command for deleting
+This deletes a column from the sql table</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">TABLE_NAME</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> VALUE <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">‘</span><span style="color:#ae81ff">123456789</span><span style="color:#960050;background-color:#1e0010">’</span>;
+</span></span></code></pre></div><p>This deletes all the values but retains the table structure</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">TABLE_NAME</span>;
+</span></span></code></pre></div><h2 id="college-stuff">College stuff<a hidden class="anchor" aria-hidden="true" href="#college-stuff">#</a></h2>
+<p>Problem statement</p>
+<ol>
+<li>Retrieve the details of all employees working in the company.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span></code></pre></div><ol start="2">
+<li>Retrive the firstname, lastname, ssn, salary of all the employees.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> FNAME, LNAME, SSN, SAL <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span></code></pre></div><ol start="3">
+<li>Display the details of all the employees whose SSN is H55.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> EMPL <span style="color:#66d9ef">WHERE</span> SSN <span style="color:#f92672">=</span> H55;
+</span></span></code></pre></div><p>Problem statement</p>
+<ol>
+<li>Find the sum of salaries of all the employees, the max sal, min sal and the avg sal</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(SAL) <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">AVG</span>(SAL) <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MIN</span>(SAL) <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span></code></pre></div><ol start="2">
+<li>Retrieve the total no of employes in the company.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span></code></pre></div><ol start="3">
+<li>Retrieve the total no of employes in the research department</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> EMPL <span style="color:#66d9ef">WHERE</span> DEPT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;RESEARCH&#34;</span>;
+</span></span></code></pre></div><ol start="4">
+<li>Count the number of distinct salary values in the database</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">DISTINCT</span> SAL) <span style="color:#66d9ef">FROM</span> EMPL;
+</span></span></code></pre></div><p>Updating SQL tables</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> <span style="color:#66d9ef">table_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> column1 <span style="color:#f92672">=</span> value1, column2 <span style="color:#f92672">=</span> value2, ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> condition;
+</span></span></code></pre></div><h2 id="extra-stuff">Extra stuff<a hidden class="anchor" aria-hidden="true" href="#extra-stuff">#</a></h2>
+<p>redis, sql vs nosql, graph database</p>
+<ul>
+<li><strong>REDIS:</strong> Redis (remote dictionary server) is an in memory database highly optimized to store and serve data which needs to be retrived and modified faster, something like metadata of a server.</li>
+</ul>
+<h2 id="relational-algebra">Relational algebra<a hidden class="anchor" aria-hidden="true" href="#relational-algebra">#</a></h2>
+<p>These are the following signs used in relational algebra and the use of them.</p>
+<ol>
+<li>The Select operator: The select operator is used in horizontal partitioning i.e. showing all the rows and columns selected its symbol is <strong>$\sigma$</strong>. Select is commutative, although using two or more select statements is very seldom.</li>
+<li>The project operator: The project operator is used to show all rows selected however very rarely this includes all columns and selected columns need to be specified. Its symbol is <strong>$\pi$</strong>. Project is not commitative.</li>
+<li>Rename operation: The rename operation is denoted by the symbok <strong>$\rho$</strong>.</li>
+<li>Union operator: The union operator is denoted by the symbol <strong>$\cup$</strong>.</li>
+<li>Intersection operator: The intersection operator is denoted by the symbol <strong>$\cap$</strong>.</li>
+<li>Set difference operator: The set difference operator is denoted by the symbol <strong>-</strong>.</li>
+<li>Join operator: The join operator is denoted by the symbok <strong>$\bowtie$</strong>. The operator shown here is the natural jon, for outer join there are 3 types, namely left outer join, right outer join and full outer join. There also exists another function called as equijoin.</li>
+<li>Aggregate functions: The <strong>F</strong> symbol is used to display aggregate function.</li>
+<li>Division: Division can be used to divide the rows and columns where the argument or the data in column 1 matched with column 2.</li>
+</ol>
+<h2 id="anomalies">Anomalies<a hidden class="anchor" aria-hidden="true" href="#anomalies">#</a></h2>
+<p>Database anomalies
+There are 3 kinds of database anomalies, update anomaly, insert anomaly and delete anomaly. Changing of data using update may change the values for all the tuples which inlclude the same key. Same with insert with the databases being not assigned. Delete causing all the tuples related to a certain value being deleted.</p>
+<ul>
+<li>Ways to reduce this</li>
+</ul>
+<ol>
+<li>Minimize NULL values</li>
+<li>There should not be any spurious values (repeted values)</li>
+<li>Join relations using equijoin</li>
+</ol>
+<ul>
+<li>Partial Dependency: When an non-key attribute is determined by a part, but not the whole, of a COMPOSITE primary key.</li>
+<li>Transitive Dependency: When a non-key attribute determines another non-key attribute.</li>
+</ul>
+<h2 id="normalization-of-data">Normalization of data<a hidden class="anchor" aria-hidden="true" href="#normalization-of-data">#</a></h2>
+<p>Data and database creation may be a tedious task with multiple tables, multiple values and these stuff may bring out a error in the long term of the lifeycle of the program. This might also be suboptimal in the lifespan of the program. To resolve this we use normal forms and normalisation of data there are 4 forms of normalization that will be covered in this part and will follow <strong>ACID</strong>.</p>
+<ol>
+<li>1NF: <strong>Atomicity</strong> refers to the deletion of multivalued attribute.</li>
+<li>2NF: <strong>Complete</strong> dependency refers to the removal of any partial dependency of one column to other.</li>
+<li>3NF: Transitive dependency refers to the removal of any transitive properties in which</li>
+<li>BCNF: BCNF states that the left side of any key must be candidate key or super key.</li>
+</ol>
+<h2 id="transactions">Transactions<a hidden class="anchor" aria-hidden="true" href="#transactions">#</a></h2>
+<ul>
+<li>Singleuser</li>
+<li>Multiusers</li>
+<li>Concurrency
+<ul>
+<li>Interleaved processing</li>
+<li>Parallel processing</li>
+</ul>
+</li>
+</ul>
+<p><strong>What is a transaction?</strong> <br>
+<strong>Why is transaction recovery needed?</strong></p>
+<ul>
+<li>
+<p>Type of transaction failure</p>
+<ul>
+<li>Computer failure</li>
+<li>Transaction failure</li>
+<li>Local errors</li>
+<li>Concurrency enforcement</li>
+<li>Disk failure</li>
+<li>Physical problem</li>
+</ul>
+</li>
+<li>
+<p>Desirable properties of transaction</p>
+<ul>
+<li>Atomicity</li>
+<li>Consistency</li>
+<li>Isolation</li>
+<li>Durablity</li>
+</ul>
+</li>
+<li>
+<p>Possible problems</p>
+<ul>
+<li>Lost update problem</li>
+<li>Remproary update problem</li>
+<li>Incorrect summary problem</li>
+</ul>
+</li>
+<li>
+<p>2PL</p>
+<ul>
+<li>Growing phase</li>
+<li>Shrinking phase</li>
+</ul>
+</li>
+<li>
+<p>Lock based protocols</p>
+<ul>
+<li>Shared lock</li>
+<li>Exclusive lock</li>
+</ul>
+</li>
+<li>
+<p>Composite vs candiadte key vs super key</p>
+</li>
+</ul>
+<h2 id="plsql">PL/SQL<a hidden class="anchor" aria-hidden="true" href="#plsql">#</a></h2>
+<p>PL/SQL stands for procedural language  sql developed by oracle in the 1980s to give procedural generated sql code. This can be used in mysql in the following way.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">PROCEDURE</span> HelloWorld()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SELECT</span> <span style="color:#e6db74">&#39;Hello, World!&#39;</span> <span style="color:#66d9ef">AS</span> Message;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- To execute the stored procedure and see the output
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CALL</span> HelloWorld();
+</span></span></code></pre></div><p>However before writing the code the user must select the database on which the PLSQL should be run upon whether operating on that very database or working independently.</p>
+<p>Code for generating fibonacci series in PLSQL</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">PROCEDURE</span> GenerateFibonacci(<span style="color:#66d9ef">IN</span> n INT)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DECLARE</span> a INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DECLARE</span> b INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DECLARE</span> i INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> n <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SELECT</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">AS</span> Fibonacci;
+</span></span><span style="display:flex;"><span>    ELSEIF n <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SELECT</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">AS</span> Fibonacci <span style="color:#66d9ef">UNION</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SELECT</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">AS</span> Fibonacci;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SELECT</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">AS</span> Fibonacci;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        WHILE i <span style="color:#f92672">&lt;=</span> n <span style="color:#66d9ef">DO</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">SET</span> <span style="color:#f92672">@</span>temp :<span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> b;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">SET</span> a :<span style="color:#f92672">=</span> b;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">SET</span> b :<span style="color:#f92672">=</span> <span style="color:#f92672">@</span>temp;
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">@</span>temp <span style="color:#66d9ef">AS</span> Fibonacci;
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">SET</span> i :<span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">END</span> WHILE;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CALL</span> GenerateFibonacci(<span style="color:#ae81ff">10</span>); <span style="color:#75715e">-- Replace 10 with the desired input value
+</span></span></span></code></pre></div><p>Note that when you are declaring variables the name of the variable comes first followed by the variable type. The delimiter only works if you are using mysql and if an older oracle database is being used then it is not needed.</p>
+<p>Code to check whether a number is prime or not</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">FUNCTION</span> IsPrime(number INT) <span style="color:#66d9ef">RETURNS</span> BOOLEAN
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DECLARE</span> i INT;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">RETURN</span> <span style="color:#66d9ef">FALSE</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> number <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">RETURN</span> <span style="color:#66d9ef">TRUE</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> number <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">OR</span> number <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">RETURN</span> <span style="color:#66d9ef">FALSE</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SET</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    WHILE i <span style="color:#f92672">*</span> i <span style="color:#f92672">&lt;=</span> number <span style="color:#66d9ef">DO</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">IF</span> number <span style="color:#f92672">%</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">OR</span> number <span style="color:#f92672">%</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">RETURN</span> <span style="color:#66d9ef">FALSE</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SET</span> i <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> WHILE;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">RETURN</span> <span style="color:#66d9ef">TRUE</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> <span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DELIMITER</span> ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- call function here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SELECT</span> IsPrime(<span style="color:#ae81ff">17</span>); <span style="color:#75715e">-- Replace 17 with the number you want to check
+</span></span></span></code></pre></div><h3 id="loops-in-plsql">Loops in PL/SQL<a hidden class="anchor" aria-hidden="true" href="#loops-in-plsql">#</a></h3>
+<p>In MySQL, you can use loops to repeat a block of code multiple times until a certain condition is met. There are two main types of loops in MySQL: <code>WHILE</code> loops and <code>LOOP</code> loops.</p>
+<ol>
+<li>
+<p>WHILE Loops:</p>
+<p>A <code>WHILE</code> loop repeats a block of code as long as a specified condition evaluates to <code>TRUE</code>. Here&rsquo;s the basic structure of a <code>WHILE</code> loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>WHILE condition <span style="color:#66d9ef">DO</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Code to be executed repeatedly
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">END</span> WHILE;
+</span></span></code></pre></div><p>For example, you can use a <code>WHILE</code> loop to iterate over a set of rows in a table:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> counter INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WHILE counter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">DO</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Code to be executed repeatedly
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">SET</span> counter <span style="color:#f92672">=</span> counter <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> WHILE;
+</span></span></code></pre></div><p>In this example, the loop will continue executing as long as the <code>counter</code> variable is less than 10.</p>
+</li>
+<li>
+<p>LOOP Loops:</p>
+<p>A <code>LOOP</code> loop is an unconditional loop that continues to execute until you explicitly use the <code>LEAVE</code> statement to exit the loop. Here&rsquo;s the basic structure of a <code>LOOP</code> loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>LOOP
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Code to be executed repeatedly
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">IF</span> condition <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        LEAVE;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> LOOP;
+</span></span></code></pre></div><p>You can use a <code>LOOP</code> loop when you need to perform an action at least once and then decide whether to continue or exit based on a condition.</p>
+<p>Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> counter INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LOOP
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Code to be executed repeatedly
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">SET</span> counter <span style="color:#f92672">=</span> counter <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> counter <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">THEN</span>
+</span></span><span style="display:flex;"><span>        LEAVE;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> LOOP;
+</span></span></code></pre></div><p>In this example, the loop will execute at least once and then exit when the <code>counter</code> variable is greater than or equal to 10.</p>
+</li>
+</ol>
+<p>Loops can be useful in MySQL for tasks such as iterating through result sets, implementing control structures, and performing repetitive calculations. However, it&rsquo;s important to use them carefully to avoid infinite loops, which can lead to high resource consumption and system instability. Always ensure that your loop conditions will eventually evaluate to <code>FALSE</code> to exit the loop.</p>
+<p>Program for generating fibonacci serie</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://aumpauskar.site/blog/">Aum&#39;s blogging site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

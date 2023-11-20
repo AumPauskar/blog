@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Javafull | Aum&#39;s blogging site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm
+FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().">
+<meta name="author" content="">
+<link rel="canonical" href="http://aumpauskar.site/blog/posts/java/javafull/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://aumpauskar.site/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://aumpauskar.site/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://aumpauskar.site/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://aumpauskar.site/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://aumpauskar.site/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Javafull" />
+<meta property="og:description" content="Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm
+FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next()." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://aumpauskar.site/blog/posts/java/javafull/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-16T10:35:36+05:30" />
+<meta property="article:modified_time" content="2023-11-16T10:35:36+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Javafull"/>
+<meta name="twitter:description" content="Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm
+FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next()."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://aumpauskar.site/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Javafull",
+      "item": "http://aumpauskar.site/blog/posts/java/javafull/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Javafull",
+  "name": "Javafull",
+  "description": "Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm\nFYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().",
+  "keywords": [
+    
+  ],
+  "articleBody": "Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm\nFYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().charat(0) Hello world Code\npublic class HelloWorld { public static void main(String[] args) { System.out.println(\"Hello World\"); } } In java you need to classify the class, the method inside the class and the print function in order to print a hello world program. To compile a java program you an use pre built methods in the code editors/IDE’s or use following code in the terminal. Note: This is made in Linux, useage on other OS may differ. Compile method\ncd \"location of the file\" javac \"nameofthefile.java\" java \"classname\" Output\nHello World The second method is to use extensions; VSCode provides the apt extensions to work in Java as in working in an IDE. To download it just go to the extensopns\nKeywords in hello world public - the given function is available throughout the program static - the java method can be called without the need to instansiate a class void - returns no output main - main class class - class classname println - prints a line with a newline charecter given below How a Java program is executed Java is a compile time program and it is cross platform, unlike C which uses its compiler to convert the .c file into machine code, the Java compiler converts the given code to a byte code that is executed within the Java runtime environment or JRE. The JRE is supported on various platforms from servers to microcomputers. Java code -\u003e byte code -\u003e program gets executed\nPrint methods AS in total there are two printmethods in Java; there is the println version and the print version. The println version gets an empty line after the print statement where as the standard print version does not. However escape sequences do work on both the given cases.\nBasic info about Java Datatypes Like C/C++ java needs variables to be declared in the code before executing anycode. These are the available data types in Java\nboolean data type byte data type (8-bit int -128, 127) char data type short data type (16-bit int -32768, 32767) int data type (32-bit int -2147483648, 2147483647) long data type (64-bit int -9223372036854775808, 9223372036854775807) float data type double data type Note: Whenever a floating point datatype is used java always interprets it as a double datatype.\nVariables The following is the syntax of declaring a variable in Java\npublic class test { public static void main(String[] args) { int var1 = 5; char var2 = 'B'; boolean var3 = true; long var4 = 456_789_324_456L; float var5 = 5.7F; System.out.println(var1); System.out.println(var2); System.out.println(var3); System.out.println(var4); System.out.println(var5); } } Output\n5 B true 456789324456 5.7 Once the data is initalised the value can be changed further in the program. Multiple variable can also be declared in the same line. A string should be enclosed in double brackets while a charecter is always enclosed in single brackets. In Java the default datatype for integer is always int, for storing longer numbers long must be used, however since Java automatically recognises it as a int a suffix of L may be applied. Similar case for having float, the default datatype for java for storing floating point datatype is double so a suffix of F may be added at the end of the data provided in the variable. As shown above large numbers can also be formatted like numbers in real life, insted of commas, numbers can be formatted by underscores, the Java compiler interprets them as standard numbers. Java has two type of datatypes in broad classifiction.\nPrimative datatypes Reference datatypes Java has the following primative datatypes\nDatatype Description boolean stores true/false value byte stores an 8 bit int char stores a charecter double stores a decimal datatype (high precision) float stores a decimal datatype (low precision) int stores a 32 bit int long stores a 64 bit int short stores a 32 bit int Primitive datatypes are shown above where are reference datatyped are based on either prebuilt or user generated classes, an example is given below import java.util.Date; public class test { public static void main(String[] args) { Date now = new Date(); System.out.println(now); } } Output\nTue Oct 25 18:32:31 IST 2022 Here the util. Date module is imported from the Java library to initiate the Date class. The new operator here dynamically allocates the memory and hence gives data to the variable.\nType casting In some scenarios the datatype of the variable is needed to be changes to another variable, this is called as type casting.\npublic class test { public static void main(String[] args) { double a = 5, b = 3; // here a double value (a/b) is getting converted to a int value // which is again assing to the int output datatype int output = (int) (a/b); System.out.println(output); } } Output\n1 Strings Strings are the reference datatypes wherein it is an array of charecters. A string in Java is created by defining it by String before the name of the variable. Similar like python, Java supports string formating with the help of the addition operator. Like C, strings in Java have to be contained with double quotes where as charecters in Java have to be contained in single quotes.\nEscape sequences A simple print function has limitations of what it can and what it connot print, in some cases some charecters might not get printed since they are reserved in the programming syntax like the new line ASCII charecter. To overcome this escape sequences are used wherein the all the ASCII operations can be performed by the use of the given combinaion of symbols.\nEscape sequences Description ' Single quote \" Double quote \\ Backslash \\r Carriage return \\n Newline \\f Form feed \\t Horizontal tab \\b Backspace \\ddd Octal constant (ddd) \\uxxxx Hexadecimal constant (xxxx) Taking input from the user There are two major ways the program can take input from the user. Method 1 - Use builtin function\npublic class test { public static void main(String[] args) throws java.io.IOException { char val; System.out.print(\"Enter a charecter: \"); val = (char) System.in.read(); System.out.println(\"The given charecter is: \" + val); } } Output\nEnter a charecter: a The given charecter is: a Method 2 - Use scanner class\nimport java.util.Scanner; public class test { public static void main(String[] args) { // defining a object of scanner class Scanner scanObj = new Scanner(System.in); System.out.print(\"Enter num 1: \"); // using the scanObj object to scan both numbers int num1 = scanObj.nextInt(); System.out.print(\"Enter num 2: \"); int num2 = scanObj.nextInt(); System.out.println(\"The sum is: \" + (num1+num2)); // extra scanObj.close(); } } Output\nEnter num 1: 4 Enter num 2: 5 The sum is: 9 Its always a good practice to close the scanner object in this case it was scanObj using the scanObj.close() method.\nComments // This is a line of comment /* where as this is a block of comment */ Logical control The if-else statement The user can control the flow of the program with the help of if-else statements. Here is a code in action.\nclass test { public static void main(String args[]) { int var1 = 5; if (var1%2 == 0) { System.out.println(\"The number is even\"); } else if (var1%2 == 1) { System.out.println(\"The number is odd\"); } else { System.out.println(\"Error\"); } } } Output\nThe number is odd Switch statements A switch statement is a multiway Java logical operator. Succeding versions after Java 7 will also support strings as the condition. A break statement must be added after every case statement so that the program stops and does not executes all the sucessive statements. A default keyword can be added if the user wants to specify when and where the code must stop.\nimport java.util.Scanner;; public class test { public static void main(String[] args) { Scanner scanObj = new Scanner(System.in); System.out.print(\"Enter a number (1-7): \"); byte option = scanObj.nextByte(); switch (option) { case 1: System.out.println(\"Monday\"); break; case 2: System.out.println(\"Tuesday\"); break; case 3: System.out.println(\"Wednesday\"); break; case 4: System.out.println(\"Thrusday\"); break; case 5: System.out.println(\"Friday\"); break; case 6: System.out.println(\"Saturday\"); break; case 7: System.out.println(\"Sunday\"); break; default: System.out.println(\"Invalid statement\"); } } } Output 1\nEnter a number (1-7): 2 Tuesday Output 2\nEnter a number (1-7): 22 Invalid statement Ternary operators The following program can also be performed with the help of ternary operators.\nclass test { public static void main(String[] args) { int var1 = 5; System.out.println((var1/2 == 0) ? (\"The number is even\") : (\"The number is odd\")); } } Output\nThe number is odd Strings as an exception Two strings cannot be compared using the == operator as they are a derived data type. Here is how you compare two strings.\nLoops There are three types of loops in Java and they are namely the\nfor loop while loop do-while loop The for loop and the while loop are entry-controlled loop where as the do-while loop is exit controlled loop. For loop Syntax for for loop\npublic class test { public static void main(String[] args) { for(int i=1; i\u003c=10; i++) { System.out.println(\"5 x \" + i + \" = \" + 5*i); } } } Output\n5 x 1 = 5 5 x 2 = 10 5 x 3 = 15 5 x 4 = 20 5 x 5 = 25 5 x 6 = 30 5 x 7 = 35 5 x 8 = 40 5 x 9 = 45 5 x 10 = 50 A for loop can also be initialised in an infinite manner with the following template\nfor (;;) { // infinite code } While loop Syntax for while loop\npublic class test { public static void main(String[] args) { int i = 0; while (i\u003c10) { i++; System.out.print(i + \",\"); } } } Output\n1,2,3,4,5,6,7,8,9,10,% Do-while Syntax for do-while loop\npublic class test { public static void main(String[] args) { int i = 0; do { i++; System.out.print(i + \",\"); } while(i\u003c10); } } Output 1,2,3,4,5,6,7,8,9,10,% For each loop Now this is not a complety distinctive style of loop fowever its just an extension of a standard for loop. For each loop cycles through an array till the array gets completed.\npackage test; public class jarjar { public static void main(String[] args) { int[] arr = {1,2,3,4,5,6,7,8,9,0}; for (int i : arr) { System.out.print(i); } } } Output\n1234567890% Break statements A break statement can also be initialised within a loop to exit a loop whenever a condition is met.\npublic class test { public static void main(String[] args) { int val = 0; while (true) { val++; if (val == 6) { break; } else { System.out.println(val); } } } } Output\n1 2 3 4 5 Continue statements The continue statemtnt tells the loop in the code to execute again making the code within the loop below the continue statemtnt irrelavant if the condiiton is met\npublic class test { public static void main(String[] args) { int val = 0; while (true) { val++; if (val % 2 == 0) { continue; } // the continue statemnt forces the program to redo the // loop if the condition is met System.out.println(val); // useage of break statement if (val \u003e= 10) { break; } } } } Output\n1 3 5 7 9 11 Datatypes Arrays A array is a one dimentional complex data type which can store one type of data inside it. In Java the arrays are stored as an object and should be used with object functions to interact. Given below is a program of how to scan and print two arrays. Note that none of the packages are required to interact with the array, however these are requited to do system input and printing the array. The individual elements can be accessed with the array indexing starting from 0 to the last-1 element of the array.\npackage test; import java.util.Arrays; import java.util.Scanner; public class jarjar { public static void main(String[] args) { // declaring an array int[] arr = new int[10]; // declaring and defining the array int[] arr2 = {1,2,3,4,5,6,7,8,9,10}; System.out.println(Arrays.toString(arr2)); Scanner in = new Scanner(System.in); for (int i = 0; i \u003c 10; i++) { arr[i] = in.nextInt(); } in.close(); System.out.println(Arrays.toString(arr)); } } Output\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 0 9 8 7 6 5 4 3 2 1 [0, 9, 8, 7, 6, 5, 4, 3, 2, 1] Multidimentional array Multidimentional array are similar to the linear array the only difference being its an array inside another array, since its just a compound array all the features of the regalar array functions are applicable here also.\npackage test; import java.util.Arrays; import java.util.Scanner; public class jarjar { public static void main(String[] args) { int i; int[][] arr2D = new int[3][3]; Scanner in = new Scanner(System.in); for (i=0; i\u003c3; i++) { for (int j=0; j\u003c3; j++) { System.out.print(\"Enter value [\"+i+\"][\"+j+\"] :\"); arr2D[i][j] = in.nextInt(); } } in.close(); for (i=0; i\u003c3; i++) { System.out.println(Arrays.toString(arr2D[i])); } } } Output\nEnter value [0][0] :1 Enter value [0][1] :2 Enter value [0][2] :3 Enter value [1][0] :4 Enter value [1][1] :5 Enter value [1][2] :6 Enter value [2][0] :7 Enter value [2][1] :8 Enter value [2][2] :9 [1, 2, 3] [4, 5, 6] [7, 8, 9] Misc functions in the array length - the arrayName.length function returns an integer value of the array length whenever its called Error handling If an error is occuring inside the program and the programmer wants the error to be handled gracefully error handling must be implementd. To do this a try-catch method is used. Here is the syntax on how to catch errors\n// error catching to be written\nGarbage collection Unlike the OG of high level programming language like C or C++ java is equipped with a much more advanced automated garbage collecion which removes unwanted java variables when not in use.\nString comparision The string compare method can be used to compare two given strings, when both the strings are same the inbuilt function returns a 0 with a -ve or +ve number being returned if the two strings are not matching.\nWorking with classes Working with classes or as its commonly known as object oriented programming is a method of programming where the program is built with classes which are just charecterisation of a much more complex data type with the inclusion of functions.\nThings to know before attempting OOPS in Java\nOnly the main function should contain th public attribute The package must be defined for inclusion of more than one class (including the main) What are we going to do? Here we have made a folder called test which contains a java file jarjar.java, hence in order to achive the output install Java 1.17 + make the same folder structure.\nBasics of class // a package of the foldername should be used package test; // child class should not have public attribute class vehicle { // class members int cyl; String name; } // parent/main class must have the public attribute public class jarjar { public static void main(String[] args) { // creating a new object vehicle car1 = new vehicle(); // accessing class members car1.cyl = 5; car1.name = \"Kuruma\"; System.out.println(car1.cyl); System.out.println(car1.name); } } Constructors package test; class Vehicle { int cyl; double bore; double stroke; int power; String engineType; // an example of a paramatrised constructor // this can be used to direct the variable Vehicle (int var) { this.power = var; } double giveDisplacement() { return cyl*bore*stroke; } } public class jarjar { public static void main(String[] args) { // creating a new object Vehicle car1 = new Vehicle(420); // accessing class members car1.cyl = 5; car1.engineType = \"V6\"; System.out.println(car1.cyl); System.out.println(car1.power); System.out.println(car1.engineType); } } Output\n4005.0 37 Note: The this keyword can be used to direct the variable in the current class scope and not be declared globally.\nPassing objects as parameters The following code demonstrated how passing of objects as parameters works, the code also shows how method overloading/function overloading/constructor overloading.\npackage test; /** * v8 */ class v8 { String engine = \"v8\"; int cyl = 8; int power = 400; double volume = 5.0; v8(int power, float volume) { this.power = power; this.volume = volume; System.out.println(power + \"\" + volume); } v8() { this.power = 400; this.volume = 5.0; System.out.println(power + \"\" + volume); } // recieved said argument void powerPerCyl(int power, v8 object) { int output = power / object.cyl; System.out.println(output); } } public class jarjar { public static void main(String[] args) { v8 engine1 = new v8(); // passed argemnt as an object engine1.powerPerCyl(300, engine1); } } Static methods Static methods are called independent of the object and make a standalone function.\npackage test; class v8 { String engine = \"v8\"; int cyl = 8; int power = 400; double volume = 5.0; // recieved said argument static double powerPerCyl(int power, int cyl) { double output = power / cyl; return output; } } public class jarjar { public static void main(String[] args) { System.out.println(v8.powerPerCyl(420, 8)); } } Output\n52.0 Inheritance Inheritance in programming languages refers to getting all the properties of the parent function plus some more extras. Note: Multiple inheritance in not supported in Java, however is supported using interfaces.\npackage test; class v8 { String engine = \"v8\"; int cyl = 8; int power = 400; double volume = 5.0; double powerPerCyl(int power, int cyl) { double output = power / cyl; return output; }\t} // F1 engine\t-\u003e v8 // child class\t-\u003e parent class class F1Engine extends v8 { int rpm = 18000; int angle = 90; void printVol() { System.out.println(rpm + \" \" + angle + \" \" + power); } } public class jarjar { public static void main(String[] args) { v8 eng1 = new v8(); F1Engine eng2 = new F1Engine(); System.out.println(eng1.power); eng2.printVol(); } } Output\n400 18000 90 400 Super builtin function The super function calls the parent class constructor from the child class. The super function must always lie before any other statements in the child class constructor.\nSuper to access constructor package test; class v8 { String engine = \"v8\"; int cyl = 8; int power = 400; double volume = 5.0; v8() { System.out.println(engine + \" \" + cyl + \" \" + power + \" \" + volume); } double powerPerCyl(int power, int cyl) { double output = power / cyl; return output; }\t} class F1Engine extends v8 { int rpm = 18000; int angle = 90; void printVol() { System.out.println(rpm + \" \" + angle + \" \" + power); } F1Engine() { // super must always be the first statement super(); System.out.println(rpm + \" \" + angle); // calling the super class } } public class jarjar { public static void main(String[] args) { v8 eng1 = new v8(); F1Engine eng2 = new F1Engine(); System.out.println(eng1.power); eng2.printVol(); } } Output\nv8 8 400 5.0 v8 8 400 5.0 18000 90 400 18000 90 400 Super in acessing values of parent class package test; class v8 { String engine = \"v8\"; int cyl = 8; int power = 400; double volume = 5.0; double powerPerCyl(int power, int cyl) { double output = power / cyl; return output; }\t} class F1Engine extends v8 { int rpm = 18000; int angle = 90; int power = 750; F1Engine() { System.out.println(\"Power in regular v8: \" + super.power); System.out.println(\"Power in F1 v8: \" + power); } } public class jarjar { public static void main(String[] args) { F1Engine eng2 = new F1Engine(); } } Output\nPower in regular v8: 400 Power in F1 v8: 750 Abstract classes Abstract classes are those chasses which contain abstract methods\nAn abstract class must be declared with an abstract keyword. It can have abstract and non-abstract methods. It cannot be instantiated. It can have constructors and static methods also. It can have final methods which will force the subclass not to change the body of the method. An abstract class is a subset of normal classes where only the bare minimum is implemented. package test; abstract class v8 { String engine; int cyl; int power; double volume; double powerPerCyl(int power, int cyl) { double output = power / cyl; return output; }\t} class F1Engine extends v8 { int rpm = 18000; int angle = 90; int power = 750; F1Engine() { System.out.println(\"Power in regular v8: \" + super.power); System.out.println(\"Power in F1 v8: \" + power); } } public class jarjar { public static void main(String[] args) { F1Engine eng2 = new F1Engine(); } } Output\nPower in regular v8: 0 Power in F1 v8: 750 Abstract methods Abstract methods are those methods housed inside the classes which dont have any implementation or we can say “A method declared using the abstract keyword within an abstract class and does not have a definition”.\nThe syntax for abstract methods is as follows:\nabstract return_type method_name( [ argument-list ] ); Interfaces Within an abstract class we can still have normal non-abstract methods, with the use of interfaces we can completely remove the need of solid methods\nException handling Managing execptions or code errors in java can be handled in a more customizable way with the use of exception handling\nComponents of try catch try - asks the code to execute and argument and hope it doesn’t spit out an error catch - handles the error in a user defined way finally - the final block in the code which gets executed no matter what Throw The try catch is a system defined error handling snippet, with the throw keyword the user can customize the exception handling without an external library. The throw exception works with tandem with the try, catch, finally. An example of try catch can be found below\npackage test; import java.util.Scanner; public class jarjar { public static void main(String[] args) { Scanner scanInput = new Scanner(System.in); double a, b, ans; try { System.out.print(\"Enter divident: \"); a = scanInput.nextInt(); System.out.print(\"Enter divisor: \"); b = scanInput.nextInt(); scanInput.close(); ans = a/b; System.out.println(\"Answer: \" + ans); } catch (Exception e) { System.out.println(\"Invalid input\"); } } } This can be further be changed into a custom error with the use of throw keyword. The syntax can be simplified into being as throw new error as seen in termwork 8.\npackages In Java, a package is a way to organize and structure code. A package is a collection of related classes, interfaces, and other resources that are bundled together. Packages are used to group similar classes and interfaces, and to provide a unique namespace for them. This helps to prevent naming conflicts and makes it easier to maintain and reuse code.\nPackages in Java are created using the package keyword, followed by the package name. For example:\npackage com.example.mypackage; This creates a package named mypackage in the com.example namespace.\nTo use a class or interface from a package, you must import it using the import keyword. For example:\nimport java.util.List; This imports the List interface from the java.util package.\nIt’s also possible to use the * wildcard to import all the classes and interfaces from a package. For example:\nimport java.util.*; This imports all the classes and interfaces from the java.util package.\nJava has a set of built-in packages, known as the Java API, which provide a wide range of functionality for common tasks such as working with strings, lists, and dates. Additionally, developers can create their own custom packages.\nIt’s a good practice to group related classes and interfaces in packages, and to use appropriate package names that reflect the functionality of the classes and interfaces. This makes it easy to understand the purpose of the package and how to use the classes and interfaces it contains.\n",
+  "wordCount" : "4006",
+  "inLanguage": "en",
+  "datePublished": "2023-11-16T10:35:36+05:30",
+  "dateModified": "2023-11-16T10:35:36+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://aumpauskar.site/blog/posts/java/javafull/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aum's blogging site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://aumpauskar.site/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://aumpauskar.site/blog/" accesskey="h" title="Aum&#39;s blogging site (Alt + H)">Aum&#39;s blogging site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Javafull
+    </h1>
+    <div class="post-meta"><span title='2023-11-16 10:35:36 +0530 IST'>November 16, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="java-tutorial">Java tutorial<a hidden class="anchor" aria-hidden="true" href="#java-tutorial">#</a></h1>
+<p>Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm</p>
+<h2 id="fyi">FYI<a hidden class="anchor" aria-hidden="true" href="#fyi">#</a></h2>
+<ol>
+<li>The object class is the root of all classes</li>
+<li>Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().charat(0)</li>
+</ol>
+<h2 id="hello-world">Hello world<a hidden class="anchor" aria-hidden="true" href="#hello-world">#</a></h2>
+<p>Code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Hello World&#34;</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In java you need to classify the class, the method inside the class and the print function in order to print a hello world program. <br>
+To compile a java program you an use pre built methods in the code editors/IDE&rsquo;s or use following code in the terminal. Note: This is made in Linux, useage on other OS may differ. <br>
+Compile method</p>
+<pre tabindex="0"><code>cd &#34;location of the file&#34;
+javac &#34;nameofthefile.java&#34;
+java &#34;classname&#34;
+</code></pre><p>Output</p>
+<pre tabindex="0"><code>Hello World
+</code></pre><p>The second method is to use extensions; VSCode provides the apt extensions to work in Java as in working in an IDE. To download it just go to the extensopns</p>
+<h3 id="keywords-in-hello-world">Keywords in hello world<a hidden class="anchor" aria-hidden="true" href="#keywords-in-hello-world">#</a></h3>
+<ol>
+<li>public - the given function is available throughout the program</li>
+<li>static - the java method can be called without the need to instansiate a class</li>
+<li>void - returns no output</li>
+<li>main - main class</li>
+<li>class - class <em>classname</em></li>
+<li>println - prints a line with a newline charecter given below</li>
+</ol>
+<h3 id="how-a-java-program-is-executed">How a Java program is executed<a hidden class="anchor" aria-hidden="true" href="#how-a-java-program-is-executed">#</a></h3>
+<p>Java is a compile time program and it is cross platform, unlike C which uses its compiler to convert the .c file into machine code, the Java compiler converts the given code to a byte code that is executed within the Java runtime environment or JRE. The JRE is supported on various platforms from servers to microcomputers. <br>
+Java code -&gt; byte code -&gt; program gets executed</p>
+<h3 id="print-methods">Print methods<a hidden class="anchor" aria-hidden="true" href="#print-methods">#</a></h3>
+<p>AS in total there are two printmethods in Java; there is the println version and the print version. The println version gets an empty line after the print statement where as the standard print version does not. However escape sequences do work on both the given cases.</p>
+<h2 id="basic-info-about-java">Basic info about Java<a hidden class="anchor" aria-hidden="true" href="#basic-info-about-java">#</a></h2>
+<h3 id="datatypes">Datatypes<a hidden class="anchor" aria-hidden="true" href="#datatypes">#</a></h3>
+<p>Like C/C++ java needs variables to be declared in the code before executing anycode. <br>
+These are the available data types in Java</p>
+<ol>
+<li>boolean data type</li>
+<li>byte data type (8-bit int -128, 127)</li>
+<li>char data type</li>
+<li>short data type (16-bit int -32768, 32767)</li>
+<li>int data type (32-bit int -2147483648, 2147483647)</li>
+<li>long data type (64-bit int -9223372036854775808, 9223372036854775807)</li>
+<li>float data type</li>
+<li>double data type</li>
+</ol>
+<p>Note: Whenever a floating point datatype is used java always interprets it as a double datatype.</p>
+<h3 id="variables">Variables<a hidden class="anchor" aria-hidden="true" href="#variables">#</a></h3>
+<p>The following is the syntax of declaring a variable in Java</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> var1 <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">char</span> var2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;B&#39;</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">boolean</span> var3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">long</span> var4 <span style="color:#f92672">=</span> 456_789_324_456L;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">float</span> var5 <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">7F</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(var1);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(var2);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(var3);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(var4);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(var5);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>5
+B
+true
+456789324456
+5.7
+</code></pre><p>Once the data is initalised the value can be changed further in the program. Multiple variable can also be declared in the same line. <br>
+A string should be enclosed in double brackets while a charecter is always enclosed in single brackets. In Java the default datatype for integer is always int, for storing longer numbers <code>long</code> must be used, however since Java automatically recognises it as a int a suffix of <code>L</code> may be applied. Similar case for having float, the default datatype for java for storing floating point datatype is <code>double</code> so a suffix of <code>F</code> may be added at the end of the data provided in the variable. As shown above large numbers can also be formatted like numbers in real life, insted of commas, numbers can be formatted by underscores, the Java compiler interprets them as standard numbers. <br>
+Java has two type of datatypes in broad classifiction.</p>
+<ol>
+<li>Primative datatypes</li>
+<li>Reference datatypes</li>
+</ol>
+<p>Java has the following primative datatypes</p>
+<table>
+<thead>
+<tr>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>stores true/false value</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>stores an 8 bit int</td>
+</tr>
+<tr>
+<td>char</td>
+<td>stores a charecter</td>
+</tr>
+<tr>
+<td>double</td>
+<td>stores a decimal datatype (high precision)</td>
+</tr>
+<tr>
+<td>float</td>
+<td>stores a decimal datatype (low precision)</td>
+</tr>
+<tr>
+<td>int</td>
+<td>stores a 32 bit int</td>
+</tr>
+<tr>
+<td>long</td>
+<td>stores a 64 bit int</td>
+</tr>
+<tr>
+<td>short</td>
+<td>stores a 32 bit int</td>
+</tr>
+<tr>
+<td>Primitive datatypes are shown above where are reference datatyped are based on either prebuilt or user generated classes, an example is given below</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Date;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		Date now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(now);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Tue Oct 25 18:32:31 IST 2022
+</code></pre><p>Here the util. Date module is imported from the Java library to initiate the Date class. The new operator here dynamically allocates the memory and hence gives data to the variable.</p>
+<h3 id="type-casting">Type casting<a hidden class="anchor" aria-hidden="true" href="#type-casting">#</a></h3>
+<p>In some scenarios the datatype of the variable is needed to be changes to another variable, this is called as type casting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> a <span style="color:#f92672">=</span> 5, b <span style="color:#f92672">=</span> 3;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// here a double value (a/b) is getting converted to a int value</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// which is again assing to the int output datatype</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> output <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span>) (a<span style="color:#f92672">/</span>b); 
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(output);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>1
+</code></pre><h3 id="strings">Strings<a hidden class="anchor" aria-hidden="true" href="#strings">#</a></h3>
+<p>Strings are the reference datatypes wherein it is an array of charecters. A string in Java is created by defining it by <code>String</code> before the name of the variable. <br>
+Similar like python, Java supports string formating with the help of the addition operator. Like C, strings in Java have to be contained with double quotes where as charecters in Java have to be contained in single quotes.</p>
+<h3 id="escape-sequences">Escape sequences<a hidden class="anchor" aria-hidden="true" href="#escape-sequences">#</a></h3>
+<p>A simple print function has limitations of what it can and what it connot print, in some cases some charecters might not get printed since they are reserved in the programming syntax like the new line ASCII charecter. To overcome this escape sequences are used wherein the all the ASCII operations can be performed by the use of the given combinaion of symbols.</p>
+<table>
+<thead>
+<tr>
+<th>Escape sequences</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'</td>
+<td>Single quote</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>Double quote</td>
+</tr>
+<tr>
+<td>\</td>
+<td>Backslash</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>Carriage return</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>Newline</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>Form feed</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>Horizontal tab</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Backspace</td>
+</tr>
+<tr>
+<td>\ddd</td>
+<td>Octal constant (ddd)</td>
+</tr>
+<tr>
+<td>\uxxxx</td>
+<td>Hexadecimal constant (xxxx)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="taking-input-from-the-user">Taking input from the user<a hidden class="anchor" aria-hidden="true" href="#taking-input-from-the-user">#</a></h3>
+<p>There are two major ways the program can take input from the user.
+Method 1 - Use builtin function</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">throws</span> java.<span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">IOException</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">char</span> val;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter a charecter: &#34;</span>);
+</span></span><span style="display:flex;"><span>		val <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span>) System.<span style="color:#a6e22e">in</span>.<span style="color:#a6e22e">read</span>();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;The given charecter is: &#34;</span> <span style="color:#f92672">+</span> val);
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Enter a charecter: a
+The given charecter is: a
+</code></pre><p>Method 2 - Use scanner class</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Scanner;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// defining a object of scanner class</span>
+</span></span><span style="display:flex;"><span>		Scanner scanObj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner(System.<span style="color:#a6e22e">in</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter num 1: &#34;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// using the scanObj object to scan both numbers</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> num1 <span style="color:#f92672">=</span> scanObj.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter num 2: &#34;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> num2 <span style="color:#f92672">=</span> scanObj.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;The sum is: &#34;</span> <span style="color:#f92672">+</span> (num1<span style="color:#f92672">+</span>num2));
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// extra</span>
+</span></span><span style="display:flex;"><span>		scanObj.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Enter num 1: 4
+Enter num 2: 5
+The sum is: 9
+</code></pre><p>Its always a good practice to close the scanner object in this case it was <code>scanObj</code> using the scanObj.close() method.</p>
+<h3 id="comments">Comments<a hidden class="anchor" aria-hidden="true" href="#comments">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// This is a line of comment</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">where as
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">this is
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">a block
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">of comment
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span></code></pre></div><h2 id="logical-control">Logical control<a hidden class="anchor" aria-hidden="true" href="#logical-control">#</a></h2>
+<h3 id="the-if-else-statement">The if-else statement<a hidden class="anchor" aria-hidden="true" href="#the-if-else-statement">#</a></h3>
+<p>The user can control the flow of the program with the help of if-else statements. <br>
+Here is a code in action.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String args<span style="color:#f92672">[]</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> var1 <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (var1<span style="color:#f92672">%</span>2 <span style="color:#f92672">==</span> 0) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;The number is even&#34;</span>);
+</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (var1<span style="color:#f92672">%</span>2 <span style="color:#f92672">==</span> 1) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;The number is odd&#34;</span>);
+</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Error&#34;</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>The number is odd
+</code></pre><h3 id="switch-statements">Switch statements<a hidden class="anchor" aria-hidden="true" href="#switch-statements">#</a></h3>
+<p>A switch statement is a multiway Java logical operator. Succeding versions after Java 7 will also support strings as the condition. A break statement must be added after every case statement so that the program stops and does not executes all the sucessive statements. A default keyword can be added if the user wants to specify when and where the code must stop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Scanner;;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		Scanner scanObj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner(System.<span style="color:#a6e22e">in</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter a number (1-7): &#34;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">byte</span> option <span style="color:#f92672">=</span> scanObj.<span style="color:#a6e22e">nextByte</span>();
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">switch</span> (option) {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 1: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Monday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 2: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Tuesday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 3: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Wednesday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 4: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Thrusday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 5: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Friday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 6: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Saturday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">case</span> 7: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Sunday&#34;</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">default</span>: System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Invalid statement&#34;</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output 1</p>
+<pre tabindex="0"><code>Enter a number (1-7): 2
+Tuesday
+</code></pre><p>Output 2</p>
+<pre tabindex="0"><code>Enter a number (1-7): 22
+Invalid statement
+</code></pre><h3 id="ternary-operators">Ternary operators<a hidden class="anchor" aria-hidden="true" href="#ternary-operators">#</a></h3>
+<p>The following program can also be performed with the help of ternary operators.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> var1 <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>((var1<span style="color:#f92672">/</span>2 <span style="color:#f92672">==</span> 0) <span style="color:#f92672">?</span> (<span style="color:#e6db74">&#34;The number is even&#34;</span>) : (<span style="color:#e6db74">&#34;The number is odd&#34;</span>));
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>The number is odd
+</code></pre><h3 id="strings-as-an-exception">Strings as an exception<a hidden class="anchor" aria-hidden="true" href="#strings-as-an-exception">#</a></h3>
+<p>Two strings cannot be compared using the <code>==</code> operator as they are a derived data type. Here is how you compare two strings.</p>
+<pre tabindex="0"><code></code></pre><h2 id="loops">Loops<a hidden class="anchor" aria-hidden="true" href="#loops">#</a></h2>
+<p>There are three types of loops in Java and they are namely the</p>
+<ol>
+<li>for loop</li>
+<li>while loop</li>
+<li>do-while loop <br>
+The for loop and the while loop are entry-controlled loop where as the do-while loop is exit controlled loop.</li>
+</ol>
+<h3 id="for-loop">For loop<a hidden class="anchor" aria-hidden="true" href="#for-loop">#</a></h3>
+<p>Syntax for for loop</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>1; i<span style="color:#f92672">&lt;=</span>10; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;5 x &#34;</span> <span style="color:#f92672">+</span> i <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; = &#34;</span> <span style="color:#f92672">+</span> 5<span style="color:#f92672">*</span>i);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+</code></pre><p>A for loop can also be initialised in an infinite manner with the following template</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (;;) {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// infinite code</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="while-loop">While loop<a hidden class="anchor" aria-hidden="true" href="#while-loop">#</a></h3>
+<p>Syntax for while loop</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">while</span> (i<span style="color:#f92672">&lt;</span>10) {
+</span></span><span style="display:flex;"><span>			i<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(i <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>1,2,3,4,5,6,7,8,9,10,%
+</code></pre><h3 id="do-while">Do-while<a hidden class="anchor" aria-hidden="true" href="#do-while">#</a></h3>
+<p>Syntax for do-while loop</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>			i<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(i <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span>);
+</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">while</span>(i<span style="color:#f92672">&lt;</span>10);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code>Output
+1,2,3,4,5,6,7,8,9,10,%
+</code></pre><h3 id="for-each-loop">For each loop<a hidden class="anchor" aria-hidden="true" href="#for-each-loop">#</a></h3>
+<p>Now this is not a complety distinctive style of loop fowever its just an extension of a standard for loop. For each loop cycles through an array till the array gets completed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> arr <span style="color:#f92672">=</span> {1,2,3,4,5,6,7,8,9,0};
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i : arr) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(i);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>1234567890%
+</code></pre><h3 id="break-statements">Break statements<a hidden class="anchor" aria-hidden="true" href="#break-statements">#</a></h3>
+<p>A break statement can also be initialised within a loop to exit a loop whenever a condition is met.</p>
+<pre tabindex="0"><code>public class test {
+	public static void main(String[] args) {
+		int val = 0;
+		while (true) {
+			val++;
+			if (val == 6) {
+				break;
+			} else {
+				System.out.println(val);
+			}
+		}
+	}
+}
+</code></pre><p>Output</p>
+<pre tabindex="0"><code>1
+2
+3
+4
+5
+</code></pre><h3 id="continue-statements">Continue statements<a hidden class="anchor" aria-hidden="true" href="#continue-statements">#</a></h3>
+<p>The continue statemtnt tells the loop in the code to execute again making the code within the loop below the continue statemtnt irrelavant if the condiiton is met</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">test</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> val <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>			val<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> (val <span style="color:#f92672">%</span> 2 <span style="color:#f92672">==</span> 0) {
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// the continue statemnt forces the program to redo the</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// loop if the condition is met</span>
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(val);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// useage of break statement</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> (val <span style="color:#f92672">&gt;=</span> 10) {
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>1
+3
+5
+7
+9
+11
+</code></pre><h2 id="datatypes-1">Datatypes<a hidden class="anchor" aria-hidden="true" href="#datatypes-1">#</a></h2>
+<h3 id="arrays">Arrays<a hidden class="anchor" aria-hidden="true" href="#arrays">#</a></h3>
+<p>A array is a one dimentional complex data type which can store one type of data inside it. In Java the arrays are stored as an object and should be used with object functions to interact.
+Given below is a program of how to scan and print two arrays. Note that none of the packages are required to interact with the array, however these are requited to do system input and printing the array. The individual elements can be accessed with the array indexing starting from 0 to the last-1 element of the array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Arrays;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Scanner;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// declaring an array</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> arr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>10<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// declaring and defining the array</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> arr2 <span style="color:#f92672">=</span> {1,2,3,4,5,6,7,8,9,10};
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(Arrays.<span style="color:#a6e22e">toString</span>(arr2));
+</span></span><span style="display:flex;"><span>		Scanner in <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner(System.<span style="color:#a6e22e">in</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0; i <span style="color:#f92672">&lt;</span> 10; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>			arr<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> in.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		in.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(Arrays.<span style="color:#a6e22e">toString</span>(arr));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+0 9 8 7 6 5 4 3 2 1 
+[0, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+</code></pre><h3 id="multidimentional-array">Multidimentional array<a hidden class="anchor" aria-hidden="true" href="#multidimentional-array">#</a></h3>
+<p>Multidimentional array are similar to the linear array the only difference being its an array inside another array, since its just a compound array all the features of the regalar array functions are applicable here also.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Arrays;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Scanner;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> i;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> arr2D <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>3<span style="color:#f92672">][</span>3<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>		Scanner in <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner(System.<span style="color:#a6e22e">in</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> (i<span style="color:#f92672">=</span>0; i<span style="color:#f92672">&lt;</span>3; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>0; j<span style="color:#f92672">&lt;</span>3; j<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>				System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter value [&#34;</span><span style="color:#f92672">+</span>i<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;][&#34;</span><span style="color:#f92672">+</span>j<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;] :&#34;</span>);
+</span></span><span style="display:flex;"><span>				arr2D<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> in.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		in.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> (i<span style="color:#f92672">=</span>0; i<span style="color:#f92672">&lt;</span>3; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(Arrays.<span style="color:#a6e22e">toString</span>(arr2D<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>));
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Enter value [0][0] :1
+Enter value [0][1] :2
+Enter value [0][2] :3
+Enter value [1][0] :4
+Enter value [1][1] :5
+Enter value [1][2] :6
+Enter value [2][0] :7
+Enter value [2][1] :8
+Enter value [2][2] :9
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+</code></pre><h3 id="misc-functions-in-the-array">Misc functions in the array<a hidden class="anchor" aria-hidden="true" href="#misc-functions-in-the-array">#</a></h3>
+<ol>
+<li>length - the arrayName.length function returns an integer value of the array length whenever its called</li>
+</ol>
+<h2 id="error-handling">Error handling<a hidden class="anchor" aria-hidden="true" href="#error-handling">#</a></h2>
+<p>If an error is occuring inside the program and the programmer wants the error to be handled gracefully error handling must be implementd. To do this a try-catch method is used. <br>
+Here is the syntax on how to catch errors</p>
+<p>// error catching to be written</p>
+<h2 id="garbage-collection">Garbage collection<a hidden class="anchor" aria-hidden="true" href="#garbage-collection">#</a></h2>
+<p>Unlike the OG of high level programming language like C or C++ java is equipped with a much more advanced automated garbage collecion which removes unwanted java variables when not in use.</p>
+<h2 id="string-comparision">String comparision<a hidden class="anchor" aria-hidden="true" href="#string-comparision">#</a></h2>
+<p>The string compare method can be used to compare two given strings, when both the strings are same the inbuilt function returns a 0 with a -ve or +ve number being returned if the two strings are not matching.</p>
+<h2 id="working-with-classes">Working with classes<a hidden class="anchor" aria-hidden="true" href="#working-with-classes">#</a></h2>
+<p>Working with classes or as its commonly known as object oriented programming is a method of programming where the program is built with classes which are just charecterisation of a much more complex data type with the inclusion of functions.</p>
+<p>Things to know before attempting OOPS in Java</p>
+<ol>
+<li>Only the main function should contain th public attribute</li>
+<li>The package must be defined for inclusion of more than one class (including the main)</li>
+</ol>
+<p>What are we going to do? <br>
+Here we have made a folder called <code>test</code> which contains a java file <code>jarjar.java</code>, hence in order to achive the output install Java 1.17 + make the same folder structure.</p>
+<h3 id="basics-of-class">Basics of class<a hidden class="anchor" aria-hidden="true" href="#basics-of-class">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// a package of the foldername should be used</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// child class should not have public attribute</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">vehicle</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// class members</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl;
+</span></span><span style="display:flex;"><span>	String name;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// parent/main class must have the public attribute</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// creating a new object</span>
+</span></span><span style="display:flex;"><span>		vehicle car1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> vehicle();
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// accessing class members</span>
+</span></span><span style="display:flex;"><span>		car1.<span style="color:#a6e22e">cyl</span> <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>		car1.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Kuruma&#34;</span>;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(car1.<span style="color:#a6e22e">cyl</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(car1.<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="constructors">Constructors<a hidden class="anchor" aria-hidden="true" href="#constructors">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Vehicle</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> bore;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> stroke;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power;
+</span></span><span style="display:flex;"><span>	String engineType;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// an example of a paramatrised constructor</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// this can be used to direct the variable</span>
+</span></span><span style="display:flex;"><span>	Vehicle (<span style="color:#66d9ef">int</span> var) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">power</span> <span style="color:#f92672">=</span> var;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">giveDisplacement</span>() {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> cyl<span style="color:#f92672">*</span>bore<span style="color:#f92672">*</span>stroke;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// creating a new object</span>
+</span></span><span style="display:flex;"><span>		Vehicle car1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Vehicle(420);
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// accessing class members</span>
+</span></span><span style="display:flex;"><span>		car1.<span style="color:#a6e22e">cyl</span> <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>		car1.<span style="color:#a6e22e">engineType</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;V6&#34;</span>;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(car1.<span style="color:#a6e22e">cyl</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(car1.<span style="color:#a6e22e">power</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(car1.<span style="color:#a6e22e">engineType</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>4005.0
+37
+</code></pre><p>Note: The <code>this</code> keyword can be used to direct the variable in the current class scope and not be declared globally.</p>
+<h3 id="passing-objects-as-parameters">Passing objects as parameters<a hidden class="anchor" aria-hidden="true" href="#passing-objects-as-parameters">#</a></h3>
+<p>The following code demonstrated how passing of objects as parameters works, the code also shows how method overloading/function overloading/constructor overloading.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * v8
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v8&#34;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl <span style="color:#f92672">=</span> 8;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	v8(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">float</span> volume) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">power</span> <span style="color:#f92672">=</span> power;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">volume</span> <span style="color:#f92672">=</span> volume;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(power <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">+</span> volume);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	v8() {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">power</span> <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">volume</span> <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(power <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">+</span> volume);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// recieved said argument </span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, v8 object) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> object.<span style="color:#a6e22e">cyl</span>;
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(output);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		v8 engine1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> v8();
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// passed argemnt as an object</span>
+</span></span><span style="display:flex;"><span>		engine1.<span style="color:#a6e22e">powerPerCyl</span>(300, engine1);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="static-methods">Static methods<a hidden class="anchor" aria-hidden="true" href="#static-methods">#</a></h3>
+<p>Static methods are called independent of the object and make a standalone function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v8&#34;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl <span style="color:#f92672">=</span> 8;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// recieved said argument </span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">int</span> cyl) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> cyl;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> output;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(v8.<span style="color:#a6e22e">powerPerCyl</span>(420, 8));
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>52.0
+</code></pre><h3 id="inheritance">Inheritance<a hidden class="anchor" aria-hidden="true" href="#inheritance">#</a></h3>
+<p>Inheritance in programming languages refers to getting all the properties of the parent function plus some more extras.
+Note: Multiple inheritance in not supported in Java, however is supported using interfaces.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v8&#34;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl <span style="color:#f92672">=</span> 8;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">int</span> cyl) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> cyl;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> output;
+</span></span><span style="display:flex;"><span>	}	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// F1 engine	-&gt; v8</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// child class	-&gt; parent class</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">F1Engine</span> <span style="color:#66d9ef">extends</span> v8 {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> rpm <span style="color:#f92672">=</span> 18000;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> angle <span style="color:#f92672">=</span> 90;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printVol</span>() {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(rpm <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> angle <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> power);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		v8 eng1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> v8();
+</span></span><span style="display:flex;"><span>		F1Engine eng2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> F1Engine();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(eng1.<span style="color:#a6e22e">power</span>);
+</span></span><span style="display:flex;"><span>		eng2.<span style="color:#a6e22e">printVol</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>400
+18000 90 400
+</code></pre><h3 id="super-builtin-function">Super builtin function<a hidden class="anchor" aria-hidden="true" href="#super-builtin-function">#</a></h3>
+<p>The super function calls the parent class constructor from the child class. The super function must always lie before any other statements in the child class constructor.</p>
+<ul>
+<li>Super to access constructor</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v8&#34;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl <span style="color:#f92672">=</span> 8;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	v8() {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(engine <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> cyl <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> power <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> volume);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">int</span> cyl) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> cyl;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> output;
+</span></span><span style="display:flex;"><span>	}	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">F1Engine</span> <span style="color:#66d9ef">extends</span> v8 {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> rpm <span style="color:#f92672">=</span> 18000;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> angle <span style="color:#f92672">=</span> 90;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printVol</span>() {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(rpm <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> angle <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> power);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	F1Engine() {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// super must always be the first statement</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">super</span>();
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(rpm <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> angle);
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// calling the super class</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		v8 eng1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> v8();
+</span></span><span style="display:flex;"><span>		F1Engine eng2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> F1Engine();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(eng1.<span style="color:#a6e22e">power</span>);
+</span></span><span style="display:flex;"><span>		eng2.<span style="color:#a6e22e">printVol</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>v8 8 400 5.0
+v8 8 400 5.0
+18000 90
+400
+18000 90 400
+</code></pre><ul>
+<li>Super in acessing values of parent class</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;v8&#34;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl <span style="color:#f92672">=</span> 8;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 400;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume <span style="color:#f92672">=</span> 5.<span style="color:#a6e22e">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">int</span> cyl) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> cyl;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> output;
+</span></span><span style="display:flex;"><span>	}	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">F1Engine</span> <span style="color:#66d9ef">extends</span> v8 {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> rpm <span style="color:#f92672">=</span> 18000;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> angle <span style="color:#f92672">=</span> 90;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 750;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	F1Engine() {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Power in regular v8: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">power</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Power in F1 v8: &#34;</span> <span style="color:#f92672">+</span> power);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		F1Engine eng2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> F1Engine();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Power in regular v8: 400
+Power in F1 v8: 750
+</code></pre><h3 id="abstract-classes">Abstract classes<a hidden class="anchor" aria-hidden="true" href="#abstract-classes">#</a></h3>
+<p>Abstract classes are those chasses which contain abstract methods</p>
+<ol>
+<li>An abstract class must be declared with an abstract keyword.</li>
+<li>It can have abstract and non-abstract methods.</li>
+<li>It cannot be instantiated.</li>
+<li>It can have constructors and static methods also.</li>
+<li>It can have final methods which will force the subclass not to change the body of the method. <br>
+An abstract class is a subset of normal classes where only the bare minimum is implemented.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">v8</span> {
+</span></span><span style="display:flex;"><span>	String engine;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> cyl;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> volume;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">powerPerCyl</span>(<span style="color:#66d9ef">int</span> power, <span style="color:#66d9ef">int</span> cyl) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> output <span style="color:#f92672">=</span> power <span style="color:#f92672">/</span> cyl;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> output;
+</span></span><span style="display:flex;"><span>	}	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">F1Engine</span> <span style="color:#66d9ef">extends</span> v8 {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> rpm <span style="color:#f92672">=</span> 18000;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> angle <span style="color:#f92672">=</span> 90;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> power <span style="color:#f92672">=</span> 750;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	F1Engine() {
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Power in regular v8: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">power</span>);
+</span></span><span style="display:flex;"><span>		System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Power in F1 v8: &#34;</span> <span style="color:#f92672">+</span> power);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		F1Engine eng2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> F1Engine();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Output</p>
+<pre tabindex="0"><code>Power in regular v8: 0
+Power in F1 v8: 750
+</code></pre><h4 id="abstract-methods">Abstract methods<a hidden class="anchor" aria-hidden="true" href="#abstract-methods">#</a></h4>
+<p>Abstract methods are those methods housed inside the classes which dont have any implementation or we can say &ldquo;A method declared using the abstract keyword within an abstract class and does not have a definition&rdquo;.</p>
+<p>The syntax for abstract methods is as follows:</p>
+<pre tabindex="0"><code>abstract return_type method_name( [ argument-list ] );  
+</code></pre><h3 id="interfaces">Interfaces<a hidden class="anchor" aria-hidden="true" href="#interfaces">#</a></h3>
+<p>Within an abstract class we can still have normal non-abstract methods, with the use of interfaces we can completely remove the need of solid methods</p>
+<h3 id="exception-handling">Exception handling<a hidden class="anchor" aria-hidden="true" href="#exception-handling">#</a></h3>
+<p>Managing execptions or code errors in java can be handled in a more customizable way with the use of exception handling</p>
+<ul>
+<li>Components of try catch</li>
+</ul>
+<ol>
+<li>try - asks the code to execute and argument and hope it doesn&rsquo;t spit out an error</li>
+<li>catch - handles the error in a user defined way</li>
+<li>finally - the final block in the code which gets executed no matter what</li>
+</ol>
+<ul>
+<li>Throw
+The try catch is a system defined error handling snippet, with the throw keyword the user can customize the exception handling without an external library. <br>
+The throw exception works with tandem with the try, catch, finally.</li>
+</ul>
+<p>An example of try catch can be found below</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.Scanner;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">jarjar</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>		Scanner scanInput <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Scanner(System.<span style="color:#a6e22e">in</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">double</span> a, b, ans;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter divident: &#34;</span>);
+</span></span><span style="display:flex;"><span>			a <span style="color:#f92672">=</span> scanInput.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Enter divisor: &#34;</span>);
+</span></span><span style="display:flex;"><span>			b <span style="color:#f92672">=</span> scanInput.<span style="color:#a6e22e">nextInt</span>();
+</span></span><span style="display:flex;"><span>			scanInput.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>			ans <span style="color:#f92672">=</span> a<span style="color:#f92672">/</span>b;
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Answer: &#34;</span> <span style="color:#f92672">+</span> ans);
+</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">catch</span> (Exception e) {
+</span></span><span style="display:flex;"><span>			System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Invalid input&#34;</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This can be further be changed into a custom error with the use of <code>throw</code> keyword. The syntax can be simplified into being as <code>throw new error</code> as seen in termwork 8.</p>
+<p>packages
+In Java, a package is a way to organize and structure code. A package is a collection of related classes, interfaces, and other resources that are bundled together. Packages are used to group similar classes and interfaces, and to provide a unique namespace for them. This helps to prevent naming conflicts and makes it easier to maintain and reuse code.</p>
+<p>Packages in Java are created using the package keyword, followed by the package name. For example:</p>
+<pre tabindex="0"><code>package com.example.mypackage;
+</code></pre><p>This creates a package named mypackage in the com.example namespace.</p>
+<p>To use a class or interface from a package, you must import it using the import keyword. For example:</p>
+<pre tabindex="0"><code>import java.util.List;
+</code></pre><p>This imports the List interface from the java.util package.</p>
+<p>It&rsquo;s also possible to use the * wildcard to import all the classes and interfaces from a package. For example:</p>
+<pre tabindex="0"><code>import java.util.*;
+</code></pre><p>This imports all the classes and interfaces from the java.util package.</p>
+<p>Java has a set of built-in packages, known as the Java API, which provide a wide range of functionality for common tasks such as working with strings, lists, and dates. Additionally, developers can create their own custom packages.</p>
+<p>It&rsquo;s a good practice to group related classes and interfaces in packages, and to use appropriate package names that reflect the functionality of the classes and interfaces. This makes it easy to understand the purpose of the package and how to use the classes and interfaces it contains.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://aumpauskar.site/blog/">Aum&#39;s blogging site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

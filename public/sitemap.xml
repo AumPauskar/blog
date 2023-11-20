@@ -2,32 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aumpauskar.site/blog/</loc>
+    <loc>http://aumpauskar.site/blog/posts/iot/arm/</loc>
+    <lastmod>2023-11-20T12:59:45+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/</loc>
+    <lastmod>2023-11-20T12:59:45+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/</loc>
+    <lastmod>2023-11-20T12:59:45+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/web/html-web/</loc>
+    <lastmod>2023-11-17T09:21:22+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/web/static-site-generators/</loc>
+    <lastmod>2023-11-17T09:19:25+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/dbms/sql/</loc>
+    <lastmod>2023-11-16T14:41:25+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/dsa/dsabasics/</loc>
+    <lastmod>2023-11-16T10:38:34+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/iot/embeddedc/</loc>
+    <lastmod>2023-11-16T10:37:42+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/iot/arduino/</loc>
+    <lastmod>2023-11-16T10:37:04+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/java/javafull/</loc>
+    <lastmod>2023-11-16T10:35:36+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/python/virtualenv/</loc>
+    <lastmod>2023-11-16T10:34:31+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/python/packages/</loc>
     <lastmod>2023-11-16T10:08:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/posts/python/packages/</loc>
-    <lastmod>2023-11-16T10:08:09+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.site/blog/posts/</loc>
-    <lastmod>2023-11-16T10:08:09+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.site/blog/posts/python/oops/</loc>
+    <loc>http://aumpauskar.site/blog/posts/python/oops/</loc>
     <lastmod>2023-11-16T10:07:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/posts/python/lists/</loc>
+    <loc>http://aumpauskar.site/blog/posts/python/lists/</loc>
     <lastmod>2023-11-16T10:07:18+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/posts/python/data/</loc>
+    <loc>http://aumpauskar.site/blog/posts/python/data/</loc>
     <lastmod>2023-11-16T10:06:26+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/posts/python/basics/</loc>
+    <loc>http://aumpauskar.site/blog/posts/python/basics/</loc>
     <lastmod>2023-11-16T10:05:13+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/posts/my-first-post/</loc>
+    <loc>http://aumpauskar.site/blog/posts/my-first-post/</loc>
     <lastmod>2023-11-16T09:46:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.site/blog/categories/</loc>
+    <loc>http://aumpauskar.site/blog/categories/</loc>
   </url><url>
-    <loc>https://aumpauskar.site/blog/tags/</loc>
+    <loc>http://aumpauskar.site/blog/tags/</loc>
   </url>
 </urlset>
