@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://aumpauskar.site/blog/posts/iot/arm/</loc>
-    <lastmod>2023-11-20T12:59:45+05:30</lastmod>
-  </url><url>
     <loc>http://aumpauskar.site/blog/</loc>
-    <lastmod>2023-11-20T12:59:45+05:30</lastmod>
+    <lastmod>2023-11-21T22:20:04+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/projects/motor_encoder/</loc>
+    <lastmod>2023-11-21T22:20:04+05:30</lastmod>
   </url><url>
     <loc>http://aumpauskar.site/blog/posts/</loc>
+    <lastmod>2023-11-21T22:20:04+05:30</lastmod>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/iot/arm/</loc>
     <lastmod>2023-11-20T12:59:45+05:30</lastmod>
   </url><url>
     <loc>http://aumpauskar.site/blog/posts/web/html-web/</loc>
