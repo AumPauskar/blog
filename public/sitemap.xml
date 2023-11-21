@@ -53,7 +53,11 @@
     <loc>http://aumpauskar.site/blog/posts/my-first-post/</loc>
     <lastmod>2023-11-16T09:46:38+05:30</lastmod>
   </url><url>
+    <loc>http://aumpauskar.site/blog/archives/</loc>
+  </url><url>
     <loc>http://aumpauskar.site/blog/categories/</loc>
+  </url><url>
+    <loc>http://aumpauskar.site/blog/posts/search/</loc>
   </url><url>
     <loc>http://aumpauskar.site/blog/tags/</loc>
   </url>

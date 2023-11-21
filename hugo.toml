@@ -36,8 +36,50 @@ buildExpired = false
 	comments = false
 	hidemeta = false
 	hideSummary = false
-	showtoc = false
-	tocopen = false
+	showtoc = true
+	tocopen = true
+
+	[params.assets]
+		# disableHLJS = true # to disable highlight.js
+		# disableFingerprinting = true
+		# favicon = "<link / abs url>"
+		# favicon16x16 = "<link / abs url>"
+		# favicon32x32 = "<link / abs url>"
+		# apple_touch_icon = "<link / abs url>"
+		# safari_pinned_tab = "<link / abs url>"
+	[params.label]
+		# text = "Home"
+		# icon = "/apple-touch-icon.png"
+		# iconHeight = 35
+	[params.profileMode]
+		enabled = true # needs to be explicitly set
+		title = "Aum's blogging site"
+		subtitle = "A collection of different technologies"
+		# imageUrl = "<img location>"
+		# imageWidth = 120
+		# imageHeight = 120
+		# imageTitle = "my image"
+
+		[[params.profileMode.buttons]]
+			name = "Posts"
+			url = "posts"
+		[[params.profileMode.buttons]]
+			name = "Tags"
+			url = "tags"
+	[params.homeInfoParams]
+		Title = "Hi there \U0001F44B"
+		Content = "Welcome to my blog"
+
+	# [params.socialIcons]
+		[[params.socialIcons]]
+			name = "twitter"
+			url = "https://twitter.com/"
+		[[params.socialIcons]]
+			name = "stackoverflow"
+			url = "https://stackoverflow.com"
+		[[params.socialIcons]]
+			name = "github"
+			url = "https://github.com/"
 
 [markup.highlight]
 	noClasses = false
