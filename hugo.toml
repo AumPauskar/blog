@@ -2,3 +2,47 @@ baseURL = 'http://aumpauskar.site/blog/'
 languageCode = 'en-us'
 title = "Aum's blogging site"
 theme = 'PaperMod'
+paginate = 5
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+	disableXML = true
+	minifyOutput = true
+
+[params]
+	env = 'production'
+	title = "Aum's blogging site"
+	description = "ExampleSite description"
+	keywords = ["Blog", "Portfolio", "Java", "Python", "Diary", "Notes"]
+	author = "Aum Pauskar"
+	DateFormat = "January 2, 2006"
+	defaultTheme = "auto"
+	disableThemeToggle = false
+
+	ShowReadingTime = true
+	ShowShareButtons = true
+	ShowPostNavLinks = true
+	ShowBreadCrumbs = true
+	ShowCodeCopyButtons = true
+	ShowWordCount = true
+	ShowRssButtonInSectionTermList = true
+	UseHugoToc = true
+	disableSpecial1stPost = false
+	disableScrollToTop = false
+	comments = false
+	hidemeta = false
+	hideSummary = false
+	showtoc = false
+	tocopen = false
+
+[markup.highlight]
+	noClasses = false
+	anchorLineNos = true
+	codeFences = true
+	guessSyntax = true
+	lineNos = true
+	style = "monokai"

@@ -13,7 +13,7 @@
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
       
       <guid>http://aumpauskar.site/blog/posts/iot/arm/</guid>
-      <description>ARM Basics Advanced RISC Machine (ARM) is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. Arm Holdings develops the architecture and licenses it to other companies, who design their own products that implement one of those architectures‍—‌including systems-on-chips (SoC) and systems-on-modules (SoM) that incorporate memory, interfaces, radios, etc. It also designs cores that implement this instruction set and licenses these designs to a number of companies that incorporate those core designs into their own products.</description>
+      <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ Install and run keil If you are on a windows system you can run the exe file loc
       <description>Arduino 14 IO, 6//
 ESP 8266 wifi
 Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi
-Q. LED blink const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor #include &amp;lt;dht.</description>
+Q. LED blink 1 2 3 4 5 6 7 8 9 10 11 const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #include &amp;lt;dht.</description>
     </item>
     
     <item>
@@ -94,12 +94,12 @@ FYI The object class is the root of all classes Data can be gatered with the sca
       
       <guid>http://aumpauskar.site/blog/posts/python/virtualenv/</guid>
       <description>Python virtual environment Python virtual environemt is a program that aids in creating a serperate virtual environment for each project
-Requiremnets Python 3 Pip Steps Installing virtual environemnt package pip install virtualenv Creating virtual environent Windows - cmd/powershell
-py -m venv {your_env_name} Linux
-python3 -m venv myworld Activating virtual environemt Windows - cmd
-myworld\Scripts\activate.bat Windows - powershell
-myworld\Scripts\activate.ps1 Linux
-source myworld/bin/activate Downloading required packages py -m pip install {required_package} </description>
+Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip install virtualenv Creating virtual environent Windows - cmd/powershell
+1 py -m venv {your_env_name} Linux
+1 python3 -m venv myworld Activating virtual environemt Windows - cmd
+1 myworld\Scripts\activate.bat Windows - powershell
+1 myworld\Scripts\activate.ps1 Linux
+1 source myworld/bin/activate Downloading required packages 1 py -m pip install {required_package} </description>
     </item>
     
     <item>
@@ -119,7 +119,7 @@ source myworld/bin/activate Downloading required packages py -m pip install {req
       <guid>http://aumpauskar.site/blog/posts/python/oops/</guid>
       <description>Chapter summary - Unit 4 Object Oriented Programming: Define and use your own classes: An introduction to classes and objects, define a class, object composition, encapsulation; Inheritance: Inheritance, override object methods; Design an object oriented program: Techniques for object-oriented design Text Book 1 – Chapters 14,15,16
 Creating your own class A class can be created in python by using the class keyword
-class MyClass: x = 5 This creates a blueprint for the objects to be defined.</description>
+1 2 class MyClass: x = 5 This creates a blueprint for the objects to be defined.</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@ class MyClass: x = 5 This creates a blueprint for the objects to be defined.</de
       
       <guid>http://aumpauskar.site/blog/posts/python/lists/</guid>
       <description>Chapter summary - Unit 2 Higher Data Constructs: Lists and tuples: Basic skills for working with lists, list of lists, more skills for working with lists, tuples; Dictionaries: get started with dictionaries, more skills for working with dictionaries; Strings: Basic skills for working with strings, split and join strings; Dates and times: get started with dates and times Text Book 1 – Chapters 6,12,10,11
-Datatypes - complex Lists: A list is a mutable datatype in which all the elements are indexed from 0 to n myList = [5,7,3,7] Tuples: A tuple is an immutable datatype in which all the elements are indexed from 0 to n myTuple = (6,2,5,5) Dictionaries: A dictionary is a complex mutable datatype in which the elements are indexed upon the user&amp;rsquo;s needs, this is called the key value pairs.</description>
+Datatypes - complex Lists: A list is a mutable datatype in which all the elements are indexed from 0 to n 1 myList = [5,7,3,7] Tuples: A tuple is an immutable datatype in which all the elements are indexed from 0 to n 1 myTuple = (6,2,5,5) Dictionaries: A dictionary is a complex mutable datatype in which the elements are indexed upon the user&amp;rsquo;s needs, this is called the key value pairs.</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ Datatypes - complex Lists: A list is a mutable datatype in which all the element
       
       <guid>http://aumpauskar.site/blog/posts/python/data/</guid>
       <description>Chapter summary - Unit 3 File I/O: An introduction to file I/O, test files, CSV files, binary files; Exception Handling: handle a single exception, handle multiple exceptions, Two more skills; Work with a database: An introduction to relational databases, SQL statements for data manipulation, SQLite Manager to work with a database, use Python to work with a database
-File write modes &amp;ldquo;x&amp;rdquo; - Create - will create a file, returns an error if the file exist &amp;ldquo;a&amp;rdquo; - Append - will create a file if the specified file does not exist &amp;ldquo;w&amp;rdquo; - Write - will create a file if the specified file does not exist f = open(&amp;#34;myfile.</description>
+File write modes &amp;ldquo;x&amp;rdquo; - Create - will create a file, returns an error if the file exist &amp;ldquo;a&amp;rdquo; - Append - will create a file if the specified file does not exist &amp;ldquo;w&amp;rdquo; - Write - will create a file if the specified file does not exist 1 f = open(&amp;#34;myfile.</description>
     </item>
     
     <item>
@@ -158,7 +158,7 @@ File write modes &amp;ldquo;x&amp;rdquo; - Create - will create a file, returns 
       
       <guid>http://aumpauskar.site/blog/posts/my-first-post/</guid>
       <description>Hello World This is my first post
-print(&amp;#34;Hello World&amp;#34;) </description>
+1 print(&amp;#34;Hello World&amp;#34;) </description>
     </item>
     
   </channel>
