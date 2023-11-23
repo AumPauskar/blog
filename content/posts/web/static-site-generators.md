@@ -1,5 +1,5 @@
 +++
-title = 'Static Site Generators'
+title = 'Static site generators with Hugo'
 date = 2023-11-17T09:19:25+05:30
 draft = false
 +++

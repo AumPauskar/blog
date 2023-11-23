@@ -1,5 +1,5 @@
 +++
-title = 'Computer network'
+title = 'Computer networks'
 date = 2023-11-23T12:50:11+05:30
 draft = false
 +++

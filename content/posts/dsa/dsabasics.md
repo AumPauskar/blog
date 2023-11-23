@@ -1,5 +1,5 @@
 +++
-title = 'Dsabasics'
+title = 'Basic DSA algorithms using C'
 date = 2023-11-16T10:38:34+05:30
 draft = false
 +++

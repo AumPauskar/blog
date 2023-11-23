@@ -1,5 +1,5 @@
 +++
-title = 'Arduino'
+title = 'Arduino control with peripherals'
 date = 2023-11-16T10:37:04+05:30
 draft = false
 +++

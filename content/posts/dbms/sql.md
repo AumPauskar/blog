@@ -1,5 +1,5 @@
 +++
-title = 'Sql'
+title = 'Database management and SQL'
 date = 2023-11-16T14:41:25+05:30
 draft = false
 +++

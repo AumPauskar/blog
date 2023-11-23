@@ -1,5 +1,5 @@
 +++
-title = 'Embeddedc'
+title = 'Using i386 IC using Keil uVision5 and Embedded C'
 date = 2023-11-16T10:37:42+05:30
 draft = false
 +++

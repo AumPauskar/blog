@@ -1,5 +1,5 @@
 +++
-title = 'Html Web'
+title = 'Web technologies - basic HTML/CSS/JS'
 date = 2023-11-17T09:21:22+05:30
 draft = false
 +++
