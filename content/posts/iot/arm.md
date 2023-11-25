@@ -39,6 +39,31 @@ The microcontroller lpc 2148 is a 32 bit memory controller.
 
 Q. Develop an assembly language program to transfer a block of data from source to destination
 
+## Data shifting
+Left shift, right shift, barrel shift
+
+### About the code - rotate
+```
+	AREA ONE, CODE, READONLY
+		ENTRY
+		MOV R0,#0X000000031
+		MOVS R1, R0, ROR #1
+L		B L
+
+	END
+```
+**How does the code works and how to check the result:** \
+There are a couple of things to keep in mind
+- `AREA`, `CODE`, `READONLY` are part of the boilerplate code and will be same in most of the programs
+- `ONE` is the name of the file and the project in keil. This should not divert from either the file name or the project name.
+- `ENTRY` and `END` are indented in a certain way and should be indented in a single line
+- `L    B L` means **loop branch loop** this means that the code will run in an infinte loop
+- `ROR #1` means the value is **right shifted**. Right shifting means you **divide** the number **by 2** in case of **base-10** and **remove one place of digits in case of base-2**.
+	- **Example:** `1100011` -> `110001` in case of right shift 
+
+- In case of **left shift** `LOR` the value is left shifted. In case of **base-10** the value is **multiplied by 2** and in case of **base-2 another significant figure is added to the number**.
+	- Example: `11001` -> `110010`
+
 
 ## ARM termworks
 

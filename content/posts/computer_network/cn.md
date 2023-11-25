@@ -36,17 +36,21 @@ It's important to note that while these values are common, network administrator
 ### Nodal delay
 Nodal delay, also known as node delay or network delay, is a concept in computer networking that refers to the time it takes for a packet of data to traverse from the source node to the destination node in a network. The nodal delay can be broken down into several components, each contributing to the total delay:
 
-1. **Processing Delay (d_proc):** The time it takes for a router or switch to examine the incoming packet header and determine where to forward the packet.
+1. **Processing Delay (d_proc):** The time it takes for a router or switch to examine the incoming packet header and determine where to forward the packet. This can be optimized by using faster hardware or by implementing more efficient routing algorithms.
 
-2. **Queuing Delay (d_queue):** The time the packet spends waiting in a queue before it can be processed by the router or switch.
+2. **Queuing Delay (d_queue):** The time the packet spends waiting in a queue before it can be processed by the router or switch. This can be minimized by using faster hardware or by implementing more efficient routing algorithms and by increasing memory cache. \
+Formula: $LA \over R$ \
+Where L is the length of the packet and R is the rate at which the packet is being transmitted and A is the average arrival rate of the packets.
 
-3. **Transmission Delay (d_trans):** The time it takes to push the bits of the packet onto the link. This is influenced by the link's bandwidth.
+3. **Transmission Delay (d_trans):** The time it takes to push the bits of the packet onto the link. This is influenced by the link's bandwidth.This can be minimized by using higher bandwidth links. \
+Formula: $L \over R$ \
+Where L is the length of the packet and R is the rate at which the packet is being transmitted.
 
-4. **Propagation Delay (d_prop):** The time it takes for a bit to travel from the source to the destination. This is determined by the distance between the nodes and the speed of the medium (e.g., speed of light in fiber).
+4. **Propagation Delay (d_prop):** The time it takes for a bit to travel from the source to the destination. This is determined by the distance between the nodes and the speed of the medium (e.g., speed of light in fiber). This can be minimized by using shorter links or faster transmission media.
 
 The formula for nodal delay (D) can be expressed as the sum of these individual components:
 
-\[ D = d_{\text{proc}} + d_{\text{queue}} + d_{\text{trans}} + d_{\text{prop}} \]
+D = $d_{\text{proc}} + d_{\text{queue}} + d_{\text{trans}} + d_{\text{prop}}$
 
 It's important to note that each of these components can vary based on factors such as network congestion, the processing capabilities of routers, and the characteristics of the transmission medium. Minimizing nodal delay is crucial for optimizing the overall performance of a network. Network designers and administrators often work to optimize each component of nodal delay to improve the efficiency of data transmission in a network.
 
@@ -79,3 +83,22 @@ Packet switching is a system where each packet has the source address and the de
 	4. Unsuitable for real-time communication: Packet switching is not suitable for real-time communication, such as voice and video, because of the potential for latency and packet loss.
 
 - Refence: [Geeks for Geeks](https://www.geeksforgeeks.org/difference-between-circuit-switching-and-packet-switching/)
+
+## Bandwidth vs throughput
+Bandwidth is the maximum amount of data that can be transmitted over a network in a given amount of time. It is typically measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps). Throughput is the actual amount of data that is transmitted over a network in a given amount of time. It is typically measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps). Bandwidth and throughput are often used interchangeably, but they are not the same thing. Bandwidth is the theoretical maximum amount of data that can be transmitted over a network, while throughput is the actual amount of data that is transmitted over a network. For example, a network may have a bandwidth of 100 Mbps, but the actual throughput may be only 50 Mbps. This is because the network may be congested or there may be other factors that limit the amount of data that can be transmitted. Bandwidth is a measure of capacity.
+
+## Intenet protocol stack
+- Application: Ftp, http, smtp
+- Transport: TCP, UDP
+- Network: IP, routing protocols
+- Link: Ethernet, 802.111, PPP
+- Physical: Bits on the wire
+
+## ISO/OSI model
+- Application: Ftp, http, smtp
+- Presentation: Encryption, compression
+- Session: Synchronization, checkpointing
+- Transport: TCP, UDP
+- Network: IP, routing protocols
+- Link: Ethernet, 802.111, PPP
+- Physical: Bits on the wire
