@@ -1,7 +1,7 @@
 +++
 title = 'Git and GitHub cheatsheet'
 date = 2023-11-25T09:46:03+05:30
-draft = true
+draft = false
 +++
 
 # Git / github cheatsheet
