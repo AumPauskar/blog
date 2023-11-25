@@ -9,6 +9,9 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+googleAnalytics = "G-EV8NVH4QG5"
+
+
 [minify]
 	disableXML = true
 	minifyOutput = true
@@ -80,6 +83,10 @@ buildExpired = false
 		[[params.socialIcons]]
 			name = "github"
 			url = "https://github.com/"
+
+	[analytics]
+    	[google]
+      		SiteVerificationTag = "XYZabc"
 
 [markup.highlight]
 	noClasses = false
