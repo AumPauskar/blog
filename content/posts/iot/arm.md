@@ -4,7 +4,6 @@ date = 2023-11-20T12:59:45+05:30
 draft = false
 description = 'A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148'
 +++
-
 # ARM
 
 - Basics
@@ -64,6 +63,54 @@ There are a couple of things to keep in mind
 - In case of **left shift** `LOR` the value is left shifted. In case of **base-10** the value is **multiplied by 2** and in case of **base-2 another significant figure is added to the number**.
 	- Example: `11001` -> `110010`
 
+SUBS, RSB, CPSR. 
+
+### About the code - adding two numbers
+```asm
+	AREA ONE, CODE, READONLY
+		ENTRY
+		MOV R0, #3        ; First number (3)
+		MOV R1, #5        ; Second number (5)
+		ADD R2, R0, R1    ; Add the numbers and store the result in R2
+
+L		B L               ; Infinite loop
+
+	END
+
+```
+- `AREA`, `CODE`, `READONLY` are boilerplate code and must be followed in all programs
+- `ONE` is the **name of the file** and the **keil project name**
+- `ENTRY` is the entrypoint of the code
+- `MOV` stores the given number into the variable. Here #3 and #5 gets stores in R0 and R1 respectively
+- `ADD` adds values of R0 and R1 into R2
+- `L    B L` is loop-branch-loop for a **endless while loop**
+- `END` indicates the end point of the program
+
+### About the code - subtracting two numbers
+```asm
+	AREA ONE, CODE, READONLY
+		ENTRY
+		MOV R0, #3        ; First number (3)
+		MOV R1, #5        ; Second number (5)
+		SUB R2, R0, R1    ; Add the numbers and store the result in R2
+
+L		B L               ; Infinite loop
+
+	END
+```
+however this produces an undesirable output of `0xFFFFFFFE`. This is because the operation is produced in an unsigned value. To resolve this, we'd need a signed value, this can be produuced by using the `SUBS` operator.
+```asm
+	AREA ONE, CODE, READONLY
+		ENTRY
+		MOV R0, #3        ; First number (3)
+		MOV R1, #5        ; Second number (5)
+		SUBS R2, R0, R1    ; Add the numbers and store the result in R2
+
+L		B L               ; Infinite loop
+
+	END
+
+```
 
 ## ARM termworks
 
@@ -119,3 +166,47 @@ There are a couple of things to keep in mind
 	RESULT DCD 0
 		END
 	```
+
+- Termwork 3
+	```asm
+		AREA ONE, CODE, READONLY
+			ENTRY
+				MOV R5, #6
+				LDR R1, =VALUE1
+				LDR R2, [R1], #4
+	LOOP
+				LDR R4, [R1], #4
+				CMP R2, R4
+				BHI LOOP1
+				MOV R2, R4
+	LOOP1 SUBS R5, #1
+			BNE LOOP
+			LDR R6, =RESULT
+			STR R2, [R6]
+	L		B L
+	VALUE1 DCD 0X44444444, 0X22222222, 0X11111111, 0X22222222, 0XAAAAAAAA, 0X88888888, 0X99999999
+		AREA DATA2, DATA, READWRITE
+	RESULT DCD 0
+		END
+	```
+
+	Explanation:
+
+	1. `MOV R5, #6`: Initialize a loop counter `R5` with the value 6.
+	2. `LDR R1, =VALUE1`: Load the address of the array `VALUE1` into register `R1`.
+	3. `LDR R2, [R1], #4`: Load the first value from the array into register `R2` and increment the address by 4 bytes.
+	4. `LOOP`: Label for the start of the loop.
+	5. `LDR R4, [R1], #4`: Load the next value from the array into register `R4` and increment the address by 4 bytes.
+	6. `CMP R2, R4`: Compare the values in `R2` and `R4`.
+	7. `BHI LOOP1`: Branch to `LOOP1` if the value in `R2` is higher (unsigned comparison).
+	8. `MOV R2, R4`: Move the value in `R4` to `R2` if `R4` is smaller or equal to `R2`.
+	9. `LOOP1`: Label for the loop continuation.
+	10. `SUBS R5, #1`: Subtract 1 from the loop counter `R5`.
+	11. `BNE LOOP`: Branch back to `LOOP` if the result of the subtraction is not zero.
+	12. `LDR R6, =RESULT`: Load the address of the `RESULT` variable into register `R6`.
+	13. `STR R2, [R6]`: Store the minimum value (in `R2`) into the `RESULT` variable.
+	14. `L`: Label for the infinite loop.
+	15. `B L`: Branch back to the infinite loop.
+	16. In ARM assembly language, the `DCD` directive is used to declare consecutive words (32-bit data) in memory. The abbreviation "DCD" stands for "Define Constant Doubleword." Each operand following `DCD` represents a 32-bit constant, and these constants are stored consecutively in memory.
+
+	The code effectively finds the minimum value in the `VALUE1` array and stores it in the `RESULT` variable. The loop iterates through the array, compares values, and updates `R2` with the minimum value encountered.
