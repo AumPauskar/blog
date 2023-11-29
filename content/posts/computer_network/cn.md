@@ -87,18 +87,259 @@ Packet switching is a system where each packet has the source address and the de
 ## Bandwidth vs throughput
 Bandwidth is the maximum amount of data that can be transmitted over a network in a given amount of time. It is typically measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps). Throughput is the actual amount of data that is transmitted over a network in a given amount of time. It is typically measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps). Bandwidth and throughput are often used interchangeably, but they are not the same thing. Bandwidth is the theoretical maximum amount of data that can be transmitted over a network, while throughput is the actual amount of data that is transmitted over a network. For example, a network may have a bandwidth of 100 Mbps, but the actual throughput may be only 50 Mbps. This is because the network may be congested or there may be other factors that limit the amount of data that can be transmitted. Bandwidth is a measure of capacity.
 
-## Intenet protocol stack
+## Internet protocol stack
 - Application: Ftp, http, smtp
 - Transport: TCP, UDP
 - Network: IP, routing protocols
 - Link: Ethernet, 802.111, PPP
 - Physical: Bits on the wire
 
-## ISO/OSI model
-- Application: Ftp, http, smtp
-- Presentation: Encryption, compression
-- Session: Synchronization, checkpointing
-- Transport: TCP, UDP
-- Network: IP, routing protocols
-- Link: Ethernet, 802.111, PPP
-- Physical: Bits on the wire
+
+### ISO/OSI model
+- Application: This layer is responsible for providing services to the end-user applications. It includes protocols such as FTP (File Transfer Protocol), HTTP (Hypertext Transfer Protocol), and SMTP (Simple Mail Transfer Protocol). These protocols enable functions such as file transfer, web browsing, and email communication.
+
+- Presentation: The presentation layer is responsible for data representation and encryption. It ensures that data from the application layer is properly formatted and encrypted for transmission. This layer also handles tasks such as data compression and decompression.
+
+- Session: The session layer establishes, manages, and terminates communication sessions between applications. It provides synchronization and checkpointing mechanisms to ensure reliable communication. This layer helps in maintaining the continuity of communication between applications.
+
+- Transport: The transport layer is responsible for end-to-end communication between hosts. It ensures reliable and efficient data transfer by providing services such as segmentation, reassembly, error recovery, and flow control. The two main protocols at this layer are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+- Network: The network layer handles the routing and forwarding of data packets across different networks. It is responsible for addressing, routing, and packet delivery. The main protocol at this layer is IP (Internet Protocol), which enables the identification and addressing of devices on a network.
+
+- Link: The link layer is responsible for the physical connection between nodes on a network. It handles tasks such as framing, error detection, and medium access control. Common protocols at this layer include Ethernet, 802.111 (Wi-Fi), and PPP (Point-to-Point Protocol).
+
+- Physical: The physical layer deals with the transmission of raw bits over a physical medium. It defines the electrical, mechanical, and functional specifications for the physical connection. This layer includes components such as cables, connectors, and network interface cards (NICs).
+
+### Encapsulation
+In networking, encapsulation refers to the process of wrapping data with necessary protocol information before it is transmitted over the network. Each layer of the OSI model adds its own header (and sometimes a footer) to the data from the layer above it. This process allows data to be transmitted seamlessly across networks.
+
+For example, when a message is sent from a device, it starts at the Application layer and moves down the OSI layers. Each layer adds its own specific information, such as addressing, error checking, and sequencing information. By the time the message reaches the Physical layer, it has been encapsulated with all the necessary information for transmission, reception, and interpretation at the destination.
+
+In summary, encapsulation:
+
+- Allows complex data communication processes to be broken down into smaller, simpler parts.
+- Provides a way to integrate the protocols and services of each layer.
+- Ensures that the systems on the sending and receiving ends have the necessary information to understand and process the data correctly.
+
+## Application layer
+The application layer is the highest layer in the OSI model and the TCP/IP model, which provides the interface and protocols for communication between applications and devices over a network. Some of the examples using P2P cimmunicatioins are
+- HTTP
+- FTP
+- SMTP
+- DNS
+- DHCP
+
+## Paradigms
+The client-server model and peer-to-peer (P2P) model are two fundamental architectures used in computer networks to facilitate communication and resource sharing among devices. Let's explore each model in more detail:
+
+1. **Client-Server Model:**
+
+   - **Definition:**
+     - In the client-server model, the system is divided into two main components: clients and servers.
+     - Clients are end-user devices or applications that request services or resources from the server.
+     - Servers are powerful computers or software applications that provide services or resources to clients.
+
+   - **Communication Flow:**
+     - Clients initiate requests for services or resources.
+     - Servers respond to client requests by providing the requested services or resources.
+     - Communication is typically one-way, with clients making requests and servers responding.
+
+   - **Characteristics:**
+     - Centralized: Services and resources are centralized on servers.
+     - Scalability: Easier to scale as the server can handle multiple client requests.
+     - Control: Servers control access to resources and manage security.
+
+   - **Examples:**
+     - Web servers (responding to browser requests).
+     - File servers (providing file storage and retrieval).
+     - Database servers (managing and providing access to databases).
+
+   - **Advantages:**
+     - Centralized management.
+     - Controlled access to resources.
+     - Easier maintenance and updates.
+
+   - **Disadvantages:**
+     - Single point of failure (if the server goes down, clients may lose access).
+     - Scalability challenges as the number of clients increases.
+
+2. **Peer-to-Peer (P2P) Model:**
+
+   - **Definition:**
+     - In the P2P model, all devices (peers) on the network have equal status and can act as both clients and servers.
+     - Peers communicate directly with each other without the need for a centralized server.
+
+   - **Communication Flow:**
+     - Peers can both request and provide resources/services to each other.
+     - There is no central server controlling communication.
+
+   - **Characteristics:**
+     - Decentralized: No central server; all peers have equal status.
+     - Dynamic: Peers can join or leave the network at any time.
+     - Resource Sharing: Peers share resources directly with each other.
+
+   - **Examples:**
+     - BitTorrent file sharing.
+     - Skype for P2P communication.
+     - Blockchain networks (like Bitcoin).
+
+   - **Advantages:**
+     - Decentralization reduces the risk of a single point of failure.
+     - Scalability is inherent as each peer can contribute resources.
+
+   - **Disadvantages:**
+     - Lack of centralized control can make it challenging to manage and secure.
+     - Initial setup and discovery of peers can be complex.
+
+## Sockets
+Sockets play a crucial role in networking, providing a programming interface for network communication. In the context of computer networks, a socket is a software endpoint that establishes communication between two processes over a network. Here are some key aspects and the importance of sockets in networking:
+
+1. **Definition:**
+   - A socket is a combination of an IP address and a port number that identifies a specific endpoint on a network.
+   - It provides a mechanism for processes on different devices to communicate with each other.
+
+2. **Communication Channels:**
+   - Sockets enable processes running on different devices to establish communication channels, allowing data to be sent and received.
+
+3. **Types of Sockets:**
+   - There are two main types of sockets: TCP (Transmission Control Protocol) sockets and UDP (User Datagram Protocol) sockets.
+     - **TCP Sockets:** Provide a reliable, connection-oriented communication. Data is sent in a stream, and there is acknowledgment of received data.
+     - **UDP Sockets:** Offer a connectionless, unreliable communication. Data is sent in discrete packets without acknowledgment.
+
+4. **Client-Server Communication:**
+   - In a client-server model, sockets are fundamental for establishing connections. The server creates a socket and binds it to a specific port, waiting for incoming client connections. Clients create sockets to connect to the server's IP address and port.
+
+5. **Importance in Networking:**
+   - **Data Transmission:** Sockets facilitate the transmission of data between applications running on different devices. They provide a standardized interface for sending and receiving data.
+   - **Protocols Implementation:** Sockets are used to implement various network protocols, such as HTTP, FTP, and others, enabling the exchange of information between clients and servers.
+   - **Cross-Platform Communication:** Sockets allow communication between applications running on different operating systems and hardware, promoting interoperability.
+   - **Network Programming:** Sockets are essential for network programming, enabling developers to create applications that can communicate over a network, whether it's a local area network (LAN) or the Internet.
+
+6. **Socket Programming:**
+   - Developers use socket programming to create applications that can communicate over a network. This involves creating and managing sockets, establishing connections, and handling data transmission.
+
+7. **Security Considerations:**
+   - Sockets can be secured using encryption protocols (e.g., SSL/TLS) to protect the confidentiality and integrity of data transmitted over the network.
+
+### Interprocess communication
+In networking and operating systems several operations require a dataflow to send and recieve messages. In this cases several ports are selected and opened in the computer to deliver and send and recieve messages.
+
+## TCP vs UDP
+| Feature                 | TCP                                      | UDP                                      |
+|-------------------------|------------------------------------------|------------------------------------------|
+| **Connection**          | Connection-oriented                      | Connectionless                           |
+| **Reliability**         | Reliable - ensures data delivery          | Unreliable - no guarantee of data delivery|
+| **Ordering**            | In-order delivery of data                | No guaranteed order of delivery          |
+| **Acknowledgment**      | Acknowledgment of received data           | No acknowledgment of received data       |
+| **Flow Control**        | Yes, uses flow control mechanisms         | No built-in flow control                 |
+| **Error Checking**      | Yes, error-checking through checksums     | Limited error checking (optional)        |
+| **Header Size**         | Larger header size                       | Smaller header size                      |
+| **Overhead**            | Higher overhead due to connection setup   | Lower overhead due to lack of connection setup|
+| **Usage**               | Used for applications requiring reliable data transfer, e.g., file transfer, email | Used for real-time applications where low latency is critical, e.g., video streaming, online gaming |
+
+TCP follows virtual circuits
+
+TLS/TSL
+
+## HTTP
+**HTTP Overview from the Perspective of Computer Networks:**
+
+**1. Definition:**
+   - **HTTP (Hypertext Transfer Protocol):** It is an application layer protocol used for transmitting hypermedia documents, such as HTML files, over the World Wide Web. It is the foundation of any data exchange on the Web.
+
+**2. Protocol Type:**
+   - **Stateless Protocol:** HTTP is inherently stateless, meaning each request from a client to a server is independent and does not retain information about the previous requests. This simplifies communication but requires additional mechanisms (like cookies) for handling state.
+
+**3. Communication Model:**
+   - **Client-Server Model:** HTTP follows a client-server model where a client sends requests to a server, and the server responds with the requested resources (e.g., web pages, images).
+
+**4. Connection Establishment:**
+   - **Connectionless:** By default, HTTP is connectionless. Each request-response cycle operates independently, and the connection is closed after each transaction.
+
+**5. Transport Protocol:**
+   - **Primarily Relies on TCP:** HTTP typically operates over the TCP (Transmission Control Protocol) for reliable and ordered delivery of data. It can also be used over other transport protocols, but TCP is the most common.
+
+**6. Request-Response Cycle:**
+   - **Request Format:** Clients send HTTP requests to servers, specifying a method (e.g., GET, POST), a Uniform Resource Identifier (URI), and protocol version in the request header.
+   - **Response Format:** Servers respond with an HTTP status code indicating the success or failure of the request, along with the requested resource or an error message.
+
+**7. Stateless Nature:**
+   - **No Persistent Connection by Default:** In the traditional HTTP/1.0, each request/response pair is handled in a new connection, and the connection is closed after the response is delivered. This can lead to increased latency for multiple requests.
+
+**8. Persistent Connections:**
+   - **HTTP/1.1 introduced Persistent Connections:** To address the latency issue, HTTP/1.1 supports persistent connections, where multiple requests and responses can be sent over a single connection, improving performance.
+
+**9. Security:**
+   - **HTTPS (HTTP Secure):** HTTPS is a secure version of HTTP that uses SSL/TLS protocols to encrypt data for secure communication. It adds a layer of security, important for protecting sensitive information.
+
+**10. Header Fields:**
+   - **Header Information:** HTTP messages contain header fields that provide information about the message, such as content type, length, and caching directives.
+
+**11. Common Methods:**
+   - **GET, POST, PUT, DELETE:** HTTP defines various methods for different operations. GET is used for retrieving resources, POST for submitting data, PUT for updating resources, and DELETE for removing resources.
+
+**12. Cookies:**
+   - **State Management:** Cookies are often used to maintain state between client and server in the stateless HTTP protocol.
+
+**13. MIME Types:**
+   - **Content Types:** HTTP uses Multipurpose Internet Mail Extensions (MIME) types to specify the type of data being sent, allowing the client to properly interpret and display the content.
+
+### Persistent and non persistent HTTP
+| Feature                              | Persistent HTTP                              | Non-Persistent HTTP                          |
+|--------------------------------------|----------------------------------------------|--------------------------------------------|
+| **Connection Handling**              | Maintains a persistent connection for multiple requests and responses over a single connection | Opens a new connection for each request-response pair, closing the connection after each transaction |
+| **Latency**                          | Lower latency as the connection is reused for multiple requests/responses | Higher latency due to the overhead of establishing a new connection for each transaction |
+| **Performance**                      | Generally more efficient for multiple requests to the same server | Can be less efficient, especially for a series of rapid, small requests |
+| **HTTP Versions**                    | Often associated with HTTP/1.1 and later versions that support persistent connections | Commonly associated with HTTP/1.0, which uses non-persistent connections by default |
+| **Header Overhead**                  | Reduced header overhead as headers need to be sent only once for multiple transactions | Increased header overhead as headers must be sent with each new connection |
+| **Resource Utilization**             | Better resource utilization, especially in scenarios with multiple requests from the same client | Resources are less efficiently utilized due to frequent connection setup and teardown |
+| **Implementation Complexity**        | May require more complex implementation to manage connection reuse and concurrency | Simpler implementation as each request-response cycle is independent |
+| **Scalability**                      | Can improve scalability by reducing the load on the server for connection establishment | May face scalability challenges with a high number of short-lived connections |
+| **Example Scenario**                 | Downloading multiple resources from a website where the same server is used | Opening a series of links on a webpage, where each link triggers a new connection |
+| **Connection Header (HTTP/1.1)**     | Uses the `Connection: keep-alive` header to indicate a persistent connection | Uses the `Connection: close` header to indicate that the connection should be closed after the response |
+
+### Processflow of persistent and non persistent http
+- Process Flow of Persistent HTTP:
+
+	1. **Connection Establishment:**
+	   - The client initiates a TCP connection to the server.
+	   - The connection is established and marked as persistent, allowing multiple requests and responses to occur over the same connection.
+
+	2. **Request-Response Cycle (Persistent):**
+	   - After the initial connection setup, the client can send multiple HTTP requests over the same connection without reopening it.
+	   - The server processes each request and responds with the corresponding HTTP responses.
+	   - The connection remains open until either party explicitly closes it or a timeout occurs.
+
+	3. **Header Information (Persistent):**
+	   - Headers, including the `Connection: keep-alive` header, are used to indicate that the connection should be kept open for future transactions.
+
+	4. **Subsequent Requests (Persistent):**
+	   - The client can send additional HTTP requests over the same connection without the need to establish a new connection for each transaction.
+	   - This process continues until the client or server decides to close the connection.
+
+	5. **Connection Closure (Optional):**
+	   - The connection can be explicitly closed by either the client or the server using the `Connection: close` header, or it may be closed due to a timeout.
+
+- Process Flow of Non-Persistent HTTP:
+
+	1. **Connection Establishment:**
+	   - The client initiates a TCP connection to the server.
+
+	2. **Request-Response Cycle (Non-Persistent):**
+	   - The client sends a single HTTP request to the server over the established connection.
+	   - The server processes the request and sends back the corresponding HTTP response.
+
+	3. **Connection Closure:**
+	   - The connection is immediately closed by either the client or the server after the response is received.
+	   - This closure ensures that each request-response pair occurs in a new, independent connection.
+
+	4. **Header Information (Non-Persistent):**
+	   - Each HTTP request and response may include headers, but there is no need for headers to maintain a persistent connection.
+
+	5. **Subsequent Requests (New Connections):**
+	   - For each new request, the client must establish a new TCP connection to the server.
+	   - The process repeats for each transaction, with the connection being closed after each request-response cycle.
+
+	6. **Connection Overhead (Non-Persistent):**
+	   - The overhead of establishing and tearing down connections for each transaction can impact performance, especially in scenarios with multiple rapid requests.
+
