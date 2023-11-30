@@ -15,14 +15,14 @@ MTU stands for Maximum Transmission Unit. It is a parameter that defines the max
 The effect of increasing or decreasing the MTU can have implications on network performance. Here are some key points:
 
 1. **Increasing MTU:**
-   - Larger MTU generally allows for more data to be sent in a single packet, which can lead to more efficient data transmission.
-   - Larger packets mean fewer headers and less overhead per unit of data, resulting in a more efficient use of network resources.
-   - However, increasing MTU may also lead to higher latency for small packets, as they need to wait for larger packets to be transmitted first.
+	- Larger MTU generally allows for more data to be sent in a single packet, which can lead to more efficient data transmission.
+	- Larger packets mean fewer headers and less overhead per unit of data, resulting in a more efficient use of network resources.
+	- However, increasing MTU may also lead to higher latency for small packets, as they need to wait for larger packets to be transmitted first.
 
 2. **Decreasing MTU:**
-   - Smaller MTU can be beneficial in situations where the network has a high error rate or where there are restrictions on the maximum packet size.
-   - Smaller packets can be less prone to errors and can be retransmitted more quickly in case of errors.
-   - However, using smaller MTU values can increase the overhead per unit of data due to the additional headers in each packet.
+	- Smaller MTU can be beneficial in situations where the network has a high error rate or where there are restrictions on the maximum packet size.
+	- Smaller packets can be less prone to errors and can be retransmitted more quickly in case of errors.
+	- However, using smaller MTU values can increase the overhead per unit of data due to the additional headers in each packet.
 
 The MTU for popular network protocols can vary. Here are the typical MTU values for some common protocols:
 
@@ -134,92 +134,92 @@ The client-server model and peer-to-peer (P2P) model are two fundamental archite
 
 1. **Client-Server Model:**
 
-   - **Definition:**
-     - In the client-server model, the system is divided into two main components: clients and servers.
-     - Clients are end-user devices or applications that request services or resources from the server.
-     - Servers are powerful computers or software applications that provide services or resources to clients.
+	- **Definition:**
+	  - In the client-server model, the system is divided into two main components: clients and servers.
+	  - Clients are end-user devices or applications that request services or resources from the server.
+	  - Servers are powerful computers or software applications that provide services or resources to clients.
 
-   - **Communication Flow:**
-     - Clients initiate requests for services or resources.
-     - Servers respond to client requests by providing the requested services or resources.
-     - Communication is typically one-way, with clients making requests and servers responding.
+	- **Communication Flow:**
+	  - Clients initiate requests for services or resources.
+	  - Servers respond to client requests by providing the requested services or resources.
+	  - Communication is typically one-way, with clients making requests and servers responding.
 
-   - **Characteristics:**
-     - Centralized: Services and resources are centralized on servers.
-     - Scalability: Easier to scale as the server can handle multiple client requests.
-     - Control: Servers control access to resources and manage security.
+	- **Characteristics:**
+	  - Centralized: Services and resources are centralized on servers.
+	  - Scalability: Easier to scale as the server can handle multiple client requests.
+	  - Control: Servers control access to resources and manage security.
 
-   - **Examples:**
-     - Web servers (responding to browser requests).
-     - File servers (providing file storage and retrieval).
-     - Database servers (managing and providing access to databases).
+	- **Examples:**
+	  - Web servers (responding to browser requests).
+	  - File servers (providing file storage and retrieval).
+	  - Database servers (managing and providing access to databases).
 
-   - **Advantages:**
-     - Centralized management.
-     - Controlled access to resources.
-     - Easier maintenance and updates.
+	- **Advantages:**
+	  - Centralized management.
+	  - Controlled access to resources.
+	  - Easier maintenance and updates.
 
-   - **Disadvantages:**
-     - Single point of failure (if the server goes down, clients may lose access).
-     - Scalability challenges as the number of clients increases.
+	- **Disadvantages:**
+	  - Single point of failure (if the server goes down, clients may lose access).
+	  - Scalability challenges as the number of clients increases.
 
 2. **Peer-to-Peer (P2P) Model:**
 
-   - **Definition:**
-     - In the P2P model, all devices (peers) on the network have equal status and can act as both clients and servers.
-     - Peers communicate directly with each other without the need for a centralized server.
+	- **Definition:**
+	  - In the P2P model, all devices (peers) on the network have equal status and can act as both clients and servers.
+	  - Peers communicate directly with each other without the need for a centralized server.
 
-   - **Communication Flow:**
-     - Peers can both request and provide resources/services to each other.
-     - There is no central server controlling communication.
+	- **Communication Flow:**
+	  - Peers can both request and provide resources/services to each other.
+	  - There is no central server controlling communication.
 
-   - **Characteristics:**
-     - Decentralized: No central server; all peers have equal status.
-     - Dynamic: Peers can join or leave the network at any time.
-     - Resource Sharing: Peers share resources directly with each other.
+	- **Characteristics:**
+	  - Decentralized: No central server; all peers have equal status.
+	  - Dynamic: Peers can join or leave the network at any time.
+	  - Resource Sharing: Peers share resources directly with each other.
 
-   - **Examples:**
-     - BitTorrent file sharing.
-     - Skype for P2P communication.
-     - Blockchain networks (like Bitcoin).
+	- **Examples:**
+	  - BitTorrent file sharing.
+	  - Skype for P2P communication.
+	  - Blockchain networks (like Bitcoin).
 
-   - **Advantages:**
-     - Decentralization reduces the risk of a single point of failure.
-     - Scalability is inherent as each peer can contribute resources.
+	- **Advantages:**
+	  - Decentralization reduces the risk of a single point of failure.
+	  - Scalability is inherent as each peer can contribute resources.
 
-   - **Disadvantages:**
-     - Lack of centralized control can make it challenging to manage and secure.
-     - Initial setup and discovery of peers can be complex.
+	- **Disadvantages:**
+	  - Lack of centralized control can make it challenging to manage and secure.
+	  - Initial setup and discovery of peers can be complex.
 
 ## Sockets
 Sockets play a crucial role in networking, providing a programming interface for network communication. In the context of computer networks, a socket is a software endpoint that establishes communication between two processes over a network. Here are some key aspects and the importance of sockets in networking:
 
 1. **Definition:**
-   - A socket is a combination of an IP address and a port number that identifies a specific endpoint on a network.
-   - It provides a mechanism for processes on different devices to communicate with each other.
+	- A socket is a combination of an IP address and a port number that identifies a specific endpoint on a network.
+	- It provides a mechanism for processes on different devices to communicate with each other.
 
 2. **Communication Channels:**
-   - Sockets enable processes running on different devices to establish communication channels, allowing data to be sent and received.
+	- Sockets enable processes running on different devices to establish communication channels, allowing data to be sent and received.
 
 3. **Types of Sockets:**
-   - There are two main types of sockets: TCP (Transmission Control Protocol) sockets and UDP (User Datagram Protocol) sockets.
-     - **TCP Sockets:** Provide a reliable, connection-oriented communication. Data is sent in a stream, and there is acknowledgment of received data.
-     - **UDP Sockets:** Offer a connectionless, unreliable communication. Data is sent in discrete packets without acknowledgment.
+	- There are two main types of sockets: TCP (Transmission Control Protocol) sockets and UDP (User Datagram Protocol) sockets.
+	  - **TCP Sockets:** Provide a reliable, connection-oriented communication. Data is sent in a stream, and there is acknowledgment of received data.
+	  - **UDP Sockets:** Offer a connectionless, unreliable communication. Data is sent in discrete packets without acknowledgment.
 
 4. **Client-Server Communication:**
-   - In a client-server model, sockets are fundamental for establishing connections. The server creates a socket and binds it to a specific port, waiting for incoming client connections. Clients create sockets to connect to the server's IP address and port.
+	- In a client-server model, sockets are fundamental for establishing connections. The server creates a socket and binds it to a specific port, waiting for incoming client connections. Clients create sockets to connect to the server's IP address and port.
 
 5. **Importance in Networking:**
-   - **Data Transmission:** Sockets facilitate the transmission of data between applications running on different devices. They provide a standardized interface for sending and receiving data.
-   - **Protocols Implementation:** Sockets are used to implement various network protocols, such as HTTP, FTP, and others, enabling the exchange of information between clients and servers.
-   - **Cross-Platform Communication:** Sockets allow communication between applications running on different operating systems and hardware, promoting interoperability.
-   - **Network Programming:** Sockets are essential for network programming, enabling developers to create applications that can communicate over a network, whether it's a local area network (LAN) or the Internet.
+	- **Data Transmission:** Sockets facilitate the transmission of data between applications running on different devices. They provide a standardized interface for sending and receiving data.
+	- **Protocols Implementation:** Sockets are used to implement various network protocols, such as HTTP, FTP, and others, enabling the exchange of information between clients and servers.
+	- **Cross-Platform Communication:** Sockets allow communication between applications running on different operating systems and hardware, promoting interoperability.
+	- **Network Programming:** Sockets are essential for network programming, enabling developers to create applications that can communicate over a network, whether it's a local area network (LAN) or the Internet.
 
 6. **Socket Programming:**
-   - Developers use socket programming to create applications that can communicate over a network. This involves creating and managing sockets, establishing connections, and handling data transmission.
+	- Developers use socket programming to create applications that can communicate over a network. This involves creating and managing sockets, establishing connections, and handling data transmission.
 
 7. **Security Considerations:**
-   - Sockets can be secured using encryption protocols (e.g., SSL/TLS) to protect the confidentiality and integrity of data transmitted over the network.
+	- Sockets can be secured using encryption protocols (e.g., SSL/TLS) to protect the confidentiality and integrity of data transmitted over the network.
 
 ### Interprocess communication
 In networking and operating systems several operations require a dataflow to send and recieve messages. In this cases several ports are selected and opened in the computer to deliver and send and recieve messages.
@@ -245,44 +245,44 @@ TLS/TSL
 **HTTP Overview from the Perspective of Computer Networks:**
 
 **1. Definition:**
-   - **HTTP (Hypertext Transfer Protocol):** It is an application layer protocol used for transmitting hypermedia documents, such as HTML files, over the World Wide Web. It is the foundation of any data exchange on the Web.
+	- **HTTP (Hypertext Transfer Protocol):** It is an application layer protocol used for transmitting hypermedia documents, such as HTML files, over the World Wide Web. It is the foundation of any data exchange on the Web.
 
 **2. Protocol Type:**
-   - **Stateless Protocol:** HTTP is inherently stateless, meaning each request from a client to a server is independent and does not retain information about the previous requests. This simplifies communication but requires additional mechanisms (like cookies) for handling state.
+	- **Stateless Protocol:** HTTP is inherently stateless, meaning each request from a client to a server is independent and does not retain information about the previous requests. This simplifies communication but requires additional mechanisms (like cookies) for handling state.
 
 **3. Communication Model:**
-   - **Client-Server Model:** HTTP follows a client-server model where a client sends requests to a server, and the server responds with the requested resources (e.g., web pages, images).
+	- **Client-Server Model:** HTTP follows a client-server model where a client sends requests to a server, and the server responds with the requested resources (e.g., web pages, images).
 
 **4. Connection Establishment:**
-   - **Connectionless:** By default, HTTP is connectionless. Each request-response cycle operates independently, and the connection is closed after each transaction.
+	- **Connectionless:** By default, HTTP is connectionless. Each request-response cycle operates independently, and the connection is closed after each transaction.
 
 **5. Transport Protocol:**
-   - **Primarily Relies on TCP:** HTTP typically operates over the TCP (Transmission Control Protocol) for reliable and ordered delivery of data. It can also be used over other transport protocols, but TCP is the most common.
+	- **Primarily Relies on TCP:** HTTP typically operates over the TCP (Transmission Control Protocol) for reliable and ordered delivery of data. It can also be used over other transport protocols, but TCP is the most common.
 
 **6. Request-Response Cycle:**
-   - **Request Format:** Clients send HTTP requests to servers, specifying a method (e.g., GET, POST), a Uniform Resource Identifier (URI), and protocol version in the request header.
-   - **Response Format:** Servers respond with an HTTP status code indicating the success or failure of the request, along with the requested resource or an error message.
+	- **Request Format:** Clients send HTTP requests to servers, specifying a method (e.g., GET, POST), a Uniform Resource Identifier (URI), and protocol version in the request header.
+	- **Response Format:** Servers respond with an HTTP status code indicating the success or failure of the request, along with the requested resource or an error message.
 
 **7. Stateless Nature:**
-   - **No Persistent Connection by Default:** In the traditional HTTP/1.0, each request/response pair is handled in a new connection, and the connection is closed after the response is delivered. This can lead to increased latency for multiple requests.
+	- **No Persistent Connection by Default:** In the traditional HTTP/1.0, each request/response pair is handled in a new connection, and the connection is closed after the response is delivered. This can lead to increased latency for multiple requests.
 
 **8. Persistent Connections:**
-   - **HTTP/1.1 introduced Persistent Connections:** To address the latency issue, HTTP/1.1 supports persistent connections, where multiple requests and responses can be sent over a single connection, improving performance.
+	- **HTTP/1.1 introduced Persistent Connections:** To address the latency issue, HTTP/1.1 supports persistent connections, where multiple requests and responses can be sent over a single connection, improving performance.
 
 **9. Security:**
-   - **HTTPS (HTTP Secure):** HTTPS is a secure version of HTTP that uses SSL/TLS protocols to encrypt data for secure communication. It adds a layer of security, important for protecting sensitive information.
+	- **HTTPS (HTTP Secure):** HTTPS is a secure version of HTTP that uses SSL/TLS protocols to encrypt data for secure communication. It adds a layer of security, important for protecting sensitive information.
 
 **10. Header Fields:**
-   - **Header Information:** HTTP messages contain header fields that provide information about the message, such as content type, length, and caching directives.
+	- **Header Information:** HTTP messages contain header fields that provide information about the message, such as content type, length, and caching directives.
 
 **11. Common Methods:**
-   - **GET, POST, PUT, DELETE:** HTTP defines various methods for different operations. GET is used for retrieving resources, POST for submitting data, PUT for updating resources, and DELETE for removing resources.
+	- **GET, POST, PUT, DELETE:** HTTP defines various methods for different operations. GET is used for retrieving resources, POST for submitting data, PUT for updating resources, and DELETE for removing resources.
 
 **12. Cookies:**
-   - **State Management:** Cookies are often used to maintain state between client and server in the stateless HTTP protocol.
+	- **State Management:** Cookies are often used to maintain state between client and server in the stateless HTTP protocol.
 
 **13. MIME Types:**
-   - **Content Types:** HTTP uses Multipurpose Internet Mail Extensions (MIME) types to specify the type of data being sent, allowing the client to properly interpret and display the content.
+	- **Content Types:** HTTP uses Multipurpose Internet Mail Extensions (MIME) types to specify the type of data being sent, allowing the client to properly interpret and display the content.
 
 ### Persistent and non persistent HTTP
 | Feature                              | Persistent HTTP                              | Non-Persistent HTTP                          |
@@ -302,44 +302,162 @@ TLS/TSL
 - Process Flow of Persistent HTTP:
 
 	1. **Connection Establishment:**
-	   - The client initiates a TCP connection to the server.
-	   - The connection is established and marked as persistent, allowing multiple requests and responses to occur over the same connection.
+		- The client initiates a TCP connection to the server.
+		- The connection is established and marked as persistent, allowing multiple requests and responses to occur over the same connection.
 
 	2. **Request-Response Cycle (Persistent):**
-	   - After the initial connection setup, the client can send multiple HTTP requests over the same connection without reopening it.
-	   - The server processes each request and responds with the corresponding HTTP responses.
-	   - The connection remains open until either party explicitly closes it or a timeout occurs.
+		- After the initial connection setup, the client can send multiple HTTP requests over the same connection without reopening it.
+		- The server processes each request and responds with the corresponding HTTP responses.
+		- The connection remains open until either party explicitly closes it or a timeout occurs.
 
 	3. **Header Information (Persistent):**
-	   - Headers, including the `Connection: keep-alive` header, are used to indicate that the connection should be kept open for future transactions.
+		- Headers, including the `Connection: keep-alive` header, are used to indicate that the connection should be kept open for future transactions.
 
 	4. **Subsequent Requests (Persistent):**
-	   - The client can send additional HTTP requests over the same connection without the need to establish a new connection for each transaction.
-	   - This process continues until the client or server decides to close the connection.
+		- The client can send additional HTTP requests over the same connection without the need to establish a new connection for each transaction.
+		- This process continues until the client or server decides to close the connection.
 
 	5. **Connection Closure (Optional):**
-	   - The connection can be explicitly closed by either the client or the server using the `Connection: close` header, or it may be closed due to a timeout.
+		- The connection can be explicitly closed by either the client or the server using the `Connection: close` header, or it may be closed due to a timeout.
 
 - Process Flow of Non-Persistent HTTP:
 
 	1. **Connection Establishment:**
-	   - The client initiates a TCP connection to the server.
+		- The client initiates a TCP connection to the server.
 
 	2. **Request-Response Cycle (Non-Persistent):**
-	   - The client sends a single HTTP request to the server over the established connection.
-	   - The server processes the request and sends back the corresponding HTTP response.
+		- The client sends a single HTTP request to the server over the established connection.
+		- The server processes the request and sends back the corresponding HTTP response.
 
 	3. **Connection Closure:**
-	   - The connection is immediately closed by either the client or the server after the response is received.
-	   - This closure ensures that each request-response pair occurs in a new, independent connection.
+		- The connection is immediately closed by either the client or the server after the response is received.
+		- This closure ensures that each request-response pair occurs in a new, independent connection.
 
 	4. **Header Information (Non-Persistent):**
-	   - Each HTTP request and response may include headers, but there is no need for headers to maintain a persistent connection.
+		- Each HTTP request and response may include headers, but there is no need for headers to maintain a persistent connection.
 
 	5. **Subsequent Requests (New Connections):**
-	   - For each new request, the client must establish a new TCP connection to the server.
-	   - The process repeats for each transaction, with the connection being closed after each request-response cycle.
+		- For each new request, the client must establish a new TCP connection to the server.
+		- The process repeats for each transaction, with the connection being closed after each request-response cycle.
 
 	6. **Connection Overhead (Non-Persistent):**
-	   - The overhead of establishing and tearing down connections for each transaction can impact performance, especially in scenarios with multiple rapid requests.
+		- The overhead of establishing and tearing down connections for each transaction can impact performance, especially in scenarios with multiple rapid requests.
 
+## Termworks
+1. RSA encryption
+	```py
+	import random
+	import math
+	# Function to check if a number is prime
+	def is_prime(num):
+		if num <= 1:
+			return False
+		for i in range(2, int(math.sqrt(num)) + 1):
+			if num % i == 0:
+				return False
+		return True
+	# Function to generate random prime numbers
+	def generate_prime(bits):
+		while True:
+			num = random.getrandbits(bits)
+			if is_prime(num):
+				return num
+	# Function to compute the greatest common divisor (GCD)
+	def gcd(a, b):
+		while b:
+			a, b = b, a % b
+		return a
+
+	# Function to find the modular multiplicative inverse
+	def mod_inverse(a, m):
+		m0, x0, x1 = m, 0, 1
+		while a > 1:
+			q = a // m
+			m, a = a % m, m
+			x0, x1 = x1 - q * x0, x0
+		return x1 + m0 if x1 < 0 else x1
+	# Function to generate RSA key pairs
+	def generate_key_pair(bits):
+		p = generate_prime(bits)
+		q = generate_prime(bits)
+		n = p * q
+		phi = (p - 1) * (q - 1)
+		while True:
+			e = random.randint(2, phi - 1)
+			if gcd(e, phi) == 1:
+				break
+		d = mod_inverse(e, phi)
+		public_key = (n, e)
+		private_key = (n, d)
+		return public_key, private_key
+	# Function to encrypt a message
+	def encrypt(public_key, message):
+		n, e = public_key
+		cipher_text = [pow(ord(char), e, n) for char in message]
+		return cipher_text
+
+	# Function to decrypt a message
+	def decrypt(private_key, cipher_text):
+		n, d = private_key
+		decrypted_message = ''.join([chr(pow(char, d, n)) for char in cipher_text])
+		return decrypted_message
+	# Main program
+	if __name__ == "__main__":
+		bits = 8  # Adjust the number of bits for your desired security level
+		public_key, private_key = generate_key_pair(bits)
+		print(f" Generated Public Key : {public_key} \n Generated Private Key : {private_key}")
+		message = eval(input(" Enter the Message to be Encrypted : "))
+		print(" Original message:", message)
+		encrypted_message = encrypt(public_key, message)
+		print(" Encrypted message:", encrypted_message)
+		decrypted_message = decrypt(private_key, encrypted_message)
+		print(" Decrypted message:", decrypted_message) 
+	```
+
+2. TCP in python \
+	Running this code \
+	Required packages: `socket`, (pre-installed on python3.10 ubuntu)
+	run `python3 server.py` and `python3 client.py` in individual shells to start the program. Then pass the message to the client shell in quotes.
+
+	- Contents of `tcp_client.py`
+		```py
+		import socket
+		client_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+		server_address=('localhost',12345)
+		client_socket.connect(server_address)
+
+		try:
+			message=eval(input("Enter message:"))
+			client_socket.sendall(message.encode())
+
+		finally:
+			client_socket.close()
+		```
+
+	- Contents of `tcp_server.py`
+		```py
+		import socket
+
+		server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
+		server_address=('localhost',12345)
+		server_socket.bind(server_address)
+
+		server_socket.listen(5)
+
+		print("TCP server is waiting for connections....")
+
+		while True:
+			client_socket,client_address=server_socket.accept()
+			print(f'connected to{client_address}')
+
+			try:
+				data=client_socket.recv(1024)
+				if data:
+					print(f'Recieved data:{data.decode()}')
+				else:
+					break
+			finally:
+				client_socket.close()
+
+		```
