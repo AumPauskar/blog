@@ -6,7 +6,17 @@
     <description>Recent content on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Nov 2023 09:46:19 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 20:40:58 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Image analysis with pytorch</title>
+      <link>http://aumpauskar.site/blog/posts/ml/image_analysis/</link>
+      <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
+      
+      <guid>http://aumpauskar.site/blog/posts/ml/image_analysis/</guid>
+      <description>Image Analysis using pytorch Prerequisites This project is built using python in Ubuntu (WSL) and you&amp;rsquo;ll need to install the following:
+Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux Python 3 (I&amp;rsquo;m using 3.10.12) 1 2 sudo apt update sudo apt install python3 Pip 1 2 sudo apt update sudo apt install python3-pip Packages Note: Since I&amp;rsquo;m using a computer with a CUDA compatable NVIDIA GPU, I&amp;rsquo;ll be using the GPU version of pytorch.</description>
+    </item>
+    
     <item>
       <title>Extended markdown cheatsheet with KaTeX</title>
       <link>http://aumpauskar.site/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
