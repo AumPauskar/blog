@@ -6,9 +6,18 @@
     <description>Recent content on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 12:17:46 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 00:12:10 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Big_data_hadoop</title>
+      <title>Image analysis theory</title>
+      <link>http://aumpauskar.site/blog/posts/ml/image_analysis_theory/</link>
+      <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
+      
+      <guid>http://aumpauskar.site/blog/posts/ml/image_analysis_theory/</guid>
+      <description>Image processing Theory jargon Difference between supervised and unsupervised learning Criteria Supervised Learning Unsupervised Learning Data Uses labeled data for training. Uses unlabeled data for training. Goal Predict a label for new data based on past observations. Discover hidden patterns or intrinsic structures within the data. Examples Classification, Regression Clustering, Association Complexity Less complex as it has a clear goal. More complex due to the lack of clear goal. Usage When the outcome of the problem is known.</description>
+    </item>
+    
+    <item>
+      <title>Big data and hadoop ecosystem</title>
       <link>http://aumpauskar.site/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
       
