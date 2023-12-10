@@ -56,7 +56,7 @@ This project is built using python in Ubuntu (WSL) and you'll need to install th
 | 5 | CUDA | 11.8 |
 | 6 | Python | 3.10.12 |
 
-## MNIST Dataset
+## MNIST number dataset
 The MNIST dataset is a dataset of handwritten digits. It has 60,000 training images and 10,000 test images. We'll see a code to load the dataset and display the occurances of individual digits in the dataset. Or if you want to run the code from Jupyter notebook you can clone my repository via git.
 ```bash
 git clone https://github.com/AumPauskar/biomed-image-analysis.git
@@ -159,3 +159,86 @@ print(frequencies)
 
 **CPU version:** ~ 3.1 mins \
 **CUDA version:** ~ 55 secs
+
+## MNIST fashion dataset
+The MNIST fashion dataset is a dataset of fashion accessories. It has 60,000 training images and 10,000 test images. We'll see a code to load the dataset and display the occurances of individual accessories in the dataset. Or if you want to run the code from Jupyter notebook you can clone my repository via git.
+
+
+```py
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torchvision.transforms as transforms
+from torch.utils.data import DataLoader
+from torchvision.datasets import FashionMNIST
+
+# Define a simple neural network
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.fc = nn.Linear(28 * 28, 10)
+
+    def forward(self, x):
+        x = x.view(-1, 28 * 28)
+        x = self.fc(x)
+        return x
+
+def train(model, train_loader, criterion, optimizer, device):
+    model.train()
+    for data, target in train_loader:
+        data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
+        output = model(data)
+        loss = criterion(output, target)
+        loss.backward()
+        optimizer.step()
+
+def count_occurrences(model, test_loader, device):
+    model.eval()
+    occurrences = torch.zeros(10, dtype=torch.long, device=device)
+    with torch.no_grad():
+        for data, target in test_loader:
+            data, target = data.to(device), target.to(device)
+            output = model(data)
+            _, predicted = torch.max(output, 1)
+            occurrences += torch.bincount(predicted, minlength=10)
+    return occurrences
+
+
+def main():
+    # Set device
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    # Define transformations
+    transform = transforms.Compose([transforms.ToTensor()])
+
+    # Load MNIST Fashion dataset
+    train_dataset = FashionMNIST(root='./data', train=True, download=True, transform=transform)
+    test_dataset = FashionMNIST(root='./data', train=False, download=True, transform=transform)
+
+    # Create data loaders
+    train_loader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True)
+    test_loader = DataLoader(dataset=test_dataset, batch_size=64, shuffle=False)
+
+    # Initialize the model, criterion, and optimizer
+    model = SimpleNN().to(device)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+    # Train the model
+    for epoch in range(5):  # You can adjust the number of epochs
+        train(model, train_loader, criterion, optimizer, device)
+
+    # Count occurrences
+    occurrences = count_occurrences(model, test_loader, device)
+
+    # Print the occurrences
+    for i, count in enumerate(occurrences):
+        print(f"Accessory {i}: {count.item()} occurrences")
+
+if __name__ == "__main__":
+    main()
+```
+
+**CPU version:** ~ 35 secs \
+**CUDA version:** ~ 35 secs
