@@ -345,6 +345,25 @@ These instructions are used for efficient multiplication operations, and the cho
 	```
 
 - Termwork 3
+	**Problem statement:** Find the factorial of a number
+		```asm
+		AREA ONE, CODE, READONLY
+		ENTRY
+			MOV R1, #5	; Set the initial value for the factorial
+			MOV R2, #1	; Initialize the result to 1
+
+	L		MUL R3, R2, R1 ; Multiply the result by the current value of R1 and store in R3
+			MOV R2, R3      ; Move the result from R3 to R2
+			SUBS R1, R1, #1 ; Decrement R1
+			BNE L           ; Branch back to L if R1 is not zero
+
+			; At this point, R2 contains the factorial result
+
+			; You can use R2 or store the result in another register/memory location
+
+		END
+		```
+- Termwork 4
 	```asm
 		AREA ONE, CODE, READONLY
 			ENTRY
@@ -389,3 +408,24 @@ These instructions are used for efficient multiplication operations, and the cho
 	The code effectively finds the minimum value in the `VALUE1` array and stores it in the `RESULT` variable. The loop iterates through the array, compares values, and updates `R2` with the minimum value encountered.
 
 	ADC, ADD, RSB, RSC SBC, SUB
+
+- Termwork 5
+
+```assembly
+	AREA ONE, CODE, READONLY
+		ENTRY
+		MOV R0, #0X80000002
+		MOV R1, #0X00000001
+		MOVS R1, R0, ROR #1
+		RRX R2, R0
+		MOVS R3, R0, LSR #1
+		MOVS R4, R0, ASR #1
+		MOVS R5, R0, LSL #1
+		AND R6, R0, R1
+		ORR R7, R0, R1
+		EOR R6, R0, R1
+		BIC R5, R0, R1
+L		B L
+		
+	END
+```

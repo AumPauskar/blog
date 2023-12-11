@@ -6,7 +6,16 @@
     <description>Recent content on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2023 00:12:10 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows_scripts</title>
+      <link>http://aumpauskar.site/blog/posts/os/windows_scripts/</link>
+      <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
+      
+      <guid>http://aumpauskar.site/blog/posts/os/windows_scripts/</guid>
+      <description> Write-Output: Prints a line in the shell New-Item: Creates a new file within the same directory </description>
+    </item>
+    
     <item>
       <title>Image analysis theory</title>
       <link>http://aumpauskar.site/blog/posts/ml/image_analysis_theory/</link>
