@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Aum&#39;s blogging site</title>
-    <link>http://aumpauskar.site/blog/posts/</link>
+    <link>https://aumpauskar.github.io/blog/posts/</link>
     <description>Recent content in Posts on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="http://aumpauskar.site/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows_scripts</title>
-      <link>http://aumpauskar.site/blog/posts/os/windows_scripts/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/os/windows_scripts/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
       <description> Write-Output: Prints a line in the shell New-Item: Creates a new file within the same directory </description>
     </item>
     
     <item>
       <title>Image analysis theory</title>
-      <link>http://aumpauskar.site/blog/posts/ml/image_analysis_theory/</link>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</link>
       <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/ml/image_analysis_theory/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</guid>
       <description>Image processing Theory jargon Difference between supervised and unsupervised learning Criteria Supervised Learning Unsupervised Learning Data Uses labeled data for training. Uses unlabeled data for training. Goal Predict a label for new data based on past observations. Discover hidden patterns or intrinsic structures within the data. Examples Classification, Regression Clustering, Association Complexity Less complex as it has a clear goal. More complex due to the lack of clear goal. Usage When the outcome of the problem is known.</description>
     </item>
     
     <item>
       <title>Big data and hadoop ecosystem</title>
-      <link>http://aumpauskar.site/blog/posts/dbms/big_data_hadoop/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/dbms/big_data_hadoop/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
       <description>Big data Just data Structured data: data that has a defined length and format for each record. It&amp;rsquo;s stored in a fixed format such as a relational database or spreadsheet. It&amp;rsquo;s easy to search and analyze. It&amp;rsquo;s used for transactional data. Unstructured data: data that has an unknown length and format. It&amp;rsquo;s stored in a free format such as a text file. It&amp;rsquo;s difficult to search and analyze. It&amp;rsquo;s used for non-transactional data.</description>
     </item>
     
     <item>
       <title>Image analysis with pytorch</title>
-      <link>http://aumpauskar.site/blog/posts/ml/image_analysis/</link>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</link>
       <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/ml/image_analysis/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</guid>
       <description>Image Analysis using pytorch Prerequisites This project is built using python in Ubuntu (WSL) and you&amp;rsquo;ll need to install the following:
 Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux Python 3 (I&amp;rsquo;m using 3.10.12) 1 2 sudo apt update sudo apt install python3 Pip 1 2 sudo apt update sudo apt install python3-pip Packages Note: Since I&amp;rsquo;m using a computer with a CUDA compatable NVIDIA GPU, I&amp;rsquo;ll be using the GPU version of pytorch.</description>
     </item>
     
     <item>
       <title>Extended markdown cheatsheet with KaTeX</title>
-      <link>http://aumpauskar.site/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:19 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
       <description>Extended Markdown Cheatsheet Heading 1 2 3 4 5 6 # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 Paragraph 1 This is a paragraph. Code snippet 1 &amp;#39;print(&amp;#34;Hello World&amp;#34;)&amp;#39; block of code
 1 2 3 &amp;#39;&amp;#39;&amp;#39; print(&amp;#34;Hello World&amp;#34;) &amp;#39;&amp;#39;&amp;#39; code within the clock of code can be selectively highlighted
 1 2 3 &amp;#39;&amp;#39;&amp;#39;python print(&amp;#34;Hello World&amp;#34;) &amp;#39;&amp;#39;&amp;#39; Emphasis 1 2 3 4 5 *This text will be italic* _This will also be italic_ **This text will be bold** __This will also be bold__ _You **can** combine them_ Table 1 2 3 4 | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | Bulletpoints 1 2 3 4 - Bulletpoint 1 - Bulletpoint 2 - Bulletpoint 2.</description>
@@ -57,28 +57,28 @@ Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux P
     
     <item>
       <title>Git and GitHub cheatsheet</title>
-      <link>http://aumpauskar.site/blog/posts/cheatsheet/git_cheatsheet/</link>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/cheatsheet/git_cheatsheet/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
       <description>Git / github cheatsheet Installation of git Download git from here or use on debian based linux 1 2 sudo apt update sudo apt install git Check if git is installed 1 git --version Configure git 1 2 git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;Your email&amp;#34; (Optional) Change the default brach name from master to main 1 git config --global init.defaultBranch main Configuring SSH keys to github Run these commands on the terminal 1 2 3 4 ssh-keygen -t ed25519 -C &amp;#34;$Your email&amp;#34; eval &amp;#34;$(ssh-agent -s)&amp;#34; ssh-add ~/.</description>
     </item>
     
     <item>
       <title>OOPS with Python and packages</title>
-      <link>http://aumpauskar.site/blog/posts/python/python_oops/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/python_oops/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
       <description>Python Chapter summary - Unit 1 Unit 1 Python Fundamentals: An Introduction to Python programming: Introduction to Python, IDLE to develop programs; How to write your first programs: Basic coding skills, data types and variables, numeric data, string data, five of the Python functions; Control statements: Boolean expressions, selection structure, iteration structure; Define and use Functions and Modules: define and use functions, more skills for defining and using functions and modules, create and use modules, standard modules Contents What is python?</description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://aumpauskar.site/blog/posts/os/linux/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/os/linux/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
       <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.
 Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.
 File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
@@ -86,75 +86,75 @@ File systems The linux file system is a tree structure with the root directory a
     
     <item>
       <title>Computer networks</title>
-      <link>http://aumpauskar.site/blog/posts/computer_network/cn/</link>
+      <link>https://aumpauskar.github.io/blog/posts/computer_network/cn/</link>
       <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/computer_network/cn/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/computer_network/cn/</guid>
       <description>Computer networks Packets In networking, a packet is a small segment of a larger message. Data sent over computer networks*, such as the Internet, is divided into packets. These packets are then recombined by the computer or device that receives them. The Internet is a &amp;ldquo;packet switching&amp;rdquo; network. Packet switching refers to the ability of networking equipment to process packets independently from each other. It also means that packets can take different network paths to the same destination, so long as they all arrive at the destination.</description>
     </item>
     
     <item>
       <title>Modulated motor control with arduino</title>
-      <link>http://aumpauskar.site/blog/posts/projects/motor_encoder/</link>
+      <link>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</link>
       <pubDate>Tue, 21 Nov 2023 22:20:04 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/projects/motor_encoder/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</guid>
       <description>Motor Encoder Components Arduino Uno 4x4 Keypad I2C LCD DC Motor with encoder L293D Motor Driver Connections Display connections From (I2C display) To (arduino) 1 VCC 5V 2 GND GND 3 SDA SDA 4 SCL SCL Keypad connections From (Keypad) To (arduino) 1 Row 1 D13 2 Row 2 D12 3 Row 3 D11 4 Row 4 D10 5 Col 1 D9 6 Col 2 D8 7 Col 3 D7 8 Col 4 D4 Motor connections From (Motor) To 1 Motor negative Output 4 (L293D) 2 Motor positive Output 3 (L293D) 3 Encoder ground GND (L293D) 4 Channel B D3 (arduino) 5 Channel A D2 (arduino) 6 Encoder power 5V (arduino) L293D connections From (L293D) To (arduino) 1 Power 1 5V 2 Input 4 D5 3 Output 4 refer above 4 Ground GND (both arduino/motor) 5 Ground GND (both arduino/motor) 6 Output 3 refer above 7 Input 3 D6 8 Enable 3,4 5V 9 Enable 1,2 5V 10 Input 1 N/A 11 Output 1 N/A 12 Ground GND 13 Ground GND 14 Output 2 N/A 15 Input 2 N/A 16 Power 2 5V Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 // ---------- // keypad setup #include &amp;lt;Keypad.</description>
     </item>
     
     <item>
       <title>Working with ARM microcontroller using Keil uVision4</title>
-      <link>http://aumpauskar.site/blog/posts/iot/arm/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/iot/arm/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
       <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
     </item>
     
     <item>
       <title>Web technologies - basic HTML/CSS/JS</title>
-      <link>http://aumpauskar.site/blog/posts/web/html-web/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/html-web/</link>
       <pubDate>Fri, 17 Nov 2023 09:21:22 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/web/html-web/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/html-web/</guid>
       <description>Web notes FYI CSA: Client server architecture A web can be two tier, three tier, n tier having different applets for different purposes HTML: Hypertext markup lang, CSS: Cascading stylesheet, JS: Javascript P2P: Peer to peer architecture DOM: Document Object Model (DOM) is a file model wherein all the files are shown in a multiinterface structural model Tree stucture: A tree structure is a model where the start point is a single node but as we go down the model the number of nodess increase just like a tree.</description>
     </item>
     
     <item>
       <title>Static site generators with Hugo</title>
-      <link>http://aumpauskar.site/blog/posts/web/static-site-generators/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</link>
       <pubDate>Fri, 17 Nov 2023 09:19:25 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/web/static-site-generators/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</guid>
       <description>Static site generators A short guide on how this site was created using hugo.
 Introduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required.</description>
     </item>
     
     <item>
       <title>Database management and SQL</title>
-      <link>http://aumpauskar.site/blog/posts/dbms/sql/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/sql/</link>
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/dbms/sql/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
       <description>Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.
 Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke</description>
     </item>
     
     <item>
       <title>Basic DSA algorithms using C</title>
-      <link>http://aumpauskar.site/blog/posts/dsa/dsabasics/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</link>
       <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/dsa/dsabasics/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</guid>
       <description>A complete guide ds Termwork 1 - Infix evaluation Algorithm Create an empty stack (operandStack) to store operands and an empty stack (operatorStack) to store operators. Initialize a variable (result) to store the final output Iterate through each character of the infix expression. If the current character is an operand, add it to the operandStack. If the current character is an operator, pop operators from operatorStack and add them to operandStack until an operator with lower precedence is found.</description>
     </item>
     
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
-      <link>http://aumpauskar.site/blog/posts/iot/embeddedc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/iot/embeddedc/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
       <description>Embedded C Embedded C is used in embedded systems and iot deviced such as Arduino and mico IC&amp;rsquo;s. To emulate this we can use Keil, however this can be only run on Windows, to run this on linux based distros use wine.
 Procedure to run The following are the steps to run a code on Keil Note: Here we are working on intel 8051AH microcontroller
 Install and run keil If you are on a windows system you can run the exe file locally, if you are on a linux machine you can run keil through wine and it will function just like you are running it on windows natively.</description>
@@ -162,10 +162,10 @@ Install and run keil If you are on a windows system you can run the exe file loc
     
     <item>
       <title>Arduino control with peripherals</title>
-      <link>http://aumpauskar.site/blog/posts/iot/arduino/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arduino/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:04 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/iot/arduino/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arduino/</guid>
       <description>Arduino 14 IO, 6//
 ESP 8266 wifi
 Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi
@@ -174,20 +174,20 @@ Q. LED blink 1 2 3 4 5 6 7 8 9 10 11 const int ledVar = 13; void setup() { pinMo
     
     <item>
       <title>OOPS with Java</title>
-      <link>http://aumpauskar.site/blog/posts/java/javafull/</link>
+      <link>https://aumpauskar.github.io/blog/posts/java/javafull/</link>
       <pubDate>Thu, 16 Nov 2023 10:35:36 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/java/javafull/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/java/javafull/</guid>
       <description>Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm
 FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().</description>
     </item>
     
     <item>
       <title>Virtualenv</title>
-      <link>http://aumpauskar.site/blog/posts/python/virtualenv/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/virtualenv/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
       <description>Python virtual environment Python virtual environemt is a program that aids in creating a serperate virtual environment for each project
 Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip install virtualenv Creating virtual environent Windows - cmd/powershell
 1 py -m venv {your_env_name} Linux
@@ -199,19 +199,19 @@ Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip ins
     
     <item>
       <title>Packages</title>
-      <link>http://aumpauskar.site/blog/posts/python/packages/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/packages/</link>
       <pubDate>Thu, 16 Nov 2023 10:08:09 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/packages/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/packages/</guid>
       <description>Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda</description>
     </item>
     
     <item>
       <title>Oops</title>
-      <link>http://aumpauskar.site/blog/posts/python/oops/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/oops/</link>
       <pubDate>Thu, 16 Nov 2023 10:07:41 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/oops/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/oops/</guid>
       <description>Chapter summary - Unit 4 Object Oriented Programming: Define and use your own classes: An introduction to classes and objects, define a class, object composition, encapsulation; Inheritance: Inheritance, override object methods; Design an object oriented program: Techniques for object-oriented design Text Book 1 – Chapters 14,15,16
 Creating your own class A class can be created in python by using the class keyword
 1 2 class MyClass: x = 5 This creates a blueprint for the objects to be defined.</description>
@@ -219,39 +219,39 @@ Creating your own class A class can be created in python by using the class keyw
     
     <item>
       <title>Lists</title>
-      <link>http://aumpauskar.site/blog/posts/python/lists/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/lists/</link>
       <pubDate>Thu, 16 Nov 2023 10:07:18 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/lists/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/lists/</guid>
       <description>Chapter summary - Unit 2 Higher Data Constructs: Lists and tuples: Basic skills for working with lists, list of lists, more skills for working with lists, tuples; Dictionaries: get started with dictionaries, more skills for working with dictionaries; Strings: Basic skills for working with strings, split and join strings; Dates and times: get started with dates and times Text Book 1 – Chapters 6,12,10,11
 Datatypes - complex Lists: A list is a mutable datatype in which all the elements are indexed from 0 to n 1 myList = [5,7,3,7] Tuples: A tuple is an immutable datatype in which all the elements are indexed from 0 to n 1 myTuple = (6,2,5,5) Dictionaries: A dictionary is a complex mutable datatype in which the elements are indexed upon the user&amp;rsquo;s needs, this is called the key value pairs.</description>
     </item>
     
     <item>
       <title>Data</title>
-      <link>http://aumpauskar.site/blog/posts/python/data/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/data/</link>
       <pubDate>Thu, 16 Nov 2023 10:06:26 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/data/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/data/</guid>
       <description>Chapter summary - Unit 3 File I/O: An introduction to file I/O, test files, CSV files, binary files; Exception Handling: handle a single exception, handle multiple exceptions, Two more skills; Work with a database: An introduction to relational databases, SQL statements for data manipulation, SQLite Manager to work with a database, use Python to work with a database
 File write modes &amp;ldquo;x&amp;rdquo; - Create - will create a file, returns an error if the file exist &amp;ldquo;a&amp;rdquo; - Append - will create a file if the specified file does not exist &amp;ldquo;w&amp;rdquo; - Write - will create a file if the specified file does not exist 1 f = open(&amp;#34;myfile.</description>
     </item>
     
     <item>
       <title>Basics</title>
-      <link>http://aumpauskar.site/blog/posts/python/basics/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/basics/</link>
       <pubDate>Thu, 16 Nov 2023 10:05:13 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/python/basics/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/basics/</guid>
       <description>Basics of python</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://aumpauskar.site/blog/posts/my-first-post/</link>
+      <link>https://aumpauskar.github.io/blog/posts/my-first-post/</link>
       <pubDate>Thu, 16 Nov 2023 09:46:38 +0530</pubDate>
       
-      <guid>http://aumpauskar.site/blog/posts/my-first-post/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/my-first-post/</guid>
       <description>Hello World This is my first post
 1 print(&amp;#34;Hello World&amp;#34;) </description>
     </item>

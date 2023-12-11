@@ -1,4 +1,4 @@
-baseURL = 'http://aumpauskar.site/blog/'
+baseURL = 'https://aumpauskar.github.io/blog/'
 languageCode = 'en-us'
 title = "Aum's blogging site"
 theme = 'PaperMod'
