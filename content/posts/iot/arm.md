@@ -344,9 +344,9 @@ These instructions are used for efficient multiplication operations, and the cho
 		END
 	```
 
-- Termwork 3
+- Termwork 3 \
 	**Problem statement:** Find the factorial of a number
-		```asm
+	```asm
 		AREA ONE, CODE, READONLY
 		ENTRY
 			MOV R1, #5	; Set the initial value for the factorial
@@ -362,7 +362,7 @@ These instructions are used for efficient multiplication operations, and the cho
 			; You can use R2 or store the result in another register/memory location
 
 		END
-		```
+	```
 - Termwork 4
 	```asm
 		AREA ONE, CODE, READONLY
