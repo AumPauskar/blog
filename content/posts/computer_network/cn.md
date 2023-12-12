@@ -15,14 +15,14 @@ MTU stands for Maximum Transmission Unit. It is a parameter that defines the max
 The effect of increasing or decreasing the MTU can have implications on network performance. Here are some key points:
 
 1. **Increasing MTU:**
-	- Larger MTU generally allows for more data to be sent in a single packet, which can lead to more efficient data transmission.
-	- Larger packets mean fewer headers and less overhead per unit of data, resulting in a more efficient use of network resources.
-	- However, increasing MTU may also lead to higher latency for small packets, as they need to wait for larger packets to be transmitted first.
+   - Larger MTU generally allows for more data to be sent in a single packet, which can lead to more efficient data transmission.
+   - Larger packets mean fewer headers and less overhead per unit of data, resulting in a more efficient use of network resources.
+   - However, increasing MTU may also lead to higher latency for small packets, as they need to wait for larger packets to be transmitted first.
 
 2. **Decreasing MTU:**
-	- Smaller MTU can be beneficial in situations where the network has a high error rate or where there are restrictions on the maximum packet size.
-	- Smaller packets can be less prone to errors and can be retransmitted more quickly in case of errors.
-	- However, using smaller MTU values can increase the overhead per unit of data due to the additional headers in each packet.
+   - Smaller MTU can be beneficial in situations where the network has a high error rate or where there are restrictions on the maximum packet size.
+   - Smaller packets can be less prone to errors and can be retransmitted more quickly in case of errors.
+   - However, using smaller MTU values can increase the overhead per unit of data due to the additional headers in each packet.
 
 The MTU for popular network protocols can vary. Here are the typical MTU values for some common protocols:
 
@@ -134,92 +134,92 @@ The client-server model and peer-to-peer (P2P) model are two fundamental archite
 
 1. **Client-Server Model:**
 
-	- **Definition:**
-	  - In the client-server model, the system is divided into two main components: clients and servers.
-	  - Clients are end-user devices or applications that request services or resources from the server.
-	  - Servers are powerful computers or software applications that provide services or resources to clients.
+   - **Definition:**
+     - In the client-server model, the system is divided into two main components: clients and servers.
+     - Clients are end-user devices or applications that request services or resources from the server.
+     - Servers are powerful computers or software applications that provide services or resources to clients.
 
-	- **Communication Flow:**
-	  - Clients initiate requests for services or resources.
-	  - Servers respond to client requests by providing the requested services or resources.
-	  - Communication is typically one-way, with clients making requests and servers responding.
+   - **Communication Flow:**
+     - Clients initiate requests for services or resources.
+     - Servers respond to client requests by providing the requested services or resources.
+     - Communication is typically one-way, with clients making requests and servers responding.
 
-	- **Characteristics:**
-	  - Centralized: Services and resources are centralized on servers.
-	  - Scalability: Easier to scale as the server can handle multiple client requests.
-	  - Control: Servers control access to resources and manage security.
+   - **Characteristics:**
+     - Centralized: Services and resources are centralized on servers.
+     - Scalability: Easier to scale as the server can handle multiple client requests.
+     - Control: Servers control access to resources and manage security.
 
-	- **Examples:**
-	  - Web servers (responding to browser requests).
-	  - File servers (providing file storage and retrieval).
-	  - Database servers (managing and providing access to databases).
+   - **Examples:**
+     - Web servers (responding to browser requests).
+     - File servers (providing file storage and retrieval).
+     - Database servers (managing and providing access to databases).
 
-	- **Advantages:**
-	  - Centralized management.
-	  - Controlled access to resources.
-	  - Easier maintenance and updates.
+   - **Advantages:**
+     - Centralized management.
+     - Controlled access to resources.
+     - Easier maintenance and updates.
 
-	- **Disadvantages:**
-	  - Single point of failure (if the server goes down, clients may lose access).
-	  - Scalability challenges as the number of clients increases.
+   - **Disadvantages:**
+     - Single point of failure (if the server goes down, clients may lose access).
+     - Scalability challenges as the number of clients increases.
 
 2. **Peer-to-Peer (P2P) Model:**
 
-	- **Definition:**
-	  - In the P2P model, all devices (peers) on the network have equal status and can act as both clients and servers.
-	  - Peers communicate directly with each other without the need for a centralized server.
+   - **Definition:**
+     - In the P2P model, all devices (peers) on the network have equal status and can act as both clients and servers.
+     - Peers communicate directly with each other without the need for a centralized server.
 
-	- **Communication Flow:**
-	  - Peers can both request and provide resources/services to each other.
-	  - There is no central server controlling communication.
+   - **Communication Flow:**
+     - Peers can both request and provide resources/services to each other.
+     - There is no central server controlling communication.
 
-	- **Characteristics:**
-	  - Decentralized: No central server; all peers have equal status.
-	  - Dynamic: Peers can join or leave the network at any time.
-	  - Resource Sharing: Peers share resources directly with each other.
+   - **Characteristics:**
+     - Decentralized: No central server; all peers have equal status.
+     - Dynamic: Peers can join or leave the network at any time.
+     - Resource Sharing: Peers share resources directly with each other.
 
-	- **Examples:**
-	  - BitTorrent file sharing.
-	  - Skype for P2P communication.
-	  - Blockchain networks (like Bitcoin).
+   - **Examples:**
+     - BitTorrent file sharing.
+     - Skype for P2P communication.
+     - Blockchain networks (like Bitcoin).
 
-	- **Advantages:**
-	  - Decentralization reduces the risk of a single point of failure.
-	  - Scalability is inherent as each peer can contribute resources.
+   - **Advantages:**
+     - Decentralization reduces the risk of a single point of failure.
+     - Scalability is inherent as each peer can contribute resources.
 
-	- **Disadvantages:**
-	  - Lack of centralized control can make it challenging to manage and secure.
-	  - Initial setup and discovery of peers can be complex.
+   - **Disadvantages:**
+     - Lack of centralized control can make it challenging to manage and secure.
+     - Initial setup and discovery of peers can be complex.
 
 ## Sockets
 Sockets play a crucial role in networking, providing a programming interface for network communication. In the context of computer networks, a socket is a software endpoint that establishes communication between two processes over a network. Here are some key aspects and the importance of sockets in networking:
 
 1. **Definition:**
-	- A socket is a combination of an IP address and a port number that identifies a specific endpoint on a network.
-	- It provides a mechanism for processes on different devices to communicate with each other.
+   - A socket is a combination of an IP address and a port number that identifies a specific endpoint on a network.
+   - It provides a mechanism for processes on different devices to communicate with each other.
 
 2. **Communication Channels:**
-	- Sockets enable processes running on different devices to establish communication channels, allowing data to be sent and received.
+   - Sockets enable processes running on different devices to establish communication channels, allowing data to be sent and received.
 
 3. **Types of Sockets:**
-	- There are two main types of sockets: TCP (Transmission Control Protocol) sockets and UDP (User Datagram Protocol) sockets.
-	  - **TCP Sockets:** Provide a reliable, connection-oriented communication. Data is sent in a stream, and there is acknowledgment of received data.
-	  - **UDP Sockets:** Offer a connectionless, unreliable communication. Data is sent in discrete packets without acknowledgment.
+   - There are two main types of sockets: TCP (Transmission Control Protocol) sockets and UDP (User Datagram Protocol) sockets.
+     - **TCP Sockets:** Provide a reliable, connection-oriented communication. Data is sent in a stream, and there is acknowledgment of received data.
+     - **UDP Sockets:** Offer a connectionless, unreliable communication. Data is sent in discrete packets without acknowledgment.
 
 4. **Client-Server Communication:**
-	- In a client-server model, sockets are fundamental for establishing connections. The server creates a socket and binds it to a specific port, waiting for incoming client connections. Clients create sockets to connect to the server's IP address and port.
+   - In a client-server model, sockets are fundamental for establishing connections. The server creates a socket and binds it to a specific port, waiting for incoming client connections. Clients create sockets to connect to the server's IP address and port.
 
 5. **Importance in Networking:**
-	- **Data Transmission:** Sockets facilitate the transmission of data between applications running on different devices. They provide a standardized interface for sending and receiving data.
-	- **Protocols Implementation:** Sockets are used to implement various network protocols, such as HTTP, FTP, and others, enabling the exchange of information between clients and servers.
-	- **Cross-Platform Communication:** Sockets allow communication between applications running on different operating systems and hardware, promoting interoperability.
-	- **Network Programming:** Sockets are essential for network programming, enabling developers to create applications that can communicate over a network, whether it's a local area network (LAN) or the Internet.
+   - **Data Transmission:** Sockets facilitate the transmission of data between applications running on different devices. They provide a standardized interface for sending and receiving data.
+   - **Protocols Implementation:** Sockets are used to implement various network protocols, such as HTTP, FTP, and others, enabling the exchange of information between clients and servers.
+   - **Cross-Platform Communication:** Sockets allow communication between applications running on different operating systems and hardware, promoting interoperability.
+   - **Network Programming:** Sockets are essential for network programming, enabling developers to create applications that can communicate over a network, whether it's a local area network (LAN) or the Internet.
 
 6. **Socket Programming:**
-	- Developers use socket programming to create applications that can communicate over a network. This involves creating and managing sockets, establishing connections, and handling data transmission.
+   - Developers use socket programming to create applications that can communicate over a network. This involves creating and managing sockets, establishing connections, and handling data transmission.
 
 7. **Security Considerations:**
-	- Sockets can be secured using encryption protocols (e.g., SSL/TLS) to protect the confidentiality and integrity of data transmitted over the network.
+   - Sockets can be secured using encryption protocols (e.g., SSL/TLS) to protect the confidentiality and integrity of data transmitted over the network.
 
 ### Interprocess communication
 In networking and operating systems several operations require a dataflow to send and recieve messages. In this cases several ports are selected and opened in the computer to deliver and send and recieve messages.
@@ -245,44 +245,44 @@ TLS/TSL
 **HTTP Overview from the Perspective of Computer Networks:**
 
 **1. Definition:**
-	- **HTTP (Hypertext Transfer Protocol):** It is an application layer protocol used for transmitting hypermedia documents, such as HTML files, over the World Wide Web. It is the foundation of any data exchange on the Web.
+   - **HTTP (Hypertext Transfer Protocol):** It is an application layer protocol used for transmitting hypermedia documents, such as HTML files, over the World Wide Web. It is the foundation of any data exchange on the Web.
 
 **2. Protocol Type:**
-	- **Stateless Protocol:** HTTP is inherently stateless, meaning each request from a client to a server is independent and does not retain information about the previous requests. This simplifies communication but requires additional mechanisms (like cookies) for handling state.
+   - **Stateless Protocol:** HTTP is inherently stateless, meaning each request from a client to a server is independent and does not retain information about the previous requests. This simplifies communication but requires additional mechanisms (like cookies) for handling state.
 
 **3. Communication Model:**
-	- **Client-Server Model:** HTTP follows a client-server model where a client sends requests to a server, and the server responds with the requested resources (e.g., web pages, images).
+   - **Client-Server Model:** HTTP follows a client-server model where a client sends requests to a server, and the server responds with the requested resources (e.g., web pages, images).
 
 **4. Connection Establishment:**
-	- **Connectionless:** By default, HTTP is connectionless. Each request-response cycle operates independently, and the connection is closed after each transaction.
+   - **Connectionless:** By default, HTTP is connectionless. Each request-response cycle operates independently, and the connection is closed after each transaction.
 
 **5. Transport Protocol:**
-	- **Primarily Relies on TCP:** HTTP typically operates over the TCP (Transmission Control Protocol) for reliable and ordered delivery of data. It can also be used over other transport protocols, but TCP is the most common.
+   - **Primarily Relies on TCP:** HTTP typically operates over the TCP (Transmission Control Protocol) for reliable and ordered delivery of data. It can also be used over other transport protocols, but TCP is the most common.
 
 **6. Request-Response Cycle:**
-	- **Request Format:** Clients send HTTP requests to servers, specifying a method (e.g., GET, POST), a Uniform Resource Identifier (URI), and protocol version in the request header.
-	- **Response Format:** Servers respond with an HTTP status code indicating the success or failure of the request, along with the requested resource or an error message.
+   - **Request Format:** Clients send HTTP requests to servers, specifying a method (e.g., GET, POST), a Uniform Resource Identifier (URI), and protocol version in the request header.
+   - **Response Format:** Servers respond with an HTTP status code indicating the success or failure of the request, along with the requested resource or an error message.
 
 **7. Stateless Nature:**
-	- **No Persistent Connection by Default:** In the traditional HTTP/1.0, each request/response pair is handled in a new connection, and the connection is closed after the response is delivered. This can lead to increased latency for multiple requests.
+   - **No Persistent Connection by Default:** In the traditional HTTP/1.0, each request/response pair is handled in a new connection, and the connection is closed after the response is delivered. This can lead to increased latency for multiple requests.
 
 **8. Persistent Connections:**
-	- **HTTP/1.1 introduced Persistent Connections:** To address the latency issue, HTTP/1.1 supports persistent connections, where multiple requests and responses can be sent over a single connection, improving performance.
+   - **HTTP/1.1 introduced Persistent Connections:** To address the latency issue, HTTP/1.1 supports persistent connections, where multiple requests and responses can be sent over a single connection, improving performance.
 
 **9. Security:**
-	- **HTTPS (HTTP Secure):** HTTPS is a secure version of HTTP that uses SSL/TLS protocols to encrypt data for secure communication. It adds a layer of security, important for protecting sensitive information.
+   - **HTTPS (HTTP Secure):** HTTPS is a secure version of HTTP that uses SSL/TLS protocols to encrypt data for secure communication. It adds a layer of security, important for protecting sensitive information.
 
 **10. Header Fields:**
-	- **Header Information:** HTTP messages contain header fields that provide information about the message, such as content type, length, and caching directives.
+   - **Header Information:** HTTP messages contain header fields that provide information about the message, such as content type, length, and caching directives.
 
 **11. Common Methods:**
-	- **GET, POST, PUT, DELETE:** HTTP defines various methods for different operations. GET is used for retrieving resources, POST for submitting data, PUT for updating resources, and DELETE for removing resources.
+   - **GET, POST, PUT, DELETE:** HTTP defines various methods for different operations. GET is used for retrieving resources, POST for submitting data, PUT for updating resources, and DELETE for removing resources.
 
 **12. Cookies:**
-	- **State Management:** Cookies are often used to maintain state between client and server in the stateless HTTP protocol.
+   - **State Management:** Cookies are often used to maintain state between client and server in the stateless HTTP protocol.
 
 **13. MIME Types:**
-	- **Content Types:** HTTP uses Multipurpose Internet Mail Extensions (MIME) types to specify the type of data being sent, allowing the client to properly interpret and display the content.
+   - **Content Types:** HTTP uses Multipurpose Internet Mail Extensions (MIME) types to specify the type of data being sent, allowing the client to properly interpret and display the content.
 
 ### Persistent and non persistent HTTP
 | Feature                              | Persistent HTTP                              | Non-Persistent HTTP                          |
@@ -302,162 +302,234 @@ TLS/TSL
 - Process Flow of Persistent HTTP:
 
 	1. **Connection Establishment:**
-		- The client initiates a TCP connection to the server.
-		- The connection is established and marked as persistent, allowing multiple requests and responses to occur over the same connection.
+	   - The client initiates a TCP connection to the server.
+	   - The connection is established and marked as persistent, allowing multiple requests and responses to occur over the same connection.
 
 	2. **Request-Response Cycle (Persistent):**
-		- After the initial connection setup, the client can send multiple HTTP requests over the same connection without reopening it.
-		- The server processes each request and responds with the corresponding HTTP responses.
-		- The connection remains open until either party explicitly closes it or a timeout occurs.
+	   - After the initial connection setup, the client can send multiple HTTP requests over the same connection without reopening it.
+	   - The server processes each request and responds with the corresponding HTTP responses.
+	   - The connection remains open until either party explicitly closes it or a timeout occurs.
 
 	3. **Header Information (Persistent):**
-		- Headers, including the `Connection: keep-alive` header, are used to indicate that the connection should be kept open for future transactions.
+	   - Headers, including the `Connection: keep-alive` header, are used to indicate that the connection should be kept open for future transactions.
 
 	4. **Subsequent Requests (Persistent):**
-		- The client can send additional HTTP requests over the same connection without the need to establish a new connection for each transaction.
-		- This process continues until the client or server decides to close the connection.
+	   - The client can send additional HTTP requests over the same connection without the need to establish a new connection for each transaction.
+	   - This process continues until the client or server decides to close the connection.
 
 	5. **Connection Closure (Optional):**
-		- The connection can be explicitly closed by either the client or the server using the `Connection: close` header, or it may be closed due to a timeout.
+	   - The connection can be explicitly closed by either the client or the server using the `Connection: close` header, or it may be closed due to a timeout.
 
 - Process Flow of Non-Persistent HTTP:
 
 	1. **Connection Establishment:**
-		- The client initiates a TCP connection to the server.
+	   - The client initiates a TCP connection to the server.
 
 	2. **Request-Response Cycle (Non-Persistent):**
-		- The client sends a single HTTP request to the server over the established connection.
-		- The server processes the request and sends back the corresponding HTTP response.
+	   - The client sends a single HTTP request to the server over the established connection.
+	   - The server processes the request and sends back the corresponding HTTP response.
 
 	3. **Connection Closure:**
-		- The connection is immediately closed by either the client or the server after the response is received.
-		- This closure ensures that each request-response pair occurs in a new, independent connection.
+	   - The connection is immediately closed by either the client or the server after the response is received.
+	   - This closure ensures that each request-response pair occurs in a new, independent connection.
 
 	4. **Header Information (Non-Persistent):**
-		- Each HTTP request and response may include headers, but there is no need for headers to maintain a persistent connection.
+	   - Each HTTP request and response may include headers, but there is no need for headers to maintain a persistent connection.
 
 	5. **Subsequent Requests (New Connections):**
-		- For each new request, the client must establish a new TCP connection to the server.
-		- The process repeats for each transaction, with the connection being closed after each request-response cycle.
+	   - For each new request, the client must establish a new TCP connection to the server.
+	   - The process repeats for each transaction, with the connection being closed after each request-response cycle.
 
 	6. **Connection Overhead (Non-Persistent):**
-		- The overhead of establishing and tearing down connections for each transaction can impact performance, especially in scenarios with multiple rapid requests.
+	   - The overhead of establishing and tearing down connections for each transaction can impact performance, especially in scenarios with multiple rapid requests.
+
+## CDN
+A Content Delivery Network (CDN) is a geographically distributed network of servers and their data centers. The goal of a CDN is to provide high availability and performance by distributing the service spatially relative to end-users. CDNs serve a large portion of the Internet content today, including web objects (text, graphics, URLs and scripts), downloadable objects (media files, software, documents), applications, live streaming media, on-demand streaming media, and social networks.
+
+In real life, CDNs are used to speed up websites and ensure they remain accessible to users, even when traffic is high. When a user visits a website that uses a CDN, the CDN will deliver the content from the server closest to the user, rather than the website's original server. This reduces the time it takes for the data to travel, resulting in faster load times for the user.
+
+For example, if a website's original server is in New York and a user in London accesses it, a CDN could serve the website's content from a server in London (or closer) instead of the server in New York. This reduces latency and improves the user's experience.
+
+## Mail protocols
+
+Mail protocols are sets of rules that help in the sending and receiving of emails over a network. The main mail protocols include:
+
+1. **SMTP (Simple Mail Transfer Protocol):** This protocol is used for sending emails from a client to a server or between servers. It's used when email is delivered from an email client, like Outlook, to an email server or when email is delivered from one email server to another.
+   - Working of SMTP:
+     - The sender's email client connects to the sender's mail server on port 25.
+     - The sender's mail server connects to the recipient's mail server on port 25.
+     - The sender's mail server sends the email to the recipient's mail server.
+     - The recipient's mail server delivers the email to the recipient's email client.
+
+   - Elaboration
+      SMTP, or Simple Mail Transfer Protocol, is the standard protocol for sending emails across the Internet. It works in a series of steps:
+      - Connection Setup: The process begins when a client (an email client or another mail server) establishes a TCP connection with the SMTP server. This is typically on port 25, or port 587 for submissions.
+      - SMTP Greeting: Once the connection is established, the SMTP server sends a greeting message to the client to confirm that it is ready to start the email transaction.
+      - Email Submission: The client then submits the email to the SMTP server. This involves several commands:
+      - MAIL FROM:: This command specifies the sender's email address.
+      - RCPT TO:: This command specifies the recipient's email address.
+      - DATA: This command starts the transfer of the email content. The client sends the email headers (like Subject, From, To), a blank line, and then the email body. The end of the data is indicated by a line containing only a period.
+      - Email Queuing: After receiving the email, the SMTP server places it in a message queue for further processing.
+      - Email Delivery: The SMTP server then delivers the email to the recipient's SMTP server. It establishes a TCP connection with the recipient's SMTP server and uses the same MAIL FROM, RCPT TO, and DATA commands to transfer the email.
+      - Confirmation: After the email is successfully transferred, the recipient's SMTP server sends a confirmation back to the sender's SMTP server.
+      - Closing the Connection: Finally, the SMTP servers close the TCP connection, completing the email transaction.
+      It's important to note that SMTP is a "push" protocol that does not support fetching email from a server. For that, protocols like POP3 or IMAP are used.
+2. **POP3 (Post Office Protocol version 3):** This protocol is used by email clients to retrieve email from a server. Once the email is downloaded to your device, it's deleted from the server. This protocol is useful if you want to save storage space on your mail server, but it means you can only access your email from one device.
+   - Working of POP3:
+     - The email client connects to the mail server on port 110.
+     - The email client authenticates with the mail server using a username and password.
+     - The email client downloads the email from the mail server.
+     - The email client deletes the email from the mail server.
+
+   - Elaboration
+      POP3, or Post Office Protocol version 3, is a protocol for retrieving email from a mail server. It works in a series of steps:
+      - Connection Setup: The process begins when a client (an email client) establishes a TCP connection with the POP3 server. This is typically on port 110, or port 995 for POP3 over SSL.
+      - Authentication: The client authenticates with the POP3 server using a username and password.
+      - Email Download: The client then downloads the email from the POP3 server. This involves several commands:
+      - USER: This command specifies the username.
+      - PASS: This command specifies the password.
+      - LIST: This command lists the emails available on the server.
+      - RETR: This command retrieves a specific email from the server.
+      - DELE: This command deletes a specific email from the server.
+      - QUIT: This command closes the connection.
+      - Email Deletion: After downloading the email, the client can delete it from the server using the DELE command.
+      - Closing the Connection: Finally, the client closes the TCP connection, completing the email retrieval.
+      It's important to note that POP3 is a "pull" protocol that does not support sending email. For that, protocols like SMTP are used.
+3. **IMAP (Internet Message Access Protocol):** This protocol is also used by email clients to retrieve email from a server. However, unlike POP3, when you use IMAP, the email stays on the server. This means you can access your email from multiple devices. IMAP also allows you to organize your email on the server, which can be useful if you have a lot of emails to manage.
+
+   - Working of IMAP:
+     - The email client connects to the mail server on port 143.
+     - The email client authenticates with the mail server using a username and password.
+     - The email client downloads the email from the mail server.
+     - The email client deletes the email from the mail server.
+
+   - Elaboration
+      IMAP, or Internet Message Access Protocol, is a protocol for retrieving email from a mail server. It works in a series of steps:
+      - Connection Setup: The process begins when a client (an email client) establishes a TCP connection with the IMAP server. This is typically on port 143, or port 993 for IMAP over SSL.
+      - Authentication: The client authenticates with the IMAP server using a username and password.
+      - Email Download: The client then downloads the email from the IMAP server. This involves several commands:
+      - LOGIN: This command specifies the username and password.
+      - LIST: This command lists the emails available on the server.
+      - FETCH: This command retrieves a specific email from the server.
+      - STORE: This command updates the status of an email on the server.
+      - CLOSE: This command closes the connection.
+      - Email Deletion: After downloading the email, the client can delete it from the server using the STORE command.
+      - Closing the Connection: Finally, the client closes the TCP connection, completing the email retrieval.
+      It's important to note that IMAP is a "pull" protocol that does not support sending email. For that, protocols like SMTP are used.
+These protocols are used in combination to provide email services. For example, you might use SMTP to send an email and IMAP to receive it. This allows you to send and receive emails from multiple devices and keep them in sync.
+
+## DNS
+A domain name server is a computer server that contains a database of public IP addresses and their associated hostnames, and in most cases serves to resolve, or translate, those common names to IP addresses as requested. DNS servers run special software and communicate with each other using special protocols. DNS servers are typically configured with a primary server and one or more secondary servers. The primary server contains the master copy of the DNS zone, while the secondary servers contain read-only copies. The secondary servers are used as backups in case the primary server goes down. The primary server is called a root server.
+
+### DNS lookup/name resolution
+DNS lookup is the process of translating a domain name to an IP address. It is a crucial part of the Internet infrastructure, allowing users and applications to access websites by domain name instead of IP address. DNS lookup is typically performed by a DNS server, which is a computer server that contains a database of public IP addresses and their associated hostnames. When a user enters a domain name into a web browser, the browser requests the IP address from the DNS server. The DNS server then looks up the IP address in its database and returns it to the browser. The browser then connects to the IP address and loads the website.
 
 ## Termworks
-1. RSA encryption
-	```py
-	import random
-	import math
-	# Function to check if a number is prime
-	def is_prime(num):
-		if num <= 1:
-			return False
-		for i in range(2, int(math.sqrt(num)) + 1):
-			if num % i == 0:
-				return False
-		return True
-	# Function to generate random prime numbers
-	def generate_prime(bits):
-		while True:
-			num = random.getrandbits(bits)
-			if is_prime(num):
-				return num
-	# Function to compute the greatest common divisor (GCD)
-	def gcd(a, b):
-		while b:
-			a, b = b, a % b
-		return a
+- **TW1:** TCP/IP server and client programming
+   **Note:** Before running program the following dependencies must be installed. Also the server program prior to running the client program.
 
-	# Function to find the modular multiplicative inverse
-	def mod_inverse(a, m):
-		m0, x0, x1 = m, 0, 1
-		while a > 1:
-			q = a // m
-			m, a = a % m, m
-			x0, x1 = x1 - q * x0, x0
-		return x1 + m0 if x1 < 0 else x1
-	# Function to generate RSA key pairs
-	def generate_key_pair(bits):
-		p = generate_prime(bits)
-		q = generate_prime(bits)
-		n = p * q
-		phi = (p - 1) * (q - 1)
-		while True:
-			e = random.randint(2, phi - 1)
-			if gcd(e, phi) == 1:
-				break
-		d = mod_inverse(e, phi)
-		public_key = (n, e)
-		private_key = (n, d)
-		return public_key, private_key
-	# Function to encrypt a message
-	def encrypt(public_key, message):
-		n, e = public_key
-		cipher_text = [pow(ord(char), e, n) for char in message]
-		return cipher_text
+   ```bash
+   pip install sockets
+   ```
 
-	# Function to decrypt a message
-	def decrypt(private_key, cipher_text):
-		n, d = private_key
-		decrypted_message = ''.join([chr(pow(char, d, n)) for char in cipher_text])
-		return decrypted_message
-	# Main program
-	if __name__ == "__main__":
-		bits = 8  # Adjust the number of bits for your desired security level
-		public_key, private_key = generate_key_pair(bits)
-		print(f" Generated Public Key : {public_key} \n Generated Private Key : {private_key}")
-		message = eval(input(" Enter the Message to be Encrypted : "))
-		print(" Original message:", message)
-		encrypted_message = encrypt(public_key, message)
-		print(" Encrypted message:", encrypted_message)
-		decrypted_message = decrypt(private_key, encrypted_message)
-		print(" Decrypted message:", decrypted_message) 
-	```
+   **Code for server program**
+   ```py
+   import socket
 
-2. TCP in python \
-	Running this code \
-	Required packages: `socket`, (pre-installed on python3.10 ubuntu)
-	run `python3 server.py` and `python3 client.py` in individual shells to start the program. Then pass the message to the client shell in quotes.
+   server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-	- Contents of `tcp_client.py`
-		```py
-		import socket
-		client_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-		server_address=('localhost',12345)
-		client_socket.connect(server_address)
+   server_address=('localhost',12345)
+   server_socket.bind(server_address)
 
-		try:
-			message=eval(input("Enter message:"))
-			client_socket.sendall(message.encode())
+   server_socket.listen(5)
 
-		finally:
-			client_socket.close()
-		```
+   print("TCP server is waiting for connections....")
 
-	- Contents of `tcp_server.py`
-		```py
-		import socket
+   while True:
+      client_socket,client_address=server_socket.accept()
+      print(f'connected to{client_address}')
 
-		server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+      try:
+         data=client_socket.recv(1024)
+         if data:
+               print(f'Recieved data:{data.decode()}')
+         else:
+               break
+      finally:
+         client_socket.close()
+   ```
+   **Code for client program**
+   ```py
+   #tcp client
 
-		server_address=('localhost',12345)
-		server_socket.bind(server_address)
+   import socket
+   client_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+   server_address=('localhost',12345)
+   client_socket.connect(server_address)
 
-		server_socket.listen(5)
+   try:
+      message=eval(input("Enter message:"))
+      client_socket.sendall(message.encode())
 
-		print("TCP server is waiting for connections....")
+   finally:
+      client_socket.close()
+   ```
 
-		while True:
-			client_socket,client_address=server_socket.accept()
-			print(f'connected to{client_address}')
+- **TW3:** Dynamic routting algorithm
+   **Note:** Bellman ford formula is used to calculate the shortest path from a source to all other nodes in a weighted graph. It is similar to Dijkstra's algorithm but it can work with graphs in which edges can have negative weights. Bellman ford algorithm also detects negative weight cycle in a graph.
+   ```py
+   import sys
 
-			try:
-				data=client_socket.recv(1024)
-				if data:
-					print(f'Recieved data:{data.decode()}')
-				else:
-					break
-			finally:
-				client_socket.close()
+   class Graph:
+      def __init__(self, vertices):
+         self.V = vertices
+         self.graph = [[0 for column in range(vertices)] for row in range(vertices)]
 
-		```
+      def min_distance(self, dist, spt_set):
+         min_dist = sys.maxsize
+         min_index = -1
+
+         for v in range(self.V):
+            if dist[v] < min_dist and spt_set[v] == False:
+               min_dist = dist[v]
+               min_index = v
+
+         return min_index
+
+      def dijkstra(self, src):
+         dist = [sys.maxsize] * self.V
+         dist[src] = 0
+         spt_set = [False] * self.V
+
+         for _ in range(self.V):
+            u = self.min_distance(dist, spt_set)
+            spt_set[u] = True
+
+            for v in range(self.V):
+               if (
+                  self.graph[u][v] > 0
+                  and spt_set[v] == False
+                  and dist[v] > dist[u] + self.graph[u][v]
+               ):
+                  dist[v] = dist[u] + self.graph[u][v]
+
+         print("Vertex \t Distance from Source")
+         for node in range(self.V):
+            print(f"{node} \t\t {dist[node]}")
+
+   # Example usage
+   g = Graph(9)
+   g.graph = [
+      [0, 4, 0, 0, 0, 0, 0, 8, 0],
+      [4, 0, 8, 0, 0, 0, 0, 11, 0],
+      [0, 8, 0, 7, 0, 4, 0, 0, 2],
+      [0, 0, 7, 0, 9, 14, 0, 0, 0],
+      [0, 0, 0, 9, 0, 10, 0, 0, 0],
+      [0, 0, 4, 14, 10, 0, 2, 0, 0],
+      [0, 0, 0, 0, 0, 2, 0, 1, 6],
+      [8, 11, 0, 0, 0, 0, 1, 0, 7],
+      [0, 0, 2, 0, 0, 0, 6, 7, 0],
+   ]
+
+   g.dijkstra(0)
+   ```
