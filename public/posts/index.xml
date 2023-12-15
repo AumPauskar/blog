@@ -6,14 +6,25 @@
     <description>Recent content in Posts on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Dec 2023 09:20:47 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Windows_scripts</title>
+      <title>Building websites with React</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/react/</link>
+      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/web/react/</guid>
+      <description>React tutorial About the tutorial This short note is based and created assuming you are using a Linux (debian/ubuntu) system, most of the commands will run on other systems like Windows and Mac as well but may require some changes. In case you need to follow along and using a Windows system, you can use the Windows Subsystem for Linux to run the commands.
+Installing react In order to install react, node and npm are required.</description>
+    </item>
+    
+    <item>
+      <title>Windows scripts with powershell and cmd</title>
       <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
-      <description> Write-Output: Prints a line in the shell New-Item: Creates a new file within the same directory </description>
+      <description>Windows prompts PowerShell PowerShell is a command-line shell and scripting language built on the .NET Framework. It is the successor to the Command Prompt. Commands are called cmdlets and are written in the form Verb-Noun. For example, Get-ChildItem lists the contents of a directory. There are a few aliases for common commands, such as ls for Get-ChildItem and rm for Remove-Item.
+Write-Output: Prints a line in the shell New-Item: Creates a new file within the same directory Get-Content: Reads the contents of a file Set-Content: Writes the contents of a file Remove-Item: Deletes a file Get-ChildItem: Lists the contents of a directory Command Alias Description Write-Output echo Prints a line in the shell New-Item touch Creates a new file within the same directory Get-Content type Reads the contents of a file Set-Content echo Writes the contents of a file Remove-Item del Deletes a file Get-ChildItem dir Lists the contents of a directory CMD echo &amp;lt;line&amp;gt;: Prints a line in the shell type &amp;lt;file&amp;gt;: Reads the contents of a file file operations copy &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;: Copies a file move &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;: Moves a file del &amp;lt;file&amp;gt;: Deletes a file dir: Lists the contents of a directory cd commands: required to change the current directory cd &amp;lt;dir&amp;gt;: Changes the current directory cd .</description>
     </item>
     
     <item>
@@ -81,7 +92,7 @@ Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux P
       <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
       <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.
 Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.
-File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
+Bases of an operating system Execute user programs and make solving user problems easier Make the computer system convenient to use Use the computer hardware in an efficient manner A computer system can be divided roughly into four components: the hardware, the operating system, the application programs, and the users.</description>
     </item>
     
     <item>
