@@ -424,6 +424,37 @@ A domain name server is a computer server that contains a database of public IP 
 ### DNS lookup/name resolution
 DNS lookup is the process of translating a domain name to an IP address. It is a crucial part of the Internet infrastructure, allowing users and applications to access websites by domain name instead of IP address. DNS lookup is typically performed by a DNS server, which is a computer server that contains a database of public IP addresses and their associated hostnames. When a user enters a domain name into a web browser, the browser requests the IP address from the DNS server. The DNS server then looks up the IP address in its database and returns it to the browser. The browser then connects to the IP address and loads the website.
 
+**Extra stuff**
+- TTL: Time to live is the time for which the DNS server will cache the IP address of the domain name. This is done to reduce the load on the DNS server and to speed up the process of resolving domain names to IP addresses. The TTL is specified in seconds, and the default value is 86400 seconds (24 hours).
+- type a: The A record is used to map a domain name to an IP address. It is the most common type of DNS record and is used for the majority of Internet traffic. For example, the A record for google.com points to the IP address
+- type ns: The NS record is used to delegate a DNS zone to a set of name servers. It specifies the authoritative name servers for a DNS zone. For example, the NS record for google.com points to the name servers
+- type mx: The MX record is used to specify the mail servers for a DNS zone. It specifies the mail servers that are responsible for accepting email messages for the domain. For example, the MX record for google.com points to the mail servers
+- type cname: The CNAME record is used to create an alias for a domain name. It specifies that one domain name is an alias for another domain name. For example, the CNAME record for www.google.com points to google.com.
+
+**DNS protocol, messages**
+In the DNS protocol, messages are divided into five sections:
+- **Header:** The header contains information about the message, such as the ID, flags, and number of questions, answers, authority records, and additional records.
+- **Question:** The question section contains the domain name that is being queried and the type of query (e.g., A, NS, MX, CNAME).
+- **Answer:** The answer section contains the resource records that match the query.
+- **Authority:** The authority section contains the resource records for the authoritative name servers for the domain.
+- **Additional:** The additional section contains additional resource records that may be useful for the client.
+
+### Attacking DNS
+- **DDos:** Distributed denial of service attack is a type of attack where multiple compromised systems are used to target a single system causing a denial of service attack. The attack is distributed because the attacker uses multiple systems to launch the attack. The attack is a denial of service attack because the attacker is trying to prevent legitimate users from accessing the service.
+- **DNS spoofing/poisoning:** DNS spoofing is a type of attack where the attacker sends fake DNS responses to a client, redirecting them to a malicious website. The attacker can then steal the user's credentials or install malware on their computer.
+- **Man in the middle:** Man-in-the-middle attack is a type of attack where the attacker intercepts communication between two parties and impersonates each one. The attacker can then steal sensitive information or modify the communication.
+
+### Client server vs P2P file distribution time
+- Client server file distribuiton time can be calculated by the following formula
+   $$
+   Tcs = max{F/u, F/dmin}
+   $$
+   where F is the file size, u is the server upload rate, and dmin is the minimum of the client download rates.
+- P2P file distribution time can be calculated by the following formula
+   $$
+   Tp2p = max{F/us, F/dmin}
+   $$
+   where F is the file size, us is the server upload rate, and dmin is the minimum of the client download rates.
 ## Termworks
 - **TW1:** TCP/IP server and client programming
    **Note:** Before running program the following dependencies must be installed. Also the server program prior to running the client program.
