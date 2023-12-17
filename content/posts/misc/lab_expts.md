@@ -167,13 +167,13 @@ To implement an assembly program to add 16 bit numbers and store the result in i
 - Brief theory about the experiment including instructions used in that program with proper syntax\
 This ARM Assembly code performs the sum of a series of half-word (16-bit) values stored in memory and stores the result in another memory location.
 
-- LDR R1, =FBLOCK: This line loads the address of the FBLOCK memory area into register R1.
-- LDR R2, =RESULT: This line loads the address of the RESULT memory area into register R2
-- LOOP LDRH R3, [R1], #2: This line starts a loop. It loads a half-word value from the memory address in R1 into register R3, then increments R1 by 2 (to point to the next half-word).
-- ADD R4, R4, R3: This line adds the value in R3 to the value in R4, storing the result back in R4.
-- BNE LOOP: If the value in R0 is not zero (i.e., the loop is not finished), this line branches back to the LOOP label.
-- FBLOCK DCW 0X1111, 0X2222, 0X3333, 0X4444, 0X5555, 0X6666, 0X7777: This line defines a block of memory with the specified half-word values.
-- RESULT DCD 0: This line defines a word in memory with the initial value 0. This is where the result of the sum is stored.
+- `LDR R1, =FBLOCK`: This line loads the address of the FBLOCK memory area into register R1.
+- `LDR R2, =RESULT`: This line loads the address of the RESULT memory area into register R2
+- `LOOP LDRH R3, [R1], #2`: This line starts a loop. It loads a half-word value from the memory address in R1 into register R3, then increments R1 by 2 (to point to the next half-word).
+- `ADD R4, R4, R3`: This line adds the value in R3 to the value in R4, storing the result back in R4.
+- `BNE LOOP`: If the value in R0 is not zero (i.e., the loop is not finished), this line branches back to the LOOP label.
+- `FBLOCK DCW 0X1111, 0X2222, 0X3333, 0X4444, 0X5555, 0X6666, 0X7777`: This line defines a block of memory with the specified half-word values.
+- `RESULT DCD 0`: This line defines a word in memory with the initial value 0. This is where the result of the sum is stored.
 
 - Program with comments
 	```asm
