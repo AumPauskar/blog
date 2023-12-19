@@ -161,7 +161,20 @@ In conclusion, the TCP client-server program efficiently establishes a connectio
 - Title of the experiment\
 To implement distance vector routing algorithm
 - Objective of the experiment
+	- To implement distance vector routing algorithm
+	- To find the shortest path between two nodes
 - Brief theory about the experiment
+
+	Distance Vector Routing is a routing protocol that uses distance to decide the best packet forwarding path. Distance Vector Routing is also known as Bellman-Ford algorithm or Ford-Fulkerson algorithm. Here's the basic theory:
+
+	- **Routing Information:** Each router in the network maintains a routing table that stores the shortest distance and the line to use to reach each network node. The distance is measured in terms of a metric such as the number of hops.
+	- **Information Sharing:** Each router periodically shares its routing table with its immediate neighbors. The neighbors then update their own routing tables based on the information received.
+	- **Route Updates:** When a router receives a routing table from a neighbor, it calculates the shortest path to every other router and updates its own table if a shorter path is found. This is done by adding the cost to the neighbor to the cost from the neighbor to all other nodes.
+	- **Convergence:** The process of sharing and updating routing information continues until all routers' tables are consistent with each other. This state is known as convergence.
+	- **Route Changes:** If a router detects a change in the network (like a link failure), it updates its routing table and broadcasts the change to its neighbors. This triggers another round of updates and convergence.
+
+	One of the main drawbacks of Distance Vector Routing is that it can take a long time to converge, especially in large networks. It's also prone to "counting to infinity" problems in the case of a network failure. These issues are mitigated in more advanced protocols like Link State Routing.
+
 - Algorithm & Program
 	```py
 	import sys
@@ -221,7 +234,11 @@ To implement distance vector routing algorithm
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- To understand the basic concepts of distance vector routing
+	- To understand the basic concepts of routing
+	- To understand network optimization
+- Conclusion\
+In conclusion, the distance vector routing program efficiently finds the shortest path between two nodes in a network. The code demonstrates key concepts such as graph representation, Dijkstra's algorithm, and shortest path calculation.
 - References
 	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
 	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
