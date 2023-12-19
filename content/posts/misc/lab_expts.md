@@ -17,7 +17,7 @@ draft = false
 7. Conclusion
 8. References
 
-### Termwork 1
+### Termwork 1 (not included)
 - Title of the experiment 
 - Objective of the experiment
 - Brief theory about the experiment
@@ -26,19 +26,52 @@ draft = false
 - Course Learning Outcome
 - Conclusion
 - References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017 .
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
 ### Termwork 2
-- Title of the experiment 
+- Title of the experiment\
+Write a program to implement RSA algorithm
 - Objective of the experiment
+	- To implement RSA algorithm
+	- To understand the basic concepts of cryptography
+	- To understand network encryption
 - Brief theory about the experiment
+
+RSA (Rivest-Shamir-Adleman) is one of the first public-key cryptosystems and is widely used for secure data transmission. The algorithm involves three steps: key generation, encryption, and decryption.
+
+- **Key Generation:** The key generation process in RSA involves the following steps:
+
+	1. Choose two distinct prime numbers p and q. These should be chosen randomly and kept secret.
+	2. Compute n = p*q. n is the modulus for both the public and private keys.
+	3. Compute the totient function φ(n) = (p-1)*(q-1).
+	4. Choose an integer e such that 1 < e < φ(n) and gcd(e, φ(n)) = 1. e is the public key exponent.
+	5. Compute d to satisfy the congruence relation d*e ≡ 1 (mod φ(n)). d is the private key exponent.
+
+The public key consists of (e, n) and the private key is (d, n).
+
+- Encryption: The encryption process in RSA is as follows:
+	1. Represent the data as an integer m in [0, n-1].
+	2. Compute the ciphertext c using the formula c = m^e mod n.
+- Decryption: The decryption process in RSA is as follows:
+	1. Compute the original message m using the formula m = c^d mod n.
+
+The security of RSA relies on the fact that, given the public key (e, n), it's computationally infeasible to calculate d, unless p and q are known. This is known as the RSA problem. The RSA problem is equivalent to factoring the product of two primes, which is believed to be a hard problem in number theory.
+
 - Algorithm & Program
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
+	- Understand the basic concepts of cryptography
+	- Understand network encryption
+	- Understand the basic concepts of RSA algorithm
 - Conclusion
 - References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth 
+	edition, Pearson,2017 .
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
 ### Termwork 3
-- Title of the experiment 
+- Title of the experiment
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -46,17 +79,152 @@ draft = false
 - Course Learning Outcome
 - Conclusion
 - References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth edition, Pearson,2017.
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
 ### Termwork 4
-- Title of the experiment 
+- Title of the experiment\
+Write a program to implement TCP client server communication
+- Objective of the experiment
+	- To implement TCP client server communication
+	- To understand the basic concepts of TCP
+	- To understand the basic concepts of client server communication
+- Brief theory about the experiment
+
+	In a TCP client-server model, the server listens for incoming client requests by binding to a specific address and port, often on a host with a known IP address. The client makes a connection request to the server to initiate communication.
+
+	1. **Connection Establishment (Three-Way Handshake):** The client initiates the connection by sending a SYN (synchronize) message to the server. The server acknowledges this by sending back a SYN-ACK (synchronize-acknowledge) message. Finally, the client sends an ACK (acknowledge) message back to the server, and the connection is established.
+	2. **Data Transfer:** Once the connection is established, bytes can be sent from the client to the server and from the server to the client. The sent data is broken down into TCP segments at the source, then reassembled back into the original data at the destination.
+	3. **Connection Termination (Four-Way Handshake):** Either the client or server can initiate the connection termination process. The initiating side sends a FIN (finish) message, to which the other side responds with an ACK. Then, the side that received the initial FIN sends its own FIN, which the initiating side acknowledges with an ACK.
+	4. **Reliability:** TCP provides reliable delivery of data through the use of sequence numbers and acknowledgments. If the sender does not receive an acknowledgment for a particular segment within a specified time, it retransmits the segment.
+	5. **Flow Control:** TCP uses a sliding window for flow control, which allows the receiver to control the amount of data sent by the sender.
+	6. **Congestion Control:** TCP uses various mechanisms like slow start, congestion avoidance, fast retransmit, and fast recovery to control network congestion.
+
+	The TCP client-server model is widely used in the internet protocol suite and forms the foundation of web browsing, email, file transfers, and other network communication.
+
+- Algorithm & Program
+	- Server code
+		```py
+		import socket
+
+		server_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
+		server_address=('localhost',12345)
+		server_socket.bind(server_address)
+
+		server_socket.listen(5)
+
+		print("TCP server is waiting for connections....")
+
+		while True:
+			client_socket,client_address=server_socket.accept()
+			print(f'connected to{client_address}')
+
+			try:
+				data=client_socket.recv(1024)
+				if data:
+					print(f'Recieved data:{data.decode()}')
+				else:
+					break
+			finally:
+				client_socket.close()
+		```
+
+	- Client code
+		```py
+		#tcp client
+
+		import socket
+		client_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+		server_address=('localhost',12345)
+		client_socket.connect(server_address)
+
+		try:
+			message=eval(input("Enter message:"))
+			client_socket.sendall(message.encode())
+
+		finally:
+			client_socket.close()
+		```
+
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+	- Understand the basic concepts of TCP
+	- Understand the basic concepts of client server communication
+- Conclusion\
+In conclusion, the TCP client-server program efficiently establishes a connection between the client and server and transfers data between them. The code demonstrates key concepts such as socket programming, connection establishment, data transfer, and connection termination.
+- References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
+
+### Termwork 5 - distance vector routing
+- Title of the experiment\
+To implement distance vector routing algorithm
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
+	```py
+	import sys
+
+	class Graph:
+		def __init__(self, vertices):
+			self.V = vertices
+			self.graph = [[0 for column in range(vertices)] for row in range(vertices)]
+
+		def min_distance(self, dist, spt_set):
+			min_dist = sys.maxsize
+			min_index = -1
+
+			for v in range(self.V):
+				if dist[v] < min_dist and spt_set[v] == False:
+					min_dist = dist[v]
+					min_index = v
+
+			return min_index
+
+		def dijkstra(self, src):
+			dist = [sys.maxsize] * self.V
+			dist[src] = 0
+			spt_set = [False] * self.V
+
+			for _ in range(self.V):
+				u = self.min_distance(dist, spt_set)
+				spt_set[u] = True
+
+				for v in range(self.V):
+					if (
+						self.graph[u][v] > 0
+						and spt_set[v] == False
+						and dist[v] > dist[u] + self.graph[u][v]
+					):
+						dist[v] = dist[u] + self.graph[u][v]
+
+			print("Vertex \t Distance from Source")
+			for node in range(self.V):
+				print(f"{node} \t\t {dist[node]}")
+
+	# Example usage
+	g = Graph(9)
+	g.graph = [
+		[0, 4, 0, 0, 0, 0, 0, 8, 0],
+		[4, 0, 8, 0, 0, 0, 0, 11, 0],
+		[0, 8, 0, 7, 0, 4, 0, 0, 2],
+		[0, 0, 7, 0, 9, 14, 0, 0, 0],
+		[0, 0, 0, 9, 0, 10, 0, 0, 0],
+		[0, 0, 4, 14, 10, 0, 2, 0, 0],
+		[0, 0, 0, 0, 0, 2, 0, 1, 6],
+		[8, 11, 0, 0, 0, 0, 1, 0, 7],
+		[0, 0, 2, 0, 0, 0, 6, 7, 0],
+	]
+
+	g.dijkstra(0)
+	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
 - Conclusion
 - References
-
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 ## Microcontroller lab
 ### Template
 1. Title of the experiment
@@ -303,6 +471,35 @@ To implement an assembly language program to find the largetst number in an arra
 - Conclusion\
 In conclusion, the ARM assembly program efficiently finds the maximum value in an array using a loop-based approach. The code demonstrates key concepts such as register manipulation, memory access, and conditional branching.
 
+- References
+1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+Morgan Kaufman publishers, 2008.
+2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
+
+
+### Termwork 5
+- Title of the experiment\
+Swapping of the digits in ARM assembly language
+- Objective of the experiment
+- Brief theory about the experiment including instructions used in that program with proper syntax
+
+	**Instructions**
+	- `MOV R8, #4`: Initializes register R8 with the value 4.
+	- `LDR R2`, `=CVALUE` and `LDR R3`, `=DVALUE`: Load the addresses of the memory blocks labeled CVALUE and DVALUE into registers R2 and R3, respectively.
+	- The `LOOP0` block loads values from the memory blocks pointed to by R2 and R3 into R1, decrementing R8 each time. This loop continues until R8 equals 0.
+	- The second `START` block initializes `R5` with 3 and `R7` with 0, and loads the address of `DVALUE` into `R1`.
+	- The `LOOP` block loads a value from the memory block pointed to by `R1` into `R2`, compares it with the value in `R3`, and if `R2` is less than `R3`, it jumps to `LOOP2`. If not, it stores `R2` and `R3` into the memory block pointed to by `R1`, sets `R7` to 1, and increments `R1` by 4.
+	- The `LOOP2` block decrements `R5` by 1 each time it's executed. If `R5` is not 0, it jumps back to LOOP. If `R5` is 0, it checks if R7 is 0, and if not, it jumps to START1 (which is not defined in the provided code).
+	- `NOP` instructions are **no-operation instructions** that do nothing. They're often used for timing purposes or to occupy space that will be replaced with useful instructions later.
+	- `CVALUE` and `DVALUE` are memory blocks defined in the code. `CVALUE` contains four 32-bit values, and `DVALUE` is initialized with a single 0.
+
+- Program with comments
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+	- Understand the basic concepts of memory instructions in ARM assembly language
+	- Understanding the concepts regarding the swap instructions
+- Conclusion
+	- In conclusion, the ARM assembly program efficiently swaps the digits of a number using a loop-based approach. The code demonstrates key concepts such as register manipulation, memory access, and conditional branching.
 - References
 1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 Morgan Kaufman publishers, 2008.
