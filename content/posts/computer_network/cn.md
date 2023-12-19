@@ -444,6 +444,23 @@ In the DNS protocol, messages are divided into five sections:
 - **DNS spoofing/poisoning:** DNS spoofing is a type of attack where the attacker sends fake DNS responses to a client, redirecting them to a malicious website. The attacker can then steal the user's credentials or install malware on their computer.
 - **Man in the middle:** Man-in-the-middle attack is a type of attack where the attacker intercepts communication between two parties and impersonates each one. The attacker can then steal sensitive information or modify the communication.
 
+
+### Multiplexing vs demultiplexing
+- Multiplexing is the process of combining multiple signals into a single signal. It is used to increase the amount of data that can be transmitted over a network. Multiplexing is typically done at the physical layer of the OSI model.
+- Demultiplexing is the process of separating a single signal into multiple signals. It is used to extract data from a multiplexed signal. Demultiplexing is typically done at the physical layer of the OSI model.
+
+### Subnet mask (extra I guess)
+A subnet mask is a 32-bit number that is used to divide an IP address into subnets. It is used to determine which part of the IP address is the network address and which part is the host address. The subnet mask is typically written in dotted decimal notation, such as
+
+
+### Port numbers
+Port numbers are used to identify specific applications or services on a network. They are typically used in conjunction with IP addresses, which identify the host on the network. Port numbers are divided into three ranges:
+- **Well-known ports:** These ports are reserved for specific applications or services. For example, port 80 is reserved for HTTP traffic, port 443 is reserved for HTTPS traffic, and port 25 is reserved for SMTP traffic.
+- **Registered ports:** These ports are assigned by the Internet Assigned Numbers Authority (IANA) to specific applications or services. For example, port 22 is assigned to SSH, port 53 is assigned to DNS, and port 110 is assigned to POP3.
+- **Dynamic ports:** These ports are not assigned to any specific application or service. They are used by the operating system for ephemeral ports, which are temporary ports used for communication between two hosts.
+
+
+
 ### Client server vs P2P file distribution time
 - Client server file distribuiton time can be calculated by the following formula
    $$
@@ -455,6 +472,28 @@ In the DNS protocol, messages are divided into five sections:
    Tp2p = max{F/us, F/dmin}
    $$
    where F is the file size, us is the server upload rate, and dmin is the minimum of the client download rates.
+
+## TCP vs UDP
+
+### **TCP**: Transmission Control Protocol
+
+### UDP
+Udp stands for user datagram protocol. It is a connectionless protocol that works on the transport layer of the OSI model. It is used for applications that require fast transmission time and the transmission of data is more critical than reliability. It is used for applications such as video streaming, online gaming, and VoIP. It is also used for DNS and DHCP. It is faster than TCP as it does not establish a connection before sending data and does not guarantee delivery of data. It is also more efficient than TCP as it has a smaller header size. However, it is less reliable than TCP as it does not guarantee delivery of data and does not have a flow control mechanism. It is also less secure than TCP as it is connectionless. The applications of UDP
+
+
+### Differences
+| Srno | TCP | UDP |
+|------|-----|-----|
+| 1 | TCP is a connection-oriented protocol. | UDP is a connectionless protocol. |
+| 2 | TCP is reliable as it guarantees delivery of data to the destination router. | UDP is unreliable as it does not guarantee delivery of data to the destination router. |
+| 3 | TCP is slower than UDP. | UDP is faster than TCP. |
+| 4 | TCP is heavy-weighted. | UDP is lightweight. |
+| 5 | TCP is used for applications that require high reliability and transmission time is relatively less critical. | UDP is used for applications that require fast transmission time and the transmission of data is more critical than reliability. |
+| 6 | TCP segments are retransmitted if lost. | UDP datagrams are not retransmitted if lost. |
+| 7 | TCP has a flow control mechanism. | UDP does not have a flow control mechanism. |
+| 8 | TCP is comparatively less efficient. | UDP is comparatively more efficient. |
+| 9 | TCP is comparatively more secure as it is connection-based. | UDP is comparatively less secure as it is connectionless. |
+| 10 | TCP header size is 20 bytes. | UDP Header size is 8 bytes. |
 ## Termworks
 - **TW1:** TCP/IP server and client programming
    **Note:** Before running program the following dependencies must be installed. Also the server program prior to running the client program.
