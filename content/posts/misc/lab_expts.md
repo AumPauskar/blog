@@ -139,13 +139,93 @@ The security of RSA relies on the fact that, given the public key (e, n), it's c
 	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
 ### Termwork 3
-- Title of the experiment
+- Title of the experiment\
+Write a program to implement UDP client server communication
 - Objective of the experiment
+	- To implement UDP client server communication
+	- To understand the basic concepts of UDP
+	- To understand the basic concepts of client server communication
 - Brief theory about the experiment
+
+	User Datagram Protocol (UDP) is a transport layer protocol that is used for fast and connectionless transmission of data. Here's the basic theory:
+	- Connectionless: Unlike TCP, UDP is a connectionless protocol. This means that it doesn't establish a connection before sending data, it just sends it directly.
+	- No Guarantee of Delivery: UDP does not guarantee delivery of data. If a packet is lost in the network, UDP does not know about it and does not retransmit the lost packets.
+	- No Congestion Control: UDP does not have a congestion control mechanism. It continues to send data at the same rate even if the network is congested.
+	- No Ordering of Data: UDP does not order the packets. The packets might be received in a different order than they were sent.
+	- Faster: Because of the lack of these features (connection setup, guarantee of delivery, congestion control, ordering of data), UDP is faster than TCP. It is often used in real-time applications like video streaming and online gaming where speed is more important than reliability.
+	- Header: The UDP header is simpler than the TCP header, consisting only of source port, destination port, length, and checksum.
+	- Datagram: The data units in UDP are called datagrams. Each datagram is independent of others.
+
+	Remember, while UDP is faster, it should only be used in situations where the loss of some data is acceptable.
+
 - Algorithm & Program
+	- Server code
+		```py
+		# Server (server.py)
+
+		import socket
+
+		def start_udp_server():
+			# Create a UDP socket
+			server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+			# Bind the socket to a specific address and port
+			server_address = ('localhost', 12345)
+			server_socket.bind(server_address)
+
+			print(f"Server listening on {server_address}")
+
+			while True:
+				# Wait for a message from the client
+				data, client_address = server_socket.recvfrom(1024)
+				print(f"Received message from {client_address}: {data.decode()}")
+
+				# Send the same message back to the client
+				server_socket.sendto(data, client_address)
+
+		if __name__ == "__main__":
+			start_udp_server()
+		```
+
+	- Client code
+		```py
+		# Client (client.py)
+
+		import socket
+
+		def start_udp_client():
+			# Create a UDP socket
+			client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+			# Server address and port
+			server_address = ('localhost', 12345)
+
+			while True:
+				# Get user input for the message
+				message = input("Enter message to send (or 'exit' to quit): ")
+
+				if message.lower() == 'exit':
+					break
+
+				# Send the message to the server
+				client_socket.sendto(message.encode(), server_address)
+
+				# Receive the response from the server
+				data, _ = client_socket.recvfrom(1024)
+				print(f"Received response from server: {data.decode()}")
+
+			# Close the socket when done
+			client_socket.close()
+
+		if __name__ == "__main__":
+			start_udp_client()
+		```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of UDP
+	- Understand the basic concepts of client server communication
+- Conclusion\
+In conclusion, the UDP client-server program efficiently establishes a connection between the client and server and transfers data between them. The code demonstrates key concepts such as socket programming, connection establishment, data transfer, and connection termination.
 - References
 	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth edition, Pearson,2017.
 	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
