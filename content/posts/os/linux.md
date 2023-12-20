@@ -181,6 +181,9 @@ To see every process on the system
 ps -e
 ```
 
+## Misc commands
+1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
+
 ## Deadlocks
 A deadlock is a situation in which two computer programs sharing the same resource are effectively preventing each other from accessing the resource, resulting in both programs ceasing to function. The earliest computer operating systems ran only one program at a time. All of the resources of the system were available to this one program. Later, operating systems ran multiple programs at once, interleaving them. Programs would often request resources in a specific order. If a program requested resource A and later requested resource B, another program would be able to run in between and use resource B, but not A, since it had not yet been released. If the first program then requested resource B, it would be locked out forever, since the other program had locked B and was waiting for A. This was the first and simplest sort of deadlock. Deadlocks can occur in operating systems, parallel computing, and distributed systems, as well as in everyday life.
 
