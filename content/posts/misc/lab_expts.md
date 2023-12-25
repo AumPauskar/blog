@@ -650,6 +650,8 @@ Swapping of the digits in ARM assembly language
 	- To gain practical experience with ARM assembly programming concepts such as register manipulation, memory instructions, conditional branching, and loop constructs.
 - Brief theory about the experiment including instructions used in that program with proper syntax
 
+	The experiment involves writing an ARM assembly language program to swap the digits of a number. The key concepts involved in this experiment are register manipulation, memory instructions, conditional branching, and loop constructs.
+	
 	**Instructions**
 	- `MOV R8, #4`: Initializes register R8 with the value 4.
 	- `LDR R2`, `=CVALUE` and `LDR R3`, `=DVALUE`: Load the addresses of the memory blocks labeled CVALUE and DVALUE into registers R2 and R3, respectively.
