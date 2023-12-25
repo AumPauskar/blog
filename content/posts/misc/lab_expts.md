@@ -646,6 +646,8 @@ Morgan Kaufman publishers, 2008.
 - Title of the experiment\
 Swapping of the digits in ARM assembly language
 - Objective of the experiment
+	- To understand and implement the use of ARM assembly language for manipulating data stored in memory, specifically for swapping the digits of a number.
+	- To gain practical experience with ARM assembly programming concepts such as register manipulation, memory instructions, conditional branching, and loop constructs.
 - Brief theory about the experiment including instructions used in that program with proper syntax
 
 	**Instructions**
@@ -713,8 +715,8 @@ Swapping of the digits in ARM assembly language
 - Course Learning Outcome
 	- Understand the basic concepts of memory instructions in ARM assembly language
 	- Understanding the concepts regarding the swap instructions
-- Conclusion
-	- In conclusion, the ARM assembly program efficiently swaps the digits of a number using a loop-based approach. The code demonstrates key concepts such as register manipulation, memory access, and conditional branching.
+- Conclusion\
+In conclusion, the ARM assembly program efficiently swaps the digits of a number using a loop-based approach. The code demonstrates key concepts such as register manipulation, memory access, and conditional branching.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
