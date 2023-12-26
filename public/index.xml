@@ -218,55 +218,6 @@ Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip ins
     </item>
     
     <item>
-      <title>Packages</title>
-      <link>https://aumpauskar.github.io/blog/posts/python/packages/</link>
-      <pubDate>Thu, 16 Nov 2023 10:08:09 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/posts/python/packages/</guid>
-      <description>Chapter summary - Unit 5 Packages: How to build a GUI Program: Create a GUI that handles an event, more skills for working with components; Numpy Basics: Arrays and Vectorized Computation: Creating ndarrays, Data Types for ndarrays, Operations between Arrays and Scalars, Basic Indexing and Slicing, Indexing with slices, Boolean Indexing, Transposing Arrays and Swapping Axes; Getting started with Pandas: Introduction to Pandas Data Structures, Summarizing and Computing Descriptive Statistics, Handling missing data; Plotting and Visualization: A Brief matplotlib API Primer, Plotting Functions in panda</description>
-    </item>
-    
-    <item>
-      <title>Oops</title>
-      <link>https://aumpauskar.github.io/blog/posts/python/oops/</link>
-      <pubDate>Thu, 16 Nov 2023 10:07:41 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/posts/python/oops/</guid>
-      <description>Chapter summary - Unit 4 Object Oriented Programming: Define and use your own classes: An introduction to classes and objects, define a class, object composition, encapsulation; Inheritance: Inheritance, override object methods; Design an object oriented program: Techniques for object-oriented design Text Book 1 – Chapters 14,15,16
-Creating your own class A class can be created in python by using the class keyword
-1 2 class MyClass: x = 5 This creates a blueprint for the objects to be defined.</description>
-    </item>
-    
-    <item>
-      <title>Lists</title>
-      <link>https://aumpauskar.github.io/blog/posts/python/lists/</link>
-      <pubDate>Thu, 16 Nov 2023 10:07:18 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/posts/python/lists/</guid>
-      <description>Chapter summary - Unit 2 Higher Data Constructs: Lists and tuples: Basic skills for working with lists, list of lists, more skills for working with lists, tuples; Dictionaries: get started with dictionaries, more skills for working with dictionaries; Strings: Basic skills for working with strings, split and join strings; Dates and times: get started with dates and times Text Book 1 – Chapters 6,12,10,11
-Datatypes - complex Lists: A list is a mutable datatype in which all the elements are indexed from 0 to n 1 myList = [5,7,3,7] Tuples: A tuple is an immutable datatype in which all the elements are indexed from 0 to n 1 myTuple = (6,2,5,5) Dictionaries: A dictionary is a complex mutable datatype in which the elements are indexed upon the user&amp;rsquo;s needs, this is called the key value pairs.</description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://aumpauskar.github.io/blog/posts/python/data/</link>
-      <pubDate>Thu, 16 Nov 2023 10:06:26 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/posts/python/data/</guid>
-      <description>Chapter summary - Unit 3 File I/O: An introduction to file I/O, test files, CSV files, binary files; Exception Handling: handle a single exception, handle multiple exceptions, Two more skills; Work with a database: An introduction to relational databases, SQL statements for data manipulation, SQLite Manager to work with a database, use Python to work with a database
-File write modes &amp;ldquo;x&amp;rdquo; - Create - will create a file, returns an error if the file exist &amp;ldquo;a&amp;rdquo; - Append - will create a file if the specified file does not exist &amp;ldquo;w&amp;rdquo; - Write - will create a file if the specified file does not exist 1 f = open(&amp;#34;myfile.</description>
-    </item>
-    
-    <item>
-      <title>Basics</title>
-      <link>https://aumpauskar.github.io/blog/posts/python/basics/</link>
-      <pubDate>Thu, 16 Nov 2023 10:05:13 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/posts/python/basics/</guid>
-      <description>Basics of python</description>
-    </item>
-    
-    <item>
       <title>My First Post</title>
       <link>https://aumpauskar.github.io/blog/posts/my-first-post/</link>
       <pubDate>Thu, 16 Nov 2023 09:46:38 +0530</pubDate>
