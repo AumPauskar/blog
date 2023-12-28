@@ -723,3 +723,799 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
 	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
+
+## OOPS with python
+
+### Experiment– 1 (Lists)
+Develop a menu driven program to implement a queue using lists and functions. The operations would be: \
+- Add an item to the queue (Enqueue) \
+- Delete an item from queue (Dequeue) \
+- Display the item at the front (QFront) \
+- Display the item at the rear (QRear) \
+- Display the queue
+
+```py
+"""
+Develop a menu driven program to implement a queue using lists and functions. The
+operations would be:
+a) Add an item to the queue (Enqueue)
+b) Delete an item from queue (Dequeue)
+c) Display the item at the front (QFront)
+d) Display the item at the rear (QRear)
+e) Display the queue
+"""
+
+# global variable declarations
+myQueue = []
+
+# function declaration
+def enqueue(myQueue, val):
+  print("Value enqueued", val)
+  myQueue.append(val)
+
+def dequeue(myQueue):
+  if len(myQueue) > 0:
+    print("Value dequeued", myQueue.pop(0))
+  else:
+    print("Queue underflow")
+
+def display(myQueue):
+  if len(myQueue) > 0:
+    print(myQueue)
+  else:
+    print("Empty queue")
+
+def queueFront(myQueue):
+  print(myQueue[0])
+  
+def queueRear(myQueue):
+  print(myQueue[-1])
+# ----------
+
+def main():
+  flag = True # exit control
+  while flag:
+    print("1. Enqueue\n2. Dequeue\n3. Display\n4. Queue front\n5. Queue rear\n6. Exit")
+    choice = int(input("Enter your choice: "))
+    # match (switch) - works only in python 3.10+
+    match choice:
+      case 1:
+        val = int(input("Enter enqueue value: "))
+        enqueue(myQueue, val)
+      case 2:
+        dequeue(myQueue)
+      case 3:
+        display(myQueue)
+      case 4:
+        queueFront(myQueue)
+      case 5:
+        queueRear(myQueue)
+      case 6:
+        flag = False
+      case _:
+        print("Invalid value")
+        
+if __name__ == main():
+  main()
+```
+
+### Experiment– 2 (Dictionaries) \
+Store the following information in a dictionary: \
+Course Code: Course Name, Faculty, Number of registrations. \
+Perform the following operations using functions: \
+- Find Course Name that has highest number of registrations. \
+- Given the Course Code, display the associated details. \
+- Display details of all courses.
+
+```py
+'''
+Store the following info in a dictionary 
+
+course code: coursename, faculty, number of registrations
+
+perform the following operations using function
+
+a. display details of all courses
+b. given the course code display all details
+c. Fund coursename that has the highest registration
+'''
+
+def addCourse(myDict, courseCode, courseName, courseFaculty, courseReg):
+    # finding duplicates
+    tmp = myDict.get(courseCode)
+    if tmp == None:
+        myDict[courseCode] = (courseName, courseFaculty, courseReg)
+        print(f"{courseCode} : ({courseName}, {courseFaculty}, {courseReg}) added sucessfully\n")
+    else:
+        print("Duplicates found, aborting\n")
+
+def remCourse(myDict, courseCode):
+
+    tmp = myDict.pop(courseCode)
+    print(tmp, "removed from the dictionary\n")
+
+def dispAll(myDict):
+    print(myDict, '\n')
+
+def dispDetails(myDict):
+    for i in myDict:
+        print(myDict[i])
+    print('\n')
+
+def maxPopular(myDict):
+    popular = 0
+    for i in myDict:
+        if popular < myDict[i][2]:
+            popular = myDict[i][2]
+    print(f"Most popular couse is {i} with popularity {popular} \n")
+
+def main():
+    # creating an empty dictionary
+    myDict = {}
+    flag = True
+
+    # menu
+    while flag:
+        print("1. Add items to dictionary\n2. Remove items from dictionary\n3. Display all")
+        print("4. Display course code with details\n5. Find most popular course\n6. Exit")
+
+        choice = int(input("Enter your choice: "))
+        # switch statements
+        match choice:
+            case 1:
+                courseCode = input("Enter a course code: ")
+                courseName = input("Enter course name: ")
+                courseFaculty = input("Enter faculty name: ")
+                courseReg = int(input("Enter no of registrations: "))
+                addCourse(myDict, courseCode, courseName, courseFaculty, courseReg)
+            case 2:
+                courseCode = input("Enter a course code: ")
+                remCourse(myDict, courseCode)
+            case 3:
+                dispAll(myDict)
+            case 4:
+                dispDetails(myDict)
+            case 5:
+                maxPopular(myDict)
+            case 6:
+                flag = False
+            case _:
+                print("Invalid option selected\n")
+        
+
+if __name__ == "__main__":
+    main()
+```
+
+###	Experiment– 3 (Files)
+Write a Python program to read the book information from the user and store in a CSV file containing rows in the following format: bookNo, title, author, price. Develop a menu-driven program (with functions for each) with the following options: \
+- Search Book by author \
+- Search Books below specified price (Raise an exception if price entered is <= 0) \
+- Search Books where title contains the specified word \
+- Exit
+```py
+'''
+Problem statement
+Write a python program to read the books information from the user and store it in a CSV file containing 
+rows in the following format: bookNo,title,author,price 
+Develop a menu driven program with following options 
+1. Search the book by author 
+2. Search books below a specified price, raise an exception if the price entered is < 0
+3. Search books where the title contain a certain word
+4. Exit
+'''
+
+# importing required modules
+import csv
+
+# adding books in the records
+def addBooks():
+	key = True # loop variable
+	rows = [[]] # csv writing matrix
+	while key:
+		bookNo = int(input("Enter book number: "))
+		bookName = input("Enter book name: ") 
+		bookAuth = input("Enter book author: ")
+		bookPrice = int(input("Enter book price: "))
+		bookQty = input("Enter book quantity: ")
+		continueKey = input("Do you want to continue(y/n): ")
+		print('')
+		if continueKey.lower() == 'n': # exit control
+			key = False
+		rows.append([bookNo, bookName, bookAuth, bookPrice, bookQty])
+	with open('books.csv', 'a', newline='') as bookFile:
+		writeObj = csv.writer(bookFile)
+		writeObj.writerows(rows) # writing into csv
+
+# shows books from csv file
+def showBooks():
+	with open('books.csv', 'r') as bookFile:
+		readObj = csv.reader(bookFile)
+		for line in readObj:
+			print(line) 
+
+# initializes and clears book records
+# runs everytime the program is started
+def clearBooks():
+	loopIndex = 0
+	#initialising the fields
+	fields = ["No", "Name", "Author", "Price", "Quantity"]
+	with open('books.csv', 'w') as bookFile:
+		csvwriter = csv.writer(bookFile)        
+		csvwriter.writerow(fields)
+
+# searches book via given author
+def searchByAuth():
+	keyAuthor = input("Enter author name: ")
+	tmp = False # records found/not found
+	with open('books.csv', 'r') as bookFile:
+		readObj = csv.reader(bookFile)
+		for records in readObj:
+			# uses try/except to handle empty rows
+			try:
+				if records[2].lower() == keyAuthor.lower():
+					tmp = True
+					print(records)
+			except IndexError:
+				pass
+	if tmp == False:
+		print("Record not found")
+	else:
+		print("Records found")
+
+# searches book via given title
+def searchByTitle():
+	keyTitle = input("Enter book title: ")
+	tmp = False # records found/not found
+	with open('books.csv', 'r') as bookFile:
+		readObj = csv.reader(bookFile)
+		for records in readObj:
+			# uses try/except to handle empty rows
+			try:
+				if records[1].lower() == keyTitle.lower():
+					tmp = True
+					print(records)
+			except IndexError:
+				pass
+	if tmp == False:
+		print("Record not found")
+	else:
+		print("Records found")
+
+# searches for book under the specified price
+def showLowerPrice():
+	maxPrice = int(input("Enter max price: "))
+	if maxPrice < 0:
+		# for value in -ve
+		raise ValueError("Price must be a positive value.")
+
+	tmp = False # records found/not found
+	with open('books.csv', 'r') as bookFile:
+		readObj = csv.reader(bookFile)
+		for records in readObj:
+			# uses try/except to handle empty rows
+			try:
+				if int(records[3]) <= int(maxPrice):
+					tmp = True
+					print(records)
+			except:
+				pass
+	if tmp == False:
+		print("Record not found")
+	else:
+		print("Records found")
+
+def main():
+	# initialising the file
+	clearBooks()
+	key = True
+	while key:
+		print("1. Add books\n2. Show books\n3. Clear books\n4. Search by author")
+		print("5. Search by max price\n6. Search by title\n7. Exit")
+		choice = int(input("Enter choice: "))
+		# cli menu
+		match choice:
+			case 1:
+				addBooks()
+			case 2:
+				showBooks()
+			case 3:
+				clearBooks()
+			case 4:
+				searchByAuth()
+			case 5:
+				showLowerPrice()
+			case 6:
+				searchByTitle()
+			case 7:
+				key = False
+			case _:
+				print("Invalid option selected")
+		print("------------------------------")
+
+if __name__ == "__main__":
+	main()
+```
+
+### Experiment– 4 (Database) \
+Write a Python program to perform the following: \
+- Create a database named “products.db” \
+- Create a table named “products” that has the following fields: \
+prodID: int \
+name: text \
+quantity: int \
+price: real \
+- Insert n records into the table reading the values for each item from the user. \
+- Display the recordset after fetching all the rows. \
+- Delete a product whose product ID is entered by the user. \
+- Increase the price of all products whose current price is less than Rs.50, by 10%. \
+- Display all the products whose quantity is less than 40. \
+```py
+'''
+Write a python program to perfoem the following 
+ a) Create a database named products.sqlite 
+ b) Create a table named products with following fields: 
+     prodid:INT 
+     name:Text 
+     quantity:INT 
+     price:Float 
+ c) Insert n records into the table 
+ d) Display the recordset after fetching all the rows 
+ e) Delete the product whose product id is entered by user 
+ f) Increase the price of all the products whose current price is less than 50 by 10% 
+ g) Display all the products whose quantity is less than 40
+'''
+
+# note program developed and tested in ububtu wsl
+import sqlite3
+
+# Function to create the database and table
+def create_database_and_table():
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    cursor.execute('''CREATE TABLE IF NOT EXISTS products (
+                      prodid INTEGER PRIMARY KEY,
+                      name TEXT,
+                      quantity INTEGER,
+                      price REAL)''')
+
+    connection.commit()
+    connection.close()
+
+# Function to insert n records into the table
+def insert_records(n):
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    for i in range(1, n+1):
+        name = input(f"Enter name for product {i}: ")
+        quantity = int(input(f"Enter quantity for product {i}: "))
+        price = float(input(f"Enter price for product {i}: "))
+
+        cursor.execute('''INSERT INTO products (name, quantity, price) 
+                          VALUES (?, ?, ?)''', (name, quantity, price))
+
+    connection.commit()
+    connection.close()
+
+# Function to fetch and display all rows
+def display_records():
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    cursor.execute("SELECT * FROM products")
+    records = cursor.fetchall()
+
+    print(records)
+    if not records:
+        print("No records found.")
+    else:
+        print("Product ID | Name | Quantity | Price")
+        print("-" * 40)
+        for record in records:
+            print(f"{record[0]:^10} | {record[1]:^4} | {record[2]:^8} | {record[3]:^5}")
+
+    connection.close()
+
+# Function to delete a product by product ID
+def delete_product_by_id(product_id):
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    cursor.execute("DELETE FROM products WHERE prodid=?", (product_id,))
+    connection.commit()
+
+    if cursor.rowcount == 0:
+        print(f"Product with ID {product_id} not found.")
+    else:
+        print(f"Product with ID {product_id} deleted successfully.")
+
+    connection.close()
+
+# Function to increase the price of products with current price < 50 by 10%
+def increase_price():
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    cursor.execute("UPDATE products SET price = price * 1.1 WHERE price < 50")
+    connection.commit()
+
+    print("Prices updated successfully.")
+
+    connection.close()
+
+# Function to display products with quantity < 40
+def display_low_quantity_products():
+    connection = sqlite3.connect('products.sqlite')
+    cursor = connection.cursor()
+
+    cursor.execute("SELECT * FROM products WHERE quantity < 40")
+    records = cursor.fetchall()
+
+    if not records:
+        print("No products with quantity less than 40.")
+    else:
+        print("Product ID | Name | Quantity | Price")
+        print("-" * 40)
+        for record in records:
+            print(f"{record[0]:^10} | {record[1]:^4} | {record[2]:^8} | {record[3]:^5}")
+
+    connection.close()
+
+
+def main():
+
+    loopKey = True
+    while loopKey:
+        print('''1. Create database and table
+              2. Insert records
+              3. Display records
+              4. Delete certain record
+              5. Increase price
+              6. Display low qty products
+              7. Exit''')
+        choice = int(input("Enter your choice: "))
+        match choice:
+            case 1:
+                create_database_and_table()
+            case 2:
+                n = int(input("Enter the number of records to insert: "))
+                insert_records(n)
+            case 3:
+                print("\n--- All Records ---")
+                display_records()
+            case 4:
+                product_id_to_delete = int(input("\nEnter the product ID to delete: "))
+                delete_product_by_id(product_id_to_delete)
+            case 5:
+                increase_price()
+            case 6:
+                print("\n--- Products with Quantity < 40 ---")
+                display_low_quantity_products()
+            case 7:
+                loopKey = False
+            case _:
+                print("Invalid option selected")
+
+if __name__ == "__main__":
+    main()
+```
+### Experiment-5 (OOP – encapsulation and object composition) \
+Create a system using Object Composition and Encapsulation concepts that allows customers to place orders for products.	The program consists of three classes: Customer, Order, and Product. The Customer class stores the customer's name, email and a list of their orders. It has methods to return name and email; place and return orders.	The Order class stores orderID and a list of products and has methods to return orderID and to	calculate total price for an order.	The product class stores the name and price of a product and has methods to return name and	price.
+```py
+# Expt 5 - Encapsulation and Object Composition
+
+class Customer:
+    def __init__(self, name, email):
+        self.__name = name #Customer's name (private)
+        self.__email = email #Customer's email (private)
+        self.orders = [] #list to store customer's order
+        
+    def place_order(self, order):
+        self.orders.append(order) #Add the given order to the list
+    
+    def get_orders(self):
+        return self.orders #Return the list of customer's order
+    
+    def get_name(self):
+        return self.__name #Getter method to access the private name
+    
+    def get_email(self):
+        return self.__email #Getter method to access the private email
+    
+class Order:
+    def __init__(self, order_id, products):
+        self.__order_id = order_id 
+        self.products = products 
+        
+    def get_order_id(self):
+        return self.__order_id
+    
+    def get_total_price(self):
+        total_price = 0
+        for product in self.products:
+            total_price += product.get_price()
+        return total_price
+    
+class Product:
+    def __init__(self, name, price):
+        self.__name = name #Product name (private)
+        self.__price = price #Product price (private)
+        
+    def get_name(self):
+        return self.__name #Getter method to access the private name
+    
+    def get_price(self):
+        return self.__price #Getter method to access the private price
+    
+#Creating objects
+noOfCusts = int(input("Enter the number of Customers: "))
+Custs=[]
+for i in range(noOfCusts):
+    name, email = input("Enter name and email for Customer" + str(i+1)+': ').split()
+    customer = Customer(name, email)
+    Custs.append(customer)
+    
+    noOfOrders = int(input("Enter number of orders for Customer " + name +": "))
+    for j in range(noOfOrders):
+        oid = int(input("Enter orderID for Customer "+name+": "))
+        Prods = []
+        noOfProds = int(input("Enter number of products for order "+str(oid)+" for Customer "+name+': '))
+        for k in range(noOfProds):
+            pName,price = input("Enter name and price of products: ").split()
+            price = float(price)
+            Prod=Product(pName,price)  #Product instantiation
+            Prods.append(Prod)
+        
+        order = Order(oid,Prods)   #order instantiation
+        customer.place_order(order)
+        
+print("\nDetails of Customer orders: ")
+for cust in Custs:
+    # Accessing customer information using the getter methods
+    print("Customer Name:", cust.get_name())
+    print("Customer Email:", cust.get_email())
+    
+    #Accessing order information
+    orders = cust.get_orders()
+    for order in orders:
+        print("Order ID: ", order.get_order_id())
+        print("Products:")
+        for product in order.products:
+            print(product.get_name(), "Rs" , product.get_price())
+        print("Total price:",order.get_total_price())
+        print()
+```
+### Experiment– 6 (OOP - Inheritance and polymorphism) \
+Create an object-oriented program that allows you to enter data for customers and employees.Create a Person class that provides attributes for first name, last name, and emailaddress. This class should provide a property or method that returns the person’s fullname. Create a Customer class that inherits the Person class. This class should add anattribute for a customer number.	Create an Employee class that inherits the Person class. This class should add anattribute for a PAN number.	The program should create a Customer or Employee object from the data entered bythe user, and it should use this object to display the data to the user. To do that, theprogram can use the	isinstance() function to check whether an object is a Customer orEmployee object.
+```py
+'''
+Create an oop that allows you to enters data for customer and employesss. 
+create a person class with attributes first name, last name and email. This class should have a method  that return full name. 
+
+Craete a employee class that inherits the person class , ad an attribute for customer no. 
+
+Create a customer class which inherits a person class , add an attribute pan number. 
+
+The program should create a Customer and Employee object from the data entered by the user and it should use this object to display the  
+data to the user. to do that the program can use isinstance() function to check whether the object is a customer or employee
+'''
+
+# Define the base class 'Person'
+class Person:
+	def __init__(self, firstName, lastName, email):
+		self.firstName = firstName
+		self.lastName = lastName
+		self.email = email
+
+	def getName(self):
+		return f"{self.firstName} {self.lastName}"
+
+# Define the 'Employee' class which inherits from 'Person'
+class Employee(Person):
+	def __init__(self, firstName, lastName, email, empNo):
+		super().__init__(firstName, lastName, email)
+		self.empNo = empNo
+
+
+# Define the 'Customer' class which inherits from 'Person'
+class Customer(Person):
+	def __init__(self, firstName, lastName, email, panNo):
+		super().__init__(firstName, lastName, email)
+		self.panNo = panNo
+
+# Function to gather user input and display data
+def main():
+	# Ask the user for data type ('customer' or 'employee')
+	data_type = input("Enter data type (customer/employee): ").lower()
+
+	# Gather common data from the user
+	firstName = input("Enter first name: ")
+	lastName = input("Enter last name: ")
+	email = input("Enter email: ")
+
+	# Create a new object based on the data type entered by the user
+	if data_type == "employee":
+		# If 'employee', ask for the employee number and create an 'Employee' object
+		empNo = input("Enter employee number: ")
+		person_obj = Employee(firstName, lastName, email, empNo)
+		# If 'customer', ask for the PAN number and create a 'Customer' object
+	elif data_type == "customer":
+		panNo = input("Enter PAN number: ")
+		person_obj = Customer(firstName, lastName, email, panNo)
+	else:
+		# If an invalid data type is entered, display an error message and return
+		print("Invalid data type. Please enter 'customer' or 'employee'.")
+		return
+
+	# Display the entered data
+	print("Data entered:")
+	print(f"Full Name: {person_obj.getName()}")
+	print(f"Email: {person_obj.email}")
+
+	# Use 'isinstance()' to check whether the object is an 'Employee' or 'Customer'
+	if isinstance(person_obj, Employee):
+		# If 'Employee', display the employee number
+		print(f"Employee No: {person_obj.empNo}")
+	elif isinstance(person_obj, Customer):
+		# If 'Customer', display the PAN number
+		print(f"PAN Number: {person_obj.panNo}")
+
+
+if __name__ == "__main__":
+	main()
+```
+### Experiment– 7 (GUI)
+Develop the following GUI application. \
+(Calculator app)
+```py
+# importing main module
+from tkinter import *
+
+# root functionalities
+root = Tk()
+root.title('Calculator')
+root.geometry('640x360')
+
+# will house the display
+canvas1 = Canvas(root)
+canvas1.pack()
+
+# will house the buttons
+canvas2 = Canvas(root)
+canvas2.pack()
+
+num1 = 0
+num2 = 0
+# ------------------------------
+
+# functions
+def fnInitialize():
+	global num1, num2
+	num1 = float(entryNum1.get())
+	num2 = float(entryNum2.get())
+
+def fnAddNum():
+	fnInitialize()
+	ans = num1 + num2
+	labelAnsVal.config(text = f"Answer: {str(round(ans, 2))}")
+
+def fnSubNum():
+	fnInitialize()
+	ans = num1 - num2
+	labelAnsVal.config(text = f"Answer: {str(round(ans, 2))}")
+
+def fnMulNum():
+	fnInitialize()
+	ans = num1 * num2
+	labelAnsVal.config(text = f"Answer: {str(round(ans, 2))}")
+
+def fnDivNum():
+	fnInitialize()
+	ans = num1 / num2
+	labelAnsVal.config(text = f"Answer: {str(round(ans, 2))}")
+
+# ------------------------------
+# widgets
+
+# first number prompt
+lablelNum1 = Label(canvas1, text = "Enter num 1:")
+lablelNum1.grid(row = 1, column = 1)
+
+# first number will be here
+entryNum1 = Entry(canvas1)
+entryNum1.grid(row = 1, column = 2)
+
+# second number prompt
+lablelNum2 = Label(canvas1, text = "Enter num 2:")
+lablelNum2.grid(row = 2, column = 1)
+
+# second number will be here
+entryNum2 = Entry(canvas1)
+entryNum2.grid(row = 2, column = 2)
+
+# answer prompt
+lablelAns = Label(canvas1, text = "Answer")
+lablelAns.grid(row = 3, column = 1)
+
+# answer label
+labelAnsVal = Label(canvas1)
+labelAnsVal.grid(row = 3, column = 2)
+
+# addition button
+ButtonAdd = Button(canvas2, text = "Add", command = fnAddNum)
+ButtonAdd.grid(row = 1, column = 1)
+
+# subtraction button
+ButtonSub = Button(canvas2, text = "Sub", command = fnSubNum)
+ButtonSub.grid(row = 1, column = 2)
+
+# multiplication button
+ButtonMul = Button(canvas2, text = "Mul", command = fnMulNum)
+ButtonMul.grid(row = 1, column = 3)
+
+# division button
+ButtonDiv = Button(canvas2, text = "Div", command = fnDivNum)
+ButtonDiv.grid(row = 1, column = 4)
+
+# looping trough the program
+root.mainloop()
+```
+### Experiment– 8 (NumPy, Pandas, Matplotlib)
+An exam has been conducted for a class of students. The exam data is stored in a CSV file, containing the student names and their scores. Develop a Python program to analyse the exam scores, calculate key statistics, and visualize the data to gain insights into the students' performance.
+```py
+# Importing required libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Step 2: Calculate key statistics using Numpy
+def calculate_statistics(data):
+    # Calculating average score
+    average_score = np.mean(data['Score'])
+    # Calculating maximum and minimum scores
+    max_score = np.max(data['Score'])
+    min_score = np.min(data['Score'])
+    # Calculating number of students
+    num_students = len(data)
+    return average_score, max_score, min_score, num_students
+
+# Step 3: Visualize the exam scores using matplotlib
+def create_visualizations(data):
+    # Histogram of exam scores
+    plt.figure(figsize=(8, 6))
+    plt.hist(data['Score'], bins=10, edgecolor='black')
+    plt.xlabel('Score')
+    plt.ylabel('Frequency')
+    plt.title('Exam Score Distribution')
+    plt.show()
+
+    # Bar chart for top-performing students
+    top_students = data[data['Score'] >= 90]
+    plt.figure(figsize=(8, 6))
+    plt.bar(top_students['Name'], top_students['Score'], color='green')
+    plt.xlabel('Student Name')
+    plt.ylabel('Score')
+    plt.title('Top-performing Students')
+    plt.xticks(rotation=45)
+    plt.show()
+
+# Main function to execute the program
+def main():
+    # Step 1: Load the exam data
+    exam_data=pd.read_csv("Exam scores.csv")
+
+    # Step 2: Calculate key statistics
+    avg_score, max_score, min_score, num_students = calculate_statistics(exam_data)
+    print("Average Score:", avg_score)
+    print("Maximum Score:", max_score)
+    print("Minimum Score:", min_score)
+    print("Number of Students:", num_students)
+
+    # Step 3: Create visualizations
+    create_visualizations(exam_data)
+
+if __name__ == "__main__":
+    main()
+```
