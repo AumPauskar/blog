@@ -288,3 +288,39 @@ In ARM assembly language, the instructions `MLA` (Multiply Accumulate), `MUL` (M
      ```
 
 These instructions are used for efficient multiplication operations, and the choice between signed and unsigned variants depends on the nature of the data being manipulated. The result may be split into two registers (for 64-bit results) or stored in a single register (for 32-bit results). The `MLA` and `MUL` instructions are used for single-word multiplication, while the `SMLAL`, `SMULL`, `UMLAL`, and `UMULL` instructions are used for double-word multiplication.
+
+## C compiler in ARM 7
+Datatypes in C (ARM 7)
+
+| | |
+| --- | --- |
+
+
+Type casting in C is a way to convert a variable from one data type to another. This can be useful in a variety of situations, such as when you want to perform operations between different types of data, or when you need to conform to a function's expected input types.
+
+In ARM7, which is a type of processor architecture, C code including type casting is executed in the same way as it would be on any other architecture. The ARM7 processor simply executes the compiled machine code that results from the C code.
+
+```c
+int main() {
+    double num = 10.5;
+    int int_num;
+
+    // type casting
+    int_num = (int)num;
+
+    printf("The integer value is : %d", int_num);
+
+    return 0;
+}
+```
+
+Here's a comparison of GCC and ARM Compiler in the form of a Markdown table:
+
+| Feature | GCC | ARM Compiler |
+|---------|-----|--------------|
+| **Supported Architectures** | Supports a wide range of architectures including ARM, x86, PowerPC, and more. | Primarily focused on ARM architectures. |
+| **Optimization** | Provides good optimization across all supported architectures. | Provides highly optimized code specifically for ARM architectures. |
+| **Language Standards** | Supports a wide range of language standards for C, C++, and other languages. | Supports a wide range of language standards for C and C++, with specific support for ARM C and C++ extensions. |
+| **Debugging** | Comes with GDB, a powerful debugging tool. | Comes with ARM DS-5 Debugger, a powerful debugging tool specifically for ARM architectures. |
+| **License** | Distributed under the GNU General Public License, a free and open-source license. | ARM Compiler 5 is proprietary. ARM Compiler 6 is based on LLVM and is available under a free license for some uses. |
+| **Toolchain Integration** | Part of the GNU toolchain, integrates well with other GNU tools. | Part of the ARM toolchain, integrates well with other ARM tools like DS-5 Development Studio. |
