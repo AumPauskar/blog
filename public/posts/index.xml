@@ -18,6 +18,17 @@ Use of an operating system The operating system is responsible for the following
     </item>
     
     <item>
+      <title>ZSH configuration</title>
+      <link>https://aumpauskar.github.io/blog/posts/misc/zsh/</link>
+      <pubDate>Wed, 20 Dec 2023 06:58:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/misc/zsh/</guid>
+      <description>ZSH configuration ZSH is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added.
+Installation Update and install ZSH can be installed on any linux based system using the following command:
+1 2 sudo apt update sudo apt install zsh -y This will update the system binaries and install the zsh shell on the system.</description>
+    </item>
+    
+    <item>
       <title>Raspberry Pi</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
