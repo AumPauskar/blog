@@ -71,6 +71,23 @@ Apps or packages can be installed in the system via the `apt` or the `apt-get` c
 	sudo apt search <package name>
 	```
 
+### DPKG
+Dpkg is a package manager for Debian based systems. It is used to install, remove, and provide information about `.deb` packages. Dpkg is a low level tool that interacts with the `.deb` packages. Some packages may not be available in the apt pool, then the package can be installed with the `dpkg` command. `.deb` can be installed with the software manager in ubuntu via double clicking but with cli we can use this command to install the package
+```bash
+sudo dpkg -i <package name>
+```
+The package can be removed by this command
+```bash
+sudo dpkg -r <package name>
+```
+The package can be removed along with the configuration files by this command
+```bash
+sudo dpkg -P <package name>
+```
+
+## Shells
+Shells are the command line interpreters that run the commands. There are various shells available in the linux operating system. The default shell in the linux operating system is the bash shell. However the benifit of the linux family is customisablity and hence there are various shells available. The zsh shell is one of the most popular shells. To install this you can follow this [link](https://aumpauskar.github.io/blog/posts/misc/zsh/).
+
 ## Processes
 When a linux operating system is run then many processes are created, these usually run at the user level rather running at the kernal level. \
 Processes can be run via the `ps`
@@ -91,3 +108,4 @@ ps -e
 
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
+2. `history`: running this command will give you the history of all the commands you have run in the terminal.
