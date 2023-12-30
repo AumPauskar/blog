@@ -1,7 +1,7 @@
 +++
-title = 'Raspberry_pi'
+title = 'Raspberry Pi'
 date = 2023-12-19T21:29:49+05:30
-draft = true
+draft = false
 +++
 
 # Raspberry Pi
