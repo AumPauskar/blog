@@ -1,7 +1,7 @@
 +++
 title = 'Leetcode solutions'
 date = 2023-12-30T22:56:49+05:30
-draft = true
+draft = false
 +++
 
 # Leetcode solutions
