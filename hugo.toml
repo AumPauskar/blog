@@ -55,7 +55,7 @@ googleAnalytics = "G-EV8NVH4QG5"
 		# icon = "/apple-touch-icon.png"
 		# iconHeight = 35
 	[params.profileMode]
-		enabled = true # needs to be explicitly set
+		enabled = false # needs to be explicitly set
 		title = "Aum's blogging site"
 		subtitle = "A collection of different technologies"
 		# imageUrl = "<img location>"
