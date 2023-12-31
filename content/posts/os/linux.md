@@ -88,6 +88,26 @@ sudo dpkg -P <package name>
 ## Shells
 Shells are the command line interpreters that run the commands. There are various shells available in the linux operating system. The default shell in the linux operating system is the bash shell. However the benifit of the linux family is customisablity and hence there are various shells available. The zsh shell is one of the most popular shells. To install this you can follow this [link](https://aumpauskar.github.io/blog/posts/misc/zsh/).
 
+## Things to show off to your non-linux friends
+1. `cmatrix`: running this command will show you the matrix effect
+	```bash
+	sudo apt update
+	sudo apt install cmatrix
+	cmatrix
+	```
+2. `sl`: running this command will show you the train running on the terminal
+	```bash
+	sudo apt update
+	sudo apt install sl
+	sl
+	```
+3. `cowsay`: running this command will show you a cow saying something
+	```bash
+	sudo apt update
+	sudo apt install cowsay
+	cowsay <message>
+	```
+
 ## Processes
 When a linux operating system is run then many processes are created, these usually run at the user level rather running at the kernal level. \
 Processes can be run via the `ps`
