@@ -223,7 +223,7 @@ The best way to deploy the site is to use a free service like Firebase, Netlify 
 	git push
 	```
 7. Check the deployments section in the repository to check if the deployment is sucessful or not.
-8 . If the deployment is sucessful then the site should be available at `https://<username>.github.io`
+8. If the deployment is sucessful then the site should be available at `https://<username>.github.io`
 
 ## References
 - [Hugo quickstart](https://gohugo.io/getting-started/quick-start/)
