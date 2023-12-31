@@ -126,6 +126,26 @@ To see every process on the system
 ps -e
 ```
 
+## Users
+Users are the people who use the system. In linux based operating systems there may be multiple users (can be upto hundereds in a shared system like a server). The users in linux have a unique user id (UID) and a group id (GID). The UID is a number that is assigned to the user and the GID is a number that is assigned to the group. The UID and GID are stored in the `/etc/passwd` file. Every users has a home directory that is stored in the `/home` directory. The user may have different privalages that are assigned when the users are created and added to the system.
+
+- Adding a user\
+	A user can be added to the system by running the following command
+	```bash
+	sudo adduser <username>
+	```
+- Deleting a user\
+	A user can be deleted from the system by running the following command
+	```bash
+	sudo deluser <username>
+	```
+- Changing the password of a user\
+	A user can change the password of the user by running the following command
+	```bash
+	sudo passwd <username>
+	```
+
+
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
