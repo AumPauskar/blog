@@ -125,3 +125,15 @@ class Solution(object):
                 return False
         return leftSymbols == []
 ```
+
+## Problem 6: [Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/description/?envType=daily-question&envId=2023-12-31)
+```py
+class Solution:
+    def maxLengthBetweenEqualCharacters(self, s: str) -> int:
+        output = -1
+        for i in range (0, len(s)):
+            for j in range (i+1, len(s)):
+                if s[i] == s[j]:
+                    output = max(output, j-i-1)
+        return output
+```
