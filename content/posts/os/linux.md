@@ -159,7 +159,146 @@ The shell scripts can be run in the background and the output can be redirected 
 ./<filename.sh> &> <filename.txt> &
 ```
 
+### How to create a shell scripting file
+```bash
+#!/bin/bash
+echo "Hello World"
+```
 
+### Basic operations
+
+- Variables\
+	Variables can be created by the following command
+	```bash
+	<variable name>=<value>
+	```
+	Variables can be accessed by the following command
+	```bash
+	echo $<variable name>
+	```
+
+	Demonstration
+	```bash
+	#!/bin/bash
+	NAME="John Doe"
+	echo "Hello $NAME"
+	```
+
+- User input\
+	User input can be taken by the following command
+	```bash
+	read <variable name>
+	```
+	Demonstration
+	```bash
+	#!/bin/bash
+	echo "Enter your name"
+	read NAME
+	echo "Hello $NAME"
+	```
+
+- If else\
+	If else can be used to run a command if a condition is true or false
+	```bash
+	if <condition>
+	then
+		<command>
+	else
+		<command>
+	fi
+	```
+	Demonstration
+	```bash
+	#!/bin/bash
+	echo "Enter your name"
+	read NAME
+	if [ "$NAME" == "John Doe" ]
+	then
+		echo "Hello $NAME"
+	else
+		echo "You are not John Doe"
+	fi
+	```
+
+- Loops\
+	Loops can be used to run a command multiple times
+	- For loop\
+		For loop can be used to run a command multiple times
+		```bash
+		for <variable name> in <list>
+		do
+			<command>
+		done
+		```
+		Demonstration
+		```bash
+		#!/bin/bash
+		for i in 1 2 3 4 5
+		do
+			echo "Hello $i"
+		done
+		```
+	- While loop\
+		While loop can be used to run a command multiple times
+		```bash
+		while <condition>
+		do
+			<command>
+		done
+		```
+		Demonstration
+		```bash
+		#!/bin/bash
+		i=1
+		while [ $i -le 5 ]
+		do
+			echo "Hello $i"
+			i=$(( i+1 ))
+		done
+		```
+
+- Comparisons\
+	Comparisons can be used to compare two values
+	- String comparison\
+		String comparison can be used to compare two strings
+		```bash
+		if [ "$<variable name>" == "<string>" ]
+		then
+			<command>
+		fi
+		```
+	- Number comparison\
+		Number comparison can be used to compare two numbers
+		```bash
+		if [ $<variable name> -eq <number> ]
+		then
+			<command>
+		fi
+		```
+	- File comparison\
+		File comparison can be used to compare two files
+		```bash
+		if [ -f <file name> ]
+		then
+			<command>
+		fi
+		```
+- Greater than or less than\
+	Greater than or less than can be used to compare two numbers
+	```bash
+	if [ $<variable name> -gt <number> ]
+	then
+		<command>
+	fi
+	```
+- Greater than or equal to or less than or equal to\
+	Greater than or equal to or less than or equal to can be used to compare two numbers
+	```bash
+	if [ $<variable name> -ge <number> ]
+	then
+		<command>
+	fi
+	```
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
