@@ -145,6 +145,20 @@ Users are the people who use the system. In linux based operating systems there 
 	sudo passwd <username>
 	```
 
+## Shell scripting
+Shell scripting is a way to automate the tasks that are done on the command line. Shell scripts are written in the bash shell. The shell scripts are saved with the `.sh` extension. The shell scripts can be run by the following command
+```bash
+bash <filename.sh>
+```
+The shell scripts can be run in the background by the following command
+```bash
+./<filename.sh> &
+```
+The shell scripts can be run in the background and the output can be redirected to a file by the following command
+```bash
+./<filename.sh> &> <filename.txt> &
+```
+
 
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
