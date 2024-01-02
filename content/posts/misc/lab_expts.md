@@ -390,6 +390,115 @@ In conclusion, the distance vector routing program efficiently finds the shortes
 - References
 	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
 	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
+
+### Termwork 6 - leaky bucket
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```py
+	# LEAKY BUCKET
+
+	import time
+
+	class LeakyBucket:
+		def __init__(self, capacity, rate):
+			self.capacity = capacity  # Maximum bucket size
+			self.rate = rate  # Rate at which the bucket leaks tokens
+			self.tokens = 0  # Current number of tokens in the bucket
+			self.last_time = time.time()
+
+		def add_token(self):
+			current_time = time.time()
+			time_elapsed = current_time - self.last_time
+			self.tokens = min(self.capacity, self.tokens + time_elapsed * self.rate)
+			self.last_time = current_time
+
+		def transmit(self, packet_size):
+			if self.tokens >= packet_size:
+				self.tokens -= packet_size
+				print(f"Transmitted {packet_size} bytes")
+				return True
+			else:
+				print("Dropped - Insufficient tokens")
+				return False
+
+	if __name__ == "__main__":
+		bucket = LeakyBucket(capacity=50, rate=10)  # Example: 50 bytes capacity, 10 bytes/second rate
+
+		for i in range(1, 11):
+			print(f"Time: {i} seconds")
+			bucket.add_token()
+			packet_size = eval(input(" Enter the Packet size : "))  # Example: 15 bytes packet size
+			bucket.transmit(packet_size)
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 7 - crc idk
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```py
+	# CRC
+
+	def crc_remainder(input_bitstring, polynomial, initial_fill):
+		# Append zeros to the input bitstring (equal to the degree of the polynomial)
+		dividend = input_bitstring + '0' * (len(polynomial) - 1)
+		dividend = list(dividend)
+		polynomial = list(polynomial)
+
+		for i in range(len(input_bitstring)):
+			if dividend[i] == '1':
+				for j in range(len(polynomial)):
+					dividend[i + j] = str(int(dividend[i + j]) ^ int(polynomial[j]))
+
+		# Get the remainder (checksum)
+		remainder = ''.join(dividend)[-len(polynomial) + 1:]
+		# Append the remainder to the original message
+		codeword = input_bitstring + remainder
+
+		return remainder, codeword
+
+	def crc_check(codeword, polynomial):
+		# Calculate the remainder using the received codeword and the same polynomial
+		remainder, _ = crc_remainder(codeword, polynomial, '0' * (len(polynomial) - 1))
+		return remainder == '0' * (len(polynomial) - 1)
+
+	if __name__ == "__main__":
+		message = eval(input(" Enter the Message in bit format : "))
+		polynomial = eval(input(" Enter the Polynomial divisior in bit format : "))
+
+		remainder, codeword = crc_remainder(message, polynomial, '0' * (len(polynomial) - 1))
+		print(" Original Message:", message)
+		print(" Polynomial:", polynomial)
+		print(" Transmitted Codeword:", codeword)
+		print(" Remainder:", remainder)
+
+		print(" Enter the choice \n 1. Error Free Tramsmission \n 2. Simulate Error : ")
+		choice = eval(input())
+
+		if choice == 1:
+			is_valid = crc_check(codeword, polynomial)
+		else:
+			# Simulate an error by flipping a bit
+			error_position = eval(input("Enter the bit position to introduce Error : "))
+			codeword = codeword[:error_position] + ('1' if codeword[error_position] == '0' else '0') + codeword[error_position + 1:]
+			print("Received Codeword with Error:", codeword)
+			is_valid = crc_check(codeword, polynomial)
+								
+		if is_valid:
+			print("No error detected. The message is valid and the message is : ", codeword)
+		else:
+			print("Error detected. The message is invalid and the message is : ", codeword)
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
 ## Microcontroller lab
 ### Template
 1. Title of the experiment
