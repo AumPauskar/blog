@@ -392,9 +392,26 @@ In conclusion, the distance vector routing program efficiently finds the shortes
 	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
 ### Termwork 6 - leaky bucket
-- Title of the experiment 
+- Title of the experiment \
+Demonstrate leaky bucket algorithm
 - Objective of the experiment
-- Brief theory about the experiment
+	- To demonstrate rate limiting
+	- To demonstrate traffic shaping
+	- To demonstrate congestion control
+- Brief theory about the experiment \
+	The Leaky Bucket Algorithm is a method used in networking to manage and control the rate of data transmission. It's used for traffic shaping, rate limiting, and congestion control. The algorithm works similarly to a literal leaky bucket.
+
+	Imagine a bucket with a small hole at the bottom. Water (representing data packets) is poured into the bucket at varying rates. The water leaks from the hole at a constant rate. If the water is poured too quickly, the bucket overflows, representing data loss. If the water is poured too slowly, the bucket will eventually empty, representing idle capacity.
+
+	In the context of data transmission:
+
+	1. **Bucket Size**: This represents the buffer memory. If data arrives too fast and the buffer gets full, incoming data is discarded or 'spilled'.
+	2. **Leak Rate**: This represents the rate at which the data packets are sent. It's constant and does not change based on the incoming data rate.
+	3. **Overflow**: If data comes in at a rate that's too fast for the leak rate to handle, and the buffer is full, the incoming data is discarded.
+	4. **Idle Time**: If data comes in at a rate that's slower than the leak rate, there will be times when there are no data packets to send.
+
+	The Leaky Bucket Algorithm helps to smooth out bursty traffic, limit the data transmission rate, and control congestion, ensuring that the network can handle the data flow.
+
 - Algorithm & Program
 	```py
 	# LEAKY BUCKET
@@ -434,13 +451,34 @@ In conclusion, the distance vector routing program efficiently finds the shortes
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	1. **Understanding of the Leaky Bucket Algorithm**: Students will gain a deep understanding of the Leaky Bucket Algorithm, including its purpose, how it works, and where it is used in computer networks.
+	2. **Practical Implementation of the Leaky Bucket Algorithm**: Students will learn how to implement the Leaky Bucket Algorithm in code, giving them practical experience in network programming.
+	3. **Understanding of CRC (Cyclic Redundancy Check)**: Students will learn about CRC, a popular method for detecting errors in data transmission. They will understand how it works and how to implement it in code.
+- Conclusion \
+	In conclusion, the Leaky Bucket Algorithm is a fundamental concept in computer networks that plays a crucial role in managing data traffic. It helps in smoothing out bursty traffic, controlling the data transmission rate, and preventing network congestion. By implementing this algorithm, students gain practical experience in network programming, enhancing their understanding of how data is managed in real-world networks. This knowledge is essential for anyone looking to delve deeper into the field of computer networks and telecommunications.
 - References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
 
-### Termwork 7 - crc idk
-- Title of the experiment 
-- Objective of the experiment
-- Brief theory about the experiment
+### Termwork 7 - cyclic redundancy check
+- Title of the experiment\
+To show and demonstrate the use of cyclic redundancy check
+- Objective of the experiment\
+	- To demonstrate the use of cyclic redundancy check
+	- To understand the basic concepts of error detection
+- Brief theory about the experiment\
+	Cyclic Redundancy Check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data. Here's the theory behind it:
+	1. **Polynomial Codes**: CRC is based on the algebraic structure of polynomial codes over finite fields, specifically the field of two elements, GF(2). Each bitstring corresponds to a polynomial with coefficients in GF(2).
+	2. **Division**: The sender treats the data as a polynomial and divides it by a specific polynomial known as the generator polynomial. The remainder of this division is then appended to the data.
+	3. **Error Detection**: The receiver performs the same division operation and if the remainder (known as the CRC or checksum) is non-zero, an error is detected.
+
+	The core concepts involved in CRC include:
+
+	1. **Bitwise XOR operation**: The division operation in CRC is performed using bitwise XOR operations.
+	2. **Generator Polynomial**: This is a key part of the CRC calculation. It's chosen carefully to maximize the error-detecting capabilities.
+	3. **Checksum**: This is the remainder from the division operation. It's appended to the data being sent and used by the receiver to detect errors.
+
+	CRC is used because it's highly effective at detecting errors and it's relatively easy to implement in hardware or software. It's particularly good at detecting common types of errors in networks, like burst errors.
 - Algorithm & Program
 	```py
 	# CRC
@@ -497,8 +535,15 @@ In conclusion, the distance vector routing program efficiently finds the shortes
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- To understand error detection and error mitigation in computer networks
+	- To understand the basic concepts of CRC
+- Conclusion\
+	In conclusion, the CRC program efficiently detects errors in data transmission. The code demonstrates key concepts such as polynomial codes, division, and checksum calculation.
 - References
+	1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach, Sixth	edition, Pearson,2017.
+	2. Larry L Peterson and Bruce S Davie, Computer Networks, fifth edition, ELSEVIER
+
+
 ## Microcontroller lab
 ### Template
 1. Title of the experiment
