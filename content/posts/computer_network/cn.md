@@ -511,3 +511,25 @@ Go-back-N is a type of automatic repeat request (ARQ) protocol used in communica
 Selective repeat is a type of automatic repeat request (ARQ) protocol used in communication networks. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Selective repeat is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Selective repeat is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Selective repeat is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Selective repeat is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Selective repeat is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded.
 
 **Note:*** Whenever a network transmission happens there are two kinds of actions that can be initiated by the computer. **ACK** and **NAK** stands for acknolwedgement and negative acknowledgement respectively. ACK is sent when the packet is recieved and NAK is sent when the packet is not recieved. The sender sends the packet again when the NAK is recieved. This is continuously done between the two or more computers that are actively participating in netork transmission.
+
+
+## IPV4 network layer protocol
+IPv4 is the fourth version of the Internet Protocol (IP). It is used to identify devices on a network and route traffic between them. IPv4 addresses are 32-bit numbers that are typically expressed in dotted decimal notation, such as
+
+- Functions of ip (internet protocol)
+   - **Addressing:** IP addresses are used to identify devices on a network. They are typically expressed in dotted decimal notation, such as
+   - **Datagram:** IP uses datagrams to send data over a network. A datagram is a self-contained unit of data that contains the source and destination addresses, as well as the data being transmitted.
+   - **Packet handling conventions:** IP uses packet handling conventions to route packets between devices on a network.
+
+- IP datagram format
+   - **Version:** This field specifies the version of IP being used. It is typically set to 4 for IPv4.
+   - **Header Length:** This field specifies the length of the IP header in 32-bit words. It is typically set to 5 for IPv4.
+   - **Type of Service:** This field specifies the type of service requested by the sender. It is typically set to 0 for IPv4.
+   - **Total Length:** This field specifies the total length of the IP datagram, including the header and data. It is typically set to 20 bytes for IPv4.
+   - **Identification:** This field specifies a unique identifier for the IP datagram. It is typically set to 0 for IPv4.
+   - **Flags:** This field specifies whether the IP datagram can be fragmented. It is typically set to 0 for IPv4.
+   - **Fragment Offset:** This field specifies the offset of the IP datagram in the original packet. It is typically set to 0 for IPv4.
+   - **Time to Live:** This field specifies the maximum number of hops that the IP datagram can take before being discarded. It is typically set to 64 for IPv4.
+   - **Protocol:** This field specifies the protocol used in the data portion of the IP datagram. It is typically set to 6 for TCP and 17 for UDP.
+   - **Header Checksum:** This field specifies the checksum of the IP header. It is typically set to 0 for IPv4.
+   - **Source Address:** This field specifies the IP address of the sender. It is typically set to
