@@ -6,7 +6,18 @@
     <description>Recent content on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Dec 2023 22:56:49 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jan 2024 09:54:53 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X.509 Certificate extension for 5G</title>
+      <link>https://aumpauskar.github.io/blog/posts/computer_network/x509/</link>
+      <pubDate>Wed, 03 Jan 2024 09:54:53 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/computer_network/x509/</guid>
+      <description>X.509 Certificate extension for 5G Introduction X.509 is a standard that defines the format of public key certificates. These certificates are used in many Internet protocols, including TLS and SSL, which are the basis for HTTPS, the secure protocol for browsing the web. They&amp;rsquo;re also used for securing communications in 5G networks.
+In the context of 5G, X.509 certificates can be used in a few ways:
+Device Authentication: X.509 certificates can be used to authenticate devices on the network.</description>
+    </item>
+    
     <item>
       <title>Leetcode solutions</title>
       <link>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</link>
