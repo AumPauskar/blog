@@ -324,3 +324,71 @@ Here's a comparison of GCC and ARM Compiler in the form of a Markdown table:
 | **Debugging** | Comes with GDB, a powerful debugging tool. | Comes with ARM DS-5 Debugger, a powerful debugging tool specifically for ARM architectures. |
 | **License** | Distributed under the GNU General Public License, a free and open-source license. | ARM Compiler 5 is proprietary. ARM Compiler 6 is based on LLVM and is available under a free license for some uses. |
 | **Toolchain Integration** | Part of the GNU toolchain, integrates well with other GNU tools. | Part of the ARM toolchain, integrates well with other ARM tools like DS-5 Development Studio. |
+
+## C programs in ARM 7
+- `PINSEL0`, `PINSEL1` are used to select the pins for the GPIO. `PINMODE0`, `PINMODE1` are used to select the mode of the pins. `IOSET0`, `IOCLR0` are used to set and clear the pins. `IODIR0` is used to set the direction of the pins.
+
+- The output pins in ARM7 are capable of giving GPIO output and PWM output. DAC usually refers to the signwave in present in the arm chip.
+
+- Left shifting in c is done via `<<` and right shifting is done via `>>`. `~` is used to invert the bits. In case we need to compare two integers, one with 16 and other with 32 bits.
+
+- Blink
+   ```c
+   #include <lpc214x.h>
+
+   unsigned int delay;
+
+   int main() {
+      PINSEL1 = 0X00000000;
+      IO0DIR = 0XFFFFFFFF;
+      
+      while (1) {
+         IO0SET = 0XFFFFFFFF;
+         for (delay = 0; delay < 650000; delay++);
+         IO0CLR = 0XFFFFFFFF;
+         for (delay = 0; delay < 650000; delay++);
+      }
+   }
+   ```
+
+## Arduino uno programs
+
+- Buzzer
+   ```c
+   // RM17 - RM9 connected 
+   int buzzer_pin = 9;     // Arduino pin #23/D9  or Board pin P38
+
+   void setup() 
+   {
+   pinMode(buzzer_pin, OUTPUT);
+   Serial.begin(9600);
+   digitalWrite(buzzer_pin,HIGH);
+   }
+
+   void loop() {
+   digitalWrite(buzzer_pin, LOW);
+   delay(1000);
+   digitalWrite(buzzer_pin, HIGH);
+   delay(1000);
+   }
+   ```
+
+- LDR
+   ```c
+   int light_pin = 5;     //Arduino board pin #19 / D5
+
+   void setup() {
+   pinMode(light_pin, INPUT);
+   Serial.begin(9600);
+   }
+
+   void loop() {
+   int light_data = digitalRead(light_pin);
+   if(light_data)
+      Serial.println("Light Not Detected!");
+   else
+      Serial.println("Light Detected!");
+      
+   delay(1000);
+   }
+   ```
