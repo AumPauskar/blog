@@ -292,8 +292,20 @@ These instructions are used for efficient multiplication operations, and the cho
 ## C compiler in ARM 7
 Datatypes in C (ARM 7)
 
-| | |
+| Data Type | Description |
 | --- | --- |
+| `int` | An integer type. The size is usually 32 bits on ARM architectures. |
+| `char` | A character type that is 1 byte in size. It can store both character and small integer values. |
+| `float` | A single-precision floating-point type. |
+| `double` | A double-precision floating-point type. |
+| `void` | A type representing the absence of type. |
+| `short` | A short integer type. Typically half the size of an `int`. |
+| `long` | A long integer type. Typically the same size as an `int` but guaranteed to be at least as large. |
+| `long long` | A long integer type. Typically twice the size of an `int`. |
+
+**Note:** Since ARM7 works on 32 bit architecture it is recommended to use `int` instead of `short` and `long` as they are 16 bit and 64 bit respectively.
+
+
 
 
 Type casting in C is a way to convert a variable from one data type to another. This can be useful in a variety of situations, such as when you want to perform operations between different types of data, or when you need to conform to a function's expected input types.
@@ -314,16 +326,57 @@ int main() {
 }
 ```
 
-Here's a comparison of GCC and ARM Compiler in the form of a Markdown table:
+- Checksum code (low priority i think). An example of why char should not be used
+   ```c
+   int checksum_v1(int *data) { 
+      char i; 
+      int sum = 0; 
+      for (i = 0; i < 64; i++) { 
+         sum += data[i]; 
+      } 
+      return sum; 
+   }
+   ```
+   **PS**: All ARM registers are 32-bit and all stack entries are at least 32-bit. Furthermore, to implement the i++ exactly, the compiler must account for the case when i = 255. Any attempt to increment 255 should produce the answer 0.
 
-| Feature | GCC | ARM Compiler |
-|---------|-----|--------------|
-| **Supported Architectures** | Supports a wide range of architectures including ARM, x86, PowerPC, and more. | Primarily focused on ARM architectures. |
-| **Optimization** | Provides good optimization across all supported architectures. | Provides highly optimized code specifically for ARM architectures. |
-| **Language Standards** | Supports a wide range of language standards for C, C++, and other languages. | Supports a wide range of language standards for C and C++, with specific support for ARM C and C++ extensions. |
-| **Debugging** | Comes with GDB, a powerful debugging tool. | Comes with ARM DS-5 Debugger, a powerful debugging tool specifically for ARM architectures. |
-| **License** | Distributed under the GNU General Public License, a free and open-source license. | ARM Compiler 5 is proprietary. ARM Compiler 6 is based on LLVM and is available under a free license for some uses. |
-| **Toolchain Integration** | Part of the GNU toolchain, integrates well with other GNU tools. | Part of the ARM toolchain, integrates well with other ARM tools like DS-5 Development Studio. |
+   **Optimized code**
+   ```c
+   short checksum_v4(short *data) { 
+      unsigned int i; 
+      int sum=0; 
+      for (i=0; i<64; i++) { 
+         sum += *(data++);
+      } 
+      return (short)sum; 
+   }
+   ```
+
+
+- Here's a comparison of GCC and ARM Compiler in the form of a Markdown table
+
+   | Feature | GCC | ARM Compiler |
+   |---------|-----|--------------|
+   | **Supported Architectures** | Supports a wide range of architectures including ARM, x86, PowerPC, and more. | Primarily focused on ARM architectures. |
+   | **Optimization** | Provides good optimization across all supported architectures. | Provides highly optimized code specifically for ARM architectures. |
+   | **Language Standards** | Supports a wide range of language standards for C, C++, and other languages. | Supports a wide range of language standards for C and C++, with specific support for ARM C and C++ extensions. |
+   | **Debugging** | Comes with GDB, a powerful debugging tool. | Comes with ARM DS-5 Debugger, a powerful debugging tool specifically for ARM architectures. |
+   | **License** | Distributed under the GNU General Public License, a free and open-source license. | ARM Compiler 5 is proprietary. ARM Compiler 6 is based on LLVM and is available under a free license for some uses. |
+   | **Toolchain Integration** | Part of the GNU toolchain, integrates well with other GNU tools. | Part of the ARM toolchain, integrates well with other ARM tools like DS-5 Development Studio. |
+
+- The `memclr` function
+   The memclr function clears N bytes of memory at address data.
+   ```c
+   void memclr(char *data, int N) { 
+      for (; N>0; N--) { 
+         *data=0; 
+         data++; 
+      }
+   }
+   ```
+
+- **Register Allocation:** The compiler attempts to allocate a processor register to each local variable you use in a C function. It will try to use the same register for different local variables if the use of the variables do not overlap. When there are more local variables than available registers, the compiler stores the excess variables on the processor stack. These variables are called spilled or swapped out variables since they are written out to memory (in a similar way virtual memory is swapped out to disk). Spilled variables are slow to access compared to variables allocated to registers. 
+
+- **Pointer aliasing:** Pointer aliasing is a situation in programming where two or more pointers can be used to access the same memory location. This is not specific to ARM 7, but is a general concept in C and C++ programming.
 
 ## C programs in ARM 7
 - `PINSEL0`, `PINSEL1` are used to select the pins for the GPIO. `PINMODE0`, `PINMODE1` are used to select the mode of the pins. `IOSET0`, `IOCLR0` are used to set and clear the pins. `IODIR0` is used to set the direction of the pins.
