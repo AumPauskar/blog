@@ -241,6 +241,13 @@ TCP follows virtual circuits
 
 TLS/TSL
 
+## About the transport layer
+- It provides logical communication between apps and other processes
+- It breake the app segments and then passes on to the network layer
+- After the dissassembly of segments it rearranges them.
+- There exists more than one transport protocol being **TCP** and **UDP**.
+
+## 
 ## HTTP
 **HTTP Overview from the Perspective of Computer Networks:**
 
@@ -445,9 +452,34 @@ In the DNS protocol, messages are divided into five sections:
 - **Man in the middle:** Man-in-the-middle attack is a type of attack where the attacker intercepts communication between two parties and impersonates each one. The attacker can then steal sensitive information or modify the communication.
 
 
-### Multiplexing vs demultiplexing
+## Multiplexing vs demultiplexing
 - Multiplexing is the process of combining multiple signals into a single signal. It is used to increase the amount of data that can be transmitted over a network. Multiplexing is typically done at the physical layer of the OSI model.
 - Demultiplexing is the process of separating a single signal into multiple signals. It is used to extract data from a multiplexed signal. Demultiplexing is typically done at the physical layer of the OSI model.
+- The header is responsible for arranging the signals into correct order during the process of multiplexing and demultiplexing.
+- Working
+   - The IP datagrams has the source and the destination location within i
+   - Each datagram has one transport layer segment, these segments have enought information to multiplexing and demultiplex the data packets.
+   - When host recives the segment it checks for the port number and rearranges accordingly.
+- Components for demultiplexing UDP
+   - Destination IP addr and port no.
+
+
+### Connectionless demux
+- The UDP header has the source and destination port number.
+- The UDP header has the source and destination IP address.
+- The UDP header has the length of the UDP datagram.
+- The UDP header has the checksum of the UDP datagram.
+
+- What is demux (its nothing just a shortform of demultiplexing)
+   - Demultiplexing is the process of separating a single signal into multiple signals. It is used to extract data from a multiplexed signal. Demultiplexing is typically done at the physical layer of the OSI model.
+
+### Connection oriented demux
+- The TCP header has the source and destination port number.
+- The TCP header has the source and destination IP address.
+- The TCP header has the sequence number of the TCP segment.
+- The TCP header has the acknowledgment number of the TCP segment.
+- The TCP header has the length of the TCP segment.
+- The TCP header has the checksum of the TCP segment.
 
 ### Subnet mask (extra I guess)
 A subnet mask is a 32-bit number that is used to divide an IP address into subnets. It is used to determine which part of the IP address is the network address and which part is the host address. The subnet mask is typically written in dotted decimal notation, such as
@@ -476,10 +508,18 @@ Port numbers are used to identify specific applications or services on a network
 ## TCP vs UDP
 
 ### **TCP**: Transmission Control Protocol
+TCP stands for Transmission Control Protocol. It is a connection-oriented protocol that works on the transport layer of the OSI model. It is used for applications that require high reliability and transmission time is relatively less critical. It is used for applications such as file transfer, email, remote login, and web browsing. It is also used for DNS and DHCP. It is slower than UDP as it establishes a connection before sending data and guarantees delivery of data. It is also less efficient than UDP as it has a larger header size. However, it is more reliable than UDP as it guarantees delivery of data and has a flow control mechanism. It is also more secure than UDP as it is connection-based. The applications of TCP
 
-### UDP
+
+
+### **UDP**: User Datagram Protocol
 Udp stands for user datagram protocol. It is a connectionless protocol that works on the transport layer of the OSI model. It is used for applications that require fast transmission time and the transmission of data is more critical than reliability. It is used for applications such as video streaming, online gaming, and VoIP. It is also used for DNS and DHCP. It is faster than TCP as it does not establish a connection before sending data and does not guarantee delivery of data. It is also more efficient than TCP as it has a smaller header size. However, it is less reliable than TCP as it does not guarantee delivery of data and does not have a flow control mechanism. It is also less secure than TCP as it is connectionless. The applications of UDP
 
+- Components of UDP
+   - Source port no.
+   - Destination port no.
+   - Length
+   - Checksum - **16bit int** to detect errors 
 
 ### Differences
 | Srno | TCP | UDP |
