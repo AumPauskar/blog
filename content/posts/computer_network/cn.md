@@ -551,6 +551,39 @@ Udp stands for user datagram protocol. It is a connectionless protocol that work
 ## Congestion control
 Congestion control is a set of techniques used to prevent congestion in a network. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Congestion control is typically implemented at the network layer of the OSI model. It is used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent. It is also used to prevent congestion in the network by controlling the rate at which packets are sent.
 
+### TCP 3 way handshake
+- TCP 3 way handshake in TCP sender\
+   The TCP 3-way handshake is a process used to establish a reliable connection between two devices over a network, such as the internet. It's a fundamental concept in networking and it ensures that both devices are ready to communicate before any data is sent.
+
+   Here's a breakdown of the steps involved in the TCP 3-way handshake:
+
+   1. **Client initiates the connection:** The client sends a TCP segment with the SYN (Synchronize) flag set. This flag tells the server that the client is interested in starting a connection and includes a sequence number that the client will use to track the data it sends.
+   2. **Server acknowledges and synchronizes:** The server responds to the client's SYN segment with a TCP segment that has both the SYN and ACK (Acknowledge) flags set. The SYN flag tells the client that the server is willing to establish a connection, and the ACK flag acknowledges the client's sequence number. The server also includes its own sequence number in this segment.
+   3. **Client acknowledges server's sequence number:** The client sends a final TCP segment with only the ACK flag set. This segment acknowledges the server's sequence number.
+
+   Once the 3-way handshake is complete, the connection is established and data can be sent in both directions.
+
+- TCP 3 way handshake reciever\
+   The process begins with the client sending a FIN (Finish) segment to the server. This segment tells the server that the client is finished sending data and wants to close the connection.
+
+   The server acknowledges the FIN segment from the client with an ACK (Acknowledge) segment. This segment tells the client that the server has received the FIN segment and is now waiting to close its own side of the connection.
+
+   The server then sends its own FIN segment to the client. This segment tells the client that the server is also finished sending data and wants to close the connection.
+
+   The client acknowledges the server's FIN segment with an ACK segment. This segment tells the server that the client has received the FIN segment and is now closing its own side of the connection.
+
+   Once both the client and server have acknowledged each other's FIN segments, the connection is closed.
+
+   The diagram also shows the different states that the client and server can be in during the connection closing process. The client can be in the FIN_WAIT_1, FIN_WAIT_2, CLOSING_WAIT, LAST_ACK, and TIME_WAIT states. The server can be in the CLOSE_WAIT, LAST_ACK, and TIME_WAIT states.
+
+   Here's a more detailed explanation of each state:
+
+   1. * **FIN_WAIT_1:** The client has sent a FIN segment to the server, but has not yet received an acknowledgment.
+   2. * **FIN_WAIT_2:** The client has received an acknowledgment of its FIN segment from the server, but has not yet sent its own acknowledgment of the server's FIN segment.
+   3. * **CLOSING_WAIT:** The server has sent a FIN segment to the client, but has not yet received an acknowledgment.
+   4. * **LAST_ACK:** The server has received an acknowledgment of its FIN segment from the client, and has sent its own acknowledgment of the client's FIN segment.
+   5. * **TIME_WAIT:** The client or server has sent a FIN segment and is waiting for an acknowledgment, but has not heard back from the other side for a certain period of time. This state is used to ensure that all data has been sent and received before the connection is finally closed.
+
 ### RDT
 Reliable data transfer is a set of techniques used to get around congestion control in a network. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Reliable data transfer is typically implemented at the transport layer of the OSI model. The legacy system is called the RDT 2.0 
 
