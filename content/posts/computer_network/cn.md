@@ -508,8 +508,21 @@ Port numbers are used to identify specific applications or services on a network
 ## TCP vs UDP
 
 ### **TCP**: Transmission Control Protocol
-TCP stands for Transmission Control Protocol. It is a connection-oriented protocol that works on the transport layer of the OSI model. It is used for applications that require high reliability and transmission time is relatively less critical. It is used for applications such as file transfer, email, remote login, and web browsing. It is also used for DNS and DHCP. It is slower than UDP as it establishes a connection before sending data and guarantees delivery of data. It is also less efficient than UDP as it has a larger header size. However, it is more reliable than UDP as it guarantees delivery of data and has a flow control mechanism. It is also more secure than UDP as it is connection-based. The applications of TCP
+TCP stands for Transmission Control Protocol. It is a connection-oriented protocol that works on the transport layer of the OSI model. It is used for applications that require high reliability and transmission time is relatively less critical. It is used for applications such as file transfer, email, remote login, and web browsing. It is also used for DNS and DHCP. It is slower than UDP as it establishes a connection before sending data and guarantees delivery of data. It is also less efficient than UDP as it has a larger header size. However, it is more reliable than UDP as it guarantees delivery of data and has a flow control mechanism. It is also more secure than UDP as it is connection-based. 
 
+- Components of TCP
+   - Source Port: The port number of the application on the host sending the data.
+   - Destination Port: The port number of the application on the receiving host.
+   - Sequence Number: Used to keep track of the bytes sent and arrange them in the correct order.
+   - Acknowledgment Number: Used to confirm the receipt of data.
+   - Data Offset: Specifies the size of the TCP header.
+   - Reserved: Reserved for future use and should be set to zero.
+   - Flags: Control bits used to indicate specific requests or actions (SYN, ACK, FIN, RST, PSH, URG).
+   - Window Size: Specifies the size of the sender's receive window (the buffer space available for incoming data).
+   - Checksum: Used to check for errors in the header.
+   - Urgent Pointer: Points to the sequence number of the byte following the urgent data.
+   - Options: Used for optional settings like Maximum Segment Size (MSS), window scaling, selective acknowledgments, etc.
+   - Padding: Ensures that the header ends and data begins on a 32 bit boundary.
 
 
 ### **UDP**: User Datagram Protocol
