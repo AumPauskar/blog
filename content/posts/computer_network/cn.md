@@ -590,6 +590,25 @@ Reliable data transfer is a set of techniques used to get around congestion cont
 $$ Usender = 3L/R \over RTT + L/R $$ 
 
 
+| Feature        | RDT 2.0                                       | RDT 3.0                                                  |
+|----------------|-----------------------------------------------|----------------------------------------------------------|
+| Error Handling | Handles lost packets, but not corrupted ones   | Handles both lost and corrupted packets                  |
+| Mechanism       | Stop-and-wait ARQ with timeout and retransmission | Pipelining with ACKs and sequence numbers                 |
+| Efficiency     | Less efficient due to stop-and-wait nature       | More efficient due to pipelining                         |
+| Complexity      | Simpler implementation                          | More complex implementation due to sequence numbering    |
+| Sliding Window | Not used                                       | Uses a sliding window to allow multiple packets in transit |
+| Timeout       | Longer timeouts to accommodate for potential corruption | Shorter timeouts as corruption is handled separately    |
+
+**Key Points:**
+
+- **RDT 2.0** is a basic reliable data transfer protocol that addresses packet loss using stop-and-wait ARQ. It retransmits lost packets based on timeouts.
+- **RDT 3.0** enhances RDT 2.0 by incorporating mechanisms to handle both lost and corrupted packets. It uses sequence numbers and acknowledgments to enable pipelining, improving efficiency.
+- **Sliding window** in RDT 3.0 allows multiple packets to be in transit simultaneously, boosting throughput.
+- **Timeouts** in RDT 3.0 are typically shorter than in RDT 2.0, as corruption is handled separately.
+
+**In essence, RDT 3.0 offers more robust and efficient data transfer by addressing both packet loss and corruption, as well as employing pipelining to enhance performance.**
+
+
 ### Go back n
 Go-back-N is a type of automatic repeat request (ARQ) protocol used in communication networks. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Go-back-N is typically implemented at the data link layer of the OSI model. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded.
 
