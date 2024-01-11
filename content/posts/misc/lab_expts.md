@@ -796,7 +796,8 @@ Morgan Kaufman publishers, 2008.
 2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 5 - logical operations
-- Title of the experiment 
+- Title of the experiment\
+	Develop an assembly language program for arm7 to illustrate the working of logical operations and, or, ex-or and not
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -905,7 +906,8 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 7 - led arm7
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program for arm7 to blink the leds connected to port 0 pins.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -929,9 +931,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 8 - counter
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program for arm7 to implement a 8-bit binary count on the leds connected to port 0 pins.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -965,9 +971,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 9 - dac square
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program for arm7 to generate the square wave using dac interface.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -997,9 +1007,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 10 - dac triangular
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program for arm7 to generate the triangular wave using dac interface.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -1031,9 +1045,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 11 - relay
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program for arm7 to control the relay.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -1057,9 +1075,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 12 - arduino led
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program to blink the built in led of arduino uno
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -1088,9 +1110,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 13 - ldr
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program to interface the sensor ldr to arduino uno and display the data acquired from sensor on serial monitor
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -1123,9 +1149,13 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 14 - buzzer
-- Title of the experiment 
+- Title of the experiment\
+	Develop an embedded ‘c’ program to control the buzzer connected to arduino uno.
 - Objective of the experiment
 - Brief theory about the experiment
 - Algorithm & Program
@@ -1155,6 +1185,11 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Course Learning Outcome
 - Conclusion
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
+
+	
 ## OOPS with python
 
 ### Experiment– 1 (Lists)
