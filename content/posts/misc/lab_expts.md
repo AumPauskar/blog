@@ -738,7 +738,7 @@ In conclusion, the ARM assembly program efficiently calculates the factorial of 
 Morgan Kaufman publishers, 2008.
 2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
-### Termwork 4
+### Termwork 4 
 - Title of the experiment\
 Write an assembly language program to find the largetst number in an array of 32 bit numbers amd store the result in internal RAM
 
@@ -795,8 +795,34 @@ In conclusion, the ARM assembly program efficiently finds the maximum value in a
 Morgan Kaufman publishers, 2008.
 2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
+### Termwork 5 - logical operations
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```asm
+		AREA tw5,CODE,READONLY
+			ENTRY
+			MOV R0,#0X80000002
+			MOV R1,#0X80000011
+			MOVS R2,R0,LSR #1
+			MOVS R3,R0,LSL #1
+			MOVS R4,R0,ASR #1
+			MOVS R5,R1,ROR #1
+			RRX R6,R0
+			AND R7,R0,R1
+			ORR R8,R0,R1
+			EOR R9,R0,R1
+			BIC R10,R0,R1
+	L		B L
+		END
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
 
-### Termwork 5
+### Termwork 6 - sort elements in ascending
 - Title of the experiment\
 Swapping of the digits in ARM assembly language
 - Objective of the experiment
@@ -878,6 +904,257 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	Morgan Kaufman publishers, 2008.
 	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
+### Termwork 7 - led arm7
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	#include<LPC21xx.h>
+	unsigned int delay;
+	int main()
+	{
+		PINSEL1=0x00000000; //configure P0.16 to P0.23 as GPIO
+		IO0DIR=0xFFFFFFFF; //configure P0.16 to P0.23 as OUTPUT....can also give 0x00FF0000, bcoz we r using only 16-23 pins, make only those high(1/F)
+		while(1)
+		{
+			IO0SET=0x00FF0000; //set pins 16-23 of port 0(P0)
+			for(delay=0;delay<100000;delay++);//creates delay for 10000 msec
+			IO0CLR=0x00FF0000; //clears pins 16-23 of port 0(P0)
+			for(delay=0;delay<100000;delay++);
+		}
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 8 - counter
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	#include<LPC21xx.h>
+	void delay(void);
+	unsigned int count;//this is 16 bit data, but v need only 8 bit data
+	int main()
+	{
+		unsigned int comp=0;
+		PINSEL1=0x00000000;//configure port 0(16-31) as GPIO
+		IO0DIR=0xFFFFFFFF;//configure P0.16 to P0.31 as OUTPUT
+		while(1)
+		{
+			for(count=0;count<=0xFF;count++)//since interested in only 8 bit data,only till 255 v need
+			{
+				comp=(~count);//ensure that after 255, 0 should come...v don't want 256 and so on
+				comp=comp & 0x000000FF;//to fetch lower 8 bit data...v don't need upper 8 bits, so they are anded with 0
+				IO0PIN=(comp <<16);
+				delay();
+			}
+		}
+	}
+	void delay(void)
+	{
+		unsigned int i;
+		for(i=0;i<650;i++);
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 9 - dac square
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	#include<LPC21xx.h>
+	void delay(void);
+	int main()
+	{
+		PINSEL0=0X00000000; //P0.0-P0.15 AS GPIO
+		PINSEL1=0X00000000; //P0.16-P0.31 AS GPIO
+		IO0DIR=0XFFFFFFFF; //P0.0-P0.31 CONFIGURED AS OUTPUT
+		while(1)
+			{
+				IO0PIN=0x00000000;//IO0PIN IS USED TO OBTAIN STATUS OF PINS
+				delay();
+				IO0PIN=0XFFFFFFFF;
+				delay();
+			}
+		}
+	void delay(void)
+	{
+		unsigned int i;
+		for(i=0;i<500;i++);
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 10 - dac triangular
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	#include<LPC21xx.h>
+	int main()
+	{
+		unsigned long temp=0x00000000;
+		unsigned int i;
+		IO0DIR=0XFFFFFFFF; //P0.0-P0.31 CONFIGURED AS OUTPUT
+		while(1)
+			{
+				for(i=0;i!=0xFF;i++)
+				{
+					temp=i;
+					temp=temp<<16;
+					IO0PIN=temp;
+				}
+				for(i=0xFF;i!=0;i--)
+			{
+				temp=i;
+				temp=temp<<16;
+				IO0PIN=temp;
+			}
+		}
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 11 - relay
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	#include <LPC21xx.h>
+	unsigned int i;
+	int main()
+	{
+		IO0DIR=0x00000600; //set P0.10 as output
+		IO0SET=0x00000600; //P0.10-for relay and P0.09 for buzzer is set to HIGH...turning on the relay
+		while(1)
+		{
+			for(i=0;i<1000000;i++);
+			IO0SET=0x00000600; //relay on
+			for(i=0;i<1000000;i++);
+			IO0CLR=0x00000600; //relay off
+		}
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 12 - arduino led
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	/*
+	Blink
+
+	Turns an LED on for one second, then off for one second, repeatedly.
+	*/
+
+	// the setup function runs once when you press reset or power the board
+	void setup() {
+	// initialize digital pin LED_BUILTIN as an output.
+	pinMode(LED_BUILTIN, OUTPUT);
+	}
+
+	// the loop function runs over and over again forever
+	void loop() {
+	digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+	delay(100);                      // wait for a second
+	digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+	delay(100);                      // wait for a second
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 13 - ldr
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	//LDR pgm
+	//RM3 to RM20
+
+	int light_pin=5;
+	void setup() {
+	// put your setup code here, to run once:
+	pinMode(light_pin,INPUT);
+	Serial.begin(9600);
+	}
+
+	void loop() {
+	// put your main code here, to run repeatedly:
+	int light_data=digitalRead(light_pin);
+	if(light_data==1)
+	{
+		Serial.println("Light not detected!");
+	}
+	else
+	{
+		Serial.println("Light detected!");
+	}
+		delay(1000);
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
+
+### Termwork 14 - buzzer
+- Title of the experiment 
+- Objective of the experiment
+- Brief theory about the experiment
+- Algorithm & Program
+	```c
+	//buzzer pgm
+	//RM17-RM9
+
+	int buzzer_pin=9;
+	void setup() {
+	// put your setup code here, to run once:
+	pinMode(buzzer_pin,OUTPUT);
+	Serial.begin(9600);
+	digitalWrite(buzzer_pin,HIGH);
+	}
+
+	void loop() {
+	// put your main code here, to run repeatedly:
+	digitalWrite(buzzer_pin,LOW);
+	Serial.println("Buzzer is ON");
+	delay(1000);
+	digitalWrite(buzzer_pin,HIGH);
+	Serial.println("Buzzer is OFF");
+	delay(1000);
+	}
+	```
+- Sample input/output with calculations if necessary
+- Course Learning Outcome
+- Conclusion
+- References
 ## OOPS with python
 
 ### Experiment– 1 (Lists)
