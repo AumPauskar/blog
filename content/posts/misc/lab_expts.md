@@ -1164,7 +1164,19 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 - Title of the experiment\
 	Develop an embedded ‘c’ program for arm7 to control the relay.
 - Objective of the experiment
+	- To understand the basic concepts of embedded C programming for ARM7
+	- To understand the basic concepts of relay
+	- To control the relay using ARM7
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program for the ARM7 microcontroller to control a relay.
+
+	**Relay:** A relay is an electrically operated switch. It uses an electromagnet to mechanically operate a switch, but other operating principles are also used, such as solid-state relays. Relays are used where it is necessary to control a circuit by a separate low-power signal, or where several circuits must be controlled by one signal.
+
+	**Relay Control:** To control a relay using a microcontroller like the ARM7, you would typically connect the relay to one of the microcontroller's GPIO (General Purpose Input/Output) pins. You can then control the relay by setting this pin to a high or low state. When the pin is set to a high state, the relay is activated, and when it's set to a low state, the relay is deactivated.
+
+	In this experiment, you would write an embedded C program that sets the GPIO pin to a high state to activate the relay, waits for a certain period, sets the GPIO pin to a low state to deactivate the relay, waits for a certain period, and then repeats this process. This would result in the relay being turned on and off at regular intervals.
+
 - Algorithm & Program
 	```c
 	#include <LPC21xx.h>
@@ -1184,7 +1196,11 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of embedded C programming for ARM7
+	- Understand the basic concepts of relay
+	- Control the relay using ARM7
+- Conclusion\
+In conclusion, the embedded C program efficiently controls a relay using the ARM7 microcontroller.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -1194,7 +1210,44 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 - Title of the experiment\
 	Develop an embedded ‘c’ program to blink the built in led of arduino uno
 - Objective of the experiment
+	- To understand the concepts of a PLC as in Arduino Uno
+	- To understand the basic concepts of embedded C programming for Arduino Uno
+	- To blink the built-in LED of Arduino Uno
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program for the Arduino Uno microcontroller to blink the built-in LED.
+
+	**Arduino Uno:** Arduino Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins, 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with an AC-to-DC adapter or battery to get started.
+
+	**Built-in LED:** Most Arduino boards, including the Uno, have a built-in LED on digital pin 13. This LED is often used for testing purposes and is a great way to learn how to control output from the Arduino.
+
+	**Blinking the Built-in LED:** The task is to write an embedded C program that turns the LED on, waits for a certain period, turns the LED off, waits for the same period, and then repeats this process. This results in the LED blinking at regular intervals. The `pinMode()`, `digitalWrite()`, and `delay()` functions are typically used to accomplish this. The `pinMode()` function is used to set pin 13 as an output. The `digitalWrite()` function is used to set the pin to HIGH (turn the LED on) or LOW (turn the LED off). The `delay()` function is used to pause the program for a specified number of milliseconds.
+
+	**Explanation of Commands in Embedded C:**
+
+	- **pinMode:** This function is used to configure a specific pin to behave either as an input or an output. Here is an example of its usage:
+
+	```c
+	pinMode(pin_number, mode);
+	```
+	Where `pin_number` is the number of the pin to set and `mode` can be either `INPUT` (to read data) or `OUTPUT` (to write data).
+
+	- **digitalWrite:** This function is used to write a HIGH or a LOW value to a digital pin. If the pin has been configured as an OUTPUT with pinMode(), its voltage will be set to the corresponding value: 5V (or 3.3V on some boards) for HIGH, 0V (ground) for LOW. Here is an example of its usage:
+
+	```c
+	digitalWrite(pin_number, value);
+	```
+	Where `pin_number` is the number of the pin and `value` is either `HIGH` or `LOW`.
+
+	- **delay:** This function pauses the program for the amount of time (in milliseconds) specified as parameter. Here is an example of its usage:
+
+	```c
+	delay(ms);
+	```
+	Where `ms` is the number of milliseconds to pause. Note that there is also a `delayMicroseconds()` function that pauses the program for a number of microseconds.
+
+	These functions are commonly used in Arduino programming, but similar functions or methods can be found in other embedded C libraries or frameworks.
+
 - Algorithm & Program
 	```c
 	/*
@@ -1219,7 +1272,11 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the concepts of a PLC as in Arduino Uno
+	- Understand the basic concepts of embedded C programming for Arduino Uno
+	- Blink the built-in LED of Arduino Uno
+- Conclusion\
+	In conclusion, the embedded C program efficiently blinks the built-in LED of Arduino Uno.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -1229,7 +1286,41 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 - Title of the experiment\
 	Develop an embedded ‘c’ program to interface the sensor ldr to arduino uno and display the data acquired from sensor on serial monitor
 - Objective of the experiment
+	- To understand the concepts of a PLC as in Arduino Uno
+	- To understand and apply digital I/O operations
+	- To interface the sensor LDR to Arduino Uno
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program to interface a Light Dependent Resistor (LDR) sensor with an Arduino Uno and display the sensor data on the serial monitor.
+
+	**Arduino Uno:** Arduino Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins, 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header, and a reset button.
+
+	**LDR Sensor:** A Light Dependent Resistor (LDR) or a photoresistor is a device whose resistance decreases with increasing incident light intensity. It can be used to detect the light intensity in an environment.
+
+	**Serial Monitor:** The Arduino IDE has a feature called the Serial Monitor which allows you to communicate with the Arduino through the USB cable. The data being sent by the Arduino can be viewed on this monitor.
+
+	**Explanation of Commands in Embedded C:**
+
+	- **Serial.begin:** This function sets the data rate in bits per second (baud) for serial data transmission. For communicating with the computer, use one of these rates: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 38400, 57600, or 115200. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate. Here is an example of its usage:
+
+	```c
+	Serial.begin(9600);
+	```
+
+	- **digitalRead:** This function reads the value from a specified digital pin, either HIGH or LOW. Here is an example of its usage:
+
+	```c
+	int val = digitalRead(pin_number);
+	```
+	Where `pin_number` is the number of the digital pin you want to read.
+
+	- **Serial.println:** This function prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This provides a new line for incoming text. Here is an example of its usage:
+
+	```c
+	Serial.println("This is a test");
+	```
+	This will print the text "This is a test" to the serial monitor.
+
 - Algorithm & Program
 	```c
 	//LDR pgm
@@ -1258,7 +1349,11 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the concepts of a PLC as in Arduino Uno
+	- Understand and apply digital I/O operations
+	- Interface the sensor LDR to Arduino Uno
+- Conclusion\
+In conclusion, the embedded C program efficiently interfaces an LDR sensor with an Arduino Uno and displays the sensor data on the serial monitor.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -1268,7 +1363,16 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 - Title of the experiment\
 	Develop an embedded ‘c’ program to control the buzzer connected to arduino uno.
 - Objective of the experiment
+	- To interface the buzzer to Arduino Uno
+	- To learn how to control the buzzer using Arduino Uno
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program for the Arduino Uno microcontroller to control a buzzer.
+
+	**Buzzer:** A buzzer or beeper is an audio signaling device, which may be mechanical, electromechanical, or piezoelectric. Buzzers are typically used in embedded systems to generate beeps for alarms, timers, and confirmation of user input such as a mouse click or keystroke.
+
+	**Buzzer Control:** To control a buzzer using a microcontroller like the Arduino Uno, you would typically connect the buzzer to one of the microcontroller's GPIO (General Purpose Input/Output) pins. You can then control the buzzer by setting this pin to a high or low state. When the pin is set to a high state, the buzzer is activated, and when it's set to a low state, the buzzer is deactivated.
+
 - Algorithm & Program
 	```c
 	//buzzer pgm
@@ -1294,7 +1398,10 @@ In conclusion, the embedded C program efficiently generates a triangular wave us
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Interface the buzzer to Arduino Uno
+	- Learn how to control the buzzer using Arduino Uno
+- Conclusion\
+In conclusion, the embedded C program efficiently controls a buzzer using the Arduino Uno microcontroller.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
