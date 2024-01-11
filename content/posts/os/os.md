@@ -313,3 +313,62 @@ do {
 		- If no process is executing in its critical section and there exist some processes that wish to enter their critical section, then the selection of the processes that will enter the critical section next cannot be postponed indefinitely
 	- Bounded waiting
 		- A bound must exist on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted
+
+## Memory
+## Virual memory
+### Copy on write
+Copy-on-write (COW) is a resource-management technique used in computer programming to efficiently duplicate or copy modifiable resources, such as memory pages, storage sectors, files, and data structures. The main idea is to delay the actual copying of the data until it is actually needed, which can save time and memory.
+
+Here's how it works:
+
+1. **Sharing**: Multiple users or processes can initially share a single copy of the resource. This means they all have the same pointer to the same data in memory or storage.
+2. **Copy on write**: If one user or process wants to modify the data, a copy is made **only for that user or process**. The original data is left unchanged for anyone else who is still sharing it.
+3. **Private modifications**: The user or process with the copy can then modify the data in their private copy without affecting the original data or anyone else who is still using the shared copy.
+
+There are several benefits to using copy-on-write:
+
+* **Reduced memory usage**: By sharing a single copy of the data until it needs to be modified, COW can significantly reduce memory usage. This is especially beneficial for large data sets or when there are many users or processes sharing the same data.
+* **Improved performance**: Copying data can be time-consuming. By delaying the copy until it is actually needed, COW can improve the performance of applications.
+* **Simplified resource management**: COW can simplify the management of resources such as memory and storage. Instead of explicitly copying data when it is needed, COW allows the system to automatically handle the copying when a modification occurs.
+
+Here are some real-world examples of how copy-on-write is used:
+
+* **Operating systems**: Many operating systems use COW to implement the `fork` system call, which creates a new process that is a copy of an existing process. Instead of copying all of the memory used by the existing process, the new process initially shares the same memory pages. Only when the new process modifies a page is a copy made for that process.
+* **File systems**: Some file systems use COW to create snapshots of files or directories. This allows users to see what the file system looked like at a previous point in time without actually copying any data.
+* **Virtualization**: Virtualization software often uses COW to manage the memory used by virtual machines. This allows multiple virtual machines to share the same physical memory until they need to modify it.
+
+### Page replacement
+## Memory Pages and Page Replacement in Operating Systems
+
+Imagine your computer's memory like a large desk, and the programs you run are like open textbooks and documents spread across it. Each textbook or document takes up a certain amount of space, just like programs use up memory. But the desk, like your computer's memory, is limited in size.
+
+This is where **memory pages** come in. They act like dividers on your desk, splitting the available space into smaller, manageable chunks. Each program is then divided into its own pages, which can be loaded onto the desk (memory) as needed. This allows multiple programs to share the memory space efficiently, without everything having to be loaded at once.
+
+However, there's a catch: the desk (memory) is often much smaller than all the textbooks and documents (programs) you might want to use at once. This is where **page replacement** comes into play. It's like reorganizing your desk – when you need a new document, you might put away an old one to make space.
+
+Here's how page replacement works within an operating system:
+
+1. **Programs are divided into pages**: Each program is broken down into fixed-size blocks called pages. These pages are like individual chapters in a book.
+2. **Only some pages are loaded in memory**: Not all the pages of a program need to be in memory at the same time. The operating system keeps track of which pages are currently being used and loads them into available memory frames (think of these as sections of the desk).
+3. **Page fault**: If a program tries to access a page that's not in memory, a **page fault** occurs. This is like realizing you need a specific chapter of a book that's not on your desk.
+4. **Page replacement algorithm**: The operating system then uses a **page replacement algorithm** to decide which page in memory to evict (put away) to make room for the needed page. This is like choosing which document to temporarily remove from your desk.
+5. **Swapping pages**: The evicted page is written to disk (like putting a document in a drawer) and the needed page is loaded into memory from disk (like taking a new document from your bag).
+
+There are different page replacement algorithms, each with its own advantages and disadvantages. Some common ones include:
+
+* **First-In-First-Out (FIFO)**: Evicts the page that has been in memory the longest, regardless of how recently it was used. (Think of taking out the first document you put on your desk.)\
+	**Example**: `7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3 ,2, 1, 2 ,0 ,1, 7, 0, 1`
+	Consider the follwoing string and identify the page faults for three frames
+
+| 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 | 2 | 3 | 0 | 3 | 2 | 1 | 2 | 0 | 1 | 7 | 0 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 7 | 7 | 0 | 2 |
+
+What do you mean by **belady's anomaly** and what does it indicate?\
+A: Belady's anomaly occurs whan more frames are added in the memory pages the page faults will increase. It is an edge case scenario.
+
+
+Here as you can see in this example of finding page faults 
+* **Least Recently Used (LRU)**: Evicts the page that has been used the least recently. (Think of taking out the document you haven't touched in a while.)
+* **Most Recently Used (MRU)/optimal algorithm**: Never evicts the page that was most recently used. (Think of always keeping the document you're currently using on your desk.)
+
