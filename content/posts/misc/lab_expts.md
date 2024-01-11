@@ -799,7 +799,26 @@ Morgan Kaufman publishers, 2008.
 - Title of the experiment\
 	Develop an assembly language program for arm7 to illustrate the working of logical operations and, or, ex-or and not
 - Objective of the experiment
+	- Understanding Assembly Language for ARM7
+	- Mastering Logical Operations
+	- Debugging and Problem Solving
 - Brief theory about the experiment
+
+	This experiment involves developing an assembly language program for the ARM7 architecture to demonstrate the working of logical operations: AND, OR, EX-OR, and NOT. 
+
+	**Assembly Language:** Assembly language is a low-level programming language specific to a particular computer architecture. In this case, it's specific to ARM7. It is converted into executable machine code by a utility program referred to as an assembler. The assembly language instructions correspond directly to the machine language instructions of the specific processor type.
+
+	**ARM7:** ARM7 is a group of older 32-bit RISC ARM processor cores licensed by ARM Holdings. The ARM7 core family consists of ARM700, ARM710, ARM7DI, ARM710a, ARM720T, ARM740T, ARM710T, ARM7TDMI, ARM7TDMI-S, ARM7EJ-S. The ARM7TDMI and ARM7TDMI-S were the most popular cores of the family.
+
+	**Logical Operations:** Logical operations are fundamental to digital logic and computing. They are used to manipulate data at the bit level. The operations include:
+
+	- `AND`: This operation takes two bits and returns 1 if both bits are 1. Otherwise, it returns 0.
+	- `OR`: This operation takes two bits and returns 1 if at least one bit is 1. Otherwise, it returns 0.
+	- `EX-OR` (Exclusive OR): This operation takes two bits and returns 1 if exactly one bit is 1. Otherwise, it returns 0.
+	- `NOT`: This is a unary operation that flips the bit. If the bit is 0, it returns 1, and if the bit is 1, it returns 0.
+
+	The objective of this experiment is to write an assembly language program that performs these operations, thereby gaining a deeper understanding of how data is manipulated at the lowest level in computing.
+
 - Algorithm & Program
 	```asm
 		AREA tw5,CODE,READONLY
@@ -820,8 +839,15 @@ Morgan Kaufman publishers, 2008.
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand and Apply Assembly Language
+	- Implement Logical Operations
+	- Low-Level Programming Proficiency
+- Conclusion\
+In conclusion, the ARM assembly program efficiently performs logical operations on two numbers. The code demonstrates key concepts such as register manipulation, memory access, and conditional branching.
 - References
+	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
+	Morgan Kaufman publishers, 2008.
+	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
 ### Termwork 6 - sort elements in ascending
 - Title of the experiment\
@@ -909,7 +935,31 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Title of the experiment\
 	Develop an embedded ‘c’ program for arm7 to blink the leds connected to port 0 pins.
 - Objective of the experiment
+	- To understand the basic concepts of embedded C programming for ARM7
+	- To gain expertise in programming ARM7 to control external devices
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program for the ARM7 microcontroller to blink LEDs connected to port 0 pins.
+
+	**Brief Theory:**
+
+	ARM7 is a group of older 32-bit RISC ARM processor cores. They are widely used in embedded systems due to their low power consumption, ample I/O capabilities, and compact size. In this experiment, we are using the ARM7 microcontroller's GPIO (General Purpose Input/Output) functionality to control LEDs connected to its port 0 pins.
+
+	The blinking of LEDs is a basic experiment that helps understand the I/O operations of the microcontroller. It involves setting the port pins as output, then turning the LEDs on and off at regular intervals.
+
+	**Description of PINSEL, IODIR, IOSET, IOCLR:**
+
+	These are registers used to control the GPIO pins on the ARM7 microcontroller.
+
+	- `PINSEL`: This register is used to select the function of the pins. Each pin can serve multiple purposes. For example, it can be used as a GPIO pin or for other specific functions like ADC, PWM, etc. By setting the appropriate bits in the PINSEL register, we can select the function of the pin.
+
+	- `IODIR`: This register is used to set the direction (input or output) of the GPIO pins. If a bit in the IODIR register is set to 0, the corresponding pin is set as an input. If it's set to 1, the pin is set as an output.
+
+	- `IOSET`: This register is used to set (turn on) the GPIO pins. Writing a 1 to a bit in the IOSET register will set the corresponding pin to a high state (usually 3.3V or 5V depending on the microcontroller).
+
+	- `IOCLR`: This register is used to clear (turn off) the GPIO pins. Writing a 1 to a bit in the IOCLR register will set the corresponding pin to a low state (0V).
+
+
 - Algorithm & Program
 	```c
 	#include<LPC21xx.h>
@@ -929,7 +979,10 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of embedded C programming for ARM7
+	- Gain expertise in programming ARM7 to control external devices
+- Conclusion\
+In conclusion, the embedded C program efficiently blinks LEDs connected to port 0 pins.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -939,7 +992,26 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Title of the experiment\
 	Develop an embedded ‘c’ program for arm7 to implement a 8-bit binary count on the leds connected to port 0 pins.
 - Objective of the experiment
+	- To understand the basic concepts of embedded C programming for ARM7
+	- To gain information about the data types in embedded C
 - Brief theory about the experiment
+
+	**Brief Theory:**
+
+	This experiment involves developing an embedded C program for the ARM7 microcontroller to implement an 8-bit binary count on LEDs connected to port 0 pins.
+
+	ARM7 is a group of older 32-bit RISC ARM processor cores. They are widely used in embedded systems due to their low power consumption, ample I/O capabilities, and compact size. In this experiment, we are using the ARM7 microcontroller's GPIO (General Purpose Input/Output) functionality to control LEDs connected to its port 0 pins.
+
+	The 8-bit binary count is a sequence that goes from 0 (all LEDs off) to 255 (all LEDs on) in binary. Each step in the sequence is displayed on the LEDs, with each LED representing one bit.
+
+	**Description of PINSEL, IODIR, and for loop in Embedded C:**
+
+	- **PINSEL:** This register is used to select the function of the pins. Each pin can serve multiple purposes. For example, it can be used as a GPIO pin or for other specific functions like ADC, PWM, etc. By setting the appropriate bits in the PINSEL register, we can select the function of the pin.
+
+	- **IODIR:** This register is used to set the direction (input or output) of the GPIO pins. If a bit in the IODIR register is set to 0, the corresponding pin is set as an input. If it's set to 1, the pin is set as an output.
+
+	- **For Loop in Embedded C:** The for loop in Embedded C is similar to the for loop in standard C. It is used to repeat a block of statements a certain number of times. The loop is controlled by a counter variable, which starts at an initial value and increments (or decrements) each time the loop iterates, until it reaches a final value. In the context of this experiment, a for loop could be used to iterate through the 8-bit binary count from 0 to 255.
+
 - Algorithm & Program
 	```c
 	#include<LPC21xx.h>
@@ -969,7 +1041,10 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of embedded C programming for ARM7
+	- Gain information about the data types in embedded C
+- Conclusion\
+In conclusion, the embedded C program efficiently implements an 8-bit binary count on port 0 pins.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -979,7 +1054,19 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Title of the experiment\
 	Develop an embedded ‘c’ program for arm7 to generate the square wave using dac interface.
 - Objective of the experiment
+	- To understand the basic concepts of embedded C programming for ARM7
+	- To understand the basic concepts of DAC
+	- To create a square wave using DAC
 - Brief theory about the experiment
+
+	**Brief Theory:**
+
+	This experiment involves developing an embedded C program for the ARM7 microcontroller to generate a square wave using a Digital-to-Analog Converter (DAC) interface.
+
+	**DAC (Digital-to-Analog Converter):** A DAC converts a digital signal into an analog signal. In the context of this experiment, the DAC is used to generate a square wave. A square wave is a non-sinusoidal periodic waveform that alternates between two levels, typically high and low, with the same duration.
+
+	**Square Wave Generation:** The generation of a square wave involves outputting a high signal for a certain period, then a low signal for the same period, and repeating this process. This is typically done by writing a high value to the DAC, waiting for a certain period (half the period of the square wave), writing a low value to the DAC, waiting for the same period, and then repeating this process.
+
 - Algorithm & Program
 	```c
 	#include<LPC21xx.h>
@@ -1005,7 +1092,11 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of embedded C programming for ARM7
+	- Understand the basic concepts of DAC
+	- Create a square wave using DAC
+- Conclusion\
+In conclusion, the embedded C program efficiently generates a square wave using a DAC interface.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -1015,7 +1106,23 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 - Title of the experiment\
 	Develop an embedded ‘c’ program for arm7 to generate the triangular wave using dac interface.
 - Objective of the experiment
+	- To understand the basic concepts of embedded C programming for ARM7
+	- To understand the basic concepts of DAC
+	- To create a square wave using DAC
 - Brief theory about the experiment
+
+	This experiment involves developing an embedded C program for the ARM7 microcontroller to generate a triangular wave using a Digital-to-Analog Converter (DAC) interface.
+
+	**DAC (Digital-to-Analog Converter):** A DAC converts a digital signal into an analog signal. In the context of this experiment, the DAC is used to generate a triangular wave.
+
+	**Triangular Wave Generation:** A triangular wave is a non-sinusoidal waveform named for its triangular shape. It is a periodic, continuous real function. Unlike a sinusoidal wave, a triangular wave contains only odd harmonics. 
+
+	To generate a triangular wave, you need to increase the output voltage from a minimum to a maximum value at a constant rate, then decrease it back to the minimum value at the same rate, and repeat this process. This is typically done by incrementing a value at a constant rate until it reaches a maximum, then decrementing it at the same rate until it reaches a minimum, and repeating this process.
+
+	The frequency of the triangular wave can be controlled by changing the rate of increment and decrement. The amplitude of the triangular wave can be controlled by changing the maximum and minimum values.
+
+	In this experiment, you would use the ARM7 microcontroller's timers to control the timing of the increment and decrement, and the DAC to output the resulting values, thereby generating a triangular wave.
+
 - Algorithm & Program
 	```c
 	#include<LPC21xx.h>
@@ -1043,7 +1150,11 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	```
 - Sample input/output with calculations if necessary
 - Course Learning Outcome
-- Conclusion
+	- Understand the basic concepts of embedded C programming for ARM7
+	- Understand the basic concepts of DAC
+	- Create a triangular wave using DAC
+- Conclusion\
+In conclusion, the embedded C program efficiently generates a triangular wave using a DAC interface.
 - References
 	1. Andrew N Sloss, Dominic Symes and Chris Wright, ARM system developers guide, Elsevier, 
 	Morgan Kaufman publishers, 2008.
@@ -1189,7 +1300,7 @@ In conclusion, the ARM assembly program efficiently swaps the digits of a number
 	Morgan Kaufman publishers, 2008.
 	2. Shibu K V, “Introduction to Embedded Systems”, Tata McGraw Hill Education, Private Limited, 2nd Edition.
 
-	
+
 ## OOPS with python
 
 ### Experiment– 1 (Lists)
