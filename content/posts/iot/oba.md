@@ -20,30 +20,30 @@ draft = true
     RISC architecture is based on the principle that simpler instructions that execute in a shorter amount of time are better, even if you need more instructions to perform a task. CISC architecture, on the other hand, includes a wide range of complex instructions in the hardware, allowing for more powerful operations but at the cost of increased complexity and power consumption.
 2. Develop an assembly program to illustrate the working of swap instruction
     ```assembly
-    AREA Swap, CODE, READONLY
-    ENTRY
+    AREA ONE, CODE, READONLY
+	ENTRY
 
-        ; Initialize Stack Pointer
-        LDR r13, =Stack_Top
+	; Initialize values in registers
+	MOV R0, #0x01
+	MOV R1, #0x02
+	
+	MOV R3, #4
+	MOV R4, #6
+	
+	MOV R5, R4 ;using R5 as a temproary register
+	MOV R4, R3
+	MOV R3, R5
+	; Display initial values (optional for clarity)
+	; (Insert appropriate instructions for your system/simulator to display values)
 
-        ; Initialize Link Register
-        LDR lr, =Exit
+	; Swap the values using the swp instruction
+	swp R0, R1, [R2] ; Use a temporary memory location for swap
 
-        ; Initialize R0 and R1
-        MOV r0, #0x12345678
-        MOV r1, #0x90ABCDEF
+	; Display swapped values (optional for clarity)
+	; (Insert appropriate instructions for your system/simulator to display values)
 
-        ; Perform SWAP
-        SWP r2, r0, [r1]
-
-    Exit
-        ; End of program
-        MOV r15, lr
-
-    AREA Stack_Area, DATA, READWRITE
-        ALIGN
-    Stack_Top DCD 0x00000000
-        END
+	; Terminate the program
+	END
     ```
 3. Analyze the given piece of code and answer the following
     - Which data type is used to declare the local variable?
