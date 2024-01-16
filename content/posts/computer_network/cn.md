@@ -638,3 +638,26 @@ IPv4 is the fourth version of the Internet Protocol (IP). It is used to identify
    - **Protocol:** This field specifies the protocol used in the data portion of the IP datagram. It is typically set to 6 for TCP and 17 for UDP.
    - **Header Checksum:** This field specifies the checksum of the IP header. It is typically set to 0 for IPv4.
    - **Source Address:** This field specifies the IP address of the sender. It is typically set to
+
+## Subnet
+A subnet is a logical subdivision of an IP network. It is used to divide a large network into smaller networks.
+
+### DHCP
+Dynamic Host Configuration Protocol (DHCP) is a network protocol used to dynamically assign IP addresses to devices on a network. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. DHCP is typically implemented at the **application layer** of the OSI model. 
+
+### NAT: Network Address Translation
+Network Address Translation (NAT) is a technique used to translate private IP addresses to public IP addresses. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. NAT is typically implemented at the **network layer** of the OSI model. 
+
+## IPV6
+IPv6 is the sixth version of the Internet Protocol (IP). It is used to identify devices on a network and route traffic between them. IPv6 addresses are 128-bit numbers that are typically expressed in hexadecimal notation.
+
+### IpV6 datagram format
+- **Version:** This field specifies the version of IP being used. It is typically set to 6 for IPv6.
+- **Traffic Class:** This field specifies the type of service requested by the sender. It is typically set to 0 for IPv6.
+- **Flow Label:** This field specifies the flow label for the IP datagram. It is typically set to 0 for IPv6.
+- **Payload Length:** This field specifies the length of the IP datagram, including the header and data. It is typically set to 40 bytes for IPv6.
+- **Next Header:** This field specifies the protocol used in the data portion of the IP datagram. It is typically set to 6 for TCP and 17 for UDP.
+- **Hop Limit:** This field specifies the maximum number of hops that the IP datagram can take before being discarded. It is typically set to 64 for IPv6.
+- **Source Address:** This field specifies the IP address of the sender. It is typically set to
+- **Destination Address:** This field specifies the IP address of the receiver. It is typically set to
+- **Data:** This field contains the data being transmitted.
