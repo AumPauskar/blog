@@ -661,3 +661,23 @@ IPv6 is the sixth version of the Internet Protocol (IP). It is used to identify 
 - **Source Address:** This field specifies the IP address of the sender. It is typically set to
 - **Destination Address:** This field specifies the IP address of the receiver. It is typically set to
 - **Data:** This field contains the data being transmitted.
+
+## MAC address
+A MAC address is a unique identifier assigned to a network interface controller (NIC). It is used to identify devices on a network and route traffic between them. MAC addresses are typically expressed in hexadecimal notation, such as
+
+### MAC protocols taxonomy
+The three broad classes are
+- Channel partitioning protocols
+   - TDMA: time division multiple access
+   - FDMA: frequency division multiple access
+- Random access protocols
+   - Slotted ALOHA: How it works? The sender sends the data in the slot and the reciever recieves the data in the slot. If the data is recieved then the sender sends the data in the next slot. If the data is not recieved then the sender sends the data in the same slot. The reciever sends the acknolwedgement in the next slot. If the acknolwedgement is recieved then the sender sends the data in the next slot. If the acknolwedgement is not recieved then the sender sends the data in the same slot. Efficiency?
+   - ALOHA: How it works? The sender sends the data in the slot and the reciever recieves the data in the slot. If the data is recieved then the sender sends the data in the next slot. If the data is not recieved then the sender sends the data in the same slot. The reciever sends the acknolwedgement in the next slot. If the acknolwedgement is recieved then the sender sends the data in the next slot. If the acknolwedgement is not recieved then the sender sends the data in the same slot. Efficiency?
+- Taking turns protocols
+
+### Multiple access links
+A multiple access link is a link that connects multiple devices to a network. It is used to ensure that the network is operating at an optimal level and that the network is not overloaded. Multiple access links are typically implemented at the **physical layer** of the OSI model.
+
+There are two types of links:
+- **Point-to-point links:** These links connect two devices directly. They are typically implemented using a single cable.
+- **Broadcast links:** These links connect multiple devices to a network. They are typically implemented using a shared medium, such as a wireless network or a coaxial cable.
