@@ -268,14 +268,14 @@ Write a program to implement TCP client server communication
 			client_socket,client_address=server_socket.accept()
 			print(f'connected to{client_address}')
 
-			 try:
-			        while True:
-			            data = client_socket.recv(1024)
-			            if data:
-			                print(f'Received data: {data.decode()}')
-			            else:
-			                break
-  			 finally:
+			try:
+				while True:
+					data = client_socket.recv(1024)
+					if data:
+			                	print(f'Received data: {data.decode()}')
+			            	else:
+			                	break
+  			finally:
 			 	client_socket.close()
 		```
 
