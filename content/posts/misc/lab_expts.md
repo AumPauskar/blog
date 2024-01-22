@@ -269,13 +269,14 @@ Write a program to implement TCP client server communication
 			print(f'connected to{client_address}')
 
 			try:
-				data=client_socket.recv(1024)
-				if data:
-					print(f'Recieved data:{data.decode()}')
-				else:
-					break
-			finally:
-				client_socket.close()
+				while True:
+					data = client_socket.recv(1024)
+					if data:
+			                	print(f'Received data: {data.decode()}')
+			            	else:
+			                	break
+  			finally:
+			 	client_socket.close()
 		```
 
 	- Client code
@@ -288,8 +289,9 @@ Write a program to implement TCP client server communication
 		client_socket.connect(server_address)
 
 		try:
-			message=eval(input("Enter message:"))
-			client_socket.sendall(message.encode())
+  			while True:
+				message=input("Enter message:")
+				client_socket.sendall(message.encode())
 
 		finally:
 			client_socket.close()
