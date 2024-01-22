@@ -272,10 +272,10 @@ Write a program to implement TCP client server communication
 				while True:
 					data = client_socket.recv(1024)
 					if data:
-			                	print(f'Received data: {data.decode()}')
-			            	else:
-			                	break
-  			finally:
+						print(f'Received data: {data.decode()}')
+					else:
+						break
+			finally:
 			 	client_socket.close()
 		```
 
