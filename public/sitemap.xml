@@ -5,10 +5,22 @@
     <loc>https://aumpauskar.github.io/blog/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/certificate/</loc>
+    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/computer_network/</loc>
+    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/computer_network/x509/</loc>
+    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/x509/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</loc>
@@ -94,7 +106,5 @@
     <loc>https://aumpauskar.github.io/blog/categories/</loc>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/search/</loc>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
   </url>
 </urlset>

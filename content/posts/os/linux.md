@@ -39,6 +39,55 @@ The bin folder comtains the binaries of the programs. The etc folder contains th
 	- `cat <file> | grep -i <string>`: running this command will print the lines of the file that contain the string irrespective of the case
 	- `cat <file> | grep -n <string>`: running this command will print the lines of the file that contain the string along with the line number
 - `df` and `df -h` can be used to check the occupied storage by the file system
+
+### File permissions
+The file permissions are the permissions that are assigned to the files and the folders. The file permissions are assigned to the files and the folders by the following command
+```bash
+chmod <permissions> <file>
+```
+example
+```bash
+chmod 777 <file>
+```
+This will give the file all the permissions. The file permissions are assigned by the following numbers
+- 0: no permissions
+- 1: execute
+- 2: write
+- 3: write and execute
+- 4: read
+- 5: read and execute
+- 6: read and write
+- 7: read, write and execute
+
+This can also be assigned by the following letters
+- r: read
+- w: write
+- x: execute
+
+The file permissions can be seen by the following command
+```bash
+ls -l
+```
+
+### File ownership
+The file ownership is the ownership of the file. The file ownership is assigned to the files and the folders by the following command
+```bash
+chown <user>:<group> <file>
+```
+example
+```bash
+chown john:john <file>
+```
+This will give the file to the user john and the group john. 
+
+### About the file system
+- The file system is case sensitive
+- The file system is hierarchical
+- The file system is a tree structure
+- The file system is a multi-user system
+- The file system is a multi-tasking and multi-threaded system
+
+
 ## Important commands to remember
 - `man`: running the `man` as the prefix to any command will give you the documentation of the whole binary/command
 - `-h` or `--help`: running any one of these commnds will give a short listing of the package
