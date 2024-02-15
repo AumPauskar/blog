@@ -2,6 +2,9 @@
 title = 'Linux'
 date = 2023-11-23T12:52:03+05:30
 draft = false
+tags = ["operating system", "linux", "shell", "bash", "debian", "ubuntu"]
+author = "Aum Pauskar"
+description = "A brief overview and commands based on the linux operating system"
 +++
 
 # Linux/UNIX shell commands
