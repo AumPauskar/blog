@@ -35,3 +35,9 @@ G and M codes are the most common codes used in CNC machines. G codes are used t
 
 ## Using Fusion for CAM
 - Open fusion and create a new design.
+
+## Machine setup
+Every machine has a different setup, different table sizes and different work holding methods. Fusion 360 allows you to define the machine setup and the work holding method you will be using.
+## Tools
+In order to use Fusion 360 for CAM, you need to define the tools you will be using. This includes the end mills, drills, and other tools you will be using to machine your part.
+
