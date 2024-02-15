@@ -6,7 +6,61 @@
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jan 2024 09:54:53 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3dprinting</title>
+      <link>https://aumpauskar.github.io/blog/tags/3dprinting/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/3dprinting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cad</title>
+      <link>https://aumpauskar.github.io/blog/tags/cad/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/cad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cam</title>
+      <link>https://aumpauskar.github.io/blog/tags/cam/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/cam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cnc</title>
+      <link>https://aumpauskar.github.io/blog/tags/cnc/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/cnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fusion360</title>
+      <link>https://aumpauskar.github.io/blog/tags/fusion360/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/fusion360/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machineing</title>
+      <link>https://aumpauskar.github.io/blog/tags/machineing/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/machineing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>certificate</title>
       <link>https://aumpauskar.github.io/blog/tags/certificate/</link>
@@ -31,6 +85,60 @@
       <pubDate>Wed, 03 Jan 2024 09:54:53 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/x509/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://aumpauskar.github.io/blog/tags/bash/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://aumpauskar.github.io/blog/tags/debian/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://aumpauskar.github.io/blog/tags/linux/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operating system</title>
+      <link>https://aumpauskar.github.io/blog/tags/operating-system/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/operating-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://aumpauskar.github.io/blog/tags/shell/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://aumpauskar.github.io/blog/tags/ubuntu/</link>
+      <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/ubuntu/</guid>
       <description></description>
     </item>
     

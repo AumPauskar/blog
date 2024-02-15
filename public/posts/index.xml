@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jan 2024 09:54:53 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autodesk Fusion and CAM</title>
+      <link>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</guid>
+      <description>A brief overview of Fusion 360 and CAM.</description>
+    </item>
+    
     <item>
       <title>X.509 Certificate extension for 5G</title>
       <link>https://aumpauskar.github.io/blog/posts/computer_network/x509/</link>
@@ -148,9 +157,7 @@ Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux P
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
-      <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.
-Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.
-File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
+      <description>A brief overview and commands based on the linux operating system</description>
     </item>
     
     <item>

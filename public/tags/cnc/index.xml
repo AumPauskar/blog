@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cnc on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/cnc/</link>
+    <description>Recent content in cnc on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/cnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autodesk Fusion and CAM</title>
+      <link>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</link>
+      <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</guid>
+      <description>A brief overview of Fusion 360 and CAM.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,19 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aumpauskar.github.io/blog/tags/3dprinting/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/</loc>
-    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cad/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cam/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cnc/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/fusion360/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/machineing/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/certificate/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/computer_network/</loc>
-    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
-    <lastmod>2024-01-03T09:54:53+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/computer_network/x509/</loc>
@@ -62,7 +83,25 @@
     <loc>https://aumpauskar.github.io/blog/posts/python/python_oops/</loc>
     <lastmod>2023-11-23T13:21:20+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/bash/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/debian/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/os/linux/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/operating-system/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/shell/</loc>
+    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/ubuntu/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/computer_network/cn/</loc>
