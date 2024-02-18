@@ -30,3 +30,36 @@ To check the ip address of the raspberry pi, you can log into your router and ch
 - username: pi
 - password: raspberry
 
+## Basic setup
+Here are a couple of things that are an absolute necessity if you are planning for a headless installation of the raspberry pi:
+
+### Updating the system
+After setting up the system the mirrors and the applications should be updated. This can be done using the following command:
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+### Changing the password
+The default password for the raspberry pi is raspberry, it is always a good idea to change the password of the raspberry pi. This can be done using the following command:
+```bash
+passwd
+```
+
+### Installing essential packages
+There are a couple of packages that are essential for the raspberry pi, some of them are:
+- vim
+- git
+- python3
+- python3-pip
+- python3-venv
+- gcc
+- g++
+- neofetch
+- htop
+
+These packages can be installed using the following command:
+```bash
+sudo apt update
+sudo apt install vim git python3 python3-pip python3-venv gcc g++ neofetch htop
+```
