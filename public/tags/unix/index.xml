@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>unix on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/unix/</link>
+    <description>Recent content in unix on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Dec 2023 17:09:25 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operating systems</title>
+      <link>https://aumpauskar.github.io/blog/posts/os/os/</link>
+      <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/os/os/</guid>
+      <description>Operating systems Bases of an operating system Execute user programs and make solving user problems easier Make the computer system convenient to use Use the computer hardware in an efficient manner A computer system can be divided roughly into four components: the hardware, the operating system, the application programs, and the users.
+Use of an operating system The operating system is responsible for the following activities in connection with process management Process creation and deletion Process suspension and resumption Provision of mechanisms for process synchronization Provision of mechanisms for process communication Provision of mechanisms for deadlock handling Operating systems is a resource allocator and it is a control program.</description>
+    </item>
+    
+  </channel>
+</rss>

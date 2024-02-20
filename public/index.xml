@@ -99,7 +99,7 @@ Write-Output: Prints a line in the shell New-Item: Creates a new file within the
       <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</guid>
-      <description>Image processing Theory jargon Difference between supervised and unsupervised learning Criteria Supervised Learning Unsupervised Learning Data Uses labeled data for training. Uses unlabeled data for training. Goal Predict a label for new data based on past observations. Discover hidden patterns or intrinsic structures within the data. Examples Classification, Regression Clustering, Association Complexity Less complex as it has a clear goal. More complex due to the lack of clear goal. Usage When the outcome of the problem is known.</description>
+      <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     
     <item>
@@ -117,8 +117,7 @@ Write-Output: Prints a line in the shell New-Item: Creates a new file within the
       <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</guid>
-      <description>Image Analysis using pytorch Prerequisites This project is built using python in Ubuntu (WSL) and you&amp;rsquo;ll need to install the following:
-Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux Python 3 (I&amp;rsquo;m using 3.10.12) 1 2 sudo apt update sudo apt install python3 Pip 1 2 sudo apt update sudo apt install python3-pip Packages Note: Since I&amp;rsquo;m using a computer with a CUDA compatable NVIDIA GPU, I&amp;rsquo;ll be using the GPU version of pytorch.</description>
+      <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     
     <item>
@@ -145,7 +144,7 @@ Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux P
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
-      <description>Python Chapter summary - Unit 1 Unit 1 Python Fundamentals: An Introduction to Python programming: Introduction to Python, IDLE to develop programs; How to write your first programs: Basic coding skills, data types and variables, numeric data, string data, five of the Python functions; Control statements: Boolean expressions, selection structure, iteration structure; Define and use Functions and Modules: define and use functions, more skills for defining and using functions and modules, create and use modules, standard modules Contents What is python?</description>
+      <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     
     <item>
@@ -255,13 +254,7 @@ FYI The object class is the root of all classes Data can be gatered with the sca
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
-      <description>Python virtual environment Python virtual environemt is a program that aids in creating a serperate virtual environment for each project
-Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip install virtualenv Creating virtual environent Windows - cmd/powershell
-1 py -m venv {your_env_name} Linux
-1 python3 -m venv myworld Activating virtual environemt Windows - cmd
-1 myworld\Scripts\activate.bat Windows - powershell
-1 myworld\Scripts\activate.ps1 Linux
-1 source myworld/bin/activate Downloading required packages 1 py -m pip install {required_package} </description>
+      <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     
     <item>

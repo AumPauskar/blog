@@ -3,6 +3,8 @@ title = 'Modulated motor control with arduino'
 date = 2023-11-21T22:20:04+05:30
 draft = false
 descrption = 'An IOT based solution for slot cutting in commutators'
+tags = ["arduino", "encoder", "iot", "microcontrollers"]
+author = "Aum Pauskar"
 +++
 
 # Motor Encoder

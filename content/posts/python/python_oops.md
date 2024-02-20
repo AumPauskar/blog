@@ -2,6 +2,9 @@
 title = 'OOPS with Python and packages'
 date = 2023-11-23T13:21:20+05:30
 draft = false
+tags = ["python", "oops", "programming"]
+author = "Aum Pauskar"
+description = "A comprehensive guide to OOPS in python and packages"
 +++
 
 # Python

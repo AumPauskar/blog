@@ -16,5 +16,41 @@
       <description>Solutions to some leetcode problems in python</description>
     </item>
     
+    <item>
+      <title>Image analysis theory</title>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</link>
+      <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</guid>
+      <description>A brief overview of image processing and machine learning concepts.</description>
+    </item>
+    
+    <item>
+      <title>Image analysis with pytorch</title>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</link>
+      <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</guid>
+      <description>A brief overview of image processing and machine learning concepts.</description>
+    </item>
+    
+    <item>
+      <title>OOPS with Python and packages</title>
+      <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
+      <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
+      <description>A comprehensive guide to OOPS in python and packages</description>
+    </item>
+    
+    <item>
+      <title>Virtualenv</title>
+      <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
+      <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
+      <description>A comprehensive guide to OOPS in python and packages</description>
+    </item>
+    
   </channel>
 </rss>

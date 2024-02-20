@@ -56,7 +56,19 @@
     <loc>https://aumpauskar.github.io/blog/tags/python/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
+    <lastmod>2023-12-30T17:09:25+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/operating-systems/</loc>
+    <lastmod>2023-12-30T17:09:25+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/os/os/</loc>
+    <lastmod>2023-12-30T17:09:25+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/os/</loc>
+    <lastmod>2023-12-30T17:09:25+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/unix/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/misc/zsh/</loc>
@@ -86,10 +98,40 @@
     <loc>https://aumpauskar.github.io/blog/posts/web/react/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/batch/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cmd/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/operating-system/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/powershell/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/shell/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/windows/</loc>
+    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/ai/</loc>
+    <lastmod>2023-12-06T00:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/computer-vision/</loc>
+    <lastmod>2023-12-06T00:12:10+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</loc>
+    <lastmod>2023-12-06T00:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/image-processing/</loc>
+    <lastmod>2023-12-06T00:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/machine-learning/</loc>
     <lastmod>2023-12-06T00:12:10+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/apache/</loc>
@@ -146,7 +188,13 @@
     <loc>https://aumpauskar.github.io/blog/tags/version-control/</loc>
     <lastmod>2023-11-25T09:46:03+05:30</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/oops/</loc>
+    <lastmod>2023-11-23T13:21:20+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/python/python_oops/</loc>
+    <lastmod>2023-11-23T13:21:20+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/programming/</loc>
     <lastmod>2023-11-23T13:21:20+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/bash/</loc>
@@ -155,16 +203,7 @@
     <loc>https://aumpauskar.github.io/blog/tags/debian/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
-    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/os/linux/</loc>
-    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/operating-system/</loc>
-    <lastmod>2023-11-23T12:52:03+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/shell/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/ubuntu/</loc>
@@ -187,6 +226,12 @@
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/protocols/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/arduino/</loc>
+    <lastmod>2023-11-21T22:20:04+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/encoder/</loc>
+    <lastmod>2023-11-21T22:20:04+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</loc>
     <lastmod>2023-11-21T22:20:04+05:30</lastmod>
@@ -239,11 +284,11 @@
     <loc>https://aumpauskar.github.io/blog/tags/x86/</loc>
     <lastmod>2023-11-16T10:37:42+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/arduino/</loc>
-    <lastmod>2023-11-16T10:37:04+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/iot/arduino/</loc>
     <lastmod>2023-11-16T10:37:04+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/java/</loc>
+    <lastmod>2023-11-16T10:35:36+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/java/javafull/</loc>
     <lastmod>2023-11-16T10:35:36+05:30</lastmod>

@@ -2,6 +2,9 @@
 title = 'Virtualenv'
 date = 2023-11-16T10:34:31+05:30
 draft = false
+tags = ["python", "oops", "programming"]
+author = "Aum Pauskar"
+description = "A comprehensive guide to OOPS in python and packages"
 +++
 
 # Python virtual environment
