@@ -2,6 +2,9 @@
 title = 'Using i386 IC using Keil uVision5 and Embedded C'
 date = 2023-11-16T10:37:42+05:30
 draft = false
+tags = ["microcontrollers", "embedded systems", "iot", "embedded c", "keil", "x86"]
+author = "Aum Pauskar"
+description = "Usign Keil uVision5 to program an i386 IC using Embedded C"
 +++
 
 # Embedded C

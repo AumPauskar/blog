@@ -2,6 +2,9 @@
 title = 'Arduino control with peripherals'
 date = 2023-11-16T10:37:04+05:30
 draft = false
+tags = ["microcontrollers", "embedded systems", "iot", "arduino"]
+author = "Aum Pauskar"
+description = "Some programs and basic stuff on Arduino"
 +++
 
 # Arduino

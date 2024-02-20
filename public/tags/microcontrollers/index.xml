@@ -16,5 +16,32 @@
       <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
     </item>
     
+    <item>
+      <title>Working with ARM microcontroller using Keil uVision4</title>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
+      <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
+      <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
+    </item>
+    
+    <item>
+      <title>Using i386 IC using Keil uVision5 and Embedded C</title>
+      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
+      <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
+      <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
+    </item>
+    
+    <item>
+      <title>Arduino control with peripherals</title>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arduino/</link>
+      <pubDate>Thu, 16 Nov 2023 10:37:04 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arduino/</guid>
+      <description>Some programs and basic stuff on Arduino</description>
+    </item>
+    
   </channel>
 </rss>

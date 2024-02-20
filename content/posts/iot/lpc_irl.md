@@ -2,6 +2,9 @@
 title = 'Using LPC 2148 in IOT applications'
 date = 2024-01-01T09:04:04+05:30
 draft = true
+tags = ["microcontrollers", "embedded systems", "iot", "lpc2148", "arm"]
+author = "Aum Pauskar"
+description = "Using the LPC2148 microcontroller in IOT applications"
 +++
 
 # Using LPC 2148 in IOT applications
