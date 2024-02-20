@@ -2,6 +2,9 @@
 title = 'Raspberry Pi'
 date = 2023-12-19T21:29:49+05:30
 draft = false
+tags = ["iot", "raspberry pi", "embedded systems", "microcontrollers", "microprocessors"]
+author = "Aum Pauskar"
+description = "A basic guide on setting up the Raspberry Pi with all the essential apps"
 +++
 
 # Raspberry Pi
@@ -61,5 +64,36 @@ There are a couple of packages that are essential for the raspberry pi, some of 
 These packages can be installed using the following command:
 ```bash
 sudo apt update
-sudo apt install vim git python3 python3-pip python3-venv gcc g++ neofetch htop
+sudo apt install vim git python3 python3-pip python3-venv gcc g++ neofetch htop -y
 ```
+
+### Connecting to the Raspberry Pi
+There are 3 basic ways to be connected to the raspberry pi:
+- Using an external display
+    The external display can be set up via micro HDMI cable on the side of the Raspberry Pi and may be connected to a monitor or a TV. The keyboard and mouse can be connected via USB. \
+    It should work out of the box if a GUI based operating system is installed. If the display isn't working, then most of the cases a simple reboot should fix the issue.
+- Using ssh
+    SSH is a secure shell protocol which is used to connect to a remote computer, it is a CLI based connection. The raspberry pi can be connected to the computer using the following steps
+    - Connect the raspberry pi a LAN/WLAN network
+    - Find the ip address of the raspberry pi. This can be done by logging into the router and checking the ip address of the raspberry pi. Or if you are using a phone hotspot, then the ip address can be found in the settings of connected devices within the phone settings.
+    - Connect to the raspberry pi using the following command:
+    ```bash
+    ssh pi@<ip_address>
+    ```
+    **pi** can be replaced with the hostname of the raspberry pi and the ip address can be replaced with the ip address of the raspberry pi which you found in the previous step.
+- Using a display protocol (RDP/VNC)
+    In this step we shall be using VNC viewer to setup the ramot edesktop in the raspberry Pi. This can be done using the following steps:
+    - Update the mirrors and the applications using the following command:
+    ```bash
+    sudo apt update
+    sudo apt upgrade -y # optional
+    ```
+    - Enable VNC server in the system
+    ```bash
+    sudo raspi-config
+    ```
+    In the menu that appears, go to **Interfacing Options** and then to **VNC** and then enable the VNC server.
+    - Install the VNC viewer in the (client) computer
+    - Open the VNC viewer and enter the ip address of the raspberry pi and then click on connect.
+    - Enter the username and password of the raspberry pi and then click on connect.
+    - The raspberry pi desktop should appear on the screen.
