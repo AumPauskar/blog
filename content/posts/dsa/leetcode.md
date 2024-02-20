@@ -2,6 +2,9 @@
 title = 'Leetcode solutions'
 date = 2023-12-30T22:56:49+05:30
 draft = false
+tags = ["leetcode", "dsa", "python"]
+author = "Aum Pauskar"
+description = "Solutions to some leetcode problems in python"
 +++
 
 # Leetcode solutions

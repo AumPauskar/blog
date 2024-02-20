@@ -25,5 +25,14 @@
       <description>A basic cheatsheet of git and github commands</description>
     </item>
     
+    <item>
+      <title>Database management and SQL</title>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/sql/</link>
+      <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
+      <description>A basic cheatsheet of database management and SQL</description>
+    </item>
+    
   </channel>
 </rss>

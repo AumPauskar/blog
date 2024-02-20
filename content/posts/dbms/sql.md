@@ -2,6 +2,9 @@
 title = 'Database management and SQL'
 date = 2023-11-16T14:41:25+05:30
 draft = false
+tags = ["dbms", "sql", "database", "cheatsheet"]
+author = "Aum Pauskar"
+description = "A basic cheatsheet of database management and SQL"
 +++
 
 # Sql documentation

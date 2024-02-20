@@ -2,6 +2,9 @@
 title = 'Computer networks'
 date = 2023-11-23T12:50:11+05:30
 draft = false
+tags = ["computer networks", "networking", "internet", "communication", "protocols"]
+author = "Aum Pauskar"
+description = "Computer networks and the protocols used in them"
 +++
 
 # Computer networks

@@ -31,7 +31,7 @@
       <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</guid>
-      <description>Leetcode solutions Problem 1: Two Sum 1 2 3 4 5 6 7 8 9 10 11 12 class Solution(object): def twoSum(self, nums, target): &amp;#34;&amp;#34;&amp;#34; :type nums: List[int] :type target: int :rtype: List[int] &amp;#34;&amp;#34;&amp;#34; for i in range(0, len(nums)): for j in range(0, len(nums)): if nums[i]+nums[j] == target and i!=j: op = [i,j] return op Problem 2: Roman to integer 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 class Solution(object): def romanToInt(self, s): &amp;#34;&amp;#34;&amp;#34; :type s: str :rtype: int &amp;#34;&amp;#34;&amp;#34; roman = {&amp;#39;I&amp;#39;:1,&amp;#39;V&amp;#39;:5,&amp;#39;X&amp;#39;:10,&amp;#39;L&amp;#39;:50,&amp;#39;C&amp;#39;:100,&amp;#39;D&amp;#39;:500,&amp;#39;M&amp;#39;:1000,&amp;#39;IV&amp;#39;:4,&amp;#39;IX&amp;#39;:9,&amp;#39;XL&amp;#39;:40,&amp;#39;XC&amp;#39;:90,&amp;#39;CD&amp;#39;:400,&amp;#39;CM&amp;#39;:900} i = 0 num = 0 while i &amp;lt; len(s): if i+1&amp;lt;len(s) and s[i:i+2] in roman: num+=roman[s[i:i+2]] i+=2 else: #print(i) num+=roman[s[i]] i+=1 return num Problem 3: Pallindrome 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 class Solution(object): def isPalindrome(self, x): &amp;#34;&amp;#34;&amp;#34; :type x: int :rtype: bool &amp;#34;&amp;#34;&amp;#34; if x &amp;lt; 0: return False # Store the number in a variable number = x # This will store the reverse of the number reverse = 0 while number: reverse = reverse * 10 + number % 10 number //= 10 return x == reverse Problem 4: Longest Common Prefix 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 class Solution(object): def longestCommonPrefix(self, strs): &amp;#34;&amp;#34;&amp;#34; :type strs: List[str] :rtype: str &amp;#34;&amp;#34;&amp;#34; size = len(strs) # if size is 0, return empty string if (size == 0): return &amp;#34;&amp;#34; if (size == 1): return strs[0] # sort the array of strings strs.</description>
+      <description>Solutions to some leetcode problems in python</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ Write-Output: Prints a line in the shell New-Item: Creates a new file within the
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
-      <description>Big data Just data Structured data: data that has a defined length and format for each record. It&amp;rsquo;s stored in a fixed format such as a relational database or spreadsheet. It&amp;rsquo;s easy to search and analyze. It&amp;rsquo;s used for transactional data. Unstructured data: data that has an unknown length and format. It&amp;rsquo;s stored in a free format such as a text file. It&amp;rsquo;s difficult to search and analyze. It&amp;rsquo;s used for non-transactional data.</description>
+      <description>Basic concepts of big data and the hadoop ecosystem</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@ Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux P
       <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/computer_network/cn/</guid>
-      <description>Computer networks Packets In networking, a packet is a small segment of a larger message. Data sent over computer networks*, such as the Internet, is divided into packets. These packets are then recombined by the computer or device that receives them. The Internet is a &amp;ldquo;packet switching&amp;rdquo; network. Packet switching refers to the ability of networking equipment to process packets independently from each other. It also means that packets can take different network paths to the same destination, so long as they all arrive at the destination.</description>
+      <description>Computer networks and the protocols used in them</description>
     </item>
     
     <item>
@@ -209,8 +209,7 @@ Introduction There are multiple ways of creating of a website, if for example a 
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
-      <description>Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.
-Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke</description>
+      <description>A basic cheatsheet of database management and SQL</description>
     </item>
     
     <item>
@@ -219,7 +218,7 @@ Getting started with MySQL All the operations in SQL can be classified into 3 ty
       <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</guid>
-      <description>A complete guide ds Termwork 1 - Infix evaluation Algorithm Create an empty stack (operandStack) to store operands and an empty stack (operatorStack) to store operators. Initialize a variable (result) to store the final output Iterate through each character of the infix expression. If the current character is an operand, add it to the operandStack. If the current character is an operator, pop operators from operatorStack and add them to operandStack until an operator with lower precedence is found.</description>
+      <description>Some basic data structures and algorithms using C</description>
     </item>
     
     <item>

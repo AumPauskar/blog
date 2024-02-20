@@ -2,6 +2,9 @@
 title = 'Basic DSA algorithms using C'
 date = 2023-11-16T10:38:34+05:30
 draft = false
+tags = ["data structures", "algorithms", "c", "dsa"]
+author = "Aum Pauskar"
+description = "Some basic data structures and algorithms using C"
 +++
 
 # A complete guide ds

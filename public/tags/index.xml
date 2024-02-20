@@ -89,6 +89,33 @@
     </item>
     
     <item>
+      <title>dsa</title>
+      <link>https://aumpauskar.github.io/blog/tags/dsa/</link>
+      <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/dsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://aumpauskar.github.io/blog/tags/leetcode/</link>
+      <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://aumpauskar.github.io/blog/tags/python/</link>
+      <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>embedded systems</title>
       <link>https://aumpauskar.github.io/blog/tags/embedded-systems/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
@@ -130,6 +157,60 @@
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache</title>
+      <link>https://aumpauskar.github.io/blog/tags/apache/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>big data</title>
+      <link>https://aumpauskar.github.io/blog/tags/big-data/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distributed systems</title>
+      <link>https://aumpauskar.github.io/blog/tags/distributed-systems/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hadoop</title>
+      <link>https://aumpauskar.github.io/blog/tags/hadoop/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/hadoop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mapreduce</title>
+      <link>https://aumpauskar.github.io/blog/tags/mapreduce/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/mapreduce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nosql</title>
+      <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
+      <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/nosql/</guid>
       <description></description>
     </item>
     
@@ -260,11 +341,110 @@
     </item>
     
     <item>
+      <title>communication</title>
+      <link>https://aumpauskar.github.io/blog/tags/communication/</link>
+      <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer networks</title>
+      <link>https://aumpauskar.github.io/blog/tags/computer-networks/</link>
+      <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/computer-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>https://aumpauskar.github.io/blog/tags/internet/</link>
+      <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://aumpauskar.github.io/blog/tags/networking/</link>
+      <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protocols</title>
+      <link>https://aumpauskar.github.io/blog/tags/protocols/</link>
+      <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/protocols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>arm</title>
       <link>https://aumpauskar.github.io/blog/tags/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://aumpauskar.github.io/blog/tags/database/</link>
+      <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dbms</title>
+      <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
+      <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/dbms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://aumpauskar.github.io/blog/tags/sql/</link>
+      <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>https://aumpauskar.github.io/blog/tags/algorithms/</link>
+      <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c</title>
+      <link>https://aumpauskar.github.io/blog/tags/c/</link>
+      <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data structures</title>
+      <link>https://aumpauskar.github.io/blog/tags/data-structures/</link>
+      <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/data-structures/</guid>
       <description></description>
     </item>
     

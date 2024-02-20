@@ -2,6 +2,9 @@
 title = 'Big data and hadoop ecosystem'
 date = 2023-12-05T12:17:46+05:30
 draft = false
+tags = ["big data", "hadoop", "distributed systems", "nosql", "mapreduce", "apache"]
+author = "Aum Pauskar"
+description = "Basic concepts of big data and the hadoop ecosystem"
 +++
 
 # Big data
