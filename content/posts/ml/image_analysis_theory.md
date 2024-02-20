@@ -2,6 +2,9 @@
 title = 'Image analysis theory'
 date = 2023-12-06T00:12:10+05:30
 draft = false
+tags = ["machine learning", "image processing", "ai", "computer vision", "python"]
+author = "Aum Pauskar"
+description = "A brief overview of image processing and machine learning concepts."
 +++
 
 # Image processing

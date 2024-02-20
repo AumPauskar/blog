@@ -2,6 +2,9 @@
 title = 'Image analysis with pytorch'
 date = 2023-12-03T20:40:58+05:30
 draft = false
+tags = ["machine learning", "image processing", "ai", "computer vision", "python"]
+author = "Aum Pauskar"
+description = "A brief overview of image processing and machine learning concepts."
 +++
 
 # Image Analysis using pytorch

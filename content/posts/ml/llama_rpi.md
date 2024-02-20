@@ -2,6 +2,9 @@
 title = 'Running llama on a Raspberry Pi'
 date = 2023-12-26T19:59:31+05:30
 draft = true
+tags = ["raspberry pi", "llama", "machine learning", "ai"]
+author = "Aum Pauskar"
+description = "Running llama on a Raspberry Pi"
 +++
 
 # Running llama on a Raspberry Pi

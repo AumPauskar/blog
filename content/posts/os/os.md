@@ -2,6 +2,8 @@
 title = 'Operating systems'
 date = 2023-12-30T17:09:25+05:30
 draft = false
+tags = ["operating systems", "os", "linux", "unix"]
+author = "Aum Pauskar"
 +++
 
 # Operating systems

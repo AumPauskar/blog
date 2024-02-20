@@ -2,6 +2,7 @@
 title = 'Windows scripts with powershell and cmd'
 date = 2023-12-07T22:42:51+05:30
 draft = false
+tags = ["windows", "powershell", "cmd", "batch", "shell", "operating system"]
 +++
 
 # Windows prompts

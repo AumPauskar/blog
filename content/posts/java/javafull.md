@@ -2,6 +2,7 @@
 title = 'OOPS with Java'
 date = 2023-11-16T10:35:36+05:30
 draft = false
+tags = ["java", "oops", "programming"]
 +++
 
 # Java tutorial
