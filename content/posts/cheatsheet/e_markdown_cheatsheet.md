@@ -2,6 +2,9 @@
 title = 'Extended markdown cheatsheet with KaTeX'
 date = 2023-11-25T09:46:19+05:30
 draft = false
+tags = ["markdown", "cheatsheet", "katex", "latex", "math"]
+author = "Aum Pauskar"
+description = "A basic cheatsheet of markdown with KaTeX"
 +++
 
 # Extended Markdown Cheatsheet

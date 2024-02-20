@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>katex on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/katex/</link>
+    <description>Recent content in katex on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Nov 2023 09:46:19 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/katex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extended markdown cheatsheet with KaTeX</title>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
+      <pubDate>Sat, 25 Nov 2023 09:46:19 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
+      <description>A basic cheatsheet of markdown with KaTeX</description>
+    </item>
+    
+  </channel>
+</rss>

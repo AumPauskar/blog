@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>github on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/github/</link>
+    <description>Recent content in github on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Nov 2023 09:46:03 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git and GitHub cheatsheet</title>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
+      <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
+      <description>A basic cheatsheet of git and github commands</description>
+    </item>
+    
+  </channel>
+</rss>

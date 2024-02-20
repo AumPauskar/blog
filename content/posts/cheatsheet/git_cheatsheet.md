@@ -2,6 +2,9 @@
 title = 'Git and GitHub cheatsheet'
 date = 2023-11-25T09:46:03+05:30
 draft = false
+tags = ["git", "github", "version control", "cheatsheet"]
+author = "Aum Pauskar"
+description = "A basic cheatsheet of git and github commands"
 +++
 
 # Git / github cheatsheet
