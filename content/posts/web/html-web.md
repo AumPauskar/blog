@@ -2,6 +2,9 @@
 title = 'Web technologies - basic HTML/CSS/JS'
 date = 2023-11-17T09:21:22+05:30
 draft = false
+tags = ["react", "web", "javascript", "frontend", "webdev", "programming", "html", "css", "node", "npm"]
+author = "Aum Pauskar"
+description = "A basic guide to HTML, CSS and JS"
 +++
 
 # Web notes

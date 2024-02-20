@@ -2,6 +2,9 @@
 title = 'Building websites with React'
 date = 2023-12-15T09:20:47+05:30
 draft = false
+tags = ["react", "web", "javascript", "frontend", "webdev", "programming", "html", "css", "node", "npm"]
+author = "Aum Pauskar"
+description = "A comprehensive guide to building websites with React"
 +++
 
 # React tutorial

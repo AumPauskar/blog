@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>react on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/react/</link>
+    <description>Recent content in react on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Dec 2023 09:20:47 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building websites with React</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/react/</link>
+      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/web/react/</guid>
+      <description>A comprehensive guide to building websites with React</description>
+    </item>
+    
+    <item>
+      <title>Web technologies - basic HTML/CSS/JS</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/html-web/</link>
+      <pubDate>Fri, 17 Nov 2023 09:21:22 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/web/html-web/</guid>
+      <description>A basic guide to HTML, CSS and JS</description>
+    </item>
+    
+    <item>
+      <title>Static site generators with Hugo</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</link>
+      <pubDate>Fri, 17 Nov 2023 09:19:25 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</guid>
+      <description>A short guide on how this site was created using hugo</description>
+    </item>
+    
+  </channel>
+</rss>
