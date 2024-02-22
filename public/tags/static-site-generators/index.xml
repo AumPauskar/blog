@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>static-site-generators on Aum&#39;s blogging site</title>
+    <title>Static-Site-Generators on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/static-site-generators/</link>
-    <description>Recent content in static-site-generators on Aum&#39;s blogging site</description>
+    <description>Recent content in Static-Site-Generators on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Nov 2023 09:19:25 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/static-site-generators/index.xml" rel="self" type="application/rss+xml" />

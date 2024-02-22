@@ -2,7 +2,7 @@
 title = 'Raspberry Pi'
 date = 2023-12-19T21:29:49+05:30
 draft = false
-tags = ["iot", "raspberry pi", "embedded systems", "microcontrollers", "microprocessors"]
+tags = ["iot", "raspberry pi", "embedded systems", "microcontrollers", "microprocessors", "linux"]
 author = "Aum Pauskar"
 description = "A basic guide on setting up the Raspberry Pi with all the essential apps"
 +++
