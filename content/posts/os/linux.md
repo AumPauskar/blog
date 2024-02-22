@@ -2,7 +2,7 @@
 title = 'Linux'
 date = 2023-11-23T12:52:03+05:30
 draft = false
-tags = ["operating system", "linux", "shell", "bash", "debian", "ubuntu"]
+tags = ["operating system", "linux", "shell", "bash", "debian", "ubuntu", "raspberry pi"]
 author = "Aum Pauskar"
 description = "A brief overview and commands based on the linux operating system"
 +++
@@ -351,6 +351,18 @@ echo "Hello World"
 		<command>
 	fi
 	```
+
+## Startup scripts
+Startup scripts are the scripts that are run when the system is started. The easiest way to automate the startup scripts is to use crontab. Crontab is a time based job scheduler. Crontab can be used to run the scripts at the startup of the system. The crontab can be edited by the following command
+```bash
+crontab -e
+```
+
+A startup script in crontab may look like this
+```bash
+@reboot /path/to/script.sh
+```
+
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
