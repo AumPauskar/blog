@@ -294,3 +294,123 @@ int add(int a, int b) {
     return a + b;
 }
 ```
+
+## Complex datatypes in C
+### Arrays
+An array is a collection of elements of the same type. It is a fixed-size container that can hold a group of elements. Here is the syntax of an array in C:
+```c
+datatype array_name[size];
+```
+Here is an example of an array in C:
+```c
+int numbers[5];
+```
+You can also initialize the elements of an array at the time of declaration. Here is the syntax to initialize an array in C:
+```c
+datatype array_name[size] = {value1, value2, value3, ...};
+```
+Here is an example of initializing an array in C:
+```c
+int numbers[5] = {1, 2, 3, 4, 5};
+```
+You can access the elements of an array using their index. Here is the syntax to access an element of an array in C:
+```c
+array_name[index];
+```
+Here is an example of accessing an element of an array in C:
+```c
+int numbers[5] = {1, 2, 3, 4, 5};
+printf("%d\n", numbers[2]);
+```
+The data in the array may also be accessed using a loop. Here is an example of accessing the elements of an array using a loop in C:
+```c
+int numbers[5] = {1, 2, 3, 4, 5};
+for (int i = 0; i < 5; i++) {
+    printf("%d\n", numbers[i]);
+}
+```
+### 2D arrays or matrices
+A 2D array is a collection of elements of the same type arranged in rows and columns. It is a fixed-size container that can hold a group of elements. Here is the syntax of a 2D array in C:
+```c
+datatype array_name[rows][columns];
+```
+Here is an example of a 2D array in C:
+```c
+int matrix[3][3];
+```
+You can also initialize the elements of a 2D array at the time of declaration. Here is the syntax to initialize a 2D array in C:
+```c
+datatype array_name[rows][columns] = {{value1, value2, value3}, {value4, value5, value6}, ...};
+```
+Here is an example of initializing a 2D array in C:
+```c
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+```
+You can access the elements of a 2D array using their row and column indices. Here is the syntax to access an element of a 2D array in C:
+```c
+array_name[row_index][column_index];
+```
+Here is an example of accessing an element of a 2D array in C:
+```c
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+printf("%d\n", matrix[1][2]);
+```
+The data in the 2D array may also be accessed using a double loop. Here is an example of accessing the elements of a 2D array using a double loop in C:
+```c
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        printf("%d ", matrix[i][j]);
+    }
+    printf("\n");
+}
+```
+### Strings
+A string is a collection of characters. It is represented as an array of characters in C. Here is the syntax of a string in C:
+```c
+char string_name[size];
+```
+Here is an example of a string in C:
+```c
+char name[10];
+```
+You can also initialize the elements of a string at the time of declaration. Here is the syntax to initialize a string in C:
+```c
+char string_name[size] = "value";
+```
+Here is an example of initializing a string in C:
+```c
+char name[10] = "John";
+```
+### Structures
+A structure is a user-defined data type in C. It is used to group different types of data into a single unit. Here is the syntax of a structure in C:
+```c
+struct structure_name {
+    datatype member1;
+    datatype member2;
+    ...
+};
+```
+Here is an example of a structure in C:
+```c
+struct person {
+    char name[50];
+    int age;
+    float height;
+};
+```
+You can create variables of a structure type and access its members using the `.` operator. Here is the syntax to create a variable of a structure type and access its members in C:
+```c
+struct structure_name variable_name;
+variable_name.member1 = value;
+variable_name.member2 = value;
+...
+```
+Here is an example of creating a variable of a structure type and accessing its members in C:
+```c
+struct person p1;
+strcpy(p1.name, "John");
+p1.age = 25;
+p1.height = 5.8;
+```
+
