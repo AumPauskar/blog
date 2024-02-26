@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shell on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/shell/</link>
+    <link>http://localhost:1313/blog/tags/shell/</link>
     <description>Recent content in Shell on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows scripts with powershell and cmd</title>
-      <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
+      <link>http://localhost:1313/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
       
-      <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
+      <guid>http://localhost:1313/blog/posts/os/windows_scripts/</guid>
       <description>Windows prompts PowerShell PowerShell is a command-line shell and scripting language built on the .NET Framework. It is the successor to the Command Prompt. Commands are called cmdlets and are written in the form Verb-Noun. For example, Get-ChildItem lists the contents of a directory. There are a few aliases for common commands, such as ls for Get-ChildItem and rm for Remove-Item.
 Write-Output: Prints a line in the shell New-Item: Creates a new file within the same directory Get-Content: Reads the contents of a file Set-Content: Writes the contents of a file Remove-Item: Deletes a file Get-ChildItem: Lists the contents of a directory Command Alias Description Write-Output echo Prints a line in the shell New-Item touch Creates a new file within the same directory Get-Content type Reads the contents of a file Set-Content echo Writes the contents of a file Remove-Item del Deletes a file Get-ChildItem dir Lists the contents of a directory CMD echo &amp;lt;line&amp;gt;: Prints a line in the shell type &amp;lt;file&amp;gt;: Reads the contents of a file file operations copy &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;: Copies a file move &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;: Moves a file del &amp;lt;file&amp;gt;: Deletes a file dir: Lists the contents of a directory cd commands: required to change the current directory cd &amp;lt;dir&amp;gt;: Changes the current directory cd .</description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
+      <link>http://localhost:1313/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
       
-      <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
+      <guid>http://localhost:1313/blog/posts/os/linux/</guid>
       <description>A brief overview and commands based on the linux operating system</description>
     </item>
     
