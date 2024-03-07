@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Embedded C on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/embedded-c/</link>
+    <link>https://aumpauskar.github.io/blog/tags/embedded-c/</link>
     <description>Recent content in Embedded C on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Nov 2023 10:37:42 +0530</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/embedded-c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 10:37:42 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/embedded-c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
-      <link>http://localhost:1313/blog/posts/iot/embeddedc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/iot/embeddedc/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
       <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
     </item>
     
