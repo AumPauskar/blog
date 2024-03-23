@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fusion360 on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/fusion360/</link>
+    <link>http://localhost:1313/blog/tags/fusion360/</link>
     <description>Recent content in Fusion360 on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/fusion360/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/fusion360/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autodesk Fusion and CAM</title>
-      <link>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</link>
+      <link>http://localhost:1313/blog/posts/misc/autodeskfusion/</link>
       <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
       
-      <guid>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</guid>
+      <guid>http://localhost:1313/blog/posts/misc/autodeskfusion/</guid>
       <description>A brief overview of Fusion 360 and CAM.</description>
     </item>
     
