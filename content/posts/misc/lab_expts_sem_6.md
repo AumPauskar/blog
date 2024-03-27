@@ -28,3 +28,99 @@ UseHugoToc = true
 # Lab expts sem 6
 
 ## AIML
+
+- Depth first search code
+```py
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    visited.add(start)
+    print(start, end=" ")
+
+    for neighbor in graph[start]:
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited)
+
+# Example usage:
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
+
+dfs(graph, 'A')
+```
+## USP
+
+### Running a code
+We shall use fedora to run most of the code. The code will be written in ANSI C and. \
+To run the code, we shall use the following commands:
+```shell
+gedit <filename.c>
+cc filename.c
+./a.out
+```
+
+**Sample code**
+```c
+#include <stdio.h>
+int main()
+{
+    #if __STDC__ == 0
+    printf("CC is not ANSI C compliant");
+    #else
+    printf("%s compiled at %s %s this statement at line %d", __FILE__, __TIME__, __DATE__, __LINE__);
+    #endif
+    return 0;
+}
+```
+
+In order to compile and run this code open a **new instance in the terminal** and execute the following commands:
+```shell
+cc <filename.c> -o <filename.out>
+./filename.out
+```
+
+A **shorter version** to run this code is
+```shell
+cc <filename.c> -o <filename.out> && ./filename.out
+```
+
+This can be done for same in a c++ file. To initialte a c++ file, use the following command:
+```shell
+gedit <filename.cpp>
+```
+
+To compile and execute the file run the following commands:
+```shell
+g++ <filename.cpp> -o <filename.out>
+./filename.out
+```
+
+Similarly to the c file to run the command in one single line use the following command:
+```shell
+g++ <filename.cpp> -o <filename.out> && ./filename.out
+```
+
+**Checking the version of posix**
+```cpp
+#define _POSIX_SOURCE
+#define _POSIX_C_SOURCE 199309L
+#include <stdio.h>
+#include <unistd.h>
+#include <iostream.h>
+
+using namespace std;
+
+int main() {
+    #ifdef _POSIX_VERSION
+        cout << "POSIX compliant" << _POSIX_VERSION << endl;
+    #else
+        cout << "POSIX version is not defined" << endl;
+    #endif
+    return 0;
+}
+```
