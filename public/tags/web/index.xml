@@ -6,7 +6,16 @@
     <description>Recent content in Web on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Dec 2023 09:20:47 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 16:36:16 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mern tutorial</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
+      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
+      <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
+    </item>
+    
     <item>
       <title>Building websites with React</title>
       <link>https://aumpauskar.github.io/blog/posts/web/react/</link>

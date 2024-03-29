@@ -2,10 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aumpauskar.github.io/blog/tags/arduino/</loc>
-    <lastmod>2024-03-27T12:26:43+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/expressjs/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/fullstack/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/javascript/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/mern/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/web/mern/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/mongodb/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/nodejs/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/react/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
+    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/arduino/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/iot/</loc>
@@ -14,16 +47,10 @@
     <loc>https://aumpauskar.github.io/blog/posts/iot/iot_open_elective/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
-    <lastmod>2024-03-27T12:26:43+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/raspberry-pi/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/sem6/</loc>
-    <lastmod>2024-03-27T12:26:43+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/ai/</loc>
@@ -167,19 +194,10 @@
     <loc>https://aumpauskar.github.io/blog/tags/html/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/javascript/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/node/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/npm/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/react/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/webdev/</loc>
