@@ -363,6 +363,33 @@ A startup script in crontab may look like this
 @reboot /path/to/script.sh
 ```
 
+## Alising
+Alising is a way to create a shortcut for a command. Alising can be done by the following command
+```bash
+
+alias <alias name>="<command>"
+```
+
+For example I use python3 a lot an I find it hard typing python3 everytime so I can create an alias _py_ for python3 by running the following command
+```bash
+alias py="python3"
+```
+
+The alias can be removed by the following command
+```bash
+unalias <alias name>
+```
+
+Aliases can be saved in the `.bashrc` file. The `.bashrc` file is a file that is run when the terminal is opened. The `.bashrc` file is stored in the home directory. The `.bashrc` file can be edited by the following command
+```bash
+nano ~/.bashrc
+```
+
+Then you may name the alias in the file like this
+```bash
+alias py="python3"
+```
+
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
