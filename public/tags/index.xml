@@ -6,11 +6,38 @@
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2024 16:36:16 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Container</title>
+      <link>https://aumpauskar.github.io/blog/tags/container/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://aumpauskar.github.io/blog/tags/devops/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://aumpauskar.github.io/blog/tags/docker/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Expressjs</title>
       <link>https://aumpauskar.github.io/blog/tags/expressjs/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/expressjs/</guid>
       <description></description>
@@ -19,9 +46,63 @@
     <item>
       <title>Fullstack</title>
       <link>https://aumpauskar.github.io/blog/tags/fullstack/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/fullstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernates</title>
+      <link>https://aumpauskar.github.io/blog/tags/kubernates/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/kubernates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://aumpauskar.github.io/blog/tags/linux/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mern</title>
+      <link>https://aumpauskar.github.io/blog/tags/mern/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/mern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodejs</title>
+      <link>https://aumpauskar.github.io/blog/tags/nodejs/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Os</title>
+      <link>https://aumpauskar.github.io/blog/tags/os/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://aumpauskar.github.io/blog/tags/web/</link>
+      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/web/</guid>
       <description></description>
     </item>
     
@@ -35,15 +116,6 @@
     </item>
     
     <item>
-      <title>Mern</title>
-      <link>https://aumpauskar.github.io/blog/tags/mern/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/mern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mongodb</title>
       <link>https://aumpauskar.github.io/blog/tags/mongodb/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
@@ -53,29 +125,11 @@
     </item>
     
     <item>
-      <title>Nodejs</title>
-      <link>https://aumpauskar.github.io/blog/tags/nodejs/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>React</title>
       <link>https://aumpauskar.github.io/blog/tags/react/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/react/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
-      <link>https://aumpauskar.github.io/blog/tags/web/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/web/</guid>
       <description></description>
     </item>
     
@@ -148,15 +202,6 @@
       <pubDate>Sat, 23 Mar 2024 15:34:19 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://aumpauskar.github.io/blog/tags/linux/</link>
-      <pubDate>Sat, 23 Mar 2024 15:34:19 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -373,15 +418,6 @@
       <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/operating-systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Os</title>
-      <link>https://aumpauskar.github.io/blog/tags/os/</link>
-      <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/os/</guid>
       <description></description>
     </item>
     
