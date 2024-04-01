@@ -165,3 +165,112 @@ docker run -p 8000:5000 <container-id>
 
 - Accessing the Flask application
 Once the container is running, you can access the Flask application by opening a web browser and navigating to `http://localhost:8000`. You should see the message "Hello, World!" displayed in the browser.
+
+### Node.js Application
+- Directory Structure
+```
+|
+└───node-app
+    │   index.js
+    │   Dockerfile
+    |   .Dockerignore
+    |   .gitignore
+    │   package.json
+    │   package-lock.json
+    │
+    └───node_modules
+```
+
+- index.js
+```javascript
+import express from "express";
+
+const PORT = 3000;
+
+const app = express();
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+```
+
+- Dockerfile
+```Dockerfile
+FROM node:20
+
+WORKDIR /app
+
+COPY package.json ./
+
+RUN npm install
+
+COPY . .
+
+ENV PORT=3000
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
+```
+
+- Dockerignore
+```dockerignore
+node_modules/
+```
+
+- Explanation about the code
+1. `FROM node:20`
+   This line specifies the base image for the Docker container. In this case, it's using the official Node.js image version 20. Docker images are layered, and each directive in the Dockerfile contributes to a new layer on top of the previous one.
+
+2. `WORKDIR /app`
+   This line sets the working directory in the Docker container. All subsequent commands (`RUN`, `CMD`, `ENTRYPOINT`, `COPY`, and `ADD`) will be run in this directory.
+
+3. `COPY package.json ./`
+   This line copies the `package.json` file from your local system (the same directory as your Dockerfile) into the current directory in the Docker container (which is `/app` as set by the `WORKDIR` command).
+
+4. `RUN npm install`
+   This line runs the `npm install` command in the Docker container. This command installs all the dependencies for your Node.js application as specified in the `package.json` file.
+
+5. `COPY . .`
+   This line copies all the files from your local directory (except the ones specified in `.dockerignore`) into the current directory in the Docker container (which is `/app`).
+
+6. `ENV PORT=3000`
+   This line sets an environment variable in the Docker container. In this case, it's setting the `PORT` variable to `3000`. Your Node.js application can access this variable with `process.env.PORT`.
+
+7. `EXPOSE 3000`
+   This line tells Docker that the container will listen on the specified network ports at runtime. In this case, it's port 3000. This doesn't actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container about which ports are intended to be published.
+
+8. `CMD [ "npm", "start" ]`
+   This line provides defaults for executing the container. In this case, it's running the command to start your Node.js application with `npm start`. The `CMD` command can be overridden with additional command-line arguments when using `docker run`.
+
+
+- Building the Docker image
+To build the Docker image, navigate to the directory containing the Dockerfile and run the following command:
+```bash
+docker build -t node-app .
+```
+If you hava an account in dockerhub then you may use this naming standard
+```bash
+docker build -t <username>/<containername> .
+```
+
+- Running the Docker container
+To run the Docker container, use the following command:
+```bash
+docker run -p 5000:3000 flask-app
+```
+If you have used the naming standard then you may use this command
+```bash
+docker run -p 5000:3000 <username>/<containername>
+```
+Or you may use the container id to run the container
+```bash
+docker run -p 5000:3000 <container-id>
+```
+
+- Accessing the Flask application
+Once the container is running, you can access the Flask application by opening a web browser and navigating to `http://localhost:5000`. You should see the message "Hello, World!" displayed in the browser.
