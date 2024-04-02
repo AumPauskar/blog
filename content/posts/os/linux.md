@@ -390,6 +390,28 @@ Then you may name the alias in the file like this
 alias py="python3"
 ```
 
+## Foreground and backgorund processes
+Processes can be run in the foreground or the background. The foreground processes are the processes that are run in the terminal. The background processes are the processes that are run in the background. The background processes are run by the following command
+```bash
+<command> &
+```
+The background processes can be stopped by the following command
+```bash
+kill %<job number>
+```
+In a linux system with just one terminal the simplest way to run a process in the background is to run the process in the background by the following command
+```bash
+<some command>
+```
+Then press `ctrl + z` to stop the process and then run the following command
+```bash
+bg
+```
+Then the process will run in the background. The process can be stopped by the following command
+```bash
+kill %<job number>
+```
+
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
