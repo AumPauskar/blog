@@ -274,3 +274,6 @@ docker run -p 5000:3000 <container-id>
 
 - Accessing the Flask application
 Once the container is running, you can access the Flask application by opening a web browser and navigating to `http://localhost:5000`. You should see the message "Hello, World!" displayed in the browser.
+
+## References
+- [fireship.io video](https://youtu.be/gAkwW2tuIqE?si=58r4EYxACFCFmN2A)
