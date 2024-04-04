@@ -87,3 +87,53 @@ UseHugoToc = true
     - 802.16
     - 802.15.4
     - Mobile networks(3g/4g/5g etc)
+
+## Application layer protocols
+1. HTTP
+    - Hyper Text Transfer Protocol
+    - Uses TCP
+    - request response model
+2.  CoAP
+    - Constrained Application Protocol
+    - Uses UDP
+    - request response model
+    - M2M communication
+    - Meant for constrained devices
+3. Web Socket
+    - Full duplex communication
+    - Uses TCP
+    - Real time communication
+4. MQTT (Message Queuing Telemetry Transport)
+    - Publish subscribe model
+    - Uses TCP
+    - Meant for IOT devices
+5. XMPP (Extensible Messaging and Presence Protocol)
+    - Uses XML
+    - Real time communication
+    - Presence information
+    - Decentralized
+    - Client server model
+6. DDS (Data Distribution Service)
+    - Publish subscribe model
+    - Uses UDP
+    - Real time communication
+    - Meant for real time systems
+7. AMQP (Advanced Message Queuing Protocol)
+    - Publish subscribe model2
+    - Uses TCP
+    - Meant for enterprise systems
+
+## Communication models
+* Request response communication model
+    - Client sends a request to the server
+    - Server processes the request and sends a response to the client
+* Publish subscribe communication model
+    - Publisher publishes a message to the broker
+    - Broker sends the message to the subscriber
+* Push pull communication model
+    - Publisher pushes the message to the broker
+    - Subscriber pulls the message from the broker
+* Exclusive pair communication model
+    - Two devices communicate with each other
+    - No broker involved
+    - Full duplex communication
