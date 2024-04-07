@@ -1,5 +1,5 @@
 +++
-title = 'IOT Open elective'
+title = 'IOT Professional elective'
 date = 2024-03-27T12:26:43+05:30
 tags = ["iot", "sem6", "arduino", "raspberry pi"]
 author = "Aum Pauskar"
@@ -25,7 +25,7 @@ UseHugoToc = true
     appendFilePath = true
 +++
 
-# IOT Open elective 
+# IOT Professional elective 
 
 - IOT: A dynamic globan network infrastructure with a self-configuring capability based on standard protocols and inter operatble communication protocols where physical and virtual things have identities, physical attributes, and virtual personalities use intelligent interfaces and are seamlessly integrated into the information network often communicate data associated with users and external environment.
 

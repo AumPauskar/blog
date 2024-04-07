@@ -275,5 +275,24 @@ docker run -p 5000:3000 <container-id>
 - Accessing the Flask application
 Once the container is running, you can access the Flask application by opening a web browser and navigating to `http://localhost:5000`. You should see the message "Hello, World!" displayed in the browser.
 
+## Exporting and importing docker images
+- Exporting a docker image
+```bash
+docker save -o <path-to-save-image> <image-name>
+```
+
+- Importing a docker image
+```bash
+docker load -i <path-to-image>
+```
+
+- Pushing a docker image to dockerhub
+```bash
+docker login
+docker tag <image-name> <username>/<image-name>
+docker push <username>/<image-name>
+```
+Note: You need to have an account on dockerhub to push the image.\
+Also note that that tag may not be required if you are using the naming standard.
 ## References
 - [fireship.io video](https://youtu.be/gAkwW2tuIqE?si=58r4EYxACFCFmN2A)
