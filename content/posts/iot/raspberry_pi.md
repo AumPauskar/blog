@@ -17,6 +17,25 @@ As standard the Raspberry Pi comes without an operating system. It depends on th
 - Insert an SD card into the computer.
 - Select the required operating system image from the Raspberry Pi Imager (typically)
 - Select the SD card from the Raspberry Pi Imager.
+- Edit the imager configuration (ctrl+shift+x)
+
+    **General**
+
+    - hostname: pi
+    - username and password 
+        - username: pi
+        - password: raspberry
+    - wifi
+        - ssid: <wifi_name>
+        - password: <wifi_password>
+    - locale settings
+        - timezone: Asia/Kolkata (in my case)
+        - keyboard layout: US
+    
+    **Services**
+    - Enable SSH
+        - Use password authentication (this will enable the ssh service and you may login with defauly username and password)
+
 - Click on write to write the operating system image to the SD card.
 - **Now if you are doing a headless installlation** then you need to select the SSH option from the Raspberry Pi Imager, put in the username and password, turn on the ssh option and then click on write.
 
@@ -33,6 +52,19 @@ To check the ip address of the raspberry pi, you can log into your router and ch
 - username: pi
 - password: raspberry
 
+**Note:** If an error message such as this appears
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+```
+Then you can remove the key from the known hosts file using the following command:
+```bash
+ssh-keygen -R <ip_address>
+```
 ## Basic setup
 Here are a couple of things that are an absolute necessity if you are planning for a headless installation of the raspberry pi:
 
@@ -60,12 +92,22 @@ There are a couple of packages that are essential for the raspberry pi, some of 
 - g++
 - neofetch
 - htop
+- docker
+- nodejs and npm
+
 
 These packages can be installed using the following command:
 ```bash
 sudo apt update
-sudo apt install vim git python3 python3-pip python3-venv gcc g++ neofetch htop -y
+sudo apt install vim git python3 python3-pip python3-venv gcc g++ neofetch htop docker.io -y
 ```
+
+Nodejs may be installed via this command
+```bash
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+This installs version 20.x of nodejs, you can change the version by changing the number in the command.
 
 ### Connecting to the Raspberry Pi
 There are 3 basic ways to be connected to the raspberry pi:
