@@ -139,3 +139,50 @@ There are 3 basic ways to be connected to the raspberry pi:
     - Open the VNC viewer and enter the ip address of the raspberry pi and then click on connect.
     - Enter the username and password of the raspberry pi and then click on connect.
     - The raspberry pi desktop should appear on the screen.
+
+## More services to be installed
+
+### FTP
+FTP is a file transfer protocol which is used to transfer files between the computer and the raspberry pi. This can be done using the following steps:
+
+- Update the systems and the mirrors using the following command:
+```bash
+sudo apt update
+sudo apt full-upgrade -y
+```
+
+- Install the FTP server using the following command:
+```bash
+sudo apt install vsftpd -y
+```
+
+- Configure the FTP server using the following command:
+```bash
+sudo nano /etc/vsftpd.conf
+```
+
+- Paste the following lines in the configuration file:
+```bash
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+chroot_local_user=YES
+user_sub_token=$USER
+local_root=/home/$USER/FTP
+```
+
+- Make a directory for the FTP server using the following command:
+```bash
+mkdir -p /home/<user>/FTP/
+```
+
+- Remove write permissions from the directory using the following command:
+```bash
+chmod a-w /home/<user>/FTP
+```
+
+- Restart the FTP server using the following command:
+```bash
+sudo service vsftpd restart
+```
