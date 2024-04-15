@@ -412,6 +412,47 @@ Then the process will run in the background. The process can be stopped by the f
 kill %<job number>
 ```
 
+## Users and groups
+### Definitions
+- Users: Users are the people who use the system. In linux based operating systems there may be multiple users (can be upto hundereds in a shared system like a server). The users in linux have a unique user id (UID) and a group id (GID). The UID is a number that is assigned to the user and the GID is a number that is assigned to the group. The UID and GID are stored in the `/etc/passwd` file. Every users has a home directory that is stored in the `/home` directory. The user may have different privalages that are assigned when the users are created and added to the system.
+- Groups: Groups are the collection of users. The groups are used to assign the permissions to the users. The groups are stored in the `/etc/group` file
+
+
+### Commands
+- Users can be added by the following command
+	```bash
+	sudo adduser <username>
+	```
+- Users can be deleted by the following command
+	```bash
+	sudo deluser <username>
+	```
+- Users can be added to a group by the following command
+	```bash
+	sudo usermod -aG <groupname> <username>
+	```
+- Users can be removed from a group by the following command
+	```bash
+	sudo deluser <username> <groupname>
+	```
+- Groups can be added by the following command
+	```bash
+	sudo addgroup <groupname>
+	```
+- Groups can be deleted by the following command
+	```bash
+	sudo delgroup <groupname>
+	```
+
+### Extra commands
+- Getting user list
+	```bash
+	cat /etc/passwd
+	```
+- Get only the usernames
+	```bash
+	awk -F':' '{ print $1}' /etc/passwd
+	```
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
