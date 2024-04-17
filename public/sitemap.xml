@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aumpauskar.github.io/blog/posts/misc/intro/</loc>
+    <lastmod>2024-04-17T23:00:22+05:30</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/</loc>
-    <lastmod>2024-04-14T16:53:10+05:30</lastmod>
+    <lastmod>2024-04-17T23:00:22+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/multimedia/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/plex/</loc>
-    <lastmod>2024-04-14T16:53:10+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/raspberry-pi/</loc>
@@ -116,7 +119,7 @@
     <loc>https://aumpauskar.github.io/blog/tags/c/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c</loc>
+    <loc>https://aumpauskar.github.io/blog/tags/c%23/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</loc>
