@@ -116,6 +116,154 @@ else:
     print("\nTarget node not found in the tree.")
 ```
 
+- Deapth first search code
+```py
+import heapq
+
+class Node:
+    def __init__(self, value, priority):
+        self.value = value
+        self.priority = priority
+        self.visited = False
+        self.adjacents = []
+
+    def add_adjacent(self, node):
+        self.adjacents.append(node)
+
+class PriorityQueue:
+    def __init__(self):
+        self._queue = []
+        self._index = 0
+
+    def push(self, item, priority):
+        heapq.heappush(self._queue, (priority, self._index, item))
+        self._index += 1
+
+    def pop(self):
+        return heapq.heappop(self._queue)[-1]
+
+def best_first_search(start, target):
+    queue = PriorityQueue()
+    queue.push((start, [start.value]), start.priority)  # Push a tuple of the node and the path
+
+    while queue:
+        current_node, path = queue.pop()  # Unpack the node and the path
+        current_node.visited = True
+
+        if current_node == target:
+            return path  # Return the path if the target is found
+
+        for adj in current_node.adjacents:
+            if not adj.visited:
+                queue.push((adj, path + [adj.value]), adj.priority)  # Add the node to the path
+
+    return None  # Return None if no path is found
+
+
+
+# Create nodes
+nodeA = Node("A", 3)
+nodeB = Node("B", 1)
+nodeC = Node("C", 2)
+nodeD = Node("D", 1)
+nodeE = Node("E", 2)
+nodeF = Node("F", 3)
+
+# Add adjacents
+nodeA.add_adjacent(nodeB)
+nodeA.add_adjacent(nodeC)
+nodeB.add_adjacent(nodeD)
+nodeB.add_adjacent(nodeE)
+nodeC.add_adjacent(nodeF)
+
+# Perform search
+path = best_first_search(nodeA, nodeF)
+
+# Print result
+if path:
+    print("Path exists! Path:", ' -> '.join(path))
+else:
+    print("No path exists.")
+```
+
+- Dijkstra's algorithm
+```py
+import heapq
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.distance = float('inf')
+        self.visited = False
+        self.adjacents = []
+        self.previous = None
+
+    def add_adjacent(self, node, weight):
+        self.adjacents.append((node, weight))
+
+class PriorityQueue:
+    def __init__(self):
+        self._queue = []
+        self._index = 0
+
+    def push(self, item, priority):
+        heapq.heappush(self._queue, (priority, self._index, item))
+        self._index += 1
+
+    def pop(self):
+        return heapq.heappop(self._queue)[-1]
+
+    def is_empty(self):
+        return len(self._queue) == 0
+
+def dijkstra(start):
+    start.distance = 0
+    queue = PriorityQueue()
+    queue.push(start, start.distance)
+
+    while not queue.is_empty():
+        current_node = queue.pop()
+        current_node.visited = True
+
+        for adj, weight in current_node.adjacents:
+            if not adj.visited:
+                old_distance = adj.distance
+                new_distance = current_node.distance + weight
+
+                if new_distance < old_distance:
+                    adj.distance = new_distance
+                    adj.previous = current_node
+                    queue.push(adj, adj.distance)
+# Create nodes
+nodeA = Node("A")
+nodeB = Node("B")
+nodeC = Node("C")
+nodeD = Node("D")
+nodeE = Node("E")
+nodeF = Node("F")
+
+# Add adjacents and weights
+nodeA.add_adjacent(nodeB, 1)
+nodeA.add_adjacent(nodeC, 3)
+nodeB.add_adjacent(nodeD, 2)
+nodeB.add_adjacent(nodeE, 3)
+nodeC.add_adjacent(nodeF, 2)
+
+# Perform Dijkstra's algorithm
+dijkstra(nodeA)
+
+# Print shortest path to each node
+nodes = [nodeA, nodeB, nodeC, nodeD, nodeE, nodeF]
+for node in nodes:
+    path = []
+    current = node
+    while current is not None:
+        path.append(current.value)
+        current = current.previous
+    path.reverse()
+    print(' -> '.join(path))
+
+```
 ## USP
 
 ### Running a code
@@ -283,3 +431,5 @@ Maximum number of open files per process is 1048576
 Maximum number of characters in a filename is 65536
 Maximum path length is 4096
 ```
+
+
