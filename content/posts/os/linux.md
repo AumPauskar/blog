@@ -444,6 +444,90 @@ kill %<job number>
 	sudo delgroup <groupname>
 	```
 
+## Services in linux
+In Linux, a service is a type of software that runs in the background and performs certain tasks without user intervention. These tasks could be anything from handling requests on a server, monitoring system events, or running scheduled tasks. 
+
+Services in Linux are also known as "daemons". They start at system boot and continue to run until the system is shut down. 
+
+You can manage services in Linux using system commands like `systemctl`, `service`, or `init` scripts depending on your Linux distribution and the init system it uses (System V, Upstart, or systemd). For example, you can start, stop, restart, enable, or disable services. 
+
+Here's an example of how you might use `systemctl` to manage a service:
+
+```bash
+# To start a service
+sudo systemctl start serviceName
+
+# To stop a service
+sudo systemctl stop serviceName
+
+# To restart a service
+sudo systemctl restart serviceName
+
+# To enable a service to start on boot
+sudo systemctl enable serviceName
+
+# To disable a service from starting on boot
+sudo systemctl disable serviceName
+```
+
+### Creating a service
+Creating a custom service in Linux involves writing a service unit file. This file tells systemd how to manage your service. Here's a basic example of how to create a custom service using systemd, which is the init system used by most modern Linux distributions.
+
+1. Create a new service file in `/etc/systemd/system` with a `.service` extension. For example, `my_service.service`. Use `sudo` because this is a system directory.
+
+```bash
+sudo nano /etc/systemd/system/my_service.service
+```
+
+2. In the service file, define the service with `[Unit]`, `[Service]`, and `[Install]` sections.
+
+```ini
+[Unit]
+Description=My Custom Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/my_service
+Restart=always
+User=username
+Group=groupname
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/username/my_service
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Replace `/usr/bin/my_service` with the path to the script or executable that your service will run. Replace `username` and `groupname` with the user and group that should own the process. Replace `/home/username/my_service` with the working directory of your service.
+
+3. After saving and closing the file, reload the systemd manager configuration.
+
+```bash
+sudo systemctl daemon-reload
+```
+
+4. Enable your service so that it starts on boot.
+
+```bash
+sudo systemctl enable my_service
+```
+
+5. Start your service.
+
+```bash
+sudo systemctl start my_service
+```
+
+6. Check the status of your service.
+
+```bash
+sudo systemctl status my_service
+```
+
+Remember to replace `my_service` with the name of your service.
+
+Replace `serviceName` with the name of the service you want to manage.
 ### Extra commands
 - Getting user list
 	```bash
