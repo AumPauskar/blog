@@ -537,6 +537,30 @@ Replace `serviceName` with the name of the service you want to manage.
 	```bash
 	awk -F':' '{ print $1}' /etc/passwd
 	```
+
+### Other important services
+1. **Transmission**: Transmission is a bittorrent client that can be used to download torrents. Transmission can be installed by the following command
+	```bash
+	sudo apt update
+	sudo apt install transmission-qt
+	```
+**Known issues of previous transmission versions** Some the the previously installed versions may support normal torrent transmissions but may fail in magnet links. This can be fixed by installing the following package
+	```bash
+	sudo apt remove transmission-gtk
+	sudo apt install transmission-qt
+	```
+Yoy may check the [references](https://askubuntu.com/questions/1002986/transmission-is-not-downloading-any-magnet-links) from here.
+2. **Apache**: Apache is a web server that can be used to host websites. Apache can be installed by the following command
+	```bash
+	sudo apt update
+	sudo apt install apache2
+	```
+3. **Nginx**: Nginx is a web server that can be used to host websites. Nginx can be installed by the following command
+	```bash
+	sudo apt update
+	sudo apt install nginx
+	```
+	
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
