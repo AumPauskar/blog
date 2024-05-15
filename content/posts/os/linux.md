@@ -544,12 +544,13 @@ Replace `serviceName` with the name of the service you want to manage.
 	sudo apt update
 	sudo apt install transmission-qt
 	```
-**Known issues of previous transmission versions** Some the the previously installed versions may support normal torrent transmissions but may fail in magnet links. This can be fixed by installing the following package
+	**Known issues of previous transmission versions** Some the the previously installed versions may support normal torrent transmissions but may fail in magnet links. This can be fixed by installing the following package
 	```bash
 	sudo apt remove transmission-gtk
 	sudo apt install transmission-qt
 	```
 Yoy may check the [references](https://askubuntu.com/questions/1002986/transmission-is-not-downloading-any-magnet-links) from here.
+
 2. **Apache**: Apache is a web server that can be used to host websites. Apache can be installed by the following command
 	```bash
 	sudo apt update
@@ -560,7 +561,26 @@ Yoy may check the [references](https://askubuntu.com/questions/1002986/transmiss
 	sudo apt update
 	sudo apt install nginx
 	```
-	
+4. **VIM**: Vim is a text editor that can be used to edit text files. Vim can be installed by the following command. There may be a chance that it is preinstalled. To check wheter its preinstalled the following command may be used.
+
+	```bash
+	vim --version
+	```
+
+	Any output like the following means that it is already installed
+
+	```
+	VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Mar 14 2024 09:05:11)
+	Included patches: 1-579, 1969, 580-1848, 4975, 5016, 5023, 5072, 2068, 1849-1854, 1857, 1855-1857, 1331, 1858, 1858-1859, 1873, 1860-1969, 1992, 1970-1992, 2010, 1993-2068, 2106, 2069-2106, 2108, 2107-2109, 2109-3995, 4563, 4646, 4774, 4895, 4899, 4901, 4919, 213, 1840, 1846-1847, 2110-2112, 2121
+	```
+
+	If the output is mentioning it is not installed then this command may be used.
+	```bash
+	sudo apt update
+	sudo apt install vim
+	```
+	You may check the commands [here](https://aumpauskar.github.io/blog/posts/cheatsheet/vim/)
+
 ## Misc commands
 1. `vcgencmd measure_temp`: running this command will give you the temperature of the raspberry pi. Using this with the `watch` command will give you the temperature in real time (`watch vcgencmd measure_temp`).
 2. `history`: running this command will give you the history of all the commands you have run in the terminal.
