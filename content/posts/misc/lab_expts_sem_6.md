@@ -2,7 +2,7 @@
 title = 'Lab expts sem 6'
 date = 2024-03-23T15:34:19+05:30
 tags = ["ai", "ml", "lab", "sem6", "expts", "network", "shell", "linux", "artificial intelligence", "machine learning"]
-author = "Aum Pauskar"
+author = "Aum Pauskar, Shriram Naik"
 showToc = true
 TocOpen = false
 draft = false
@@ -433,3 +433,369 @@ Maximum path length is 4096
 ```
 
 
+## IOT
+### Format
+1. Title
+2. Objective 
+3. Brief Theory
+4. Interfacing Block Diagram and manual calculations if any
+5. Algorithm
+6. Code
+7. Output (Printout)
+8. Conclusion
+9. Course learning outcome
+10. References
+
+**Note:** The termworks may be different forr different batches
+
+### TW1
+1. **Title**: Interfacing LED's with Arduino - Generating morse code using led's controlled by arduino
+2. **Objective:** The objective of this project is to create a pattern generator using LEDs interfaced with an Arduino, where the user inputs an alphanumeric character via serial input, and the corresponding Morse code is displayed using LED
+3. **Brief theory**
+    LEDs (Light Emitting Diodes) are semiconductor devices that emit light when an electric current passes through them. LEDs are widely used in electronic devices for various purposes due to their efficiency, compact size, and low power consumption. In this project, LEDs are employed to visually represent Morse code sequences. Each dot or dash of the Morse code is translated into a corresponding LED blink pattern, allowing users to observe and interpret the transmitted message. By interfacing LEDs with an Arduino microcontroller, we can automate the process of Morse code generation, making it accessible and versatile for educational, communication, or signaling purposes. This project highlights the synergy between digital electronics, communication systems, and human-computer interaction, showcasing how technology can bridge the gap between different modes of communication.
+4. **Interfacing block diagram:** [Check tinkercad](https://www.tinkercad.com/things/9lMny52Fx4W-led-morse-code?sharecode=RRKPmBDFXpidk-w_oGs9z8sG91tTj4J9dfFONOixKPc)
+5. **Algorithm:**
+    - Receive input character via serial input.
+    - Convert the character to Morse code.
+    - Output the Morse code using LEDs.
+6. **Code:**
+    ```cpp
+    // Define the size of the dictionary
+    const int DICTIONARY_SIZE = 26;
+
+    // Structure to represent a key-value pair
+    struct MorsePair {
+    char key;          // English alphabet character
+    const char* value; // Morse code counterpart
+    };
+
+    // Array of key-value pairs representing the Morse code dictionary
+    const MorsePair morseDictionary[DICTIONARY_SIZE] = {
+    {'A', ".-"}, {'B', "-..."}, {'C', "-.-."}, {'D', "-.."}, {'E', "."}, {'F', "..-."},
+    {'G', "--."}, {'H', "...."}, {'I', ".."}, {'J', ".---"}, {'K', "-.-"}, {'L', ".-.."},
+    {'M', "--"}, {'N', "-."}, {'O', "---"}, {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},
+    {'S', "..."}, {'T', "-"}, {'U', "..-"}, {'V', "...-"}, {'W', ".--"}, {'X', "-..-"},
+    {'Y', "-.--"}, {'Z', "--.."}
+    };
+
+    // Define the pin for the LED
+    const int LED_PIN = 13;
+
+    void setup() {
+    // Initialize Serial communication
+    Serial.begin(9600);
+
+    // Set LED pin as an output
+    pinMode(LED_PIN, OUTPUT);
+    }
+
+    void loop() {
+    // Prompt the user to enter a string
+    Serial.println("Enter a string (A-Z):");
+
+    // Read the user input
+    while (!Serial.available()); // Wait for input
+    String input = Serial.readStringUntil('\n'); // Read input until newline character
+
+    // Translate input to Morse code and blink LED accordingly
+    translateAndBlink(input);
+    }
+
+    // Function to translate a string to Morse code and blink LED
+    void translateAndBlink(String input) {
+    // Iterate through each character in the input string
+    for (int i = 0; i < input.length(); i++) {
+        // Convert character to uppercase
+        char c = toupper(input.charAt(i));
+
+        // Find Morse code counterpart in the dictionary
+        const char* morseCode = findMorseCode(c);
+
+        // Blink LED according to Morse code
+        blinkMorseCode(morseCode);
+    }
+    }
+
+    // Function to find Morse code for a given character
+    const char* findMorseCode(char c) {
+    for (int i = 0; i < DICTIONARY_SIZE; i++) {
+        if (morseDictionary[i].key == c) {
+        return morseDictionary[i].value;
+        }
+    }
+    return ""; // Return empty string if character not found
+    }
+
+    // Function to blink LED according to Morse code
+    void blinkMorseCode(const char* morseCode) {
+    for (int i = 0; morseCode[i] != '\0'; i++) {
+        if (morseCode[i] == '.') {
+        digitalWrite(LED_PIN, HIGH);
+        delay(250); // Dot duration
+        digitalWrite(LED_PIN, LOW);
+        delay(250); // Inter-element gap
+        } else if (morseCode[i] == '-') {
+        digitalWrite(LED_PIN, HIGH);
+        delay(750); // Dash duration
+        digitalWrite(LED_PIN, LOW);
+        delay(250); // Inter-element gap
+        } else if (morseCode[i] == ' ') {
+        delay(750); // Inter-character gap
+        }
+    }
+    delay(1250); // Inter-word gap
+    }
+    ```
+7. **Output:** [Check here](https://docs.google.com/document/d/1ZJ7CIzWlfuGDxl6ibK-RWAXvuKJzKh404-0vqsSofgQ/edit?usp=drive_link)
+8. **Conclusion:** This project successfully demonstrates the interfacing of LEDs with an Arduino to generate Morse code patterns corresponding to user-input alphanumeric characters. It illustrates the practical application of Morse code and LED interfacing in educational or communication systems.
+9. **Course learning outcome:** Understanding serial communication with Arduino.
+Implementing logic for character-to-Morse code conversion.
+Applying digital output to control LEDs.
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW2
+1. **Title**: Interfacing Arduino with a push button for glowing up the LED
+2. **Objective**: The objective of this project is to interface a push button with an Arduino board to control the illumination of an LED. When the push button is pressed, the LED will turn on, and when it is released, the LED will turn off.
+3. **Brief theory**
+    - Push Button: A push button is a momentary switch that completes an electrical circuit when pressed. It is commonly used in electronic projects to provide user input or trigger actions.
+    - LED (Light Emitting Diode): An LED is a semiconductor device that emits light when current flows through it. It is often used in electronic projects for visual indicators or illumination purposes.
+    - Arduino: Arduino is an open-source electronics platform based on easy-to-use hardware and software. It consists of a microcontroller board and a development environment for writing and uploading code to the board.
+4. **Interfacing block diagram:** [Check tinkercad](https://www.tinkercad.com/things/jnvAr1ZuwJy-push-button-basic?sharecode=bAq576muQKyDizDCJWcTdD9HF5hn9nONR0r8JFUCRkk)
+5. **Algorithm:**
+    - Initialize the Arduino board and configure the push button and LED pins as inputs and outputs, respectively.
+    - Continuously monitor the state of the push button.
+    - If the push button is pressed (input HIGH), turn on the LED by setting its pin to HIGH.
+    - If the push button is released (input LOW), turn off the LED by setting its pin to LOW.
+6. **Code:**
+    ```cpp
+    // constants won't change. They're used here to set pin numbers:
+    const int buttonPin = 12;  // the number of the pushbutton pin
+    const int ledPin = 13;    // the number of the LED pin
+
+    // variables will change:
+    int buttonState = 0;  // variable for reading the pushbutton status
+
+    void setup() {
+    // initialize the LED pin as an output:
+    pinMode(ledPin, OUTPUT);
+    // initialize the pushbutton pin as an input:
+    pinMode(buttonPin, INPUT);
+    }
+
+    void loop() {
+    // read the state of the pushbutton value:
+    buttonState = digitalRead(buttonPin);
+
+    // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+    if (buttonState == HIGH) {
+        // turn LED on:
+        digitalWrite(ledPin, HIGH);
+    } else {
+        // turn LED off:
+        digitalWrite(ledPin, LOW);
+    }
+    }
+    ```
+7. **Output:** [Check here](https://docs.google.com/document/d/1dF2PvUYFOZPXXnzVaKNE12ylT1uJX4PeAAjsG9yl0AI/edit?usp=drive_link)
+8. **Conclusion:** This project demonstrates the basic concept of interfacing a push button with an Arduino to control an LED. By understanding how to read digital inputs from a push button and control digital outputs to an LED, users can create interactive systems and prototypes for various applications.
+9. **Course learning outcome**
+    - Understanding of digital input and output operations with Arduino.
+    - Implementation of push button interfacing techniques for user input.
+    - Practical application of LED control for visual feedback or illumination.
+    - Introduction to basic circuit design and prototyping using microcontrollers.
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW3
+1. **Title**: Interfacing Arduino with a button to simulate a dice roll
+2. **Objective**: The objective of this project is to interface a push button with an Arduino to generate and display a random number from 1-6, simulating a dice roll, on a 16x2 LCD display.
+3. **Brief theory:** A push button is a momentary switch used to provide user input to microcontroller-based systems. LEDs are used to indicate the result of the simulated dice roll. The Arduino generates random numbers to mimic the rolling of a dice.
+4. **Interfacing block diagram:** [Check tinkercad](https://www.tinkercad.com/things/d8LVjEjIsCN-push-button-dice?sharecode=mSXd9vECBXWRtyY0c9PEN3wPcHlT0o6yElkI8aDNCnw)
+5. **Algorithm:**
+    - Setup the push button and LED connections.
+    - Initialize the LCD display.
+    - Wait for the push button press.
+    - Generate a random number between 1 and 6.
+    - Display the number on the LCD.
+    - Light up LEDs corresponding to the number rolled.
+6. **Code:**
+    ```cpp
+    // C++ code
+    //
+    #include <LiquidCrystal_I2C.h>
+
+    // defining constants
+    const int buttonPin = 12;
+    const int ledPin = 13;
+
+    // global variables
+    int buttonState = 0;
+    int die;
+
+    // defining lcd object
+    LiquidCrystal_I2C lcd_1(32, 16, 2);
+
+    void setup()
+    {
+    // lcd setup
+    lcd_1.init();
+    lcd_1.setCursor(0, 0);
+    lcd_1.backlight();
+    lcd_1.display();
+    
+    // button setup
+    pinMode(buttonPin, INPUT);
+    
+    // random seed 
+    randomSeed(analogRead(0));
+    
+    // button setup
+    pinMode(ledPin, OUTPUT);
+    }
+
+    void refreshDisplay(int arg) {
+    lcd_1.clear();
+    lcd_1.setCursor(0, 0);
+    lcd_1.print(arg);
+    }
+
+    int rollDice() {
+    // Check if the button is pressed
+    if (digitalRead(buttonPin) == HIGH) {
+        // Generate a random number between 1 and 6 (inclusive)
+        int randomNumber = random(1, 7);
+        refreshDisplay(randomNumber);
+        digitalWrite(ledPin, HIGH);
+        delay(1000);
+        return randomNumber;
+    } else {
+        // If button is not pressed, return -1 as an indication
+        digitalWrite(ledPin, LOW);
+        return -1;
+    }
+    }
+
+    void loop()
+    {
+    // only for debugging
+    die = rollDice();
+    Serial.println(die);
+    }
+    ```
+7. **Output:** [Check here](https://docs.google.com/document/d/1an_sI5c3DNORjg-2KgW2bp_Qqr3NABo0Yw9quRhTN6g/edit?usp=drive_link)
+8. **Conclusion:** This project effectively demonstrates the integration of push buttons, LEDs, and LCD displays with Arduino to create a simulated dice roll. It serves as a practical example for understanding user input, random number generation, and visual feedback in embedded systems.
+9. **Course learning outcome**
+    - Understanding digital input with Arduino.
+    - Implementing random number generation.
+    - Interfacing and controlling LED and LCD displays.
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW4
+1. **Title**: Interfacing Arduino with SR04 Ultrasonic Sensor for Distance Measurement and buzzer for alert
+2. **Objective**: The objective of this project is to create a simulated parking sensor system by interfacing an SR04 ultrasonic sensor with a buzzer. The system aims to detect obstacles in a parking space and provide audible feedback to the user through the buzzer, mimicking the behavior of a real parking sensor.
+3. **Brief theory**
+    - SR04 Sensor: The SR04 is an ultrasonic distance sensor that measures distance by emitting ultrasonic waves and calculating the time it takes for the waves to bounce back after hitting an obstacle. It consists of a transmitter, receiver, and control circuit.
+    - Buzzer: A buzzer is an electromechanical device that produces sound when an electric current is passed through it. It is commonly used in electronic projects to provide audible alerts or feedback to users.
+    - Parking Sensor: In real-world applications, parking sensors use ultrasonic sensors to detect nearby obstacles when parking a vehicle. They provide feedback to the driver through visual or audible signals to assist in parking maneuvers.
+4. **Interfacing block diagram:** [Check tinkercad](https://www.tinkercad.com/things/h4zhyniMwh8-copy-of-ultrasonic-distance-sensor-with-buzzer?sharecode=g99HqYIqaZYtFaHEj4ZybbZIXg2_4tryGFaNdn7FFx8)
+5. **Algorithm**
+    - Initialize the Arduino board and configure the SR04 sensor and buzzer pins.
+    - Continuously trigger the SR04 sensor to send ultrasonic waves and measure the time it takes for the waves to bounce back.
+    - Calculate the distance to the nearest obstacle based on the time-of-flight of the ultrasonic waves.
+    - If an obstacle is detected within a certain threshold distance, activate the buzzer to emit an audible alert.
+    - Adjust the frequency or intensity of the buzzer based on the proximity of the obstacle to simulate different warning levels.
+6. **Code**
+    ```cpp
+    const int triggerPin = 6;  // Trigger pin of the ultrasonic sensor
+    const int echoPin = 7;     // Echo pin of the ultrasonic sensor
+    const int buzzerPin = 9;   // Buzzer pin
+
+    long duration;
+    int distance;
+
+    void setup() {
+    pinMode(triggerPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+    pinMode(buzzerPin, OUTPUT);
+    Serial.begin(9600);  // Initialize serial communication at 9600 bps
+    }
+
+    void loop() {
+    // Clear the trigger pin
+    digitalWrite(triggerPin, LOW);
+    delayMicroseconds(2);
+
+    // Set the trigger pin HIGH for 10 microseconds
+    digitalWrite(triggerPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(triggerPin, LOW);
+
+    // Read the echo pin, and calculate the distance
+    duration = pulseIn(echoPin, HIGH);
+    distance = duration * 0.034 / 2;  // Speed of sound wave divided by 2 (go and back)
+
+    Serial.print("Distance: ");
+    Serial.println(distance);
+
+    // Set buzzer beeping rate based on distance
+    if (distance < 10) {
+        tone(buzzerPin, 1000);  // Continuous beep
+        delay(100);  // Small delay to avoid overload
+        noTone(buzzerPin);
+        Serial.println("TRIPLE CAUTION, high frequency!!!");
+    } else if (distance < 20) {
+        tone(buzzerPin, 1000);
+        delay(200);
+        noTone(buzzerPin);
+        delay(200);
+        Serial.println("DOUBLE CAUTION, mid frequency!!!");
+    } else if (distance < 30) {
+        tone(buzzerPin, 1000);
+        delay(400);
+        noTone(buzzerPin);
+        delay(400);
+        Serial.println("CAUTION, low frequency!!!");
+    } else if (distance < 50) {
+        tone(buzzerPin, 1000);
+        delay(800);
+        noTone(buzzerPin);
+        delay(800);
+        Serial.println("Appropriate distace, v low frequency!!!");
+    } else {
+        noTone(buzzerPin);  // No beep
+    }
+
+    delay(1000);  // Delay between readings
+    }
+    ```
+7. **Output:** [Check here](https://docs.google.com/document/d/1CaE9CIDSQp94Wd2X4D6-2GYObaCcoGroknS6wvDIBjM/edit?usp=drive_link)
+8. **Conclusion:** This project demonstrates the implementation of a simulated parking sensor system using an SR04 ultrasonic sensor and a buzzer. By interfacing these components with an Arduino board and analyzing sensor data, the system can provide audible feedback to users when obstacles are detected, aiding in parking maneuvers. While this simulation does not replace the functionality of real parking sensors, it serves as an educational and prototyping tool for understanding sensor interfacing and feedback mechanisms.
+9. **Course learning outcomes:**
+    - Understanding of ultrasonic sensor operation and distance measurement.
+    - Implementation of buzzer control for audible alerts.
+    - Application of sensor data analysis for obstacle detection.
+    - Integration of sensor feedback systems with microcontroller-based projects.
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
