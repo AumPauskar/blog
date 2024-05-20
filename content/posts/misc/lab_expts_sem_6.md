@@ -800,7 +800,233 @@ Applying digital output to control LEDs.
     5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
     6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
 
-### TW5
+
+### TW5 (refer this)
+
+1. **Title**  
+Create a Program to Make a Counter Using a 7-Segment Display (Counting from 0-9 and then Back to 0)
+
+2. **Objective**  
+To design and implement a program that controls a 7-segment display to function as a counter, incrementing from 0 to 9 and then resetting back to 0, using a USB connection to a computer for power and programming.
+
+3. **Brief Theory**  
+A 7-segment display is an electronic display device consisting of seven LEDs (segments) arranged in a rectangular fashion. By illuminating specific segments, it can display decimal numerals and some alphabets. In this project, a microcontroller (such as an Arduino) will be programmed to control the 7-segment display via a USB connection to a computer. The counter will increment from 0 to 9, after which it will reset to 0 and continue counting. This project involves understanding both hardware interfacing and software programming to achieve the desired functionality.
+
+4. **Interfacing Block Diagram and manual calculations if any**  
+[Check tinkercad](https://www.tinkercad.com/things/dLAqaiOTCOr-copy-of-arduino-7-segment-display)
+
+5. **Algorithm**  
+    1. **Initialize System**  
+        1. Set up the microcontroller (e.g., Arduino) with the necessary libraries and configurations.
+        2. Initialize the pins connected to the 7-segment display as outputs.
+
+    2. **Display Initialization**  
+        1. Ensure the 7-segment display is properly initialized to show the number 0 at start.
+
+    3. **Counter Logic**  
+        1. Set an initial counter value to 0.  
+        2. Enter a loop to increment the counter value by 1 at regular intervals (eg., every second).  
+        3. Update the 7-segment display to show the current counter value.  
+        4. If the counter value exceeds 9, reset it to 0.
+
+    4. **Loop and Update Display**  
+        1. Continuously check and update the counter value and display it.  
+        2. Implement a mechanism to reset the counter if needed (e.g., via a button press).
+
+6. **Code**
+    ```cpp
+    unsigned const int A = 13;
+    unsigned const int B = 12;
+    unsigned const int C = 11;
+    unsigned const int D = 10;
+    unsigned const int E = 9;
+    unsigned const int F = 8;
+    unsigned const int G = 7;
+    unsigned const int H = 6;
+
+    void setup(void)
+    {
+    pinMode(A, OUTPUT);
+    pinMode(B, OUTPUT);
+    pinMode(C, OUTPUT);
+    pinMode(D, OUTPUT);
+    pinMode(E, OUTPUT);
+    pinMode(F, OUTPUT);
+    pinMode(G, OUTPUT);
+    pinMode(H, OUTPUT);
+    }
+
+    //My Functions
+
+    void zero(void) {
+    digitalWrite(A, LOW);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void one(void) {
+    digitalWrite(A, LOW);
+    digitalWrite(B, LOW);
+    digitalWrite(C, LOW);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, LOW);
+    digitalWrite(F, LOW);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void two(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, LOW);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, LOW);
+    digitalWrite(H, LOW);
+    }
+
+    void three(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, LOW);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, LOW);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void four(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, LOW);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, LOW);
+    digitalWrite(F, LOW);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void five(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, LOW);
+    digitalWrite(E, LOW);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void six(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, LOW);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void seven(void) {
+    digitalWrite(A, LOW);
+    digitalWrite(B, LOW);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, LOW);
+    digitalWrite(F, LOW);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void eight(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    void nine(void) {
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, LOW);
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(H, LOW);
+    }
+
+    // Start
+    void loop(void)
+    {
+    zero();
+    delay(1000);
+    
+    one();
+    delay(1000);
+    
+    two();
+    delay(1000);
+    
+    three();
+    delay(1000);
+    
+    four();
+    delay(1000);
+    
+    five();
+    delay(1000);
+    
+    six();
+    delay(1000);
+    
+    seven();
+    delay(1000);
+    
+    eight();
+    delay(1000);
+    
+    nine();
+    delay(1000);
+    }
+    ```
+
+7. **Output (Printout)**  
+[Check here](https://docs.google.com/document/d/1_sLY3ZDCFTrZSyVrUzgbHFK0bf1y-vgfDmAbqRh4_54/edit?usp=drive_link)
+
+8. **Conclusion**  
+The project successfully demonstrates the use of a microcontroller to control a 7-segment display counter. The counter increments from 0 to 9 and then resets to 0, providing a simple yet effective example of hardware interfacing and programming. This project enhances understanding of both the hardware and software aspects of embedded systems.
+
+9. **Course Learning Outcome**  
+- Gain practical experience with microcontroller development boards such as Arduino.
+- Learn to interface and control a 7-segment display.
+- Develop skills in programming and algorithm design for hardware control.
+- Understand the basics of hardware interfacing and electronic component control.
+- Acquire knowledge of integrating microcontrollers with computer-based programming.
+
+10. **References**  
+- [Datasheet of the 7-segment display]
+- [Arduino documentation]
+- [Relevant online tutorials and guides on 7-segment display interfacing]
+- [Academic and technical papers on microcontroller applications]
+
+---
+
+Feel free to fill in the specific details and code as you develop the project.
+
+### TW5 (don't refer this)
 1. **Title**: Interfacing Arduino with a 16x2 LCD Display as a stopwatch
 2. **Objective**: The objective of this project is to interface an Arduino board with a 16x2 LCD display to create a stopwatch. The stopwatch will be capable of measuring elapsed time with precision and displaying it on the LCD screen.
 3. **Brief theory**
