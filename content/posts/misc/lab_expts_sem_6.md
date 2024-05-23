@@ -1315,3 +1315,127 @@ Feel free to fill in the specific details and code as you develop the project.
     4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
     5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
     6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW6
+
+---
+
+**1. Title**  
+Interface an Arduino to a 7-Segment and 16x2 LCD Display (Interfacing Arduino to Show a T-Minus Countdown on the 16x2 LCD and 7-Segment Display, and Show "LAUNCH" When the Counter Reaches 0)
+
+**2. Objective**  
+To design and implement a program that controls both a 7-segment display and a 16x2 LCD display using an Arduino. The system will display a T-minus countdown on both displays and show "LAUNCH" when the countdown reaches 0.
+
+**3. Brief Theory**  
+A 7-segment display is used to display individual digits by illuminating specific segments, while a 16x2 LCD display can show 16 characters on each of its two lines. In this project, an Arduino microcontroller will be used to control both displays. The Arduino will count down from a specified number (T-minus countdown) and simultaneously update both displays with the current countdown value. When the countdown reaches 0, the displays will show the word "LAUNCH". This project involves understanding both hardware interfacing and software programming to achieve the desired functionality.
+
+**4. Interfacing Block Diagram and manual calculations if any**  
+[Leave this section blank for now]
+
+5. **Algorithm**  
+    1. **Initialize System**  
+        1. Set up the Arduino with the necessary libraries for controlling the 7-segment display and the 16x2 LCD display.  
+        2. Initialize the pins connected to the 7-segment display and the LCD as outputs.
+
+    2. **Display Initialization**  
+        1. Ensure the 16x2 LCD display is properly initialized and ready to display text.  
+        2. Ensure the 7-segment display is properly initialized to show the initial countdown value.
+
+    3. **Set Initial Countdown Value**  
+        1. Set a variable for the countdown starting value (e.g., T-minus 10).
+
+    4. **Countdown Logic**  
+        1. Enter a loop to decrement the countdown value by 1 at regular intervals (e.g., every second).  
+        2. Update both the 7-segment display and the 16x2 LCD display to show the current countdown value.  
+        3. If the countdown value reaches 0, display "LAUNCH" on the 16x2 LCD and clear the 7-segment display or show 0.
+
+    5. **Loop and Update Display**  
+        1. Continuously check and update the countdown value and display it.  
+        2. Implement a mechanism to start the countdown (e.g., via a button press).
+
+6. **Code**  
+```cpp
+#include <ShiftRegister74HC595.h>
+#include <LiquidCrystal.h>
+
+// CREATE SHIFT REGISTER OBJECT (NUMBER OF SHIFT REGISTERS, DATA PIN, CLOCK PIN, LATCH PIN)
+ShiftRegister74HC595<2> sr(4, 2, 3);
+
+// Define the binary values to display numbers 0 to 9 on a 7-segment display
+uint8_t numberB[] = {
+  B00111111, // 0
+  B00000110, // 1
+  B01011011, // 2
+  B01001111, // 3
+  B01100110, // 4
+  B01101101, // 5
+  B01111101, // 6
+  B00000111, // 7
+  B01111111, // 8
+  B01101111  // 9
+};
+
+// Initialize the LCD library with the numbers of the interface pins
+const int rs = 16, en = 17, d4 = 13, d5 = 12, d6 = 11, d7 = 10;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+void setup() {
+  // Set up the LCD's number of columns and rows
+  lcd.begin(16, 2);
+  // Initial message to the LCD (optional, can be removed)
+  delay(2000); // Display initial message for 2 seconds
+}
+
+void loop() {
+  // Countdown from 10 to 0
+  for (int i = 10; i >= 0; i--) {
+    // Display "T-MINUS" on the LCD
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("   T-MINUS");
+
+    // Display the current number on the 7-segment display
+    if (i < 10) {
+      uint8_t pinValues[] = {B00000000, numberB[i]};
+      sr.setAll(pinValues);
+    } else {
+      uint8_t pinValues[] = {numberB[1], numberB[0]};
+      sr.setAll(pinValues);
+    }
+
+    // Display the countdown number on the LCD
+    lcd.setCursor(0, 1);
+    lcd.print("       ");
+    lcd.print(i);
+
+    // Delay for 1 second to simulate a timer
+    delay(1000);
+  }
+
+  // When countdown reaches 0, display "LAUNCH" on the LCD
+  lcd.clear();
+  lcd.setCursor(4, 0); // Adjust the position as needed
+  lcd.print("LAUNCH");
+  delay(5000); // Display "LAUNCH" for 5 seconds
+
+  // Optional: Reset display and go back to the initial state
+  lcd.clear();
+  delay(2000); // Display initial message for 2 seconds
+}
+```
+
+7. **Output (Printout)**  
+[Leave this section blank for now]
+
+8. **Conclusion**  
+The project successfully demonstrates the use of an Arduino to control both a 7-segment display and a 16x2 LCD display. The system accurately performs a T-minus countdown, displaying the countdown on both displays and showing "LAUNCH" when the countdown reaches 0. This project enhances understanding of hardware interfacing and programming for multiple display types.
+
+9. **Course Learning Outcome**  
+- Gain practical experience with Arduino microcontroller development.
+- Learn to interface and control a 7-segment display and a 16x2 LCD display.
+- Develop skills in programming and algorithm design for countdown timers.
+- Understand the basics of hardware interfacing and multiple display management.
+- Acquire knowledge of integrating microcontrollers with various display components.
+
+10. **References**  
+[blank]
