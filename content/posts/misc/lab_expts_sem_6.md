@@ -1017,10 +1017,12 @@ The project successfully demonstrates the use of a microcontroller to control a 
 - Acquire knowledge of integrating microcontrollers with computer-based programming.
 
 10. **References**  
-- [Datasheet of the 7-segment display]
-- [Arduino documentation]
-- [Relevant online tutorials and guides on 7-segment display interfacing]
-- [Academic and technical papers on microcontroller applications]
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
 
 ---
 
@@ -1330,7 +1332,7 @@ To design and implement a program that controls both a 7-segment display and a 1
 A 7-segment display is used to display individual digits by illuminating specific segments, while a 16x2 LCD display can show 16 characters on each of its two lines. In this project, an Arduino microcontroller will be used to control both displays. The Arduino will count down from a specified number (T-minus countdown) and simultaneously update both displays with the current countdown value. When the countdown reaches 0, the displays will show the word "LAUNCH". This project involves understanding both hardware interfacing and software programming to achieve the desired functionality.
 
 **4. Interfacing Block Diagram and manual calculations if any**  
-[Leave this section blank for now]
+[Check tinkercad](https://www.tinkercad.com/things/dLAqaiOTCOr-t-minus-countdown?sharecode=rcco4cMk1Q2-_s3Ltryr7xGzqSPMc4IDITPfLgxGUsU)
 
 5. **Algorithm**  
     1. **Initialize System**  
@@ -1425,7 +1427,7 @@ void loop() {
 ```
 
 7. **Output (Printout)**  
-[Leave this section blank for now]
+[Check here](https://docs.google.com/document/d/1mvH1MFPovc2XRDqLKx9Ptri_YnlAszWvKEIg9jnQ1WE/edit?usp=drive_link)
 
 8. **Conclusion**  
 The project successfully demonstrates the use of an Arduino to control both a 7-segment display and a 16x2 LCD display. The system accurately performs a T-minus countdown, displaying the countdown on both displays and showing "LAUNCH" when the countdown reaches 0. This project enhances understanding of hardware interfacing and programming for multiple display types.
@@ -1438,4 +1440,9 @@ The project successfully demonstrates the use of an Arduino to control both a 7-
 - Acquire knowledge of integrating microcontrollers with various display components.
 
 10. **References**  
-[blank]
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
