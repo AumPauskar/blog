@@ -1529,3 +1529,168 @@ The project successfully demonstrates the use of an Arduino to control both a 7-
     4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
     5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
     6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW7
+---
+
+1. **Title**  
+Interface Buzzer with Raspberry Pi
+
+2. **Objective**  
+To design and implement a system that interfaces a buzzer with a Raspberry Pi, allowing the buzzer to be controlled programmatically.
+
+3. **Brief Theory**  
+A buzzer is an audio signaling device commonly used for alarms, timers, and user notifications. It can be controlled by a microcontroller or single-board computer such as the Raspberry Pi. By sending a signal from the Raspberry Pi's GPIO pins to the buzzer, it can be turned on or off. This project involves understanding the basics of GPIO (General-Purpose Input/Output) pin control on the Raspberry Pi and using Python programming to manage the buzzer's operation.
+
+4. **Interfacing Block Diagram and manual calculations if any**  
+[Check google drive](https://docs.google.com/document/d/1lDTJbw59X2QkceyH3WqeFzT6MaX-54XPzXH0eW58vws/edit?usp=drive_link)
+
+5. **Algorithm**  
+    1. **Initialize System**  
+        1. Set up the Raspberry Pi and ensure it has the necessary software installed (e.g., Raspbian OS, Python, GPIO libraries).
+        2. Connect the buzzer to one of the GPIO pins on the Raspberry Pi (e.g., GPIO18) and connect the other terminal of the buzzer to a ground (GND) pin.
+
+    2. **Library Import and GPIO Setup**  
+        1. Import the necessary libraries for GPIO control in the Python script.
+        2. Set up the GPIO pin connected to the buzzer as an output pin.
+
+    3. **Buzzer Control Logic**  
+        1. Write a function to turn the buzzer on and off by sending a high or low signal to the GPIO pin.
+        2. Implement a loop or condition to control the buzzer based on specific events or time intervals.
+
+    4. **Execution and Testing**  
+        1. Run the Python script to control the buzzer.
+        2. Test different scenarios such as turning the buzzer on for a set duration, creating a beeping pattern, or responding to an input signal.
+
+6. **Code**  
+    ```py
+    # @Auth Xtrans Solutions Pvt. Ltd.
+    # Program to test Buzzer
+    # Connect RM9 to RM17
+
+    import time
+    import RPi.GPIO as gpio
+
+    gpio.setwarnings(False)
+    gpio.setmode(gpio.BOARD)
+    gpio.setup(38, gpio.OUT)
+
+    try:
+        while(1):
+            gpio.output(38,0)
+            print("Buzzer OFF")
+            time.sleep(1)
+            gpio.output(38,1)
+            print("Buzzer ON")
+            time.sleep(1)
+            #gpio.cleanup()
+    except KeyboardInterrupt:
+            gpio.cleanup()
+            exit
+    ```
+
+7. **Output (Printout)**  
+[Check google drive](https://docs.google.com/document/d/1lDTJbw59X2QkceyH3WqeFzT6MaX-54XPzXH0eW58vws/edit?usp=drive_link)
+
+8. **Conclusion**  
+The project successfully demonstrates how to interface a buzzer with a Raspberry Pi and control it programmatically using Python. This setup can be used in various applications such as alarms, notifications, and user feedback systems. The project enhances understanding of GPIO pin control and basic electronics interfacing with a Raspberry Pi.
+
+9. **Course Learning Outcome**  
+    - Gain practical experience with the Raspberry Pi single-board computer.
+    - Learn to interface and control a buzzer using GPIO pins.
+    - Develop skills in Python programming for hardware control.
+    - Understand the basics of electronic component interfacing.
+    - Acquire knowledge of integrating Raspberry Pi with various peripherals.
+
+10. **References**  
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW8
+
+1. **Title**  
+Interface Raspberry Pi with LDR Sensor and Buzzer (So When LDR Sensor Stops Detecting Light, the Buzzer Turns On)
+
+2. **Objective**  
+To design and implement a system that interfaces an LDR (Light Dependent Resistor) sensor and a buzzer with a Raspberry Pi. The system will monitor the light level using the LDR sensor and activate the buzzer when the light level drops below a certain threshold.
+
+3. **Brief Theory**  
+An LDR sensor changes its resistance based on the amount of light it detects; it has higher resistance in the dark and lower resistance in the light. This varying resistance can be used to measure light intensity. A buzzer is an audio signaling device that can be controlled via GPIO pins on a Raspberry Pi. In this project, the Raspberry Pi reads the LDR sensor's value and triggers the buzzer when the light level falls below a predefined threshold. This involves understanding analog-to-digital conversion (since the Raspberry Pi lacks built-in ADC), GPIO pin control, and Python programming.
+
+4. **Interfacing Block Diagram and manual calculations if any**  
+[Check google drive](https://docs.google.com/document/d/1ybN5h7GHyxYkyOdVbcmY1Z0dzMGltQNB5M6m1oiKTns/edit?usp=drive_link)
+
+5. **Algorithm**  
+    1. **Initialize System**  
+        1. Set up the Raspberry Pi with necessary software installed (e.g., Raspbian OS, Python, GPIO libraries, and an ADC like MCP3008 if needed).  
+        2. Connect the LDR sensor in a voltage divider configuration to an ADC (e.g., MCP3008) if using one. Connect the ADC to the Raspberry Pi's SPI pins.  
+        3. Connect the buzzer to one of the GPIO pins on the Raspberry Pi (e.g., GPIO18) and connect the other terminal of the buzzer to a ground (GND) pin.
+
+    2. **Library Import and GPIO/ADC Setup**  
+        1. Import the necessary libraries for GPIO and ADC control in the Python script.  
+        2. Set up the GPIO pin connected to the buzzer as an output pin.  
+        3. Initialize the ADC to read values from the LDR sensor.
+
+    3. **Light Level Detection Logic**  
+        1. Read the value from the LDR sensor through the ADC.  
+        2. Determine a threshold value for light detection (e.g., set a value below which the light is considered to be "not detected").
+
+    4. **Buzzer Control Logic**  
+        1. Continuously monitor the LDR sensor's value.  
+        2. If the sensor value drops below the threshold, turn the buzzer on by sending a high signal to the GPIO pin.  
+        3. If the sensor value is above the threshold, turn the buzzer off by sending a low signal to the GPIO pin.
+
+    5. **Execution and Testing**  
+        1. Run the Python script to monitor the LDR sensor and control the buzzer.  
+        2. Test the system by changing the light levels and observing the buzzer's response.
+
+6. **Code**  
+    ```py
+    import RPi.GPIO as gpio
+    import time
+
+    gpio.setwarnings(False)
+    gpio.setmode(gpio.BOARD)
+    gpio.setup(38,gpio.OUT)
+    gpio.setup(33,gpio.IN)
+
+    try:
+        while(1):
+            light=gpio.input(33)
+            if light==0:
+                gpio.output(38,0)
+                print("Light Detected , Buzzer off")
+                time.sleep(1)
+            elif light==1:
+                gpio.output(38,1)
+                print("Light not detected , Buzzer on")
+            time.sleep(1)
+    except KeyboardInterrupt:
+        gpio.cleanup()
+        exit
+    ```
+
+7. **Output (Printout)**  
+[Check google drive](https://docs.google.com/document/d/1ybN5h7GHyxYkyOdVbcmY1Z0dzMGltQNB5M6m1oiKTns/edit?usp=drive_link)
+
+8. **Conclusion**  
+The project successfully demonstrates how to interface an LDR sensor and a buzzer with a Raspberry Pi. The system monitors light levels using the LDR sensor and activates the buzzer when the light level drops below a certain threshold. This setup can be used for applications such as intruder alarms or light-sensitive alerts. The project enhances understanding of analog sensor interfacing, GPIO control, and ADC usage with a Raspberry Pi.
+
+9. **Course Learning Outcome**  
+    - Gain practical experience with the Raspberry Pi single-board computer.  
+    - Learn to interface and control an LDR sensor and a buzzer using GPIO pins.  
+    - Develop skills in Python programming for hardware control.  
+    - Understand the basics of analog-to-digital conversion and sensor interfacing.  
+    - Acquire knowledge of integrating Raspberry Pi with various peripherals.
+
+10. **References**  
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
