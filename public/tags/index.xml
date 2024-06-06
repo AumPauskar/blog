@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2024 16:53:10 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiler</title>
+      <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lex</title>
+      <link>https://aumpauskar.github.io/blog/tags/lex/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/lex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parser</title>
+      <link>https://aumpauskar.github.io/blog/tags/parser/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/parser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://aumpauskar.github.io/blog/tags/regex/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/regex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yacc</title>
+      <link>https://aumpauskar.github.io/blog/tags/yacc/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/tags/yacc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Multimedia</title>
       <link>https://aumpauskar.github.io/blog/tags/multimedia/</link>
@@ -292,15 +337,6 @@
       <pubDate>Mon, 26 Feb 2024 11:43:27 +0530</pubDate>
       
       <guid>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Compiler</title>
-      <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
-      <pubDate>Mon, 26 Feb 2024 11:43:27 +0530</pubDate>
-      
-      <guid>https://aumpauskar.github.io/blog/tags/compiler/</guid>
       <description></description>
     </item>
     

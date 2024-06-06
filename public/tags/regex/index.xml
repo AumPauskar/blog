@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Regex on Aum&#39;s blogging site</title>
+    <link>https://aumpauskar.github.io/blog/tags/regex/</link>
+    <description>Recent content in Regex on Aum&#39;s blogging site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regex via lex and yacc</title>
+      <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
+      <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
+      
+      <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+  </channel>
+</rss>
