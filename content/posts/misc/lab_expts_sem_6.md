@@ -1694,3 +1694,245 @@ The project successfully demonstrates how to interface an LDR sensor and a buzze
     4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
     5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
     6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW9
+
+1. **Title**
+    Using DHT-11 to read the current temperature, humidity and sending the data to the cloud using ThingSpeak API
+
+2. **Objective**
+    To design a system using DHT-11 sensor to measure temperature and humidity, and transmit the data to the cloud using the ThingSpeak API for real-time monitoring and analysis.
+
+3. **Brief Theory**
+    Explain briefly about:
+    - DHT-11 sensor: Introduction, working principle (how it measures temperature and humidity).
+    - ThingSpeak: Introduction to IoT platform, overview of how it allows for data collection, visualization, and analysis.
+
+4. **Interfacing Block Diagram and manual calculations if any**
+    Provide a block diagram showing how the DHT-11 sensor is connected to an Arduino (or similar microcontroller) and how data flows to ThingSpeak. Leave this section blank for now.
+
+5. **Algorithm**
+    1. Imports and Initialization:
+        - Import necessary libraries (adafruit_dht, board, RPi.GPIO, requests, datetime, time).
+        - Import ThingSpeak configuration (THINGSPEAK_API_KEY, THINGSPEAK_URL) from thingspeak_config.
+
+    2. Function `get_readings()`:
+        - Initializes DHT11 sensor (adafruit_dht.DHT11 on board.D4).
+        - Reads temperature (temperature_c) and humidity.
+        - Converts temperature to Fahrenheit (temperature_f) if valid.
+        - Returns readings or error message.
+
+    3. Function `send_to_thingspeak(temperature_c, temperature_f, humidity)`:
+        - Sends sensor data (temperature_c, temperature_f, humidity) to ThingSpeak.
+        - Includes timestamp and API key in the HTTP POST request.
+        - Prints success or failure messages based on response status.
+
+    4. Function `main()`:
+        - Loops 20 times to collect and send sensor data to ThingSpeak.
+        - Uses `get_readings()` to fetch data and `send_to_thingspeak()` to transmit it.
+        - Includes a 5-second delay between iterations.
+
+    5. Execution (`if __name__ == '__main__'`):
+        - Executes `main()` function to start data collection and transmission.
+
+### Procedure Summary
+- The script initializes a DHT11 sensor, reads temperature and humidity, and sends data to ThingSpeak every 5 seconds for 20 iterations.
+- Error handling manages sensor and HTTP request errors effectively.
+
+### Conclusion
+This Python script efficiently captures and transmits DHT11 sensor data to ThingSpeak, showcasing a practical IoT application using Raspberry Pi and Python.
+
+6. **Code**
+    ```py
+    import adafruit_dht
+    import board
+    from RPi import GPIO
+    import requests
+    import datetime
+    import time
+    import thingspeak_config as config
+
+    # thingspeak constants
+    THINGSPEAK_API_KEY = config.THINGSPEAK_API_KEY # Replace with your API key
+    THINGSPEAK_URL = config.THINGSPEAK_URL_SEND # URL to send data to ThingSpeak
+
+    def get_readings():
+        try:
+            # Initialize the DHT device inside the route function
+            dht_device = adafruit_dht.DHT11(board.D4)
+            temperature_c = dht_device.temperature
+            humidity = dht_device.humidity
+            
+            # Check if readings are valid
+            if temperature_c is not None and humidity is not None:
+                temperature_f = int(temperature_c * (9 / 5) + 32)
+                return {
+                    'temperature_c': temperature_c,
+                    'temperature_f': temperature_f,
+                    'humidity': humidity
+                }
+            else:
+                return {'error': 'Failed to retrieve data from sensor'}
+        except RuntimeError as error:
+            # Catch runtime errors from the sensor
+            return {'error': str(error)}
+        finally:
+            # Cleanup the sensor after use
+            dht_device.exit()
+
+    def send_to_thingspeak(temperature_c, temperature_f, humidity):
+        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # sending the data
+        response = requests.post(THINGSPEAK_URL, {
+            'api_key': THINGSPEAK_API_KEY,
+            'field1': current_time,
+            'field2': temperature_c,
+            'field3': temperature_f,
+            'field4': humidity
+        })
+
+        if response.status_code != 200:
+            print(f'Failed to send data to ThingSpeak: {response.text}')
+        if response.status_code == 200:
+            print(f'Successfully sent data to ThingSpeak: {response.text}')
+
+    def main():
+        for i in range(20):
+            readings_json = get_readings()
+            send_to_thingspeak(readings_json['temperature_c'], readings_json['temperature_f'], readings_json['humidity'])
+            time.sleep(5)
+
+    if __name__ == '__main__':
+        main()
+    ```
+
+7. **Output (Printout)**
+Show a sample output or printout from the system demonstrating data sent to ThingSpeak and how it appears on the cloud dashboard. Leave this section blank for now.
+
+8. **Conclusion**
+Utilizing ThingSpeak API for data retrieval enhances IoT applications by providing real-time access to stored sensor data. This capability enables timely decision-making and monitoring of environmental conditions, contributing to efficient IoT deployments.
+
+9. **Course learning outcome**
+This project aligns with the learning outcomes of understanding and implementing IoT data management solutions. By utilizing ThingSpeak API, skills such as API integration, data retrieval, and real-time monitoring are developed, essential for modern IoT applications.
+
+
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
+
+### TW10
+1. **Title**
+    Using ThingSpeak API to check and receive the latest data stored in the cloud
+
+2. **Objective**
+To demonstrate how to use the ThingSpeak API to retrieve the latest data entries from a specific channel stored in the ThingSpeak cloud platform.
+
+3. **Brief Theory**
+
+    ThingSpeak API for Data Retrieval
+
+    ThingSpeak provides an API that allows seamless integration with IoT applications for retrieving stored data. Here’s an elaboration:
+
+    - **RESTful API**: ThingSpeak’s API follows REST principles, which means it uses standard HTTP methods (GET, POST, etc.) for data retrieval. This makes it accessible and easy to integrate into various applications.
+
+    - **Endpoints**: Key endpoints include:
+        - **Latest Entry**: Retrieves the most recent data entry from a specified channel.
+        - **Channel Feeds**: Retrieves a set number of entries (feeds) from a channel, useful for historical data analysis.
+        - **Field Feeds**: Allows retrieval of specific fields within a channel entry, facilitating selective data extraction.
+
+    - **Authentication**: 
+        - **API Keys**: Authentication is managed through API keys, which are included in API requests to ensure secure access to channel data.
+
+    - **Integration with Applications**: 
+        - ThingSpeak API enables integration with external applications and services for data visualization, analysis, and automation.
+        - Integration with platforms like MATLAB allows for advanced data processing and visualization capabilities.
+
+4. **Interfacing Block Diagram and manual calculations if any**
+Leave this section blank for now.
+
+5. **Algorithm**
+    1. Imports and Initialization:
+        - Import necessary libraries (`requests`).
+        - Import ThingSpeak configuration (`THINGSPEAK_READ_API_KEY`, `THINGSPEAK_CHANNEL_ID`, `THINGSPEAK_URL`) from `thingspeak_config`.
+
+    2. Function `read_from_thingspeak()`:
+        - Sends a GET request to ThingSpeak (`THINGSPEAK_URL`) with parameters:
+            - `api_key`: Read API key (`THINGSPEAK_READ_API_KEY`).
+            - `results`: Number of results to retrieve (1 in this case).
+        - Checks if the request is successful (status code 200).
+        - Parses the JSON response and retrieves the latest feed (`feeds[0]`).
+        - Prints the latest feed information:
+            - Timestamp (`created_at`).
+            - Temperature in Celsius (`field2`).
+            - Temperature in Fahrenheit (`field3`).
+            - Humidity (`field4`).
+        - Handles cases where no data is available or if there's an error.
+
+    3. Function `main()`:
+        - Calls `read_from_thingspeak()` to fetch and display the latest data from ThingSpeak.
+
+    4. Execution (`if __name__ == '__main__':`):
+        - Executes `main()` function when the script is run directly.
+
+
+6. **Code**
+    ```py
+    import requests
+    import thingspeak_config as config
+
+    # ThingSpeak read API constants
+    THINGSPEAK_READ_API_KEY = config.THINGSPEAK_READ_API_KEY # Replace with your read API key
+    THINGSPEAK_CHANNEL_ID = config.THINGSPEAK_CHANNEL_ID  # Replace with your channel ID
+    THINGSPEAK_URL = config.THINGSPEAK_URL_RECV # URL to read data from ThingSpeak
+
+    def read_from_thingspeak():
+        try:
+            # Send GET request to ThingSpeak
+            response = requests.get(THINGSPEAK_URL, params={'api_key': THINGSPEAK_READ_API_KEY, 'results': 1})
+            
+            # Check if request was successful
+            if response.status_code == 200:
+                data = response.json()
+                feeds = data['feeds']
+                if feeds:
+                    latest_feed = feeds[0]
+                    print('Latest Feed:')
+                    print(f"Datetime: {latest_feed['created_at']}")
+                    print(f"Temperature (C): {latest_feed['field2']}")
+                    print(f"Temperature (F): {latest_feed['field3']}")
+                    print(f"Humidity: {latest_feed['field4']}")
+                else:
+                    print('No data available')
+            else:
+                print(f'Failed to read data from ThingSpeak: {response.text}')
+        except Exception as e:
+            print(f'Error: {e}')
+
+    def main():
+        read_from_thingspeak()
+
+    if __name__ == '__main__':
+        main()
+    ```
+
+7. **Output (Printout)**
+Show a sample output demonstrating the data retrieved from ThingSpeak, such as the latest sensor readings or specific data fields.
+
+8. **Conclusion**
+Utilizing ThingSpeak API for data retrieval enhances IoT applications by providing real-time access to stored sensor data. This capability enables timely decision-making and monitoring of environmental conditions, contributing to efficient IoT deployments.
+
+9. **Course learning outcome**
+This project aligns with the learning outcomes of understanding and implementing IoT data management solutions. By utilizing ThingSpeak API, skills such as API integration, data retrieval, and real-time monitoring are developed, essential for modern IoT applications.
+
+10. **References**
+    1. Arduino Official Website: https://www.arduino.cc/
+    2. Tinkercad: https://www.tinkercad.com/users/3yIYe1Hze1e
+    3. GitHub: https://github.com/AumPauskar/micro-iot-projects/
+    4. Arshdeep Bagha, Vijay Madishetti, Internet of Things A Hands- on Approach, Universities Press, 2014
+    5. Sudip Misra, Anandarup Mukherjee, Arijit Roy, Introduction to IoT, Cambridge University Press, 2021
+    6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
