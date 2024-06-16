@@ -1697,10 +1697,10 @@ The project successfully demonstrates how to interface an LDR sensor and a buzze
 
 ### TW9
 
-1. **Title**
+1. **Title**\
     Using DHT-11 to read the current temperature, humidity and sending the data to the cloud using ThingSpeak API
 
-2. **Objective**
+2. **Objective**\
     To design a system using DHT-11 sensor to measure temperature and humidity, and transmit the data to the cloud using the ThingSpeak API for real-time monitoring and analysis.
 
 3. **Brief Theory**
@@ -1708,8 +1708,8 @@ The project successfully demonstrates how to interface an LDR sensor and a buzze
     - DHT-11 sensor: Introduction, working principle (how it measures temperature and humidity).
     - ThingSpeak: Introduction to IoT platform, overview of how it allows for data collection, visualization, and analysis.
 
-4. **Interfacing Block Diagram and manual calculations if any**
-    Provide a block diagram showing how the DHT-11 sensor is connected to an Arduino (or similar microcontroller) and how data flows to ThingSpeak. Leave this section blank for now.
+4. **Interfacing Block Diagram and manual calculations if any**\
+    [Check google drive](https://docs.google.com/document/d/1D97Liga_OOW8KZ5nlopOlRLf_dcudGkybWw8oHjvqGo/edit?usp=drive_link)
 
 5. **Algorithm**
     1. Imports and Initialization:
@@ -1734,13 +1734,6 @@ The project successfully demonstrates how to interface an LDR sensor and a buzze
 
     5. Execution (`if __name__ == '__main__'`):
         - Executes `main()` function to start data collection and transmission.
-
-### Procedure Summary
-- The script initializes a DHT11 sensor, reads temperature and humidity, and sends data to ThingSpeak every 5 seconds for 20 iterations.
-- Error handling manages sensor and HTTP request errors effectively.
-
-### Conclusion
-This Python script efficiently captures and transmits DHT11 sensor data to ThingSpeak, showcasing a practical IoT application using Raspberry Pi and Python.
 
 6. **Code**
     ```py
@@ -1807,13 +1800,13 @@ This Python script efficiently captures and transmits DHT11 sensor data to Thing
         main()
     ```
 
-7. **Output (Printout)**
-Show a sample output or printout from the system demonstrating data sent to ThingSpeak and how it appears on the cloud dashboard. Leave this section blank for now.
+7. **Output (Printout)**\
+[Check google drive](https://docs.google.com/document/d/1D97Liga_OOW8KZ5nlopOlRLf_dcudGkybWw8oHjvqGo/edit?usp=drive_link)
 
-8. **Conclusion**
+8. **Conclusion**\
 Utilizing ThingSpeak API for data retrieval enhances IoT applications by providing real-time access to stored sensor data. This capability enables timely decision-making and monitoring of environmental conditions, contributing to efficient IoT deployments.
 
-9. **Course learning outcome**
+9. **Course learning outcome**\
 This project aligns with the learning outcomes of understanding and implementing IoT data management solutions. By utilizing ThingSpeak API, skills such as API integration, data retrieval, and real-time monitoring are developed, essential for modern IoT applications.
 
 
@@ -1826,14 +1819,13 @@ This project aligns with the learning outcomes of understanding and implementing
     6. Mayur Ramgir, Internet of Things- Architecture, Implementation, and Security, Pearson Education India, 2019
 
 ### TW10
-1. **Title**
+1. **Title**\
     Using ThingSpeak API to check and receive the latest data stored in the cloud
 
-2. **Objective**
-To demonstrate how to use the ThingSpeak API to retrieve the latest data entries from a specific channel stored in the ThingSpeak cloud platform.
+2. **Objective**\
+    To demonstrate how to use the ThingSpeak API to retrieve the latest data entries from a specific channel stored in the ThingSpeak cloud platform.
 
-3. **Brief Theory**
-
+3. **Brief Theory**\
     ThingSpeak API for Data Retrieval
 
     ThingSpeak provides an API that allows seamless integration with IoT applications for retrieving stored data. Here’s an elaboration:
@@ -1852,8 +1844,8 @@ To demonstrate how to use the ThingSpeak API to retrieve the latest data entries
         - ThingSpeak API enables integration with external applications and services for data visualization, analysis, and automation.
         - Integration with platforms like MATLAB allows for advanced data processing and visualization capabilities.
 
-4. **Interfacing Block Diagram and manual calculations if any**
-Leave this section blank for now.
+4. **Interfacing Block Diagram and manual calculations if any**\
+[Check google drive](https://docs.google.com/document/d/1Tikv8IEDM_zyRpGpCfBeiaJ0PzFTozHYdQDZxUP9tTo/edit?usp=drive_link)
 
 5. **Algorithm**
     1. Imports and Initialization:
@@ -1920,13 +1912,13 @@ Leave this section blank for now.
         main()
     ```
 
-7. **Output (Printout)**
-Show a sample output demonstrating the data retrieved from ThingSpeak, such as the latest sensor readings or specific data fields.
+7. **Output (Printout)**\
+[Check google drive](https://docs.google.com/document/d/1Tikv8IEDM_zyRpGpCfBeiaJ0PzFTozHYdQDZxUP9tTo/edit?usp=drive_link)
 
-8. **Conclusion**
+8. **Conclusion**\
 Utilizing ThingSpeak API for data retrieval enhances IoT applications by providing real-time access to stored sensor data. This capability enables timely decision-making and monitoring of environmental conditions, contributing to efficient IoT deployments.
 
-9. **Course learning outcome**
+9. **Course learning outcome**\
 This project aligns with the learning outcomes of understanding and implementing IoT data management solutions. By utilizing ThingSpeak API, skills such as API integration, data retrieval, and real-time monitoring are developed, essential for modern IoT applications.
 
 10. **References**
