@@ -626,8 +626,154 @@ lando gets pole position
 File unlocked successfully
 lts@POWERHOUSE:~/Documents/blog/test$ 
 ```
-### TW? - net simulation
 
+### TW5 - zombie process
+
+**Problem statement:** Write a C/C++ program that created a zombie and then calls system execute the PS command to verify that the process is zombie
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main() {
+    pid_t child_pid;
+
+    // Create a child process
+    child_pid = fork();
+
+    if (child_pid == 0) {
+        // Child process
+        printf("Child process with PID %d exiting...\n", getpid());
+        exit(0);
+    } else if (child_pid > 0) {
+        // Parent process
+        printf("Parent process with PID %d waiting...\n", getpid());
+
+        // Don't wait for the child process to terminate (create zombie)
+        sleep(5);  // Sleep for a few seconds to allow child to exit
+
+        // Execute ps command to verify child process state
+        system("ps -e -o pid,ppid,stat,cmd");
+    } else {
+        // Fork failed
+        perror("fork");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
+Output
+```bash
+lts@POWERHOUSE:~/Documents/blog/test$ gcc test.cpp 
+lts@POWERHOUSE:~/Documents/blog/test$ ./a.out 
+Parent process with PID 19180 waiting...
+Child process with PID 19181 exiting...
+    PID    PPID STAT CMD
+      1       0 Ss   /sbin/init
+      2       1 Sl   /init
+      6       2 Sl   plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+     38       1 S<s  /lib/systemd/systemd-journald
+     57       1 Ss   /lib/systemd/systemd-udevd
+     69       1 Ssl  snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+     70       1 Ssl  snapfuse /var/lib/snapd/snaps/core_16928.snap /snap/core/16928 -o ro,nodev,allow_other,suid
+     80       1 Ssl  snapfuse /var/lib/snapd/snaps/core20_2264.snap /snap/core20/2264 -o ro,nodev,allow_other,suid
+     87       1 Ssl  snapfuse /var/lib/snapd/snaps/core20_2318.snap /snap/core20/2318 -o ro,nodev,allow_other,suid
+     94       1 Ssl  snapfuse /var/lib/snapd/snaps/core22_1122.snap /snap/core22/1122 -o ro,nodev,allow_other,suid
+     97       1 Ssl  snapfuse /var/lib/snapd/snaps/core22_1380.snap /snap/core22/1380 -o ro,nodev,allow_other,suid
+    105       1 Ssl  snapfuse /var/lib/snapd/snaps/gtk-common-themes_1535.snap /snap/gtk-common-themes/1535 -o ro,nodev,allow_other,suid
+    110       1 Ssl  snapfuse /var/lib/snapd/snaps/hugo_19714.snap /snap/hugo/19714 -o ro,nodev,allow_other,suid
+    115       1 Ssl  snapfuse /var/lib/snapd/snaps/hugo_19814.snap /snap/hugo/19814 -o ro,nodev,allow_other,suid
+    123       1 Ssl  snapfuse /var/lib/snapd/snaps/snapd_21465.snap /snap/snapd/21465 -o ro,nodev,allow_other,suid
+    130       1 Ssl  snapfuse /var/lib/snapd/snaps/snapd_21759.snap /snap/snapd/21759 -o ro,nodev,allow_other,suid
+    134       1 Ssl  snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1284.snap /snap/ubuntu-desktop-installer/1284 -o ro,nodev,allow_
+    138       1 Ssl  snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1286.snap /snap/ubuntu-desktop-installer/1286 -o ro,nodev,allow_
+    203       1 Ss   /lib/systemd/systemd-resolved
+    222       1 Ss   /usr/sbin/cron -f -P
+    224       1 Ss   @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    228       1 Ss   /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    229       1 Ssl  /usr/sbin/rsyslogd -n -iNONE
+    231       1 Ssl  /usr/lib/snapd/snapd
+    232       1 Ss   /lib/systemd/systemd-logind
+    278       1 Ss   /bin/bash /snap/ubuntu-desktop-installer/1286/bin/subiquity-server
+    280       1 Ssl  /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    288       1 Ss+  /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+    303       1 Ss+  /sbin/agetty -o -p -- \u --noclear tty1 linux
+    326     278 Sl   /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --po
+    371       2 Ss   /init
+    372     371 S    /init
+    373     372 Ss+  sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" 5437499feb04f7a586f677b155b039bc2b3669eb stable code-server .vsco
+    374       2 Ss   /bin/login -f
+    376     373 S+   sh /mnt/c/Users/aumpa/.vscode/extensions/ms-vscode-remote.remote-wsl-0.88.2/scripts/wslServer.sh 5437499feb04f7a586f677
+    407       1 Ss   /lib/systemd/systemd --user
+    408     407 S    (sd-pam)
+    413     374 S+   -bash
+    449     376 S+   sh /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/bin/code-server --host=127.0.0.1 --port=0 --co
+    453     449 Sl+  /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node /home/lts/.vscode-server/bin/5437499feb04f7a
+    465       2 Ss   /init
+    466     326 S    python3 /snap/ubuntu-desktop-installer/1286/usr/bin/cloud-init status --wait
+    467     465 S    /init
+    469     467 Ssl+ /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node -e const net = require('net'); process.stdin
+    478       2 Ss   /init
+    479     478 S    /init
+    480     479 Ssl+ /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node -e const net = require('net'); process.stdin
+    501     453 Sl+  /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node /home/lts/.vscode-server/bin/5437499feb04f7a
+    515     453 Sl+  /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node --dns-result-order=ipv4first /home/lts/.vsco
+    542     515 Sl+  /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node /home/lts/.vscode-server/bin/5437499feb04f7a
+    557     453 Rl+  /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/node /home/lts/.vscode-server/bin/5437499feb04f7a
+    678     557 Ss   /bin/bash --init-file /home/lts/.vscode-server/bin/5437499feb04f7a586f677b155b039bc2b3669eb/out/vs/workbench/contrib/te
+  19180     678 S+   ./a.out
+  19181   19180 Z+   [a.out] <defunct>
+  19232   19180 S+   sh -c ps -e -o pid,ppid,stat,cmd
+  19233   19232 R+   ps -e -o pid,ppid,stat,cmd
+lts@POWERHOUSE:~/Documents/blog/test$ 
+```
+### TW6 - race condition
+
+**Probmem statement:** Write a C/C++ program to illustate a race condition
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+static void charactertime(const char *); // Change to const char*
+
+int main() {
+    int pid;
+    if ((pid = fork()) < 0) {
+        printf("fork error\n");
+    } else if (pid == 0) {
+        charactertime("Output of the Child\n");
+    } else {
+        charactertime("Output of the Parent\n");
+    }
+    _exit(0);
+}
+
+static void charactertime(const char *str) { // Change to const char*
+    const char *ptr; // Change to const char*
+    int c;
+    setbuf(stdout, NULL); // Disable buffering for stdout
+    for (ptr = str; (c = *ptr++) != 0; ) {
+        putc(c, stdout); // Output each character one at a time
+    }
+}
+```
+
+Output
+```bash
+lts@POWERHOUSE:~/Documents/blog/test$ ./a.out 
+Output ofO utthpeu tP aorfe ntth
+e Child
+lts@POWERHOUSE:~/Documents/blog/test$ 
+```
+
+### TW8 - NS3
+
+**Problem statement:** Write a C/C++ program to simulate a network application with 2 nodes using NS2/NS3.
 ```c
 /* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
 /*
@@ -710,6 +856,7 @@ main (int argc, char *argv[])
 }
 ```
 
+### TW8 
 ## IOT
 ### Format
 1. Title
