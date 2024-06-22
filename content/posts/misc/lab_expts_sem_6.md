@@ -432,6 +432,200 @@ Maximum number of characters in a filename is 65536
 Maximum path length is 4096
 ```
 
+### TW2 - posix job control
+
+**Problem statement:** Write a C/C++ compliant program that print the posix defined configuration option supported on any given system using feature kept macros.
+```cpp
+#define _POSIX_SOURCE
+#define _POSIX_C_SOURCE 199309L
+#include <iostream>
+#include <unistd.h>
+
+using namespace std;
+
+int main() {
+    #ifdef _POSIX_JOB_CONTROL
+        cout << "System supports POSIX Job Control." << endl;
+    #else
+        cout << "System doesn't support POSIX Job Control." << endl;
+    #endif
+
+    #ifdef _POSIX_SAVED_IDS
+        cout << "System supports saved set-UID and saved set-GID." << endl;
+    #else
+        cout << "System doesn't support POSIX saved IDs." << endl;
+    #endif
+
+    #ifdef _POSIX_CHOWN_RESTRICTED
+        cout << "Chown restricted option is: " << _POSIX_CHOWN_RESTRICTED << endl;
+    #else
+        cout << "System doesn't support chown restricted option." << endl;
+    #endif
+
+    #ifdef _POSIX_NO_TRUNC
+        cout << "Truncation option is: " << _POSIX_NO_TRUNC << endl;
+    #else
+        cout << "System doesn't support POSIX truncation." << endl;
+    #endif
+
+    #ifdef _POSIX_VDISABLE
+        cout << "Disable char for terminal files: " << _POSIX_VDISABLE << endl;
+    #else
+        cout << "System doesn't support POSIX disability." << endl;
+    #endif
+
+    return 0;
+}
+```
+
+Output
+```bash
+lts@POWERHOUSE:~/Documents/blog/test$ g++ test.cpp && ./a.out
+System supports POSIX Job Control.
+System supports saved set-UID and saved set-GID.
+Chown restricted option is: 0
+Truncation option is: 1
+Disable char for terminal files: 
+```
+
+### TW3 - hardlink and softlink
+
+**Problem statement:** Write a c/c++program to generate hardlink and softlink
+
+```cpp
+#include<iostream>
+#include<sys/types.h>
+#include<unistd.h>
+#include<string.h>
+using namespace std;
+int main( int argc , char* argv[] )
+ {
+   if( ((argc<3) || (argc>4)) || (argc==4 && strcmp(argv[1],"-s")) )
+    { 
+      cerr<<"Usage : "<< argv[0]<<" [-s] <orig_file> <new_file> \n";
+      return 1;
+    }
+   if( argc == 4 )   // programName -s <source_file> <destination_file>
+    {
+      if( symlink( argv[2] ,argv[3] ) == -1 )
+        {
+	  	perror("link");   		return 1;
+	   }
+           cout<<"Symbolic | Soft link of File created successfully\n";
+    }
+
+
+if( argc == 3 )  // programName <source_file> <destination_file>
+    {
+	   if( link(argv[1],argv[2]) == -1 )
+	    {
+	      perror("link"); 
+	      return 1;
+	    }
+	   cout<<"Hard link of File created successfully\n";
+    }
+   return 0; 
+ }
+```
+
+Output
+```bash
+lts@POWERHOUSE:~/Documents/blog/test$ g++ test.cpp -o link_creator
+lts@POWERHOUSE:~/Documents/blog/test$ ./link_creator -s example.txt example_link.txt
+Symbolic | Soft link of File created successfully
+
+lts@POWERHOUSE:~/Documents/blog/test$ g++ test.cpp 
+lts@POWERHOUSE:~/Documents/blog/test$ touch soft.txt
+lts@POWERHOUSE:~/Documents/blog/test$ ./a.out soft.txt  file.txt
+Hard link of File created successfully
+```
+
+### TW4 - file locking
+
+**Problem statement:** Write a C/C++ progaram to demonstate file locking
+```cpp
+#include <stdio.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+
+int main(int argc, char *argv[])
+{
+    char temp[1000];
+    struct flock fvar;
+    int fdesc;
+    char buf;
+    int rc;
+    off_t offset;
+
+    if (argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
+        return 1;
+    }
+
+    fdesc = open(argv[1], O_RDWR);
+    if (fdesc == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    offset = lseek(fdesc, -100, SEEK_END);
+    
+    fvar.l_type = F_WRLCK;
+    fvar.l_whence = SEEK_CUR;
+    fvar.l_start = 0;
+    fvar.l_len = 100;
+
+    if (fcntl(fdesc, F_SETLK, &fvar) == -1)
+    {
+        printf("\n---- File has been locked by: \n");
+        while (fcntl(fdesc, F_GETLK, &fvar) != -1 && fvar.l_type != F_UNLCK)
+        {
+            printf("\nFile: %s is locked by process with pid: %d\n", argv[1], fvar.l_pid);
+        }
+    }
+    else
+    {
+        printf("\n---- \n");
+        printf("\nFile: %s was not locked and acquiring of exclusive lock was:", argv[1]);
+        printf(" Successful By Process Id: %d\n", getpid());
+
+        offset = lseek(fdesc, -50, SEEK_END);
+        printf("\nLast 50 bytes of file %s = \n", argv[1]);
+        while ((rc = read(fdesc, &buf, 1)) > 0) printf("%c", buf);
+        
+        offset = lseek(fdesc, -100, SEEK_END);
+        fvar.l_type = F_UNLCK;
+        fvar.l_whence = SEEK_CUR;
+        fvar.l_start = 0;
+        fvar.l_len = 100;
+
+        fcntl(fdesc, F_SETLKW, &fvar);
+        printf("\nFile unlocked successfully\n");
+    }
+
+    close(fdesc);
+    return 0;
+}
+```
+
+Output
+```bash
+lts@POWERHOUSE:~/Documents/blog/test$ echo "lando gets pole position" > file.txt
+lts@POWERHOUSE:~/Documents/blog/test$ g++ test.cpp -o file_locking
+lts@POWERHOUSE:~/Documents/blog/test$ ./file_locking file.txt 
+
+---- 
+
+File: file.txt was not locked and acquiring of exclusive lock was: Successful By Process Id: 13895
+
+Last 50 bytes of file file.txt = 
+lando gets pole position
+
+File unlocked successfully
+lts@POWERHOUSE:~/Documents/blog/test$ 
+```
 ### TW? - net simulation
 
 ```c
