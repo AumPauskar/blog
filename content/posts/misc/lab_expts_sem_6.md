@@ -770,7 +770,105 @@ Output ofO utthpeu tP aorfe ntth
 e Child
 lts@POWERHOUSE:~/Documents/blog/test$ 
 ```
+### TW7 - client server
 
+**Problem statement:** Implementing client server communication using socket programming that uses connection oriented prototcol at transport layer
+
+**Server code**
+```c
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <string.h>
+#define PORT 4444
+int main() {
+ int listenfd, connfd;
+ struct sockaddr_in servAddr, cliAddr;
+ socklen_t clilen;
+ char buffer[1024];
+ 
+ listenfd = socket(AF_INET, SOCK_STREAM, 0);
+ printf("[+] Server socket created successfully\n");
+ bzero(&servAddr, sizeof(servAddr));
+ servAddr.sin_family = AF_INET;
+ servAddr.sin_port = htons(PORT);
+ servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+ 
+ bind(listenfd, (struct sockaddr *) &servAddr, sizeof(servAddr));
+ printf("[+] Bind to PORT %d successful\n", PORT);
+ 
+ listen(listenfd, 5);
+ printf("[+] Listening...\n");
+ 
+ connfd = accept(listenfd, (struct sockaddr *) &cliAddr, 
+&clilen);
+ 
+ strcpy(buffer, "Hello World!");
+ send(connfd, buffer, strlen(buffer), 0);
+ printf("[+] Data sent to client: %s\n", buffer);
+ 
+ printf("[+] Closing the connection\n");
+ return 0;
+}
+```
+
+**Client code**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#define PORT 4444
+int main() {
+ int sockfd;
+ struct sockaddr_in servAddr;
+ char buffer[1024];
+ 
+ sockfd = socket(AF_INET, SOCK_STREAM, 0);
+ printf("[+] Client socket created successfully\n");
+ 
+ bzero(&servAddr, sizeof(servAddr));
+ servAddr.sin_family = AF_INET;
+ servAddr.sin_port = htons(PORT);
+ servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+ 
+ connect(sockfd, (struct sockaddr *) &servAddr, 
+sizeof(servAddr));
+ printf("[+] Connected to server\n");
+ 
+ recv(sockfd, buffer, 1024, 0);
+ printf("[+] Data received from server: %s\n", buffer);
+ printf("[+] Closing the connection\n");
+ return 0;
+}
+```
+
+**Output**
+```bash
+// server output
+lts@POWERHOUSE:~/Documents/blog/test$ ./server 
+[+] Server socket created successfully
+[+] Bind to PORT 4444 successful
+[+] Listening...
+[+] Data sent to client: Hello World!
+[+] Closing the connection
+lts@POWERHOUSE:~/Documents/blog/test$ 
+
+// client output
+lts@POWERHOUSE:~/Documents/blog/test$ ./client 
+[+] Client socket created successfully
+[+] Connected to server
+[+] Data received from server: Hello World!�
+[+] Closing the connection
+lts@POWERHOUSE:~/Documents/blog/test$ 
+```
 ### TW8 - NS3
 
 **Problem statement:** Write a C/C++ program to simulate a network application with 2 nodes using NS2/NS3.
@@ -856,7 +954,11 @@ main (int argc, char *argv[])
 }
 ```
 
-### TW8 
+### TW10
+
+**Problem statement:** Write a C/C++ program to simulate a network application with 4 nodes using NS2/NS3.
+```c
+```
 ## IOT
 ### Format
 1. Title
