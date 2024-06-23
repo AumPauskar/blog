@@ -29,241 +29,218 @@ UseHugoToc = true
 
 ## AIML
 
-- Depth first search code
+### TW1 - DFID
 
 ```py
-def iterative_deepening_dfs(start, target, max_depth):
-    depth = 0
-    print("Depth: ", depth)
-    bottom_reached = False
-    while not bottom_reached and depth <= max_depth:
-        result, path, bottom_reached = iterative_deepening_dfs_rec(
-            start, target, 0, depth, [])
-        if result is not None:
-            return result
-        depth += 1
-        print("Increasing depth to " + str(depth), "\n")
-    return None
+from collections import defaultdict
+
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.graph = defaultdict(list)
+
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+
+    def DLS(self, src, target, maxDepth, visited):
+        visited.append(src)  # Add the current node to visited
+        if src == target:
+            return True, visited
+
+        if maxDepth <= 0:
+            return False, visited
+
+        for i in self.graph[src]:
+            found, visited = self.DLS(i, target, maxDepth - 1, visited)
+            if found:
+                return True, visited
+        return False, visited
+
+    def IDDFS(self, src, target, maxDepth):
+        visited = []  # Initialize the visited list
+        for i in range(maxDepth + 1):  # Include maxDepth level
+            found, visited = self.DLS(src, target, i, visited)
+            if found:
+                return True, visited
+        return False, visited
+
+# Create a graph
+g = Graph(7)
+g.addEdge(0, 1)
+g.addEdge(0, 2)
+g.addEdge(1, 3)
+g.addEdge(1, 4)
+g.addEdge(2, 5)
+g.addEdge(2, 6)
+
+target = 6
+maxDepth = 3
+src = 0
+
+found, visited = g.IDDFS(src, target, maxDepth)
+if found:
+    print("Target is reachable from source within max depth")
+    print("Visited nodes:", visited)
+else:
+    print("Target is NOT reachable from source within max depth")
+    print("Visited nodes:", visited)
+```
+
+### TW2 - BFS
+```py
+# Python3 Program to print BFS traversal
+# from a given source vertex. BFS(int s)
+# traverses vertices reachable from s.
+
+from collections import defaultdict
 
 
-def iterative_deepening_dfs_rec(node, target, current_depth, max_depth, path):
-    print("Visiting Node " + str(node["value"]))
-    if node["value"] == target:
-        print("Found the node we're looking for!")
-        return node, path, True
-    if current_depth == max_depth:
-        if len(node["children"]) > 0:
-            return None, path, False
-        else:
-            return None, path, True
-    bottom_reached = True
-    for i in range(len(node["children"])):
-        result, path_copy, bottom_reached_rec = iterative_deepening_dfs_rec(node["children"][i], target, current_depth + 1,
-                                                                            max_depth, path + [node["value"]])
-        if result is not None:
-            return result, path_copy, True
-        bottom_reached = bottom_reached and bottom_reached_rec
-    return None, path, bottom_reached
+# This class represents a directed graph
+# using adjacency list representation
+class Graph:
+
+    # Constructor
+    def __init__(self):
+
+        # Default dictionary to store graph
+        self.graph = defaultdict(list)
+
+    # Function to add an edge to graph
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+
+    # Function to print a BFS of graph
+    def BFS(self, s):
+
+        # Mark all the vertices as not visited
+        visited = [False] * (max(self.graph) + 1)
+
+        # Create a queue for BFS
+        queue = []
+
+        # Mark the source node as
+        # visited and enqueue it
+        queue.append(s)
+        visited[s] = True
+
+        while queue:
+
+            # Dequeue a vertex from
+            # queue and print it
+            s = queue.pop(0)
+            print(s, end=" ")
+
+            # Get all adjacent vertices of the
+            # dequeued vertex s.
+            # If an adjacent has not been visited,
+            # then mark it visited and enqueue it
+            for i in self.graph[s]:
+                if not visited[i]:
+                    queue.append(i)
+                    visited[i] = True
+
+# Driver code
+if __name__ == '__main__':
+
+    # Create a graph given in
+    # the above diagram
+    g = Graph()
+    g.addEdge(0, 1)
+    g.addEdge(0, 2)
+    g.addEdge(1, 2)
+    g.addEdge(2, 0)
+    g.addEdge(2, 3)
+    g.addEdge(3, 3)
+
+    print("Following is Breadth First Traversal"
+        " (starting from vertex 2)")
+    g.BFS(2)
+
+# This code is contributed by Neelam Yadav
+
+# This code is modified by Susobhan Akhuli
+```
+
+### TW3 - A* algorithm
+```py
+import heapq
+# tw3
 
 
-def print_tree(node, prefix="", is_tail=True):
-    print(prefix + ("└── " if is_tail else "├── ") + str(node["value"]))
-    if node["children"]:
-        for i, child in enumerate(node["children"]):
-            print_tree(child, prefix + ("    " if is_tail else "│   "),
-                       i == len(node["children"]) - 1)
+def astar(graph, start, goal):
+    # priority queue to store nodes to be explored
+    open_list = [(0, start)]
+    # dictionary to store parent nodes
+    parents = {}
+    # dictionary to store g values (cost from start node to current node)
+    g_values = {node: float('inf') for node in graph}
+    g_values[start] = 0
+    # dictionary to store f values (estimated total cost from start to goal)
+    f_values = {node: float('inf') for node in graph}
+    f_values[start] = graph[start][1]
+
+    iteration = 0
+
+    while open_list:
+        # get node with minimum f value
+        current_f, current_node = heapq.heappop(open_list)
+
+        # check if current node is the goal
+        if current_node == goal:
+            path = []
+            while current_node in parents:
+                path.append(current_node)
+                current_node = parents[current_node]
+            path.append(start)
+            final_cost = g_values[goal]
+            print(f"\nFinal Cost: {final_cost}")
+            return path[::-1]
+
+        # explore neighbors
+        for child, cost in graph[current_node][0].items():
+            # calculate tentative g value
+            tentative_g = g_values[current_node] + cost
+            if tentative_g < g_values[child]:
+                # update parent and g values
+                parents[child] = current_node
+                g_values[child] = tentative_g
+                f_values[child] = tentative_g + graph[child][1]
+                # add child to open list
+                heapq.heappush(open_list, (f_values[child], child))
+
+        iteration += 1
+        print(f"\nIteration {iteration}:")
+        print("Current Path:", reconstruct_path(parents, start, current_node))
+        print(f"Evaluation Function Value for {current_node}: {f_values[current_node]}")
 
 
-tree = {
-    "value": 1,
-    "children": [
-        {
-            "value": 2,
-            "children": [
-                {"value": 5, "children": []},
-                {"value": 6, "children": []}
-            ]
-        },
-        {
-            "value": 3,
-            "children": [
-                {"value": 7, "children": []},
-                {"value": 8, "children": []}
-            ]
-        },
-        {
-            "value": 4,
-            "children": [
-                {"value": 9, "children": []},
-                {"value": 10, "children": []}
-            ]
-        }
-    ]
+# Function to reconstruct the path from start to goal using parent nodes
+def reconstruct_path(parents, start, goal):
+    path = [goal]
+    while goal != start:
+        goal = parents[goal]
+        path.append(goal)
+    return path[::-1]
+
+
+# Example usage:
+start_node = 'A'
+goal_node = 'G'
+graph = {
+    'A': [{'B': 5, 'C': 10}, 10],
+    'B': [{'D': 5, 'E': 5}, 7],
+    'C': [{'F': 5}, 7],
+    'D': [{'G': 10}, 3],
+    'E': [{'G': 7}, 2],
+    'F': [{'G': 8}, 1],
+    'G': [{}, 0]
 }
 
-print("\nTree structure:")
-print_tree(tree)
-
-target_value = 10
-print("\nTarget node:", target_value)
-
-max_depth = 2
-print("\n Max depth:", max_depth)
-result_node = iterative_deepening_dfs(tree, target_value, max_depth)
-if result_node:
-    print("\nTarget node found:", result_node["value"])
-else:
-    print("\nTarget node not found in the tree.")
+print("\nA* Search Path:")
+path = astar(graph, start_node, goal_node)
+print("Final Path:", path)
 ```
 
-- Deapth first search code
-```py
-import heapq
-
-class Node:
-    def __init__(self, value, priority):
-        self.value = value
-        self.priority = priority
-        self.visited = False
-        self.adjacents = []
-
-    def add_adjacent(self, node):
-        self.adjacents.append(node)
-
-class PriorityQueue:
-    def __init__(self):
-        self._queue = []
-        self._index = 0
-
-    def push(self, item, priority):
-        heapq.heappush(self._queue, (priority, self._index, item))
-        self._index += 1
-
-    def pop(self):
-        return heapq.heappop(self._queue)[-1]
-
-def best_first_search(start, target):
-    queue = PriorityQueue()
-    queue.push((start, [start.value]), start.priority)  # Push a tuple of the node and the path
-
-    while queue:
-        current_node, path = queue.pop()  # Unpack the node and the path
-        current_node.visited = True
-
-        if current_node == target:
-            return path  # Return the path if the target is found
-
-        for adj in current_node.adjacents:
-            if not adj.visited:
-                queue.push((adj, path + [adj.value]), adj.priority)  # Add the node to the path
-
-    return None  # Return None if no path is found
-
-
-
-# Create nodes
-nodeA = Node("A", 3)
-nodeB = Node("B", 1)
-nodeC = Node("C", 2)
-nodeD = Node("D", 1)
-nodeE = Node("E", 2)
-nodeF = Node("F", 3)
-
-# Add adjacents
-nodeA.add_adjacent(nodeB)
-nodeA.add_adjacent(nodeC)
-nodeB.add_adjacent(nodeD)
-nodeB.add_adjacent(nodeE)
-nodeC.add_adjacent(nodeF)
-
-# Perform search
-path = best_first_search(nodeA, nodeF)
-
-# Print result
-if path:
-    print("Path exists! Path:", ' -> '.join(path))
-else:
-    print("No path exists.")
-```
-
-- Dijkstra's algorithm
-```py
-import heapq
-
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.distance = float('inf')
-        self.visited = False
-        self.adjacents = []
-        self.previous = None
-
-    def add_adjacent(self, node, weight):
-        self.adjacents.append((node, weight))
-
-class PriorityQueue:
-    def __init__(self):
-        self._queue = []
-        self._index = 0
-
-    def push(self, item, priority):
-        heapq.heappush(self._queue, (priority, self._index, item))
-        self._index += 1
-
-    def pop(self):
-        return heapq.heappop(self._queue)[-1]
-
-    def is_empty(self):
-        return len(self._queue) == 0
-
-def dijkstra(start):
-    start.distance = 0
-    queue = PriorityQueue()
-    queue.push(start, start.distance)
-
-    while not queue.is_empty():
-        current_node = queue.pop()
-        current_node.visited = True
-
-        for adj, weight in current_node.adjacents:
-            if not adj.visited:
-                old_distance = adj.distance
-                new_distance = current_node.distance + weight
-
-                if new_distance < old_distance:
-                    adj.distance = new_distance
-                    adj.previous = current_node
-                    queue.push(adj, adj.distance)
-# Create nodes
-nodeA = Node("A")
-nodeB = Node("B")
-nodeC = Node("C")
-nodeD = Node("D")
-nodeE = Node("E")
-nodeF = Node("F")
-
-# Add adjacents and weights
-nodeA.add_adjacent(nodeB, 1)
-nodeA.add_adjacent(nodeC, 3)
-nodeB.add_adjacent(nodeD, 2)
-nodeB.add_adjacent(nodeE, 3)
-nodeC.add_adjacent(nodeF, 2)
-
-# Perform Dijkstra's algorithm
-dijkstra(nodeA)
-
-# Print shortest path to each node
-nodes = [nodeA, nodeB, nodeC, nodeD, nodeE, nodeF]
-for node in nodes:
-    path = []
-    current = node
-    while current is not None:
-        path.append(current.value)
-        current = current.previous
-    path.reverse()
-    print(' -> '.join(path))
-
-```
 ## USP
 
 ### Running a code
