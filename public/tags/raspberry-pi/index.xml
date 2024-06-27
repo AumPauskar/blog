@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2024 16:53:10 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Apr 2024 16:53:10 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using a plex server for media streaming</title>
       <link>https://aumpauskar.github.io/blog/posts/misc/plex/</link>
       <pubDate>Sun, 14 Apr 2024 16:53:10 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/misc/plex/</guid>
-      <description>Article shows how to use a raspberry pi as a plex server for media streaming</description>
+      <description>Using a plex server for media streaming What is a plex server? Plex is a client-server media player system and software suite comprising two main components. The Plex Media Server desktop application runs on Windows, macOS, and Linux-compatibles including some types of NAS devices. The server desktop application organizes video, audio, and photos from a user&amp;rsquo;s collections and from online services, enabling the players to access and stream the contents.</description>
     </item>
-    
     <item>
       <title>IOT Professional elective</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</link>
       <pubDate>Wed, 27 Mar 2024 12:26:43 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</guid>
-      <description>Set of notes and documentation regarding iot open elective of semester 6</description>
+      <description>IOT Professional elective IOT: A dynamic globan network infrastructure with a self-configuring capability based on standard protocols and inter operatble communication protocols where physical and virtual things have identities, physical attributes, and virtual personalities use intelligent interfaces and are seamlessly integrated into the information network often communicate data associated with users and external environment.&#xA;Charecteristics&#xA;Dynamic and self-configuring Self configuring Interopeable communications protocols Unique identity Integrated info network Block diagram of an iot device</description>
     </item>
-    
     <item>
       <title>Raspberry Pi</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
-      <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
+      <description>Raspberry Pi The raspberry pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries.&#xA;Setting up Raspberry Pi As standard the Raspberry Pi comes without an operating system. It depends on the user which operating system is installed within the computer. The operating system can be installed on the Raspberry Pi using the following steps:</description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
-      <description>A brief overview and commands based on the linux operating system</description>
+      <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.&#xA;Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.&#xA;File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
     </item>
-    
   </channel>
 </rss>

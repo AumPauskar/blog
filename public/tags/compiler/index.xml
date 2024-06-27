@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compiler on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
     <description>Recent content in Compiler on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regex via lex and yacc</title>
       <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
       <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
-      <description>Desc Text.</description>
+      <description>Regex via lex and yacc What is a regex? Regular expressions (regex) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), search(), and split() methods of String.&#xA;Why use lex and yacc? Lex and yacc are tools used to generate lexical analyzers and parsers. Lex reads an input stream specifying the lexical analyzer and outputs source code implementing the lexer in C.</description>
     </item>
-    
     <item>
       <title>Procedural programming in C</title>
       <link>https://aumpauskar.github.io/blog/posts/c/c/</link>
       <pubDate>Mon, 26 Feb 2024 11:43:27 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/c/c/</guid>
-      <description>A brief introduction to procedural programming in C</description>
+      <description>Procedural programming in C About the tutorial This tutorial is about procedural programming in C. We are going to use gcc within a linux environment to compile and run our programs. If you don&amp;rsquo;t want to install any compilers on the computer, you can use an online compiler like repl.it, or onlinegdb.&#xA;Understanding the basics What is C? C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.</description>
     </item>
-    
   </channel>
 </rss>

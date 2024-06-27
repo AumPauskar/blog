@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apache on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/apache/</link>
     <description>Recent content in Apache on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 12:17:46 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 12:17:46 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big data and hadoop ecosystem</title>
       <link>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
-      <description>Basic concepts of big data and the hadoop ecosystem</description>
+      <description>Big data Just data Structured data: data that has a defined length and format for each record. It&amp;rsquo;s stored in a fixed format such as a relational database or spreadsheet. It&amp;rsquo;s easy to search and analyze. It&amp;rsquo;s used for transactional data. Unstructured data: data that has an unknown length and format. It&amp;rsquo;s stored in a free format such as a text file. It&amp;rsquo;s difficult to search and analyze. It&amp;rsquo;s used for non-transactional data.</description>
     </item>
-    
   </channel>
 </rss>

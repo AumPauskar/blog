@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded Systems on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/embedded-systems/</link>
     <description>Recent content in Embedded Systems on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Dec 2023 21:29:49 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/embedded-systems/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Dec 2023 21:29:49 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/embedded-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raspberry Pi</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
-      <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
+      <description>Raspberry Pi The raspberry pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries.&#xA;Setting up Raspberry Pi As standard the Raspberry Pi comes without an operating system. It depends on the user which operating system is installed within the computer. The operating system can be installed on the Raspberry Pi using the following steps:</description>
     </item>
-    
     <item>
       <title>Working with ARM microcontroller using Keil uVision4</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
-      <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
+      <description>ARM Basics Advanced RISC Machine (ARM) is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. Arm Holdings develops the architecture and licenses it to other companies, who design their own products that implement one of those architectures‍—‌including systems-on-chips (SoC) and systems-on-modules (SoM) that incorporate memory, interfaces, radios, etc. It also designs cores that implement this instruction set and licenses these designs to a number of companies that incorporate those core designs into their own products.</description>
     </item>
-    
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
-      <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
+      <description>Embedded C Embedded C is used in embedded systems and iot deviced such as Arduino and mico IC&amp;rsquo;s. To emulate this we can use Keil, however this can be only run on Windows, to run this on linux based distros use wine.&#xA;Procedure to run The following are the steps to run a code on Keil Note: Here we are working on intel 8051AH microcontroller&#xA;Install and run keil If you are on a windows system you can run the exe file locally, if you are on a linux machine you can run keil through wine and it will function just like you are running it on windows natively.</description>
     </item>
-    
     <item>
       <title>Arduino control with peripherals</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/arduino/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:04 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/iot/arduino/</guid>
-      <description>Some programs and basic stuff on Arduino</description>
+      <description>Arduino 14 IO, 6//&#xA;ESP 8266 wifi&#xA;Sketch - name of the program Setup - IO setup Loop - while loop DHT 11 sol moisture SR04 ultrasonic HC05 bluetooth ESP 01 wifi&#xA;Q. LED blink 1 2 3 4 5 6 7 8 9 10 11 const int ledVar = 13; void setup() { pinMode(ledVar, OUTPUT); } void loop() { digitalWrite(ledVar, HIGH); delay(1000); digitalWrite(ledVar, LOW); delay(1000); } Q. Interface dht 11 with arduino uno and display humidity and temperature on serial monitor 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #include &amp;lt;dht.</description>
     </item>
-    
   </channel>
 </rss>

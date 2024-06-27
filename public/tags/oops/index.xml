@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oops on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/oops/</link>
     <description>Recent content in Oops on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Nov 2023 13:21:20 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 13:21:20 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OOPS with Python and packages</title>
       <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
-      <description>A comprehensive guide to OOPS in python and packages</description>
+      <description>Python Chapter summary - Unit 1 Unit 1 Python Fundamentals: An Introduction to Python programming: Introduction to Python, IDLE to develop programs; How to write your first programs: Basic coding skills, data types and variables, numeric data, string data, five of the Python functions; Control statements: Boolean expressions, selection structure, iteration structure; Define and use Functions and Modules: define and use functions, more skills for defining and using functions and modules, create and use modules, standard modules Contents What is python?</description>
     </item>
-    
     <item>
       <title>OOPS with Java</title>
       <link>https://aumpauskar.github.io/blog/posts/java/javafull/</link>
       <pubDate>Thu, 16 Nov 2023 10:35:36 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/java/javafull/</guid>
-      <description>Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm
-FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().</description>
+      <description>Java tutorial Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm&#xA;FYI The object class is the root of all classes Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().</description>
     </item>
-    
     <item>
       <title>Virtualenv</title>
       <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
-      <description>A comprehensive guide to OOPS in python and packages</description>
+      <description>Python virtual environment Python virtual environemt is a program that aids in creating a serperate virtual environment for each project&#xA;Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip install virtualenv Creating virtual environent Windows - cmd/powershell&#xA;1 py -m venv {your_env_name} Linux&#xA;1 python3 -m venv myworld Activating virtual environemt Windows - cmd&#xA;1 myworld\Scripts\activate.bat Windows - powershell&#xA;1 myworld\Scripts\activate.ps1 Linux&#xA;1 source myworld/bin/activate Downloading required packages 1 py -m pip install {required_package} </description>
     </item>
-    
   </channel>
 </rss>

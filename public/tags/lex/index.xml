@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lex on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/lex/</link>
     <description>Recent content in Lex on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/lex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/lex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regex via lex and yacc</title>
       <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
       <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
-      <description>Desc Text.</description>
+      <description>Regex via lex and yacc What is a regex? Regular expressions (regex) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), search(), and split() methods of String.&#xA;Why use lex and yacc? Lex and yacc are tools used to generate lexical analyzers and parsers. Lex reads an input stream specifying the lexical analyzer and outputs source code implementing the lexer in C.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheatsheet on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/cheatsheet/</link>
     <description>Recent content in Cheatsheet on Aum&#39;s blogging site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Nov 2023 09:46:19 +0530</lastBuildDate><atom:link href="https://aumpauskar.github.io/blog/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Nov 2023 09:46:19 +0530</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Extended markdown cheatsheet with KaTeX</title>
       <link>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:19 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
-      <description>A basic cheatsheet of markdown with KaTeX</description>
+      <description>Extended Markdown Cheatsheet Heading 1 2 3 4 5 6 # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 Paragraph 1 This is a paragraph. Code snippet 1 &amp;#39;print(&amp;#34;Hello World&amp;#34;)&amp;#39; block of code&#xA;1 2 3 &amp;#39;&amp;#39;&amp;#39; print(&amp;#34;Hello World&amp;#34;) &amp;#39;&amp;#39;&amp;#39; code within the clock of code can be selectively highlighted&#xA;1 2 3 &amp;#39;&amp;#39;&amp;#39;python print(&amp;#34;Hello World&amp;#34;) &amp;#39;&amp;#39;&amp;#39; Emphasis 1 2 3 4 5 *This text will be italic* _This will also be italic_ **This text will be bold** __This will also be bold__ _You **can** combine them_ Table 1 2 3 4 | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | Bulletpoints 1 2 3 4 - Bulletpoint 1 - Bulletpoint 2 - Bulletpoint 2.</description>
     </item>
-    
     <item>
       <title>Git and GitHub cheatsheet</title>
       <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
-      <description>A basic cheatsheet of git and github commands</description>
+      <description>Git / github cheatsheet Installation of git Download git from here or use on debian based linux 1 2 sudo apt update sudo apt install git Check if git is installed 1 git --version Configure git 1 2 git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;Your email&amp;#34; (Optional) Change the default brach name from master to main 1 git config --global init.defaultBranch main Configuring SSH keys to github Run these commands on the terminal 1 2 3 4 ssh-keygen -t ed25519 -C &amp;#34;$Your email&amp;#34; eval &amp;#34;$(ssh-agent -s)&amp;#34; ssh-add ~/.</description>
     </item>
-    
     <item>
       <title>Database management and SQL</title>
       <link>https://aumpauskar.github.io/blog/posts/dbms/sql/</link>
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
-      
       <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
-      <description>A basic cheatsheet of database management and SQL</description>
+      <description>Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.&#xA;Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke</description>
     </item>
-    
   </channel>
 </rss>
