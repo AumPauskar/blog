@@ -58,17 +58,20 @@ MongoDB stores data in the form of documents. A document is a data structure com
 ## Commands 
 
 ### Basics
-- To launch mongoDB from the terminal, type `mongosh` and hit enter. This should open a mongo shell provided you have installed it and rebooted your computer.
-- To show all the existing databases on the server, type `show dbs`.
-- To create a new database, type `use <database_name>`. This will create a new database if it doesn't already exist. If the database already exists, it will switch to that database.
-- Using `cls` will clear the screen. 
-- To see the current database you are working on, type `db`. However it is also reflected in the shell prompt always.
-- Using `exit` will exit the mongo shell.
-- Using `show collections` will show all the collections in the current database.
+- **Launching mongo:** To launch mongoDB from the terminal, type `mongosh` and hit enter. This should open a mongo shell provided you have installed it and rebooted your computer.
+- **Showing databases:** To show all the existing databases on the server, type `show dbs`.
+- **Creating a database:** To create a new database, type `use <database_name>`. This will create a new database if it doesn't already exist. If the database already exists, it will switch to that database.
+- **Clearing screen:** Using `cls` will clear the screen. 
+- **Showing current database:** To see the current database you are working on, type `db`. However it is also reflected in the shell prompt always.
+- **Exiting:** Using `exit` will exit the mongo shell.
+- **Collections:** Using `show collections` will show all the collections in the current database.
+
+### What are collections and documents?
+- **Collections:** A collection is a group of MongoDB documents. It is the equivalent of an RDBMS table. A collection exists within a single database. Collections do not enforce a schema. Documents within a collection can have different fields. Typically, all documents in a collection are of similar or related purpose.
+- **Documents:** A document is a set of key-value pairs. Documents have dynamic schema. Dynamic schema means that documents in the same collection do not need to have the same set of fields or structure, and common fields in a collection's documents may hold different types of data.
 
 ### CRUD Operations
-- Create: To insert a document into a collection, use the `insertOne()` method. For example, `db.collection_name.insertOne({field1: value1, field2: value2})`.
-- Read: To read documents from a collection, use the `find()` method. For example, `db.collection_name.find()`.
-- Update: To update a document in a collection, use the `updateOne()` method. For example, `db.collection_name.updateOne({field1: value1}, {$set: {field2: value2}})`.
-- Delete:  To delete a document from a collection, use the `deleteOne()` method. For example, `db.collection_name.deleteOne({field1: value1})`.
-
+- **Create:** To insert a document into a collection, use the `insertOne()` method. For example, `db.collection_name.insertOne({field1: value1, field2: value2})`.
+- **Read:** To read documents from a collection, use the `find()` method. For example, `db.collection_name.find()`.
+- **Update:** To update a document in a collection, use the `updateOne()` method. For example, `db.collection_name.updateOne({field1: value1}, {$set: {field2: value2}})`.
+- **Delete:**  To delete a document from a collection, use the `deleteOne()` method. For example, `db.collection_name.deleteOne({field1: value1})`.

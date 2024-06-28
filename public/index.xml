@@ -6,7 +6,7 @@
     <description>Recent content on Aum&#39;s blogging site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2024 23:21:23 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks and note to users</title>
@@ -14,6 +14,13 @@
       <pubDate>Wed, 17 Apr 2024 23:00:22 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/misc/intro/</guid>
       <description>Bookmarks and note to users A note for the users of this blog&#xA;Most visited pages Sem 6 lab expts 😭😅 Docker MERN Lab expts 😭😅 Computer networks Note to users Find any issues? Want to suggest changes? Feel free to do so by creating a GitHub pull request the button below.</description>
+    </item>
+    <item>
+      <title>MongoDB</title>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/mongo/</link>
+      <pubDate>Thu, 27 Jun 2024 23:21:23 +0530</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/mongo/</guid>
+      <description>MongoDB Introduction NoSQL databases are non-relational databases that are used to store and retrieve data. MongoDB is a popular NoSQL database that is used to store data in the form of documents.&#xA;Feature SQL (Relational Databases) NoSQL (Non-Relational Databases) Schema Fixed schema Dynamic schema for unstructured data Scalability Vertical scalability (scale-up by adding more powerful CPU, RAM, SSD) Horizontal scalability (scale-out by adding more servers) Complexity Tables with rows and columns, complex queries with JOINs Document, key-value, wide-column, or graph formats, simpler queries Transactions ACID properties (Atomicity, Consistency, Isolation, Durability) for reliable transactions BASE properties (Basically Available, Soft state, Eventual consistency) less strict than ACID Development Model Mature, with established standards More flexible and evolving rapidly Use Cases Well-suited for complex queries and transactions, e.</description>
     </item>
     <item>
       <title>Regex via lex and yacc</title>

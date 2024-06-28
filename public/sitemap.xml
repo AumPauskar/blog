@@ -6,7 +6,28 @@
     <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/</loc>
-    <lastmod>2024-06-06T08:55:38+05:30</lastmod>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/database/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/dbms/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/dbms/mongo/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/nosql/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/compiler/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
@@ -17,16 +38,10 @@
     <loc>https://aumpauskar.github.io/blog/tags/parser/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
-    <lastmod>2024-06-06T08:55:38+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/regex/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</loc>
-    <lastmod>2024-06-06T08:55:38+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/yacc/</loc>
@@ -296,14 +311,8 @@
     <loc>https://aumpauskar.github.io/blog/tags/mapreduce/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/nosql/</loc>
-    <lastmod>2023-12-05T12:17:46+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</loc>
     <lastmod>2023-12-03T20:40:58+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
-    <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
@@ -392,13 +401,7 @@
     <loc>https://aumpauskar.github.io/blog/tags/static-site-generators/</loc>
     <lastmod>2023-11-17T09:19:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/database/</loc>
-    <lastmod>2023-11-16T14:41:25+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dbms/sql/</loc>
-    <lastmod>2023-11-16T14:41:25+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/dbms/</loc>
     <lastmod>2023-11-16T14:41:25+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/sql/</loc>

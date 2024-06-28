@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2024 23:21:23 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheatsheet</title>
+      <link>https://aumpauskar.github.io/blog/tags/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://aumpauskar.github.io/blog/tags/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dbms</title>
+      <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/dbms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nosql</title>
+      <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/nosql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Compiler</title>
       <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
@@ -534,20 +562,6 @@
       <description></description>
     </item>
     <item>
-      <title>Nosql</title>
-      <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/nosql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cheatsheet</title>
-      <link>https://aumpauskar.github.io/blog/tags/cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/cheatsheet/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Katex</title>
       <link>https://aumpauskar.github.io/blog/tags/katex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -685,20 +699,6 @@
       <link>https://aumpauskar.github.io/blog/tags/static-site-generators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/static-site-generators/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://aumpauskar.github.io/blog/tags/database/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dbms</title>
-      <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/dbms/</guid>
       <description></description>
     </item>
     <item>
