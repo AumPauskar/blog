@@ -72,6 +72,9 @@ MongoDB stores data in the form of documents. A document is a data structure com
 
 ### CRUD Operations
 - **Create:** To insert a document into a collection, use the `insertOne()` method. For example, `db.collection_name.insertOne({field1: value1, field2: value2})`.
+    - **Insert Many:** To insert multiple documents into a collection, use the `insertMany()` method. For example, `db.collection_name.insertMany([{field1: value1, field2: value2}, {field1: value3, field2: value4}])`.
 - **Read:** To read documents from a collection, use the `find()` method. For example, `db.collection_name.find()`.
+    - **Limit:** To limit the number of documents returned, use the `limit()` method. For example, `db.collection_name.find().limit(5)`.
+    - **Sort:** To sort the documents returned, use the `sort()` method. For example, `db.collection_name.find().sort({field1: 1})` (ascending) or `db.collection_name.find().sort({field1: -1})` (descending).
 - **Update:** To update a document in a collection, use the `updateOne()` method. For example, `db.collection_name.updateOne({field1: value1}, {$set: {field2: value2}})`.
 - **Delete:**  To delete a document from a collection, use the `deleteOne()` method. For example, `db.collection_name.deleteOne({field1: value1})`.
