@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Python on Aum&#39;s blogging site</title>
+    <title>python on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/python/</link>
-    <description>Recent content in Python on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in python on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Dec 2023 22:56:49 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,35 +13,35 @@
       <link>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</link>
       <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</guid>
-      <description>Leetcode solutions Problem 1: Two Sum 1 2 3 4 5 6 7 8 9 10 11 12 class Solution(object): def twoSum(self, nums, target): &amp;#34;&amp;#34;&amp;#34; :type nums: List[int] :type target: int :rtype: List[int] &amp;#34;&amp;#34;&amp;#34; for i in range(0, len(nums)): for j in range(0, len(nums)): if nums[i]+nums[j] == target and i!=j: op = [i,j] return op Problem 2: Roman to integer 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 class Solution(object): def romanToInt(self, s): &amp;#34;&amp;#34;&amp;#34; :type s: str :rtype: int &amp;#34;&amp;#34;&amp;#34; roman = {&amp;#39;I&amp;#39;:1,&amp;#39;V&amp;#39;:5,&amp;#39;X&amp;#39;:10,&amp;#39;L&amp;#39;:50,&amp;#39;C&amp;#39;:100,&amp;#39;D&amp;#39;:500,&amp;#39;M&amp;#39;:1000,&amp;#39;IV&amp;#39;:4,&amp;#39;IX&amp;#39;:9,&amp;#39;XL&amp;#39;:40,&amp;#39;XC&amp;#39;:90,&amp;#39;CD&amp;#39;:400,&amp;#39;CM&amp;#39;:900} i = 0 num = 0 while i &amp;lt; len(s): if i+1&amp;lt;len(s) and s[i:i+2] in roman: num+=roman[s[i:i+2]] i+=2 else: #print(i) num+=roman[s[i]] i+=1 return num Problem 3: Pallindrome 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 class Solution(object): def isPalindrome(self, x): &amp;#34;&amp;#34;&amp;#34; :type x: int :rtype: bool &amp;#34;&amp;#34;&amp;#34; if x &amp;lt; 0: return False # Store the number in a variable number = x # This will store the reverse of the number reverse = 0 while number: reverse = reverse * 10 + number % 10 number //= 10 return x == reverse Problem 4: Longest Common Prefix 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 class Solution(object): def longestCommonPrefix(self, strs): &amp;#34;&amp;#34;&amp;#34; :type strs: List[str] :rtype: str &amp;#34;&amp;#34;&amp;#34; size = len(strs) # if size is 0, return empty string if (size == 0): return &amp;#34;&amp;#34; if (size == 1): return strs[0] # sort the array of strings strs.</description>
+      <description>Solutions to some leetcode problems in python</description>
     </item>
     <item>
       <title>Image analysis theory</title>
       <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</link>
       <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</guid>
-      <description>Image processing Theory jargon Difference between supervised and unsupervised learning Criteria Supervised Learning Unsupervised Learning Data Uses labeled data for training. Uses unlabeled data for training. Goal Predict a label for new data based on past observations. Discover hidden patterns or intrinsic structures within the data. Examples Classification, Regression Clustering, Association Complexity Less complex as it has a clear goal. More complex due to the lack of clear goal. Usage When the outcome of the problem is known.</description>
+      <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     <item>
       <title>Image analysis with pytorch</title>
       <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</link>
       <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</guid>
-      <description>Image Analysis using pytorch Prerequisites This project is built using python in Ubuntu (WSL) and you&amp;rsquo;ll need to install the following:&#xA;Any bash terminal (one of the following) Conda WSL Mac OS Any flavour of Linux Python 3 (I&amp;rsquo;m using 3.10.12) 1 2 sudo apt update sudo apt install python3 Pip 1 2 sudo apt update sudo apt install python3-pip Packages Note: Since I&amp;rsquo;m using a computer with a CUDA compatable NVIDIA GPU, I&amp;rsquo;ll be using the GPU version of pytorch.</description>
+      <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     <item>
       <title>OOPS with Python and packages</title>
       <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
-      <description>Python Chapter summary - Unit 1 Unit 1 Python Fundamentals: An Introduction to Python programming: Introduction to Python, IDLE to develop programs; How to write your first programs: Basic coding skills, data types and variables, numeric data, string data, five of the Python functions; Control statements: Boolean expressions, selection structure, iteration structure; Define and use Functions and Modules: define and use functions, more skills for defining and using functions and modules, create and use modules, standard modules Contents What is python?</description>
+      <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     <item>
       <title>Virtualenv</title>
       <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
-      <description>Python virtual environment Python virtual environemt is a program that aids in creating a serperate virtual environment for each project&#xA;Requiremnets Python 3 Pip Steps Installing virtual environemnt package 1 pip install virtualenv Creating virtual environent Windows - cmd/powershell&#xA;1 py -m venv {your_env_name} Linux&#xA;1 python3 -m venv myworld Activating virtual environemt Windows - cmd&#xA;1 myworld\Scripts\activate.bat Windows - powershell&#xA;1 myworld\Scripts\activate.ps1 Linux&#xA;1 source myworld/bin/activate Downloading required packages 1 py -m pip install {required_package} </description>
+      <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
   </channel>
 </rss>

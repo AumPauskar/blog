@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mern on Aum&#39;s blogging site</title>
+    <title>mern on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/mern/</link>
-    <description>Recent content in Mern on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in mern on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/mern/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
-      <description>Docker What is docker Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.&#xA;Why docker Consistency: Docker provides a consistent environment for your application from development all the way through production. Isolation: Docker containers are completely isolated. This means that your application will run the same way no matter where it is deployed.</description>
+      <description>A brief introduction to docker and its installation.</description>
     </item>
     <item>
       <title>Mern tutorial</title>
       <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
-      <description>MERN Stack Tutorial 01-Running express js Preface Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is an open-source framework developed and maintained by the Node.js foundation. It is designed for building web applications and APIs. It is the standard server framework for Node.js.&#xA;Before starting with express js, ensure that you have node.js, npm and a code editor installed on your system.</description>
+      <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
     </item>
   </channel>
 </rss>

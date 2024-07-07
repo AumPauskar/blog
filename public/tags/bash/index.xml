@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Bash on Aum&#39;s blogging site</title>
+    <title>bash on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/bash/</link>
-    <description>Recent content in Bash on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in bash on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Nov 2023 12:52:03 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/bash/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
-      <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.&#xA;Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.&#xA;File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
+      <description>A brief overview and commands based on the linux operating system</description>
     </item>
   </channel>
 </rss>

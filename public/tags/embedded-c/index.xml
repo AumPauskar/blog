@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Embedded C on Aum&#39;s blogging site</title>
+    <title>embedded c on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/embedded-c/</link>
-    <description>Recent content in Embedded C on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in embedded c on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Nov 2023 10:37:42 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/embedded-c/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
-      <description>Embedded C Embedded C is used in embedded systems and iot deviced such as Arduino and mico IC&amp;rsquo;s. To emulate this we can use Keil, however this can be only run on Windows, to run this on linux based distros use wine.&#xA;Procedure to run The following are the steps to run a code on Keil Note: Here we are working on intel 8051AH microcontroller&#xA;Install and run keil If you are on a windows system you can run the exe file locally, if you are on a linux machine you can run keil through wine and it will function just like you are running it on windows natively.</description>
+      <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
     </item>
   </channel>
 </rss>

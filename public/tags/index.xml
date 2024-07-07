@@ -1,316 +1,330 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/</link>
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jun 2024 23:21:23 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 11:26:50 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cheatsheet</title>
-      <link>https://aumpauskar.github.io/blog/tags/cheatsheet/</link>
+      <title>dualboot</title>
+      <link>https://aumpauskar.github.io/blog/tags/dualboot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/cheatsheet/</guid>
+      <guid>https://aumpauskar.github.io/blog/tags/dualboot/</guid>
       <description></description>
     </item>
     <item>
-      <title>Database</title>
-      <link>https://aumpauskar.github.io/blog/tags/database/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dbms</title>
-      <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/dbms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nosql</title>
-      <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/nosql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Compiler</title>
-      <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/compiler/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lex</title>
-      <link>https://aumpauskar.github.io/blog/tags/lex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/lex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Parser</title>
-      <link>https://aumpauskar.github.io/blog/tags/parser/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/parser/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Regex</title>
-      <link>https://aumpauskar.github.io/blog/tags/regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/regex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yacc</title>
-      <link>https://aumpauskar.github.io/blog/tags/yacc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/yacc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Multimedia</title>
-      <link>https://aumpauskar.github.io/blog/tags/multimedia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/multimedia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Plex</title>
-      <link>https://aumpauskar.github.io/blog/tags/plex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/plex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Raspberry Pi</title>
-      <link>https://aumpauskar.github.io/blog/tags/raspberry-pi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Server</title>
-      <link>https://aumpauskar.github.io/blog/tags/server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/server/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Container</title>
-      <link>https://aumpauskar.github.io/blog/tags/container/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/container/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>https://aumpauskar.github.io/blog/tags/devops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://aumpauskar.github.io/blog/tags/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Expressjs</title>
-      <link>https://aumpauskar.github.io/blog/tags/expressjs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/expressjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fullstack</title>
-      <link>https://aumpauskar.github.io/blog/tags/fullstack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/fullstack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernates</title>
-      <link>https://aumpauskar.github.io/blog/tags/kubernates/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/kubernates/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
+      <title>linux</title>
       <link>https://aumpauskar.github.io/blog/tags/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mern</title>
-      <link>https://aumpauskar.github.io/blog/tags/mern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/mern/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://aumpauskar.github.io/blog/tags/nodejs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Os</title>
+      <title>os</title>
       <link>https://aumpauskar.github.io/blog/tags/os/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/os/</guid>
       <description></description>
     </item>
     <item>
-      <title>Web</title>
+      <title>windows</title>
+      <link>https://aumpauskar.github.io/blog/tags/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cheatsheet</title>
+      <link>https://aumpauskar.github.io/blog/tags/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>database</title>
+      <link>https://aumpauskar.github.io/blog/tags/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>dbms</title>
+      <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/dbms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nosql</title>
+      <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/nosql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>compiler</title>
+      <link>https://aumpauskar.github.io/blog/tags/compiler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/compiler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>lex</title>
+      <link>https://aumpauskar.github.io/blog/tags/lex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/lex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>parser</title>
+      <link>https://aumpauskar.github.io/blog/tags/parser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/parser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>regex</title>
+      <link>https://aumpauskar.github.io/blog/tags/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/regex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>yacc</title>
+      <link>https://aumpauskar.github.io/blog/tags/yacc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/yacc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>multimedia</title>
+      <link>https://aumpauskar.github.io/blog/tags/multimedia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/multimedia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>plex</title>
+      <link>https://aumpauskar.github.io/blog/tags/plex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/plex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>raspberry pi</title>
+      <link>https://aumpauskar.github.io/blog/tags/raspberry-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>server</title>
+      <link>https://aumpauskar.github.io/blog/tags/server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>container</title>
+      <link>https://aumpauskar.github.io/blog/tags/container/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/container/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>devops</title>
+      <link>https://aumpauskar.github.io/blog/tags/devops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>docker</title>
+      <link>https://aumpauskar.github.io/blog/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>expressjs</title>
+      <link>https://aumpauskar.github.io/blog/tags/expressjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/expressjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>fullstack</title>
+      <link>https://aumpauskar.github.io/blog/tags/fullstack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/fullstack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>kubernates</title>
+      <link>https://aumpauskar.github.io/blog/tags/kubernates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/kubernates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mern</title>
+      <link>https://aumpauskar.github.io/blog/tags/mern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/mern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nodejs</title>
+      <link>https://aumpauskar.github.io/blog/tags/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>web</title>
       <link>https://aumpauskar.github.io/blog/tags/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/web/</guid>
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
+      <title>javascript</title>
       <link>https://aumpauskar.github.io/blog/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mongodb</title>
+      <title>mongodb</title>
       <link>https://aumpauskar.github.io/blog/tags/mongodb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/mongodb/</guid>
       <description></description>
     </item>
     <item>
-      <title>React</title>
+      <title>react</title>
       <link>https://aumpauskar.github.io/blog/tags/react/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/react/</guid>
       <description></description>
     </item>
     <item>
-      <title>Arduino</title>
+      <title>arduino</title>
       <link>https://aumpauskar.github.io/blog/tags/arduino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/arduino/</guid>
       <description></description>
     </item>
     <item>
-      <title>Iot</title>
+      <title>iot</title>
       <link>https://aumpauskar.github.io/blog/tags/iot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/iot/</guid>
       <description></description>
     </item>
     <item>
-      <title>Sem6</title>
+      <title>sem6</title>
       <link>https://aumpauskar.github.io/blog/tags/sem6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/sem6/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ai</title>
+      <title>ai</title>
       <link>https://aumpauskar.github.io/blog/tags/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/ai/</guid>
       <description></description>
     </item>
     <item>
-      <title>Artificial Intelligence</title>
+      <title>artificial intelligence</title>
       <link>https://aumpauskar.github.io/blog/tags/artificial-intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
-      <title>Expts</title>
+      <title>expts</title>
       <link>https://aumpauskar.github.io/blog/tags/expts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/expts/</guid>
       <description></description>
     </item>
     <item>
-      <title>Lab</title>
+      <title>lab</title>
       <link>https://aumpauskar.github.io/blog/tags/lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/lab/</guid>
       <description></description>
     </item>
     <item>
-      <title>Machine Learning</title>
+      <title>machine learning</title>
       <link>https://aumpauskar.github.io/blog/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ml</title>
+      <title>ml</title>
       <link>https://aumpauskar.github.io/blog/tags/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/ml/</guid>
       <description></description>
     </item>
     <item>
-      <title>Network</title>
+      <title>network</title>
       <link>https://aumpauskar.github.io/blog/tags/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/network/</guid>
       <description></description>
     </item>
     <item>
-      <title>Shell</title>
+      <title>shell</title>
       <link>https://aumpauskar.github.io/blog/tags/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/shell/</guid>
       <description></description>
     </item>
     <item>
-      <title>C</title>
+      <title>c</title>
       <link>https://aumpauskar.github.io/blog/tags/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/c/</guid>
       <description></description>
     </item>
     <item>
-      <title>C#</title>
-      <link>https://aumpauskar.github.io/blog/tags/c%23/</link>
+      <title>c#</title>
+      <link>https://aumpauskar.github.io/blog/tags/c#/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/c%23/</guid>
+      <guid>https://aumpauskar.github.io/blog/tags/c#/</guid>
       <description></description>
     </item>
     <item>
-      <title>C&#43;&#43;</title>
+      <title>c&#43;&#43;</title>
       <link>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cpp</title>
+      <title>cpp</title>
       <link>https://aumpauskar.github.io/blog/tags/cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
-      <title>Procedural Programming</title>
+      <title>procedural programming</title>
       <link>https://aumpauskar.github.io/blog/tags/procedural-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/procedural-programming/</guid>
       <description></description>
     </item>
     <item>
-      <title>Programming</title>
+      <title>programming</title>
       <link>https://aumpauskar.github.io/blog/tags/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/programming/</guid>
@@ -324,427 +338,420 @@
       <description></description>
     </item>
     <item>
-      <title>Cad</title>
+      <title>cad</title>
       <link>https://aumpauskar.github.io/blog/tags/cad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/cad/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cam</title>
+      <title>cam</title>
       <link>https://aumpauskar.github.io/blog/tags/cam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/cam/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cnc</title>
+      <title>cnc</title>
       <link>https://aumpauskar.github.io/blog/tags/cnc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/cnc/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fusion360</title>
+      <title>fusion360</title>
       <link>https://aumpauskar.github.io/blog/tags/fusion360/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/fusion360/</guid>
       <description></description>
     </item>
     <item>
-      <title>Machineing</title>
+      <title>machineing</title>
       <link>https://aumpauskar.github.io/blog/tags/machineing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/machineing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Certificate</title>
+      <title>certificate</title>
       <link>https://aumpauskar.github.io/blog/tags/certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/certificate/</guid>
       <description></description>
     </item>
     <item>
-      <title>Computer_network</title>
+      <title>computer_network</title>
       <link>https://aumpauskar.github.io/blog/tags/computer_network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/computer_network/</guid>
       <description></description>
     </item>
     <item>
-      <title>X509</title>
+      <title>x509</title>
       <link>https://aumpauskar.github.io/blog/tags/x509/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/x509/</guid>
       <description></description>
     </item>
     <item>
-      <title>Dsa</title>
+      <title>dsa</title>
       <link>https://aumpauskar.github.io/blog/tags/dsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/dsa/</guid>
       <description></description>
     </item>
     <item>
-      <title>Leetcode</title>
+      <title>leetcode</title>
       <link>https://aumpauskar.github.io/blog/tags/leetcode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
-      <title>Python</title>
+      <title>python</title>
       <link>https://aumpauskar.github.io/blog/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/python/</guid>
       <description></description>
     </item>
     <item>
-      <title>Operating Systems</title>
+      <title>operating systems</title>
       <link>https://aumpauskar.github.io/blog/tags/operating-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/operating-systems/</guid>
       <description></description>
     </item>
     <item>
-      <title>Unix</title>
+      <title>unix</title>
       <link>https://aumpauskar.github.io/blog/tags/unix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/unix/</guid>
       <description></description>
     </item>
     <item>
-      <title>Embedded Systems</title>
+      <title>embedded systems</title>
       <link>https://aumpauskar.github.io/blog/tags/embedded-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/embedded-systems/</guid>
       <description></description>
     </item>
     <item>
-      <title>Microcontrollers</title>
+      <title>microcontrollers</title>
       <link>https://aumpauskar.github.io/blog/tags/microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/microcontrollers/</guid>
       <description></description>
     </item>
     <item>
-      <title>Microprocessors</title>
+      <title>microprocessors</title>
       <link>https://aumpauskar.github.io/blog/tags/microprocessors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/microprocessors/</guid>
       <description></description>
     </item>
     <item>
-      <title>Css</title>
+      <title>css</title>
       <link>https://aumpauskar.github.io/blog/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/css/</guid>
       <description></description>
     </item>
     <item>
-      <title>Frontend</title>
+      <title>frontend</title>
       <link>https://aumpauskar.github.io/blog/tags/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/frontend/</guid>
       <description></description>
     </item>
     <item>
-      <title>Html</title>
+      <title>html</title>
       <link>https://aumpauskar.github.io/blog/tags/html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/html/</guid>
       <description></description>
     </item>
     <item>
-      <title>Node</title>
+      <title>node</title>
       <link>https://aumpauskar.github.io/blog/tags/node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/node/</guid>
       <description></description>
     </item>
     <item>
-      <title>Npm</title>
+      <title>npm</title>
       <link>https://aumpauskar.github.io/blog/tags/npm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/npm/</guid>
       <description></description>
     </item>
     <item>
-      <title>Webdev</title>
+      <title>webdev</title>
       <link>https://aumpauskar.github.io/blog/tags/webdev/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/webdev/</guid>
       <description></description>
     </item>
     <item>
-      <title>Batch</title>
+      <title>batch</title>
       <link>https://aumpauskar.github.io/blog/tags/batch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/batch/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cmd</title>
+      <title>cmd</title>
       <link>https://aumpauskar.github.io/blog/tags/cmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/cmd/</guid>
       <description></description>
     </item>
     <item>
-      <title>Operating System</title>
+      <title>operating system</title>
       <link>https://aumpauskar.github.io/blog/tags/operating-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/operating-system/</guid>
       <description></description>
     </item>
     <item>
-      <title>Powershell</title>
+      <title>powershell</title>
       <link>https://aumpauskar.github.io/blog/tags/powershell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
-      <title>Windows</title>
-      <link>https://aumpauskar.github.io/blog/tags/windows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/windows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Computer Vision</title>
+      <title>computer vision</title>
       <link>https://aumpauskar.github.io/blog/tags/computer-vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
-      <title>Image Processing</title>
+      <title>image processing</title>
       <link>https://aumpauskar.github.io/blog/tags/image-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/image-processing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Apache</title>
+      <title>apache</title>
       <link>https://aumpauskar.github.io/blog/tags/apache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/apache/</guid>
       <description></description>
     </item>
     <item>
-      <title>Big Data</title>
+      <title>big data</title>
       <link>https://aumpauskar.github.io/blog/tags/big-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/big-data/</guid>
       <description></description>
     </item>
     <item>
-      <title>Distributed Systems</title>
+      <title>distributed systems</title>
       <link>https://aumpauskar.github.io/blog/tags/distributed-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/distributed-systems/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hadoop</title>
+      <title>hadoop</title>
       <link>https://aumpauskar.github.io/blog/tags/hadoop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/hadoop/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mapreduce</title>
+      <title>mapreduce</title>
       <link>https://aumpauskar.github.io/blog/tags/mapreduce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/mapreduce/</guid>
       <description></description>
     </item>
     <item>
-      <title>Katex</title>
+      <title>katex</title>
       <link>https://aumpauskar.github.io/blog/tags/katex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/katex/</guid>
       <description></description>
     </item>
     <item>
-      <title>Latex</title>
+      <title>latex</title>
       <link>https://aumpauskar.github.io/blog/tags/latex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/latex/</guid>
       <description></description>
     </item>
     <item>
-      <title>Markdown</title>
+      <title>markdown</title>
       <link>https://aumpauskar.github.io/blog/tags/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
-      <title>Math</title>
+      <title>math</title>
       <link>https://aumpauskar.github.io/blog/tags/math/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/math/</guid>
       <description></description>
     </item>
     <item>
-      <title>Git</title>
+      <title>git</title>
       <link>https://aumpauskar.github.io/blog/tags/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/git/</guid>
       <description></description>
     </item>
     <item>
-      <title>Github</title>
+      <title>github</title>
       <link>https://aumpauskar.github.io/blog/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/github/</guid>
       <description></description>
     </item>
     <item>
-      <title>Version Control</title>
+      <title>version control</title>
       <link>https://aumpauskar.github.io/blog/tags/version-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/version-control/</guid>
       <description></description>
     </item>
     <item>
-      <title>Oops</title>
+      <title>oops</title>
       <link>https://aumpauskar.github.io/blog/tags/oops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/oops/</guid>
       <description></description>
     </item>
     <item>
-      <title>Bash</title>
+      <title>bash</title>
       <link>https://aumpauskar.github.io/blog/tags/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/bash/</guid>
       <description></description>
     </item>
     <item>
-      <title>Debian</title>
+      <title>debian</title>
       <link>https://aumpauskar.github.io/blog/tags/debian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/debian/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ubuntu</title>
+      <title>ubuntu</title>
       <link>https://aumpauskar.github.io/blog/tags/ubuntu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
-      <title>Communication</title>
+      <title>communication</title>
       <link>https://aumpauskar.github.io/blog/tags/communication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/communication/</guid>
       <description></description>
     </item>
     <item>
-      <title>Computer Networks</title>
+      <title>computer networks</title>
       <link>https://aumpauskar.github.io/blog/tags/computer-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/computer-networks/</guid>
       <description></description>
     </item>
     <item>
-      <title>Internet</title>
+      <title>internet</title>
       <link>https://aumpauskar.github.io/blog/tags/internet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/internet/</guid>
       <description></description>
     </item>
     <item>
-      <title>Networking</title>
+      <title>networking</title>
       <link>https://aumpauskar.github.io/blog/tags/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/networking/</guid>
       <description></description>
     </item>
     <item>
-      <title>Protocols</title>
+      <title>protocols</title>
       <link>https://aumpauskar.github.io/blog/tags/protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/protocols/</guid>
       <description></description>
     </item>
     <item>
-      <title>Encoder</title>
+      <title>encoder</title>
       <link>https://aumpauskar.github.io/blog/tags/encoder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/encoder/</guid>
       <description></description>
     </item>
     <item>
-      <title>Arm</title>
+      <title>arm</title>
       <link>https://aumpauskar.github.io/blog/tags/arm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/arm/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>https://aumpauskar.github.io/blog/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
-      <title>Static-Site-Generators</title>
+      <title>static-site-generators</title>
       <link>https://aumpauskar.github.io/blog/tags/static-site-generators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/static-site-generators/</guid>
       <description></description>
     </item>
     <item>
-      <title>Sql</title>
+      <title>sql</title>
       <link>https://aumpauskar.github.io/blog/tags/sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/sql/</guid>
       <description></description>
     </item>
     <item>
-      <title>Algorithms</title>
+      <title>algorithms</title>
       <link>https://aumpauskar.github.io/blog/tags/algorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/algorithms/</guid>
       <description></description>
     </item>
     <item>
-      <title>Data Structures</title>
+      <title>data structures</title>
       <link>https://aumpauskar.github.io/blog/tags/data-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/data-structures/</guid>
       <description></description>
     </item>
     <item>
-      <title>Embedded C</title>
+      <title>embedded c</title>
       <link>https://aumpauskar.github.io/blog/tags/embedded-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/embedded-c/</guid>
       <description></description>
     </item>
     <item>
-      <title>Keil</title>
+      <title>keil</title>
       <link>https://aumpauskar.github.io/blog/tags/keil/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/keil/</guid>
       <description></description>
     </item>
     <item>
-      <title>X86</title>
+      <title>x86</title>
       <link>https://aumpauskar.github.io/blog/tags/x86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/x86/</guid>
       <description></description>
     </item>
     <item>
-      <title>Java</title>
+      <title>java</title>
       <link>https://aumpauskar.github.io/blog/tags/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/java/</guid>

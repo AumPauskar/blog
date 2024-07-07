@@ -6,7 +6,28 @@
     <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/dualboot/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/os/dualboot/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/os/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/windows/</loc>
+    <lastmod>2024-07-07T11:26:50+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
@@ -21,12 +42,6 @@
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/nosql/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/compiler/</loc>
@@ -86,16 +101,10 @@
     <loc>https://aumpauskar.github.io/blog/tags/kubernates/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
-    <lastmod>2024-03-31T21:32:54+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/mern/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/nodejs/</loc>
-    <lastmod>2024-03-31T21:32:54+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/os/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
@@ -155,7 +164,7 @@
     <loc>https://aumpauskar.github.io/blog/tags/c/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c%23/</loc>
+    <loc>https://aumpauskar.github.io/blog/tags/c#/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</loc>
@@ -218,10 +227,10 @@
     <loc>https://aumpauskar.github.io/blog/tags/python/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/os/</loc>
+    <loc>https://aumpauskar.github.io/blog/tags/operating-systems/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/operating-systems/</loc>
+    <loc>https://aumpauskar.github.io/blog/posts/os/os/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/unix/</loc>
@@ -276,9 +285,6 @@
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/powershell/</loc>
-    <lastmod>2023-12-07T22:42:51+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/windows/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</loc>
@@ -362,10 +368,10 @@
     <loc>https://aumpauskar.github.io/blog/tags/communication/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/computer_network/cn/</loc>
+    <loc>https://aumpauskar.github.io/blog/tags/computer-networks/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/computer-networks/</loc>
+    <loc>https://aumpauskar.github.io/blog/posts/computer_network/cn/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/internet/</loc>

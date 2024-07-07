@@ -1,47 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Linux on Aum&#39;s blogging site</title>
+    <title>linux on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/linux/</link>
-    <description>Recent content in Linux on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in linux on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 11:26:50 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dualbooting windows and linux</title>
+      <link>https://aumpauskar.github.io/blog/posts/os/dualboot/</link>
+      <pubDate>Sun, 07 Jul 2024 11:26:50 +0530</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/os/dualboot/</guid>
+      <description>A guide to dual booting Windows and Linux (fedora)</description>
+    </item>
     <item>
       <title>Docker</title>
       <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
-      <description>Docker What is docker Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.&#xA;Why docker Consistency: Docker provides a consistent environment for your application from development all the way through production. Isolation: Docker containers are completely isolated. This means that your application will run the same way no matter where it is deployed.</description>
+      <description>A brief introduction to docker and its installation.</description>
     </item>
     <item>
       <title>Lab expts sem 6</title>
       <link>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</link>
       <pubDate>Sat, 23 Mar 2024 15:34:19 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</guid>
-      <description>Lab expts sem 6 AIML TW1 - DFID 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 from collections import defaultdict class Graph: def __init__(self, vertices): self.V = vertices self.</description>
+      <description>Lab experiments of semester 6, has AIML temworks and unix based network programming</description>
     </item>
     <item>
       <title>Operating systems</title>
       <link>https://aumpauskar.github.io/blog/posts/os/os/</link>
       <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/os/os/</guid>
-      <description>Operating systems Bases of an operating system Execute user programs and make solving user problems easier Make the computer system convenient to use Use the computer hardware in an efficient manner A computer system can be divided roughly into four components: the hardware, the operating system, the application programs, and the users.&#xA;Use of an operating system The operating system is responsible for the following activities in connection with process management Process creation and deletion Process suspension and resumption Provision of mechanisms for process synchronization Provision of mechanisms for process communication Provision of mechanisms for deadlock handling Operating systems is a resource allocator and it is a control program.</description>
+      <description>Operating systems Bases of an operating system Execute user programs and make solving user problems easier Make the computer system convenient to use Use the computer hardware in an efficient manner A computer system can be divided roughly into four components: the hardware, the operating system, the application programs, and the users.
+Use of an operating system The operating system is responsible for the following activities in connection with process management Process creation and deletion Process suspension and resumption Provision of mechanisms for process synchronization Provision of mechanisms for process communication Provision of mechanisms for deadlock handling Operating systems is a resource allocator and it is a control program.</description>
     </item>
     <item>
       <title>Raspberry Pi</title>
       <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
-      <description>Raspberry Pi The raspberry pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries.&#xA;Setting up Raspberry Pi As standard the Raspberry Pi comes without an operating system. It depends on the user which operating system is installed within the computer. The operating system can be installed on the Raspberry Pi using the following steps:</description>
+      <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
     </item>
     <item>
       <title>Linux</title>
       <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
-      <description>Linux/UNIX shell commands The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.&#xA;Note: The current documentaiton is based on Ububtu and similar debian bases operating systems.&#xA;File systems The linux file system is a tree structure with the root directory at the top. The root directory is denoted by /. The directories are separated by / and the files are separated by .</description>
+      <description>A brief overview and commands based on the linux operating system</description>
     </item>
   </channel>
 </rss>

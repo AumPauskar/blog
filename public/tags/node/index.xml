@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Node on Aum&#39;s blogging site</title>
+    <title>node on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/node/</link>
-    <description>Recent content in Node on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in node on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Dec 2023 09:20:47 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/node/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>https://aumpauskar.github.io/blog/posts/web/react/</link>
       <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/react/</guid>
-      <description>React tutorial About the tutorial This short note is based and created assuming you are using a Linux (debian/ubuntu) system, most of the commands will run on other systems like Windows and Mac as well but may require some changes. In case you need to follow along and using a Windows system, you can use the Windows Subsystem for Linux to run the commands.&#xA;Installing react In order to install react, node and npm are required.</description>
+      <description>A comprehensive guide to building websites with React</description>
     </item>
     <item>
       <title>Web technologies - basic HTML/CSS/JS</title>
       <link>https://aumpauskar.github.io/blog/posts/web/html-web/</link>
       <pubDate>Fri, 17 Nov 2023 09:21:22 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/html-web/</guid>
-      <description>Web notes FYI CSA: Client server architecture A web can be two tier, three tier, n tier having different applets for different purposes HTML: Hypertext markup lang, CSS: Cascading stylesheet, JS: Javascript P2P: Peer to peer architecture DOM: Document Object Model (DOM) is a file model wherein all the files are shown in a multiinterface structural model Tree stucture: A tree structure is a model where the start point is a single node but as we go down the model the number of nodess increase just like a tree.</description>
+      <description>A basic guide to HTML, CSS and JS</description>
     </item>
     <item>
       <title>Static site generators with Hugo</title>
       <link>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</link>
       <pubDate>Fri, 17 Nov 2023 09:19:25 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</guid>
-      <description>Static site generators A short guide on how this site was created using hugo.&#xA;Introduction There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a static site might be adequate, however if the site needs a frontend, backend and a database then a dynamic site is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required.</description>
+      <description>A short guide on how this site was created using hugo</description>
     </item>
   </channel>
 </rss>

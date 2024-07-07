@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Internet on Aum&#39;s blogging site</title>
+    <title>internet on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/internet/</link>
-    <description>Recent content in Internet on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in internet on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Nov 2023 12:50:11 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/internet/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://aumpauskar.github.io/blog/posts/computer_network/cn/</link>
       <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/computer_network/cn/</guid>
-      <description>Computer networks Packets In networking, a packet is a small segment of a larger message. Data sent over computer networks*, such as the Internet, is divided into packets. These packets are then recombined by the computer or device that receives them. The Internet is a &amp;ldquo;packet switching&amp;rdquo; network. Packet switching refers to the ability of networking equipment to process packets independently from each other. It also means that packets can take different network paths to the same destination, so long as they all arrive at the destination.</description>
+      <description>Computer networks and the protocols used in them</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dbms on Aum&#39;s blogging site</title>
+    <title>dbms on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/dbms/</link>
-    <description>Recent content in Dbms on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in dbms on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Jun 2024 23:21:23 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/dbms/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://aumpauskar.github.io/blog/posts/dbms/mongo/</link>
       <pubDate>Thu, 27 Jun 2024 23:21:23 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/dbms/mongo/</guid>
-      <description>MongoDB Introduction NoSQL databases are non-relational databases that are used to store and retrieve data. MongoDB is a popular NoSQL database that is used to store data in the form of documents.&#xA;Feature SQL (Relational Databases) NoSQL (Non-Relational Databases) Schema Fixed schema Dynamic schema for unstructured data Scalability Vertical scalability (scale-up by adding more powerful CPU, RAM, SSD) Horizontal scalability (scale-out by adding more servers) Complexity Tables with rows and columns, complex queries with JOINs Document, key-value, wide-column, or graph formats, simpler queries Transactions ACID properties (Atomicity, Consistency, Isolation, Durability) for reliable transactions BASE properties (Basically Available, Soft state, Eventual consistency) less strict than ACID Development Model Mature, with established standards More flexible and evolving rapidly Use Cases Well-suited for complex queries and transactions, e.</description>
+      <description>A show tutorial on how to work with a NoSQL database using MongoDB</description>
     </item>
     <item>
       <title>Database management and SQL</title>
       <link>https://aumpauskar.github.io/blog/posts/dbms/sql/</link>
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
-      <description>Sql documentation Installation The installation and usage of MySQL can be done in many ways; one is to install WAMP/XAMPP server and using SQL through it another is to use an online sql emulator, the best way is to use a MySQL server.&#xA;Getting started with MySQL All the operations in SQL can be classified into 3 types DDL: Data definition language includes operation like create, alter, drop DML: Data manipulation language includes operation like select, insert, update, delete DCL: Data control language includes operations like commit, rollback, grant, revoke</description>
+      <description>A basic cheatsheet of database management and SQL</description>
     </item>
   </channel>
 </rss>

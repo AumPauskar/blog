@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Version Control on Aum&#39;s blogging site</title>
+    <title>version control on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/version-control/</link>
-    <description>Recent content in Version Control on Aum&#39;s blogging site</description>
-    <generator>Hugo</generator>
+    <description>Recent content in version control on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.121.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Nov 2023 09:46:03 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
-      <description>Git / github cheatsheet Installation of git Download git from here or use on debian based linux 1 2 sudo apt update sudo apt install git Check if git is installed 1 git --version Configure git 1 2 git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;Your email&amp;#34; (Optional) Change the default brach name from master to main 1 git config --global init.defaultBranch main Configuring SSH keys to github Run these commands on the terminal 1 2 3 4 ssh-keygen -t ed25519 -C &amp;#34;$Your email&amp;#34; eval &amp;#34;$(ssh-agent -s)&amp;#34; ssh-add ~/.</description>
+      <description>A basic cheatsheet of git and github commands</description>
     </item>
   </channel>
 </rss>

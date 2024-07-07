@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://aumpauskar.github.io/blog/sitemap.xml
