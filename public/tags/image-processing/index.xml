@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>image processing on Aum&#39;s blogging site</title>
+    <title>Image Processing on Aum&#39;s blogging site</title>
     <link>https://aumpauskar.github.io/blog/tags/image-processing/</link>
-    <description>Recent content in image processing on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.121.2</generator>
+    <description>Recent content in Image Processing on Aum&#39;s blogging site</description>
+    <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Dec 2023 00:12:10 +0530</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/image-processing/index.xml" rel="self" type="application/rss+xml" />

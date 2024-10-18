@@ -11,87 +11,84 @@ buildExpired = false
 
 googleAnalytics = "G-EV8NVH4QG5"
 
-
 [minify]
-	disableXML = true
-	minifyOutput = true
+    disableXML = true
+    minifyOutput = true
 
 [params]
-	env = 'production'
-	title = "Aum's blogging site"
-	description = "ExampleSite description"
-	keywords = ["Blog", "Portfolio", "Java", "Python", "Diary", "Notes"]
-	author = "Aum Pauskar"
-	DateFormat = "January 2, 2006"
-	defaultTheme = "auto"
-	disableThemeToggle = false
+    env = 'production'
+    title = "Aum's blogging site"
+    description = "ExampleSite description"
+    keywords = ["Blog", "Portfolio", "Java", "Python", "Diary", "Notes"]
+    author = "Aum Pauskar"
+    DateFormat = "January 2, 2006"
+    defaultTheme = "auto"
+    disableThemeToggle = false
 
-	ShowReadingTime = true
-	ShowShareButtons = true
-	ShowPostNavLinks = true
-	ShowBreadCrumbs = true
-	ShowCodeCopyButtons = true
-	ShowWordCount = true
-	ShowRssButtonInSectionTermList = true
-	UseHugoToc = true
-	disableSpecial1stPost = false
-	disableScrollToTop = false
-	comments = false
-	hidemeta = false
-	hideSummary = false
-	showtoc = true
-	tocopen = true
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowWordCount = true
+    ShowRssButtonInSectionTermList = true
+    UseHugoToc = true
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = false
+    hidemeta = false
+    hideSummary = false
+    showtoc = true
+    tocopen = true
 
-	[params.assets]
-		# disableHLJS = true # to disable highlight.js
-		# disableFingerprinting = true
-		# favicon = "<link / abs url>"
-		# favicon16x16 = "<link / abs url>"
-		# favicon32x32 = "<link / abs url>"
-		# apple_touch_icon = "<link / abs url>"
-		# safari_pinned_tab = "<link / abs url>"
-	[params.label]
-		# text = "Home"
-		# icon = "/apple-touch-icon.png"
-		# iconHeight = 35
-	[params.profileMode]
-		enabled = true # needs to be explicitly set
-		title = "Aum's blogging site"
-		subtitle = "A collection of different technologies"
-		# imageUrl = "<img location>"
-		# imageWidth = 120
-		# imageHeight = 120
-		# imageTitle = "my image"
+    [params.assets]
+        # disableHLJS = true # to disable highlight.js
+        # disableFingerprinting = true
+        # favicon = "<link / abs url>"
+        # favicon16x16 = "<link / abs url>"
+        # favicon32x32 = "<link / abs url>"
+        # apple_touch_icon = "<link / abs url>"
+        # safari_pinned_tab = "<link / abs url>"
 
-		[[params.profileMode.buttons]]
-			name = "Posts"
-			url = "posts"
-		[[params.profileMode.buttons]]
-			name = "Tags"
-			url = "tags"
-	[params.homeInfoParams]
-		Title = "Hi there \U0001F44B"
-		Content = "Welcome to my blog"
+    [params.label]
+        # text = "Home"
+        # icon = "/apple-touch-icon.png"
+        # iconHeight = 35
 
-	# [params.socialIcons]
-		[[params.socialIcons]]
-			name = "twitter"
-			url = "https://twitter.com/AumPauskar"
-		[[params.socialIcons]]
-			name = "stackoverflow"
-			url = "https://stackoverflow.com"
-		[[params.socialIcons]]
-			name = "github"
-			url = "https://github.com/AumPauskar"
+    [params.profileMode]
+        enabled = true # needs to be explicitly set
+        title = "Aum's blogging site"
+        subtitle = "A collection of different technologies"
+        # imageUrl = "<img location>"
+        # imageWidth = 120
+        # imageHeight = 120
+        # imageTitle = "my image"
 
-	[analytics]
-    	[google]
-      		SiteVerificationTag = "XYZabc"
+        [[params.profileMode.buttons]]
+            name = "Posts"
+            url = "posts"
+        [[params.profileMode.buttons]]
+            name = "Tags"
+            url = "tags"
+
+    [params.homeInfoParams]
+        Title = "Hi there \U0001F44B"
+        Content = "Welcome to my blog"
+
+    # Updated: Changed from params.socialIcons to params.social
+    [params.social]
+        twitter = "https://twitter.com/AumPauskar"
+        stackoverflow = "https://stackoverflow.com"
+        github = "https://github.com/AumPauskar"
+
+    [params.analytics]
+        [params.analytics.google]
+            SiteVerificationTag = "XYZabc"
 
 [markup.highlight]
-	noClasses = false
-	anchorLineNos = true
-	codeFences = true
-	guessSyntax = true
-	lineNos = true
-	style = "monokai"
+    noClasses = false
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
