@@ -61,6 +61,56 @@ We’ll need to make a disk partition in windows 11 before proceeding to make su
 
 (under progress)
 
+## Crutial services
+### IWCTL - wifi configuration
+To check whether you are connected to internet one of two commands can be used
+1. `ip a`: Can be used for showing all the ip information that are ongoing, shows the ip address of all the networking devices, these include, looplack device, wifi adaptor and ethernet (if you have one)
+2. `ping (domain name)`: Can be used to hit a ping or do a packet transfer towards a domain on the net. Usage: `ping www.exampleanydomainname.com`.
+
+The IWCTL CLI can be used via
+    1. IWCTL can be installed via the following command.
+        ```bash
+        sudo pacman -S iwd
+        ```
+    2. We can iuse the iwctl cli app by just typing in `iwctl`
+    3. When inside iwctl the following command can be used to list the devices inside the computer, this can be done via 
+        ```bash
+        device list
+        ```
+    4. To scan for the available netowrks
+        ```bash
+        station <device_name> scan
+        ```
+    5. To list hte available networks
+        ```bash
+        station <device_name> get-networks
+        ```
+    6. Connect to a Wi-Fi network
+        ```bash
+        station <device_name> connect <SSID>
+        ```
+    7. Get details of the connection
+        ```bash
+        station <device_name> show
+        ```
+    8. Can be exited via 
+        ```bash
+        exit
+        ```
+
+Sometimes IWCTL may not work because of DHCP issue, this can be resolved via
+1. Check installation of `dhcpcd`
+    ```
+    dhcpcd --help
+    ```
+2. If not already installed install it via
+    ```
+    sudo pacman -S dhcpcd
+    ```
+3. Start the service
+    ```
+    sudo systemctl enable dhclient --now
+    ```
 ## Apps and user config
 
 ### Pacman
