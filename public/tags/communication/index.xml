@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Communication on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/communication/</link>
+    <link>http://localhost:1313/blog/tags/communication/</link>
     <description>Recent content in Communication on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Nov 2023 12:50:11 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/communication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/communication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer networks</title>
-      <link>https://aumpauskar.github.io/blog/posts/computer_network/cn/</link>
+      <link>http://localhost:1313/blog/posts/computer_network/cn/</link>
       <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/computer_network/cn/</guid>
+      <guid>http://localhost:1313/blog/posts/computer_network/cn/</guid>
       <description>Computer networks and the protocols used in them</description>
     </item>
   </channel>

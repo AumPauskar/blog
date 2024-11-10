@@ -2,472 +2,475 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/intro/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/intro/</loc>
     <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/arch/</loc>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2024-10-30T21:00:45+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/os/neovim_customization/</loc>
+    <lastmod>2024-10-30T21:00:45+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/</loc>
+    <lastmod>2024-10-30T21:00:45+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/arch/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/</loc>
+    <loc>http://localhost:1313/blog/tags/hyperland/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/hyperland/</loc>
+    <loc>http://localhost:1313/blog/tags/hyprland/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/hyprland/</loc>
+    <loc>http://localhost:1313/blog/tags/linux/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/linux/</loc>
+    <loc>http://localhost:1313/blog/posts/os/linux_ricing/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</loc>
+    <loc>http://localhost:1313/blog/tags/neovim/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/neovim/</loc>
+    <loc>http://localhost:1313/blog/tags/os/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/os/</loc>
+    <loc>http://localhost:1313/blog/tags/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/</loc>
-    <lastmod>2024-10-24T17:45:41+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
-    <lastmod>2024-10-24T17:45:41+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/dualboot/</loc>
+    <loc>http://localhost:1313/blog/tags/dualboot/</loc>
     <lastmod>2024-07-07T11:26:50+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/dualboot/</loc>
+    <loc>http://localhost:1313/blog/posts/os/dualboot/</loc>
     <lastmod>2024-07-07T11:26:50+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/windows/</loc>
+    <loc>http://localhost:1313/blog/tags/windows/</loc>
     <lastmod>2024-07-07T11:26:50+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
+    <loc>http://localhost:1313/blog/tags/cheatsheet/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/database/</loc>
+    <loc>http://localhost:1313/blog/tags/database/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/dbms/</loc>
+    <loc>http://localhost:1313/blog/tags/dbms/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dbms/mongo/</loc>
+    <loc>http://localhost:1313/blog/posts/dbms/mongo/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/nosql/</loc>
+    <loc>http://localhost:1313/blog/tags/nosql/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/compiler/</loc>
+    <loc>http://localhost:1313/blog/tags/compiler/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/lex/</loc>
+    <loc>http://localhost:1313/blog/tags/lex/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/parser/</loc>
+    <loc>http://localhost:1313/blog/tags/parser/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/regex/</loc>
+    <loc>http://localhost:1313/blog/tags/regex/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/yacc/</loc>
+    <loc>http://localhost:1313/blog/tags/yacc/</loc>
     <lastmod>2024-06-06T08:55:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/cheatsheet/vim/</loc>
+    <loc>http://localhost:1313/blog/posts/cheatsheet/vim/</loc>
     <lastmod>2024-05-15T12:26:55+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/multimedia/</loc>
+    <loc>http://localhost:1313/blog/tags/multimedia/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/plex/</loc>
+    <loc>http://localhost:1313/blog/tags/plex/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/raspberry-pi/</loc>
+    <loc>http://localhost:1313/blog/tags/raspberry-pi/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/server/</loc>
+    <loc>http://localhost:1313/blog/tags/server/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/plex/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/plex/</loc>
     <lastmod>2024-04-14T16:53:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/container/</loc>
+    <loc>http://localhost:1313/blog/tags/container/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/devops/</loc>
+    <loc>http://localhost:1313/blog/tags/devops/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/docker/</loc>
+    <loc>http://localhost:1313/blog/tags/docker/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/web/docker/</loc>
+    <loc>http://localhost:1313/blog/posts/web/docker/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/expressjs/</loc>
+    <loc>http://localhost:1313/blog/tags/expressjs/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/fullstack/</loc>
+    <loc>http://localhost:1313/blog/tags/fullstack/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/kubernates/</loc>
+    <loc>http://localhost:1313/blog/tags/kubernates/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/mern/</loc>
+    <loc>http://localhost:1313/blog/tags/mern/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/nodejs/</loc>
+    <loc>http://localhost:1313/blog/tags/nodejs/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
+    <loc>http://localhost:1313/blog/tags/web/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/javascript/</loc>
+    <loc>http://localhost:1313/blog/tags/javascript/</loc>
     <lastmod>2024-03-29T16:36:16+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/web/mern/</loc>
+    <loc>http://localhost:1313/blog/posts/web/mern/</loc>
     <lastmod>2024-03-29T16:36:16+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/mongodb/</loc>
+    <loc>http://localhost:1313/blog/tags/mongodb/</loc>
     <lastmod>2024-03-29T16:36:16+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/react/</loc>
+    <loc>http://localhost:1313/blog/tags/react/</loc>
     <lastmod>2024-03-29T16:36:16+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/arduino/</loc>
+    <loc>http://localhost:1313/blog/tags/arduino/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/iot/</loc>
+    <loc>http://localhost:1313/blog/tags/iot/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</loc>
+    <loc>http://localhost:1313/blog/posts/iot/iot_professional_elective/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/sem6/</loc>
+    <loc>http://localhost:1313/blog/tags/sem6/</loc>
     <lastmod>2024-03-27T12:26:43+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/ai/</loc>
+    <loc>http://localhost:1313/blog/tags/ai/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/blog/tags/artificial-intelligence/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/expts/</loc>
+    <loc>http://localhost:1313/blog/tags/expts/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/lab/</loc>
+    <loc>http://localhost:1313/blog/tags/lab/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/lab_expts_sem_6/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/blog/tags/machine-learning/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/ml/</loc>
+    <loc>http://localhost:1313/blog/tags/ml/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/network/</loc>
+    <loc>http://localhost:1313/blog/tags/network/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/shell/</loc>
+    <loc>http://localhost:1313/blog/tags/shell/</loc>
     <lastmod>2024-03-23T15:34:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c/</loc>
+    <loc>http://localhost:1313/blog/tags/c/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c%23/</loc>
+    <loc>http://localhost:1313/blog/tags/c%23/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c&#43;&#43;/</loc>
+    <loc>http://localhost:1313/blog/tags/c&#43;&#43;/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cpp/</loc>
+    <loc>http://localhost:1313/blog/tags/cpp/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/procedural-programming/</loc>
+    <loc>http://localhost:1313/blog/tags/procedural-programming/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/c/c/</loc>
+    <loc>http://localhost:1313/blog/posts/c/c/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/programming/</loc>
+    <loc>http://localhost:1313/blog/tags/programming/</loc>
     <lastmod>2024-02-26T11:43:27+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/3dprinting/</loc>
+    <loc>http://localhost:1313/blog/tags/3dprinting/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/autodeskfusion/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cad/</loc>
+    <loc>http://localhost:1313/blog/tags/cad/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cam/</loc>
+    <loc>http://localhost:1313/blog/tags/cam/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cnc/</loc>
+    <loc>http://localhost:1313/blog/tags/cnc/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/fusion360/</loc>
+    <loc>http://localhost:1313/blog/tags/fusion360/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/machineing/</loc>
+    <loc>http://localhost:1313/blog/tags/machineing/</loc>
     <lastmod>2024-02-07T23:34:09+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/certificate/</loc>
+    <loc>http://localhost:1313/blog/tags/certificate/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/computer_network/</loc>
+    <loc>http://localhost:1313/blog/tags/computer_network/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/computer_network/x509/</loc>
+    <loc>http://localhost:1313/blog/posts/computer_network/x509/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/x509/</loc>
+    <loc>http://localhost:1313/blog/tags/x509/</loc>
     <lastmod>2024-01-03T09:54:53+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/dsa/</loc>
+    <loc>http://localhost:1313/blog/tags/dsa/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/leetcode/</loc>
+    <loc>http://localhost:1313/blog/tags/leetcode/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</loc>
+    <loc>http://localhost:1313/blog/posts/dsa/leetcode/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/python/</loc>
+    <loc>http://localhost:1313/blog/tags/python/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/os/</loc>
+    <loc>http://localhost:1313/blog/posts/os/os/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/operating-systems/</loc>
+    <loc>http://localhost:1313/blog/tags/operating-systems/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/unix/</loc>
+    <loc>http://localhost:1313/blog/tags/unix/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/zsh/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/zsh/</loc>
     <lastmod>2023-12-20T06:58:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/embedded-systems/</loc>
+    <loc>http://localhost:1313/blog/tags/embedded-systems/</loc>
     <lastmod>2023-12-19T21:29:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/microcontrollers/</loc>
+    <loc>http://localhost:1313/blog/tags/microcontrollers/</loc>
     <lastmod>2023-12-19T21:29:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/microprocessors/</loc>
+    <loc>http://localhost:1313/blog/tags/microprocessors/</loc>
     <lastmod>2023-12-19T21:29:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</loc>
+    <loc>http://localhost:1313/blog/posts/iot/raspberry_pi/</loc>
     <lastmod>2023-12-19T21:29:49+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/misc/lab_expts/</loc>
+    <loc>http://localhost:1313/blog/posts/misc/lab_expts/</loc>
     <lastmod>2023-12-16T17:44:08+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/web/react/</loc>
+    <loc>http://localhost:1313/blog/posts/web/react/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/css/</loc>
+    <loc>http://localhost:1313/blog/tags/css/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/frontend/</loc>
+    <loc>http://localhost:1313/blog/tags/frontend/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/html/</loc>
+    <loc>http://localhost:1313/blog/tags/html/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/node/</loc>
+    <loc>http://localhost:1313/blog/tags/node/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/npm/</loc>
+    <loc>http://localhost:1313/blog/tags/npm/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/webdev/</loc>
+    <loc>http://localhost:1313/blog/tags/webdev/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/batch/</loc>
+    <loc>http://localhost:1313/blog/tags/batch/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cmd/</loc>
+    <loc>http://localhost:1313/blog/tags/cmd/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/operating-system/</loc>
+    <loc>http://localhost:1313/blog/tags/operating-system/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/powershell/</loc>
+    <loc>http://localhost:1313/blog/tags/powershell/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</loc>
+    <loc>http://localhost:1313/blog/posts/os/windows_scripts/</loc>
     <lastmod>2023-12-07T22:42:51+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/computer-vision/</loc>
+    <loc>http://localhost:1313/blog/tags/computer-vision/</loc>
     <lastmod>2023-12-06T00:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</loc>
+    <loc>http://localhost:1313/blog/posts/ml/image_analysis_theory/</loc>
     <lastmod>2023-12-06T00:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/image-processing/</loc>
+    <loc>http://localhost:1313/blog/tags/image-processing/</loc>
     <lastmod>2023-12-06T00:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/apache/</loc>
+    <loc>http://localhost:1313/blog/tags/apache/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/big-data/</loc>
+    <loc>http://localhost:1313/blog/tags/big-data/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</loc>
+    <loc>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/distributed-systems/</loc>
+    <loc>http://localhost:1313/blog/tags/distributed-systems/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/hadoop/</loc>
+    <loc>http://localhost:1313/blog/tags/hadoop/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/mapreduce/</loc>
+    <loc>http://localhost:1313/blog/tags/mapreduce/</loc>
     <lastmod>2023-12-05T12:17:46+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</loc>
+    <loc>http://localhost:1313/blog/posts/ml/image_analysis/</loc>
     <lastmod>2023-12-03T20:40:58+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</loc>
+    <loc>http://localhost:1313/blog/posts/cheatsheet/e_markdown_cheatsheet/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/katex/</loc>
+    <loc>http://localhost:1313/blog/tags/katex/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/latex/</loc>
+    <loc>http://localhost:1313/blog/tags/latex/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/markdown/</loc>
+    <loc>http://localhost:1313/blog/tags/markdown/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/math/</loc>
+    <loc>http://localhost:1313/blog/tags/math/</loc>
     <lastmod>2023-11-25T09:46:19+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/git/</loc>
+    <loc>http://localhost:1313/blog/tags/git/</loc>
     <lastmod>2023-11-25T09:46:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</loc>
+    <loc>http://localhost:1313/blog/posts/cheatsheet/git_cheatsheet/</loc>
     <lastmod>2023-11-25T09:46:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/github/</loc>
+    <loc>http://localhost:1313/blog/tags/github/</loc>
     <lastmod>2023-11-25T09:46:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/version-control/</loc>
+    <loc>http://localhost:1313/blog/tags/version-control/</loc>
     <lastmod>2023-11-25T09:46:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/oops/</loc>
+    <loc>http://localhost:1313/blog/tags/oops/</loc>
     <lastmod>2023-11-23T13:21:20+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/python/python_oops/</loc>
+    <loc>http://localhost:1313/blog/posts/python/python_oops/</loc>
     <lastmod>2023-11-23T13:21:20+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/bash/</loc>
+    <loc>http://localhost:1313/blog/tags/bash/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/debian/</loc>
+    <loc>http://localhost:1313/blog/tags/debian/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/os/linux/</loc>
+    <loc>http://localhost:1313/blog/posts/os/linux/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/ubuntu/</loc>
+    <loc>http://localhost:1313/blog/tags/ubuntu/</loc>
     <lastmod>2023-11-23T12:52:03+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/communication/</loc>
+    <loc>http://localhost:1313/blog/tags/communication/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/computer_network/cn/</loc>
+    <loc>http://localhost:1313/blog/posts/computer_network/cn/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/computer-networks/</loc>
+    <loc>http://localhost:1313/blog/tags/computer-networks/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/internet/</loc>
+    <loc>http://localhost:1313/blog/tags/internet/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/networking/</loc>
+    <loc>http://localhost:1313/blog/tags/networking/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/protocols/</loc>
+    <loc>http://localhost:1313/blog/tags/protocols/</loc>
     <lastmod>2023-11-23T12:50:11+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/encoder/</loc>
+    <loc>http://localhost:1313/blog/tags/encoder/</loc>
     <lastmod>2023-11-21T22:20:04+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</loc>
+    <loc>http://localhost:1313/blog/posts/projects/motor_encoder/</loc>
     <lastmod>2023-11-21T22:20:04+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/arm/</loc>
+    <loc>http://localhost:1313/blog/tags/arm/</loc>
     <lastmod>2023-11-20T12:59:45+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/iot/arm/</loc>
+    <loc>http://localhost:1313/blog/posts/iot/arm/</loc>
     <lastmod>2023-11-20T12:59:45+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/web/html-web/</loc>
+    <loc>http://localhost:1313/blog/posts/web/html-web/</loc>
     <lastmod>2023-11-17T09:21:22+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/hugo/</loc>
+    <loc>http://localhost:1313/blog/tags/hugo/</loc>
     <lastmod>2023-11-17T09:19:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</loc>
+    <loc>http://localhost:1313/blog/posts/web/static-site-generators/</loc>
     <lastmod>2023-11-17T09:19:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/static-site-generators/</loc>
+    <loc>http://localhost:1313/blog/tags/static-site-generators/</loc>
     <lastmod>2023-11-17T09:19:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dbms/sql/</loc>
+    <loc>http://localhost:1313/blog/posts/dbms/sql/</loc>
     <lastmod>2023-11-16T14:41:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/sql/</loc>
+    <loc>http://localhost:1313/blog/tags/sql/</loc>
     <lastmod>2023-11-16T14:41:25+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/algorithms/</loc>
+    <loc>http://localhost:1313/blog/tags/algorithms/</loc>
     <lastmod>2023-11-16T10:38:34+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</loc>
+    <loc>http://localhost:1313/blog/posts/dsa/dsabasics/</loc>
     <lastmod>2023-11-16T10:38:34+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/data-structures/</loc>
+    <loc>http://localhost:1313/blog/tags/data-structures/</loc>
     <lastmod>2023-11-16T10:38:34+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/embedded-c/</loc>
+    <loc>http://localhost:1313/blog/tags/embedded-c/</loc>
     <lastmod>2023-11-16T10:37:42+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/keil/</loc>
+    <loc>http://localhost:1313/blog/tags/keil/</loc>
     <lastmod>2023-11-16T10:37:42+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</loc>
+    <loc>http://localhost:1313/blog/posts/iot/embeddedc/</loc>
     <lastmod>2023-11-16T10:37:42+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/x86/</loc>
+    <loc>http://localhost:1313/blog/tags/x86/</loc>
     <lastmod>2023-11-16T10:37:42+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/iot/arduino/</loc>
+    <loc>http://localhost:1313/blog/posts/iot/arduino/</loc>
     <lastmod>2023-11-16T10:37:04+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/java/</loc>
+    <loc>http://localhost:1313/blog/tags/java/</loc>
     <lastmod>2023-11-16T10:35:36+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/java/javafull/</loc>
+    <loc>http://localhost:1313/blog/posts/java/javafull/</loc>
     <lastmod>2023-11-16T10:35:36+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/python/virtualenv/</loc>
+    <loc>http://localhost:1313/blog/posts/python/virtualenv/</loc>
     <lastmod>2023-11-16T10:34:31+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/blog/posts/my-first-post/</loc>
     <lastmod>2023-11-16T09:46:38+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/archives/</loc>
+    <loc>http://localhost:1313/blog/archives/</loc>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/categories/</loc>
+    <loc>http://localhost:1313/blog/categories/</loc>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/search/</loc>
+    <loc>http://localhost:1313/blog/posts/search/</loc>
   </url>
 </urlset>

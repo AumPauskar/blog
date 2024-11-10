@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mapreduce on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/mapreduce/</link>
+    <link>http://localhost:1313/blog/tags/mapreduce/</link>
     <description>Recent content in Mapreduce on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Dec 2023 12:17:46 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/mapreduce/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/mapreduce/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big data and hadoop ecosystem</title>
-      <link>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</link>
+      <link>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
+      <guid>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</guid>
       <description>Basic concepts of big data and the hadoop ecosystem</description>
     </item>
   </channel>
