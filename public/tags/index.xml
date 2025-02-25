@@ -4,10 +4,38 @@
     <title>Tags on Aum&#39;s blogging site</title>
     <link>http://localhost:1313/blog/tags/</link>
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- 0.144.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Oct 2024 17:45:41 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 09:13:40 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithms</title>
+      <link>http://localhost:1313/blog/tags/algorithms/</link>
+      <pubDate>Tue, 25 Feb 2025 09:13:40 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Competitive Programming</title>
+      <link>http://localhost:1313/blog/tags/competitive-programming/</link>
+      <pubDate>Tue, 25 Feb 2025 09:13:40 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/competitive-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/blog/tags/data-structures/</link>
+      <pubDate>Tue, 25 Feb 2025 09:13:40 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/blog/tags/python/</link>
+      <pubDate>Tue, 25 Feb 2025 09:13:40 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tags/python/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Arch</title>
       <link>http://localhost:1313/blog/tags/arch/</link>
@@ -436,13 +464,6 @@
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>http://localhost:1313/blog/tags/python/</link>
-      <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
-      <guid>http://localhost:1313/blog/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Operating Systems</title>
       <link>http://localhost:1313/blog/tags/operating-systems/</link>
       <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
@@ -741,20 +762,6 @@
       <link>http://localhost:1313/blog/tags/sql/</link>
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
       <guid>http://localhost:1313/blog/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Algorithms</title>
-      <link>http://localhost:1313/blog/tags/algorithms/</link>
-      <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
-      <guid>http://localhost:1313/blog/tags/algorithms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data Structures</title>
-      <link>http://localhost:1313/blog/tags/data-structures/</link>
-      <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
-      <guid>http://localhost:1313/blog/tags/data-structures/</guid>
       <description></description>
     </item>
     <item>

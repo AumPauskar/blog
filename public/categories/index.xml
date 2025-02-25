@@ -4,7 +4,7 @@
     <title>Categories on Aum&#39;s blogging site</title>
     <link>http://localhost:1313/blog/categories/</link>
     <description>Recent content in Categories on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- 0.144.1</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>

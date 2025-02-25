@@ -5,13 +5,31 @@
     <loc>http://localhost:1313/blog/posts/misc/intro/</loc>
     <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-10-30T21:00:45+05:30</lastmod>
+    <loc>http://localhost:1313/blog/tags/algorithms/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/os/neovim_customization/</loc>
-    <lastmod>2024-10-30T21:00:45+05:30</lastmod>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/dsa/basic-dsa-python/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/competitive-programming/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/data-structures/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/python/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/</loc>
+    <lastmod>2025-02-25T09:13:40+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/os/neovim_customization/</loc>
     <lastmod>2024-10-30T21:00:45+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/arch/</loc>
@@ -33,9 +51,6 @@
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/os/</loc>
-    <lastmod>2024-10-24T17:45:41+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
     <lastmod>2024-10-24T17:45:41+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/dualboot/</loc>
@@ -242,9 +257,6 @@
     <loc>http://localhost:1313/blog/posts/dsa/leetcode/</loc>
     <lastmod>2023-12-30T22:56:49+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/python/</loc>
-    <lastmod>2023-12-30T22:56:49+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/posts/os/os/</loc>
     <lastmod>2023-12-30T17:09:25+05:30</lastmod>
   </url><url>
@@ -431,13 +443,7 @@
     <loc>http://localhost:1313/blog/tags/sql/</loc>
     <lastmod>2023-11-16T14:41:25+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/algorithms/</loc>
-    <lastmod>2023-11-16T10:38:34+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/posts/dsa/dsabasics/</loc>
-    <lastmod>2023-11-16T10:38:34+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tags/data-structures/</loc>
     <lastmod>2023-11-16T10:38:34+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/embedded-c/</loc>

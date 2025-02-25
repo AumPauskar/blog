@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Llama on Aum&#39;s blogging site</title>
-    <link>http://localhost:40429/blog/tags/llama/</link>
+    <link>http://localhost:1313/blog/tags/llama/</link>
     <description>Recent content in Llama on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.136.2</generator>
+    <generator>Hugo -- 0.144.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Dec 2023 19:59:31 +0530</lastBuildDate>
-    <atom:link href="http://localhost:40429/blog/tags/llama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/llama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running llama on a Raspberry Pi</title>
-      <link>http://localhost:40429/blog/posts/ml/llama_rpi/</link>
+      <link>http://localhost:1313/blog/posts/ml/llama_rpi/</link>
       <pubDate>Tue, 26 Dec 2023 19:59:31 +0530</pubDate>
-      <guid>http://localhost:40429/blog/posts/ml/llama_rpi/</guid>
+      <guid>http://localhost:1313/blog/posts/ml/llama_rpi/</guid>
       <description>Running llama on a Raspberry Pi</description>
     </item>
   </channel>
