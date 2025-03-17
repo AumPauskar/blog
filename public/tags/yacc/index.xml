@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Yacc on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/yacc/</link>
+    <link>https://aumpauskar.github.io/blog/tags/yacc/</link>
     <description>Recent content in Yacc on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/yacc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/yacc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regex via lex and yacc</title>
-      <link>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
       <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>

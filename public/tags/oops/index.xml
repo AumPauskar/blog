@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Oops on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/oops/</link>
+    <link>https://aumpauskar.github.io/blog/tags/oops/</link>
     <description>Recent content in Oops on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Nov 2023 13:21:20 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OOPS with Python and packages</title>
-      <link>http://localhost:1313/blog/posts/python/python_oops/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/python_oops/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
       <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     <item>
       <title>OOPS with Java</title>
-      <link>http://localhost:1313/blog/posts/java/javafull/</link>
+      <link>https://aumpauskar.github.io/blog/posts/java/javafull/</link>
       <pubDate>Thu, 16 Nov 2023 10:35:36 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/java/javafull/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/java/javafull/</guid>
       <description>&lt;h1 id=&#34;java-tutorial&#34;&gt;Java tutorial&lt;/h1&gt;
 &lt;p&gt;Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm&lt;/p&gt;
 &lt;h2 id=&#34;fyi&#34;&gt;FYI&lt;/h2&gt;
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Virtualenv</title>
-      <link>http://localhost:1313/blog/posts/python/virtualenv/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/virtualenv/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
       <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
   </channel>

@@ -2,136 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://aumpauskar.github.io/blog/</link>
     <description>Recent content on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2025 09:13:40 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Feb 2025 13:52:40 +0000</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks and note to users</title>
-      <link>http://localhost:1313/blog/posts/misc/intro/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/intro/</link>
       <pubDate>Wed, 17 Apr 2024 23:00:22 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/intro/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/intro/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
+      <title>Github Actions</title>
+      <link>https://aumpauskar.github.io/blog/posts/cloud/github-actions/</link>
+      <pubDate>Tue, 25 Feb 2025 13:52:40 +0000</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/cloud/github-actions/</guid>
+      <description>Github actions is a builtin asset in Github to facilitate ci/cd operations</description>
+    </item>
+    <item>
       <title>Basic data structures and algorithms in python</title>
-      <link>http://localhost:1313/blog/posts/dsa/basic-dsa-python/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dsa/basic-dsa-python/</link>
       <pubDate>Tue, 25 Feb 2025 09:13:40 +0000</pubDate>
-      <guid>http://localhost:1313/blog/posts/dsa/basic-dsa-python/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dsa/basic-dsa-python/</guid>
       <description>A short guide of data structures and algorithms in python</description>
     </item>
     <item>
       <title>Neovim_customization</title>
-      <link>http://localhost:1313/blog/posts/os/neovim_customization/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/neovim_customization/</link>
       <pubDate>Wed, 30 Oct 2024 21:00:45 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/neovim_customization/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/neovim_customization/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>Linux Ricing</title>
-      <link>http://localhost:1313/blog/posts/os/linux_ricing/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</link>
       <pubDate>Thu, 24 Oct 2024 17:45:41 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/linux_ricing/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</guid>
       <description>A basic guide to demonstrate and how show to rice and completely customize your linux installation with an arch based system and a tiling window manager</description>
     </item>
     <item>
       <title>Dualbooting windows and linux</title>
-      <link>http://localhost:1313/blog/posts/os/dualboot/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/dualboot/</link>
       <pubDate>Sun, 07 Jul 2024 11:26:50 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/dualboot/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/dualboot/</guid>
       <description>A guide to dual booting Windows and Linux (fedora)</description>
     </item>
     <item>
       <title>MongoDB</title>
-      <link>http://localhost:1313/blog/posts/dbms/mongo/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/mongo/</link>
       <pubDate>Thu, 27 Jun 2024 23:21:23 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/dbms/mongo/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/mongo/</guid>
       <description>A show tutorial on how to work with a NoSQL database using MongoDB</description>
     </item>
     <item>
       <title>Regex via lex and yacc</title>
-      <link>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
       <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/blog/posts/cheatsheet/vim/</link>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/vim/</link>
       <pubDate>Wed, 15 May 2024 12:26:55 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/cheatsheet/vim/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/vim/</guid>
       <description>A small cheatsheet of vim commands</description>
     </item>
     <item>
       <title>Using a plex server for media streaming</title>
-      <link>http://localhost:1313/blog/posts/misc/plex/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/plex/</link>
       <pubDate>Sun, 14 Apr 2024 16:53:10 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/plex/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/plex/</guid>
       <description>Article shows how to use a raspberry pi as a plex server for media streaming</description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/web/docker/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/docker/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
       <description>A brief introduction to docker and its installation.</description>
     </item>
     <item>
       <title>Mern tutorial</title>
-      <link>http://localhost:1313/blog/posts/web/mern/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/mern/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
       <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
     </item>
     <item>
       <title>IOT Professional elective</title>
-      <link>http://localhost:1313/blog/posts/iot/iot_professional_elective/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</link>
       <pubDate>Wed, 27 Mar 2024 12:26:43 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/iot_professional_elective/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</guid>
       <description>Set of notes and documentation regarding iot open elective of semester 6</description>
     </item>
     <item>
       <title>Lab expts sem 6</title>
-      <link>http://localhost:1313/blog/posts/misc/lab_expts_sem_6/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</link>
       <pubDate>Sat, 23 Mar 2024 15:34:19 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/lab_expts_sem_6/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</guid>
       <description>Lab experiments of semester 6, has AIML temworks and unix based network programming</description>
     </item>
     <item>
       <title>Procedural programming in C</title>
-      <link>http://localhost:1313/blog/posts/c/c/</link>
+      <link>https://aumpauskar.github.io/blog/posts/c/c/</link>
       <pubDate>Mon, 26 Feb 2024 11:43:27 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/c/c/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/c/c/</guid>
       <description>A brief introduction to procedural programming in C</description>
     </item>
     <item>
       <title>Autodesk Fusion and CAM</title>
-      <link>http://localhost:1313/blog/posts/misc/autodeskfusion/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</link>
       <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/autodeskfusion/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</guid>
       <description>A brief overview of Fusion 360 and CAM.</description>
     </item>
     <item>
       <title>X.509 Certificate extension for 5G</title>
-      <link>http://localhost:1313/blog/posts/computer_network/x509/</link>
+      <link>https://aumpauskar.github.io/blog/posts/computer_network/x509/</link>
       <pubDate>Wed, 03 Jan 2024 09:54:53 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/computer_network/x509/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/computer_network/x509/</guid>
       <description>A brief explanation of X.509 authentication certificates.</description>
     </item>
     <item>
       <title>Leetcode solutions</title>
-      <link>http://localhost:1313/blog/posts/dsa/leetcode/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</link>
       <pubDate>Sat, 30 Dec 2023 22:56:49 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/dsa/leetcode/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dsa/leetcode/</guid>
       <description>Solutions to some leetcode problems in python</description>
     </item>
     <item>
       <title>Operating systems</title>
-      <link>http://localhost:1313/blog/posts/os/os/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/os/</link>
       <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/os/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/os/</guid>
       <description>&lt;h1 id=&#34;operating-systems&#34;&gt;Operating systems&lt;/h1&gt;
 &lt;h2 id=&#34;bases-of-an-operating-system&#34;&gt;Bases of an operating system&lt;/h2&gt;
 &lt;ul&gt;
@@ -156,9 +163,9 @@
     </item>
     <item>
       <title>ZSH configuration</title>
-      <link>http://localhost:1313/blog/posts/misc/zsh/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/zsh/</link>
       <pubDate>Wed, 20 Dec 2023 06:58:03 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/zsh/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/zsh/</guid>
       <description>&lt;h1 id=&#34;zsh-configuration&#34;&gt;ZSH configuration&lt;/h1&gt;
 &lt;p&gt;ZSH is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -180,16 +187,16 @@ ZSH can be installed on any linux based system using the following command:&lt;/
     </item>
     <item>
       <title>Raspberry Pi</title>
-      <link>http://localhost:1313/blog/posts/iot/raspberry_pi/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/raspberry_pi/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
       <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
     </item>
     <item>
       <title>Lab expriments and termworks</title>
-      <link>http://localhost:1313/blog/posts/misc/lab_expts/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/lab_expts/</link>
       <pubDate>Sat, 16 Dec 2023 17:44:08 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/lab_expts/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/lab_expts/</guid>
       <description>&lt;h1 id=&#34;lab-expriments-and-termworks&#34;&gt;Lab expriments and termworks&lt;/h1&gt;
 &lt;h2 id=&#34;computer-networks-lab&#34;&gt;Computer Networks lab&lt;/h2&gt;
 &lt;h3 id=&#34;template&#34;&gt;Template&lt;/h3&gt;
@@ -236,16 +243,16 @@ Write a program to implement RSA algorithm&lt;/li&gt;
     </item>
     <item>
       <title>Building websites with React</title>
-      <link>http://localhost:1313/blog/posts/web/react/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/react/</link>
       <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/react/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/react/</guid>
       <description>A comprehensive guide to building websites with React</description>
     </item>
     <item>
       <title>Windows scripts with powershell and cmd</title>
-      <link>http://localhost:1313/blog/posts/os/windows_scripts/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/windows_scripts/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
       <description>&lt;h1 id=&#34;windows-prompts&#34;&gt;Windows prompts&lt;/h1&gt;
 &lt;h2 id=&#34;powershell&#34;&gt;PowerShell&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;PowerShell&lt;/strong&gt; is a command-line shell and scripting language built on the .NET Framework. It is the successor to the &lt;strong&gt;Command Prompt&lt;/strong&gt;.
@@ -384,67 +391,67 @@ There are a few &lt;strong&gt;aliases&lt;/strong&gt; for common commands, such a
     </item>
     <item>
       <title>Image analysis theory</title>
-      <link>http://localhost:1313/blog/posts/ml/image_analysis_theory/</link>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</link>
       <pubDate>Wed, 06 Dec 2023 00:12:10 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/ml/image_analysis_theory/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis_theory/</guid>
       <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     <item>
       <title>Big data and hadoop ecosystem</title>
-      <link>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
       <description>Basic concepts of big data and the hadoop ecosystem</description>
     </item>
     <item>
       <title>Image analysis with pytorch</title>
-      <link>http://localhost:1313/blog/posts/ml/image_analysis/</link>
+      <link>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</link>
       <pubDate>Sun, 03 Dec 2023 20:40:58 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/ml/image_analysis/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/ml/image_analysis/</guid>
       <description>A brief overview of image processing and machine learning concepts.</description>
     </item>
     <item>
       <title>Extended markdown cheatsheet with KaTeX</title>
-      <link>http://localhost:1313/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:19 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/e_markdown_cheatsheet/</guid>
       <description>A basic cheatsheet of markdown with KaTeX</description>
     </item>
     <item>
       <title>Git and GitHub cheatsheet</title>
-      <link>http://localhost:1313/blog/posts/cheatsheet/git_cheatsheet/</link>
+      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/cheatsheet/git_cheatsheet/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
       <description>A basic cheatsheet of git and github commands</description>
     </item>
     <item>
       <title>OOPS with Python and packages</title>
-      <link>http://localhost:1313/blog/posts/python/python_oops/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/python_oops/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
       <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/blog/posts/os/linux/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/linux/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
       <description>A brief overview and commands based on the linux operating system</description>
     </item>
     <item>
       <title>Computer networks</title>
-      <link>http://localhost:1313/blog/posts/computer_network/cn/</link>
+      <link>https://aumpauskar.github.io/blog/posts/computer_network/cn/</link>
       <pubDate>Thu, 23 Nov 2023 12:50:11 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/computer_network/cn/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/computer_network/cn/</guid>
       <description>Computer networks and the protocols used in them</description>
     </item>
     <item>
       <title>Modulated motor control with arduino</title>
-      <link>http://localhost:1313/blog/posts/projects/motor_encoder/</link>
+      <link>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</link>
       <pubDate>Tue, 21 Nov 2023 22:20:04 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/projects/motor_encoder/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</guid>
       <description>&lt;h1 id=&#34;motor-encoder&#34;&gt;Motor Encoder&lt;/h1&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://aumpauskar.github.io/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 &lt;ul&gt;
@@ -962,58 +969,58 @@ To enter a value press a key on the keypad. To update the value press &lt;code&g
     </item>
     <item>
       <title>Working with ARM microcontroller using Keil uVision4</title>
-      <link>http://localhost:1313/blog/posts/iot/arm/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/arm/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
       <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
     </item>
     <item>
       <title>Web technologies - basic HTML/CSS/JS</title>
-      <link>http://localhost:1313/blog/posts/web/html-web/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/html-web/</link>
       <pubDate>Fri, 17 Nov 2023 09:21:22 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/html-web/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/html-web/</guid>
       <description>A basic guide to HTML, CSS and JS</description>
     </item>
     <item>
       <title>Static site generators with Hugo</title>
-      <link>http://localhost:1313/blog/posts/web/static-site-generators/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</link>
       <pubDate>Fri, 17 Nov 2023 09:19:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/static-site-generators/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</guid>
       <description>A short guide on how this site was created using hugo</description>
     </item>
     <item>
       <title>Database management and SQL</title>
-      <link>http://localhost:1313/blog/posts/dbms/sql/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dbms/sql/</link>
       <pubDate>Thu, 16 Nov 2023 14:41:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/dbms/sql/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dbms/sql/</guid>
       <description>A basic cheatsheet of database management and SQL</description>
     </item>
     <item>
       <title>Basic DSA algorithms using C</title>
-      <link>http://localhost:1313/blog/posts/dsa/dsabasics/</link>
+      <link>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</link>
       <pubDate>Thu, 16 Nov 2023 10:38:34 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/dsa/dsabasics/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</guid>
       <description>Some basic data structures and algorithms using C</description>
     </item>
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
-      <link>http://localhost:1313/blog/posts/iot/embeddedc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/embeddedc/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
       <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
     </item>
     <item>
       <title>Arduino control with peripherals</title>
-      <link>http://localhost:1313/blog/posts/iot/arduino/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arduino/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:04 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/arduino/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arduino/</guid>
       <description>Some programs and basic stuff on Arduino</description>
     </item>
     <item>
       <title>OOPS with Java</title>
-      <link>http://localhost:1313/blog/posts/java/javafull/</link>
+      <link>https://aumpauskar.github.io/blog/posts/java/javafull/</link>
       <pubDate>Thu, 16 Nov 2023 10:35:36 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/java/javafull/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/java/javafull/</guid>
       <description>&lt;h1 id=&#34;java-tutorial&#34;&gt;Java tutorial&lt;/h1&gt;
 &lt;p&gt;Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm&lt;/p&gt;
 &lt;h2 id=&#34;fyi&#34;&gt;FYI&lt;/h2&gt;
@@ -1026,16 +1033,16 @@ To enter a value press a key on the keypad. To update the value press &lt;code&g
     </item>
     <item>
       <title>Virtualenv</title>
-      <link>http://localhost:1313/blog/posts/python/virtualenv/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/virtualenv/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
       <description>A comprehensive guide to OOPS in python and packages</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
+      <link>https://aumpauskar.github.io/blog/posts/my-first-post/</link>
       <pubDate>Thu, 16 Nov 2023 09:46:38 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/my-first-post/</guid>
       <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World&lt;/h1&gt;
 &lt;p&gt;This is my first post&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Arm on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/arm/</link>
+    <link>https://aumpauskar.github.io/blog/tags/arm/</link>
     <description>Recent content in Arm on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 12:59:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/arm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with ARM microcontroller using Keil uVision4</title>
-      <link>http://localhost:1313/blog/posts/iot/arm/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/arm/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
       <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
     </item>
   </channel>

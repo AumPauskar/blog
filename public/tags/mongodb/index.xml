@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mongodb on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/mongodb/</link>
+    <link>https://aumpauskar.github.io/blog/tags/mongodb/</link>
     <description>Recent content in Mongodb on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Mar 2024 16:36:16 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mern tutorial</title>
-      <link>http://localhost:1313/blog/posts/web/mern/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/mern/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
       <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Certificate on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/certificate/</link>
+    <link>https://aumpauskar.github.io/blog/tags/certificate/</link>
     <description>Recent content in Certificate on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jan 2024 09:54:53 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>X.509 Certificate extension for 5G</title>
-      <link>http://localhost:1313/blog/posts/computer_network/x509/</link>
+      <link>https://aumpauskar.github.io/blog/posts/computer_network/x509/</link>
       <pubDate>Wed, 03 Jan 2024 09:54:53 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/computer_network/x509/</guid>
+      <guid>https://aumpauskar.github.io/blog/posts/computer_network/x509/</guid>
       <description>A brief explanation of X.509 authentication certificates.</description>
     </item>
   </channel>
