@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2025 13:52:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Mar 2025 20:47:43 +0700</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks and note to users</title>
@@ -14,6 +14,13 @@
       <pubDate>Wed, 17 Apr 2024 23:00:22 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/posts/misc/intro/</guid>
       <description>Desc Text.</description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/php/</link>
+      <pubDate>Fri, 21 Mar 2025 20:47:43 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/web/php/</guid>
+      <description>A simple php tutorial</description>
     </item>
     <item>
       <title>Github Actions</title>
