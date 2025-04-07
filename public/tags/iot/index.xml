@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Iot on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/iot/</link>
+    <link>http://localhost:1313/blog/tags/iot/</link>
     <description>Recent content in Iot on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Mar 2024 12:26:43 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IOT Professional elective</title>
-      <link>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</link>
+      <link>http://localhost:1313/blog/posts/iot/iot_professional_elective/</link>
       <pubDate>Wed, 27 Mar 2024 12:26:43 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</guid>
+      <guid>http://localhost:1313/blog/posts/iot/iot_professional_elective/</guid>
       <description>Set of notes and documentation regarding iot open elective of semester 6</description>
     </item>
     <item>
       <title>Raspberry Pi</title>
-      <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
+      <link>http://localhost:1313/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
+      <guid>http://localhost:1313/blog/posts/iot/raspberry_pi/</guid>
       <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
     </item>
     <item>
       <title>Modulated motor control with arduino</title>
-      <link>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</link>
+      <link>http://localhost:1313/blog/posts/projects/motor_encoder/</link>
       <pubDate>Tue, 21 Nov 2023 22:20:04 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</guid>
+      <guid>http://localhost:1313/blog/posts/projects/motor_encoder/</guid>
       <description>&lt;h1 id=&#34;motor-encoder&#34;&gt;Motor Encoder&lt;/h1&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://aumpauskar.github.io/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 &lt;ul&gt;
@@ -546,23 +546,23 @@ To enter a value press a key on the keypad. To update the value press &lt;code&g
     </item>
     <item>
       <title>Working with ARM microcontroller using Keil uVision4</title>
-      <link>https://aumpauskar.github.io/blog/posts/iot/arm/</link>
+      <link>http://localhost:1313/blog/posts/iot/arm/</link>
       <pubDate>Mon, 20 Nov 2023 12:59:45 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/iot/arm/</guid>
+      <guid>http://localhost:1313/blog/posts/iot/arm/</guid>
       <description>A basic introduction to ARM and how to run ARM IC within a simulator - LPC2148</description>
     </item>
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
-      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
+      <link>http://localhost:1313/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
+      <guid>http://localhost:1313/blog/posts/iot/embeddedc/</guid>
       <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
     </item>
     <item>
       <title>Arduino control with peripherals</title>
-      <link>https://aumpauskar.github.io/blog/posts/iot/arduino/</link>
+      <link>http://localhost:1313/blog/posts/iot/arduino/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:04 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/iot/arduino/</guid>
+      <guid>http://localhost:1313/blog/posts/iot/arduino/</guid>
       <description>Some programs and basic stuff on Arduino</description>
     </item>
   </channel>

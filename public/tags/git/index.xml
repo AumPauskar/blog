@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/git/</link>
+    <link>http://localhost:1313/blog/tags/git/</link>
     <description>Recent content in Git on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Nov 2023 09:46:03 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git and GitHub cheatsheet</title>
-      <link>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</link>
+      <link>http://localhost:1313/blog/posts/cheatsheet/git_cheatsheet/</link>
       <pubDate>Sat, 25 Nov 2023 09:46:03 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/cheatsheet/git_cheatsheet/</guid>
+      <guid>http://localhost:1313/blog/posts/cheatsheet/git_cheatsheet/</guid>
       <description>A basic cheatsheet of git and github commands</description>
     </item>
   </channel>

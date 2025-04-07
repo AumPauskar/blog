@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shell on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/shell/</link>
+    <link>http://localhost:1313/blog/tags/shell/</link>
     <description>Recent content in Shell on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Mar 2024 15:34:19 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lab expts sem 6</title>
-      <link>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</link>
+      <link>http://localhost:1313/blog/posts/misc/lab_expts_sem_6/</link>
       <pubDate>Sat, 23 Mar 2024 15:34:19 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/misc/lab_expts_sem_6/</guid>
+      <guid>http://localhost:1313/blog/posts/misc/lab_expts_sem_6/</guid>
       <description>Lab experiments of semester 6, has AIML temworks and unix based network programming</description>
     </item>
     <item>
       <title>Windows scripts with powershell and cmd</title>
-      <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
+      <link>http://localhost:1313/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
+      <guid>http://localhost:1313/blog/posts/os/windows_scripts/</guid>
       <description>&lt;h1 id=&#34;windows-prompts&#34;&gt;Windows prompts&lt;/h1&gt;
 &lt;h2 id=&#34;powershell&#34;&gt;PowerShell&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;PowerShell&lt;/strong&gt; is a command-line shell and scripting language built on the .NET Framework. It is the successor to the &lt;strong&gt;Command Prompt&lt;/strong&gt;.
@@ -158,9 +158,9 @@ There are a few &lt;strong&gt;aliases&lt;/strong&gt; for common commands, such a
     </item>
     <item>
       <title>Linux</title>
-      <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
+      <link>http://localhost:1313/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
+      <guid>http://localhost:1313/blog/posts/os/linux/</guid>
       <description>A brief overview and commands based on the linux operating system</description>
     </item>
   </channel>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Encoder on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/encoder/</link>
+    <link>http://localhost:1313/blog/tags/encoder/</link>
     <description>Recent content in Encoder on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Nov 2023 22:20:04 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/encoder/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/encoder/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modulated motor control with arduino</title>
-      <link>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</link>
+      <link>http://localhost:1313/blog/posts/projects/motor_encoder/</link>
       <pubDate>Tue, 21 Nov 2023 22:20:04 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/projects/motor_encoder/</guid>
+      <guid>http://localhost:1313/blog/posts/projects/motor_encoder/</guid>
       <description>&lt;h1 id=&#34;motor-encoder&#34;&gt;Motor Encoder&lt;/h1&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://aumpauskar.github.io/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/images/cmc/display_and_4x4.png&#34; alt=&#34;Sample&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
 &lt;ul&gt;

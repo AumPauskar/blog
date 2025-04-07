@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nosql on Aum&#39;s blogging site</title>
-    <link>https://aumpauskar.github.io/blog/tags/nosql/</link>
+    <link>http://localhost:1313/blog/tags/nosql/</link>
     <description>Recent content in Nosql on Aum&#39;s blogging site</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Jun 2024 23:21:23 +0530</lastBuildDate>
-    <atom:link href="https://aumpauskar.github.io/blog/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MongoDB</title>
-      <link>https://aumpauskar.github.io/blog/posts/dbms/mongo/</link>
+      <link>http://localhost:1313/blog/posts/dbms/mongo/</link>
       <pubDate>Thu, 27 Jun 2024 23:21:23 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/dbms/mongo/</guid>
+      <guid>http://localhost:1313/blog/posts/dbms/mongo/</guid>
       <description>A show tutorial on how to work with a NoSQL database using MongoDB</description>
     </item>
     <item>
       <title>Big data and hadoop ecosystem</title>
-      <link>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</link>
+      <link>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</link>
       <pubDate>Tue, 05 Dec 2023 12:17:46 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/posts/dbms/big_data_hadoop/</guid>
+      <guid>http://localhost:1313/blog/posts/dbms/big_data_hadoop/</guid>
       <description>Basic concepts of big data and the hadoop ecosystem</description>
     </item>
   </channel>
