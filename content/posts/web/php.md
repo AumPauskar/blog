@@ -44,11 +44,28 @@ PHP (Hypertext Preprocessor) is a widely-used open-source scripting language tha
 
 ## Basics
 
+1.  PHP Start and End Tags: These tags (`<?php` and `?>`) are essential for embedding PHP code within HTML or other text-based files. The PHP interpreter only processes the code located between these tags.
+
+2.  Statements and Semicolons: PHP code is made up of individual instructions called statements. Each complete statement in PHP must end with a semicolon (`;`) to tell the interpreter where one instruction ends and the next begins.
+
+3.  Variables: In PHP, variables are used to store data. They are represented by a dollar sign (`$`) followed by the variable name (e.g., `$myVariable`). PHP is dynamically typed, meaning you don't need to explicitly declare the data type of a variable before assigning a value to it.
+
 ### IO
 - Print statement
     ```php
     <?php
-        echo "Hello, World!"; // Outputs text to the screen
+    $message = "This is a message.";
+    echo $message;
+    echo "<br>";
+
+    print "Another message.";
+    echo "<br>";
+
+    $data = array("apple", "banana", "cherry");
+    var_dump($data);
+    echo "<br>";
+
+    print_r($data);
     ?>
     ```
 
@@ -103,5 +120,42 @@ PHP (Hypertext Preprocessor) is a widely-used open-source scripting language tha
             default:
                 echo "Other day";
         }
+    ?>
+    ```
+
+- Loops
+    ```php
+    <?php
+    echo "\nFor loop...";
+
+    for ($i = 0; $i < 5; $i++) {
+        echo "The number is: " . $i . "<br>";
+    }
+
+    echo "\nWhile loop...";
+    $count = 0;
+    while ($count < 3) {
+        echo "Count is: " . $count . "<br>";
+        $count++;
+    }
+
+    echo "\nDo while loop...";
+    $num = 5;
+    do {
+        echo "Number is: " . $num . "<br>";
+        $num++;
+    } while ($num < 8);
+
+    echo "\nFor each loop...";
+    $colors = array("red", "green", "blue");
+    foreach ($colors as $color) {
+        echo "Color: " . $color . "<br>";
+    }
+
+    $person = array("name" => "Alice", "age" => 28);
+    foreach ($person as $key => $value) {
+        echo $key . ": " . $value . "<br>";
+    }
+
     ?>
     ```
