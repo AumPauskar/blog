@@ -159,3 +159,41 @@ PHP (Hypertext Preprocessor) is a widely-used open-source scripting language tha
 
     ?>
     ```
+
+## Functions
+Functions: In PHP, a **function** is a block of reusable code that performs a specific task. Functions help organize your code, make it more readable, and avoid code duplication.
+
+**Basic Structure of a Function:**
+
+```php
+<?php
+function functionName($parameter1, $parameter2, ...) {
+    // Code to be executed
+    return $returnValue; // Optional
+}
+?>
+```
+
+Key Components:
+
+- `function` keyword: This keyword signifies the start of a function definition.
+- `functionName`: This is the identifier you'll use to call or invoke the function. Function names should be descriptive and follow PHP naming conventions (usually start with a letter or underscore, followed by letters, numbers, or underscores).
+- `($parameter1, $parameter2, ...)`: These are optional **parameters** (or arguments) that the function can accept as input. You can have zero or more parameters. When you call the function, you'll provide the values for these parameters (called arguments).
+- `{ ... }`:** The curly braces enclose the **function body**, which contains the actual PHP code that the function will execute.
+- `return $returnValue;` (Optional): The `return` statement is used to send a value back from the function to the code that called it. A function can return any data type (scalar, array, object, etc.) or nothing at all (in which case it implicitly returns `null`).
+
+**Example Function:**
+
+```php
+<?php
+function greet($name) {
+    echo "Hello, " . $name . "!\n";
+}
+
+// Calling the function
+greet("Alice"); // Output: Hello, Alice!
+greet("Bob");   // Output: Hello, Bob!
+?>
+```
+
+- Function Scope: Variables declared inside a function have **local scope**, meaning they are only accessible within that function. Variables declared outside functions have **global scope** and are generally not directly accessible inside functions (unless you use the `global` keyword, which is often discouraged).
