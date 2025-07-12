@@ -20,6 +20,13 @@ A blogging site made with [Hugo](https://gohugo.io/) using [papermod](https://th
         ```
         sudo pacman -S hugo
         ```
+
+## Creating new files
+To create a new post, run the following command in the root directory of the project:
+```bash
+hugo new --kind post content/posts/<directory>/<filename>.md
+```
+
 ## References
 If you want to create a similar blog, you can follow the following links:
 - [Hugo](https://gohugo.io/getting-started/quick-start/)
