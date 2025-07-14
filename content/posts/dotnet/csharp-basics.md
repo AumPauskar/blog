@@ -546,3 +546,144 @@ Logical statements or conditions help the flow of the code that is running withi
     myArrayList.Add(1);
     myArrayList.Add("Hello");
     ```
+
+## String functions in C#
+
+The following are some of the string functions in C#. 
+- 1. `Length`
+    - **Definition**: Gets the number of characters in the string.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    int length = myString.Length; // length is 13
+    ```
+
+- 2. `Substring`
+    - **Definition**: Returns a substring from the string, starting at a specified index and optionally for a specified length.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    string sub = myString.Substring(7, 5); // sub is "World"
+    ```
+
+- 3. `IndexOf`
+    - **Definition**: Returns the zero-based index of the first occurrence of a specified substring. Returns -1 if not found.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    int index = myString.IndexOf("World"); // index is 7
+    ```
+
+- 4. `LastIndexOf`
+    - **Definition**: Returns the zero-based index of the last occurrence of a specified substring. Returns -1 if not found.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World! Hello!";
+    int lastIndex = myString.LastIndexOf("Hello"); // lastIndex is 14
+    ```
+
+- 5. `Replace`
+    - **Definition**: Replaces all occurrences of a specified substring with another substring.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    string replaced = myString.Replace("World", "C#"); // replaced is "Hello, C#!"
+    ```
+
+- 6. `ToUpper`
+    - **Definition**: Converts the string to uppercase.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    string upper = myString.ToUpper(); // upper is "HELLO, WORLD!"
+    ```
+
+- 7. `ToLower`
+    - **Definition**: Converts the string to lowercase.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    string lower = myString.ToLower(); // lower is "hello, world!"
+    ```
+
+- 8. `Trim`
+    - **Definition**: Removes all leading and trailing whitespace characters from the string.
+    - **Snippet**:
+    ```csharp
+    string myString = "   Hello, World!   ";
+    string trimmed = myString.Trim(); // trimmed is "Hello, World!"
+    ```
+
+- 9. `Split`
+    - **Definition**: Splits the string into an array of substrings based on specified delimiters.
+    - **Snippet**:
+    ```csharp
+    string myString = "apple,banana,cherry";
+    string[] fruits = myString.Split(','); // fruits is ["apple", "banana", "cherry"]
+    ```
+
+- 10. `Join`
+    - **Definition**: Concatenates the elements of a string array, using a specified separator between each element.
+    - **Snippet**:
+    ```csharp
+    string[] fruits = { "apple", "banana", "cherry" };
+    string joined = string.Join(", ", fruits); // joined is "apple, banana, cherry"
+    ```
+
+- 11. `Contains`
+    - **Definition**: Determines whether the string contains a specified substring.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    bool contains = myString.Contains("World"); // contains is true
+    ```
+
+- 12. `StartsWith`
+    - **Definition**: Determines whether the string starts with a specified substring.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    bool startsWith = myString.StartsWith("Hello"); // startsWith is true
+    ```
+
+- 13. `EndsWith`
+    - **Definition**: Determines whether the string ends with a specified substring.
+    - **Snippet**:
+    ```csharp
+    string myString = "Hello, World!";
+    bool endsWith = myString.EndsWith("World!"); // endsWith is true
+    ```
+
+- 14. `Format`
+    - **Definition**: Formats the specified string by replacing the format items with the string representation of the corresponding objects.
+    - **Snippet**:
+    ```csharp
+    string name = "Alice";
+    int age = 30;
+    string formatted = string.Format("{0} is {1} years old.", name, age); // formatted is "Alice is 30 years old."
+    ```
+
+- 15. `Equals`
+    - **Definition**: Determines whether two string instances have the same value.
+    - **Snippet**:
+    ```csharp
+    string str1 = "Hello";
+    string str2 = "Hello";
+    bool areEqual = str1.Equals(str2); // areEqual is true
+    ```
+
+- 16. `IsNullOrEmpty`
+    - **Definition**: Determines whether a specified string is `null` or an empty string.
+    - **Snippet**:
+    ```csharp
+    string myString = "";
+    bool isNullOrEmpty = string.IsNullOrEmpty(myString); // isNullOrEmpty is true
+    ```
+
+- 17. `IsNullOrWhiteSpace`
+    - **Definition**: Determines whether a specified string is `null`, empty, or consists only of white-space characters.
+    - **Snippet**:
+    ```csharp
+    string myString = "   ";
+    bool isNullOrWhiteSpace = string.IsNullOrWhiteSpace(myString); // isNullOrWhiteSpace is true
+    ```
