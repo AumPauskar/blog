@@ -439,3 +439,110 @@ Logical statements or conditions help the flow of the code that is running withi
         int number = 10;
         string result = (number > 0) ? "Positive" : "Non-positive"; // result is "Positive"
         ```
+
+## Data structures in C#
+
+- 1. Arrays
+
+    - **Definition**: A collection of items of the same type, stored in contiguous memory locations. Arrays can be single-dimensional or multi-dimensional.
+    - **Snippet**:
+    ```csharp
+    int[] myArray = new int[5] { 1, 2, 3, 4, 5 }; // Single-dimensional array
+    ```
+
+- 2. Lists
+
+    - **Definition**: A dynamic array that can grow and shrink in size. It is part of the `System.Collections.Generic` namespace and provides methods for adding, removing, and searching for elements.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    List<int> myList = new List<int>();
+    myList.Add(1);
+    myList.Add(2);
+    myList.Add(3);
+    ```
+
+- 3. Dictionaries
+
+    - **Definition**: A collection of key-value pairs, where each key is unique. It allows for fast lookups based on keys. It is also part of the `System.Collections.Generic` namespace.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    Dictionary<string, int> myDictionary = new Dictionary<string, int>();
+    myDictionary.Add("Alice", 30);
+    myDictionary.Add("Bob", 25);
+    ```
+
+- 4. HashSet
+
+    - **Definition**: A collection of unique elements that provides high-performance set operations. It does not allow duplicate values and is part of the `System.Collections.Generic` namespace.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    HashSet<int> myHashSet = new HashSet<int>();
+    myHashSet.Add(1);
+    myHashSet.Add(2);
+    myHashSet.Add(2); // Duplicate, will not be added
+    ```
+
+- 5. Queue
+
+    - **Definition**: A first-in, first-out (FIFO) collection of objects. It is part of the `System.Collections.Generic` namespace and provides methods for adding and removing elements.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    Queue<string> myQueue = new Queue<string>();
+    myQueue.Enqueue("First");
+    myQueue.Enqueue("Second");
+    string first = myQueue.Dequeue(); // Removes "First"
+    ```
+
+- 6. Stack
+
+    - **Definition**: A last-in, first-out (LIFO) collection of objects. It allows adding and removing elements from the top of the stack.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    Stack<string> myStack = new Stack<string>();
+    myStack.Push("First");
+    myStack.Push("Second");
+    string last = myStack.Pop(); // Removes "Second"
+    ```
+
+- 7. LinkedList
+
+    - **Definition**: A doubly linked list that allows for efficient insertions and deletions. It is part of the `System.Collections.Generic` namespace.
+    - **Snippet**:
+    ```csharp
+    using System.Collections.Generic;
+
+    LinkedList<string> myLinkedList = new LinkedList<string>();
+    myLinkedList.AddLast("First");
+    myLinkedList.AddLast("Second");
+    myLinkedList.AddFirst("Zero"); // Adds "Zero" at the beginning
+    ```
+
+- 8. Tuple
+
+    - **Definition**: A data structure that can hold a fixed number of items of different types. It is useful for returning multiple values from a method.
+    - **Snippet**:
+    ```csharp
+    var myTuple = Tuple.Create(1, "Alice", 30); // Tuple with an int, string, and int
+    ```
+
+- 9. ArrayList
+
+    - **Definition**: A non-generic collection that can hold items of any type. It is part of the `System.Collections` namespace and is less type-safe than generic collections.
+    - **Snippet**:
+    ```csharp
+    using System.Collections;
+
+    ArrayList myArrayList = new ArrayList();
+    myArrayList.Add(1);
+    myArrayList.Add("Hello");
+    ```
