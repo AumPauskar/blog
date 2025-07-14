@@ -336,3 +336,106 @@ C# is a statically typed language, which means that the type of a variable is kn
         ```csharp
         enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
         ```
+
+## Logical statements
+
+Logical statements or conditions help the flow of the code that is running within the program. Here are the examples of some logical statements that are in C#
+
+- 1. Logical Operators
+
+    - a. `&&` (Logical AND)
+        - **Definition**: Returns `true` if both operands are true; otherwise, it returns `false`.
+        - **Snippet**:
+        ```csharp
+        bool a = true;
+        bool b = false;
+        bool result = a && b; // result is false
+        ```
+
+    - b. `||` (Logical OR)
+        - **Definition**: Returns `true` if at least one of the operands is true; returns `false` if both are false.
+        - **Snippet**:
+        ```csharp
+        bool a = true;
+        bool b = false;
+        bool result = a || b; // result is true
+        ```
+
+    - c. `!` (Logical NOT)
+        - **Definition**: Reverses the logical state of its operand. If the condition is true, it becomes false, and vice versa.
+        - **Snippet**:
+        ```csharp
+        bool a = true;
+        bool result = !a; // result is false
+        ```
+
+- 2. Conditional Statements
+
+    - a. `if` Statement
+        - **Definition**: Executes a block of code if the specified condition is true.
+        - **Snippet**:
+        ```csharp
+        int number = 10;
+        if (number > 0) {
+            Console.WriteLine("Number is positive.");
+        }
+        ```
+
+    - b. `else` Statement
+        - **Definition**: Executes a block of code if the condition in the `if` statement is false.
+        - **Snippet**:
+        ```csharp
+        int number = -5;
+        if (number > 0) {
+            Console.WriteLine("Number is positive.");
+        } else {
+            Console.WriteLine("Number is not positive.");
+        }
+        ```
+
+    - c. `else if` Statement
+        - **Definition**: Specifies a new condition to test if the first condition is false.
+        - **Snippet**:
+        ```csharp
+        int number = 0;
+        if (number > 0) {
+            Console.WriteLine("Number is positive.");
+        } else if (number < 0) {
+            Console.WriteLine("Number is negative.");
+        } else {
+            Console.WriteLine("Number is zero.");
+        }
+        ```
+
+- 3. Switch Statement
+
+    - a. `switch`
+        - **Definition**: Selects one of many code blocks to execute based on the value of a variable or expression.
+        - **Snippet**:
+        ```csharp
+        int day = 3;
+        switch (day) {
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+            default:
+                Console.WriteLine("Invalid day");
+                break;
+        }
+        ```
+
+- 4. Ternary Operator
+
+    - a. `?:` (Ternary Conditional Operator)
+        - **Definition**: A shorthand for `if-else` statements that returns one of two values based on a condition.
+        - **Snippet**:
+        ```csharp
+        int number = 10;
+        string result = (number > 0) ? "Positive" : "Non-positive"; // result is "Positive"
+        ```
