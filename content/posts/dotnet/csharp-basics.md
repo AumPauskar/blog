@@ -170,3 +170,169 @@ writing to the console.
         Console.WriteLine("Invalid input. Please enter a valid number.");
     }
     ```
+
+## Datatypes
+
+C# is a statically typed language, which means that the type of a variable is known at compile time. C# provides a rich set of built-in data types, which can be categorized into two main groups: **Value Types** and **Reference Types**. Below is a detailed look at these data types.
+
+- 1. Integral Types
+    - a. `int`
+        - **Definition and Range**: Represents a 32-bit signed integer. Range: -2,147,483,648 to 2,147,483,647.
+        - **Snippet**:
+        ```csharp
+        int myInt = 42;
+        ```
+
+    - b. `long`
+        - **Definition and Range**: Represents a 64-bit signed integer. Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+        - **Snippet**:
+        ```csharp
+        long myLong = 12345678901234L;
+        ```
+
+    - c. `short`
+        - **Definition and Range**: Represents a 16-bit signed integer. Range: -32,768 to 32,767.
+        - **Snippet**:
+        ```csharp
+        short myShort = 32000;
+        ```
+
+    - d. `byte`
+        - **Definition and Range**: Represents an 8-bit unsigned integer. Range: 0 to 255.
+        - **Snippet**:
+        ```csharp
+        byte myByte = 255;
+        ```
+
+    - e. `sbyte`
+        - **Definition and Range**: Represents an 8-bit signed integer. Range: -128 to 127.
+        - **Snippet**:
+        ```csharp
+        sbyte mySByte = -128;
+        ```
+
+    - f. `uint`
+        - **Definition and Range**: Represents a 32-bit unsigned integer. Range: 0 to 4,294,967,295.
+        - **Snippet**:
+        ```csharp
+        uint myUInt = 4000000000U;
+        ```
+
+    - g. `ulong`
+        - **Definition and Range**: Represents a 64-bit unsigned integer. Range: 0 to 18,446,744,073,709,551,615.
+        - **Snippet**:
+        ```csharp
+        ulong myULong = 8000000000000000000UL;
+        ```
+
+    - h. `ushort`
+        - **Definition and Range**: Represents a 16-bit unsigned integer. Range: 0 to 65,535.
+        - **Snippet**:
+        ```csharp
+        ushort myUShort = 65000;
+        ```
+
+- 2. Floating-Point Types
+
+    - a. `float`
+        - **Definition and Range**: Represents a single-precision (32-bit) floating-point number. Range: ±1.5 × 10^−45 to ±3.4 × 10^38.
+        - **Snippet**:
+        ```csharp
+        float myFloat = 3.14f;
+        ```
+
+    - b. `double`
+        - **Definition and Range**: Represents a double-precision (64-bit) floating-point number. Range: ±5.0 × 10^−324 to ±1.7 × 10^308.
+        - **Snippet**:
+        ```csharp
+        double myDouble = 3.14159265358979;
+        ```
+
+    - c. `decimal`
+        - **Definition and Range**: Represents a 128-bit precise decimal value with 28-29 significant digits. Range: ±1.0 × 10^−28 to ±7.9 × 10^28.
+        - **Snippet**:
+        ```csharp
+        decimal myDecimal = 19.99m;
+        ```
+
+- 3. Other Value Types
+
+    - a. `char`
+        - **Definition and Range**: Represents a single 16-bit Unicode character. Range: U+0000 to U+FFFF.
+        - **Snippet**:
+        ```csharp
+        char myChar = 'A';
+        ```
+
+    - b. `bool`
+        - **Definition and Range**: Represents a Boolean value (true or false).
+        - **Snippet**:
+        ```csharp
+        bool myBool = true;
+        ```
+
+- 4. Reference Types
+
+    - a. `string`
+        - **Definition**: Represents a sequence of characters. Strings are immutable.
+        - **Snippet**:
+        ```csharp
+        string myString = "Hello, World!";
+        ```
+    - b. Array
+        - **Definition**: A collection of items of the same type. Can be single-dimensional or multi-dimensional.
+        - **Snippet**:
+        ```csharp
+        int[] myArray = new int[5] { 1, 2, 3, 4, 5 };
+        ```
+
+    - c. Class
+        - **Definition**: A user-defined reference type that can contain data members (fields) and function members (methods).
+        - **Snippet**:
+        ```csharp
+        class Person {
+            public string Name;
+            public int Age;
+        }
+        ```
+
+    - d. Interface
+        - **Definition**: A contract that defines a set of methods and properties that implementing classes must provide.
+        - **Snippet**:
+        ```csharp
+        interface IAnimal {
+            void Speak();
+        }
+        ```
+
+    - e. Delegate
+        - **Definition**: A type that represents references to methods with a specific parameter list and return type.
+        - **Snippet**:
+        ```csharp
+        public delegate void Notify();
+        ```
+
+    - f. `object`
+        - **Definition**: The base type from which all other types derive. Can hold any data type.
+        - **Snippet**:
+        ```csharp
+        object myObject = "This is an object";
+        ```
+
+- 5. Nullable Types
+
+    - a. `int?`
+        - **Definition**: A nullable integer that can represent all the values of its underlying type plus an additional `null` value.
+        - **Snippet**:
+        ```csharp
+        int? myNullableInt = null;
+        ```
+
+- 6. Enumerations
+
+    - a. `enum`
+        - **Definition**: A special "class" that represents a group of constants (named values).
+        - **Snippet**:
+        ```csharp
+        enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+        ```
