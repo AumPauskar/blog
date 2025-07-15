@@ -736,6 +736,94 @@ NuGet can be used via the command line or through the Package Manager Console in
   dotnet list package
   ```
 
-#### Package Configuration
+- Package Configuration: Packages are typically configured in the project file (e.g., `.csproj` for C# projects) or in a `packages.config` file. The project file includes references to the packages used in the project, along with their versions.
 
-Packages are typically configured in the project file (e.g., `.csproj` for C# projects) or in a `packages.config` file. The project file includes references to the packages used in the project, along with their versions.
+
+#### Importing packages/files into your own file
+
+In C#, importing packages and calling specific functions can be done for both custom files (like your own classes) and NuGet packages. Below, I’ll explain how to do this for both scenarios.
+
+- 1. Importing Custom Files
+    - Step 1: Create a Custom Class
+
+        First, create a custom class in a separate file. For example, create a file named `MathUtilities.cs`:
+
+        ```csharp
+        // MathUtilities.cs
+        namespace MyUtilities
+        {
+            public class MathUtilities
+            {
+                public static int Add(int a, int b)
+                {
+                    return a + b;
+                }
+
+                public static int Subtract(int a, int b)
+                {
+                    return a - b;
+                }
+            }
+        }
+        ```
+
+    - Step 2: Import the Namespace
+
+        In your main program file (e.g., `Program.cs`), you need to import the namespace where your custom class is defined:
+
+        ```csharp
+        // Program.cs
+        using System;
+        using MyUtilities; // Import the namespace
+
+        class Program
+        {
+            static void Main()
+            {
+                int sum = MathUtilities.Add(5, 3); // Call the Add method
+                int difference = MathUtilities.Subtract(5, 3); // Call the Subtract method
+
+                Console.WriteLine($"Sum: {sum}"); // Output: Sum: 8
+                Console.WriteLine($"Difference: {difference}"); // Output: Difference: 2
+            }
+        }
+        ```
+
+- 2. Importing NuGet Packages
+
+    - Step 1: Install the NuGet Package
+
+        You can install a NuGet package using the command line or through Visual Studio. For example, to install the `Newtonsoft.Json` package, you can use the following command:
+
+        ```bash
+        dotnet add package Newtonsoft.Json
+        ```
+
+    - Step 2: Import the Namespace
+
+        After installing the package, you need to import the namespace associated with the package. For `Newtonsoft.Json`, the namespace is `Newtonsoft.Json`.
+
+        ```csharp
+        // Program.cs
+        using System;
+        using Newtonsoft.Json; // Import the namespace for the NuGet package
+
+        class Program
+        {
+            static void Main()
+            {
+                // Create an object to serialize
+                var person = new { Name = "Alice", Age = 30 };
+
+                // Serialize the object to a JSON string
+                string json = JsonConvert.SerializeObject(person);
+
+                // Output the JSON string
+                Console.WriteLine(json); // Output: {"Name":"Alice","Age":30}
+
+                // Deserialize the JSON string back to an object
+                var deserializedPerson = JsonConvert.DeserializeObject<dynamic>(json);
+                Console.WriteLine($"Name: {deserializedPerson.Name}, Age: {deserializedPerson.Age}"); // Output: Name: Alice, Age: 30
+            }
+        }
+        ```
