@@ -1,153 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cmd on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/cmd/</link>
+    <link>https://aumpauskar.github.io/blog/tags/cmd/</link>
     <description>Recent content in Cmd on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Dec 2023 22:42:51 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows scripts with powershell and cmd</title>
-      <link>http://localhost:1313/blog/posts/os/windows_scripts/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</link>
       <pubDate>Thu, 07 Dec 2023 22:42:51 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/windows_scripts/</guid>
-      <description>&lt;h1 id=&#34;windows-prompts&#34;&gt;Windows prompts&lt;/h1&gt;
-&lt;h2 id=&#34;powershell&#34;&gt;PowerShell&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;PowerShell&lt;/strong&gt; is a command-line shell and scripting language built on the .NET Framework. It is the successor to the &lt;strong&gt;Command Prompt&lt;/strong&gt;.
-Commands are called &lt;strong&gt;cmdlets&lt;/strong&gt; and are written in the form &lt;code&gt;Verb-Noun&lt;/code&gt;. For example, &lt;code&gt;Get-ChildItem&lt;/code&gt; lists the contents of a directory.
-There are a few &lt;strong&gt;aliases&lt;/strong&gt; for common commands, such as &lt;code&gt;ls&lt;/code&gt; for &lt;code&gt;Get-ChildItem&lt;/code&gt; and &lt;code&gt;rm&lt;/code&gt; for &lt;code&gt;Remove-Item&lt;/code&gt;.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Write-Output&lt;/code&gt;: Prints a line in the shell&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;New-Item&lt;/code&gt;: Creates a new file within the same directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Get-Content&lt;/code&gt;: Reads the contents of a file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Set-Content&lt;/code&gt;: Writes the contents of a file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Remove-Item&lt;/code&gt;: Deletes a file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Get-ChildItem&lt;/code&gt;: Lists the contents of a directory&lt;/li&gt;
-&lt;/ol&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-          &lt;th&gt;Alias&lt;/th&gt;
-          &lt;th&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;Write-Output&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Prints a line in the shell&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;New-Item&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;touch&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Creates a new file within the same directory&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;Get-Content&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Reads the contents of a file&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;Set-Content&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Writes the contents of a file&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;Remove-Item&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;del&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Deletes a file&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;Get-ChildItem&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;dir&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Lists the contents of a directory&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;cmd&#34;&gt;CMD&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;echo &amp;lt;line&amp;gt;&lt;/code&gt;: Prints a line in the shell&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;type &amp;lt;file&amp;gt;&lt;/code&gt;: Reads the contents of a file&lt;/li&gt;
-&lt;li&gt;file operations
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;copy &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;&lt;/code&gt;: Copies a file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;move &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;&lt;/code&gt;: Moves a file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;del &amp;lt;file&amp;gt;&lt;/code&gt;: Deletes a file&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dir&lt;/code&gt;: Lists the contents of a directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; commands: required to change the current directory
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;cd &amp;lt;dir&amp;gt;&lt;/code&gt;: Changes the current directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;: Changes the current directory to the parent directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt;: Changes the current directory to the home directory&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdir &amp;lt;dir&amp;gt;&lt;/code&gt;: Creates a new directory&lt;/li&gt;
-&lt;li&gt;system boot options
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;shutdown /s&lt;/code&gt;: Shuts down the system&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;shutdown /r&lt;/code&gt;: Restarts the system&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;shutdown /l&lt;/code&gt;: Logs off the current user&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;shutdown /h&lt;/code&gt;: Hibernates the system&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;shutdown /a&lt;/code&gt;: Aborts the system shutdown&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;computer processes
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;tasklist&lt;/code&gt;: Lists all running processes&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;taskkill /pid &amp;lt;pid&amp;gt;&lt;/code&gt;: Kills a process by its PID&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;taskkill /im &amp;lt;name&amp;gt;&lt;/code&gt;: Kills a process by its name&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;network operations
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;ipconfig&lt;/code&gt;: Lists the network configuration&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ping &amp;lt;host&amp;gt;&lt;/code&gt;: Pings a host&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;software management
-&lt;ul&gt;
-&lt;li&gt;Note: These commands may require administrator privileges&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;winget install &amp;lt;package&amp;gt;&lt;/code&gt;: Installs a package&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget uninstall &amp;lt;package&amp;gt;&lt;/code&gt;: Uninstalls a package&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget search &amp;lt;package&amp;gt;&lt;/code&gt;: Searches for a package&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget show &amp;lt;package&amp;gt;&lt;/code&gt;: Shows information about a package&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget source&lt;/code&gt;: Lists the package sources&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget source add &amp;lt;source&amp;gt;&lt;/code&gt;: Adds a package source&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;winget source remove &amp;lt;source&amp;gt;&lt;/code&gt;: Removes a package source&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;system information
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;systeminfo&lt;/code&gt;: Lists the system information&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;OS Name&amp;quot; /C:&amp;quot;OS Version&amp;quot;&lt;/code&gt;: Lists the OS information&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;System Boot Time&amp;quot;&lt;/code&gt;: Lists the system boot time&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;System Manufacturer&amp;quot; /C:&amp;quot;System Model&amp;quot;&lt;/code&gt;: Lists the system manufacturer and model&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Total Physical Memory&amp;quot;&lt;/code&gt;: Lists the total physical memory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Available Physical Memory&amp;quot;&lt;/code&gt;: Lists the available physical memory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Virtual Memory: Max Size&amp;quot;&lt;/code&gt;: Lists the maximum virtual memory&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;computer troubleshooting
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;sfc /scannow&lt;/code&gt;: Scans the system for corrupted files&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;chkdsk&lt;/code&gt;: Scans the system for corrupted disks&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /restorehealth&lt;/code&gt;: Scans the system for corrupted images&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup&lt;/code&gt;: Cleans up the system&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup /resetbase&lt;/code&gt;: Cleans up the system and resets the base&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /restorehealth /source:&amp;lt;source&amp;gt;&lt;/code&gt;: Scans the system for corrupted images using a source&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup /resetbase /source:&amp;lt;source&amp;gt;&lt;/code&gt;: Cleans up the system and resets the base using a source&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;batch-files&#34;&gt;Batch files&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;batch file&lt;/strong&gt; is a text file containing a series of commands to be executed by the command interpreter. It is similar to a shell script. Batch files have the &lt;code&gt;.bat&lt;/code&gt; extension.&lt;/p&gt;</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/windows_scripts/</guid>
+      <description>&lt;h1 id=&#34;windows-prompts&#34;&gt;Windows prompts&lt;/h1&gt;&#xA;&lt;h2 id=&#34;powershell&#34;&gt;PowerShell&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;PowerShell&lt;/strong&gt; is a command-line shell and scripting language built on the .NET Framework. It is the successor to the &lt;strong&gt;Command Prompt&lt;/strong&gt;.&#xA;Commands are called &lt;strong&gt;cmdlets&lt;/strong&gt; and are written in the form &lt;code&gt;Verb-Noun&lt;/code&gt;. For example, &lt;code&gt;Get-ChildItem&lt;/code&gt; lists the contents of a directory.&#xA;There are a few &lt;strong&gt;aliases&lt;/strong&gt; for common commands, such as &lt;code&gt;ls&lt;/code&gt; for &lt;code&gt;Get-ChildItem&lt;/code&gt; and &lt;code&gt;rm&lt;/code&gt; for &lt;code&gt;Remove-Item&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;Write-Output&lt;/code&gt;: Prints a line in the shell&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;New-Item&lt;/code&gt;: Creates a new file within the same directory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Get-Content&lt;/code&gt;: Reads the contents of a file&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Set-Content&lt;/code&gt;: Writes the contents of a file&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Remove-Item&lt;/code&gt;: Deletes a file&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Get-ChildItem&lt;/code&gt;: Lists the contents of a directory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Command&lt;/th&gt;&#xA;          &lt;th&gt;Alias&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Write-Output&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Prints a line in the shell&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;New-Item&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;touch&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Creates a new file within the same directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Get-Content&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Reads the contents of a file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Set-Content&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Writes the contents of a file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Remove-Item&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;del&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Deletes a file&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;Get-ChildItem&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;dir&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Lists the contents of a directory&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;cmd&#34;&gt;CMD&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;echo &amp;lt;line&amp;gt;&lt;/code&gt;: Prints a line in the shell&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;type &amp;lt;file&amp;gt;&lt;/code&gt;: Reads the contents of a file&lt;/li&gt;&#xA;&lt;li&gt;file operations&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;copy &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;&lt;/code&gt;: Copies a file&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;move &amp;lt;source&amp;gt; &amp;lt;target&amp;gt;&lt;/code&gt;: Moves a file&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;del &amp;lt;file&amp;gt;&lt;/code&gt;: Deletes a file&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dir&lt;/code&gt;: Lists the contents of a directory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; commands: required to change the current directory&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;cd &amp;lt;dir&amp;gt;&lt;/code&gt;: Changes the current directory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;: Changes the current directory to the parent directory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;cd&lt;/code&gt;: Changes the current directory to the home directory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;mkdir &amp;lt;dir&amp;gt;&lt;/code&gt;: Creates a new directory&lt;/li&gt;&#xA;&lt;li&gt;system boot options&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;shutdown /s&lt;/code&gt;: Shuts down the system&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shutdown /r&lt;/code&gt;: Restarts the system&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shutdown /l&lt;/code&gt;: Logs off the current user&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shutdown /h&lt;/code&gt;: Hibernates the system&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;shutdown /a&lt;/code&gt;: Aborts the system shutdown&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;computer processes&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;tasklist&lt;/code&gt;: Lists all running processes&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;taskkill /pid &amp;lt;pid&amp;gt;&lt;/code&gt;: Kills a process by its PID&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;taskkill /im &amp;lt;name&amp;gt;&lt;/code&gt;: Kills a process by its name&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;network operations&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;ipconfig&lt;/code&gt;: Lists the network configuration&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;ping &amp;lt;host&amp;gt;&lt;/code&gt;: Pings a host&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;software management&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Note: These commands may require administrator privileges&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;winget install &amp;lt;package&amp;gt;&lt;/code&gt;: Installs a package&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget uninstall &amp;lt;package&amp;gt;&lt;/code&gt;: Uninstalls a package&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget search &amp;lt;package&amp;gt;&lt;/code&gt;: Searches for a package&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget show &amp;lt;package&amp;gt;&lt;/code&gt;: Shows information about a package&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget source&lt;/code&gt;: Lists the package sources&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget source add &amp;lt;source&amp;gt;&lt;/code&gt;: Adds a package source&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;winget source remove &amp;lt;source&amp;gt;&lt;/code&gt;: Removes a package source&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;system information&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo&lt;/code&gt;: Lists the system information&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;OS Name&amp;quot; /C:&amp;quot;OS Version&amp;quot;&lt;/code&gt;: Lists the OS information&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;System Boot Time&amp;quot;&lt;/code&gt;: Lists the system boot time&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;System Manufacturer&amp;quot; /C:&amp;quot;System Model&amp;quot;&lt;/code&gt;: Lists the system manufacturer and model&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Total Physical Memory&amp;quot;&lt;/code&gt;: Lists the total physical memory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Available Physical Memory&amp;quot;&lt;/code&gt;: Lists the available physical memory&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;systeminfo | findstr /B /C:&amp;quot;Virtual Memory: Max Size&amp;quot;&lt;/code&gt;: Lists the maximum virtual memory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;computer troubleshooting&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;sfc /scannow&lt;/code&gt;: Scans the system for corrupted files&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;chkdsk&lt;/code&gt;: Scans the system for corrupted disks&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /restorehealth&lt;/code&gt;: Scans the system for corrupted images&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup&lt;/code&gt;: Cleans up the system&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup /resetbase&lt;/code&gt;: Cleans up the system and resets the base&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /restorehealth /source:&amp;lt;source&amp;gt;&lt;/code&gt;: Scans the system for corrupted images using a source&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dism /online /cleanup-image /startcomponentcleanup /resetbase /source:&amp;lt;source&amp;gt;&lt;/code&gt;: Cleans up the system and resets the base using a source&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;batch-files&#34;&gt;Batch files&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;batch file&lt;/strong&gt; is a text file containing a series of commands to be executed by the command interpreter. It is similar to a shell script. Batch files have the &lt;code&gt;.bat&lt;/code&gt; extension.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

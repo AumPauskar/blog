@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hyprland on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/hyprland/</link>
+    <link>https://aumpauskar.github.io/blog/tags/hyprland/</link>
     <description>Recent content in Hyprland on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Oct 2024 17:45:41 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/hyprland/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/hyprland/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Ricing</title>
-      <link>http://localhost:1313/blog/posts/os/linux_ricing/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</link>
       <pubDate>Thu, 24 Oct 2024 17:45:41 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/linux_ricing/</guid>
-      <description>A basic guide to demonstrate and how show to rice and completely customize your linux installation with an arch based system and a tiling window manager</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</guid>
+      <description>&lt;h1 id=&#34;linux-ricing&#34;&gt;Linux ricing&lt;/h1&gt;&#xA;&lt;h2 id=&#34;wtf-is-ricing&#34;&gt;WTF is ricing&lt;/h2&gt;&#xA;&lt;p&gt;Ricing came from the car term &amp;ldquo;Race Inspired Cosmetic Enhancements&amp;rdquo; it generally means to customize your software experience tailormade to your usage. In this tutorial we are going to use &lt;strong&gt;Arch Linux&lt;/strong&gt; and &lt;strong&gt;Hyprland&lt;/strong&gt; to completely customize you user experience&lt;/p&gt;&#xA;&lt;h2 id=&#34;prereq&#34;&gt;Prereq&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

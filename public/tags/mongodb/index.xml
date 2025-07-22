@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongodb on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/mongodb/</link>
+    <link>https://aumpauskar.github.io/blog/tags/mongodb/</link>
     <description>Recent content in Mongodb on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Mar 2024 16:36:16 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mern tutorial</title>
-      <link>http://localhost:1313/blog/posts/web/mern/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/mern/</guid>
-      <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
+      <description>&lt;h1 id=&#34;mern-stack-tutorial&#34;&gt;MERN Stack Tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;01-running-express-js&#34;&gt;01-Running express js&lt;/h2&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is an open-source framework developed and maintained by the Node.js foundation. It is designed for building web applications and APIs. It is the standard server framework for Node.js.&lt;/p&gt;&#xA;&lt;p&gt;Before starting with express js, ensure that you have node.js, npm and a code editor installed on your system. The installation of node.js and npm can be verified by running the following commands in the terminal.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

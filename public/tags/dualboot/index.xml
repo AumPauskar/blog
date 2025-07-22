@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dualboot on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/dualboot/</link>
+    <link>https://aumpauskar.github.io/blog/tags/dualboot/</link>
     <description>Recent content in Dualboot on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Jul 2024 11:26:50 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/dualboot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/dualboot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dualbooting windows and linux</title>
-      <link>http://localhost:1313/blog/posts/os/dualboot/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/dualboot/</link>
       <pubDate>Sun, 07 Jul 2024 11:26:50 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/dualboot/</guid>
-      <description>A guide to dual booting Windows and Linux (fedora)</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/dualboot/</guid>
+      <description>&lt;h1 id=&#34;dual-booting-arch-and-win11&#34;&gt;Dual booting arch and win11&lt;/h1&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before installing arch we need to do the following things&lt;/p&gt;&#xA;&lt;h3 id=&#34;disk-partition&#34;&gt;Disk partition&lt;/h3&gt;&#xA;&lt;p&gt;We’ll need to make a disk partition in windows 11 before proceeding to make sure both the OS run isolated, this can be done by the following steps&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Right-click on the Start menu&lt;/strong&gt; and select &lt;strong&gt;Disk Management&lt;/strong&gt;. Alternatively, you can press &lt;code&gt;Win + X&lt;/code&gt; and choose &lt;strong&gt;Disk Management&lt;/strong&gt; from the list.&lt;/li&gt;&#xA;&lt;li&gt;In the Disk Management window, locate the drive you want to partition (usually the C: drive). In my case I’ve installed in D drive on a separate disk&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Right-click on the drive&lt;/strong&gt; and select &lt;strong&gt;Shrink Volume&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;In the dialog that appears, enter the amount of space to shrink (in MB). This will be the size of the new partition for Arch Linux. Make sure to leave enough space for Windows. In my case I’ve allocated 100 gigs for Arch.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Shrink&lt;/strong&gt;. The unallocated space will appear in the Disk Management window.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;bios-settings&#34;&gt;Bios settings&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Disable Fast Startup&lt;/li&gt;&#xA;&lt;li&gt;Disable secure boot&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;arch-iso-setup&#34;&gt;Arch ISO setup&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download arch ISO from the &lt;a href=&#34;https://archlinux.org/&#34;&gt;official site.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Install a tool such as Rufus or Etcher and burn the ISO onto a USB drive.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;booting-onto-arch&#34;&gt;Booting onto Arch&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Insert the drive into the computer&lt;/li&gt;&#xA;&lt;li&gt;Restart the computer into the BIOS/UEFI/Bootloader menu&lt;/li&gt;&#xA;&lt;li&gt;Select the boot option as the USB drive&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;installing-arch&#34;&gt;Installing Arch&lt;/h2&gt;&#xA;&lt;p&gt;(under progress)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

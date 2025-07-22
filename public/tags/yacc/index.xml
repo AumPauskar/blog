@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yacc on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/yacc/</link>
+    <link>https://aumpauskar.github.io/blog/tags/yacc/</link>
     <description>Recent content in Yacc on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Jun 2024 08:55:38 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/yacc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/yacc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regex via lex and yacc</title>
-      <link>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</link>
       <pubDate>Thu, 06 Jun 2024 08:55:38 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/regex_via_lex_yacc/</guid>
-      <description>Desc Text.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/regex_via_lex_yacc/</guid>
+      <description>&lt;h1 id=&#34;regex-via-lex-and-yacc&#34;&gt;Regex via lex and yacc&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-a-regex&#34;&gt;What is a regex?&lt;/h2&gt;&#xA;&lt;p&gt;Regular expressions (regex) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), search(), and split() methods of String.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-lex-and-yacc&#34;&gt;Why use lex and yacc?&lt;/h2&gt;&#xA;&lt;p&gt;Lex and yacc are tools used to generate lexical analyzers and parsers. Lex reads an input stream specifying the lexical analyzer and outputs source code implementing the lexer in C. Yacc reads an input stream specifying the parser and outputs source code implementing the parser in C. Lex and yacc are tools used to generate lexical analyzers and parsers. Lex reads an input stream specifying the lexical analyzer and outputs source code implementing the lexer in C. Yacc reads an input stream specifying the parser and outputs source code implementing the parser in C.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

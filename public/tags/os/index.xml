@@ -1,60 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Os on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/os/</link>
+    <link>https://aumpauskar.github.io/blog/tags/os/</link>
     <description>Recent content in Os on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Oct 2024 17:45:41 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Ricing</title>
-      <link>http://localhost:1313/blog/posts/os/linux_ricing/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</link>
       <pubDate>Thu, 24 Oct 2024 17:45:41 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/linux_ricing/</guid>
-      <description>A basic guide to demonstrate and how show to rice and completely customize your linux installation with an arch based system and a tiling window manager</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux_ricing/</guid>
+      <description>&lt;h1 id=&#34;linux-ricing&#34;&gt;Linux ricing&lt;/h1&gt;&#xA;&lt;h2 id=&#34;wtf-is-ricing&#34;&gt;WTF is ricing&lt;/h2&gt;&#xA;&lt;p&gt;Ricing came from the car term &amp;ldquo;Race Inspired Cosmetic Enhancements&amp;rdquo; it generally means to customize your software experience tailormade to your usage. In this tutorial we are going to use &lt;strong&gt;Arch Linux&lt;/strong&gt; and &lt;strong&gt;Hyprland&lt;/strong&gt; to completely customize you user experience&lt;/p&gt;&#xA;&lt;h2 id=&#34;prereq&#34;&gt;Prereq&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Dualbooting windows and linux</title>
-      <link>http://localhost:1313/blog/posts/os/dualboot/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/dualboot/</link>
       <pubDate>Sun, 07 Jul 2024 11:26:50 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/dualboot/</guid>
-      <description>A guide to dual booting Windows and Linux (fedora)</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/dualboot/</guid>
+      <description>&lt;h1 id=&#34;dual-booting-arch-and-win11&#34;&gt;Dual booting arch and win11&lt;/h1&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before installing arch we need to do the following things&lt;/p&gt;&#xA;&lt;h3 id=&#34;disk-partition&#34;&gt;Disk partition&lt;/h3&gt;&#xA;&lt;p&gt;We’ll need to make a disk partition in windows 11 before proceeding to make sure both the OS run isolated, this can be done by the following steps&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Right-click on the Start menu&lt;/strong&gt; and select &lt;strong&gt;Disk Management&lt;/strong&gt;. Alternatively, you can press &lt;code&gt;Win + X&lt;/code&gt; and choose &lt;strong&gt;Disk Management&lt;/strong&gt; from the list.&lt;/li&gt;&#xA;&lt;li&gt;In the Disk Management window, locate the drive you want to partition (usually the C: drive). In my case I’ve installed in D drive on a separate disk&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Right-click on the drive&lt;/strong&gt; and select &lt;strong&gt;Shrink Volume&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;In the dialog that appears, enter the amount of space to shrink (in MB). This will be the size of the new partition for Arch Linux. Make sure to leave enough space for Windows. In my case I’ve allocated 100 gigs for Arch.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Shrink&lt;/strong&gt;. The unallocated space will appear in the Disk Management window.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;bios-settings&#34;&gt;Bios settings&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Disable Fast Startup&lt;/li&gt;&#xA;&lt;li&gt;Disable secure boot&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;arch-iso-setup&#34;&gt;Arch ISO setup&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download arch ISO from the &lt;a href=&#34;https://archlinux.org/&#34;&gt;official site.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Install a tool such as Rufus or Etcher and burn the ISO onto a USB drive.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;booting-onto-arch&#34;&gt;Booting onto Arch&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Insert the drive into the computer&lt;/li&gt;&#xA;&lt;li&gt;Restart the computer into the BIOS/UEFI/Bootloader menu&lt;/li&gt;&#xA;&lt;li&gt;Select the boot option as the USB drive&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;installing-arch&#34;&gt;Installing Arch&lt;/h2&gt;&#xA;&lt;p&gt;(under progress)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/web/docker/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/docker/</guid>
-      <description>A brief introduction to docker and its installation.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
+      <description>&lt;h1 id=&#34;docker&#34;&gt;Docker&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-docker&#34;&gt;What is docker&lt;/h2&gt;&#xA;&lt;p&gt;Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-docker&#34;&gt;Why docker&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Docker provides a consistent environment for your application from development all the way through production.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: Docker containers are completely isolated. This means that your application will run the same way no matter where it is deployed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portability&lt;/strong&gt;: Docker containers can run on your local development machine, on the cloud, or on-premises.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resource Efficiency&lt;/strong&gt;: Docker containers share the same OS kernel and are lighter weight than VMs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: Docker makes it easy to install and run software without worrying about setup or dependencies.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation-of-docker&#34;&gt;Installation of docker&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll be using Windows 11 for the installation of docker. You can find the installation steps for other operating systems &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Operating systems</title>
-      <link>http://localhost:1313/blog/posts/os/os/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/os/</link>
       <pubDate>Sat, 30 Dec 2023 17:09:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/os/</guid>
-      <description>&lt;h1 id=&#34;operating-systems&#34;&gt;Operating systems&lt;/h1&gt;
-&lt;h2 id=&#34;bases-of-an-operating-system&#34;&gt;Bases of an operating system&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Execute user programs and make solving user problems easier&lt;/li&gt;
-&lt;li&gt;Make the computer system convenient to use&lt;/li&gt;
-&lt;li&gt;Use the computer hardware in an efficient manner&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A computer system can be divided roughly into four components: the &lt;strong&gt;hardware&lt;/strong&gt;, the &lt;strong&gt;operating system&lt;/strong&gt;, the &lt;strong&gt;application programs&lt;/strong&gt;, and the &lt;strong&gt;users&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;use-of-an-operating-system&#34;&gt;Use of an operating system&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The operating system is responsible for the following activities in connection with process management
-&lt;ul&gt;
-&lt;li&gt;Process creation and deletion&lt;/li&gt;
-&lt;li&gt;Process suspension and resumption&lt;/li&gt;
-&lt;li&gt;Provision of mechanisms for process synchronization&lt;/li&gt;
-&lt;li&gt;Provision of mechanisms for process communication&lt;/li&gt;
-&lt;li&gt;Provision of mechanisms for deadlock handling&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Operating systems is a &lt;strong&gt;resource allocator&lt;/strong&gt; and it is a &lt;strong&gt;control program&lt;/strong&gt;.&lt;/p&gt;</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/os/</guid>
+      <description>&lt;h1 id=&#34;operating-systems&#34;&gt;Operating systems&lt;/h1&gt;&#xA;&lt;h2 id=&#34;bases-of-an-operating-system&#34;&gt;Bases of an operating system&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Execute user programs and make solving user problems easier&lt;/li&gt;&#xA;&lt;li&gt;Make the computer system convenient to use&lt;/li&gt;&#xA;&lt;li&gt;Use the computer hardware in an efficient manner&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;A computer system can be divided roughly into four components: the &lt;strong&gt;hardware&lt;/strong&gt;, the &lt;strong&gt;operating system&lt;/strong&gt;, the &lt;strong&gt;application programs&lt;/strong&gt;, and the &lt;strong&gt;users&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-of-an-operating-system&#34;&gt;Use of an operating system&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The operating system is responsible for the following activities in connection with process management&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Process creation and deletion&lt;/li&gt;&#xA;&lt;li&gt;Process suspension and resumption&lt;/li&gt;&#xA;&lt;li&gt;Provision of mechanisms for process synchronization&lt;/li&gt;&#xA;&lt;li&gt;Provision of mechanisms for process communication&lt;/li&gt;&#xA;&lt;li&gt;Provision of mechanisms for deadlock handling&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Operating systems is a &lt;strong&gt;resource allocator&lt;/strong&gt; and it is a &lt;strong&gt;control program&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

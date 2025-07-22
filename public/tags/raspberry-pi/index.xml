@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/raspberry-pi/</link>
+    <link>https://aumpauskar.github.io/blog/tags/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Apr 2024 16:53:10 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using a plex server for media streaming</title>
-      <link>http://localhost:1313/blog/posts/misc/plex/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/plex/</link>
       <pubDate>Sun, 14 Apr 2024 16:53:10 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/plex/</guid>
-      <description>Article shows how to use a raspberry pi as a plex server for media streaming</description>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/plex/</guid>
+      <description>&lt;h1 id=&#34;using-a-plex-server-for-media-streaming&#34;&gt;Using a plex server for media streaming&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-a-plex-server&#34;&gt;What is a plex server?&lt;/h2&gt;&#xA;&lt;p&gt;Plex is a client-server media player system and software suite comprising two main components. The Plex Media Server desktop application runs on Windows, macOS, and Linux-compatibles including some types of NAS devices. The server desktop application organizes video, audio, and photos from a user&amp;rsquo;s collections and from online services, enabling the players to access and stream the contents.&lt;/p&gt;</description>
     </item>
     <item>
       <title>IOT Professional elective</title>
-      <link>http://localhost:1313/blog/posts/iot/iot_professional_elective/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</link>
       <pubDate>Wed, 27 Mar 2024 12:26:43 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/iot_professional_elective/</guid>
-      <description>Set of notes and documentation regarding iot open elective of semester 6</description>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/iot_professional_elective/</guid>
+      <description>&lt;h1 id=&#34;iot-professional-elective&#34;&gt;IOT Professional elective&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;IOT: A dynamic globan network infrastructure with a self-configuring capability based on standard protocols and inter operatble communication protocols where physical and virtual things have identities, physical attributes, and virtual personalities use intelligent interfaces and are seamlessly integrated into the information network often communicate data associated with users and external environment.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Charecteristics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dynamic and self-configuring&lt;/li&gt;&#xA;&lt;li&gt;Self configuring&lt;/li&gt;&#xA;&lt;li&gt;Interopeable communications protocols&lt;/li&gt;&#xA;&lt;li&gt;Unique identity&lt;/li&gt;&#xA;&lt;li&gt;Integrated info network&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Block diagram of an iot device&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi</title>
-      <link>http://localhost:1313/blog/posts/iot/raspberry_pi/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/raspberry_pi/</guid>
-      <description>A basic guide on setting up the Raspberry Pi with all the essential apps</description>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/raspberry_pi/</guid>
+      <description>&lt;h1 id=&#34;raspberry-pi&#34;&gt;Raspberry Pi&lt;/h1&gt;&#xA;&lt;p&gt;The raspberry pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-raspberry-pi&#34;&gt;Setting up Raspberry Pi&lt;/h2&gt;&#xA;&lt;p&gt;As standard the Raspberry Pi comes without an operating system. It depends on the user which operating system is installed within the computer. The operating system can be installed on the Raspberry Pi using the following steps:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/blog/posts/os/linux/</link>
+      <link>https://aumpauskar.github.io/blog/posts/os/linux/</link>
       <pubDate>Thu, 23 Nov 2023 12:52:03 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/os/linux/</guid>
-      <description>A brief overview and commands based on the linux operating system</description>
+      <guid>https://aumpauskar.github.io/blog/posts/os/linux/</guid>
+      <description>&lt;h1 id=&#34;linuxunix-shell-commands&#34;&gt;Linux/UNIX shell commands&lt;/h1&gt;&#xA;&lt;p&gt;The UNIX shell is a command-line interface made for interacting with the OS. There are various commands to execute this.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The current documentaiton is based on &lt;strong&gt;Ububtu&lt;/strong&gt; and similar debian bases operating systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;file-systems&#34;&gt;File systems&lt;/h2&gt;&#xA;&lt;p&gt;The linux file system is a tree structure with the root directory at the top. The root directory is denoted by &lt;code&gt;/&lt;/code&gt;. The directories are separated by &lt;code&gt;/&lt;/code&gt; and the files are separated by &lt;code&gt;.&lt;/code&gt;. The file system is case sensitive. The file system is made up of the following:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

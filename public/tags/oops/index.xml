@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oops on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/oops/</link>
+    <link>https://aumpauskar.github.io/blog/tags/oops/</link>
     <description>Recent content in Oops on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Nov 2023 13:21:20 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jul 2025 12:40:13 +0700</lastBuildDate>
+    <atom:link href="https://aumpauskar.github.io/blog/tags/oops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C# Basics</title>
+      <link>https://aumpauskar.github.io/blog/posts/dotnet/csharp-basics/</link>
+      <pubDate>Sat, 12 Jul 2025 12:40:13 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/dotnet/csharp-basics/</guid>
+      <description>&lt;h1 id=&#34;c-basics&#34;&gt;C# Basics&lt;/h1&gt;&#xA;&lt;p&gt;C# is a versatile programming language developed by Microsoft, widely used for building a variety of applications, from web to desktop and mobile. This post covers the basics of C#, including syntax, data types, and object-oriented programming concepts. Dotnet is a framework that supports C# and provides a rich set of libraries and tools for developers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;console-commands&#34;&gt;Console commands&lt;/h2&gt;&#xA;&lt;p&gt;C# can be extended a lot by using the dotnet CLI here are some examples of the .net CLI commands.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>OOPS with Python and packages</title>
-      <link>http://localhost:1313/blog/posts/python/python_oops/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/python_oops/</link>
       <pubDate>Thu, 23 Nov 2023 13:21:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/python_oops/</guid>
-      <description>A comprehensive guide to OOPS in python and packages</description>
+      <guid>https://aumpauskar.github.io/blog/posts/python/python_oops/</guid>
+      <description>&lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;&#xA;&lt;h2 id=&#34;chapter-summary---unit-1&#34;&gt;Chapter summary - Unit 1&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unit 1 &lt;br&gt;&#xA;&lt;strong&gt;Python Fundamentals:&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;An Introduction to Python programming:&lt;/strong&gt; Introduction to Python, IDLE to develop programs; &lt;br&gt;&#xA;&lt;strong&gt;How to write your first programs:&lt;/strong&gt; Basic coding skills, data types and variables, numeric data,&#xA;string data, five of the Python functions; &lt;br&gt;&#xA;&lt;strong&gt;Control statements:&lt;/strong&gt; Boolean expressions, selection structure, iteration structure; &lt;br&gt;&#xA;&lt;strong&gt;Define and use Functions and Modules:&lt;/strong&gt; define and use functions, more skills for defining and&#xA;using functions and modules, create and use modules, standard modules&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;contents&#34;&gt;Contents&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What is python? &lt;br&gt;&#xA;Python is a high level interpreted language that is preffered in rapid development of programs due to it&amp;rsquo;s easy and simple syntax.&lt;/li&gt;&#xA;&lt;li&gt;IDLE &lt;br&gt;&#xA;IDLE is the short form of &lt;em&gt;integrated development learning environment&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.geeksforgeeks.org/python-data-types/&#34;&gt;Data types in python&lt;/a&gt; &lt;br&gt;&#xA;int(5), string(&amp;rsquo;this is a string&amp;rsquo; or this is a string), tuple( (5,3,5) ), float(5.3), bool(true/false) &amp;hellip;&lt;/li&gt;&#xA;&lt;li&gt;Python interation structure &lt;br&gt;&#xA;Unlike other languages python uses indententation instead of using brackets.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;comments&#34;&gt;Comments&lt;/h3&gt;&#xA;&lt;p&gt;Comments are a piece of code that is essentially &amp;ldquo;dead code&amp;rdquo; these are essential to show the programmer what the code does and not to do anything. &lt;br&gt;&#xA;Comments in python -&lt;/p&gt;</description>
     </item>
     <item>
       <title>OOPS with Java</title>
-      <link>http://localhost:1313/blog/posts/java/javafull/</link>
+      <link>https://aumpauskar.github.io/blog/posts/java/javafull/</link>
       <pubDate>Thu, 16 Nov 2023 10:35:36 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/java/javafull/</guid>
-      <description>&lt;h1 id=&#34;java-tutorial&#34;&gt;Java tutorial&lt;/h1&gt;
-&lt;p&gt;Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm&lt;/p&gt;
-&lt;h2 id=&#34;fyi&#34;&gt;FYI&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The object class is the root of all classes&lt;/li&gt;
-&lt;li&gt;Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().charat(0)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
-&lt;p&gt;Code&lt;/p&gt;</description>
+      <guid>https://aumpauskar.github.io/blog/posts/java/javafull/</guid>
+      <description>&lt;h1 id=&#34;java-tutorial&#34;&gt;Java tutorial&lt;/h1&gt;&#xA;&lt;p&gt;Java is a cross platform compiled language that uses jvm (java virtual machine) that can be used in any machine no matter the hardware or software, provided the machine supports jvm&lt;/p&gt;&#xA;&lt;h2 id=&#34;fyi&#34;&gt;FYI&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The object class is the root of all classes&lt;/li&gt;&#xA;&lt;li&gt;Data can be gatered with the scanner method in the java library but cannot cater charecter type data with the standard library. Those can be gathered by sc = next().charat(0)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;&#xA;&lt;p&gt;Code&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virtualenv</title>
-      <link>http://localhost:1313/blog/posts/python/virtualenv/</link>
+      <link>https://aumpauskar.github.io/blog/posts/python/virtualenv/</link>
       <pubDate>Thu, 16 Nov 2023 10:34:31 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/python/virtualenv/</guid>
-      <description>A comprehensive guide to OOPS in python and packages</description>
+      <guid>https://aumpauskar.github.io/blog/posts/python/virtualenv/</guid>
+      <description>&lt;h1 id=&#34;python-virtual-environment&#34;&gt;Python virtual environment&lt;/h1&gt;&#xA;&lt;p&gt;Python virtual environemt is a program that aids in creating a serperate virtual environment for each project&lt;/p&gt;&#xA;&lt;h2 id=&#34;requiremnets&#34;&gt;Requiremnets&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Python 3&lt;/li&gt;&#xA;&lt;li&gt;Pip&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Installing virtual environemnt package&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-0-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-0-1&#34;&gt;1&lt;/a&gt;&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install virtualenv&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Creating virtual environent&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Windows - cmd/powershell&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-1-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-1-1&#34;&gt;1&lt;/a&gt;&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;py -m venv {your_env_name}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;Linux&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-2-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-2-1&#34;&gt;1&lt;/a&gt;&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python3 -m venv myworld&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Activating virtual environemt&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Windows - cmd&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-3-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-3-1&#34;&gt;1&lt;/a&gt;&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myworld\Scripts\activate.bat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;Windows - powershell&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34; id=&#34;hl-4-1&#34;&gt;&lt;a class=&#34;lnlinks&#34; href=&#34;#hl-4-1&#34;&gt;1&lt;/a&gt;&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myworld\Scripts\activate.ps1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;Linux&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

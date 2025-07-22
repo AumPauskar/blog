@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Expressjs on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/expressjs/</link>
+    <link>https://aumpauskar.github.io/blog/tags/expressjs/</link>
     <description>Recent content in Expressjs on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/expressjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/expressjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/web/docker/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/docker/</guid>
-      <description>A brief introduction to docker and its installation.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
+      <description>&lt;h1 id=&#34;docker&#34;&gt;Docker&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-docker&#34;&gt;What is docker&lt;/h2&gt;&#xA;&lt;p&gt;Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-docker&#34;&gt;Why docker&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Docker provides a consistent environment for your application from development all the way through production.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: Docker containers are completely isolated. This means that your application will run the same way no matter where it is deployed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portability&lt;/strong&gt;: Docker containers can run on your local development machine, on the cloud, or on-premises.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resource Efficiency&lt;/strong&gt;: Docker containers share the same OS kernel and are lighter weight than VMs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: Docker makes it easy to install and run software without worrying about setup or dependencies.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation-of-docker&#34;&gt;Installation of docker&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll be using Windows 11 for the installation of docker. You can find the installation steps for other operating systems &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mern tutorial</title>
-      <link>http://localhost:1313/blog/posts/web/mern/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/mern/</guid>
-      <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
+      <description>&lt;h1 id=&#34;mern-stack-tutorial&#34;&gt;MERN Stack Tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;01-running-express-js&#34;&gt;01-Running express js&lt;/h2&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is an open-source framework developed and maintained by the Node.js foundation. It is designed for building web applications and APIs. It is the standard server framework for Node.js.&lt;/p&gt;&#xA;&lt;p&gt;Before starting with express js, ensure that you have node.js, npm and a code editor installed on your system. The installation of node.js and npm can be verified by running the following commands in the terminal.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

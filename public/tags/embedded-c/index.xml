@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded C on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/embedded-c/</link>
+    <link>https://aumpauskar.github.io/blog/tags/embedded-c/</link>
     <description>Recent content in Embedded C on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Nov 2023 10:37:42 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/embedded-c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/embedded-c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using i386 IC using Keil uVision5 and Embedded C</title>
-      <link>http://localhost:1313/blog/posts/iot/embeddedc/</link>
+      <link>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</link>
       <pubDate>Thu, 16 Nov 2023 10:37:42 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/iot/embeddedc/</guid>
-      <description>Usign Keil uVision5 to program an i386 IC using Embedded C</description>
+      <guid>https://aumpauskar.github.io/blog/posts/iot/embeddedc/</guid>
+      <description>&lt;h1 id=&#34;embedded-c&#34;&gt;Embedded C&lt;/h1&gt;&#xA;&lt;p&gt;Embedded C is used in embedded systems and iot deviced such as Arduino and mico IC&amp;rsquo;s. To emulate this we can use Keil, however this can be only run on Windows, to run this on linux based distros use wine.&lt;/p&gt;&#xA;&lt;h2 id=&#34;procedure-to-run&#34;&gt;Procedure to run&lt;/h2&gt;&#xA;&lt;p&gt;The following are the steps to run a code on Keil &lt;br&gt;&#xA;Note: Here we are working on intel 8051AH microcontroller&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Install and run keil&#xA;If you are on a windows system you can run the exe file locally, if you are on a linux machine you can run keil through wine and it will function just like you are running it on windows natively. \&lt;/li&gt;&#xA;&lt;li&gt;Open a new microvision project under the projects tab.&#xA;Open projects first which is located in the menu bar. Click on open a new micro vision (uVision) project. \&lt;/li&gt;&#xA;&lt;li&gt;Locate and save the folder in the desired place (with no extension).&#xA;The prompt will ask you for a cocation where the project needs to be saved. It is always a great practice to always have a new project under a new folder, this makes sure that the project files remain persistant even after making modifications or making a completely new project. \&lt;/li&gt;&#xA;&lt;li&gt;Create a new file with the extension &lt;code&gt;.c&lt;/code&gt; and save the file.&#xA;Afte completing all the steps given above, open a new wile by using ctrl+n and saving it first with the extension &lt;code&gt;.c&lt;/code&gt;, use ctrl+s to save the file. \&lt;/li&gt;&#xA;&lt;li&gt;Open the startup file on the left hand side and select the add file option. Select the .c file you have created.&#xA;In order to execute the code that you have written, the software must include it in the environment. To do this first on the left system tray right click and then select &lt;code&gt;add existing files to group&lt;/code&gt; and then double select your code base file. \&lt;/li&gt;&#xA;&lt;li&gt;Translate the file first and then build the file, both the options are available on the menubar. &lt;br&gt;&#xA;Translating the file changes the embedded c code to assembly level code, then build it to futher convert it into binary code.&lt;/li&gt;&#xA;&lt;li&gt;Select the debug option.&#xA;In the menubar select debug, the the debug menu select &lt;code&gt;start/stop debug session&lt;/code&gt;. This will lead you upto a debug screen. In the debug screen you have to go to the &lt;code&gt;run&lt;/code&gt; to run the code normally, or if you have to run/debug it line by line then go to the &lt;code&gt;step&lt;/code&gt; button to run/debug it step by step.&lt;/li&gt;&#xA;&lt;li&gt;Under the peripherals tab select the peripherals you require.&#xA;Unlike other languages keil, the console does not support normal IO. You have to select a peripheral to go along with it.&lt;/li&gt;&#xA;&lt;li&gt;Gain output&#xA;The output can be traced by the peripheral pins to gain any digital form of output or use &lt;code&gt;analysis window&lt;/code&gt; to analyse the function in the analog fasion.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tasks&#34;&gt;Tasks&lt;/h2&gt;&#xA;&lt;h3 id=&#34;day-1&#34;&gt;Day 1&lt;/h3&gt;&#xA;&lt;p&gt;Briefing, difference between microprocessor and microcontroller.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

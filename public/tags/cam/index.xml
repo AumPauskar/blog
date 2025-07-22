@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cam on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/cam/</link>
+    <link>https://aumpauskar.github.io/blog/tags/cam/</link>
     <description>Recent content in Cam on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Feb 2024 23:34:09 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/cam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/cam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autodesk Fusion and CAM</title>
-      <link>http://localhost:1313/blog/posts/misc/autodeskfusion/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</link>
       <pubDate>Wed, 07 Feb 2024 23:34:09 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/autodeskfusion/</guid>
-      <description>A brief overview of Fusion 360 and CAM.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/autodeskfusion/</guid>
+      <description>&lt;h1 id=&#34;autodesk-fusion-and-cam&#34;&gt;Autodesk Fusion and CAM&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Fusion 360 is a computer aided design (CAD) and computer aided manufacturing (CAM) software developed by Autodesk.&lt;/p&gt;&#xA;&lt;h2 id=&#34;significance-of-g-and-m-codes&#34;&gt;Significance of G and M codes&lt;/h2&gt;&#xA;&lt;p&gt;G and M codes are the most common codes used in CNC machines. G codes are used to control the movement of the machine and M codes are used to control the machine&amp;rsquo;s functions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;using-fusion-for-cam&#34;&gt;Using Fusion for CAM&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Open fusion and create a new design.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;machine-setup&#34;&gt;Machine setup&lt;/h2&gt;&#xA;&lt;p&gt;Every machine has a different setup, different table sizes and different work holding methods. Fusion 360 allows you to define the machine setup and the work holding method you will be using.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multimedia on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/multimedia/</link>
+    <link>https://aumpauskar.github.io/blog/tags/multimedia/</link>
     <description>Recent content in Multimedia on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Apr 2024 16:53:10 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/multimedia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/multimedia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using a plex server for media streaming</title>
-      <link>http://localhost:1313/blog/posts/misc/plex/</link>
+      <link>https://aumpauskar.github.io/blog/posts/misc/plex/</link>
       <pubDate>Sun, 14 Apr 2024 16:53:10 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/misc/plex/</guid>
-      <description>Article shows how to use a raspberry pi as a plex server for media streaming</description>
+      <guid>https://aumpauskar.github.io/blog/posts/misc/plex/</guid>
+      <description>&lt;h1 id=&#34;using-a-plex-server-for-media-streaming&#34;&gt;Using a plex server for media streaming&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-a-plex-server&#34;&gt;What is a plex server?&lt;/h2&gt;&#xA;&lt;p&gt;Plex is a client-server media player system and software suite comprising two main components. The Plex Media Server desktop application runs on Windows, macOS, and Linux-compatibles including some types of NAS devices. The server desktop application organizes video, audio, and photos from a user&amp;rsquo;s collections and from online services, enabling the players to access and stream the contents.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

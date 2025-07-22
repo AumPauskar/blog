@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on Aum&#39;s blogging site</title>
-    <link>http://localhost:1313/blog/tags/web/</link>
+    <link>https://aumpauskar.github.io/blog/tags/web/</link>
     <description>Recent content in Web on Aum&#39;s blogging site</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aumpauskar.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/web/docker/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>
       <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/docker/</guid>
-      <description>A brief introduction to docker and its installation.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/docker/</guid>
+      <description>&lt;h1 id=&#34;docker&#34;&gt;Docker&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-docker&#34;&gt;What is docker&lt;/h2&gt;&#xA;&lt;p&gt;Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-docker&#34;&gt;Why docker&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Docker provides a consistent environment for your application from development all the way through production.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: Docker containers are completely isolated. This means that your application will run the same way no matter where it is deployed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portability&lt;/strong&gt;: Docker containers can run on your local development machine, on the cloud, or on-premises.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resource Efficiency&lt;/strong&gt;: Docker containers share the same OS kernel and are lighter weight than VMs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: Docker makes it easy to install and run software without worrying about setup or dependencies.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation-of-docker&#34;&gt;Installation of docker&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ll be using Windows 11 for the installation of docker. You can find the installation steps for other operating systems &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mern tutorial</title>
-      <link>http://localhost:1313/blog/posts/web/mern/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/mern/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/mern/</guid>
-      <description>A quick tutorial on how to create a MERN stack application focued on a fullstack book library application.</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/mern/</guid>
+      <description>&lt;h1 id=&#34;mern-stack-tutorial&#34;&gt;MERN Stack Tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;01-running-express-js&#34;&gt;01-Running express js&lt;/h2&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is an open-source framework developed and maintained by the Node.js foundation. It is designed for building web applications and APIs. It is the standard server framework for Node.js.&lt;/p&gt;&#xA;&lt;p&gt;Before starting with express js, ensure that you have node.js, npm and a code editor installed on your system. The installation of node.js and npm can be verified by running the following commands in the terminal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building websites with React</title>
-      <link>http://localhost:1313/blog/posts/web/react/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/react/</link>
       <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/react/</guid>
-      <description>A comprehensive guide to building websites with React</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/react/</guid>
+      <description>&lt;h1 id=&#34;react-tutorial&#34;&gt;React tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;about-the-tutorial&#34;&gt;About the tutorial&lt;/h2&gt;&#xA;&lt;p&gt;This short note is based and created assuming you are using a Linux (debian/ubuntu) system, most of the commands will run on other systems like Windows and Mac as well but may require some changes. In case you need to follow along and using a Windows system, you can use the &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-win10&#34;&gt;Windows Subsystem for Linux&lt;/a&gt; to run the commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installing-react&#34;&gt;Installing react&lt;/h2&gt;&#xA;&lt;p&gt;In order to install react, node and npm are required. To install node and npm, run the following command:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web technologies - basic HTML/CSS/JS</title>
-      <link>http://localhost:1313/blog/posts/web/html-web/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/html-web/</link>
       <pubDate>Fri, 17 Nov 2023 09:21:22 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/html-web/</guid>
-      <description>A basic guide to HTML, CSS and JS</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/html-web/</guid>
+      <description>&lt;h1 id=&#34;web-notes&#34;&gt;Web notes&lt;/h1&gt;&#xA;&lt;h2 id=&#34;fyi&#34;&gt;FYI&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CSA: Client server architecture&lt;/li&gt;&#xA;&lt;li&gt;A web can be two tier, three tier, n tier having different applets for different purposes&lt;/li&gt;&#xA;&lt;li&gt;HTML: Hypertext markup lang, CSS: Cascading stylesheet, JS: Javascript&lt;/li&gt;&#xA;&lt;li&gt;P2P: Peer to peer architecture&lt;/li&gt;&#xA;&lt;li&gt;DOM: Document Object Model (DOM) is a file model wherein all the files are shown in a multiinterface structural model&lt;/li&gt;&#xA;&lt;li&gt;Tree stucture: A tree structure is a model where the start point is a single node but as we go down the model the number of nodess increase just like a tree.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;amp;npsp: singlewhitespace&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;h3 id=&#34;structure-of-a-html-document&#34;&gt;Structure of a HTML document&lt;/h3&gt;&#xA;&lt;p&gt;A HTML document contents many tags called as elements. These elements are crutial in making a HTML document. This is the common structure of an HTML document.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Static site generators with Hugo</title>
-      <link>http://localhost:1313/blog/posts/web/static-site-generators/</link>
+      <link>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</link>
       <pubDate>Fri, 17 Nov 2023 09:19:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/posts/web/static-site-generators/</guid>
-      <description>A short guide on how this site was created using hugo</description>
+      <guid>https://aumpauskar.github.io/blog/posts/web/static-site-generators/</guid>
+      <description>&lt;h1 id=&#34;static-site-generators&#34;&gt;Static site generators&lt;/h1&gt;&#xA;&lt;p&gt;A short guide on how this site was created using hugo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;There are multiple ways of creating of a website, if for example a simple site needs to be created with minimal content and updates a &lt;strong&gt;static site&lt;/strong&gt; might be adequate, however if the site needs a frontend, backend and a database then a &lt;strong&gt;dynamic site&lt;/strong&gt; is required. If the content is the only thing that matters and the content needs to be updated regularly then a static site generator is required. Multiple static site generators are avalable as open source projects, one of them is &lt;strong&gt;jeckyll&lt;/strong&gt; from github and the other is &lt;strong&gt;hugo&lt;/strong&gt; that is optimized for minmal loadtime.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
