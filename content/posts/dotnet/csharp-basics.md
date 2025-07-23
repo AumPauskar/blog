@@ -96,6 +96,8 @@ The .NET CLI (Command-Line Interface) is a powerful tool for developing, buildin
 
 ## Syntax
 C# syntax is similar to other C-style languages like Java and C++. Here are some basic elements:
+
+
 - **Variables**: Declared with a type followed by the variable name.
     ```csharp
     int age = 30;
@@ -135,6 +137,46 @@ C# syntax is similar to other C-style languages like Java and C++. Here are some
     person.Age = 30;
     person.Introduce();
     ```
+
+### Top level statements in C#
+
+Top-level statements in C# are a feature introduced in C# 9.0 that allows developers to write simple programs without the need for explicitly defining a class or a `Main` method. This feature is particularly useful for small applications, scripts, or quick prototypes, making the code cleaner and more concise.
+
+- Key Features of Top-Level Statements
+
+    1. **Simplified Syntax**: You can write code directly in the file without wrapping it in a class or a method. This reduces boilerplate code and makes it easier to get started.
+    2. **Single Entry Point**: The compiler automatically generates a `Main` method behind the scenes, which serves as the entry point for the application.
+    3. **Namespace and Usings**: You can still use namespaces and `using` directives at the top of the file, but you don't need to define a class to contain your code.
+    4. **Variable Declarations**: You can declare variables, use control flow statements, and call methods directly at the top level.
+
+- Example of Top-Level Statements
+
+    Here’s a simple example of a C# program using top-level statements:
+
+    ```csharp
+    using System;
+
+    Console.WriteLine("Hello, World!");
+
+    var name = "Alice";
+    Console.WriteLine($"Hello, {name}!");
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine($"Count: {i}");
+    }
+    ```
+
+- Explanation of the Example
+
+    - **Using Directive**: The `using System;` directive allows you to use classes from the `System` namespace without needing to fully qualify them.
+    - **Direct Code Execution**: The `Console.WriteLine` statements and the `for` loop are written directly in the file, without needing to define a class or a `Main` method.
+    - **Automatic Main Method**: The C# compiler treats this code as if it were inside a `Main` method of a generated class, allowing it to run as a standard console application.
+
+- Limitations
+    1. **No Multiple Entry Points**
+    2. **Not Suitable for Large Applications**
+    3. **Cannot Use `async` Directly**: You cannot declare an `async` method directly at the top level. However, you can use `async` within a method that you define.
 
 ## Preprocessor Directives
 C# supports preprocessor directives, which are commands that are processed before the compilation of the code
@@ -429,6 +471,7 @@ Logical statements or conditions help the flow of the code that is running withi
                 break;
         }
         ```
+        - **Notes:** Unlike other compilers C# requires the user to include the break statement within the default statement also.
 
 - 4. Ternary Operator
 
