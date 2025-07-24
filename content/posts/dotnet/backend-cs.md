@@ -1,14 +1,14 @@
 +++
-title = 'Backend Cs'
+title = 'ASP.NET'
 date = 2025-07-22T12:18:47+07:00
-tags = [""]
-author = "Me"
+tags = ["dotnet", "c#", "oops"]
+author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = "A simple document providing how the ASP.NET framework can be used to create web applications"
 disableShare = false
 disableHLJS = false
 hideSummary = false
@@ -97,3 +97,89 @@ app.UseHttpsRedirection();
 app.Run();
 ```
 - **Explanation**: This line starts the application and begins listening for incoming HTTP requests. It is the final step in the application setup, and once this line is executed, the application is running and ready to handle requests.
+
+
+## Making a simple CRUD application
+
+In order to make a simple application we need to have two thinks working simultaneously, a .NET backend and a database that will manage the data. We will also be using an ORM (Object relational mapping), this reduces our dependencies on directly accessing the database and working with a wrapper.
+
+- Content of `Program.cs` - basic driver code
+    ```cs
+    using Microsoft.EntityFrameworkCore;
+
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add services to the container.
+    builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+    builder.Services.AddControllers();
+
+    var app = builder.Build();
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseAuthorization();
+    app.MapControllers();
+
+    app.MapGet("/", () => "Hello World!");
+
+    app.Run();
+    ```
+
+- `Controllers/UserController.cs` - handles req
+    ```cs
+    using Microsoft.AspNetCore.Mvc;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.EntityFrameworkCore;
+
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UsersController : ControllerBase
+    {
+        private readonly ApplicationDbContext _context;
+
+        public UsersController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<User>>> GetUsers()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<User>> CreateUser(User user)
+        {
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
+        }
+    }
+    ```
+- `Data/ApplicationDbContext.cs` - middleman of communication to the DB
+    ```cs
+    using Microsoft.EntityFrameworkCore;
+
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+            
+        }
+        
+        public DbSet<User> Users { get; set; }
+    }
+    ```
