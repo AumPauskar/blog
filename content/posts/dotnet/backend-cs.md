@@ -183,3 +183,59 @@ In order to make a simple application we need to have two thinks working simulta
         public DbSet<User> Users { get; set; }
     }
     ```
+
+### Making a simple CRUD application - using the EFCore package
+
+To perform Entity Framework Core (EF Core) migrations with PostgreSQL using the `Npgsql.EntityFrameworkCore.PostgreSQL` provider and the `Microsoft.EntityFrameworkCore.Design` package, follow these steps:
+
+- Step 1: Install Required Packages
+
+    Make sure you have the necessary NuGet packages installed in your project. You need both `Npgsql.EntityFrameworkCore.PostgreSQL` and `Microsoft.EntityFrameworkCore.Design`. You can install them via the NuGet Package Manager Console or by editing your `.csproj` file.
+
+    ```bash
+    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    ```
+
+- Step 2: Create Your DbContext and Models
+
+    Define your entity classes and a `DbContext`. For example:
+
+    ```csharp
+    using Microsoft.EntityFrameworkCore;
+
+    public class MyDbContext : DbContext
+    {
+        public DbSet<Product> Products { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql("Host=my_host;Database=my_db;Username=my_user;Password=my_password");
+        }
+    }
+
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+    }
+    ```
+
+- Step 3: Add a Migration
+
+    Once you have your `DbContext` and models set up, you can create a migration. Open the Package Manager Console or terminal and run the following command:
+
+    ```bash
+    dotnet ef migrations add InitialCreate
+    ```
+
+- Step 4: Apply the Migration
+
+To apply the migration and create the database schema in your PostgreSQL database, run the following command:
+
+```bash
+dotnet ef database update
+```
+
+- Updating the database: After the initial database is created one may be able to update the database by passing to the migrations, this can be done by repeating **Step 3** and **Step 4**
