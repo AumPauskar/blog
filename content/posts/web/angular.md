@@ -102,3 +102,76 @@ The Angular CLI is a command-line tool that helps you create and manage Angular 
      ng serve --open
      ```
    - By default, the application will be served at `http://localhost:4200/`.
+
+
+## Creating a basic application
+
+### Creating components
+Components are the building blocks of Angular applications. Each component encapsulates its own logic, template, and styles, making it reusable and maintainable.
+- Creating a Component: To create a new component, you can use the Angular CLI. For example, to create a component named home:
+```bash
+ng generate component home
+```
+
+This command will create a new folder named home in the src/app directory, containing the following files:
+
+- `home.component.ts`: The TypeScript file containing the component's logic.
+- `home.component.html`: The HTML template for the component.
+- `home.component.css`: The CSS styles for the component.
+- `home.component.spec.ts`: The testing file for the component.
+
+Here is a breakdown of `HomeComponents`
+- Contents of `HomeComponent.ts`
+   ```ts
+   // home.component.ts
+   import { Component } from '@angular/core';
+
+   @Component({
+   selector: 'app-home',
+   templateUrl: './home.component.html',
+   styleUrls: ['./home.component.css']
+   })
+   export class HomeComponent {
+   title = 'Welcome to My Angular App!';
+   }
+   ```
+- Contents of `home.component.html`
+   ```html
+   <!-- home.component.html -->
+   <h1>{{ title }}</h1>
+   <p>This is the home page of your Angular application.</p>
+   ```
+
+### Routing
+Routing in Angular allows you to navigate between different views or components in your application without reloading the page. The Angular Router is responsible for this functionality.
+
+**Setting Up Routing**\
+Import the RouterModule: In your `app.routes.ts`, import RouterModule and define your routes.
+
+```ts
+// app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  // Add more routes here
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes) // Configure the router
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
