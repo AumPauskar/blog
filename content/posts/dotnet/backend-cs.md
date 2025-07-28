@@ -232,10 +232,10 @@ To perform Entity Framework Core (EF Core) migrations with PostgreSQL using the 
 
 - Step 4: Apply the Migration
 
-To apply the migration and create the database schema in your PostgreSQL database, run the following command:
+    To apply the migration and create the database schema in your PostgreSQL database, run the following command:
 
-```bash
-dotnet ef database update
-```
+    ```bash
+    dotnet ef database update
+    ```
 
-- Updating the database: After the initial database is created one may be able to update the database by passing to the migrations, this can be done by repeating **Step 3** and **Step 4**
+    - Updating the database: After the initial database is created one may be able to update the database by passing to the migrations, this can be done by repeating **Step 3** and **Step 4**
