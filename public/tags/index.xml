@@ -6,27 +6,104 @@
     <description>Recent content in Tags on Aum&#39;s blogging site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jul 2025 12:40:13 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jul 2025 12:18:47 +0700</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#</title>
       <link>https://aumpauskar.github.io/blog/tags/c%23/</link>
-      <pubDate>Sat, 12 Jul 2025 12:40:13 +0700</pubDate>
+      <pubDate>Tue, 22 Jul 2025 12:18:47 +0700</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://aumpauskar.github.io/blog/tags/dotnet/</link>
+      <pubDate>Tue, 22 Jul 2025 12:18:47 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/dotnet/</guid>
       <description></description>
     </item>
     <item>
       <title>Oops</title>
       <link>https://aumpauskar.github.io/blog/tags/oops/</link>
-      <pubDate>Sat, 12 Jul 2025 12:40:13 +0700</pubDate>
+      <pubDate>Tue, 22 Jul 2025 12:18:47 +0700</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/oops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Angular</title>
+      <link>https://aumpauskar.github.io/blog/tags/angular/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/angular/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://aumpauskar.github.io/blog/tags/css/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>https://aumpauskar.github.io/blog/tags/frontend/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://aumpauskar.github.io/blog/tags/html/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://aumpauskar.github.io/blog/tags/javascript/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node</title>
+      <link>https://aumpauskar.github.io/blog/tags/node/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/node/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Npm</title>
+      <link>https://aumpauskar.github.io/blog/tags/npm/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/npm/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
       <link>https://aumpauskar.github.io/blog/tags/programming/</link>
-      <pubDate>Sat, 12 Jul 2025 12:40:13 +0700</pubDate>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://aumpauskar.github.io/blog/tags/typescript/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>https://aumpauskar.github.io/blog/tags/web/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webdev</title>
+      <link>https://aumpauskar.github.io/blog/tags/webdev/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/tags/webdev/</guid>
       <description></description>
     </item>
     <item>
@@ -303,20 +380,6 @@
       <description></description>
     </item>
     <item>
-      <title>Web</title>
-      <link>https://aumpauskar.github.io/blog/tags/web/</link>
-      <pubDate>Sun, 31 Mar 2024 21:32:54 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://aumpauskar.github.io/blog/tags/javascript/</link>
-      <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mongodb</title>
       <link>https://aumpauskar.github.io/blog/tags/mongodb/</link>
       <pubDate>Fri, 29 Mar 2024 16:36:16 +0530</pubDate>
@@ -545,48 +608,6 @@
       <link>https://aumpauskar.github.io/blog/tags/microprocessors/</link>
       <pubDate>Tue, 19 Dec 2023 21:29:49 +0530</pubDate>
       <guid>https://aumpauskar.github.io/blog/tags/microprocessors/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://aumpauskar.github.io/blog/tags/css/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Frontend</title>
-      <link>https://aumpauskar.github.io/blog/tags/frontend/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://aumpauskar.github.io/blog/tags/html/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Node</title>
-      <link>https://aumpauskar.github.io/blog/tags/node/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/node/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Npm</title>
-      <link>https://aumpauskar.github.io/blog/tags/npm/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/npm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webdev</title>
-      <link>https://aumpauskar.github.io/blog/tags/webdev/</link>
-      <pubDate>Fri, 15 Dec 2023 09:20:47 +0530</pubDate>
-      <guid>https://aumpauskar.github.io/blog/tags/webdev/</guid>
       <description></description>
     </item>
     <item>

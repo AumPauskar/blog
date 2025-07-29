@@ -1,7 +1,7 @@
 +++
 title = 'Angular basics'
 date = 2025-07-22T11:54:45+07:00
-tags = ["angular", "web", "javascript", "typescript, "frontend", "webdev", "programming", "html", "css", "node", "npm"]
+tags = ["angular", "web", "javascript", "typescript", "frontend", "webdev", "programming", "html", "css", "node", "npm"]
 author = "Aum Pauskar"
 showToc = true
 TocOpen = false

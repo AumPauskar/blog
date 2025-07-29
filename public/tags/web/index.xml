@@ -6,8 +6,15 @@
     <description>Recent content in Web on Aum&#39;s blogging site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2024 21:32:54 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jul 2025 11:54:45 +0700</lastBuildDate>
     <atom:link href="https://aumpauskar.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular basics</title>
+      <link>https://aumpauskar.github.io/blog/posts/web/angular/</link>
+      <pubDate>Tue, 22 Jul 2025 11:54:45 +0700</pubDate>
+      <guid>https://aumpauskar.github.io/blog/posts/web/angular/</guid>
+      <description>&lt;h1 id=&#34;angular-basics&#34;&gt;Angular basics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-angular-and-what-workflows-is-it-ideal-at&#34;&gt;What is angular and what workflows is it ideal at?&lt;/h2&gt;&#xA;&lt;p&gt;Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Developed and maintained by Google. t is designed to make the development and testing of such applications easier by providing a framework for client-side MVC (Model-View-Controller) architecture.&lt;/p&gt;&#xA;&lt;p&gt;Installing Angular from scratch involves setting up your development environment, which includes installing Node.js, the Angular CLI (Command Line Interface), and creating a new Angular project. Here’s a step-by-step guide to get you started:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Docker</title>
       <link>https://aumpauskar.github.io/blog/posts/web/docker/</link>

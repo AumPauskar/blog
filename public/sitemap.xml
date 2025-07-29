@@ -5,13 +5,25 @@
     <loc>https://aumpauskar.github.io/blog/posts/misc/intro/</loc>
     <lastmod>2024-04-17T23:00:22+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/</loc>
-    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dotnet/backend-cs/</loc>
     <lastmod>2025-07-22T12:18:47+07:00</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/</loc>
+    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/c%23/</loc>
+    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/dotnet/</loc>
+    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/oops/</loc>
+    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/</loc>
+    <lastmod>2025-07-22T12:18:47+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/</loc>
     <lastmod>2025-07-22T12:18:47+07:00</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/misc/svn/</loc>
@@ -20,22 +32,43 @@
     <loc>https://aumpauskar.github.io/blog/posts/dbms/postgre/</loc>
     <lastmod>2025-07-22T12:17:56+07:00</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/angular/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/web/angular/</loc>
     <lastmod>2025-07-22T11:54:45+07:00</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/c%23/</loc>
-    <lastmod>2025-07-12T12:40:13+07:00</lastmod>
+    <loc>https://aumpauskar.github.io/blog/tags/css/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/posts/dotnet/csharp-basics/</loc>
-    <lastmod>2025-07-12T12:40:13+07:00</lastmod>
+    <loc>https://aumpauskar.github.io/blog/tags/frontend/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/oops/</loc>
-    <lastmod>2025-07-12T12:40:13+07:00</lastmod>
+    <loc>https://aumpauskar.github.io/blog/tags/html/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/javascript/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/node/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/npm/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/programming/</loc>
-    <lastmod>2025-07-12T12:40:13+07:00</lastmod>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/</loc>
+    <loc>https://aumpauskar.github.io/blog/tags/typescript/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/webdev/</loc>
+    <lastmod>2025-07-22T11:54:45+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/posts/dotnet/csharp-basics/</loc>
     <lastmod>2025-07-12T12:40:13+07:00</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/web/php/</loc>
@@ -188,12 +221,6 @@
     <loc>https://aumpauskar.github.io/blog/tags/nodejs/</loc>
     <lastmod>2024-03-31T21:32:54+05:30</lastmod>
   </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/web/</loc>
-    <lastmod>2024-03-31T21:32:54+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/javascript/</loc>
-    <lastmod>2024-03-29T16:36:16+05:30</lastmod>
-  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/web/mern/</loc>
     <lastmod>2024-03-29T16:36:16+05:30</lastmod>
   </url><url>
@@ -327,24 +354,6 @@
     <lastmod>2023-12-16T17:44:08+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/web/react/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/css/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/frontend/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/html/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/node/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/npm/</loc>
-    <lastmod>2023-12-15T09:20:47+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/webdev/</loc>
     <lastmod>2023-12-15T09:20:47+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/batch/</loc>
