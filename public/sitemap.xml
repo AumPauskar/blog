@@ -29,7 +29,22 @@
     <loc>https://aumpauskar.github.io/blog/posts/misc/svn/</loc>
     <lastmod>2025-07-22T12:18:20+07:00</lastmod>
   </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
+    <lastmod>2025-07-22T12:17:56+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/database/</loc>
+    <lastmod>2025-07-22T12:17:56+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/dbms/</loc>
+    <lastmod>2025-07-22T12:17:56+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/postgres/</loc>
+    <lastmod>2025-07-22T12:17:56+07:00</lastmod>
+  </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dbms/postgre/</loc>
+    <lastmod>2025-07-22T12:17:56+07:00</lastmod>
+  </url><url>
+    <loc>https://aumpauskar.github.io/blog/tags/sql/</loc>
     <lastmod>2025-07-22T12:17:56+07:00</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/angular/</loc>
@@ -142,15 +157,6 @@
   </url><url>
     <loc>https://aumpauskar.github.io/blog/tags/windows/</loc>
     <lastmod>2024-07-07T11:26:50+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/cheatsheet/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/database/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/dbms/</loc>
-    <lastmod>2024-06-27T23:21:23+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dbms/mongo/</loc>
     <lastmod>2024-06-27T23:21:23+05:30</lastmod>
@@ -483,9 +489,6 @@
     <lastmod>2023-11-17T09:19:25+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dbms/sql/</loc>
-    <lastmod>2023-11-16T14:41:25+05:30</lastmod>
-  </url><url>
-    <loc>https://aumpauskar.github.io/blog/tags/sql/</loc>
     <lastmod>2023-11-16T14:41:25+05:30</lastmod>
   </url><url>
     <loc>https://aumpauskar.github.io/blog/posts/dsa/dsabasics/</loc>
