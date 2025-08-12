@@ -23,7 +23,7 @@ jobs:
 
       # Step 2: Set up the Hugo environment.
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v4
+        uses: peaceiris/actions-hugo@v3
         with:
           # You can specify a version like '0.125.4' or use 'latest'.
           hugo-version: 'latest'
@@ -38,7 +38,7 @@ jobs:
       # Step 4: Upload the built site as a GitHub Pages artifact.
       # This artifact will be picked up by the 'deploy' job in your deployment workflow.
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           # The folder to upload. Hugo builds to 'public' by default.
           path: ./public
