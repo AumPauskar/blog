@@ -1,14 +1,14 @@
 +++
-title = 'Svn'
+title = 'Apache Subversion (SVN) Basics'
 date = 2025-07-22T12:18:20+07:00
-tags = [""]
-author = "Me"
+tags = ["vcs", "subversion", "svn", "version control", "agile", "git"]
+author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = "Learn the basics of Apache Subversion (SVN), a version control system."
 disableShare = false
 disableHLJS = false
 hideSummary = false
@@ -24,3 +24,5 @@ UseHugoToc = true
     Text = "Suggest Changes"
     appendFilePath = true
 +++
+
+# Apache Subversion (SVN) Basics
