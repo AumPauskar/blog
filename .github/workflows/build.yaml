@@ -1,0 +1,44 @@
+name: Build Hugo site
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use 'recursive' to ensure nested submodules (like a theme's theme) are fetched.
+          submodules: recursive
+          # Fetches all history for .GitInfo and .Lastmod.
+          fetch-depth: 0
+
+      # Step 2: Set up the Hugo environment.
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v4
+        with:
+          # You can specify a version like '0.125.4' or use 'latest'.
+          hugo-version: 'latest'
+          # Use the "extended" version of Hugo, which is required for SCSS/SASS support in many themes.
+          extended: true
+
+      # Step 3: Build the Hugo site.
+      # The `hugo` command converts your Markdown content into static HTML files in the 'public' directory.
+      - name: Build
+        run: hugo --minify
+
+      # Step 4: Upload the built site as a GitHub Pages artifact.
+      # This artifact will be picked up by the 'deploy' job in your deployment workflow.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          # The folder to upload. Hugo builds to 'public' by default.
+          path: ./public
