@@ -1,0 +1,56 @@
+name: 'Create New Hugo Post'
+
+on:
+  # This allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      post_title:
+        description: 'Title of the new blog post'
+        required: true
+      directory:
+        description: 'Subdirectory within content/posts (e.g., "tech" or "life"). Leave blank for root.'
+        required: false
+        default: ''
+
+jobs:
+  create_new_post:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository's code
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Set up the latest version of Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          
+      # 3. Create the new post
+      - name: Create New Post
+        run: |
+          # Get the title from the workflow input
+          POST_TITLE="${{ github.event.inputs.post_title }}"
+          
+          # Convert title to a URL-friendly "slug"
+          FILENAME=$(echo "$POST_TITLE" | iconv -t ascii//TRANSLIT | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr '[:upper:]' '[:lower:]')
+          
+          # Construct the file path, including the optional directory
+          FILE_PATH="content/posts/"
+          if [[ -n "${{ github.event.inputs.directory }}" ]]; then
+            FILE_PATH="$FILE_PATH${{ github.event.inputs.directory }}/"
+          fi
+          FILE_PATH="$FILE_PATH$FILENAME.md"
+          
+          echo "Creating post at: $FILE_PATH"
+          hugo new --kind post "$FILE_PATH"
+
+      # 4. Commit and push the new file to the repository
+      - name: Commit and Push New Post
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "docs: create new post '${{ github.event.inputs.post_title }}' 📝" || echo "No changes to commit"
+          git push
