@@ -16,6 +16,9 @@ jobs:
   create_new_post:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       # 1. Check out the repository's code
       - name: Check out repository
