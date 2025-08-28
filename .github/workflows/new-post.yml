@@ -36,15 +36,19 @@ jobs:
           # Convert title to a URL-friendly "slug"
           FILENAME=$(echo "$POST_TITLE" | iconv -t ascii//TRANSLIT | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr '[:upper:]' '[:lower:]')
           
-          # Construct the file path, including the optional directory
-          FILE_PATH="content/posts/"
-          if [[ -n "${{ github.event.inputs.directory }}" ]]; then
-            FILE_PATH="$FILE_PATH${{ github.event.inputs.directory }}/"
-          fi
-          FILE_PATH="$FILE_PATH$FILENAME.md"
+          # Safely build the relative path for the new post
+          BASE_PATH="content/posts"
+          SUBDIR="${{ github.event.inputs.directory }}"
           
-          echo "Creating post at: $FILE_PATH"
-          hugo new --kind post "$FILE_PATH"
+          # Check if a subdirectory was provided and construct the final path
+          if [[ -n "$SUBDIR" ]]; then
+            FINAL_PATH="$BASE_PATH/$SUBDIR/$FILENAME.md"
+          else
+            FINAL_PATH="$BASE_PATH/$FILENAME.md"
+          fi
+          
+          echo "Attempting to create post at: $FINAL_PATH"
+          hugo new --kind post "$FINAL_PATH"
 
       # 4. Commit and push the new file to the repository
       - name: Commit and Push New Post
