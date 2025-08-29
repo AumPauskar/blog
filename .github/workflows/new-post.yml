@@ -8,7 +8,7 @@ on:
         description: 'Title of the new blog post'
         required: true
       directory:
-        description: 'Subdirectory within content/posts (e.g., "tech" or "life"). Leave blank for root.'
+        description: 'Subdirectory within content/posts. Leave blank for root.'
         required: false
         default: ''
 
