@@ -1,14 +1,14 @@
 +++
 title = 'Kubernetes'
 date = 2025-08-28T09:59:27Z
-tags = [""]
-author = "Me"
+tags = ["Kubernetes, cloud, architecture"]
+author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = "Kubernetes basic docs added"
 disableShare = false
 disableHLJS = false
 hideSummary = false
