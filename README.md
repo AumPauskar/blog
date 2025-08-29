@@ -45,6 +45,7 @@ The Hugo site is built automatically upon every push so the contributor doesn't 
 
 ### Deploying the site
 Click on the "Deploy Hugo site to Pages" and click run and the pages would run and deploy on the web ASAP. 
+![meme](https://c.tenor.com/dxPl_UoR8J0AAAAC/tenor.gif)
 
 ## References
 If you want to create a similar blog, you can follow the following links:
