@@ -2,13 +2,13 @@
 title = 'Terraform'
 date = 2025-08-29T05:37:40Z
 tags = [""]
-author = "Me"
+author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = "A short tutorial on working of terraform"
 disableShare = false
 disableHLJS = false
 hideSummary = false
