@@ -24,3 +24,15 @@ UseHugoToc = true
     Text = "Suggest Changes"
     appendFilePath = true
 +++
+
+# Kubernetes
+
+## Installing
+
+
+## Basic commands
+- kubectl run testcubeimage --image=hello-world --port=80
+- kubectl delete pod testcubeimage
+- kubectl describe pods
+
+
