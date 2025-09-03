@@ -123,6 +123,10 @@ This is the standard and most flexible way to install Docker on Linux. The steps
       * **Verify the installation** by running a test container: `docker run hello-world`.
 
 ## Basic commands
+
+Kubernetes works on the following architecture 
+![kubernetes architecture](https://raw.githubusercontent.com/AumPauskar/repo-media/refs/heads/main/blog/cloud/kubernetes/k8s_architecture.png)
+
 - kubectl run testcubeimage --image=hello-world --port=80
 - kubectl delete pod testcubeimage
 - kubectl describe pods
