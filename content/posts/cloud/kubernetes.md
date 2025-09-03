@@ -122,10 +122,49 @@ This is the standard and most flexible way to install Docker on Linux. The steps
       * **Add your user to the `docker` group** to run commands without `sudo`: `sudo usermod -aG docker $USER`. You must log out and back in for this to take effect.
       * **Verify the installation** by running a test container: `docker run hello-world`.
 
-## Basic commands
-
+## Kubernetes architecture
 Kubernetes works on the following architecture 
 ![kubernetes architecture](https://raw.githubusercontent.com/AumPauskar/repo-media/refs/heads/main/blog/cloud/kubernetes/k8s_architecture.png)
+
+Kubernetes, often abbreviated as K8s, has a well-defined architecture composed primarily of a master node (also called the control plane) and one or more worker nodes. All nodes collectively form a cluster.
+
+Here's a breakdown of the Kubernetes structure:
+
+### Master Node (Control Plane)
+The **master node**, or **control plane**, runs the core Kubernetes services and controllers. These are also known as the master components. Typically, your application containers do not run on the master node.
+
+The main components of the master node include:
+- API Server: This is the only component that clients (like the Kubernetes CLI or web dashboards) interact with, exposing a REST API. It saves the cluster's state in etCD.
+- etCD: A key-value data store that serves as the **single source of truth** for the cluster's state. The API server is the only component that communicates directly with etCD.
+- Kube Control Manager: This is the "controller of controllers" and is responsible for running other Kubernetes controllers.
+- Cloud Control Manager: This component interacts with cloud providers to manage resources like checking if nodes were created or deleted, routing traffic, creating or deleting load balancers, and interacting with cloud storage services.
+- Kube Scheduler: This watches for newly created pods that haven't been assigned to a node and selects an appropriate worker node for them to run on, considering various rules and resource availability.
+- Add-ons: Additional functionalities can be installed on the master node through add-ons to extend the cluster's capabilities.
+
+### Worker Nodes
+The **worker nodes** are the machines where your application containers (encapsulated within pods) actually run. When a worker node is added to a cluster, certain Kubernetes services are automatically installed.
+
+Key components found on each worker node are:
+- Container Runtime: Kubernetes supports various container runtimes that implement the Kubernetes Container Runtime Interface (CRI) specification. For versions prior to 1.19, Moby (the container runtime used by Docker) was common, but starting with 1.19, it's no longer installed by default, though Docker images still run as usual.
+- Kubelet: This agent manages the pod's lifecycle on the node, ensuring that the containers specified in the pod definition are running and healthy.
+- Kube Proxy: A network proxy that manages network rules on the nodes, directing all network traffic.
+
+### Node Pools and Local Setup
+A **node pool** is a group of virtual machines of the same size, and a cluster can have multiple node pools. For local development and testing, tools like Docker Desktop, Minikube, Kind, and MicroK8s allow you to run Kubernetes on your desktop or laptop.
+
+It's important to note that **Docker Desktop is limited to a single node**, meaning it runs the master components and all application containers on the same node. In contrast, Minikube, Kind, and MicroK8s can emulate multiple worker nodes. Regardless of the local solution, **virtualization must be enabled** on your machine.
+
+### Communication and Pods
+- A container will run in a **pod**.
+- A pod runs in a **node**.
+- All nodes form a **cluster**.
+
+Pods are the smallest unit of work, encapsulating one or more application containers. Containers within the same pod share the same IP address space and volumes, communicating via localhost. All pods within a cluster can communicate with each other, and all nodes can communicate with all pods. However, pods are assigned ephemeral IP addresses, which is why Kubernetes introduces **Services** to provide stable, persistent IP addresses and DNS names for accessing pods.
+
+![kubernetes pods structure](https://raw.githubusercontent.com/AumPauskar/repo-media/refs/heads/main/blog/cloud/kubernetes/k8s_architecture_2.png)
+## Basic commands
+
+
 
 - kubectl run testcubeimage --image=hello-world --port=80
 - kubectl delete pod testcubeimage
