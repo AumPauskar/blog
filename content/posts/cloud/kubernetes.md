@@ -162,6 +162,59 @@ It's important to note that **Docker Desktop is limited to a single node**, mean
 Pods are the smallest unit of work, encapsulating one or more application containers. Containers within the same pod share the same IP address space and volumes, communicating via localhost. All pods within a cluster can communicate with each other, and all nodes can communicate with all pods. However, pods are assigned ephemeral IP addresses, which is why Kubernetes introduces **Services** to provide stable, persistent IP addresses and DNS names for accessing pods.
 
 ![kubernetes pods structure](https://raw.githubusercontent.com/AumPauskar/repo-media/refs/heads/main/blog/cloud/kubernetes/k8s_architecture_2.png)
+
+## Context in Kubernetes
+
+In Kubernetes, a **context** is a crucial concept that allows you to manage connections to different Kubernetes clusters.
+
+Here's a breakdown of what a context is and the commands associated with it:
+
+### What is a Kubernetes Context?
+A context is a **group of access parameters that enable you to connect to a Kubernetes cluster**. It contains the necessary connection information to interact with a specific cluster. This is particularly useful when you need to connect to multiple clusters, such as development, testing, and production environments, or different cloud-based clusters (like one on Azure and another on Docker Desktop).
+
+Each context typically includes:
+*   The **cluster name**.
+*   A **user** associated with that cluster.
+*   A **namespace** within that cluster.
+
+The **current context** refers to the cluster against which all subsequent `kubectl` commands will be executed. For example, if you have contexts for Cluster A, Cluster B, and Cluster C, and you set Cluster B as your current context, then all `kubectl` commands you run will apply to Cluster B.
+
+### Where Context Information is Stored
+The connection information for your contexts is **stored locally on your machine** in a YAML configuration file. On Windows, this file is typically found in `C:\Users\YourUsername\.kube\config`. This YAML file contains entries for different clusters and the contexts configured to access them.
+
+### Commands for Managing Contexts
+The `kubectl config` command is used to manage contexts. Here are some key commands:
+
+- `kubectl config current-context`
+    - Purpose: Displays the name of the context you are currently using.
+    - Example: If you're currently in the Docker Desktop context, this command will print "docker-desktop".
+
+- `kubectl config get-contexts`
+    - Purpose: Lists all the contexts that are configured on your machine.
+    - Output: Shows all available contexts, with the current context usually marked with a star in the `CURRENT` column.
+
+- `kubectl config use-context <CONTEXT_NAME>`
+    - Purpose: Switches your current context to the specified context. All subsequent `kubectl` commands will then target this newly selected cluster.
+    - Example: `kubectl config use-context demo` would switch to a context named `demo`.
+
+- `kubectl config rename-context <OLD_NAME> <NEW_NAME>`
+    - Purpose: Renames an existing context. This is useful for making context names more descriptive or easier to remember.
+    - Example: `kubectl config rename-context demo azure-demo` would rename the `demo` context to `azure-demo`.
+
+- `kubectl config delete-context <CONTEXT_NAME>`
+    - Purpose: Deletes a specified context from your configuration file.
+    - Note: This command only removes the context entry from your local configuration; it **does not delete the actual Kubernetes cluster** itself. You may also need to manually edit the config file to remove associated cluster information if no other context uses it.
+    *   Example: `kubectl config delete-context azure-demo` would remove the `azure-demo` context.
+
+- `kubectl config set-context --current --namespace=<NAMESPACE_NAME>`
+    - Purpose: Modifies the current context to use a specific namespace for future commands without changing the cluster.
+    - Example: `kubectl config set-context --current --namespace=kube-system` would set the default namespace for your current context to `kube-system`.
+
+### Helper Tool: `kubectx`
+A popular open-source tool called **`kubectx`** acts as a shortcut for the `kubectl config use-context` command.
+*   **Purpose**: It allows you to quickly list and switch between contexts with fewer keystrokes.
+*   **Usage**: Simply typing `kubectx` will list your configured contexts, and `kubectx <CONTEXT_NAME>` will switch to the specified context. It is available on Windows, Mac, and Linux.
+
 ## Basic commands
 
 
