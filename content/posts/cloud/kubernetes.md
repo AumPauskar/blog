@@ -215,6 +215,80 @@ A popular open-source tool called **`kubectx`** acts as a shortcut for the `kube
 *   **Purpose**: It allows you to quickly list and switch between contexts with fewer keystrokes.
 *   **Usage**: Simply typing `kubectx` will list your configured contexts, and `kubectx <CONTEXT_NAME>` will switch to the specified context. It is available on Windows, Mac, and Linux.
 
+## Control nodes and pods
+
+### Master Node (Control Plane)
+
+The **master node**, also known as the **control plane**, is the brain of the Kubernetes cluster. It is where the core Kubernetes services and controllers reside, managing the overall state and operations of the cluster. Typically, **application containers are not run directly on the master node**.
+
+The master node comprises several critical components:
+
+- API Server: This component exposes a **REST interface** that serves as the **only point of communication** for Kubernetes clusters. All client tools, such as the Kubernetes command-line interface (CLI) `kubectl`, interact with the cluster through this REST API. It is also responsible for **saving the entire state of the cluster into etcd**.
+- etcd: This is a **key-value data store** that acts as the **single source of truth** for the cluster, storing its complete state. The API server is the exclusive component that communicates directly with etcd.
+- Kube Control Manager: Often referred to as the "**controller of controllers**," its primary role is to run other Kubernetes controllers, ensuring that the desired state of the cluster is maintained.
+- Cloud Control Manager: This component specifically interacts with cloud providers. Its responsibilities include checking for node creation or deletion, routing traffic, creating or deleting load balancers, and integrating with the cloud provider's storage services.
+- Kube Scheduler: The scheduler continuously watches for pods that have not yet been assigned to a node. It then selects an appropriate node for these pods to run on, considering various rules and resource availability, and assigns the pod creation to that specific node.
+- Add-ons: Various add-ons can be installed on the master node to provide extended functionalities to the Kubernetes cluster.
+
+### Worker Nodes (formerly Slave Nodes)
+
+**Worker nodes** (historically sometimes referred to as "slave nodes" in other contexts, but Kubernetes uses "worker nodes") are the machines (physical or virtual) that host the actual application containers you deploy within the cluster. When a worker node joins a cluster, several essential Kubernetes services are automatically installed on it:
+
+- Container Runtime: Kubernetes supports various container runtimes that adhere to the Kubernetes Container Runtime Interface (CRI) specification. Examples include the Moby container runtime (used by Docker). This runtime is responsible for running the containers.
+- Kubelet: An agent that runs on each worker node, the **Kubelet manages the pod's lifecycle**. It ensures that the containers specified in the pod definitions are running and remain healthy.
+- Kube-proxy: This is a network proxy that manages network rules on the nodes. All network traffic within the node, including communication between pods, is routed through the kube-proxy.
+
+Worker nodes can be organized into **node pools**, which are collections of virtual machines of the same size. A cluster can include multiple node pools, each potentially offering VMs of different sizes or capabilities (e.g., some with GPUs, some without). It's worth noting that local Kubernetes setups like Docker Desktop are typically limited to a **single node**, meaning the master components and all application containers run on the same machine.
+
+### Pods
+
+A **pod** is the **smallest deployable unit of work in Kubernetes**. It encapsulates one or more application containers and represents a single unit of deployment.
+
+Key characteristics of pods include:
+
+- Encapsulation: A pod acts as a wrapper around one or more containers, along with shared storage resources (volumes) and a unique network IP address.
+- Shared Resources: All containers within a single pod **share the same IP address space and volumes**. They can communicate with each other using `localhost` and their assigned port numbers.
+- Ephemerality: Pods are designed to be ephemeral. If a pod crashes, Kubernetes replaces it with a **brand new one**, which will have a different IP address. This means you do not update a running pod; instead, you create an updated version, delete the old one, and deploy the new one.
+- Atomic Operation: Deploying a pod is an atomic operation; it either fully succeeds or fails.
+- Scaling: You scale your application by **adding more pods**, not by adding more containers within an existing pod.
+- Multi-Container Pods: While a pod can run a single container, it can also run multiple containers. In such cases, there is usually one main "worker" container that hosts the application logic, and other "helper" containers provide supplementary services. Common design patterns for multi-container pods include:
+    - Sidecar Pattern: A helper container provides extra functionalities, such as copying log files to persistent storage, without cluttering the main application's code.
+    - Adapter Pattern: A helper container simplifies complex monitoring data from the main worker for a monitoring service.
+    - Ambassador Pattern: A helper container acts as an intermediary, enabling the main application to interact with external services (e.g., a NoSQL database) without knowing the specific implementation details.
+
+Pods go through various **lifecycle states**:
+
+- Pending: The pod is scheduled for creation but not yet created. This can occur if the cluster lacks sufficient resources.
+- Running: The pod is currently executing.
+- Succeeded: The code within the pod exited successfully without any errors.
+- Failed: The code within the pod exited with a non-zero status, indicating an error.
+- Unknown: Kubernetes cannot communicate with the pod.
+- CrashLoopBackOff: The pod started, crashed, was restarted by Kubernetes, and then crashed again.
+
+### Kubernetes Commands
+
+The following table summarizes common `kubectl` commands related to Master Nodes, Worker Nodes, and Pods:
+
+| Category          | Command                                                                 | Description                                                                                                                                                                                                                                                                                                                                                             |
+| :---------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Cluster Info**  | `kubectl cluster-info`                                                  | Displays information about the Kubernetes master (control plane) and KubeDNS service URLs, confirming the cluster is running.                                                                                                                                       |
+| **Nodes**         | `kubectl get nodes`                                                     | Lists all worker nodes in the cluster, showing their name, status, roles, and age.                                                                                                                                                                                 |
+|                   | `kubectl get nodes -o wide`                                             | Provides more detailed information about the nodes, including internal and external IP addresses, OS image, and container runtime version. This command also reveals if the node is acting as a master.                                                           |
+|                   | `kubectl describe node <node_name>`                                     | Shows detailed information about a specific node, including its configuration, status, allocated resources (CPU, memory), running pods, and events. This is useful for troubleshooting.                                                                             |
+| **Pods**          | `kubectl run <pod_name> --image=<image_name>`                           | **Imperatively** creates and runs a new pod with a specified image.                                                                                                                                                                                               |
+|                   | `kubectl create -f <yaml_file>`                                         | **Declaratively** creates Kubernetes resources (like pods, deployments, services) from a YAML manifest file.                                                                                                                                                  |
+|                   | `kubectl apply -f <yaml_file>`                                          | **Declaratively** applies changes to Kubernetes resources defined in a YAML file. If the resource doesn't exist, it creates it. If it exists, it updates it.                                                                                                     |
+|                   | `kubectl get pods`                                                      | Lists all pods in the current namespace, showing their name, ready status, current state, restart count, and age.                                                                                                                                        |
+|                   | `kubectl get pods -o wide`                                              | Provides more details for pods, including their internal IP address and the node they are running on.                                                                                                                                                        |
+|                   | `kubectl describe pod <pod_name>`                                       | Displays comprehensive information about a specific pod, including its labels, annotations, status, container details, volumes, and recent events, which is crucial for troubleshooting.                                                                 |
+|                   | `kubectl exec -it <pod_name> <program>`                                 | Opens an interactive shell session inside a **single-container pod** to run commands directly within it.                                                                                                                                                    |
+|                   | `kubectl exec -it <pod_name> -c <container_name> <program>`             | Opens an interactive shell session inside a **specific container within a multi-container pod**.                                                                                                                                                               |
+|                   | `kubectl logs <pod_name>`                                               | Retrieves the logs for a specific pod.                                                                                                                                                                                                                                 |
+|                   | `kubectl logs <pod_name> -c <container_name>`                           | Retrieves logs for a specific container within a multi-container pod.                                                                                                                                                                                                  |
+|                   | `kubectl delete pod <pod_name>`                                         | Deletes a specified pod.                                                                                                                                                                                                                                       |
+|                   | `kubectl delete -f <yaml_file>`                                         | Deletes Kubernetes resources (including pods) that are defined in the specified YAML file.                                                                                                                                                                        |
+|                   | `kubectl delete pod <pod_name> --force --grace-period=0`                | Forcibly deletes a pod immediately, bypassing the graceful termination period.                                                                                                                                                                                         |
+|                   | `kubectl get pod <pod_name> -o yaml > <output_file.yaml>`               | Extracts the current YAML definition of a running pod and saves it to a file, useful for recreating lost definitions or debugging.                                                                                                                                   |
 ## Basic commands
 
 
