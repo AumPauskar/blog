@@ -1,14 +1,14 @@
 +++
-title = 'Aws'
+title = 'AWS'
 date = 2025-10-13T18:34:50Z
-tags = [""]
-author = "Me"
+tags = ["cloud", "aws"]
+author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = "A handbook in navigating, using AWS ande explaining the fundamentals"
 disableShare = false
 disableHLJS = false
 hideSummary = false
@@ -24,3 +24,6 @@ UseHugoToc = true
     Text = "Suggest Changes"
     appendFilePath = true
 +++
+
+# AWS
+
