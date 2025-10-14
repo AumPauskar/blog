@@ -182,3 +182,8 @@ Once you have your list, you need to go to the specific service console for each
 1. DynamoDB: Search for DynamoDB lookup for tables, select delete and remove them by typing confirm in the checkbox.
 2. Lambda: Search for lambda and remove them by typing confirm where needed
 3. Subnets: Search for subnets and remove them by typing delete
+
+## Deploying AWS services via terraform
+
+In this documentation we shall also discuss of how AWS services can be deployed via IaC with terraform. Refer [Terraform](https://aumpauskar.github.io/blog/posts/cloud/terraform/) for the continuation of the document.
+

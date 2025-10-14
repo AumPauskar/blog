@@ -123,3 +123,97 @@ output "instance_ip_address" {
   value       = google_compute_instance.default.network_interface[0].access_config[0].nat_ip
 }
 ```
+
+## Setting up terraform with AWS
+
+### Configure AWS Credentials
+
+First, you need to give Terraform permission to access your AWS account. The best way to do this is by creating an **IAM User** with programmatic access and the necessary permissions (e.g., `AdministratorAccess` for full control, or more restricted permissions for production environments).
+
+1.  **Create an IAM User** in your AWS Console and get the **Access Key ID** and **Secret Access Key**.
+2.  Open your terminal or command prompt and run the following command:
+    ```bash
+    aws configure
+    ```
+3.  Enter the credentials you just downloaded. This will store them in a secure file on your computer that Terraform can automatically use.
+    ```
+    AWS Access Key ID [None]: YOUR_ACCESS_KEY
+    AWS Secret Access Key [None]: YOUR_SECRET_KEY
+    Default region name [None]: us-east-1  # Or your preferred region
+    Default output format [None]: json
+    ```
+
+### Create a Terraform Configuration File
+
+Now, let's write some Terraform code.
+
+1.  Create a new folder for your project.
+
+2.  Inside that folder, create a new file named `main.tf`. This is where your configuration will live.
+
+3.  Paste the following code into `main.tf`. This code tells Terraform to use the AWS provider and defines a simple S3 bucket resource.
+
+    ```terraform
+    # This block tells Terraform which providers we need.
+    terraform {
+      required_providers {
+        aws = {
+          source  = "hashicorp/aws"
+          version = "~> 5.0"
+        }
+      }
+    }
+
+    # This configures the AWS provider, like setting the region.
+    provider "aws" {
+      region = "us-east-1"
+    }
+
+    # This is a "resource" block. It defines an AWS resource to create.
+    # In this case, we are creating an S3 bucket.
+    resource "aws_s3_bucket" "my_bucket" {
+      # NOTE: S3 bucket names must be globally unique. Change this name!
+      bucket = "my-unique-terraform-demo-bucket-20251014"
+
+      tags = {
+        Name        = "My Terraform Bucket"
+        ManagedBy   = "Terraform"
+      }
+    }
+    ```
+
+    **Important**: Remember to change the `bucket` name to something unique.
+
+
+### Initialize, Plan, and Apply
+
+These are the three core commands you'll use with Terraform. Run them from your terminal inside the project folder you created.
+
+1.  **Initialize the Directory**
+    This command downloads the AWS provider plugin defined in your configuration.
+
+    ```bash
+    terraform init
+    ```
+
+    You should see a message saying "Terraform has been successfully initialized\!".
+
+2.  **Create an Execution Plan**
+    This command shows you what changes Terraform will make to your infrastructure without actually making them. It's a great way to review your work.
+
+    ```bash
+    terraform plan
+    ```
+
+    Terraform will output a plan showing it will create 1 new resource (the S3 bucket).
+
+3.  **Apply the Changes**
+    This command executes the plan and builds the resources in your AWS account.
+
+    ```bash
+    terraform apply
+    ```
+
+    Terraform will show you the plan again and ask for confirmation. Type **`yes`** and press Enter. After a few moments, your S3 bucket will be created.
+
+To clean up and delete the resources you created, you can simply run `terraform destroy`.
