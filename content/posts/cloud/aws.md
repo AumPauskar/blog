@@ -163,6 +163,7 @@ Alerts help, but manual discipline prevents the usage in the first place.
     - Create a report filtered to **"Unblended Cost"** and review it to ensure your actual cost remains $0.00.
 
 ## Turning off redundunt services
+
 ### Find All Your Active Resources (Across ALL Regions)
 
 As mentioned before, your primary tool for this is the **AWS Resource Groups & Tag Editor**. This is the crucial first step.
@@ -176,3 +177,8 @@ Make a list of every resource you find and in which region it is located.
 ### Terminate or Delete the Resources
 
 Once you have your list, you need to go to the specific service console for each resource to shut it down. The term for "turning off" varies by service:
+
+### Removing services
+1. DynamoDB: Search for DynamoDB lookup for tables, select delete and remove them by typing confirm in the checkbox.
+2. Lambda: Search for lambda and remove them by typing confirm where needed
+3. Subnets: Search for subnets and remove them by typing delete
