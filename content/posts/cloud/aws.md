@@ -161,3 +161,18 @@ Alerts help, but manual discipline prevents the usage in the first place.
     - This tool allows you to visualize your spending.
     - **Enable Cost Explorer** (it may take 24 hours to populate data).
     - Create a report filtered to **"Unblended Cost"** and review it to ensure your actual cost remains $0.00.
+
+## Turning off redundunt services
+### Find All Your Active Resources (Across ALL Regions)
+
+As mentioned before, your primary tool for this is the **AWS Resource Groups & Tag Editor**. This is the crucial first step.
+
+1.  Navigate to **AWS Resource Groups & Tag Editor** in the AWS Console.
+2.  Go to the **"All resources"** section.
+3.  **This is the most critical part:** In the filter section, you will see a "Region" filter. You must systematically go through **every single AWS Region** from the dropdown to see if you have any active resources there. It's very common to forget a resource you launched in a region you don't normally use (e.g., leaving a test server running in `us-west-1` when you usually work in `us-east-1`).
+
+Make a list of every resource you find and in which region it is located.
+
+### Terminate or Delete the Resources
+
+Once you have your list, you need to go to the specific service console for each resource to shut it down. The term for "turning off" varies by service:
