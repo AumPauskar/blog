@@ -29,6 +29,15 @@ UseHugoToc = true
 
 Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It allows you to define and manage your infrastructure resources—such as virtual machines, networks, and databases—in human-readable configuration files. Instead of manually provisioning resources through a cloud provider's web console, you can use Terraform to automate the process, making it repeatable and less prone to error.
 
+
+## Installing and verifying the installation
+Terraform can be installed by visiting the hashicorp officail website, it is available for all major operating systems like windows, mac and linux. [Install | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform/install).
+
+To check the installation of terraform first restart the computer after installing, setting the bin as the environment variable and then type the following command
+
+```bash
+terraform -v // or terraform --version
+```
 ## Basic commands
 The basics of Terraform revolve around a few core concepts and commands that form the standard workflow. You'll use these to initialize a project, plan changes, and apply them.
 
