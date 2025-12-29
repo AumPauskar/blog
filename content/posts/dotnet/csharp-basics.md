@@ -263,6 +263,30 @@ The object can be called with the following syntax `Classname objectname = new C
 
 An object can be created via preceeding the objectname by the keyword `var` or by preceeding it by the classname.
 
+### Partial classes
+
+The partial keyword allows a class, struct, or interface to be split across multiple files, but treated as one single class by the compiler.
+
+Contents of `Person.cs`
+```csharp
+public partial class Person
+{
+    public string Name { get; set; }
+}
+```
+
+Contents of `Person.Details.cs`
+```csharp
+public partial class Person
+{
+    public void SayHello()
+    {
+        Console.WriteLine($"Hello, {Name}");
+    }
+}
+```
+
+Even after you have declared two classes. The compiler treats them as one. This syntax can be used within classes, structs, interface etc.
 #### Constructors
 
 A constructor is a builtin method that gets invoked whenever the class is called. It can be created by the following.
@@ -341,6 +365,52 @@ Top-level statements in C# are a feature introduced in C# 9.0 that allows develo
     1. No Multiple Entry Points
     2. Not Suitable for Large Applications
     3. Cannot Use `async` Directly: You cannot declare an `async` method directly at the top level. However, you can use `async` within a method that you define.
+
+- Example of code with and without top level statements
+
+    With top level statements
+    ```csharp
+    var person = new Person("Name", 30);
+    person.PrintInfo();
+    class Person (string name, int age)
+    {
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Name: {name}, Age: {age}");
+        }
+    }
+    ```
+
+    Without top level statements
+    ```csharp
+    using System;
+
+    class Program
+    {
+        static void Main()
+        {
+            var person = new Person("Name", 30);
+            person.PrintInfo();
+        }
+    }
+
+    class Person
+    {
+        private string name;
+        private int age;
+
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Name: {name}, Age: {age}");
+        }
+    }
+    ```
 
 ## Preprocessor Directives
 C# supports preprocessor directives, which are commands that are processed before the compilation of the code
