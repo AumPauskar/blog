@@ -124,7 +124,7 @@ dotnet new maui
 dotnet new grpc
 ```
 
-
+When you create a project, a folder and a file `name.csproj` gets produced. The `.csproj` is your project file. For each project a `.csproj` file is produced. Always commit this file to git and never delete it. It also stores your NuGet packages list. Then we have our `obj/` folder. This will contain your build your temproary build files, compiled metadata etc. Don't edit it but also don't commit it to git.
 
 ## Console commands
 C# can be extended a lot by using the dotnet CLI here are some examples of the .net CLI commands.
