@@ -322,57 +322,57 @@ C# is a statically typed language, which means that the type of a variable is kn
 
 - 1. Integral Types
     - a. `int`
-        - **Definition and Range**: Represents a 32-bit signed integer. Range: -2,147,483,648 to 2,147,483,647.
-        - **Snippet**:
+        - Definition and Range: Represents a 32-bit signed integer. Range: -2,147,483,648 to 2,147,483,647.
+        - Snippet:
         ```csharp
         int myInt = 42;
         ```
 
     - b. `long`
-        - **Definition and Range**: Represents a 64-bit signed integer. Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
-        - **Snippet**:
+        - Definition and Range: Represents a 64-bit signed integer. Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+        - Snippet:
         ```csharp
         long myLong = 12345678901234L;
         ```
 
     - c. `short`
-        - **Definition and Range**: Represents a 16-bit signed integer. Range: -32,768 to 32,767.
-        - **Snippet**:
+        - Definition and Range: Represents a 16-bit signed integer. Range: -32,768 to 32,767.
+        - Snippet:
         ```csharp
         short myShort = 32000;
         ```
 
     - d. `byte`
-        - **Definition and Range**: Represents an 8-bit unsigned integer. Range: 0 to 255.
-        - **Snippet**:
+        - Definition and Range: Represents an 8-bit unsigned integer. Range: 0 to 255.
+        - Snippet:
         ```csharp
         byte myByte = 255;
         ```
 
     - e. `sbyte`
-        - **Definition and Range**: Represents an 8-bit signed integer. Range: -128 to 127.
-        - **Snippet**:
+        - Definition and Range: Represents an 8-bit signed integer. Range: -128 to 127.
+        - Snippet:
         ```csharp
         sbyte mySByte = -128;
         ```
 
     - f. `uint`
-        - **Definition and Range**: Represents a 32-bit unsigned integer. Range: 0 to 4,294,967,295.
-        - **Snippet**:
+        - Definition and Range: Represents a 32-bit unsigned integer. Range: 0 to 4,294,967,295.
+        - Snippet:
         ```csharp
         uint myUInt = 4000000000U;
         ```
 
     - g. `ulong`
-        - **Definition and Range**: Represents a 64-bit unsigned integer. Range: 0 to 18,446,744,073,709,551,615.
-        - **Snippet**:
+        - Definition and Range: Represents a 64-bit unsigned integer. Range: 0 to 18,446,744,073,709,551,615.
+        - Snippet:
         ```csharp
         ulong myULong = 8000000000000000000UL;
         ```
 
     - h. `ushort`
-        - **Definition and Range**: Represents a 16-bit unsigned integer. Range: 0 to 65,535.
-        - **Snippet**:
+        - Definition and Range: Represents a 16-bit unsigned integer. Range: 0 to 65,535.
+        - Snippet:
         ```csharp
         ushort myUShort = 65000;
         ```
@@ -380,22 +380,22 @@ C# is a statically typed language, which means that the type of a variable is kn
 - 2. Floating-Point Types
 
     - a. `float`
-        - **Definition and Range**: Represents a single-precision (32-bit) floating-point number. Range: ±1.5 × 10^−45 to ±3.4 × 10^38.
-        - **Snippet**:
+        - Definition and Range: Represents a single-precision (32-bit) floating-point number. Range: ±1.5 × 10^−45 to ±3.4 × 10^38.
+        - Snippet:
         ```csharp
         float myFloat = 3.14f;
         ```
 
     - b. `double`
-        - **Definition and Range**: Represents a double-precision (64-bit) floating-point number. Range: ±5.0 × 10^−324 to ±1.7 × 10^308.
-        - **Snippet**:
+        - Definition and Range: Represents a double-precision (64-bit) floating-point number. Range: ±5.0 × 10^−324 to ±1.7 × 10^308.
+        - Snippet:
         ```csharp
         double myDouble = 3.14159265358979;
         ```
 
     - c. `decimal`
-        - **Definition and Range**: Represents a 128-bit precise decimal value with 28-29 significant digits. Range: ±1.0 × 10^−28 to ±7.9 × 10^28.
-        - **Snippet**:
+        - Definition and Range: Represents a 128-bit precise decimal value with 28-29 significant digits. Range: ±1.0 × 10^−28 to ±7.9 × 10^28.
+        - Snippet:
         ```csharp
         decimal myDecimal = 19.99m;
         ```
@@ -403,15 +403,15 @@ C# is a statically typed language, which means that the type of a variable is kn
 - 3. Other Value Types
 
     - a. `char`
-        - **Definition and Range**: Represents a single 16-bit Unicode character. Range: U+0000 to U+FFFF.
-        - **Snippet**:
+        - Definition and Range: Represents a single 16-bit Unicode character. Range: U+0000 to U+FFFF.
+        - Snippet:
         ```csharp
         char myChar = 'A';
         ```
 
     - b. `bool`
-        - **Definition and Range**: Represents a Boolean value (true or false).
-        - **Snippet**:
+        - Definition and Range: Represents a Boolean value (true or false).
+        - Snippet:
         ```csharp
         bool myBool = true;
         ```
@@ -419,21 +419,21 @@ C# is a statically typed language, which means that the type of a variable is kn
 - 4. Reference Types
 
     - a. `string`
-        - **Definition**: Represents a sequence of characters. Strings are immutable.
-        - **Snippet**:
+        - Definition: Represents a sequence of characters. Strings are immutable.
+        - Snippet:
         ```csharp
         string myString = "Hello, World!";
         ```
     - b. Array
-        - **Definition**: A collection of items of the same type. Can be single-dimensional or multi-dimensional.
-        - **Snippet**:
+        - Definition: A collection of items of the same type. Can be single-dimensional or multi-dimensional.
+        - Snippet:
         ```csharp
         int[] myArray = new int[5] { 1, 2, 3, 4, 5 };
         ```
 
     - c. Class
-        - **Definition**: A user-defined reference type that can contain data members (fields) and function members (methods).
-        - **Snippet**:
+        - Definition: A user-defined reference type that can contain data members (fields) and function members (methods).
+        - Snippet:
         ```csharp
         class Person {
             public string Name;
@@ -442,8 +442,8 @@ C# is a statically typed language, which means that the type of a variable is kn
         ```
 
     - d. Interface
-        - **Definition**: A contract that defines a set of methods and properties that implementing classes must provide.
-        - **Snippet**:
+        - Definition: A contract that defines a set of methods and properties that implementing classes must provide.
+        - Snippet:
         ```csharp
         interface IAnimal {
             void Speak();
@@ -451,15 +451,15 @@ C# is a statically typed language, which means that the type of a variable is kn
         ```
 
     - e. Delegate
-        - **Definition**: A type that represents references to methods with a specific parameter list and return type.
-        - **Snippet**:
+        - Definition: A type that represents references to methods with a specific parameter list and return type.
+        - Snippet:
         ```csharp
         public delegate void Notify();
         ```
 
     - f. `object`
-        - **Definition**: The base type from which all other types derive. Can hold any data type.
-        - **Snippet**:
+        - Definition: The base type from which all other types derive. Can hold any data type.
+        - Snippet:
         ```csharp
         object myObject = "This is an object";
         ```
@@ -467,8 +467,8 @@ C# is a statically typed language, which means that the type of a variable is kn
 - 5. Nullable Types
 
     - a. `int?`
-        - **Definition**: A nullable integer that can represent all the values of its underlying type plus an additional `null` value.
-        - **Snippet**:
+        - Definition: A nullable integer that can represent all the values of its underlying type plus an additional `null` value.
+        - Snippet:
         ```csharp
         int? myNullableInt = null;
         ```
@@ -476,8 +476,8 @@ C# is a statically typed language, which means that the type of a variable is kn
 - 6. Enumerations
 
     - a. `enum`
-        - **Definition**: A special "class" that represents a group of constants (named values).
-        - **Snippet**:
+        - Definition: A special "class" that represents a group of constants (named values).
+        - Snippet:
         ```csharp
         enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
         ```
@@ -489,8 +489,8 @@ Logical statements or conditions help the flow of the code that is running withi
 - 1. Logical Operators
 
     - a. `&&` (Logical AND)
-        - **Definition**: Returns `true` if both operands are true; otherwise, it returns `false`.
-        - **Snippet**:
+        - Definition: Returns `true` if both operands are true; otherwise, it returns `false`.
+        - Snippet:
         ```csharp
         bool a = true;
         bool b = false;
@@ -498,8 +498,8 @@ Logical statements or conditions help the flow of the code that is running withi
         ```
 
     - b. `||` (Logical OR)
-        - **Definition**: Returns `true` if at least one of the operands is true; returns `false` if both are false.
-        - **Snippet**:
+        - Definition: Returns `true` if at least one of the operands is true; returns `false` if both are false.
+        - Snippet:
         ```csharp
         bool a = true;
         bool b = false;
@@ -507,8 +507,8 @@ Logical statements or conditions help the flow of the code that is running withi
         ```
 
     - c. `!` (Logical NOT)
-        - **Definition**: Reverses the logical state of its operand. If the condition is true, it becomes false, and vice versa.
-        - **Snippet**:
+        - Definition: Reverses the logical state of its operand. If the condition is true, it becomes false, and vice versa.
+        - Snippet:
         ```csharp
         bool a = true;
         bool result = !a; // result is false
@@ -517,8 +517,8 @@ Logical statements or conditions help the flow of the code that is running withi
 - 2. Conditional Statements
 
     - a. `if` Statement
-        - **Definition**: Executes a block of code if the specified condition is true.
-        - **Snippet**:
+        - Definition: Executes a block of code if the specified condition is true.
+        - Snippet:
         ```csharp
         int number = 10;
         if (number > 0) {
@@ -527,8 +527,8 @@ Logical statements or conditions help the flow of the code that is running withi
         ```
 
     - b. `else` Statement
-        - **Definition**: Executes a block of code if the condition in the `if` statement is false.
-        - **Snippet**:
+        - Definition: Executes a block of code if the condition in the `if` statement is false.
+        - Snippet:
         ```csharp
         int number = -5;
         if (number > 0) {
@@ -539,8 +539,8 @@ Logical statements or conditions help the flow of the code that is running withi
         ```
 
     - c. `else if` Statement
-        - **Definition**: Specifies a new condition to test if the first condition is false.
-        - **Snippet**:
+        - Definition: Specifies a new condition to test if the first condition is false.
+        - Snippet:
         ```csharp
         int number = 0;
         if (number > 0) {
@@ -555,8 +555,8 @@ Logical statements or conditions help the flow of the code that is running withi
 - 3. Switch Statement
 
     - a. `switch`
-        - **Definition**: Selects one of many code blocks to execute based on the value of a variable or expression.
-        - **Snippet**:
+        - Definition: Selects one of many code blocks to execute based on the value of a variable or expression.
+        - Snippet:
         ```csharp
         int day = 3;
         switch (day) {
@@ -579,8 +579,8 @@ Logical statements or conditions help the flow of the code that is running withi
 - 4. Ternary Operator
 
     - a. `?:` (Ternary Conditional Operator)
-        - **Definition**: A shorthand for `if-else` statements that returns one of two values based on a condition.
-        - **Snippet**:
+        - Definition: A shorthand for `if-else` statements that returns one of two values based on a condition.
+        - Snippet:
         ```csharp
         int number = 10;
         string result = (number > 0) ? "Positive" : "Non-positive"; // result is "Positive"
@@ -590,16 +590,16 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 1. Arrays
 
-    - **Definition**: A collection of items of the same type, stored in contiguous memory locations. Arrays can be single-dimensional or multi-dimensional.
-    - **Snippet**:
+    - Definition: A collection of items of the same type, stored in contiguous memory locations. Arrays can be single-dimensional or multi-dimensional.
+    - Snippet:
     ```csharp
     int[] myArray = new int[5] { 1, 2, 3, 4, 5 }; // Single-dimensional array
     ```
 
 - 2. Lists
 
-    - **Definition**: A dynamic array that can grow and shrink in size. It is part of the `System.Collections.Generic` namespace and provides methods for adding, removing, and searching for elements.
-    - **Snippet**:
+    - Definition: A dynamic array that can grow and shrink in size. It is part of the `System.Collections.Generic` namespace and provides methods for adding, removing, and searching for elements.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -611,8 +611,8 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 3. Dictionaries
 
-    - **Definition**: A collection of key-value pairs, where each key is unique. It allows for fast lookups based on keys. It is also part of the `System.Collections.Generic` namespace.
-    - **Snippet**:
+    - Definition: A collection of key-value pairs, where each key is unique. It allows for fast lookups based on keys. It is also part of the `System.Collections.Generic` namespace.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -623,8 +623,8 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 4. HashSet
 
-    - **Definition**: A collection of unique elements that provides high-performance set operations. It does not allow duplicate values and is part of the `System.Collections.Generic` namespace.
-    - **Snippet**:
+    - Definition: A collection of unique elements that provides high-performance set operations. It does not allow duplicate values and is part of the `System.Collections.Generic` namespace.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -636,8 +636,8 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 5. Queue
 
-    - **Definition**: A first-in, first-out (FIFO) collection of objects. It is part of the `System.Collections.Generic` namespace and provides methods for adding and removing elements.
-    - **Snippet**:
+    - Definition: A first-in, first-out (FIFO) collection of objects. It is part of the `System.Collections.Generic` namespace and provides methods for adding and removing elements.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -649,8 +649,8 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 6. Stack
 
-    - **Definition**: A last-in, first-out (LIFO) collection of objects. It allows adding and removing elements from the top of the stack.
-    - **Snippet**:
+    - Definition: A last-in, first-out (LIFO) collection of objects. It allows adding and removing elements from the top of the stack.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -662,8 +662,8 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 7. LinkedList
 
-    - **Definition**: A doubly linked list that allows for efficient insertions and deletions. It is part of the `System.Collections.Generic` namespace.
-    - **Snippet**:
+    - Definition: A doubly linked list that allows for efficient insertions and deletions. It is part of the `System.Collections.Generic` namespace.
+    - Snippet:
     ```csharp
     using System.Collections.Generic;
 
@@ -675,16 +675,16 @@ Logical statements or conditions help the flow of the code that is running withi
 
 - 8. Tuple
 
-    - **Definition**: A data structure that can hold a fixed number of items of different types. It is useful for returning multiple values from a method.
-    - **Snippet**:
+    - Definition: A data structure that can hold a fixed number of items of different types. It is useful for returning multiple values from a method.
+    - Snippet:
     ```csharp
     var myTuple = Tuple.Create(1, "Alice", 30); // Tuple with an int, string, and int
     ```
 
 - 9. ArrayList
 
-    - **Definition**: A non-generic collection that can hold items of any type. It is part of the `System.Collections` namespace and is less type-safe than generic collections.
-    - **Snippet**:
+    - Definition: A non-generic collection that can hold items of any type. It is part of the `System.Collections` namespace and is less type-safe than generic collections.
+    - Snippet:
     ```csharp
     using System.Collections;
 
@@ -697,112 +697,112 @@ Logical statements or conditions help the flow of the code that is running withi
 
 The following are some of the string functions in C#. 
 - 1. `Length`
-    - **Definition**: Gets the number of characters in the string.
-    - **Snippet**:
+    - Definition: Gets the number of characters in the string.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     int length = myString.Length; // length is 13
     ```
 
 - 2. `Substring`
-    - **Definition**: Returns a substring from the string, starting at a specified index and optionally for a specified length.
-    - **Snippet**:
+    - Definition: Returns a substring from the string, starting at a specified index and optionally for a specified length.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     string sub = myString.Substring(7, 5); // sub is "World"
     ```
 
 - 3. `IndexOf`
-    - **Definition**: Returns the zero-based index of the first occurrence of a specified substring. Returns -1 if not found.
-    - **Snippet**:
+    - Definition: Returns the zero-based index of the first occurrence of a specified substring. Returns -1 if not found.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     int index = myString.IndexOf("World"); // index is 7
     ```
 
 - 4. `LastIndexOf`
-    - **Definition**: Returns the zero-based index of the last occurrence of a specified substring. Returns -1 if not found.
-    - **Snippet**:
+    - Definition: Returns the zero-based index of the last occurrence of a specified substring. Returns -1 if not found.
+    - Snippet:
     ```csharp
     string myString = "Hello, World! Hello!";
     int lastIndex = myString.LastIndexOf("Hello"); // lastIndex is 14
     ```
 
 - 5. `Replace`
-    - **Definition**: Replaces all occurrences of a specified substring with another substring.
-    - **Snippet**:
+    - Definition: Replaces all occurrences of a specified substring with another substring.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     string replaced = myString.Replace("World", "C#"); // replaced is "Hello, C#!"
     ```
 
 - 6. `ToUpper`
-    - **Definition**: Converts the string to uppercase.
-    - **Snippet**:
+    - Definition: Converts the string to uppercase.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     string upper = myString.ToUpper(); // upper is "HELLO, WORLD!"
     ```
 
 - 7. `ToLower`
-    - **Definition**: Converts the string to lowercase.
-    - **Snippet**:
+    - Definition: Converts the string to lowercase.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     string lower = myString.ToLower(); // lower is "hello, world!"
     ```
 
 - 8. `Trim`
-    - **Definition**: Removes all leading and trailing whitespace characters from the string.
-    - **Snippet**:
+    - Definition: Removes all leading and trailing whitespace characters from the string.
+    - Snippet:
     ```csharp
     string myString = "   Hello, World!   ";
     string trimmed = myString.Trim(); // trimmed is "Hello, World!"
     ```
 
 - 9. `Split`
-    - **Definition**: Splits the string into an array of substrings based on specified delimiters.
-    - **Snippet**:
+    - Definition: Splits the string into an array of substrings based on specified delimiters.
+    - Snippet:
     ```csharp
     string myString = "apple,banana,cherry";
     string[] fruits = myString.Split(','); // fruits is ["apple", "banana", "cherry"]
     ```
 
 - 10. `Join`
-    - **Definition**: Concatenates the elements of a string array, using a specified separator between each element.
-    - **Snippet**:
+    - Definition: Concatenates the elements of a string array, using a specified separator between each element.
+    - Snippet:
     ```csharp
     string[] fruits = { "apple", "banana", "cherry" };
     string joined = string.Join(", ", fruits); // joined is "apple, banana, cherry"
     ```
 
 - 11. `Contains`
-    - **Definition**: Determines whether the string contains a specified substring.
-    - **Snippet**:
+    - Definition: Determines whether the string contains a specified substring.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     bool contains = myString.Contains("World"); // contains is true
     ```
 
 - 12. `StartsWith`
-    - **Definition**: Determines whether the string starts with a specified substring.
-    - **Snippet**:
+    - Definition: Determines whether the string starts with a specified substring.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     bool startsWith = myString.StartsWith("Hello"); // startsWith is true
     ```
 
 - 13. `EndsWith`
-    - **Definition**: Determines whether the string ends with a specified substring.
-    - **Snippet**:
+    - Definition: Determines whether the string ends with a specified substring.
+    - Snippet:
     ```csharp
     string myString = "Hello, World!";
     bool endsWith = myString.EndsWith("World!"); // endsWith is true
     ```
 
 - 14. `Format`
-    - **Definition**: Formats the specified string by replacing the format items with the string representation of the corresponding objects.
-    - **Snippet**:
+    - Definition: Formats the specified string by replacing the format items with the string representation of the corresponding objects.
+    - Snippet:
     ```csharp
     string name = "Alice";
     int age = 30;
@@ -810,8 +810,8 @@ The following are some of the string functions in C#.
     ```
 
 - 15. `Equals`
-    - **Definition**: Determines whether two string instances have the same value.
-    - **Snippet**:
+    - Definition: Determines whether two string instances have the same value.
+    - Snippet:
     ```csharp
     string str1 = "Hello";
     string str2 = "Hello";
@@ -819,16 +819,16 @@ The following are some of the string functions in C#.
     ```
 
 - 16. `IsNullOrEmpty`
-    - **Definition**: Determines whether a specified string is `null` or an empty string.
-    - **Snippet**:
+    - Definition: Determines whether a specified string is `null` or an empty string.
+    - Snippet:
     ```csharp
     string myString = "";
     bool isNullOrEmpty = string.IsNullOrEmpty(myString); // isNullOrEmpty is true
     ```
 
 - 17. `IsNullOrWhiteSpace`
-    - **Definition**: Determines whether a specified string is `null`, empty, or consists only of white-space characters.
-    - **Snippet**:
+    - Definition: Determines whether a specified string is `null`, empty, or consists only of white-space characters.
+    - Snippet:
     ```csharp
     string myString = "   ";
     bool isNullOrWhiteSpace = string.IsNullOrWhiteSpace(myString); // isNullOrWhiteSpace is true
