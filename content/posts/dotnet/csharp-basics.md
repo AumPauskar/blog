@@ -834,6 +834,16 @@ The following are some of the string functions in C#.
     bool isNullOrWhiteSpace = string.IsNullOrWhiteSpace(myString); // isNullOrWhiteSpace is true
     ```
 
+- 18. Invarient methods: `ToUpper` and `ToLower` method may produce different results when your system language is different. Here is an example
+
+    ```csharp
+    string aString = "This Is A String";
+    Console.WriteLine(aString.ToLower()); // this is a string -> however we will get this 'ı' (without the dot) if we are working in Turkish
+    Console.WriteLine(aString.ToUpper()); // THIS IS A STRING
+    Console.WriteLine(aString.ToLowerInvariant()); // this is a string
+    Console.WriteLine(aString.ToUpperInvariant()); // THIS IS A STRING
+    ```
+
 ## Package manager in C#
 
 
