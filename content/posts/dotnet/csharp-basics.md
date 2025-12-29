@@ -29,6 +29,103 @@ UseHugoToc = true
 
 C# is a versatile programming language developed by Microsoft, widely used for building a variety of applications, from web to desktop and mobile. This post covers the basics of C#, including syntax, data types, and object-oriented programming concepts. Dotnet is a framework that supports C# and provides a rich set of libraries and tools for developers.
 
+## Creating an application
+
+Dotnet provides a cli to create applicaitons. The entrypoint will always be `Program.cs`, here are the types of applications that the dotnet CLI helps to create
+
+1. Console Application
+
+* Command-line program
+* Used for learning, scripts, automation
+
+```bash
+dotnet new console
+```
+
+2. Windows Forms (WinForms)
+
+* Simple Windows GUI
+* Drag & drop UI
+
+```bash
+dotnet new winforms
+```
+
+3. WPF Application
+
+* Modern Windows UI
+* Uses XAML
+
+```bash
+dotnet new wpf
+```
+
+4. ASP.NET Core Web API
+
+* Backend APIs
+* Used for web/mobile apps
+
+```bash
+dotnet new webapi
+```
+
+5. ASP.NET MVC / Razor Pages
+
+* Full web applications
+* Server-rendered HTML
+
+```bash
+dotnet new mvc
+dotnet new razor
+```
+
+6. Blazor App
+
+* Web apps using C# instead of JS
+* Runs in browser or server
+
+```bash
+dotnet new blazorwasm
+```
+
+7. Class Library
+
+* Reusable code
+* No UI
+
+```bash
+dotnet new classlib
+```
+
+8. Worker Service
+
+* Background tasks
+* Queues, schedulers, consumers
+
+```bash
+dotnet new worker
+```
+
+9. .NET MAUI
+
+* Mobile + Desktop apps
+* Android, iOS, Windows
+
+```bash
+dotnet new maui
+```
+
+10. gRPC Service
+
+* High-performance backend communication
+* Microservices
+
+```bash
+dotnet new grpc
+```
+
+
+
 ## Console commands
 C# can be extended a lot by using the dotnet CLI here are some examples of the .net CLI commands.
 
