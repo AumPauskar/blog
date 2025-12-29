@@ -126,6 +126,8 @@ dotnet new grpc
 
 When you create a project, a folder and a file `name.csproj` gets produced. The `.csproj` is your project file. For each project a `.csproj` file is produced. Always commit this file to git and never delete it. It also stores your NuGet packages list. Then we have our `obj/` folder. This will contain your build your temproary build files, compiled metadata etc. Don't edit it but also don't commit it to git.
 
+When you first run the code one additional folder is produced. `bin/` contains all the executables and required for running/debugging the project. This folder must not be added to git but may be deleted since it's always recreated when the project is run again.
+
 ## Console commands
 C# can be extended a lot by using the dotnet CLI here are some examples of the .net CLI commands.
 
@@ -195,29 +197,31 @@ The .NET CLI (Command-Line Interface) is a powerful tool for developing, buildin
 C# syntax is similar to other C-style languages like Java and C++. Here are some basic elements:
 
 
-- **Variables**: Declared with a type followed by the variable name.
+-  Variables : Declared with a type followed by the variable name.
     ```csharp
     int age = 30;
     string name = "Aum";
     ```
-- **Data Types**: C# has several built-in data types, including:
+    The variables in C# are required hence the value of the variable cannot be set as null. This can be fixed using the nullanary operator by using something like `int age? = 30;` which allows the variables to be both an int or null.
+
+-  Data Types : C# has several built-in data types, including:
     - `int`: Represents integer values.
     - `double`: Represents floating-point numbers.
     - `bool`: Represents boolean values (`true` or `false`).
     - `string`: Represents a sequence of characters.
-- **Control Structures**: C# supports various control structures, such as:
-    - **If statements**: Used for conditional execution.
-    - **For loops**: Used for iterating over a range of values.
-    - **Switch statements**: Used for selecting one of many code blocks to execute.
+-  Control Structures : C# supports various control structures, such as:
+    -  If statements : Used for conditional execution.
+    - For loops : Used for iterating over a range of values.
+    -  Switch statements : Used for selecting one of many code blocks to execute.
 
-- **Functions**: Defined using the `void` keyword for functions that do not return a value, or with a specific return type.
+- Functions: Defined using the `void` keyword for functions that do not return a value, or with a specific return type (int, String, bool etc...).
     ```csharp
     void Greet(string name) {
         Console.WriteLine($"Hello, {name}!");
     }
     ```
 
-- **Classes and Objects**: C# is an object-oriented language, allowing you to define classes and create objects.
+- Classes and Objects: C# is an object-oriented language, allowing you to define classes and create objects.
     ```csharp
 
     class Person {
@@ -241,10 +245,10 @@ Top-level statements in C# are a feature introduced in C# 9.0 that allows develo
 
 - Key Features of Top-Level Statements
 
-    1. **Simplified Syntax**: You can write code directly in the file without wrapping it in a class or a method. This reduces boilerplate code and makes it easier to get started.
-    2. **Single Entry Point**: The compiler automatically generates a `Main` method behind the scenes, which serves as the entry point for the application.
-    3. **Namespace and Usings**: You can still use namespaces and `using` directives at the top of the file, but you don't need to define a class to contain your code.
-    4. **Variable Declarations**: You can declare variables, use control flow statements, and call methods directly at the top level.
+    1. Simplified Syntax: You can write code directly in the file without wrapping it in a class or a method. This reduces boilerplate code and makes it easier to get started.
+    2. Single Entry Point: The compiler automatically generates a `Main` method behind the scenes, which serves as the entry point for the application.
+    3. Namespace and Usings: You can still use namespaces and `using` directives at the top of the file, but you don't need to define a class to contain your code.
+    4. Variable Declarations: You can declare variables, use control flow statements, and call methods directly at the top level.
 
 - Example of Top-Level Statements
 
@@ -266,22 +270,22 @@ Top-level statements in C# are a feature introduced in C# 9.0 that allows develo
 
 - Explanation of the Example
 
-    - **Using Directive**: The `using System;` directive allows you to use classes from the `System` namespace without needing to fully qualify them.
-    - **Direct Code Execution**: The `Console.WriteLine` statements and the `for` loop are written directly in the file, without needing to define a class or a `Main` method.
-    - **Automatic Main Method**: The C# compiler treats this code as if it were inside a `Main` method of a generated class, allowing it to run as a standard console application.
+    - Using Directive: The `using System;` directive allows you to use classes from the `System` namespace without needing to fully qualify them.
+    - Direct Code Execution: The `Console.WriteLine` statements and the `for` loop are written directly in the file, without needing to define a class or a `Main` method.
+    - Automatic Main Method: The C# compiler treats this code as if it were inside a `Main` method of a generated class, allowing it to run as a standard console application.
 
 - Limitations
-    1. **No Multiple Entry Points**
-    2. **Not Suitable for Large Applications**
-    3. **Cannot Use `async` Directly**: You cannot declare an `async` method directly at the top level. However, you can use `async` within a method that you define.
+    1. No Multiple Entry Points
+    2. Not Suitable for Large Applications
+    3. Cannot Use `async` Directly: You cannot declare an `async` method directly at the top level. However, you can use `async` within a method that you define.
 
 ## Preprocessor Directives
 C# supports preprocessor directives, which are commands that are processed before the compilation of the code
-- **Using Directives**: Used to include namespaces in your code.
+- Using Directives: Used to include namespaces in your code.
     ```csharp
     using System;
     ```
-- **Conditional Compilation**: Allows you to include or exclude code based on certain conditions.
+- Conditional Compilation: Allows you to include or exclude code based on certain conditions.
     ```csharp
     #if DEBUG
     Console.WriteLine("Debug mode is enabled.");
@@ -290,25 +294,27 @@ C# supports preprocessor directives, which are commands that are processed befor
 
 ## Basic IO statements
 C# provides several methods for input and output operations:
-- **Console Input/Output**: The `Console` class provides methods for reading from and
+- Console Input/Output: The `Console` class provides methods for reading from and
 writing to the console.
+
     ```csharp
     Console.WriteLine("Enter your name:");
     string name = Console.ReadLine();
     Console.WriteLine($"Hello, {name}!");
     ```
 
-    - **Taking in a number**: You can read a number from the console and convert it to an integer.
-    ```csharp
-    Console.WriteLine("Enter your age:");
-    string input = Console.ReadLine();
-    int age;
-    if (int.TryParse(input, out age)) {
-        Console.WriteLine($"You are {age} years old.");
-    } else {
-        Console.WriteLine("Invalid input. Please enter a valid number.");
-    }
-    ```
+    - Taking in a number: You can read a number from the console and convert it to an integer.
+
+        ```csharp
+        Console.WriteLine("Enter your age:");
+        string input = Console.ReadLine();
+        int age;
+        if (int.TryParse(input, out age)) {
+            Console.WriteLine($"You are {age} years old.");
+        } else {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        }
+        ```
 
 ## Datatypes
 
