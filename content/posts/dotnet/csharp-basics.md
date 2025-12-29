@@ -239,6 +239,69 @@ C# syntax is similar to other C-style languages like Java and C++. Here are some
     person.Introduce();
     ```
 
+### Classes 
+
+A class is a variable that lies as a blueprint to its references (objects), classes can be created by using the `class` keyword.
+```csharp
+class Person {
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void Introduce() {
+        Console.WriteLine($"My name is {Name} and I am {Age} years old.");
+    }
+}
+```
+
+The object can be called with the following syntax `Classname objectname = new Classname(arguments)`
+```csharp
+    Person person = new Person();
+    person.Name = "Aum";
+    person.Age = 30;
+    person.Introduce();
+```
+
+An object can be created via preceeding the objectname by the keyword `var` or by preceeding it by the classname.
+
+#### Constructors
+
+A constructor is a builtin method that gets invoked whenever the class is called. It can be created by the following.
+
+```csharp
+var person = new Person("Name", 30);
+person.PrintInfo();
+class Person
+{
+    private string name;
+    private int age;
+
+    public Person(string name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void PrintInfo()
+    {
+        Console.WriteLine($"Name: {name}, Age: {age}");
+    }
+}
+```
+
+This can be further simplified by using a primary constructor. It was introduced in .net 8 where you can directly include the constructor parameters directly in the class.
+
+```csharp
+var person = new Person("Name", 30);
+person.PrintInfo();
+class Person (string name, int age)
+{
+    public void PrintInfo()
+    {
+        Console.WriteLine($"Name: {name}, Age: {age}");
+    }
+}
+```
+
 ### Top level statements in C#
 
 Top-level statements in C# are a feature introduced in C# 9.0 that allows developers to write simple programs without the need for explicitly defining a class or a `Main` method. This feature is particularly useful for small applications, scripts, or quick prototypes, making the code cleaner and more concise.
