@@ -856,17 +856,12 @@ NuGet is the official package manager for .NET. It provides a way to create, sha
 
 #### Key Features
 
-1. **Package Creation**: Developers can create their own NuGet packages to share libraries or tools with others. A package typically includes compiled code, metadata, and dependencies.
-
-2. **Package Consumption**: NuGet allows developers to easily add, update, and remove packages in their projects. This simplifies the process of managing dependencies.
-
-3. **Versioning**: NuGet supports versioning of packages, allowing developers to specify which version of a package they want to use. This helps in maintaining compatibility and stability in applications.
-
-4. **Dependency Management**: NuGet automatically resolves and installs dependencies for packages, ensuring that all required libraries are available for the project.
-
-5. **Integration with IDEs**: NuGet is integrated into popular IDEs like Visual Studio and Visual Studio Code, providing a user-friendly interface for managing packages.
-
-6. **NuGet Gallery**: The official NuGet Gallery (https://www.nuget.org/) is a public repository where developers can publish and share their packages. It also allows users to search for and download packages.
+1. Package Creation: Developers can create their own NuGet packages to share libraries or tools with others. A package typically includes compiled code, metadata, and dependencies.
+2. Package Consumption: NuGet allows developers to easily add, update, and remove packages in their projects. This simplifies the process of managing dependencies.
+3. Versioning: NuGet supports versioning of packages, allowing developers to specify which version of a package they want to use. This helps in maintaining compatibility and stability in applications.
+4. Dependency Management: NuGet automatically resolves and installs dependencies for packages, ensuring that all required libraries are available for the project.
+5. Integration with IDEs: NuGet is integrated into popular IDEs like Visual Studio and Visual Studio Code, providing a user-friendly interface for managing packages.
+6. NuGet Gallery: The official NuGet Gallery (https://www.nuget.org/) is a public repository where developers can publish and share their packages. It also allows users to search for and download packages.
 
 #### Common Commands
 
@@ -900,6 +895,7 @@ NuGet can be used via the command line or through the Package Manager Console in
 In C#, importing packages and calling specific functions can be done for both custom files (like your own classes) and NuGet packages. Below, I’ll explain how to do this for both scenarios.
 
 - 1. Importing Custom Files
+    In some lanuages the files are called by their path but in C# we do not reference the files. Instead we reference them by namespaces, each project contains many namespaces each namespace may potentially comprise of one or more files. When we call the function or the class of a function, we call them by namespace.function.
     - Step 1: Create a Custom Class
 
         First, create a custom class in a separate file. For example, create a file named `MathUtilities.cs`:
@@ -949,7 +945,7 @@ In C#, importing packages and calling specific functions can be done for both cu
 
     - Step 1: Install the NuGet Package
 
-        You can install a NuGet package using the command line or through Visual Studio. For example, to install the `Newtonsoft.Json` package, you can use the following command:
+        You can install a NuGet package using the command line or through any IDE. For example, to install the `Newtonsoft.Json` package, you can use the following command:
 
         ```bash
         dotnet add package Newtonsoft.Json
