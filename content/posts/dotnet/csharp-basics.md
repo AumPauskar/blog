@@ -135,62 +135,62 @@ The .NET CLI (Command-Line Interface) is a powerful tool for developing, buildin
 
 - Basic commands
 
-    1. **`dotnet new`**: Creates a new project or solution based on a specified template.
+    1. `dotnet new`: Creates a new project or solution based on a specified template.
         - Example: `dotnet new console` (creates a new console application)
 
-    2. **`dotnet build`**: Builds the project and its dependencies.
+    2. `dotnet build`: Builds the project and its dependencies.
         - Example: `dotnet build` (builds the current project)
 
-    3. **`dotnet run`**: Runs the application.
+    3. `dotnet run`: Runs the application.
         - Example: `dotnet run` (runs the current project)
 
-    4. **`dotnet restore`**: Restores the dependencies and tools of a project.
+    4. `dotnet restore`: Restores the dependencies and tools of a project.
         - Example: `dotnet restore` (restores packages for the current project)
 
-    5. **`dotnet publish`**: Packs the application and its dependencies into a folder for deployment.
+    5. `dotnet publish`: Packs the application and its dependencies into a folder for deployment.
         - Example: `dotnet publish -c Release` (publishes the project in Release configuration)
 
 - Project Management
 
-    6. **`dotnet add package`**: Adds a NuGet package to the project.
+    6. `dotnet add package`: Adds a NuGet package to the project.
         - Example: `dotnet add package Newtonsoft.Json` (adds the Newtonsoft.Json package)
 
-    7. **`dotnet remove package`**: Removes a NuGet package from the project.
+    7. `dotnet remove package`: Removes a NuGet package from the project.
         - Example: `dotnet remove package Newtonsoft.Json` (removes the Newtonsoft.Json package)
 
-    8. **`dotnet list package`**: Lists the packages referenced by the project.
+    8. `dotnet list package`: Lists the packages referenced by the project.
         - Example: `dotnet list package` (lists all packages in the current project)
 
 - Solution Management
 
-    9. **`dotnet sln`**: Manages solutions.
+    9. `dotnet sln`: Manages solutions.
         - Example: `dotnet sln add MyProject.csproj` (adds a project to the solution)
 
-    10. **`dotnet sln remove`**: Removes a project from the solution.
+    10. `dotnet sln remove`: Removes a project from the solution.
         - Example: `dotnet sln remove MyProject.csproj` (removes a project from the solution)
 
 - Testing
 
-    11. **`dotnet test`**: Runs unit tests in the project.
+    11. `dotnet test`: Runs unit tests in the project.
         - Example: `dotnet test` (runs tests in the current project)
 
 - Global Tools
 
-    12. **`dotnet tool install`**: Installs a .NET global tool.
+    12. `dotnet tool install`: Installs a .NET global tool.
         - Example: `dotnet tool install -g dotnet-ef` (installs the Entity Framework Core CLI tool globally)
 
-    13. **`dotnet tool update`**: Updates a .NET global tool.
+    13. `dotnet tool update`: Updates a .NET global tool.
         - Example: `dotnet tool update -g dotnet-ef` (updates the Entity Framework Core CLI tool)
 
-    14. **`dotnet tool list`**: Lists installed global tools.
+    14. `dotnet tool list`: Lists installed global tools.
         - Example: `dotnet tool list -g` (lists all globally installed tools)
 
 - Help and Information
 
-    15. **`dotnet --info`**: Displays information about the .NET SDK and runtime installed on the machine.
+    15. `dotnet --info`: Displays information about the .NET SDK and runtime installed on the machine.
         - Example: `dotnet --info`
 
-    16. **`dotnet help`**: Displays help information for the .NET CLI.
+    16. `dotnet help`: Displays help information for the .NET CLI.
         - Example: `dotnet help` or `dotnet <command> --help` (provides help for a specific command)
 
 ## Syntax
@@ -979,3 +979,52 @@ In C#, importing packages and calling specific functions can be done for both cu
             }
         }
         ```
+
+## Asyncronous computing in C#
+
+Asyncronous computing in C# are done with the keyword of `task`. It can be invoked by the following
+
+Does not return a value
+```csharp
+Task task = Task.Run(() =>
+{
+    Console.WriteLine("Running...");
+});
+```
+
+Returns a value
+```csharp
+Task<int> task = Task.Run(() => 10 + 20);
+int result = await task;
+```
+
+Creates a non blocking delay
+```csharp
+await Task.Delay(1000); // 1 second
+```
+
+Here is a snippet of how to do it
+
+```csharp
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        Console.WriteLine("Start");
+
+        await DoWorkAsync();
+
+        Console.WriteLine("End");
+    }
+
+    static async Task DoWorkAsync()
+    {
+        Console.WriteLine("Working...");
+        await Task.Delay(2000);   // Simulates async work (2 seconds)
+        Console.WriteLine("Work completed");
+    }
+}
+```
