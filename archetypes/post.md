@@ -2,13 +2,13 @@
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 tags = [""]
-author = "Me"
+author = ""
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "Desc Text."
+description = ""
 disableShare = false
 disableHLJS = false
 hideSummary = false
