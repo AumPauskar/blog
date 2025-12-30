@@ -27,6 +27,16 @@ UseHugoToc = true
 
 # ASP.NET
 
+## Initial creation of the Web API
+In order to create the Web API using .net we need to create a project of the respective type, this can be done by using the followign command
+
+```cs
+dotnet new webapi
+```
+
+However a project may also be initialized by the IDE if you don't want to go through the CLI.
+
+
 Basics of the code
 
 ```cs
@@ -56,27 +66,27 @@ Certainly! Let's break down the provided code snippet line by line. This code is
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 ```
-- **Explanation**: This line creates a new instance of a `WebApplicationBuilder`. The `CreateBuilder` method initializes the builder with the command-line arguments passed to the application (`args`). This builder is used to configure services and middleware for the application.
+- Explanation: This line creates a new instance of a `WebApplicationBuilder`. The `CreateBuilder` method initializes the builder with the command-line arguments passed to the application (`args`). This builder is used to configure services and middleware for the application.
 
 ```csharp
 builder.Services.AddEndpointsApiExplorer();
 ```
-- **Explanation**: This line adds the **Endpoints API Explorer** service to the application's service collection. This service is used to discover and document the API endpoints in your application. It helps in generating metadata about the endpoints, which can be useful for tools like Swagger.
+- Explanation: This line adds the **Endpoints API Explorer** service to the application's service collection. This service is used to discover and document the API endpoints in your application. It helps in generating metadata about the endpoints, which can be useful for tools like Swagger.
 
 ```csharp
 builder.Services.AddSwaggerGen();
 ```
-- **Explanation**: This line adds the **Swagger generator** to the service collection. Swagger is a tool that helps document and test APIs. By adding this service, you enable the generation of Swagger documentation for your API endpoints, which can be accessed via a web interface.
+- Explanation: This line adds the **Swagger generator** to the service collection. Swagger is a tool that helps document and test APIs. By adding this service, you enable the generation of Swagger documentation for your API endpoints, which can be accessed via a web interface.
 
 ```csharp
 var app = builder.Build();
 ```
-- **Explanation**: This line builds the `WebApplication` instance using the configured builder. At this point, the application is ready to be configured with middleware and endpoints.
+- Explanation: This line builds the `WebApplication` instance using the configured builder. At this point, the application is ready to be configured with middleware and endpoints.
 
 ```csharp
 if (app.Environment.IsDevelopment())
 ```
-- **Explanation**: This line checks if the application is running in the **Development** environment. The `IsDevelopment()` method is part of the `IHostEnvironment` interface, which provides information about the hosting environment.
+- Explanation: This line checks if the application is running in the **Development** environment. The `IsDevelopment()` method is part of the `IHostEnvironment` interface, which provides information about the hosting environment.
 
 ```csharp
 {
@@ -84,19 +94,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 ```
-- **Explanation**: If the application is in the Development environment, these two lines enable Swagger middleware:
+- Explanation: If the application is in the Development environment, these two lines enable Swagger middleware:
   - `app.UseSwagger()`: This middleware generates the Swagger JSON document that describes the API.
   - `app.UseSwaggerUI()`: This middleware sets up the Swagger UI, which is a web interface that allows you to interact with the API endpoints defined in your application. You can access it typically at `/swagger` in your browser.
 
 ```csharp
 app.UseHttpsRedirection();
 ```
-- **Explanation**: This line adds middleware that redirects HTTP requests to HTTPS. It ensures that all requests to the application are secure by enforcing the use of HTTPS.
+- Explanation: This line adds middleware that redirects HTTP requests to HTTPS. It ensures that all requests to the application are secure by enforcing the use of HTTPS.
 
 ```csharp
 app.Run();
 ```
-- **Explanation**: This line starts the application and begins listening for incoming HTTP requests. It is the final step in the application setup, and once this line is executed, the application is running and ready to handle requests.
+- Explanation: This line starts the application and begins listening for incoming HTTP requests. It is the final step in the application setup, and once this line is executed, the application is running and ready to handle requests.
 
 
 ## Making a simple CRUD application
