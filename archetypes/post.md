@@ -20,7 +20,7 @@ ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 [editPost]
-    URL = "https://github.com/AumPauskar/blog/content/posts/"
+    URL = "https://github.com/AumPauskar/blog/blob/main/content"
     Text = "Suggest Changes"
     appendFilePath = true
 +++
