@@ -39,6 +39,7 @@ The application uses GitHub actions to do CI/CD in the web, this includes everyt
 - Open the GitHub actions tab in the actions tab and you'll see three options
 - Use "Create New Hugo Post" option in the webpage.
 - The action would ask about the file's root folder (within content/posts) and file's name (you have to add without the `.md` extension).
+    - For example if you need to recreate the `python/python_oops`. In the root folder **python** and in the file name **python_oops** without the `.md` extension. Even file name can be file name with whitespaces or capitalization will be accepted since this will be reflected in the file title and not in the filename. Whitespaces with be replaced by a `-` and actions with automatically convert the filename to lowercase.
 ![creating a new post github actions](https://raw.githubusercontent.com/AumPauskar/repo-media/8521e3544e2ec012bc35482ae009a64e1b2055cd/blog/creating_new_file.png)
 - After the creation of the new page ensure that you fill in the following details
     - `tags = [""]` will contain the tags which will help the user in searching for the required document. If multiple tags are required in the file then tags may be seperated by a comma `,` like the following `tags = ["python", "oops", "programming"]`
