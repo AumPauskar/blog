@@ -1,3 +1,10 @@
++++
+title = 'Object Oriented Programming'
+date = 2023-11-23T13:21:20+05:30
+draft = false
+description = "Chapter summary - Unit 4 - Object Oriented Programming"
++++
+
 ## Chapter summary - Unit 4
 **Object Oriented Programming:**
 Define and use your own classes: An introduction to classes and objects, define a class,

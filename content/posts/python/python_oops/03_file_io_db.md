@@ -1,3 +1,10 @@
++++
+title = 'File IO and Database'
+date = 2023-11-23T13:21:20+05:30
+draft = false
+description = "Chapter summary - Unit 3 - File IO and Database"
++++
+
 ## Chapter summary - Unit 3
 **File I/O:** An introduction to file I/O, test files, CSV files, binary files; \
 **Exception Handling:** handle a single exception, handle multiple exceptions, Two more skills; \

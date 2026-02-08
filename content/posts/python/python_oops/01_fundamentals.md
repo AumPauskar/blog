@@ -1,3 +1,10 @@
++++
+title = 'Python Fundamentals'
+date = 2023-11-23T13:21:20+05:30
+draft = false
+description = "Chapter summary - Unit 1 - Python Fundamentals"
++++
+
 # Python
 
 ## Chapter summary - Unit 1

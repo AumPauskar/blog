@@ -1,3 +1,10 @@
++++
+title = 'Higher Data Constructs'
+date = 2023-11-23T13:21:20+05:30
+draft = false
+description = "Chapter summary - Unit 2 - Higher Data Constructs"
++++
+
 ## Chapter summary - Unit 2
 **Higher Data Constructs:** Lists and tuples: Basic skills for working with lists, list of lists, more skills for working with lists,
 tuples; \
