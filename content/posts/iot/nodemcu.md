@@ -39,3 +39,5 @@ NodeMCU is an open-source development board designed specifically for the Intern
     - Peripheral Support: It natively supports standard communication protocols like I2C (for displays and advanced sensors), SPI (for SD cards or RFID readers), and UART (for hardware serial communication).
     - PWM Support: Pulse Width Modulation is available on the digital pins, allowing users to dim LEDs or control servo motors.
     - ADC (Analog-to-Digital Converter): It features one analog input pin (A0), which is perfect for reading analog components like potentiometers, light-dependent resistors (LDRs), or soil moisture sensors.
+
+[![NodeMCU Photo](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/nodemcu_photo.jpg)](https://github.com/AumPauskar/repo-media/blob/main/blog/iot/nodemcu/nodemcu_photo.jpg)
