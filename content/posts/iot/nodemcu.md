@@ -41,3 +41,9 @@ NodeMCU is an open-source development board designed specifically for the Intern
     - ADC (Analog-to-Digital Converter): It features one analog input pin (A0), which is perfect for reading analog components like potentiometers, light-dependent resistors (LDRs), or soil moisture sensors.
 
 [![NodeMCU Photo](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/nodemcu_photo.jpg)](https://github.com/AumPauskar/repo-media/blob/main/blog/iot/nodemcu/nodemcu_photo.jpg)
+
+## Basic setup
+### Arduino IDE Setup
+1. To have an initial setup first install [Arduino IDE](https://www.arduino.cc/en/software/)
+2. Copy and paste this string: `https://arduino.esp8266.com/stable/package_esp8266com_index.json` from [esp8266/Arduino](https://github.com/esp8266/Arduino) to File > Preferences > Additional boards manager URLs
+![Preferences](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/arduino_ide_preferences.png)
