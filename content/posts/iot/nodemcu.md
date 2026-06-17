@@ -1,7 +1,7 @@
 +++
 title = 'ESP 8266 with NodeMCU'
 date = 2026-05-31T09:15:43Z
-tags = [""]
+tags = ["microcontrollers", "embedded systems", "iot", "nodemcu", "esp8266"]
 author = "Aum Pauskar"
 showToc = true
 TocOpen = false
@@ -47,3 +47,4 @@ NodeMCU is an open-source development board designed specifically for the Intern
 1. To have an initial setup first install [Arduino IDE](https://www.arduino.cc/en/software/)
 2. Copy and paste this string: `https://arduino.esp8266.com/stable/package_esp8266com_index.json` from [esp8266/Arduino](https://github.com/esp8266/Arduino) to File > Preferences > Additional boards manager URLs
 ![Preferences](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/arduino_ide_preferences.png)
+3. Open **Device Manager** within windows and under ports check which COM port is the NodeMCU attached to. Note this down since you'll need it later
