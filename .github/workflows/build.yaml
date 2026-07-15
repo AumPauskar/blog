@@ -22,7 +22,7 @@ jobs:
     steps:
       # Step 1: Check out your repository under $GITHUB_WORKSPACE, so your job can access it.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Use 'recursive' to ensure nested submodules (like a theme's theme) are fetched.
           submodules: recursive
