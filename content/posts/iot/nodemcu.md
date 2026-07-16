@@ -47,4 +47,32 @@ NodeMCU is an open-source development board designed specifically for the Intern
 1. To have an initial setup first install [Arduino IDE](https://www.arduino.cc/en/software/)
 2. Copy and paste this string: `https://arduino.esp8266.com/stable/package_esp8266com_index.json` from [esp8266/Arduino](https://github.com/esp8266/Arduino) to File > Preferences > Additional boards manager URLs
 ![Preferences](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/arduino_ide_preferences.png)
-3. Open **Device Manager** within windows and under ports check which COM port is the NodeMCU attached to. Note this down since you'll need it later
+3. Open **Device Manager** within windows and under ports check which COM port is the NodeMCU attached to. Note this down since you'll need it later.
+4. Open the IDE once again and select the COM port you noted down. Select the COM port you noted down and select the following option
+![Port configuration](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/com_serial_port.png)
+
+## Writing your first program
+A simple blink code would look like this
+
+```cpp
+void setup() {
+  // Initialize the digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);     
+}
+
+// The loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, LOW);   // Turn the LED ON
+  delay(1000);                      // Wait for a second
+  
+  digitalWrite(LED_BUILTIN, HIGH);  // Turn the LED OFF
+  delay(1000);                      // Wait for a second
+}
+```
+
+The ✅ would verify the code and ➡️ would upload the emoji to the device. Here are my settings, these could be changed from the tools dropdown. If you plan to write again then the setting of **erase flash** could be changed to **all flash contents**.
+
+![Arduino IDE tools](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/tools_nodemcu.png)
+
+After uploading the builtin led blink would look something like this.
+![NodeMCU blink](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/iot/nodemcu/node_mcu_blink.jpg)
