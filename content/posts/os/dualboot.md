@@ -40,11 +40,15 @@ We’ll need to make a disk partition in windows 11 before proceeding to make su
 3. **Right-click on the drive** and select **Shrink Volume**
 4. In the dialog that appears, enter the amount of space to shrink (in MB). This will be the size of the new partition for Arch Linux. Make sure to leave enough space for Windows. In my case I’ve allocated 100 gigs for Arch.
 5. Click **Shrink**. The unallocated space will appear in the Disk Management window.
+![Disk configuration windows](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg3.jpg)
 
 ### Bios settings
+Bios can be accessed by pressing `Esc`, `F10`, `F2`, `F12` key on your keyboard while booting, please check your motherboard manufacturer or laptop to check it.
 
 1. Disable Fast Startup
+![Fast startup](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/fastboot.jpg)
 2. Disable secure boot
+![Disable secure boot](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/secureboot.jpg)
 
 ### Arch ISO setup
 
@@ -56,14 +60,15 @@ We’ll need to make a disk partition in windows 11 before proceeding to make su
 1. Insert the drive into the computer
 2. Restart the computer into the BIOS/UEFI/Bootloader menu
 3. Select the boot option as the USB drive
+![Arch boot screen](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/archterminal.jpg)
 
 ## Installing Arch
 
-(under progress)
+
 
 ## Crutial services
 ### IWCTL - wifi configuration
-To check whether you are connected to internet one of two commands can be used
+To check whether you are connected to internet one of two commands can be used. Ethernet by default works both via the **Ethernet port** or via USB Thetring. WLAN however obviously needs to be connected by putting a valid SSID and password
 1. `ip a`: Can be used for showing all the ip information that are ongoing, shows the ip address of all the networking devices, these include, looplack device, wifi adaptor and ethernet (if you have one)
 2. `ping (domain name)`: Can be used to hit a ping or do a packet transfer towards a domain on the net. Usage: `ping www.exampleanydomainname.com`.
 
