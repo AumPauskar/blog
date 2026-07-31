@@ -1,14 +1,14 @@
 +++
-title = 'Dualbooting windows and linux'
+title = 'Dualbooting Windows and Linux'
 date = 2024-07-07T11:26:50+05:30
-tags = ["os", "dualboot", "linux", "windows"]
+tags = ["os", "dualboot", "linux", "windows", "arch", "archlinux"]
 author = "Aum Pauskar"
 showToc = true
 TocOpen = false
 draft = false
 hidemeta = false
 comments = false
-description = "A guide to dual booting Windows and Linux (fedora)"
+description = "A guide to dual booting Windows and Linux (Archlinux)"
 disableShare = false
 disableHLJS = false
 hideSummary = false
@@ -25,7 +25,7 @@ UseHugoToc = true
     appendFilePath = true
 +++
 
-# Dual booting arch and win11
+# Dual booting Arch and Windows 11
 
 ## Prerequisites
 
@@ -63,7 +63,46 @@ Bios can be accessed by pressing `Esc`, `F10`, `F2`, `F12` key on your keyboard 
 ![Arch boot screen](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/archterminal.jpg)
 
 ## Installing Arch
+If you reached this step, it's likely that you've done the following
+1. Reserved free storage in one of your windows disks
+2. Downloaded archlinux iso
+3. Made a bootable flash drive via Rufus, Balenaetcher, Raspberry Pi imager or any other software
+4. Rebooted the PC and selected the drive in the BIOS/UEFI
+5. You can see the arch terminal
 
+### Configuring the storage
+- Provided you've set up free storage in Windows disk manager you have to set up the following
+
+The drives are not set up inially despite allocating free space in the windows disk manager, to do this you have to let the linux filesystem aware of the availablity of the free storage available. To do this follow the following steps
+
+1. Type in `lsblk`: After running this command you may see the avalable spaces. In the windows disk manager we had cleared out 97GB of storage, however we wont see it directly.
+2. Type in `cfdisk/dev/<your-drive-name`: In my case it was `/dev/nvme1n1p1`, drive letters will be different for each
+    ![Free space](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg4.jpg)
+3. Type in new and create two seperate partitions out of your reserved space. The partitions can be editing by using **edit** in the terminal utility
+    - Partition 1
+        - Type: EFI System
+        - Size: 1GB
+    - Partition 2
+        - Type: Linux filesystem
+        - Size: The rest of your reserved space
+
+    Click on **Write** after doing this setup.\
+    **WARNING:** Be careful when using write, all the data within this volume will be deleted.\
+    Here is how it'll look\
+    ![File system](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg5.jpg)
+    Type in `lsblk` to verify the new partitions
+    ![lsblk after formatting](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg7.jpg)
+4. Creating and mounting the file system
+    - Use this command to make a FAT32 out of your 1GB partition: `mkfs.fat -F32 /dev/<your-partition-name>`
+    - Use this command to make a ext4 for the rest of the data in your partiton: `mkfs.ext4 /dev/<your-artition-name>`
+5. Mounting the partitions
+    - Mounting the main partition (the larger one): `mount /dev/<your-partition-name> /mnt`
+    - Mounting the EFI partition (the smaller one): `mount /dev/<your-partition-name> /mnt/boot`
+6. Verify the install by using `lsblk` again and checking the correct mount locations.
+![lsblk after formatting](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg7.jpg)
+
+![Disc selection](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg2.jpg)
+![Disc configuration](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg8.jpg)
 
 
 ## Crutial services
