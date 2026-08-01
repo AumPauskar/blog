@@ -101,8 +101,32 @@ The drives are not set up inially despite allocating free space in the windows d
 6. Verify the install by using `lsblk` again and checking the correct mount locations.
 ![lsblk after formatting](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg7.jpg)
 
-![Disc selection](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg2.jpg)
-![Disc configuration](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg8.jpg)
+## Running the Archinstall script
+
+The Archinstall script is a automated arch installer with minimal user input an a cli to do all the hardwork for you. You'd need to ensure that the disk configuration is already done before proceeding here.
+
+1. Running the `archinstall` script
+    - Just type in `archinstall`
+2. You'd be presented with a CLI like this
+    ![](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/archinstallpage.jpg)
+    - Select the archinstall language that you want
+    - Select your apt locale
+    - Mirrors and reposiotries - add your location or the location of the mirror you wanna add
+3. Disk configuration
+    ![Disc configuration](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg8.jpg)
+    You'd see a menu like this, since we had preconfigured our storage we can go ahead and use **Pre-mounted configuration**
+    ![Disc selection](https://raw.githubusercontent.com/AumPauskar/repo-media/main/blog/os/dualboot/diskcfg2.jpg)
+    Select your disk where you want to install
+4. Other settings
+    - Enable swap
+    - Add your hostname and host password
+    - Add your username and password and set it as a sudo account
+    - Use pipewire as the audio driver
+    - Use linux as the kernal
+    - Select your timezone
+    - Disalbe automatic time sync if you don't want to meddle with windows settings and DST isn't a thing
+5. Within profile use Desktop > KDE Plasma (or any other install).
+6. Click on install 
 
 
 ## Crutial services
