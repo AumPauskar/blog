@@ -473,3 +473,29 @@ Additional options
       git config --global user.email "you@example.com"
       git config --global user.name "Your Name"
     ```
+
+3. GRUB setup
+    
+    GRUB by default may not show all the OSes listed in the computer, and will usually skip the Windows OS and skip to direct Arch installation. While you may still enter windows through the motherboard's boot manager it's better to have the option to boot into windows through GRUB itself.
+
+    1. Install **os-prober** and NTFS file system support
+    ```bash
+    sudo pacman -S os-prober ntfs-3g
+    ```
+
+    2. Open grub configuration
+    ```bash
+    sudo vim /etc/default/grub # or use nano 
+    ```
+
+    3. Uncomment this add, or if the comment is not present add this line, typically present in the end of the file of GRUB configuration
+    ```bash
+    GRUB_DISABLE_OS_PROBER=false
+    ```
+
+    4. Remake the grub configuration
+    ```bash
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    ```
+
+    5. Reboot the system and check if the windows settings pops up
