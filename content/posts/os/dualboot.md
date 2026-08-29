@@ -242,7 +242,7 @@ Additional options
         ```bash
         sudo pacman -S zsh
         chsh -s $(which zsh) # enter your password when prompted
-        sh -c "$(curl -fsSL [https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh](https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh))" # this will install zsh
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # this will install zsh
         ```
         
     2. My configuration - extensions [Ref](https://catalins.tech/zsh-plugins/)
@@ -262,7 +262,7 @@ Additional options
         git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUSTOM/plugins/zsh-bat
         ```
         
-        Now go to the line that says `plugins=(git)` and replace them with the following
+        Now go to the line that says `plugins=(git)` and replace them with the following. The source file is located at `~/.zshrc`, and can be accessed through `vim ~/.zshrc` or `nano ~/.zshrc`.
         
         ```bash
         plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
@@ -281,6 +281,11 @@ Additional options
         ```
         
     3. Configuring the theme
+        - Prerequisites: For some of the theme to work you'll need to install a nerd font something like `ttf-nerd-fonts-symbols` would do the trick. This can be installed throgh
+        
+            ```bash
+            sudo pacman -Syu ttf-nerd-fonts-symbols
+            ```
         
         For this install we are going to use [powerlevel10k](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh), via this command
         
