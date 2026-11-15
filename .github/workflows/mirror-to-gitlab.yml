@@ -1,0 +1,52 @@
+name: Mirror GitHub to GitLab
+
+on:
+  workflow_dispatch:
+
+# Minimum permissions required
+permissions:
+  contents: read
+
+# Prevent simultaneous mirror operations
+concurrency:
+  group: github-to-gitlab-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Mirror main branch
+    runs-on: ubuntu-latest
+
+    # Only repository owner, and only when main is selected
+    if: >
+      github.actor == github.repository_owner &&
+      github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Clone GitHub main branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git clone \
+            --single-branch \
+            --branch main \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            source
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Mirror"
+          git config --global user.email "github-mirror@users.noreply.github.com"
+
+      - name: Push main branch to GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          git -C source push \
+            --force \
+            "https://oauth2:${GITLAB_TOKEN}@gitlab.com/YOUR_GROUP/YOUR_PROJECT.git" \
+            main:main
+
+      - name: Mirror result
+        run: echo "Successfully mirrored GitHub main to GitLab main."
