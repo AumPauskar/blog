@@ -1,5 +1,5 @@
 baseURL = 'https://aumpauskar.github.io/blog/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = "Aum's blogging site"
 theme = 'PaperMod'
 pagination.pagerSize = 5
