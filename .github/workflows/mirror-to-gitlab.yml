@@ -45,7 +45,7 @@ jobs:
         run: |
           git -C source push \
             --force \
-            "https://oauth2:${GITLAB_TOKEN}@gitlab.com/YOUR_GROUP/YOUR_PROJECT.git" \
+            "https://oauth2:${GITLAB_TOKEN}@gitlab.com/aumpauskar/blog" \
             main:main
 
       - name: Mirror result
